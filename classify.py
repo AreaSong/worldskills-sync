@@ -1,0 +1,288 @@
+"""把文件名、标签和栏目解析成技能、届次、类型、阶段、语言。"""
+
+from __future__ import annotations
+
+import re
+from dataclasses import dataclass
+
+DOC_TYPES = {
+    "technical-description": "技术描述",
+    "test-project": "试题",
+    "infrastructure-list": "基础设施清单",
+    "skill-management-plan": "技能管理计划",
+    "correspondence": "通信",
+    "resources": "资源",
+    "results": "成绩",
+    "competition-documents": "竞赛文件",
+    "official-document": "官方文件",
+    "skill-resource": "技能资料",
+}
+
+RESOURCE_TYPE_TO_DOC = {
+    4: "technical-description",
+    7: "test-project",
+    16: "infrastructure-list",
+    12: "correspondence",
+    5: "competition-documents",
+    9: "official-document",
+    21: "skill-resource",
+    6: "resources",
+    20: "resources",
+    33: "resources",
+    34: "resources",
+    1: "resources",
+    13: "resources",
+    8: "resources",
+    11: "results",
+}
+
+STAGE_FOLDERS = {
+    "actual": "正式",
+    "pre": "赛前",
+    "proposal": "提案",
+    "proposals": "提案",
+}
+
+LANG_FOLDERS = {
+    "en": "英语",
+    "en_us": "英语",
+    "en_gb": "英语",
+    "zh": "中文",
+    "zh_cn": "中文",
+    "zh_tw": "中文",
+    "de": "德语",
+    "es": "西班牙语",
+    "fr": "法语",
+    "ja": "日语",
+    "ko": "韩语",
+    "pt": "葡萄牙语",
+    "pt_br": "葡萄牙语",
+    "fi": "芬兰语",
+    "ru": "俄语",
+    "ar": "阿拉伯语",
+    "it": "意大利语",
+    "nl": "荷兰语",
+    "sv": "瑞典语",
+    "pl": "波兰语",
+    "th": "泰语",
+}
+
+EDITION_NAMES = {
+    "WSC2001": "WorldSkills Seoul 2001",
+    "WSC2003": "WorldSkills St Gallen 2003",
+    "WSC2005": "WorldSkills Helsinki 2005",
+    "WSC2007": "WorldSkills Shizuoka 2007",
+    "WSC2009": "WorldSkills Calgary 2009",
+    "WSC2011": "WorldSkills London 2011",
+    "WSC2013": "WorldSkills Leipzig 2013",
+    "WSC2015": "WorldSkills São Paulo 2015",
+    "WSC2017": "WorldSkills Abu Dhabi 2017",
+    "WSC2019": "WorldSkills Kazan 2019",
+    "WSC2022": "WorldSkills Shanghai 2022",
+    "WSC2022SE": "WorldSkills Competition 2022 Special Edition",
+    "WSC2024": "WorldSkills Lyon 2024",
+    "WSC2026": "WorldSkills Shanghai 2026",
+}
+
+MEMBER_AREA_CODES = tuple(EDITION_NAMES.keys())
+
+CMS_SLUG_TO_CODE = {
+    "seoul-2001": "WSC2001",
+    "st-gallen-2003": "WSC2003",
+    "helsinki-2005": "WSC2005",
+    "shizuoka-2007": "WSC2007",
+    "calgary-2009": "WSC2009",
+    "london-2011": "WSC2011",
+    "leipzig-2013": "WSC2013",
+    "sao-paulo-2015": "WSC2015",
+    "worldskills-abu-dhabi-2017": "WSC2017",
+    "worldskills-kazan-2019": "WSC2019",
+    "shanghai-2022": "WSC2022",
+    "special-edition-2022": "WSC2022SE",
+    "lyon-2024": "WSC2024",
+    "shanghai-2026": "WSC2026",
+}
+
+CMS_SECTION_TO_DOC = {
+    "technical-descriptions": "technical-description",
+    "test-projects": "test-project",
+    "infrastructure-lists": "infrastructure-list",
+    "skill-management-plans": "skill-management-plan",
+    "correspondence": "correspondence",
+    "resources": "resources",
+    "results": "results",
+}
+
+SKILL_TAG_RE = re.compile(r"^Skill\s+(\d+)$", re.I)
+CODE_TAG_RE = re.compile(r"^WSC(\d{4})(SE)?$", re.I)
+FILENAME_CODE_RE = re.compile(r"\bWSC(\d{4})(SE)?\b", re.I)
+TP_RE = re.compile(
+    r"WSC(\d{4})(SE)?[_ ]TP([0-9]{1,3}|[A-Z]\d?)(?:[_]([A-Za-z0-9]+))*",
+    re.I,
+)
+TD_RE = re.compile(r"WSC(\d{4})(SE)?[_ ]TD[_ ]?([0-9]{1,3}|[A-Z]\d?)", re.I)
+IL_RE = re.compile(r"WSC(\d{4})(SE)?[_ ]IL[_ ]?([0-9]{1,3}|[A-Z]\d?)", re.I)
+LANG_SUFFIX_RE = re.compile(r"(?:^|[_\-.])([a-z]{2})(?:_[A-Z]{2})?(?:\.[A-Za-z0-9]+)?$")
+LIST_NAME_RE = re.compile(r"^(\d{1,3})\s+(.+)$")
+
+
+@dataclass
+class Classified:
+    edition_code: str | None
+    edition_name: str
+    skill_number: str | None
+    skill_name: str | None
+    doc_key: str
+    stage: str | None
+    lang_code: str | None
+
+
+def pad_skill(number: str | None) -> str | None:
+    if number is None:
+        return None
+    text = str(number).strip()
+    if text.isdigit():
+        return f"{int(text):02d}"
+    return text.upper()
+
+
+def lang_folder(code: str | None) -> str:
+    if not code:
+        return "未标注"
+    return LANG_FOLDERS.get(code.lower().replace("-", "_"), code)
+
+
+def doc_folder(key: str) -> str:
+    return DOC_TYPES.get(key, "资源")
+
+
+def edition_name(code: str | None, fallback: str = "未识别届次") -> str:
+    if not code:
+        return fallback
+    return EDITION_NAMES.get(code, fallback)
+
+
+def member_area_code(code: str | None) -> bool:
+    return bool(code) and code in MEMBER_AREA_CODES
+
+
+def parse_lang(text: str) -> str | None:
+    lowered = text.lower()
+    match = re.search(r"(?:^|[_\-.])([a-z]{2})(?:_[a-z]{2})?(?:\.[a-z0-9]+)$", lowered)
+    if not match:
+        match = re.search(r"_([a-z]{2})(?:_[a-z]{2})?$", Path_stem(lowered))
+    if not match:
+        return None
+    code = match.group(1)
+    if code in LANG_FOLDERS or f"{code}_us" in LANG_FOLDERS:
+        return code
+    return None
+
+
+def Path_stem(name: str) -> str:
+    if "." in name:
+        return name.rsplit(".", 1)[0]
+    return name
+
+
+def parse_stage(text: str, tags: list[str] | None = None) -> str | None:
+    blob = " ".join([text, *(tags or [])]).lower().replace("-", "_")
+    if "proposal" in blob:
+        return "提案"
+    if re.search(r"\bpre\b|_pre_|pre_competition|pre-competition", blob):
+        return "赛前"
+    if "actual" in blob:
+        return "正式"
+    return None
+
+
+def parse_code_from_text(text: str) -> str | None:
+    match = re.search(r"WSC\s*(\d{4})\s*(SE)?", text, re.I)
+    if not match:
+        return None
+    year = match.group(1)
+    suffix = "SE" if match.group(2) else ""
+    code = f"WSC{year}{suffix}"
+    if year == "2022" and suffix:
+        return "WSC2022SE"
+    return code if member_area_code(code) else code
+
+
+def parse_skill_from_filename(name: str) -> tuple[str | None, str | None]:
+    for regex in (TP_RE, TD_RE, IL_RE):
+        match = regex.search(name.replace(" ", "_"))
+        if match:
+            year, se, skill = match.group(1), match.group(2), match.group(3)
+            code = f"WSC{year}{'SE' if se else ''}"
+            if year == "2022" and se:
+                code = "WSC2022SE"
+            return code, pad_skill(skill)
+    return None, None
+
+
+def parse_tags(tags: list[str] | None) -> tuple[str | None, str | None, str | None]:
+    code = None
+    skill = None
+    stage_hint = None
+    for tag in tags or []:
+        code_match = CODE_TAG_RE.match(tag.strip())
+        if code_match:
+            year, se = code_match.group(1), code_match.group(2)
+            code = f"WSC{year}{'SE' if se else ''}"
+            if year == "2022" and se:
+                code = "WSC2022SE"
+        skill_match = SKILL_TAG_RE.match(tag.strip())
+        if skill_match:
+            skill = pad_skill(skill_match.group(1))
+        lowered = tag.lower()
+        if "actual" in lowered:
+            stage_hint = "正式"
+        elif "pre" in lowered:
+            stage_hint = "赛前"
+        elif "proposal" in lowered:
+            stage_hint = "提案"
+    return code, skill, stage_hint
+
+
+def classify(
+    *,
+    filename: str = "",
+    tags: list[str] | None = None,
+    doc_key: str | None = None,
+    lang_code: str | None = None,
+    edition_hint: str | None = None,
+    skill_number: str | None = None,
+    skill_name: str | None = None,
+) -> Classified:
+    tag_code, tag_skill, tag_stage = parse_tags(tags)
+    file_code, file_skill = parse_skill_from_filename(filename)
+    text_code = parse_code_from_text(filename)
+    code = edition_hint or tag_code or file_code or text_code
+    if code == "WSC2022SE" or (code == "WSC2022" and "SE" in filename.upper()):
+        if "SE" in (filename.upper() + " ".join(tags or []).upper()):
+            code = "WSC2022SE"
+    number = pad_skill(skill_number) or tag_skill or file_skill
+    stage = parse_stage(filename, tags) or tag_stage
+    lang = (lang_code or parse_lang(filename) or "").lower() or None
+    if lang:
+        lang = lang.replace("-", "_")[:2]
+    key = doc_key or "resources"
+    if isinstance(key, int):
+        key = RESOURCE_TYPE_TO_DOC.get(key, "resources")
+    name = edition_name(code, code or "未识别届次")
+    return Classified(
+        edition_code=code if member_area_code(code) else code,
+        edition_name=name,
+        skill_number=number,
+        skill_name=skill_name,
+        doc_key=key,
+        stage=stage if key == "test-project" else None,
+        lang_code=lang,
+    )
+
+
+def parse_list_title(title: str) -> tuple[str | None, str | None]:
+    match = LIST_NAME_RE.match(title.strip())
+    if not match:
+        return None, title.strip() or None
+    return pad_skill(match.group(1)), match.group(2).strip()

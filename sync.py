@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""把你自己账号能打开的 WorldSkills 会员区页面和文件保存到本地。
-
-密码不会写入磁盘。先在弹出的浏览器里登录，脚本只复用这次会话。
-文件按网站原来的网址路径存放，另外生成目录，之后用关键词搜索即可。
-"""
+"""用你自己的会员登录，把 2001–2026 竞赛资料下载并按技能、届次、类型、语言归档。"""
 
 from __future__ import annotations
 
@@ -16,185 +12,71 @@ import re
 import sqlite3
 import sys
 import time
-import zipfile
-import xml.etree.ElementTree as ET
+from dataclasses import dataclass
 from email.message import EmailMessage
 from pathlib import Path
-from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse, unquote
+from typing import Any
+from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 import httpx
 from bs4 import BeautifulSoup
 
+from classify import (
+    CMS_SECTION_TO_DOC,
+    CMS_SLUG_TO_CODE,
+    DOC_TYPES,
+    EDITION_NAMES,
+    MEMBER_AREA_CODES,
+    RESOURCE_TYPE_TO_DOC,
+    Classified,
+    classify,
+    doc_folder,
+    edition_name,
+    lang_folder,
+    member_area_code,
+    pad_skill,
+    parse_list_title,
+)
+
 ROOT = Path(__file__).resolve().parent
-SESSION_PATH = ROOT / ".session" / "storage_state.json"
+SESSION_DIR = ROOT / ".session"
+STORAGE_STATE = SESSION_DIR / "storage_state.json"
+TOKEN_PATH = SESSION_DIR / "access_token"
 DOWNLOADS = ROOT / "downloads"
-MIRROR = DOWNLOADS / "mirror"
-TEXT_DIR = DOWNLOADS / "text"
+ARCHIVE = DOWNLOADS / "archive"
 DB_PATH = DOWNLOADS / "catalog.sqlite"
 CATALOG_CSV = DOWNLOADS / "catalog.csv"
+FORBIDDEN_CSV = DOWNLOADS / "forbidden.csv"
+UNIDENTIFIED_CSV = DOWNLOADS / "unidentified.csv"
 
-ORIGIN = "https://worldskills.org"
-PAGE_HOSTS = {"worldskills.org"}
-FILE_HOSTS = {"worldskills.org", "api.worldskills.org"}
-DEFAULT_START = "https://worldskills.org/internal/"
-DEFAULT_PREFIXES = ["/internal"]
-
+API = "https://api.worldskills.org"
+CMS = "https://worldskills.org"
+INTERNAL_DOCS = f"{CMS}/internal/competition-documentation/"
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
     "Chrome/128.0.0.0 Safari/537.36"
 )
-
-SKIP_PARTS = (
-    "/logout",
-    "/login",
-    "/ccm/system/authentication",
-    "/ccm/system/captcha",
-    "/password/forgot",
-    "/registration/guests",
-)
-ASSET_PREFIXES = (
-    "/application/themes/",
-    "/node_modules/",
-    "/css/",
-    "/js/",
-    "/fonts/",
-    "/img/",
-)
-DROP_QUERY_KEYS = {"ccm_token", "ctask", "_token", "fbclid"}
-FILE_EXTENSIONS = {
-    ".pdf",
-    ".doc",
-    ".docx",
-    ".docm",
-    ".xls",
-    ".xlsx",
-    ".xlsm",
-    ".ppt",
-    ".pptx",
-    ".pps",
-    ".ppsx",
-    ".zip",
-    ".rar",
-    ".7z",
-    ".csv",
-    ".tsv",
-    ".txt",
-    ".rtf",
-    ".odt",
-    ".ods",
-    ".odp",
-    ".epub",
-    ".png",
-    ".jpg",
-    ".jpeg",
-    ".gif",
-    ".webp",
-    ".svg",
-    ".mp4",
-    ".mov",
-    ".mp3",
-    ".wav",
-}
-EXT_BY_TYPE = {
-    "application/pdf": ".pdf",
-    "application/msword": ".doc",
-    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": ".docx",
-    "application/vnd.ms-excel": ".xls",
-    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": ".xlsx",
-    "application/vnd.ms-powerpoint": ".ppt",
-    "application/vnd.openxmlformats-officedocument.presentationml.presentation": ".pptx",
-    "application/zip": ".zip",
-    "application/vnd.rar": ".rar",
-    "text/csv": ".csv",
-    "text/plain": ".txt",
-    "application/rtf": ".rtf",
-    "image/jpeg": ".jpg",
-    "image/png": ".png",
-    "image/gif": ".gif",
-    "image/webp": ".webp",
-    "image/svg+xml": ".svg",
-    "video/mp4": ".mp4",
-    "audio/mpeg": ".mp3",
-}
-HTML_TYPES = {"text/html", "application/xhtml+xml"}
-TEXT_LIMIT = 1_500_000
+TD_LANGS = ("en", "zh", "de", "es", "fr", "ja", "ko", "pt", "fi", "ru", "ar")
+MAX_BYTES = 512 * 1024 * 1024
 
 
 class LoginRequired(RuntimeError):
     pass
 
 
-def normalize_url(raw: str, base: str | None = None) -> str | None:
-    if not raw:
-        return None
-    raw = raw.strip()
-    if raw.startswith(("mailto:", "javascript:", "tel:", "data:")):
-        return None
-    absolute = urljoin(base or ORIGIN, raw)
-    parsed = urlparse(absolute)
-    if parsed.scheme not in {"http", "https"}:
-        return None
-    host = parsed.netloc.lower()
-    if host.startswith("www."):
-        host = host[4:]
-    if host not in FILE_HOSTS:
-        return None
-    path = unquote(parsed.path or "/")
-    if not path.startswith("/"):
-        path = "/" + path
-    suffix = Path(path).suffix.lower()
-    if suffix not in FILE_EXTENSIONS and path != "/":
-        path = path.rstrip("/") or "/"
-    pairs = []
-    for key, value in parse_qsl(parsed.query, keep_blank_values=True):
-        if key in DROP_QUERY_KEYS or key.startswith("utm_"):
-            continue
-        pairs.append((key, value))
-    pairs.sort()
-    query = urlencode(pairs, doseq=True)
-    return urlunparse(("https", host, path, "", query, ""))
-
-
-def path_in_prefixes(path: str, prefixes: list[str]) -> bool:
-    path = path or "/"
-    for prefix in prefixes:
-        item = prefix if prefix.startswith("/") else "/" + prefix
-        item = item.rstrip("/") or "/"
-        if path.rstrip("/") == item or path.startswith(item + "/"):
-            return True
-    return False
-
-
-def classify_url(url: str, prefixes: list[str]) -> str | None:
-    parsed = urlparse(url)
-    path = parsed.path or "/"
-    lower = path.lower()
-    host = parsed.netloc.lower()
-    if host == "api.worldskills.org":
-        if "/resources/download/" in lower or Path(lower).suffix in FILE_EXTENSIONS:
-            return "file"
-        return None
-    if host not in PAGE_HOSTS:
-        return None
-    if any(part in lower for part in SKIP_PARTS):
-        return None
-    if any(lower.startswith(prefix) for prefix in ASSET_PREFIXES):
-        return None
-    if "/application/files/" in lower or "/download_file/" in lower:
-        return "file"
-    suffix = Path(lower).suffix
-    if suffix in FILE_EXTENSIONS and suffix not in {".html", ".htm"}:
-        return "file"
-    if path_in_prefixes(path, prefixes):
-        return "page"
-    return None
+def text_of(value: Any) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, str):
+        return value
+    if isinstance(value, dict):
+        return str(value.get("text") or "")
+    return str(value)
 
 
 def safe_component(name: str) -> str:
-    name = unquote(name).replace("\x00", "")
-    name = name.replace("/", "_").replace("\\", "_")
-    name = re.sub(r'[<>:"|?*]', "_", name).strip(" .")
+    name = re.sub(r'[<>:"/\\|?*]', "_", name).replace("\x00", "").strip(" .")
     if name in {"", ".", ".."}:
         name = "_"
     encoded = name.encode("utf-8", errors="ignore")
@@ -205,32 +87,11 @@ def safe_component(name: str) -> str:
     return name
 
 
-def local_path_for(url: str, content_type: str, disposition_name: str | None, is_html: bool) -> Path:
+def canonical_url(url: str) -> str:
     parsed = urlparse(url)
-    parts = [safe_component(part) for part in parsed.path.split("/") if part not in {"", ".", ".."}]
-    if not parts:
-        parts = ["index.html"]
-    if parsed.netloc and parsed.netloc != "worldskills.org":
-        parts.insert(0, safe_component(parsed.netloc))
-    suffix = Path(parts[-1]).suffix.lower()
-    if is_html and suffix not in {".html", ".htm"}:
-        parts[-1] = parts[-1] + ".html"
-        suffix = ".html"
-    if not is_html and disposition_name:
-        wanted = safe_component(disposition_name)
-        if Path(wanted).suffix:
-            parts[-1] = wanted
-            suffix = Path(wanted).suffix.lower()
-    if not suffix:
-        extra = EXT_BY_TYPE.get(content_type, "")
-        if extra:
-            parts[-1] = parts[-1] + extra
-    if parsed.query:
-        digest = hashlib.sha1(parsed.query.encode()).hexdigest()[:10]
-        stem = Path(parts[-1]).stem
-        ext = Path(parts[-1]).suffix
-        parts[-1] = f"{stem}-{digest}{ext}"
-    return MIRROR.joinpath(*parts)
+    pairs = [(k, v) for k, v in parse_qsl(parsed.query, keep_blank_values=True) if k not in {"tkn", "ccm_token"}]
+    pairs.sort()
+    return urlunparse((parsed.scheme, parsed.netloc, parsed.path, "", urlencode(pairs, doseq=True), ""))
 
 
 def filename_from_disposition(header: str | None) -> str | None:
@@ -238,142 +99,95 @@ def filename_from_disposition(header: str | None) -> str | None:
         return None
     message = EmailMessage()
     message["content-disposition"] = header
-    name = message.get_filename()
-    return name or None
+    return message.get_filename()
 
 
 def content_type_of(response: httpx.Response) -> str:
-    raw = response.headers.get("content-type", "")
-    return raw.split(";", 1)[0].strip().lower()
-
-
-def is_html_type(content_type: str) -> bool:
-    return content_type in HTML_TYPES or content_type.startswith("text/html")
+    return (response.headers.get("content-type") or "").split(";", 1)[0].strip().lower()
 
 
 def looks_like_login(response: httpx.Response) -> bool:
-    checked = [response.url, *[item.url for item in response.history]]
-    for item in checked:
-        parsed = urlparse(str(item))
-        host = parsed.netloc.lower()
-        if host.endswith("auth.worldskills.org"):
-            return True
-        if parsed.path.rstrip("/") == "/login":
+    for item in [response.url, *[hist.url for hist in response.history]]:
+        host = urlparse(str(item)).netloc.lower()
+        path = urlparse(str(item)).path
+        if host.endswith("auth.worldskills.org") or path.rstrip("/") == "/login":
             return True
     return False
 
 
-def extract_links(html: str, page_url: str) -> list[str]:
-    soup = BeautifulSoup(html, "html.parser")
-    base_tag = soup.find("base", href=True)
-    base = urljoin(page_url, base_tag["href"]) if base_tag else page_url
-    found: list[str] = []
-    seen: set[str] = set()
-    for tag in soup.find_all(True):
-        for attr in ("href", "src", "data-href", "data-url", "data-file-url", "data-src"):
-            value = tag.get(attr)
-            if not isinstance(value, str):
-                continue
-            normalized = normalize_url(value, base)
-            if normalized and normalized not in seen:
-                seen.add(normalized)
-                found.append(normalized)
-    for match in re.findall(r"""(?:https://worldskills\.org)?(/application/files/[^"'\\\s<>]+)""", html):
-        normalized = normalize_url(match, page_url)
-        if normalized and normalized not in seen:
-            seen.add(normalized)
-            found.append(normalized)
-    for match in re.findall(r"https://api\.worldskills\.org/resources/download/[0-9/]+[^\"'\s<>]*", html):
-        normalized = normalize_url(match, page_url)
-        if normalized and normalized not in seen:
-            seen.add(normalized)
-            found.append(normalized)
-    return found
+def classified_path(info: Classified, filename: str) -> Path:
+    skill_dir = "未识别"
+    if info.skill_number and info.skill_name:
+        skill_dir = f"{info.skill_number} {info.skill_name}"
+    elif info.skill_number:
+        skill_dir = info.skill_number
+    parts = [
+        safe_component(skill_dir),
+        safe_component(info.edition_name),
+        safe_component(doc_folder(info.doc_key)),
+    ]
+    if info.stage:
+        parts.append(safe_component(info.stage))
+    parts.append(safe_component(lang_folder(info.lang_code)))
+    parts.append(safe_component(filename))
+    return ARCHIVE.joinpath(*parts)
 
 
-def html_title(html: str) -> str:
-    soup = BeautifulSoup(html, "html.parser")
-    if soup.title and soup.title.string:
-        return re.sub(r"\s+", " ", soup.title.string).strip()
-    heading = soup.find(["h1", "h2"])
-    if heading:
-        return re.sub(r"\s+", " ", heading.get_text(" ", strip=True)).strip()
-    return ""
+def load_token() -> str | None:
+    if TOKEN_PATH.exists():
+        value = TOKEN_PATH.read_text(encoding="utf-8").strip()
+        return value or None
+    return None
 
 
-def html_text(html: str) -> str:
-    soup = BeautifulSoup(html, "html.parser")
-    for tag in soup.find_all(["script", "style", "noscript"]):
-        tag.decompose()
-    text = soup.get_text("\n", strip=True)
-    text = re.sub(r"\n{3,}", "\n\n", text)
-    return text[:TEXT_LIMIT]
+def save_token(token: str) -> None:
+    SESSION_DIR.mkdir(parents=True, exist_ok=True)
+    TOKEN_PATH.write_text(token.strip() + "\n", encoding="utf-8")
+    os.chmod(TOKEN_PATH, 0o600)
 
 
-def ooxml_text(path: Path) -> str:
-    chunks: list[str] = []
-    with zipfile.ZipFile(path) as archive:
-        names = [
-            name
-            for name in archive.namelist()
-            if name.endswith(".xml")
-            and (
-                name.startswith("word/")
-                or name.startswith("ppt/slides/")
-                or name == "xl/sharedStrings.xml"
-                or name.startswith("xl/worksheets/")
-            )
-        ]
-        for name in names:
-            try:
-                root = ET.fromstring(archive.read(name))
-            except ET.ParseError:
-                continue
-            for node in root.iter():
-                if node.text and node.text.strip():
-                    chunks.append(node.text.strip())
-            if sum(len(item) for item in chunks) > TEXT_LIMIT:
-                break
-    return "\n".join(chunks)[:TEXT_LIMIT]
+def cookies_from_storage() -> httpx.Cookies:
+    cookies = httpx.Cookies()
+    if not STORAGE_STATE.exists():
+        return cookies
+    state = json.loads(STORAGE_STATE.read_text(encoding="utf-8"))
+    for item in state.get("cookies", []):
+        cookies.set(
+            item["name"],
+            item["value"],
+            domain=item.get("domain") or "worldskills.org",
+            path=item.get("path") or "/",
+        )
+    return cookies
 
 
-def pdf_text(path: Path) -> str:
-    from pypdf import PdfReader
+def make_client() -> httpx.Client:
+    token = load_token()
+    if not token:
+        raise LoginRequired("还没有登录令牌")
+    headers = {
+        "User-Agent": USER_AGENT,
+        "Accept": "application/json,application/pdf,*/*",
+        "Authorization": f"Bearer {token}",
+    }
+    return httpx.Client(
+        cookies=cookies_from_storage(),
+        headers=headers,
+        follow_redirects=True,
+        timeout=httpx.Timeout(120.0, connect=20.0),
+    )
 
-    reader = PdfReader(str(path))
-    chunks: list[str] = []
-    total = 0
-    for page in reader.pages:
-        piece = page.extract_text() or ""
-        if not piece:
-            continue
-        chunks.append(piece)
-        total += len(piece)
-        if total >= TEXT_LIMIT:
-            break
-    return "\n".join(chunks)[:TEXT_LIMIT]
 
-
-def write_text_sidecar(file_path: Path, content_type: str, html: str | None) -> Path | None:
+def api_get(client: httpx.Client, url: str) -> tuple[int, Any]:
+    response = client.get(url)
+    if looks_like_login(response):
+        raise LoginRequired(url)
+    if response.status_code == 401:
+        raise LoginRequired(url)
     try:
-        if html is not None:
-            body = html_text(html)
-        elif content_type == "application/pdf" or file_path.suffix.lower() == ".pdf":
-            body = pdf_text(file_path)
-        elif file_path.suffix.lower() in {".docx", ".xlsx", ".pptx"}:
-            body = ooxml_text(file_path)
-        else:
-            return None
+        return response.status_code, response.json()
     except Exception:
-        return None
-    if not body.strip():
-        return None
-    relative = file_path.relative_to(MIRROR)
-    target = TEXT_DIR / relative
-    target = target.with_suffix(target.suffix + ".txt")
-    target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(body, encoding="utf-8")
-    return target
+        return response.status_code, None
 
 
 def connect() -> sqlite3.Connection:
@@ -384,19 +198,22 @@ def connect() -> sqlite3.Connection:
     db.execute(
         """
         CREATE TABLE IF NOT EXISTS items (
-            url TEXT PRIMARY KEY,
+            key TEXT PRIMARY KEY,
+            url TEXT NOT NULL,
             state TEXT NOT NULL,
-            kind TEXT,
-            discovered_from TEXT,
-            http_status INTEGER,
-            content_type TEXT,
+            edition_code TEXT,
+            edition_name TEXT,
+            skill_number TEXT,
+            skill_name TEXT,
+            doc_type TEXT,
+            stage TEXT,
+            language TEXT,
+            filename TEXT,
             local_path TEXT,
-            text_path TEXT,
-            title TEXT,
+            http_status INTEGER,
             bytes INTEGER,
-            etag TEXT,
-            last_modified TEXT,
             error TEXT,
+            source TEXT,
             queued_at REAL,
             finished_at REAL
         )
@@ -406,96 +223,38 @@ def connect() -> sqlite3.Connection:
     return db
 
 
-def enqueue(db: sqlite3.Connection, url: str, kind: str, discovered_from: str | None) -> bool:
-    now = time.time()
+def enqueue(db: sqlite3.Connection, item: dict[str, Any]) -> bool:
     cursor = db.execute(
         """
-        INSERT INTO items (url, state, kind, discovered_from, queued_at)
-        VALUES (?, 'queued', ?, ?, ?)
-        ON CONFLICT(url) DO NOTHING
+        INSERT INTO items (
+            key, url, state, edition_code, edition_name, skill_number, skill_name,
+            doc_type, stage, language, filename, source, queued_at
+        ) VALUES (?, ?, 'queued', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(key) DO NOTHING
         """,
-        (url, kind, discovered_from, now),
+        (
+            item["key"],
+            item["url"],
+            item.get("edition_code"),
+            item.get("edition_name"),
+            item.get("skill_number"),
+            item.get("skill_name"),
+            item.get("doc_type"),
+            item.get("stage"),
+            item.get("language"),
+            item.get("filename"),
+            item.get("source"),
+            time.time(),
+        ),
     )
     return cursor.rowcount > 0
 
 
-def load_client() -> httpx.Client:
-    if not SESSION_PATH.exists():
-        raise SystemExit("还没有登录会话。请先运行：python sync.py login")
-    state = json.loads(SESSION_PATH.read_text(encoding="utf-8"))
-    cookies = httpx.Cookies()
-    for item in state.get("cookies", []):
-        domain = item.get("domain") or "worldskills.org"
-        cookies.set(item["name"], item["value"], domain=domain, path=item.get("path") or "/")
-    return httpx.Client(
-        cookies=cookies,
-        follow_redirects=True,
-        timeout=httpx.Timeout(60.0, connect=20.0),
-        headers={
-            "User-Agent": USER_AGENT,
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        },
-    )
-
-
-def fetch(client: httpx.Client, url: str, etag: str | None, last_modified: str | None) -> httpx.Response:
-    headers = {}
-    if etag:
-        headers["If-None-Match"] = etag
-    if last_modified:
-        headers["If-Modified-Since"] = last_modified
-    delay = 1.0
-    last_error: Exception | None = None
-    for attempt in range(3):
-        try:
-            response = client.get(url, headers=headers)
-            if response.status_code >= 500:
-                last_error = RuntimeError(f"HTTP {response.status_code}")
-                time.sleep(delay)
-                delay *= 2
-                continue
-            return response
-        except httpx.HTTPError as exc:
-            last_error = exc
-            time.sleep(delay)
-            delay *= 2
-    raise RuntimeError(str(last_error) if last_error else "请求失败")
-
-
-def remember_links(db: sqlite3.Connection, links: list[str], page_url: str, prefixes: list[str]) -> int:
-    added = 0
-    for link in links:
-        kind = classify_url(link, prefixes)
-        if kind and enqueue(db, link, kind, page_url):
-            added += 1
+def mark(db: sqlite3.Connection, key: str, **fields: Any) -> None:
+    fields["finished_at"] = time.time()
+    assignments = ", ".join(f"{column} = ?" for column in fields)
+    db.execute(f"UPDATE items SET {assignments} WHERE key = ?", (*fields.values(), key))
     db.commit()
-    return added
-
-
-def export_catalog(db: sqlite3.Connection) -> None:
-    rows = db.execute(
-        """
-        SELECT url, title, kind, bytes, local_path, content_type, state
-        FROM items
-        WHERE state != 'queued'
-        ORDER BY url
-        """
-    ).fetchall()
-    with CATALOG_CSV.open("w", encoding="utf-8-sig", newline="") as handle:
-        writer = csv.writer(handle)
-        writer.writerow(["网址", "标题", "类型", "大小字节", "本地路径", "内容类型", "状态"])
-        for row in rows:
-            writer.writerow(
-                [
-                    row["url"],
-                    row["title"] or "",
-                    row["kind"] or "",
-                    row["bytes"] or 0,
-                    row["local_path"] or "",
-                    row["content_type"] or "",
-                    row["state"],
-                ]
-            )
 
 
 def count_state(db: sqlite3.Connection, state: str) -> int:
@@ -503,246 +262,697 @@ def count_state(db: sqlite3.Connection, state: str) -> int:
     return int(row["n"])
 
 
-def mark(db: sqlite3.Connection, url: str, **fields: object) -> None:
-    fields["finished_at"] = time.time()
-    assignments = ", ".join(f"{key} = ?" for key in fields)
-    db.execute(f"UPDATE items SET {assignments} WHERE url = ?", (*fields.values(), url))
-    db.commit()
+def export_tables(db: sqlite3.Connection) -> None:
+    rows = db.execute("SELECT * FROM items ORDER BY edition_code, skill_number, doc_type, filename").fetchall()
+    with CATALOG_CSV.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(["届次", "技能编号", "技能", "类型", "阶段", "语言", "文件名", "本地路径", "状态", "字节", "网址"])
+        for row in rows:
+            writer.writerow(
+                [
+                    row["edition_name"],
+                    row["skill_number"] or "",
+                    row["skill_name"] or "",
+                    row["doc_type"] or "",
+                    row["stage"] or "",
+                    row["language"] or "",
+                    row["filename"] or "",
+                    row["local_path"] or "",
+                    row["state"],
+                    row["bytes"] or 0,
+                    row["url"],
+                ]
+            )
+    with FORBIDDEN_CSV.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(["届次", "技能", "类型", "说明", "网址"])
+        for row in db.execute("SELECT * FROM items WHERE state = 'forbidden'"):
+            writer.writerow([row["edition_name"], row["skill_name"] or row["skill_number"], row["doc_type"], row["error"], row["url"]])
+    with UNIDENTIFIED_CSV.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(["届次", "类型", "文件名", "网址"])
+        for row in db.execute("SELECT * FROM items WHERE skill_number IS NULL OR skill_number = ''"):
+            writer.writerow([row["edition_name"], row["doc_type"], row["filename"], row["url"]])
 
 
-def process_one(
+def queue_item(
     db: sqlite3.Connection,
-    client: httpx.Client,
-    row: sqlite3.Row,
-    prefixes: list[str],
-    max_bytes: int,
-) -> None:
+    *,
+    url: str,
+    info: Classified,
+    filename: str,
+    source: str,
+    extra_key: str = "",
+) -> bool:
+    if info.edition_code and not member_area_code(info.edition_code):
+        return False
+    if not info.edition_code:
+        info.edition_name = "未识别届次"
+    key = extra_key or canonical_url(url)
+    return enqueue(
+        db,
+        {
+            "key": key,
+            "url": url,
+            "edition_code": info.edition_code,
+            "edition_name": info.edition_name,
+            "skill_number": info.skill_number,
+            "skill_name": info.skill_name,
+            "doc_type": doc_folder(info.doc_key),
+            "stage": info.stage,
+            "language": lang_folder(info.lang_code),
+            "filename": filename,
+            "source": source,
+        },
+    )
+
+
+class SkillIndex:
+    def __init__(self) -> None:
+        self.by_event: dict[str, dict[str, str]] = {}
+        self.event_ids: dict[str, int] = {}
+        self.event_names: dict[int, str] = {}
+
+    def add(self, code: str, number: str, name: str, event_id: int | None = None) -> None:
+        padded = pad_skill(number)
+        if not padded or not name:
+            return
+        self.by_event.setdefault(code, {})[padded] = name
+        if event_id is not None:
+            self.event_ids[code] = event_id
+            self.event_names[event_id] = edition_name(code)
+
+    def name(self, code: str | None, number: str | None) -> str | None:
+        if not code or not number:
+            return None
+        return self.by_event.get(code, {}).get(pad_skill(number) or "")
+
+
+def skill_id_of(row: dict[str, Any]) -> int:
+    inner = row.get("skill") if isinstance(row.get("skill"), dict) else None
+    if inner and inner.get("id"):
+        return int(inner["id"])
+    return int(row["id"])
+
+
+def skill_fields(row: dict[str, Any]) -> tuple[int, str | None, str]:
+    inner = row.get("skill") if isinstance(row.get("skill"), dict) else row
+    skill_id = int(inner.get("id") or row["id"])
+    number = pad_skill(str(inner.get("number") or row.get("number") or ""))
+    name = text_of(inner.get("name") or row.get("name"))
+    return skill_id, number, name
+
+
+def load_events(client: httpx.Client, skills: SkillIndex) -> None:
+    offset = 0
+    seen: set[int] = set()
+    while True:
+        status, data = api_get(client, f"{API}/events?type=competition&limit=100&offset={offset}")
+        if status != 200 or not data:
+            break
+        items = data.get("events") or []
+        if not items:
+            break
+        ids = {event["id"] for event in items}
+        if ids & seen:
+            break
+        seen |= ids
+        for event in items:
+            code = event.get("code") or ""
+            if not member_area_code(code):
+                continue
+            skills.event_ids[code] = event["id"]
+            skills.event_names[event["id"]] = text_of(event.get("name")) or edition_name(code)
+        if len(items) < 100:
+            break
+        offset += 100
+    extras = {
+        "WSC2022": 536,
+        "WSC2022SE": 594,
+        "WSC2001": 3,
+        "WSC2003": 4,
+        "WSC2005": 5,
+        "WSC2007": 6,
+        "WSC2009": 7,
+        "WSC2011": 8,
+        "WSC2013": 9,
+        "WSC2015": 10,
+        "WSC2017": 316,
+        "WSC2019": 364,
+        "WSC2024": 579,
+        "WSC2026": 611,
+    }
+    for code, event_id in extras.items():
+        skills.event_ids.setdefault(code, event_id)
+        skills.event_names.setdefault(event_id, edition_name(code))
+
+
+def load_skill_maps(client: httpx.Client, skills: SkillIndex) -> None:
+    for code, event_id in list(skills.event_ids.items()):
+        status, data = api_get(client, f"{API}/skillman/skills?event={event_id}")
+        rows = []
+        if status == 200 and data:
+            rows = data.get("skills") or []
+        if not rows:
+            status, data = api_get(client, f"{API}/events/{event_id}/skills?limit=200")
+            if status == 200 and data:
+                rows = data.get("skills") or []
+        for skill in rows:
+            number = pad_skill(str(skill.get("number") or ""))
+            name = text_of(skill.get("name"))
+            if number and name:
+                skills.add(code, number, name, event_id)
+
+
+def iter_resources(client: httpx.Client, type_id: int, tag: str):
+    offset = 0
+    limit = 50
+    while True:
+        status, data = api_get(
+            client,
+            f"{API}/resources?type={type_id}&tags={tag}&limit={limit}&offset={offset}",
+        )
+        if status in {400, 403}:
+            return
+        if status != 200 or not data:
+            return
+        rows = data.get("resources") or []
+        if not rows:
+            return
+        yield from rows
+        if len(rows) < limit:
+            return
+        offset += limit
+        time.sleep(0.15)
+
+
+def latest_version(resource: dict[str, Any]) -> dict[str, Any] | None:
+    versions = resource.get("versions") or []
+    if not versions:
+        return None
+    return sorted(versions, key=lambda item: item.get("date") or "", reverse=True)[0]
+
+
+def discover_resources(db: sqlite3.Connection, client: httpx.Client, skills: SkillIndex) -> int:
+    added = 0
+    for code in MEMBER_AREA_CODES:
+        for type_id, doc_key in RESOURCE_TYPE_TO_DOC.items():
+            for row in iter_resources(client, type_id, code):
+                name = text_of(row.get("name"))
+                tags = row.get("tags") or []
+                filename = name or f"resource-{row['id']}"
+                url = f"{API}/resources/download/{row['id']}"
+                info = classify(
+                    filename=filename,
+                    tags=tags,
+                    doc_key=doc_key,
+                    edition_hint=code,
+                )
+                if info.skill_number:
+                    info.skill_name = skills.name(code, info.skill_number)
+                info.edition_code = code
+                info.edition_name = edition_name(code)
+                info.doc_key = doc_key
+                if queue_item(db, url=url, info=info, filename=filename, source="resources"):
+                    added += 1
+        db.commit()
+        print(f"资源目录 {code} 已加入队列")
+    return added
+
+
+def probe_td_langs(client: httpx.Client, document_id: int, skill_id: int) -> list[str]:
+    found: list[str] = []
+    for lang in TD_LANGS:
+        url = f"{API}/skillman/documents/{document_id}/skills/{skill_id}/pdf?l={lang}"
+        response = client.get(url, headers={"Range": "bytes=0-2047"})
+        if response.status_code == 401:
+            raise LoginRequired(url)
+        ctype = content_type_of(response)
+        filename = (filename_from_disposition(response.headers.get("content-disposition")) or "").lower()
+        if response.status_code in {200, 206} and "pdf" in ctype:
+            if lang == "en" or f"_{lang}." in filename:
+                found.append(lang)
+        time.sleep(0.2)
+    return found or ["en"]
+
+
+def discover_skillman(db: sqlite3.Connection, client: httpx.Client, skills: SkillIndex) -> int:
+    added = 0
+    for code, event_id in skills.event_ids.items():
+        status, data = api_get(client, f"{API}/skillman/documents/events/{event_id}")
+        if status in {400, 403}:
+            info = classify(edition_hint=code, doc_key="technical-description")
+            queue_item(
+                db,
+                url=f"{API}/skillman/documents/events/{event_id}",
+                info=info,
+                filename="documents.json",
+                source="skillman",
+                extra_key=f"forbidden:skillman-docs:{event_id}",
+            )
+            mark(db, f"forbidden:skillman-docs:{event_id}", state="forbidden", error="没有权限查看该届技能管理文档", http_status=status)
+            continue
+        if status != 200 or not data:
+            continue
+        documents = data.get("documents") or []
+        for document in documents:
+            doc_id = document["id"]
+            doc_name = text_of(document.get("name")).lower()
+            doc_key = "technical-description"
+            if "management plan" in doc_name or "smp" in doc_name:
+                doc_key = "skill-management-plan"
+            status, skill_data = api_get(client, f"{API}/skillman/skills?event={event_id}")
+            if status != 200 or not skill_data:
+                continue
+            skill_rows = skill_data.get("skills") or []
+            langs = ["en"]
+            if skill_rows:
+                first_id = skill_id_of(skill_rows[0])
+                langs = probe_td_langs(client, doc_id, first_id)
+                print(f"{code} 技术描述语言：{', '.join(langs)}")
+            for skill in skill_rows:
+                skill_id, number, name = skill_fields(skill)
+                if number and name:
+                    skills.add(code, number, name, event_id)
+                for lang in langs:
+                    filename = f"{code}_TD{number or skill_id}_{lang}.pdf"
+                    url = f"{API}/skillman/documents/{doc_id}/skills/{skill_id}/pdf?l={lang}"
+                    info = classify(
+                        filename=filename,
+                        doc_key=doc_key,
+                        lang_code=lang,
+                        edition_hint=code,
+                        skill_number=number,
+                        skill_name=name or skills.name(code, number),
+                    )
+                    if queue_item(db, url=url, info=info, filename=filename, source="skillman"):
+                        added += 1
+            db.commit()
+    return added
+
+
+def discover_il(db: sqlite3.Connection, client: httpx.Client, skills: SkillIndex) -> int:
+    added = 0
+    status, data = api_get(client, f"{API}/il/events")
+    if status != 200 or not data:
+        return 0
+    for event in data.get("events") or []:
+        event_id = event["id"]
+        code = next((item for item, stored in skills.event_ids.items() if stored == event_id), None)
+        if not code:
+            name = text_of(event.get("name"))
+            code = next((item for item, title in EDITION_NAMES.items() if title == name), None)
+        if not code or not member_area_code(code):
+            continue
+        list_status, lists = api_get(client, f"{API}/il/events/{event_id}/lists")
+        if list_status in {400, 403}:
+            info = classify(edition_hint=code, doc_key="infrastructure-list")
+            key = f"forbidden:il:{event_id}"
+            queue_item(db, url=f"{API}/il/events/{event_id}/lists", info=info, filename="lists.json", source="il", extra_key=key)
+            mark(db, key, state="forbidden", error="没有权限查看该届基础设施清单", http_status=list_status)
+            continue
+        if list_status != 200 or not lists:
+            continue
+        for item in lists.get("lists") or []:
+            title = text_of(item.get("name"))
+            number, skill_name = parse_list_title(title)
+            if number and skill_name:
+                skills.add(code, number, skill_name, event_id)
+            filename = f"{code}_IL{number or item['id']}.xlsx"
+            url = f"{API}/il/reports/requested/lists/{event_id}/{item['id']}?s=xlsx"
+            info = classify(
+                filename=filename,
+                doc_key="infrastructure-list",
+                edition_hint=code,
+                skill_number=number,
+                skill_name=skill_name or skills.name(code, number),
+            )
+            if queue_item(db, url=url, info=info, filename=filename, source="il"):
+                added += 1
+        db.commit()
+        print(f"基础设施清单 {code} 已加入队列")
+    return added
+
+
+def discover_cms(db: sqlite3.Connection, client: httpx.Client, skills: SkillIndex) -> int:
+    added = 0
+    try:
+        response = client.get(INTERNAL_DOCS, headers={"Accept": "text/html"})
+    except httpx.HTTPError:
+        return 0
+    if looks_like_login(response) or response.status_code >= 400:
+        return 0
+    soup = BeautifulSoup(response.text, "html.parser")
+    edition_links = []
+    for anchor in soup.select("a[href]"):
+        href = anchor.get("href") or ""
+        match = re.search(r"/internal/competition-documentation/([^/]+)/?$", href)
+        if match and match.group(1) in CMS_SLUG_TO_CODE:
+            edition_links.append((CMS_SLUG_TO_CODE[match.group(1)], href if href.startswith("http") else CMS + href))
+    seen_pages: set[str] = set()
+    for code, edition_url in edition_links:
+        page = client.get(edition_url, headers={"Accept": "text/html"})
+        if page.status_code != 200:
+            continue
+        edition_soup = BeautifulSoup(page.text, "html.parser")
+        section_urls = []
+        for anchor in edition_soup.select("a[href]"):
+            href = anchor.get("href") or ""
+            for section, doc_key in CMS_SECTION_TO_DOC.items():
+                if f"/{section}" in href:
+                    url = href if href.startswith("http") else urlparse(edition_url)._replace(path=href).geturl() if href.startswith("/") else edition_url.rstrip("/") + "/" + href
+                    if href.startswith("/"):
+                        url = CMS + href
+                    elif not href.startswith("http"):
+                        url = edition_url.rstrip("/") + "/" + href
+                    section_urls.append((doc_key, url.split("?")[0]))
+        for doc_key, section_url in {item for item in section_urls}:
+            if section_url in seen_pages:
+                continue
+            seen_pages.add(section_url)
+            section_page = client.get(section_url, headers={"Accept": "text/html"})
+            if section_page.status_code != 200:
+                if section_page.status_code >= 500:
+                    info = classify(edition_hint=code, doc_key=doc_key)
+                    key = f"missing:{section_url}"
+                    if queue_item(db, url=section_url, info=info, filename="page.html", source="cms", extra_key=key):
+                        mark(db, key, state="error", http_status=section_page.status_code, error=f"栏目打开失败 HTTP {section_page.status_code}")
+                continue
+            html = BeautifulSoup(section_page.text, "html.parser")
+            for anchor in html.select("a[href]"):
+                href = anchor.get("href") or ""
+                if "resources/download/" not in href and not re.search(r"\.(pdf|zip|docx?|xlsx?)$", href, re.I):
+                    continue
+                url = href if href.startswith("http") else CMS + href
+                filename = (anchor.get_text(" ", strip=True) or Path(urlparse(url).path).name or "file.bin")
+                info = classify(
+                    filename=filename,
+                    doc_key=doc_key,
+                    edition_hint=code,
+                    skill_name=None,
+                )
+                if info.skill_number:
+                    info.skill_name = skills.name(code, info.skill_number)
+                info.edition_code = code
+                info.edition_name = edition_name(code)
+                if queue_item(db, url=canonical_url(url), info=info, filename=filename, source="cms"):
+                    added += 1
+            time.sleep(0.2)
+        db.commit()
+    return added
+
+
+def discover_sample(db: sqlite3.Connection, client: httpx.Client) -> None:
+    skills = SkillIndex()
+    load_events(client, skills)
+    load_skill_maps(client, skills)
+    status, data = api_get(client, f"{API}/resources?type=7&tags=WSC2026&limit=1")
+    rows = (data or {}).get("resources") or [] if status == 200 else []
+    if rows:
+        row = rows[0]
+        status, detail = api_get(client, f"{API}/resources/{row['id']}")
+        resource = detail if status == 200 and isinstance(detail, dict) else row
+        name = text_of(resource.get("name") or row.get("name"))
+        version = latest_version(resource) if isinstance(resource, dict) else None
+        translation = ((version or {}).get("translations") or [None])[0]
+        filename = name
+        url = f"{API}/resources/download/{row['id']}"
+        lang = None
+        if isinstance(translation, dict):
+            lang = (translation.get("lang_code") or "").split("_")[0].lower() or None
+            filename = translation.get("filename") or name
+            links = translation.get("links") or []
+            download = next((link["href"] for link in links if link.get("rel") == "download"), None)
+            if download:
+                url = canonical_url(download)
+        info = classify(filename=filename, tags=resource.get("tags") or row.get("tags"), doc_key="test-project", lang_code=lang, edition_hint="WSC2026")
+        info.skill_name = skills.name("WSC2026", info.skill_number)
+        info.edition_code = "WSC2026"
+        info.edition_name = edition_name("WSC2026")
+        queue_item(db, url=url, info=info, filename=filename, source="resources")
+    event_id = skills.event_ids.get("WSC2026", 611)
+    status, data = api_get(client, f"{API}/skillman/documents/events/{event_id}")
+    if status == 200 and data:
+        documents = data.get("documents") or []
+        if documents:
+            doc_id = documents[0]["id"]
+            _, skill_data = api_get(client, f"{API}/skillman/skills?event={event_id}")
+            skill_rows = (skill_data or {}).get("skills") or []
+            target = next((item for item in skill_rows if str(skill_fields(item)[1]) == "33"), skill_rows[0] if skill_rows else None)
+            if target:
+                skill_id, number, name = skill_fields(target)
+                filename = f"WSC2026_TD{number or skill_id}_en.pdf"
+                url = f"{API}/skillman/documents/{doc_id}/skills/{skill_id}/pdf?l=en"
+                info = classify(filename=filename, doc_key="technical-description", lang_code="en", edition_hint="WSC2026", skill_number=number, skill_name=name)
+                queue_item(db, url=url, info=info, filename=filename, source="skillman")
+    _, lists = api_get(client, f"{API}/il/events/{event_id}/lists")
+    if lists:
+        item = next((entry for entry in (lists.get("lists") or []) if str(text_of(entry.get("name"))).startswith("33 ")), (lists.get("lists") or [None])[0])
+        if item:
+            title = text_of(item.get("name"))
+            number, skill_name = parse_list_title(title)
+            filename = f"WSC2026_IL{number or item['id']}.xlsx"
+            url = f"{API}/il/reports/requested/lists/{event_id}/{item['id']}?s=xlsx"
+            info = classify(filename=filename, doc_key="infrastructure-list", edition_hint="WSC2026", skill_number=number, skill_name=skill_name)
+            queue_item(db, url=url, info=info, filename=filename, source="il")
+    db.commit()
+    print(f"样例队列 {count_state(db, 'queued')} 个文件")
+
+
+def discover(db: sqlite3.Connection, client: httpx.Client) -> None:
+    skills = SkillIndex()
+    print("正在读取赛事和技能对照…")
+    load_events(client, skills)
+    load_skill_maps(client, skills)
+    print(f"已对照 {len(skills.event_ids)} 届赛事的技能表")
+    added = 0
+    added += discover_resources(db, client, skills)
+    added += discover_skillman(db, client, skills)
+    added += discover_il(db, client, skills)
+    added += discover_cms(db, client, skills)
+    db.commit()
+    print(f"新加入队列 {added} 个文件。当前队列 {count_state(db, 'queued')}。")
+
+
+def is_binary_ok(response: httpx.Response) -> bool:
+    ctype = content_type_of(response)
+    if response.status_code != 200:
+        return False
+    if "json" in ctype or "text/html" in ctype:
+        return False
+    return True
+
+
+def process_one(db: sqlite3.Connection, client: httpx.Client, row: sqlite3.Row, max_bytes: int) -> None:
     url = row["url"]
-    response = fetch(client, url, row["etag"], row["last_modified"])
-    if looks_like_login(response):
-        db.execute("UPDATE items SET state = 'queued' WHERE url = ?", (url,))
+    response = None
+    last_error = None
+    for attempt in range(3):
+        try:
+            response = client.get(url)
+            break
+        except httpx.HTTPError as exc:
+            last_error = exc
+            time.sleep(2 * (attempt + 1))
+    if response is None:
+        mark(db, row["key"], state="error", error=str(last_error)[:500])
+        print(f"出错  {row['filename']}  {last_error}")
+        return
+    if looks_like_login(response) or response.status_code == 401:
+        db.execute("UPDATE items SET state = 'queued' WHERE key = ?", (row["key"],))
         db.commit()
         raise LoginRequired(url)
-    if response.status_code == 304 and row["local_path"]:
-        saved = ROOT / row["local_path"]
-        added = 0
-        if row["kind"] == "page" and saved.exists():
-            added = remember_links(db, extract_links(saved.read_text(encoding="utf-8", errors="replace"), url), url, prefixes)
-        mark(db, url, state="done", http_status=304)
-        print(f"未变化  新链接 {added}  {url}")
+    if response.status_code in {400, 403}:
+        body = ""
+        try:
+            body = (response.json() or {}).get("user_msg") or ""
+        except Exception:
+            body = ""
+        mark(db, row["key"], state="forbidden", http_status=response.status_code, error=body or "没有权限")
+        print(f"无权限  {row['filename']}  {row['edition_name']}")
         return
     if response.status_code == 404:
-        mark(db, url, state="missing", http_status=404, error="找不到")
-        print(f"找不到  {url}")
+        mark(db, row["key"], state="missing", http_status=404, error="找不到")
+        print(f"找不到  {row['filename']}")
         return
-    if response.status_code >= 400:
-        mark(db, url, state="error", http_status=response.status_code, error=f"HTTP {response.status_code}")
-        print(f"失败 {response.status_code}  {url}")
-        return
-
-    content_type = content_type_of(response)
-    html_page = is_html_type(content_type)
-    body = response.content
-    if not html_page and len(body) > max_bytes:
+    if response.status_code >= 400 or not is_binary_ok(response):
         mark(
             db,
-            url,
-            state="skipped",
+            row["key"],
+            state="error",
             http_status=response.status_code,
-            content_type=content_type,
-            bytes=len(body),
-            error=f"大于 {max_bytes} 字节，已跳过",
+            error=f"HTTP {response.status_code} {content_type_of(response)}",
         )
-        print(f"跳过过大文件 {len(body)} 字节  {url}")
+        print(f"失败 {response.status_code}  {row['filename']}")
         return
-
-    disposition_name = filename_from_disposition(response.headers.get("content-disposition"))
-    target = local_path_for(url, content_type, disposition_name, html_page)
+    data = response.content
+    if len(data) > max_bytes:
+        mark(db, row["key"], state="skipped", http_status=response.status_code, bytes=len(data), error=f"大于 {max_bytes} 字节")
+        print(f"跳过过大文件 {len(data)}  {row['filename']}")
+        return
+    filename = row["filename"] or "file.bin"
+    disposition = filename_from_disposition(response.headers.get("content-disposition"))
+    if disposition and not disposition.startswith("report_requested"):
+        filename = disposition
+    skill_dir = "未识别"
+    if row["skill_number"] and row["skill_name"]:
+        skill_dir = f"{row['skill_number']} {row['skill_name']}"
+    elif row["skill_number"]:
+        skill_dir = row["skill_number"]
+    chunks = [
+        safe_component(skill_dir),
+        safe_component(row["edition_name"] or "未识别届次"),
+        safe_component(row["doc_type"] or "资源"),
+    ]
+    if row["stage"]:
+        chunks.append(safe_component(row["stage"]))
+    chunks.append(safe_component(row["language"] or "未标注"))
+    chunks.append(safe_component(filename))
+    target = ARCHIVE.joinpath(*chunks)
     target.parent.mkdir(parents=True, exist_ok=True)
-    if html_page:
-        text = response.text
-        target.write_text(text, encoding="utf-8")
-        title = html_title(text)
-        text_path = write_text_sidecar(target, content_type, text)
-        added = remember_links(db, extract_links(text, str(response.url)), url, prefixes)
-    else:
-        target.write_bytes(body)
-        title = Path(disposition_name).stem if disposition_name else target.stem
-        text_path = write_text_sidecar(target, content_type, None)
-        added = 0
-
-    relative = target.relative_to(ROOT).as_posix()
-    text_relative = text_path.relative_to(ROOT).as_posix() if text_path else None
+    target.write_bytes(data)
     mark(
         db,
-        url,
+        row["key"],
         state="done",
-        kind="page" if html_page else "file",
+        filename=filename,
+        local_path=target.relative_to(ROOT).as_posix(),
         http_status=response.status_code,
-        content_type=content_type,
-        local_path=relative,
-        text_path=text_relative,
-        title=title,
-        bytes=len(body),
-        etag=response.headers.get("etag"),
-        last_modified=response.headers.get("last-modified"),
+        bytes=len(data),
         error=None,
     )
-    label = "页面" if html_page else "文件"
-    print(f"{label} {response.status_code}  {len(body)} 字节  新链接 {added}  {url}")
-
-
-def seed(db: sqlite3.Connection, starts: list[str], prefixes: list[str]) -> None:
-    for start in starts:
-        normalized = normalize_url(start)
-        if not normalized:
-            raise SystemExit(f"无法识别起始网址：{start}")
-        kind = classify_url(normalized, prefixes) or "page"
-        enqueue(db, normalized, kind, None)
-    db.commit()
+    print(f"已保存 {len(data)} 字节  {target.relative_to(ARCHIVE)}")
 
 
 def download(args: argparse.Namespace) -> None:
-    prefixes = args.prefix or DEFAULT_PREFIXES
-    starts = args.start or [DEFAULT_START]
     db = connect()
+    db.execute("UPDATE items SET state = 'queued' WHERE state = 'working'")
     if args.retry_errors:
-        db.execute("UPDATE items SET state = 'queued' WHERE state = 'error'")
-    if args.refresh_pages:
-        db.execute("UPDATE items SET state = 'queued' WHERE state = 'done' AND kind = 'page'")
-        db.commit()
-    seed(db, starts, prefixes)
-    queued = count_state(db, "queued")
-    print(f"起始页面：{', '.join(starts)}")
-    print(f"只沿着这些路径继续翻页：{', '.join(prefixes)}")
-    print(f"保存位置：{MIRROR}")
-    print(f"当前队列：{queued}。已保存过的地址会跳过，中断后可再次运行接着下。")
-    client = load_client()
-    seen_this_run = 0
+        db.execute("UPDATE items SET state = 'queued' WHERE state IN ('error', 'missing')")
+    db.commit()
+    client = make_client()
     try:
+        if args.sample:
+            discover_sample(db, client)
+            sample_download(db, client, args.max_bytes)
+            export_tables(db)
+            return
+        if args.refresh or (count_state(db, "queued") + count_state(db, "done") < 50):
+            discover(db, client)
+        else:
+            print("继续未完成的队列。若要重新扫描网站，请加 --refresh")
+        queued = count_state(db, "queued")
+        print(f"队列 {queued}。保存位置：{ARCHIVE}")
+        seen = 0
         while True:
-            if args.max and seen_this_run >= args.max:
-                print(f"已达到本次上限 {args.max}，停止。再次运行会从队列继续。")
+            if args.max and seen >= args.max:
+                print(f"已达到本次上限 {args.max}")
                 break
-            row = db.execute(
-                "SELECT * FROM items WHERE state = 'queued' ORDER BY queued_at, url LIMIT 1"
-            ).fetchone()
+            row = db.execute("SELECT * FROM items WHERE state = 'queued' ORDER BY queued_at, key LIMIT 1").fetchone()
             if row is None:
                 break
-            db.execute("UPDATE items SET state = 'working' WHERE url = ?", (row["url"],))
+            db.execute("UPDATE items SET state = 'working' WHERE key = ?", (row["key"],))
             db.commit()
             try:
-                process_one(db, client, row, prefixes, args.max_bytes)
+                process_one(db, client, row, args.max_bytes)
             except LoginRequired:
                 db.execute("UPDATE items SET state = 'queued' WHERE state = 'working'")
                 db.commit()
                 raise
             except Exception as exc:
-                mark(db, row["url"], state="error", error=str(exc)[:500])
-                print(f"出错  {row['url']}  {exc}")
-            else:
-                seen_this_run += 1
+                mark(db, row["key"], state="error", error=str(exc)[:500])
+                print(f"出错  {row['filename']}  {exc}")
+            seen += 1
+            if seen % 20 == 0:
+                export_tables(db)
+                print(f"进度 已保存 {count_state(db, 'done')}，队列 {count_state(db, 'queued')}")
             time.sleep(args.delay)
     finally:
         db.execute("UPDATE items SET state = 'queued' WHERE state = 'working'")
         db.commit()
-        export_catalog(db)
+        export_tables(db)
         client.close()
         print(
-            "完成统计："
-            f"页面/文件 {count_state(db, 'done')}，"
-            f"队列剩余 {count_state(db, 'queued')}，"
+            "完成："
+            f"已保存 {count_state(db, 'done')}，"
+            f"队列 {count_state(db, 'queued')}，"
+            f"无权限 {count_state(db, 'forbidden')}，"
             f"失败 {count_state(db, 'error')}，"
-            f"找不到 {count_state(db, 'missing')}，"
-            f"跳过 {count_state(db, 'skipped')}"
+            f"找不到 {count_state(db, 'missing')}"
         )
-        print(f"目录：{CATALOG_CSV}")
-        print("搜索示例：python sync.py search 基础设施")
+        print(f"总表：{CATALOG_CSV}")
+
+
+def sample_download(db: sqlite3.Connection, client: httpx.Client, max_bytes: int) -> None:
+    wanted: list[str] = []
+    for source, doc in (("resources", "试题"), ("skillman", "技术描述"), ("il", "基础设施清单")):
+        row = db.execute(
+            "SELECT key FROM items WHERE state IN ('queued', 'done') AND source = ? AND doc_type = ? ORDER BY state DESC, queued_at LIMIT 1",
+            (source, doc),
+        ).fetchone()
+        if row:
+            wanted.append(row["key"])
+    print(f"样例下载 {len(wanted)} 个文件")
+    for key in wanted:
+        row = db.execute("SELECT * FROM items WHERE key = ?", (key,)).fetchone()
+        if not row:
+            continue
+        if row["state"] == "done" and row["local_path"] and (ROOT / row["local_path"]).exists():
+            print(f"样例已存在  {row['local_path']}")
+            continue
+        db.execute("UPDATE items SET state = 'working' WHERE key = ?", (key,))
+        db.commit()
+        process_one(db, client, row, max_bytes)
 
 
 def login() -> None:
     try:
         from playwright.sync_api import sync_playwright
     except ImportError as exc:
-        raise SystemExit(
-            "缺少浏览器组件。请先执行：\n"
-            "  python3 -m pip install -r requirements.txt\n"
-            "  python3 -m playwright install chromium"
-        ) from exc
+        raise SystemExit("请先安装依赖：.venv/bin/pip install -r requirements.txt") from exc
 
-    SESSION_PATH.parent.mkdir(parents=True, exist_ok=True)
-    print("即将打开浏览器。请用你自己的 WorldSkills 账号登录。")
-    print("进入会员页面后，回到这个终端按回车。脚本只保存登录会话，不保存密码。")
+    SESSION_DIR.mkdir(parents=True, exist_ok=True)
+    profile = SESSION_DIR / "chrome"
+    print("即将打开浏览器。请用你自己的账号登录会员区。")
+    print("看到 Member Area 后，脚本会继续打开技能管理和基础设施清单并保存会话。")
     with sync_playwright() as playwright:
+        context = playwright.chromium.launch_persistent_context(
+            str(profile),
+            channel="chrome",
+            headless=False,
+            accept_downloads=True,
+        )
+        page = context.pages[0] if context.pages else context.new_page()
+        page.goto("https://worldskills.org/internal/", wait_until="domcontentloaded")
         try:
-            browser = playwright.chromium.launch(headless=False, channel="chrome")
-        except Exception:
-            browser = playwright.chromium.launch(headless=False)
-        context = browser.new_context()
-        page = context.new_page()
-        page.goto(DEFAULT_START, wait_until="domcontentloaded")
-        input("登录完成后按回车继续… ")
-        context.storage_state(path=str(SESSION_PATH))
-        browser.close()
-    os.chmod(SESSION_PATH, 0o600)
-    client = load_client()
+            page.wait_for_url(re.compile(r"https://worldskills\.org/internal"), timeout=300_000)
+            page.wait_for_selector("text=Member Area", timeout=300_000)
+        except Exception as exc:
+            context.close()
+            raise SystemExit("登录超时。请再次运行 python sync.py login。") from exc
+        for url in (
+            "https://skill-management.worldskills.org/",
+            "https://il.worldskills.org/",
+        ):
+            page.goto(url, wait_until="domcontentloaded")
+            page.wait_for_timeout(2500)
+            token = page.evaluate("() => sessionStorage.getItem('access_token')")
+            if token:
+                save_token(token)
+        context.storage_state(path=str(STORAGE_STATE))
+        os.chmod(STORAGE_STATE, 0o600)
+        context.close()
+    if not load_token():
+        raise SystemExit("没有拿到接口令牌。请确认技能管理页面已打开后再试。")
+    client = make_client()
     try:
-        response = client.get(DEFAULT_START)
+        status, data = api_get(client, f"{API}/auth/users/loggedIn")
     finally:
         client.close()
-    if looks_like_login(response) or response.status_code >= 400:
-        SESSION_PATH.unlink(missing_ok=True)
-        raise SystemExit("这次登录没有进入会员区。请再运行一次 python sync.py login。")
-    title = html_title(response.text)
-    print(f"登录有效。当前页面：{title or response.url}")
-    print("下一步：python sync.py download")
-
-
-def search(keyword: str, limit: int) -> None:
-    if not DB_PATH.exists():
-        raise SystemExit("还没有目录。请先运行 python sync.py download。")
-    db = connect()
-    rows = db.execute(
-        """
-        SELECT url, title, local_path, text_path
-        FROM items
-        WHERE state = 'done'
-        ORDER BY url
-        """
-    ).fetchall()
-    needle = keyword.casefold()
-    hits = 0
-    for row in rows:
-        title = row["title"] or ""
-        snippet = ""
-        matched = needle in title.casefold()
-        text_path = row["text_path"]
-        if text_path:
-            path = ROOT / text_path
-            if path.exists():
-                body = path.read_text(encoding="utf-8", errors="replace")
-                lowered = body.casefold()
-                index = lowered.find(needle)
-                if index >= 0:
-                    matched = True
-                    start = max(0, index - 40)
-                    stop = min(len(body), index + len(keyword) + 60)
-                    snippet = re.sub(r"\s+", " ", body[start:stop]).strip()
-        if not matched:
-            continue
-        hits += 1
-        print(row["local_path"] or row["url"])
-        if title:
-            print(f"  标题：{title}")
-        if snippet:
-            print(f"  ……{snippet}……")
-        print(f"  {row['url']}")
-        if hits >= limit:
-            break
-    if hits == 0:
-        print(f"没有找到「{keyword}」。")
-    else:
-        print(f"显示 {hits} 条。")
+    if status != 200:
+        raise SystemExit("登录会话无效，请重新运行 python sync.py login。")
+    print(f"登录有效。当前用户：{text_of((data or {}).get('first_name'))} {text_of((data or {}).get('last_name'))}".strip())
+    print("下一步：python sync.py download --sample")
 
 
 def show_status() -> None:
@@ -750,102 +960,84 @@ def show_status() -> None:
         print("还没有下载记录。")
         return
     db = connect()
-    for state, label in (
+    labels = (
         ("done", "已保存"),
         ("queued", "队列中"),
+        ("forbidden", "无权限"),
         ("error", "失败"),
         ("missing", "找不到"),
         ("skipped", "已跳过"),
-    ):
+    )
+    for state, label in labels:
         print(f"{label}：{count_state(db, state)}")
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(
-        description="用你自己的会员登录，把 WorldSkills 会员区里能打开的页面和文件保存到本地，并按关键词搜索。",
-    )
+    parser = argparse.ArgumentParser(description="把 WorldSkills 会员区竞赛资料按技能自动归档")
     sub = parser.add_subparsers(dest="command", required=True)
-
-    sub.add_parser("login", help="打开浏览器，用你的账号登录一次")
-
-    download_parser = sub.add_parser("download", help="下载会员区页面和其中的文件")
-    download_parser.add_argument("--start", action="append", help="起始网址，可重复。默认是会员区首页")
-    download_parser.add_argument(
-        "--prefix",
-        action="append",
-        help="继续翻页的路径前缀，可重复。默认只跟 /internal，避免把整个公开网站都抓下来",
-    )
-    download_parser.add_argument("--delay", type=float, default=1.0, help="每次请求间隔秒数，默认 1")
-    download_parser.add_argument("--max", type=int, default=0, help="本次最多处理多少个地址，0 表示不限")
-    download_parser.add_argument(
-        "--max-bytes",
-        type=int,
-        default=512 * 1024 * 1024,
-        help="单个非网页文件的大小上限，默认 512MB",
-    )
-    download_parser.add_argument("--retry-errors", action="store_true", help="把上次失败的地址重新放回队列")
-    download_parser.add_argument(
-        "--refresh-pages",
-        action="store_true",
-        help="重新检查已保存的页面，用来发现后来新增的链接。文件本身仍会跳过",
-    )
-
-    search_parser = sub.add_parser("search", help="在已保存的标题和正文里搜索，不用事先分类")
-    search_parser.add_argument("keyword")
-    search_parser.add_argument("--limit", type=int, default=30)
-
-    sub.add_parser("status", help="查看保存进度")
+    sub.add_parser("login", help="打开浏览器登录并保存会话")
+    download_parser = sub.add_parser("download", help="发现并下载文件")
+    download_parser.add_argument("--delay", type=float, default=1.0, help="每次下载间隔秒数，默认 1")
+    download_parser.add_argument("--max", type=int, default=0, help="本次最多下载多少个文件，0 表示不限")
+    download_parser.add_argument("--max-bytes", type=int, default=MAX_BYTES)
+    download_parser.add_argument("--sample", action="store_true", help="先各下一份试题、技术描述、基础设施清单")
+    download_parser.add_argument("--refresh", action="store_true", help="重新扫描目录，已下载的文件仍会跳过")
+    download_parser.add_argument("--retry-errors", action="store_true")
+    sub.add_parser("discover", help="只扫描目录，不下载")
+    sub.add_parser("status", help="查看进度")
     return parser
 
 
-def main(argv: list[str] | None = None) -> None:
-    parser = build_parser()
-    args = parser.parse_args(argv)
-    if args.command == "login":
-        login()
-    elif args.command == "download":
-        try:
-            download(args)
-        except LoginRequired:
-            raise SystemExit("登录会话已失效。请重新运行：python sync.py login") from None
-    elif args.command == "search":
-        search(args.keyword, args.limit)
-    elif args.command == "status":
-        show_status()
+def run_discover() -> None:
+    db = connect()
+    client = make_client()
+    try:
+        discover(db, client)
+    finally:
+        export_tables(db)
+        client.close()
 
 
 def _self_test() -> None:
-    internal = normalize_url("https://www.worldskills.org/internal/?utm_source=x&ccm_token=abc")
-    assert internal == "https://worldskills.org/internal"
-    skill = normalize_url("/skills/id/244/", "https://worldskills.org/internal/")
-    assert skill == "https://worldskills.org/skills/id/244"
-    assert classify_url("https://worldskills.org/internal/docs", ["/internal"]) == "page"
-    assert classify_url("https://worldskills.org/skills/id/244", ["/internal"]) is None
-    file_url = "https://worldskills.org/application/files/3616/1234/WS_TD.pdf"
-    assert classify_url(file_url, ["/internal"]) == "file"
-    assert classify_url("https://worldskills.org/logout", ["/internal"]) is None
-    paging = normalize_url("https://worldskills.org/internal/library?ccm_paging_p=2&ccm_token=zz")
-    assert paging == "https://worldskills.org/internal/library?ccm_paging_p=2"
-    api = normalize_url("https://api.worldskills.org/resources/download/1/2/3?l=en")
-    assert api == "https://api.worldskills.org/resources/download/1/2/3?l=en"
-    assert classify_url(api, ["/internal"]) == "file"
-    assert classify_url("https://api.worldskills.org/org", ["/internal"]) is None
-    html = '<html><head><title>Automobile</title><base href="/internal/"></head><body><a href="library/">库</a><a href="/application/files/1/a.pdf">pdf</a></body></html>'
-    links = extract_links(html, "https://worldskills.org/internal/home")
-    assert "https://worldskills.org/internal/library" in links
-    assert "https://worldskills.org/application/files/1/a.pdf" in links
-    target = local_path_for(
-        "https://worldskills.org/internal/library",
-        "text/html",
-        None,
-        True,
-    )
-    assert target.name == "library.html"
+    tp = classify(filename="WSC2026_TP24_actual_en.zip", tags=["WSC2026", "Skill 24", "Actual", "Test Project"], doc_key="test-project")
+    assert tp.edition_code == "WSC2026"
+    assert tp.skill_number == "24"
+    assert tp.stage == "正式"
+    assert tp.lang_code == "en"
+    td = classify(filename="WSC2026_TD33_zh.pdf", doc_key="technical-description", lang_code="zh")
+    assert td.skill_number == "33" and td.lang_code == "zh"
+    se = classify(filename="WSC2022_TP01_actual.zip", tags=["WSC2022SE", "Skill 01"])
+    assert se.edition_code == "WSC2022SE"
+    number, name = parse_list_title("33 Automobile Technology")
+    assert number == "33" and name == "Automobile Technology"
+    path = classified_path(tp, "WSC2026_TP24_actual_en.zip")
+    assert "24" in path.as_posix()
+    assert "正式" in path.as_posix()
+    assert "英语" in path.as_posix()
     print("self-test ok")
 
 
-if __name__ == "__main__":
-    if len(sys.argv) > 1 and sys.argv[1] == "--self-test":
+def main(argv: list[str] | None = None) -> None:
+    if argv is None:
+        argv = sys.argv[1:]
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(line_buffering=True)
+    if argv[:1] == ["--self-test"]:
         _self_test()
-    else:
-        main()
+        return
+    args = build_parser().parse_args(argv)
+    try:
+        if args.command == "login":
+            login()
+        elif args.command == "download":
+            download(args)
+        elif args.command == "discover":
+            run_discover()
+        elif args.command == "status":
+            show_status()
+    except LoginRequired:
+        raise SystemExit("登录已失效。请运行：python sync.py login") from None
+
+
+if __name__ == "__main__":
+    main()
