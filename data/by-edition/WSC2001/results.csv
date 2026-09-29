@@ -1,0 +1,581 @@
+﻿edition,skill,skill_name,member_code,member_name,position,medal,mark,best_of_nation,albert_vidal_award,competitor_names,person_ids,published,result_id
+WSC2001,01,Fitting,JP,Japan,1,Gold,532.0,,,TOMOHIRO SHIOMI,167369,True,9011
+WSC2001,01,Fitting,KR,Korea,1,Gold,533.0,,,YOUNG JIN KIM,167368,True,9010
+WSC2001,01,Fitting,UK,United Kingdom,10,,477.0,,,IAN WALKER,167377,True,9019
+WSC2001,01,Fitting,NL,Netherlands,11,,466.0,,,DIRK OERLEMANS,167378,True,9020
+WSC2001,01,Fitting,MY,Malaysia,12,,447.0,,,SAMSUL SAID,167380,True,9022
+WSC2001,01,Fitting,SA,Saudi Arabia,12,,447.0,,,TURKI ALGHADIR,167379,True,9021
+WSC2001,01,Fitting,AT,Austria,3,Bronze,524.0,,,ARMIN FALK,167371,True,9013
+WSC2001,01,Fitting,TW,Chinese Taipei,3,Bronze,524.0,,,YUAN-TSAN HSU,167370,True,9012
+WSC2001,01,Fitting,IE,Ireland,5,Diploma,520.0,,,PETER FITZGERALD,167372,True,9014
+WSC2001,01,Fitting,BR,Brazil,6,Diploma,516.0,,,FÁBIO MORETI GALEGO,167374,True,9016
+WSC2001,01,Fitting,CH,Switzerland,6,Diploma,517.0,,,JOST IMFELD,167373,True,9015
+WSC2001,01,Fitting,DE,Germany,8,Diploma,508.0,,,MARTIN PFADENHAUER,167375,True,9017
+WSC2001,01,Fitting,NZ,New Zealand,9,,490.0,,,TIM CRUICKSHANK,167376,True,9018
+WSC2001,02,Press tool making,KR,Korea,1,Gold,533.0,,,JIN SU LEE,167529,True,9171
+WSC2001,02,Press tool making,AT,Austria,2,Silver,526.0,,,MARTIN MACCANI,167531,True,9173
+WSC2001,02,Press tool making,JP,Japan,2,Silver,528.0,,,YUSUKE MATSUMURA,167530,True,9172
+WSC2001,02,Press tool making,TW,Chinese Taipei,4,Diploma,521.0,,,WEN-PENG LIAO,167532,True,9174
+WSC2001,02,Press tool making,BR,Brazil,5,,488.0,,,ANDRÉ NIKOLAK HESPANHOL,167533,True,9175
+WSC2001,02,Press tool making,MY,Malaysia,6,,483.0,,,YIK TAK TAN,167534,True,9176
+WSC2001,02,Press tool making,CH,Switzerland,7,,479.0,,,STEPHAN LEIBUNDGUT,167535,True,9177
+WSC2001,02,Press tool making,FR,France,8,,442.0,,,MAXIME DIRRY,167536,True,9178
+WSC2001,03,Instrument making,JP,Japan,1,Gold,547.0,,,TAKESHI OKUNO,167684,True,9326
+WSC2001,03,Instrument making,TN,Tunisia,10,,463.0,,,CHAKER OUESLATI,167693,True,9335
+WSC2001,03,Instrument making,PT,Portugal,11,,445.0,,,JOÃO MATOS,167694,True,9336
+WSC2001,03,Instrument making,KR,Korea,2,Silver,544.0,,,SEUNG YONG CHA,167685,True,9327
+WSC2001,03,Instrument making,TW,Chinese Taipei,3,Bronze,527.0,,,WEI-TAI HUANG,167686,True,9328
+WSC2001,03,Instrument making,CH,Switzerland,4,Diploma,510.0,,,PETER LIMACHER,167687,True,9329
+WSC2001,03,Instrument making,NL,Netherlands,5,Diploma,507.0,,,SEBASTIAAN OOMS,167688,True,9330
+WSC2001,03,Instrument making,BR,Brazil,6,,494.0,,,GLAUCO IVAN PEREIRA,167689,True,9331
+WSC2001,03,Instrument making,CA,Canada,7,,488.0,,,JEAN-MARC FILION,167690,True,9332
+WSC2001,03,Instrument making,DE,Germany,7,,487.0,,,SAMUEL REPPEL,167692,True,9334
+WSC2001,03,Instrument making,FR,France,7,,488.0,,,BENOÎT BROCHOIRE,167691,True,9333
+WSC2001,04,Mechatronics,CH,Switzerland,1,Gold,554.0,,,BRUNO LÜSCHER; STEFAN SCHMID,167854; 167855,True,9486
+WSC2001,04,Mechatronics,KR,Korea,1,Gold,555.0,,,JUNG HOON JANG; GUN HEE LEE,167852; 167853,True,9485
+WSC2001,04,Mechatronics,NO,Norway,10,,497.0,,,TORMOD STRAND; KRISTIAN WELFONDER TRAINER,167870; 167871,True,9494
+WSC2001,04,Mechatronics,TW,Chinese Taipei,11,,489.0,,,PAO-CHUAN CHEN; MING-CHUAN CHUNG,167872; 167873,True,9495
+WSC2001,04,Mechatronics,PH,Philippines,12,,485.0,,,DOMINIQUE LABIANO; SERAFFIN OROZCO,167874; 167875,True,9496
+WSC2001,04,Mechatronics,TH,Thailand,13,,481.0,,,VIROTE RITBUN; SURADECH THETTHONG,167876; 167877,True,9497
+WSC2001,04,Mechatronics,SG,Singapore,3,Bronze,552.0,,,MAN HUNG BRIAN LEE; WENKAI LIN,167856; 167857,True,9487
+WSC2001,04,Mechatronics,BR,Brazil,4,Diploma,529.0,,,FELIPE SCHIAVO; FERNANDO ANDRÉ ZORZI,167858; 167859,True,9488
+WSC2001,04,Mechatronics,JP,Japan,5,Diploma,522.0,,,MAKOTO AOKI; KENJI MORI,167862; 167863,True,9490
+WSC2001,04,Mechatronics,SE,Sweden,5,Diploma,523.0,,,TOBIAS NILSSON; CHARLIE STRID,167860; 167861,True,9489
+WSC2001,04,Mechatronics,UK,United Kingdom,7,Diploma,512.0,,,SIDNEY BELL; STUART EDMEAD,167864; 167865,True,9491
+WSC2001,04,Mechatronics,DE,Germany,8,Diploma,504.0,,,STEFAN ARNOLD; STEPHAN IHLING,167866; 167867,True,9492
+WSC2001,04,Mechatronics,AU,Australia,9,Diploma,500.0,,,ANDREW GALVIN; TREVOR WAKEMAN,167868; 167869,True,9493
+WSC2001,05,Mech. Eng. CADD,KR,Korea,1,Gold,551.0,,,DONG JUN RA,167891,True,9511
+WSC2001,05,Mech. Eng. CADD,CH,Switzerland,10,Diploma,509.0,,,STEPHAN VONWILLER,167900,True,9520
+WSC2001,05,Mech. Eng. CADD,AT,Austria,11,Diploma,502.0,,,HANSJÖRG RAGG,167901,True,9521
+WSC2001,05,Mech. Eng. CADD,FR,France,11,Diploma,501.0,,,BURTHÉLÉMY ZIELINSKI,167902,True,9522
+WSC2001,05,Mech. Eng. CADD,FI,Finland,13,,497.0,,,ROBERT KIVINIEMI,167903,True,9523
+WSC2001,05,Mech. Eng. CADD,AU,Australia,14,,488.0,,,MICHAEL OWEN,167904,True,9524
+WSC2001,05,Mech. Eng. CADD,CA,Canada,15,,474.0,,,ETIENNE BRÛLÉ,167905,True,9525
+WSC2001,05,Mech. Eng. CADD,MY,Malaysia,15,,474.0,,,MUHAMAD HILMI PADLLAH PADIL,167906,True,9526
+WSC2001,05,Mech. Eng. CADD,TN,Tunisia,17,,471.0,,,HOUSSEMEDDINE BEN ABDALLAH,167907,True,9527
+WSC2001,05,Mech. Eng. CADD,IR,Iran,18,,459.0,,,ZOHREH GHORBANI TOONKALEH,167908,True,9528
+WSC2001,05,Mech. Eng. CADD,PH,Philippines,19,,449.0,,,BONIFACIO CETRON,167909,True,9529
+WSC2001,05,Mech. Eng. CADD,SG,Singapore,2,Silver,537.0,,,SENG YEOW SIEW,167892,True,9512
+WSC2001,05,Mech. Eng. CADD,AE,United Arab Emirates,20,,439.0,,,ABDELAZIZ BANI-HAMMAD,167910,True,9530
+WSC2001,05,Mech. Eng. CADD,TW,Chinese Taipei,3,Bronze,534.0,,,TSUNG-CHENG HUANG,167893,True,9513
+WSC2001,05,Mech. Eng. CADD,DE,Germany,4,Diploma,526.0,,,CHRISTIAN LORENZ,167894,True,9514
+WSC2001,05,Mech. Eng. CADD,BR,Brazil,5,Diploma,523.0,,,FÁBIO RICARDO OLIVEIRA DE SOUZA,167895,True,9515
+WSC2001,05,Mech. Eng. CADD,TH,Thailand,5,Diploma,521.0,,,MATI BUMRUNGKUNAKORN,167896,True,9516
+WSC2001,05,Mech. Eng. CADD,JP,Japan,7,Diploma,518.0,,,TAKAYUKI YAMANAKA,167897,True,9517
+WSC2001,05,Mech. Eng. CADD,IE,Ireland,8,Diploma,513.0,,,KIERAN LILLIS,167899,True,9519
+WSC2001,05,Mech. Eng. CADD,NL,Netherlands,8,Diploma,515.0,,,MARCEL SMITS,167898,True,9518
+WSC2001,06,CNC Turning,AT,Austria,1,Gold,554.0,,,MICHAEL BLUM,167911,True,9531
+WSC2001,06,CNC Turning,NL,Netherlands,10,,496.0,,,DENNIS VAN DE KERKHOF,167920,True,9540
+WSC2001,06,CNC Turning,CA,Canada,11,,490.0,,,FRANÇOIS LANGEVIN,167921,True,9541
+WSC2001,06,CNC Turning,FI,Finland,12,,487.0,,,HARRI HYYRYLÄINEN,167922,True,9542
+WSC2001,06,CNC Turning,HK,"Hong Kong, China",12,,485.0,,,WAI CHUN WONG,167924,True,9544
+WSC2001,06,CNC Turning,SG,Singapore,12,,487.0,,,KAR WOH SUM,167923,True,9543
+WSC2001,06,CNC Turning,BE,Belgium,15,,484.0,,,FABIO BORNIA,167925,True,9545
+WSC2001,06,CNC Turning,TH,Thailand,16,,476.0,,,WONGRAK SANLEE,167926,True,9546
+WSC2001,06,CNC Turning,DE,Germany,17,,470.0,,,CARMEN MANTEL,167927,True,9547
+WSC2001,06,CNC Turning,PH,Philippines,18,,449.0,,,RICARDO TULIAO,167928,True,9548
+WSC2001,06,CNC Turning,IR,Iran,19,,441.0,,,HASSAN REZAPOUR,167929,True,9549
+WSC2001,06,CNC Turning,KR,Korea,2,Silver,541.0,,,JOON DUG KIM,167913,True,9533
+WSC2001,06,CNC Turning,US,United States of America,2,Silver,542.0,,,ANTHONY ROWE,167912,True,9532
+WSC2001,06,CNC Turning,JP,Japan,4,Diploma,532.0,,,TAISHI ISHIKAWA,167914,True,9534
+WSC2001,06,CNC Turning,TW,Chinese Taipei,5,Diploma,529.0,,,CHIEN-PIN WANG,167915,True,9535
+WSC2001,06,CNC Turning,CH,Switzerland,6,Diploma,514.0,,,DANIEL KESSLER,167916,True,9536
+WSC2001,06,CNC Turning,UK,United Kingdom,6,Diploma,512.0,,,JAMES BUTCHER,167917,True,9537
+WSC2001,06,CNC Turning,BR,Brazil,8,Diploma,506.0,,,CÉLIO ROBERTO GOMES DE MELO,167918,True,9538
+WSC2001,06,CNC Turning,FR,France,8,Diploma,504.0,,,VINCENT BOUDAILLE,167919,True,9539
+WSC2001,07,CNC Milling,JP,Japan,1,Gold,537.0,,,MITSUO MAEDA,167930,True,9550
+WSC2001,07,CNC Milling,UK,United Kingdom,11,,492.0,,,IAN CALDICOTT,167940,True,9560
+WSC2001,07,CNC Milling,CA,Canada,12,,487.0,,,YANICK GODBOUT,167941,True,9561
+WSC2001,07,CNC Milling,BE,Belgium,13,,483.0,,,NAGIM OUMOUSSA,167942,True,9562
+WSC2001,07,CNC Milling,FI,Finland,14,,465.0,,,VEIKKO NAAKKA,167943,True,9563
+WSC2001,07,CNC Milling,IR,Iran,15,,411.0,,,YOUNES MONAJJEMY,167944,True,9564
+WSC2001,07,CNC Milling,KR,Korea,2,Silver,531.0,,,BYUNG KEE CHOI,167931,True,9551
+WSC2001,07,CNC Milling,TW,Chinese Taipei,3,Bronze,527.0,,,SHIH-FENG HUANG,167932,True,9552
+WSC2001,07,CNC Milling,AT,Austria,4,Diploma,516.0,,,GERNOT GLATZLE,167933,True,9553
+WSC2001,07,CNC Milling,SG,Singapore,5,Diploma,513.0,,,WEE SIANG CHIA,167934,True,9554
+WSC2001,07,CNC Milling,CH,Switzerland,6,Diploma,509.0,,,EMANUEL BENKER,167936,True,9556
+WSC2001,07,CNC Milling,FR,France,6,Diploma,509.0,,,CYRIL VIOUX,167937,True,9557
+WSC2001,07,CNC Milling,NL,Netherlands,6,Diploma,510.0,,,MARK MEIJERINK,167935,True,9555
+WSC2001,07,CNC Milling,BR,Brazil,9,Diploma,505.0,,,CÉSAR ISLER,167939,True,9559
+WSC2001,07,CNC Milling,LI,Principality of Liechtenstein,9,Diploma,507.0,,,STEFAN MOSER,167938,True,9558
+WSC2001,08,Construction steel work,KR,Korea,1,Gold,552.0,,,BYUNG CHUL CHOI,167945,True,9565
+WSC2001,08,Construction steel work,TW,Chinese Taipei,2,Silver,524.0,,,CHIH-HSIANG TSENG,167946,True,9566
+WSC2001,08,Construction steel work,CH,Switzerland,3,Bronze,514.0,,,ROGER MÜLLER,1638,True,9568
+WSC2001,08,Construction steel work,IE,Ireland,3,Bronze,514.0,,,PAUL GILL,167947,True,9567
+WSC2001,08,Construction steel work,JP,Japan,5,,484.0,,,NAOKI TAKAHASHI,167950,True,9570
+WSC2001,08,Construction steel work,NL,Netherlands,5,,485.0,,,REMCO ABRESCH,167949,True,9569
+WSC2001,08,Construction steel work,FR,France,7,,480.0,,,CEDRIC DAVID,167951,True,9571
+WSC2001,08,Construction steel work,FI,Finland,8,,448.0,,,EKO MIETTINEN,167952,True,9572
+WSC2001,09,IT/Software Applications,SG,Singapore,1,Gold,553.0,,,KIAN ANN TAN,167953,True,9573
+WSC2001,09,IT/Software Applications,CH,Switzerland,10,,490.0,,,URS HÜNINGER,167963,True,9583
+WSC2001,09,IT/Software Applications,NZ,New Zealand,10,,489.0,,,ROCHELE EATON,167964,True,9584
+WSC2001,09,IT/Software Applications,TH,Thailand,10,,491.0,,,WORAKORN KURUWONGWATTANA,167962,True,9582
+WSC2001,09,IT/Software Applications,PH,Philippines,13,,486.0,,,JOEY MANANSALA,167965,True,9585
+WSC2001,09,IT/Software Applications,FI,Finland,14,,477.0,,,SAMI HILTUNEN,167966,True,9586
+WSC2001,09,IT/Software Applications,CA,Canada,15,,474.0,,,RAFA ABDUL,167967,True,9587
+WSC2001,09,IT/Software Applications,NO,Norway,15,,473.0,,,ERLEND KILEN RØRHOLT,167968,True,9588
+WSC2001,09,IT/Software Applications,AE,United Arab Emirates,17,,421.0,,,NOOH ALSAYEGH,167969,True,9589
+WSC2001,09,IT/Software Applications,TW,Chinese Taipei,2,Silver,537.0,,,CHUN-CHIEH CHENG,167954,True,9574
+WSC2001,09,IT/Software Applications,KR,Korea,3,Bronze,532.0,,,BYUNG GWAN LEE,167955,True,9575
+WSC2001,09,IT/Software Applications,DE,Germany,4,Diploma,522.0,,,FRANK WIESER,167957,True,9577
+WSC2001,09,IT/Software Applications,HK,"Hong Kong, China",4,Diploma,524.0,,,LONG SING WONG,167956,True,9576
+WSC2001,09,IT/Software Applications,UK,United Kingdom,6,Diploma,517.0,,,ALISTAIR WATKINS,167958,True,9578
+WSC2001,09,IT/Software Applications,AT,Austria,7,Diploma,508.0,,,BERNHARD WAGLECHNER,167959,True,9579
+WSC2001,09,IT/Software Applications,AU,Australia,7,Diploma,506.0,,,KATIE DALE,167960,True,9580
+WSC2001,09,IT/Software Applications,BR,Brazil,9,Diploma,501.0,,,FEBRÔNIO BOMFIM ALVES,167961,True,9581
+WSC2001,10,Welding,KR,Korea,1,Gold,532.0,,,BUM CHAN BAE,167382,True,9024
+WSC2001,10,Welding,TH,Thailand,1,Gold,532.0,,,SINGKHAM SU-UDOMSINROJ,167381,True,9023
+WSC2001,10,Welding,BE,Belgium,11,Diploma,509.0,,,BART DE VRIENDT,167393,True,9035
+WSC2001,10,Welding,SE,Sweden,11,Diploma,510.0,,,ANDREAS PALOVAARA,167391,True,9033
+WSC2001,10,Welding,UK,United Kingdom,11,Diploma,510.0,,,ANTHONY MURRAY,167392,True,9034
+WSC2001,10,Welding,BR,Brazil,14,Diploma,502.0,,,EWERTON MORAIS DOS SANTOS,167394,True,9036
+WSC2001,10,Welding,FR,France,15,,494.0,,,ROMAIN MOUGEL,167395,True,9037
+WSC2001,10,Welding,NL,Netherlands,16,,488.0,,,BASTIAAN VAN HERK,167396,True,9038
+WSC2001,10,Welding,CH,Switzerland,17,,477.0,,,RALF KALBERMATTER,167397,True,9039
+WSC2001,10,Welding,PT,Portugal,17,,476.0,,,PEDRO MARQUES,198440,True,9040
+WSC2001,10,Welding,CA,Canada,19,,460.0,,,CHAD HANSEN,167399,True,9041
+WSC2001,10,Welding,IR,Iran,20,,441.0,,,KOOROSH KHAKSARAN,167400,True,9042
+WSC2001,10,Welding,AE,United Arab Emirates,21,,416.0,,,SALEM TAHER,167401,True,9043
+WSC2001,10,Welding,US,United States of America,3,Bronze,528.0,,,DIEN TRAN,167383,True,9025
+WSC2001,10,Welding,IE,Ireland,4,Diploma,523.0,,,BRIAN MINOGUE,167384,True,9026
+WSC2001,10,Welding,AU,Australia,5,Diploma,520.0,,,JASON SCHLOSS,167385,True,9027
+WSC2001,10,Welding,JP,Japan,5,Diploma,518.0,,,TAKASHI SUDO,167386,True,9028
+WSC2001,10,Welding,DE,Germany,7,Diploma,516.0,,,TIMO BAUMGÄRTNER,167389,True,9031
+WSC2001,10,Welding,FI,Finland,7,Diploma,515.0,,,ESA NIEMELÄ,167390,True,9032
+WSC2001,10,Welding,NO,Norway,7,Diploma,517.0,,,OLE MAGNUS HØVRING,167387,True,9029
+WSC2001,10,Welding,TW,Chinese Taipei,7,Diploma,516.0,,,HSIN-LIN KUO,167388,True,9030
+WSC2001,11,Pattern Making,CH,Switzerland,1,Gold,527.0,,,CHRISTIAN BRUNNER,167403,True,9045
+WSC2001,11,Pattern Making,KR,Korea,1,Gold,529.0,,,KWANG SUN CHUNG,167402,True,9044
+WSC2001,11,Pattern Making,JP,Japan,3,Bronze,517.0,,,YU KIKUCHI,167404,True,9046
+WSC2001,11,Pattern Making,TW,Chinese Taipei,3,Bronze,515.0,,,KUEI-SHENG LIN,167405,True,9047
+WSC2001,11,Pattern Making,UK,United Kingdom,5,Diploma,514.0,,,JAMIE SYKES,167406,True,9048
+WSC2001,11,Pattern Making,CA,Canada,6,,495.0,,,TERENCE BROUWER,167407,True,9049
+WSC2001,11,Pattern Making,FI,Finland,7,,455.0,,,ALEXANDER STRAKH,167408,True,9050
+WSC2001,11,Pattern Making,IR,Iran,8,,447.0,,,SAMAD FAHMIHASSAN,167409,True,9051
+WSC2001,12,Wall and Floor Tiling,DE,Germany,1,Gold,536.0,,,GUIDO GERSPACH,167410,True,9052
+WSC2001,12,Wall and Floor Tiling,BR,Brazil,12,Diploma,500.0,,,LUIZ ANTONIO BRAGA,167422,True,9064
+WSC2001,12,Wall and Floor Tiling,UK,United Kingdom,12,Diploma,501.0,,,ANDREW TOVEY,167421,True,9063
+WSC2001,12,Wall and Floor Tiling,TH,Thailand,14,,497.0,,,SENEE PUKPHA,167423,True,9065
+WSC2001,12,Wall and Floor Tiling,PT,Portugal,15,,491.0,,,LUÍS NUNES,167424,True,9066
+WSC2001,12,Wall and Floor Tiling,LU,Luxembourg,16,,488.0,,,GIAN-LUCA TENACE,167425,True,9067
+WSC2001,12,Wall and Floor Tiling,HK,"Hong Kong, China",17,,471.0,,,CHI WAI LEE,167426,True,9068
+WSC2001,12,Wall and Floor Tiling,IR,Iran,18,,400.0,,,HOSSEIN TAHMASBI KIUJ,167427,True,9069
+WSC2001,12,Wall and Floor Tiling,FR,France,2,Silver,522.0,,,GREGORY THOR,167412,True,9054
+WSC2001,12,Wall and Floor Tiling,KR,Korea,2,Silver,524.0,,,JUNG MIN KIM,167411,True,9053
+WSC2001,12,Wall and Floor Tiling,CH,Switzerland,4,Diploma,516.0,,,FRANÇOIS BUCHWALDER,167413,True,9055
+WSC2001,12,Wall and Floor Tiling,MY,Malaysia,4,Diploma,515.0,,,ALIAS ABDULLAH,167414,True,9056
+WSC2001,12,Wall and Floor Tiling,IT,"South Tyrol, Italy",6,Diploma,513.0,,,MARKUS LUNER,167415,True,9057
+WSC2001,12,Wall and Floor Tiling,TW,Chinese Taipei,6,Diploma,511.0,,,SHENG-CHIA HUANG,167416,True,9058
+WSC2001,12,Wall and Floor Tiling,AU,Australia,8,Diploma,510.0,,,JASON LIPPI,167417,True,9059
+WSC2001,12,Wall and Floor Tiling,FI,Finland,9,Diploma,505.0,,,JERE KATVALA,167419,True,9061
+WSC2001,12,Wall and Floor Tiling,JP,Japan,9,Diploma,505.0,,,HIROMASA MIYANUMA,167420,True,9062
+WSC2001,12,Wall and Floor Tiling,NL,Netherlands,9,Diploma,506.0,,,MARIJN VAN DE WATER,167418,True,9060
+WSC2001,13,Autobody Repair,KR,Korea,1,Gold,544.0,,,BO DEOK SEO,167429,True,9071
+WSC2001,13,Autobody Repair,TW,Chinese Taipei,1,Gold,546.0,,,HSIANG-YUAN MA,167428,True,9070
+WSC2001,13,Autobody Repair,CA,Canada,10,,496.0,,,DEREK MOLINSKI,167437,True,9079
+WSC2001,13,Autobody Repair,FI,Finland,11,,490.0,,,HEIKKI ILOMÄKI,167440,True,9082
+WSC2001,13,Autobody Repair,FR,France,11,,492.0,,,JÉRÉMY LAGOUARDE,9327,True,9080
+WSC2001,13,Autobody Repair,UK,United Kingdom,11,,492.0,,,LEE BENCH,167439,True,9081
+WSC2001,13,Autobody Repair,SE,Sweden,14,,489.0,,,MARTIN BORGRYD,167441,True,9083
+WSC2001,13,Autobody Repair,NO,Norway,15,,463.0,,,HANS ROAR SØRLIE,167442,True,9084
+WSC2001,13,Autobody Repair,IR,Iran,16,,417.0,,,BAHRAM BARGHIAN,167443,True,9085
+WSC2001,13,Autobody Repair,JP,Japan,3,Bronze,537.0,,,TETSUYA KONDO,167430,True,9072
+WSC2001,13,Autobody Repair,AU,Australia,4,Diploma,514.0,,,JACOB PANOV,167431,True,9073
+WSC2001,13,Autobody Repair,CH,Switzerland,4,Diploma,512.0,,,ANDREAS THEILER,167432,True,9074
+WSC2001,13,Autobody Repair,NL,Netherlands,6,Diploma,504.0,,,RONALD WEKEMA,167433,True,9075
+WSC2001,13,Autobody Repair,NZ,New Zealand,6,Diploma,504.0,,,FAATOA STUNZNER-TAITO,167434,True,9076
+WSC2001,13,Autobody Repair,DE,Germany,8,Diploma,501.0,,,ALEXANDER OBERHUBER,167435,True,9077
+WSC2001,13,Autobody Repair,US,United States of America,8,Diploma,500.0,,,LEE GEIGER,167436,True,9078
+WSC2001,14,Sheet metal work,KR,Korea,1,Gold,541.0,,,GWI JIN IM,167444,True,9086
+WSC2001,14,Sheet metal work,NL,Netherlands,10,,466.0,,,EDWARD PRINS,167453,True,9095
+WSC2001,14,Sheet metal work,SA,Saudi Arabia,11,,445.0,,,MOHAMMAD AL-DOSARI,167454,True,9096
+WSC2001,14,Sheet metal work,JP,Japan,2,Silver,537.0,,,SHINSUKE TOKIMOTO,167445,True,9087
+WSC2001,14,Sheet metal work,TW,Chinese Taipei,3,Bronze,531.0,,,KO-TING AO,167446,True,9088
+WSC2001,14,Sheet metal work,NZ,New Zealand,4,Diploma,521.0,,,PETER TEIRNEY,167447,True,9089
+WSC2001,14,Sheet metal work,IE,Ireland,5,Diploma,510.0,,,CECIL KINKADE,167448,True,9090
+WSC2001,14,Sheet metal work,CH,Switzerland,6,Diploma,503.0,,,NIKLAUS HOFSTETTER,167449,True,9091
+WSC2001,14,Sheet metal work,FR,France,7,,491.0,,,SÉBASTIEN HENRY,167450,True,9092
+WSC2001,14,Sheet metal work,SE,Sweden,8,,480.0,,,JOHAN STJÄRNDAL,167451,True,9093
+WSC2001,14,Sheet metal work,CA,Canada,9,,475.0,,,DARRYL LANZ,167452,True,9094
+WSC2001,15,Plumbing,AT,Austria,1,Gold,541.0,,,JOHANN AUER,167455,True,9097
+WSC2001,15,Plumbing,KR,Korea,1,Gold,539.0,,,EUN JOONG LEE,167456,True,9098
+WSC2001,15,Plumbing,TW,Chinese Taipei,11,,495.0,,,CHIEN-CHIH HUANG,167465,True,9107
+WSC2001,15,Plumbing,JP,Japan,12,,492.0,,,TAKAHIKO KAWANO,167466,True,9108
+WSC2001,15,Plumbing,PH,Philippines,13,,486.0,,,MICHAEL SABIO,167468,True,9110
+WSC2001,15,Plumbing,SE,Sweden,13,,487.0,,,JENS LARSSON,167467,True,9109
+WSC2001,15,Plumbing,LU,Luxembourg,15,,484.0,,,MICHAEL MENDES,167469,True,9111
+WSC2001,15,Plumbing,IE,Ireland,16,,480.0,,,GERARD DONEGAN,167470,True,9112
+WSC2001,15,Plumbing,NO,Norway,17,,472.0,,,MOHAMED AKKOUH,167471,True,9113
+WSC2001,15,Plumbing,HK,"Hong Kong, China",18,,467.0,,,WING HEI HO,167473,True,9115
+WSC2001,15,Plumbing,UK,United Kingdom,18,,469.0,,,RICHARD CRAIG,167472,True,9114
+WSC2001,15,Plumbing,IR,Iran,20,,417.0,,,ABBAS RIYAHIMADVAR,167474,True,9116
+WSC2001,15,Plumbing,CH,Switzerland,3,Bronze,538.0,,,LAURENT RENEVIER,167457,True,9099
+WSC2001,15,Plumbing,AU,Australia,4,Diploma,523.0,,,TIM CARPENTER,167458,True,9100
+WSC2001,15,Plumbing,CA,Canada,4,Diploma,521.0,,,RYAN BALDWIN,167460,True,9102
+WSC2001,15,Plumbing,FR,France,4,Diploma,521.0,,,ANTHONY DAVIET,167461,True,9103
+WSC2001,15,Plumbing,MY,Malaysia,4,Diploma,523.0,,,ROSMAN BANA,167459,True,9101
+WSC2001,15,Plumbing,FI,Finland,8,Diploma,520.0,,,KARI HONGISTO,167462,True,9104
+WSC2001,15,Plumbing,DE,Germany,9,Diploma,513.0,,,STEPHAN LEIDINGER,167463,True,9105
+WSC2001,15,Plumbing,LI,Principality of Liechtenstein,9,Diploma,511.0,,,PHILIPP HASLER,167464,True,9106
+WSC2001,16,Industrial Electronics,DE,Germany,1,Gold,533.0,,,MARTIN GRAFMÜLLER,167476,True,9118
+WSC2001,16,Industrial Electronics,LI,Principality of Liechtenstein,1,Gold,534.0,,,THOMAS HOHL,167475,True,9117
+WSC2001,16,Industrial Electronics,CA,Canada,10,,489.0,,,SÉBASTIEN BOULAIS,,True,9126
+WSC2001,16,Industrial Electronics,CH,Switzerland,11,,483.0,,,GREGOR MAIER,167486,True,9128
+WSC2001,16,Industrial Electronics,TN,Tunisia,11,,485.0,,,AHMED ABID,167485,True,9127
+WSC2001,16,Industrial Electronics,FI,Finland,13,,474.0,,,MIKA VAINIOTALO,167487,True,9129
+WSC2001,16,Industrial Electronics,MA,Morocco,13,,474.0,,,ABDESLAM REKLAOUI,167488,True,9130
+WSC2001,16,Industrial Electronics,MO,"Macao, China",15,,421.0,,,HONG SAN LAI,167489,True,9131
+WSC2001,16,Industrial Electronics,KR,Korea,3,Bronze,531.0,,,HO JEUNG BAEK,167477,True,9119
+WSC2001,16,Industrial Electronics,SG,Singapore,4,Diploma,528.0,,,KOK SIONG TOH,167478,True,9120
+WSC2001,16,Industrial Electronics,BR,Brazil,5,Diploma,523.0,,,CLEUBY DANTAS DOS SANTOS,167479,True,9121
+WSC2001,16,Industrial Electronics,JP,Japan,5,Diploma,521.0,,,TAKAHIRO NAKAI,167480,True,9122
+WSC2001,16,Industrial Electronics,TW,Chinese Taipei,7,Diploma,514.0,,,PAI-YUAN TSAI,167481,True,9123
+WSC2001,16,Industrial Electronics,PT,Portugal,8,,494.0,,,RICARDO PEREIRA,167483,True,9125
+WSC2001,16,Industrial Electronics,UK,United Kingdom,8,,496.0,,,GARETH WILLIS,167482,True,9124
+WSC2001,18,Electrical Installations,AU,Australia,1,Gold,534.0,,,RONALD MOSELING,167491,True,9133
+WSC2001,18,Electrical Installations,KR,Korea,1,Gold,535.0,,,DONG HAN KIM,167490,True,9132
+WSC2001,18,Electrical Installations,TH,Thailand,10,Diploma,515.0,,,ONG-ART SARANYANON,167499,True,9141
+WSC2001,18,Electrical Installations,LI,Principality of Liechtenstein,11,Diploma,505.0,,,DANIEL MEIER,167500,True,9142
+WSC2001,18,Electrical Installations,CH,Switzerland,12,Diploma,500.0,,,LUKAS ADLER,167502,True,9144
+WSC2001,18,Electrical Installations,FR,France,12,Diploma,501.0,,,FABIEN BILLAUD,167501,True,9143
+WSC2001,18,Electrical Installations,FI,Finland,14,,494.0,,,TEEMU PIRTTINEN,167503,True,9145
+WSC2001,18,Electrical Installations,PT,Portugal,14,,492.0,,,CARLOS CALDEIRA,167504,True,9146
+WSC2001,18,Electrical Installations,DE,Germany,16,,491.0,,,ALEXANDER WOLF,167505,True,9147
+WSC2001,18,Electrical Installations,NO,Norway,16,,491.0,,,MORTEN HANDELAND,167506,True,9148
+WSC2001,18,Electrical Installations,UK,United Kingdom,16,,491.0,,,ALEXANDER LOCKHART,167507,True,9149
+WSC2001,18,Electrical Installations,PH,Philippines,19,,476.0,,,JOSE REBOLLIDO,167508,True,9150
+WSC2001,18,Electrical Installations,MO,"Macao, China",20,,472.0,,,PAN LEOK WONG,167509,True,9151
+WSC2001,18,Electrical Installations,AE,United Arab Emirates,21,,424.0,,,DAWOOD AL-JADI,167511,True,9153
+WSC2001,18,Electrical Installations,SA,Saudi Arabia,21,,424.0,,,AHMED ALGHAMDI,167510,True,9152
+WSC2001,18,Electrical Installations,JP,Japan,3,Bronze,532.0,,,TOMIHIRO KINOSHITA,6548,True,9134
+WSC2001,18,Electrical Installations,NZ,New Zealand,4,Diploma,528.0,,,DAVID MOON,167493,True,9135
+WSC2001,18,Electrical Installations,BR,Brazil,5,Diploma,520.0,,,MARCELO PEREIRA DIAS,167495,True,9137
+WSC2001,18,Electrical Installations,CA,Canada,5,Diploma,522.0,,,ERIC DUBÉ,167494,True,9136
+WSC2001,18,Electrical Installations,IE,Ireland,7,Diploma,519.0,,,DONAL CAPLES,167497,True,9139
+WSC2001,18,Electrical Installations,SE,Sweden,7,Diploma,518.0,,,PER SVENSSON,,True,9140
+WSC2001,18,Electrical Installations,TW,Chinese Taipei,7,Diploma,519.0,,,MENG-HAN TSAI,167496,True,9138
+WSC2001,19,Industrial Control,DE,Germany,1,Gold,536.0,,,MARTIN NISSEN,167513,True,9155
+WSC2001,19,Industrial Control,JP,Japan,1,Gold,538.0,,,KENTA SASAKI,167512,True,9154
+WSC2001,19,Industrial Control,NZ,New Zealand,10,,497.0,,,SAM LIENERT,167521,True,9163
+WSC2001,19,Industrial Control,FR,France,11,,482.0,,,ETIENNE BOISSEAU,167522,True,9164
+WSC2001,19,Industrial Control,IE,Ireland,12,,477.0,,,PAUL HARRINGTON,167523,True,9165
+WSC2001,19,Industrial Control,SG,Singapore,12,,475.0,,,TECK LUN FELIX TAN,167524,True,9166
+WSC2001,19,Industrial Control,CA,Canada,14,,470.0,,,ÉRIC BEAUMIER,187540,True,9168
+WSC2001,19,Industrial Control,LI,Principality of Liechtenstein,14,,471.0,,,ANDREAS TRIBELHORN,167525,True,9167
+WSC2001,19,Industrial Control,FI,Finland,16,,467.0,,,PETRI ILVES,167527,True,9169
+WSC2001,19,Industrial Control,IR,Iran,17,,433.0,,,DAVOOD ABBED AKHIJAHANI,167528,True,9170
+WSC2001,19,Industrial Control,BR,Brazil,3,Bronze,529.0,,,TIAGO SILVA RODRIGUES,167516,True,9158
+WSC2001,19,Industrial Control,KR,Korea,3,Bronze,530.0,,,SEUNG YONG PARK,167515,True,9157
+WSC2001,19,Industrial Control,TW,Chinese Taipei,3,Bronze,531.0,,,CHIEN-YUAN WANG,167514,True,9156
+WSC2001,19,Industrial Control,AU,Australia,6,Diploma,523.0,,,MICHAEL JOHNSTON,167517,True,9159
+WSC2001,19,Industrial Control,AT,Austria,7,Diploma,520.0,,,ARSIM JAKUPI,167518,True,9160
+WSC2001,19,Industrial Control,PT,Portugal,8,Diploma,513.0,,,RODRIGO LOURENÇO,167519,True,9161
+WSC2001,19,Industrial Control,CH,Switzerland,9,Diploma,507.0,,,LUKAS THÜRLEMANN,167520,True,9162
+WSC2001,20,Bricklaying,FR,France,1,Gold,530.0,,,STÉPHANE BARBE,167537,True,9179
+WSC2001,20,Bricklaying,IE,Ireland,1,Gold,529.0,,,DERMOT CANAVAN,193094,True,9180
+WSC2001,20,Bricklaying,TW,Chinese Taipei,1,Gold,529.0,,,SHIH-HAO LIN,167539,True,9181
+WSC2001,20,Bricklaying,DE,Germany,10,Diploma,507.0,,,JOCHEN REIS,167546,True,9188
+WSC2001,20,Bricklaying,LI,Principality of Liechtenstein,11,Diploma,504.0,,,DIETMAR WOHLWEND,167547,True,9189
+WSC2001,20,Bricklaying,BE,Belgium,12,Diploma,500.0,,,JÉRÔME DUBRUILLE,167549,True,9191
+WSC2001,20,Bricklaying,NL,Netherlands,12,Diploma,501.0,,,MAIK BUSSCHER,167548,True,9190
+WSC2001,20,Bricklaying,IT,"South Tyrol, Italy",14,,491.0,,,RICHARD ANGELINI,167550,True,9192
+WSC2001,20,Bricklaying,CA,Canada,15,,487.0,,,ALAIN LAROCHELLE,167551,True,9193
+WSC2001,20,Bricklaying,MY,Malaysia,16,,475.0,,,SHARIMAN ABDUL RAZAK,167552,True,9194
+WSC2001,20,Bricklaying,IR,Iran,17,,448.0,,,SHOORESH SALIMY NOUREH,167553,True,9195
+WSC2001,20,Bricklaying,SA,Saudi Arabia,18,,438.0,,,SAMER ALJEDAWI,167554,True,9196
+WSC2001,20,Bricklaying,PT,Portugal,19,,434.0,,,LUÍS CORTE,167555,True,9197
+WSC2001,20,Bricklaying,CH,Switzerland,4,Diploma,525.0,,,TIMO GISI,167541,True,9183
+WSC2001,20,Bricklaying,NZ,New Zealand,4,Diploma,526.0,,,ANDREW POTTER,167540,True,9182
+WSC2001,20,Bricklaying,KR,Korea,6,Diploma,523.0,,,HO NYUN KIM,167542,True,9184
+WSC2001,20,Bricklaying,DK,Denmark,7,Diploma,517.0,,,BO AABY LARSEN,167544,True,9186
+WSC2001,20,Bricklaying,UK,United Kingdom,7,Diploma,519.0,,,DARREN DAVIES,167543,True,9185
+WSC2001,20,Bricklaying,AU,Australia,9,Diploma,516.0,,,JOB HARKNESS,167545,True,9187
+WSC2001,21,Stonemasonry,KR,Korea,1,Gold,535.0,,,KYONG TAE LEE,167556,True,9198
+WSC2001,21,Stonemasonry,PT,Portugal,10,,482.0,,,PEDRO OLIVEIRA,167565,True,9207
+WSC2001,21,Stonemasonry,IR,Iran,11,,421.0,,,SEYYED MORTEZA AFZALLI ESFANDVAJANI,167566,True,9208
+WSC2001,21,Stonemasonry,DE,Germany,2,Silver,530.0,,,FRANK GUTTING,167557,True,9199
+WSC2001,21,Stonemasonry,CH,Switzerland,3,Bronze,521.0,,,ANDREAS RAMSEIER,167559,True,9201
+WSC2001,21,Stonemasonry,FR,France,3,Bronze,522.0,,,HERVÉ JAUNET,7286,True,9200
+WSC2001,21,Stonemasonry,TW,Chinese Taipei,5,Diploma,510.0,,,CHIEN-FU HSIEH,167560,True,9202
+WSC2001,21,Stonemasonry,BE,Belgium,6,Diploma,501.0,,,QUENTIN WALRAVENS,167562,True,9204
+WSC2001,21,Stonemasonry,UK,United Kingdom,6,Diploma,501.0,,,MICHAEL GOULDING,167561,True,9203
+WSC2001,21,Stonemasonry,NL,Netherlands,8,,492.0,,,MARCEL LITJES,167563,True,9205
+WSC2001,21,Stonemasonry,JP,Japan,9,,485.0,,,KOICHI UCHIYAMA,167564,True,9206
+WSC2001,22,Painting and Decorating,AT,Austria,1,Gold,547.0,,,REINHARD GRABHER,167567,True,9209
+WSC2001,22,Painting and Decorating,HK,"Hong Kong, China",10,,481.0,,,WING WAI WONG,167576,True,9218
+WSC2001,22,Painting and Decorating,AU,Australia,11,,475.0,,,CLARK CHUGG,167577,True,9219
+WSC2001,22,Painting and Decorating,FR,France,12,,466.0,,,JEROME DEVILLERS,167578,True,9220
+WSC2001,22,Painting and Decorating,FI,Finland,13,,458.0,,,PETRI ZEUS,167579,True,9221
+WSC2001,22,Painting and Decorating,SE,Sweden,14,,449.0,,,MARIE WÄVERSTAM,167580,True,9222
+WSC2001,22,Painting and Decorating,IT,"South Tyrol, Italy",2,Silver,539.0,,,FELIX SPIESS,167568,True,9210
+WSC2001,22,Painting and Decorating,CH,Switzerland,3,Bronze,536.0,,,STEFAN NEUENSCHWANDER,167569,True,9211
+WSC2001,22,Painting and Decorating,TW,Chinese Taipei,4,Diploma,518.0,,,HSIEH-CHIEN CHEN,167570,True,9212
+WSC2001,22,Painting and Decorating,UK,United Kingdom,4,Diploma,517.0,,,ANDREW HARE,167571,True,9213
+WSC2001,22,Painting and Decorating,IE,Ireland,6,Diploma,513.0,,,GRAHAM WALSH,167572,True,9214
+WSC2001,22,Painting and Decorating,KR,Korea,6,Diploma,511.0,,,WOON SUNG LEE,167573,True,9215
+WSC2001,22,Painting and Decorating,DE,Germany,8,,499.0,,,CONSTANZE MÜCKE,167574,True,9216
+WSC2001,22,Painting and Decorating,NL,Netherlands,9,,491.0,,,JURGEN VAN NIJNATTEN,167575,True,9217
+WSC2001,23,Plastering,FR,France,1,Gold,543.0,,,DAVID BITZBERGER,167581,True,9223
+WSC2001,23,Plastering,DE,Germany,2,Silver,522.0,,,FLORIAN GIESSLER,167582,True,9224
+WSC2001,23,Plastering,KR,Korea,3,Bronze,519.0,,,HYUN GOOK KIM,167583,True,9225
+WSC2001,23,Plastering,TW,Chinese Taipei,4,Diploma,515.0,,,CHIA-JUNG CHANG,167584,True,9226
+WSC2001,23,Plastering,CH,Switzerland,5,,491.0,,,MICHAEL HESS,140902,True,9227
+WSC2001,23,Plastering,JP,Japan,6,,486.0,,,KEN OHASHI,167586,True,9228
+WSC2001,23,Plastering,UK,United Kingdom,6,,485.0,,,CRAIG FOUNTAIN,167587,True,9229
+WSC2001,23,Plastering,NL,Netherlands,8,,439.0,,,ERWIN BAARS,167588,True,9230
+WSC2001,24,Cabinetmaking,TW,Chinese Taipei,1,Gold,545.0,,,TZU-JUNG KUO,167589,True,9231
+WSC2001,24,Cabinetmaking,NZ,New Zealand,11,,497.0,,,CHRIS WILLS,167599,True,9241
+WSC2001,24,Cabinetmaking,CA,Canada,12,,487.0,,,DAN DESROCHES,167602,True,9244
+WSC2001,24,Cabinetmaking,PT,Portugal,12,,487.0,,,MIGUEL RIBEIRO,167601,True,9243
+WSC2001,24,Cabinetmaking,US,United States of America,12,,489.0,,,DAN ATHEY,167600,True,9242
+WSC2001,24,Cabinetmaking,DK,Denmark,15,,481.0,,,MORTEN MØNSTED LAURSEN,167603,True,9245
+WSC2001,24,Cabinetmaking,LI,Principality of Liechtenstein,15,,479.0,,,THOMAS BRÜCKLER,167604,True,9246
+WSC2001,24,Cabinetmaking,NO,Norway,17,,456.0,,,SVEN HOFTUN,167605,True,9247
+WSC2001,24,Cabinetmaking,JP,Japan,18,,449.0,,,RYOZO KIMURA,167606,True,9248
+WSC2001,24,Cabinetmaking,PH,Philippines,19,,440.0,,,BENJIE CUARESMA,167607,True,9249
+WSC2001,24,Cabinetmaking,DE,Germany,2,Silver,539.0,,,WOLFGANG FREY,167590,True,9232
+WSC2001,24,Cabinetmaking,IT,"South Tyrol, Italy",3,Bronze,533.0,,,MARKUS COMLOJ,167591,True,9233
+WSC2001,24,Cabinetmaking,KR,Korea,3,Bronze,532.0,,,JUNG HUN KWON,167592,True,9234
+WSC2001,24,Cabinetmaking,FR,France,5,Diploma,526.0,,,JULIEN VIDARD,167593,True,9235
+WSC2001,24,Cabinetmaking,UK,United Kingdom,5,Diploma,525.0,,,BRIAN LUDLOW,167594,True,9236
+WSC2001,24,Cabinetmaking,AT,Austria,7,Diploma,519.0,,,HEINZ WINKLER,167595,True,9237
+WSC2001,24,Cabinetmaking,CH,Switzerland,7,Diploma,517.0,,,ANDREAS MEIER,167596,True,9238
+WSC2001,24,Cabinetmaking,FI,Finland,9,,499.0,,,JARNO MÖTTÖNEN,167598,True,9240
+WSC2001,24,Cabinetmaking,SE,Sweden,9,Diploma,500.0,,,RASMUS GRANBERG,167597,True,9239
+WSC2001,25,Joinery,KR,Korea,1,Gold,549.0,,,KI TAE PARK,167608,True,9250
+WSC2001,25,Joinery,NZ,New Zealand,10,Diploma,504.0,,,RYAN BOLD,167617,True,9259
+WSC2001,25,Joinery,AU,Australia,11,,494.0,,,BRENDAN LEE,167618,True,9260
+WSC2001,25,Joinery,DK,Denmark,12,,483.0,,,STEFAN HANSEN,167619,True,9261
+WSC2001,25,Joinery,MY,Malaysia,12,,481.0,,,MOHAMAD ALI MOHIDI,167621,True,9263
+WSC2001,25,Joinery,NO,Norway,12,,481.0,,,STEIN IVAR EIKEN,167620,True,9262
+WSC2001,25,Joinery,JP,Japan,15,,464.0,,,TSUNEAKI HIRATSUKA,167623,True,9265
+WSC2001,25,Joinery,PH,Philippines,15,,466.0,,,RANDY CARINO,167622,True,9264
+WSC2001,25,Joinery,CA,Canada,17,,459.0,,,CHAD BUHR,167624,True,9266
+WSC2001,25,Joinery,MO,"Macao, China",18,,437.0,,,CHEONG MAN CHAN,167625,True,9267
+WSC2001,25,Joinery,CH,Switzerland,2,Silver,534.0,,,TOBIAS HUGENTOBLER,172943,True,9251
+WSC2001,25,Joinery,TW,Chinese Taipei,2,Silver,532.0,,,MENG-FENG HSIEH,167610,True,9252
+WSC2001,25,Joinery,AT,Austria,4,Diploma,528.0,,,ANDREAS RIEDLER,167611,True,9253
+WSC2001,25,Joinery,BE,Belgium,5,Diploma,520.0,,,GUIDO CLASSEN,167613,True,9255
+WSC2001,25,Joinery,FR,France,5,Diploma,522.0,,,ARNAUD MARECHET,167612,True,9254
+WSC2001,25,Joinery,DE,Germany,7,Diploma,518.0,,,MARKUS MARKARD,167615,True,9257
+WSC2001,25,Joinery,UK,United Kingdom,7,Diploma,519.0,,,IAN RUSSELL,167614,True,9256
+WSC2001,25,Joinery,PT,Portugal,9,Diploma,510.0,,,NELSON REIS,167616,True,9258
+WSC2001,26,Carpentry,KR,Korea,1,Gold,541.0,,,SEUNG HO LIM,167626,True,9268
+WSC2001,26,Carpentry,DK,Denmark,12,,483.0,,,KIM RENE KRISTENSEN,167637,True,9279
+WSC2001,26,Carpentry,BE,Belgium,13,,469.0,,,JULIEN CROISIER,167638,True,9280
+WSC2001,26,Carpentry,IR,Iran,14,,417.0,,,ALI MOHAMMAD INANLU YAGHMOURLU,167639,True,9281
+WSC2001,26,Carpentry,DE,Germany,2,Silver,529.0,,,MICHAEL RIEGER,167627,True,9269
+WSC2001,26,Carpentry,IT,"South Tyrol, Italy",2,Silver,527.0,,,TOBIAS DEMETZ,167628,True,9270
+WSC2001,26,Carpentry,IE,Ireland,4,Diploma,525.0,,,PADRAIG Ó HEIDHIN,167629,True,9271
+WSC2001,26,Carpentry,TW,Chinese Taipei,5,Diploma,514.0,,,WEI-HUNG HSU,167630,True,9272
+WSC2001,26,Carpentry,CH,Switzerland,6,Diploma,511.0,,,GABRIEL KOLLER,167631,True,9273
+WSC2001,26,Carpentry,FR,France,6,Diploma,509.0,,,STEVEN LE BER,167632,True,9274
+WSC2001,26,Carpentry,JP,Japan,8,Diploma,501.0,,,YUJI KAMIO,167633,True,9275
+WSC2001,26,Carpentry,FI,Finland,9,,491.0,,,JOUNI NIEMI,167634,True,9276
+WSC2001,26,Carpentry,NL,Netherlands,9,,491.0,,,GERWIN ZWEERS,167635,True,9277
+WSC2001,26,Carpentry,UK,United Kingdom,9,,491.0,,,RICHARD ROONEY,167636,True,9278
+WSC2001,27,Jewellery,KR,Korea,1,Gold,539.0,,,EUN SUNG PARK,167640,True,9282
+WSC2001,27,Jewellery,FI,Finland,10,,487.0,,,KAI TALLBERG,167650,True,9292
+WSC2001,27,Jewellery,NO,Norway,10,,487.0,,,PER-CHRISTIAN TØNNESEN,167649,True,9291
+WSC2001,27,Jewellery,IR,Iran,12,,450.0,,,MEHRZAD HORRIYEH,167651,True,9293
+WSC2001,27,Jewellery,FR,France,13,,427.0,,,JULIEN TILLOL,167652,True,9294
+WSC2001,27,Jewellery,PT,Portugal,2,Silver,530.0,,,ANTÓNIO FERNANDES,167641,True,9283
+WSC2001,27,Jewellery,TH,Thailand,3,Bronze,521.0,,,RIDSIN SRE-A-PORN,167642,True,9284
+WSC2001,27,Jewellery,AU,Australia,4,Diploma,518.0,,,LACHLAN WALSH,167643,True,9285
+WSC2001,27,Jewellery,IT,"South Tyrol, Italy",5,Diploma,514.0,,,ERWIN DOMANEGG,167644,True,9286
+WSC2001,27,Jewellery,JP,Japan,5,Diploma,512.0,,,TETSUYA YOKOYAMA,167645,True,9287
+WSC2001,27,Jewellery,TW,Chinese Taipei,7,Diploma,505.0,,,YUNG-FENG LIN,167647,True,9289
+WSC2001,27,Jewellery,UK,United Kingdom,7,Diploma,507.0,,,RICHARD TALMAN,167646,True,9288
+WSC2001,27,Jewellery,HK,"Hong Kong, China",9,Diploma,504.0,,,CHI WAI SHEK,167648,True,9290
+WSC2001,28,Floristry,SE,Sweden,1,Gold,539.0,,,EMMA SEGERMAN,167653,True,9295
+WSC2001,28,Floristry,JP,Japan,10,,489.0,,,TOMO MORISAKI,167662,True,9304
+WSC2001,28,Floristry,IT,"South Tyrol, Italy",11,,482.0,,,SABINE MALL,167663,True,9305
+WSC2001,28,Floristry,BE,Belgium,12,,471.0,,,KIM MASWIENS,167664,True,9306
+WSC2001,28,Floristry,HK,"Hong Kong, China",13,,444.0,,,SUK KI KAN,167665,True,9307
+WSC2001,28,Floristry,CA,Canada,14,,441.0,,,VICKY PERREAULT,167666,True,9308
+WSC2001,28,Floristry,CH,Switzerland,2,Silver,534.0,,,ESTHER BÜRGIN,167654,True,9296
+WSC2001,28,Floristry,FI,Finland,2,Silver,532.0,,,TANJA KOKKONEN,167655,True,9297
+WSC2001,28,Floristry,AT,Austria,4,Diploma,520.0,,,ANDREAS STERN,167656,True,9298
+WSC2001,28,Floristry,DE,Germany,5,Diploma,516.0,,,UTA LORENZ,167657,True,9299
+WSC2001,28,Floristry,FR,France,5,Diploma,516.0,,,STEVEN TOUGARD,167658,True,9300
+WSC2001,28,Floristry,NL,Netherlands,7,Diploma,511.0,,,CHANTAL VOLLENBROEK,167659,True,9301
+WSC2001,28,Floristry,KR,Korea,8,Diploma,505.0,,,JAE HO JANG,167660,True,9302
+WSC2001,28,Floristry,NO,Norway,9,Diploma,502.0,,,LINN DAGSLOTT,167661,True,9303
+WSC2001,29,Ladies' hairdressing,FR,France,1,Gold,551.0,,,AURIANE VIAL,167667,True,9309
+WSC2001,29,Ladies' hairdressing,KR,Korea,10,Diploma,502.0,,,WOO KYOUNG LEEM,167676,True,9318
+WSC2001,29,Ladies' hairdressing,DE,Germany,11,,495.0,,,SIMONE MAYER,167678,True,9320
+WSC2001,29,Ladies' hairdressing,US,United States of America,11,,497.0,,,KISHA JAMES,167677,True,9319
+WSC2001,29,Ladies' hairdressing,CA,Canada,13,,484.0,,,MELISSA BUNKER,167679,True,9321
+WSC2001,29,Ladies' hairdressing,JP,Japan,14,,476.0,,,RIE FURUSAWA,167680,True,9322
+WSC2001,29,Ladies' hairdressing,CH,Switzerland,15,,469.0,,,RAFFAELLO VOTTA,167681,True,9323
+WSC2001,29,Ladies' hairdressing,IT,"South Tyrol, Italy",16,,460.0,,,MAURO DAL PASSO,167682,True,9324
+WSC2001,29,Ladies' hairdressing,HK,"Hong Kong, China",17,,424.0,,,WAI HUNG YU,167683,True,9325
+WSC2001,29,Ladies' hairdressing,SE,Sweden,2,Silver,536.0,,,ERIKA ANDERSSON,167668,True,9310
+WSC2001,29,Ladies' hairdressing,NO,Norway,3,Bronze,533.0,,,LINN VOLDEN SOLHEIM,167669,True,9311
+WSC2001,29,Ladies' hairdressing,UK,United Kingdom,4,Diploma,522.0,,,KELLY HODGES,167670,True,9312
+WSC2001,29,Ladies' hairdressing,FI,Finland,5,Diploma,519.0,,,KATRI HEIKKA,167671,True,9313
+WSC2001,29,Ladies' hairdressing,AT,Austria,6,Diploma,509.0,,,EVA MAURER,167672,True,9314
+WSC2001,29,Ladies' hairdressing,AU,Australia,6,Diploma,508.0,,,TARYN DALLAS,167674,True,9316
+WSC2001,29,Ladies' hairdressing,TH,Thailand,6,Diploma,508.0,,,NOK PRASERT,167673,True,9315
+WSC2001,29,Ladies' hairdressing,TW,Chinese Taipei,9,Diploma,506.0,,,SHU-WEN CHENG,167675,True,9317
+WSC2001,30,Men's hairdressing,KR,Korea,1,Gold,536.0,,,YOUNG CHUL WON,167695,True,9337
+WSC2001,30,Men's hairdressing,TW,Chinese Taipei,10,,486.0,,,LI-YUN PAN,167704,True,9346
+WSC2001,30,Men's hairdressing,UK,United Kingdom,11,,472.0,,,TRACY MEGORAN,167705,True,9347
+WSC2001,30,Men's hairdressing,IR,Iran,12,,419.0,,,ALI REZA IDELY,167706,True,9348
+WSC2001,30,Men's hairdressing,FR,France,2,Silver,526.0,,,PHILIPPE DUFFIER,167696,True,9338
+WSC2001,30,Men's hairdressing,NO,Norway,3,Bronze,521.0,,,KJERSTI JØRGENSEN,167698,True,9340
+WSC2001,30,Men's hairdressing,SE,Sweden,3,Bronze,523.0,,,CHARLOTTE ALSÖ,167697,True,9339
+WSC2001,30,Men's hairdressing,DE,Germany,5,Diploma,516.0,,,CARINA KEHM,167699,True,9341
+WSC2001,30,Men's hairdressing,CA,Canada,6,Diploma,500.0,,,VÉRONIQUE BOILY,167702,True,9344
+WSC2001,30,Men's hairdressing,FI,Finland,6,Diploma,502.0,,,LINDA RUOTSALAINEN,167701,True,9343
+WSC2001,30,Men's hairdressing,JP,Japan,6,Diploma,502.0,,,NOBUYA NAMATAME,167700,True,9342
+WSC2001,30,Men's hairdressing,TH,Thailand,9,,497.0,,,TEERAWUT SORNSUTH,167703,True,9345
+WSC2001,31,Ladies Dressmaking,KR,Korea,1,Gold,549.0,,,IN HEE CHOI,167707,True,9349
+WSC2001,31,Ladies Dressmaking,NO,Norway,10,,465.0,,,SOLFRID LARSEN,167716,True,9358
+WSC2001,31,Ladies Dressmaking,HK,"Hong Kong, China",11,,443.0,,,SAU YUN HUNG,167717,True,9359
+WSC2001,31,Ladies Dressmaking,TW,Chinese Taipei,2,Silver,543.0,,,YI-CHUN YEH,167708,True,9350
+WSC2001,31,Ladies Dressmaking,JP,Japan,3,Bronze,518.0,,,SACHIKO TAKAMIYA,167709,True,9351
+WSC2001,31,Ladies Dressmaking,TH,Thailand,4,Diploma,512.0,,,PANATDA ATTHAWORAWINIT,167710,True,9352
+WSC2001,31,Ladies Dressmaking,CA,Canada,5,Diploma,505.0,,,MÉLANIE MARTEL,167711,True,9353
+WSC2001,31,Ladies Dressmaking,MY,Malaysia,5,Diploma,504.0,,,NOR AISHAH ALI,167712,True,9354
+WSC2001,31,Ladies Dressmaking,FI,Finland,7,,495.0,,,KATJA LINDBERG,167713,True,9355
+WSC2001,31,Ladies Dressmaking,FR,France,8,,485.0,,,CHANTHA KO,167714,True,9356
+WSC2001,31,Ladies Dressmaking,CH,Switzerland,9,,479.0,,,MARTINA KNÜSEL,167715,True,9357
+WSC2001,32,Confectioner/Pastry Cook,AT,Austria,1,Gold,542.0,,,EVELINE WILD,167718,True,9360
+WSC2001,32,Confectioner/Pastry Cook,BE,Belgium,10,,464.0,,,OLIVIER MATHY,167727,True,9369
+WSC2001,32,Confectioner/Pastry Cook,UK,United Kingdom,10,,463.0,,,HUGH MARSH,167728,True,9370
+WSC2001,32,Confectioner/Pastry Cook,FI,Finland,12,,440.0,,,ELLA SUONTAMA,167729,True,9371
+WSC2001,32,Confectioner/Pastry Cook,FR,France,2,Silver,534.0,,,SEBASTIEN ROCHE,167720,True,9362
+WSC2001,32,Confectioner/Pastry Cook,IT,"South Tyrol, Italy",2,Silver,534.0,,,MARTIN JACOB,167719,True,9361
+WSC2001,32,Confectioner/Pastry Cook,CA,Canada,4,Diploma,511.0,,,JUSTIN PELCHAT,167722,True,9364
+WSC2001,32,Confectioner/Pastry Cook,DE,Germany,4,Diploma,512.0,,,REGINA GRAFF,167721,True,9363
+WSC2001,32,Confectioner/Pastry Cook,KR,Korea,4,Diploma,510.0,,,YOUNG HUN SEO,167723,True,9365
+WSC2001,32,Confectioner/Pastry Cook,JP,Japan,7,Diploma,503.0,,,TERUKO GOTO,167724,True,9366
+WSC2001,32,Confectioner/Pastry Cook,TW,Chinese Taipei,8,Diploma,500.0,,,YU-CHUN WU,167725,True,9367
+WSC2001,32,Confectioner/Pastry Cook,AU,Australia,9,,489.0,,,TEENA KEARNEY,167726,True,9368
+WSC2001,33,Automobile Technology,KR,Korea,1,Gold,571.0,,,JONG HO LEE,167730,True,9372
+WSC2001,33,Automobile Technology,TW,Chinese Taipei,11,Diploma,501.0,,,SHAN-HSIAO CHU,167740,True,9382
+WSC2001,33,Automobile Technology,JP,Japan,12,,494.0,,,SHUHEI AMAGAI,167742,True,9384
+WSC2001,33,Automobile Technology,NZ,New Zealand,12,,496.0,,,SCOTT BAKER,167741,True,9383
+WSC2001,33,Automobile Technology,CA,Canada,14,,490.0,,,CHAD MCCONNELL,167745,True,9387
+WSC2001,33,Automobile Technology,LI,Principality of Liechtenstein,14,,489.0,,,MARCEL FRICK,167746,True,9388
+WSC2001,33,Automobile Technology,MY,Malaysia,14,,491.0,,,KOK KHEN THAM,167743,True,9385
+WSC2001,33,Automobile Technology,NO,Norway,14,,490.0,,,HALVARD ANDREAS ENEBERG,167744,True,9386
+WSC2001,33,Automobile Technology,LU,Luxembourg,18,,488.0,,,ROMAIN PETRY,167747,True,9389
+WSC2001,33,Automobile Technology,TH,Thailand,19,,485.0,,,SAKOL LUEPERMPORN,167748,True,9390
+WSC2001,33,Automobile Technology,UK,United Kingdom,19,,483.0,,,GAVIN LESTER,167749,True,9391
+WSC2001,33,Automobile Technology,US,United States of America,2,Silver,544.0,,,JOSHUA BOSCHEE,167731,True,9373
+WSC2001,33,Automobile Technology,FI,Finland,21,,480.0,,,KLAUS EERIKÄINEN,167751,True,9393
+WSC2001,33,Automobile Technology,FR,France,21,,482.0,,,FLORENT CARETTE,167750,True,9392
+WSC2001,33,Automobile Technology,HK,"Hong Kong, China",23,,466.0,,,KA MING WONG,167752,True,9394
+WSC2001,33,Automobile Technology,AE,United Arab Emirates,24,,409.0,,,MOHAMED ALI,167753,True,9395
+WSC2001,33,Automobile Technology,CH,Switzerland,3,Bronze,539.0,,,ANDREAS BÜHLER,167732,True,9374
+WSC2001,33,Automobile Technology,AT,Austria,4,Diploma,520.0,,,HARALD ROJKY,167735,True,9377
+WSC2001,33,Automobile Technology,AU,Australia,4,Diploma,520.0,,,CAMERON KENNEDY,167734,True,9376
+WSC2001,33,Automobile Technology,IE,Ireland,4,Diploma,518.0,,,ADRIAN CUNNINGHAM,167736,True,9378
+WSC2001,33,Automobile Technology,IT,"South Tyrol, Italy",4,Diploma,520.0,,,GÜNTHER OBERMAIR,167733,True,9375
+WSC2001,33,Automobile Technology,SE,Sweden,8,Diploma,516.0,,,NIKLAS JOHANSSON,167737,True,9379
+WSC2001,33,Automobile Technology,DE,Germany,9,Diploma,505.0,,,DANNY BARNIKOL,167738,True,9380
+WSC2001,33,Automobile Technology,PH,Philippines,9,Diploma,503.0,,,CHRISTIAN LEO CORTEZ,167739,True,9381
+WSC2001,34,Cooking,DE,Germany,1,Gold,590.0,,,MATTIAS ROOCK,167754,True,9396
+WSC2001,34,Cooking,NL,Netherlands,11,Diploma,504.0,,,JEROEN SCHUURMAN,167764,True,9406
+WSC2001,34,Cooking,LI,Principality of Liechtenstein,12,,495.0,,,BENJAMIN KRANZ,167765,True,9407
+WSC2001,34,Cooking,HK,"Hong Kong, China",13,,490.0,,,YEE CHUNG BORIS LEUNG,26997,True,9408
+WSC2001,34,Cooking,LU,Luxembourg,13,,488.0,,,LUCIANO DE MICHELE,167768,True,9410
+WSC2001,34,Cooking,TW,Chinese Taipei,13,,489.0,,,PANG-TSUNG LIN,167767,True,9409
+WSC2001,34,Cooking,IT,"South Tyrol, Italy",16,,487.0,,,ARMIN COMPLOI,167769,True,9411
+WSC2001,34,Cooking,AT,Austria,17,,482.0,,,PATRIC WALSER,167770,True,9412
+WSC2001,34,Cooking,SG,Singapore,17,,481.0,,,WEI MING DERICK KOH,167771,True,9413
+WSC2001,34,Cooking,AU,Australia,19,,476.0,,,CAMERON FALZON,167772,True,9414
+WSC2001,34,Cooking,CH,Switzerland,2,Silver,526.0,,,RAMONA MÜLLER-TREPP,167755,True,9397
+WSC2001,34,Cooking,KR,Korea,2,Silver,525.0,,,WON HO LEE,167756,True,9398
+WSC2001,34,Cooking,JP,Japan,20,,469.0,,,SHIGEKI SHODA,167773,True,9415
+WSC2001,34,Cooking,NZ,New Zealand,21,,447.0,,,SELENA QUINN,167774,True,9416
+WSC2001,34,Cooking,TH,Thailand,21,,446.0,,,WINAI SEANTAWEESUK,167775,True,9417
+WSC2001,34,Cooking,CA,Canada,4,Diploma,521.0,,,JONATHAN RANGER,167759,True,9401
+WSC2001,34,Cooking,FI,Finland,4,Diploma,521.0,,,MARKUS LATTUNEN,167758,True,9400
+WSC2001,34,Cooking,FR,France,4,Diploma,521.0,,,CEDRIC DECKERT,167757,True,9399
+WSC2001,34,Cooking,NO,Norway,7,Diploma,514.0,,,ANDREAS MYRVOLD,167760,True,9402
+WSC2001,34,Cooking,UK,United Kingdom,7,Diploma,514.0,,,LUCY HYDER,167761,True,9403
+WSC2001,34,Cooking,IE,Ireland,9,Diploma,506.0,,,ABIGAIL COLLERAN,167763,True,9405
+WSC2001,34,Cooking,SE,Sweden,9,Diploma,508.0,,,THOMAS ABRAHAMSSON,167762,True,9404
+WSC2001,35,Restaurant Service,KR,Korea,1,Gold,572.0,,,SUN KYUNG LEE,167776,True,9418
+WSC2001,35,Restaurant Service,FR,France,11,,482.0,,,CHRISTEL CHAVANT,167787,True,9429
+WSC2001,35,Restaurant Service,IT,"South Tyrol, Italy",11,,481.0,,,ULRIKE NAGLER,167788,True,9430
+WSC2001,35,Restaurant Service,NL,Netherlands,11,,483.0,,,MARLIES BAKEN,167786,True,9428
+WSC2001,35,Restaurant Service,TW,Chinese Taipei,14,,476.0,,,YU-CHIEN LIU,167789,True,9431
+WSC2001,35,Restaurant Service,CH,Switzerland,15,,471.0,,,GEORGE AKES,167790,True,9432
+WSC2001,35,Restaurant Service,PT,Portugal,16,,444.0,,,NUNO PEREIRA,167791,True,9433
+WSC2001,35,Restaurant Service,CA,Canada,2,Silver,552.0,,,JULIE NOËL DE TILLY,167777,True,9419
+WSC2001,35,Restaurant Service,AT,Austria,3,Bronze,530.0,,,ULRIKE PIRKLBAUER,167778,True,9420
+WSC2001,35,Restaurant Service,FI,Finland,4,Diploma,502.0,,,JANNE MARIN,167782,True,9424
+WSC2001,35,Restaurant Service,NO,Norway,4,Diploma,502.0,,,ROBERT WERENSKJOLD LIE,167781,True,9423
+WSC2001,35,Restaurant Service,SE,Sweden,4,Diploma,501.0,,,NIKLAS PERSSON,167783,True,9425
+WSC2001,35,Restaurant Service,TH,Thailand,4,Diploma,503.0,,,SAMARK SAE-EAE,167779,True,9421
+WSC2001,35,Restaurant Service,UK,United Kingdom,4,Diploma,503.0,,,KELLY YOUNG,167780,True,9422
+WSC2001,35,Restaurant Service,AU,Australia,9,Diploma,500.0,,,BYRON WRIGHT,167784,True,9426
+WSC2001,35,Restaurant Service,IE,Ireland,9,,498.0,,,MICHAEL O CONNOR,165429,True,9427
+WSC2001,36,Car Painting,KR,Korea,1,Gold,567.0,,,KWANG SIK KIM,167792,True,9434
+WSC2001,36,Car Painting,CA,Canada,11,,485.0,,,JOHN HERLIDAN,167802,True,9444
+WSC2001,36,Car Painting,CH,Switzerland,12,,477.0,,,JOÃO CARLOS OLIVEIRA,167803,True,9445
+WSC2001,36,Car Painting,NL,Netherlands,12,,475.0,,,DANNY MINNING,167804,True,9446
+WSC2001,36,Car Painting,IR,Iran,14,,431.0,,,BEHNAM MOHAMMADINEZHAD,167805,True,9447
+WSC2001,36,Car Painting,TW,Chinese Taipei,2,Silver,534.0,,,HUNG-YI HU,167793,True,9435
+WSC2001,36,Car Painting,SE,Sweden,3,Bronze,521.0,,,ROINE RÖJÅS,167794,True,9436
+WSC2001,36,Car Painting,NO,Norway,4,Diploma,511.0,,,DANIEL PEDERSEN,167795,True,9437
+WSC2001,36,Car Painting,FI,Finland,5,Diploma,505.0,,,LAURI LINNAVUORI,167798,True,9440
+WSC2001,36,Car Painting,FR,France,5,Diploma,506.0,,,DAMIEN FILLON,167796,True,9438
+WSC2001,36,Car Painting,UK,United Kingdom,5,Diploma,506.0,,,JOHN GOLDSON,167797,True,9439
+WSC2001,36,Car Painting,NZ,New Zealand,8,Diploma,501.0,,,STEVE ALLAN,167799,True,9441
+WSC2001,36,Car Painting,AU,Australia,9,,490.0,,,JESSICA CAMPBELL,167801,True,9443
+WSC2001,36,Car Painting,IT,"South Tyrol, Italy",9,,491.0,,,KLAUS PITTSCHIELER,167800,True,9442
+WSC2001,37,Landscape Gardening,CH,Switzerland,1,Gold,558.0,,,PHILIPPE HUG; DOMINIC-FELIX JOST,167806; 167807,True,9448
+WSC2001,37,Landscape Gardening,NL,Netherlands,2,Silver,538.0,,,HENRI METHORST; GERARD VAN GESSEL,167808; 167809,True,9449
+WSC2001,37,Landscape Gardening,CA,Canada,3,Bronze,505.0,,,SIMON PLANTE; RÉMI POIRIER,167810; 167811,True,9450
+WSC2001,37,Landscape Gardening,DE,Germany,3,Bronze,503.0,,,JAN RADTKE; ANDREA SPIELKER,167812; 167813,True,9451
+WSC2001,37,Landscape Gardening,AT,Austria,5,,497.0,,,HANS PETER REINTHALER; HARALD SCHÜTZ,167816; 167817,True,9453
+WSC2001,37,Landscape Gardening,IT,"South Tyrol, Italy",5,,498.0,,,MARCO ANDOLFATTO; STEFANO GASPARETTO,167814; 167815,True,9452
+WSC2001,37,Landscape Gardening,FR,France,7,,469.0,,,DENIS CORNUAULT; JAN MAES,167818; 167819,True,9454
+WSC2001,37,Landscape Gardening,JP,Japan,7,,468.0,,,KENZO ANZAI; YUICHI ANZAWA,167820; 167821,True,9455
+WSC2001,37,Landscape Gardening,FI,Finland,9,,465.0,,,PAULIINA SILTANEN; NIINA TOUKOLA,167822; 167823,True,9456
+WSC2001,38,Refrigeration,AU,Australia,1,Gold,537.0,,,STEPHANIE BUGG,167824,True,9457
+WSC2001,38,Refrigeration,DE,Germany,1,Gold,535.0,,,NICOLAS REINHARD,243610,True,9458
+WSC2001,38,Refrigeration,HK,"Hong Kong, China",10,Diploma,503.0,,,YU HANG LAI,167833,True,9466
+WSC2001,38,Refrigeration,CH,Switzerland,11,,493.0,,,MATTHIAS DELLENBACH,167834,True,9467
+WSC2001,38,Refrigeration,FR,France,12,,488.0,,,ROMAIN PIERRY,167836,True,9469
+WSC2001,38,Refrigeration,SE,Sweden,12,,490.0,,,FREDRIC EDLUND,167835,True,9468
+WSC2001,38,Refrigeration,PH,Philippines,14,,480.0,,,CELRESTIE ESGANA,167837,True,9470
+WSC2001,38,Refrigeration,MA,Morocco,15,,469.0,,,YOUNES ES-SALEK,167838,True,9471
+WSC2001,38,Refrigeration,UK,United Kingdom,15,,469.0,,,MARK DURANT,167839,True,9472
+WSC2001,38,Refrigeration,IR,Iran,17,,414.0,,,KIANOUSH HOSSEININEZHAD,167840,True,9473
+WSC2001,38,Refrigeration,KR,Korea,3,Bronze,526.0,,,JANG HO PARK,167827,True,9460
+WSC2001,38,Refrigeration,TW,Chinese Taipei,3,Bronze,528.0,,,CHIEN-YU LIN,5321,True,9459
+WSC2001,38,Refrigeration,TH,Thailand,5,Diploma,521.0,,,SONGPONE LOWIRAN,167829,True,9462
+WSC2001,38,Refrigeration,US,United States of America,5,Diploma,523.0,,,BRETT JOHNSON,167828,True,9461
+WSC2001,38,Refrigeration,BR,Brazil,7,Diploma,509.0,,,JAIR OZI SILVA,167830,True,9463
+WSC2001,38,Refrigeration,CA,Canada,7,Diploma,507.0,,,JEAN-PHILIPPE DUGRE,167832,True,9465
+WSC2001,38,Refrigeration,MY,Malaysia,7,Diploma,508.0,,,MOHAMAD FAIRUZ MOHAMAD BAKROR,167831,True,9464
+WSC2001,39,IT PC/Network Support,SG,Singapore,1,Gold,536.0,,,CHER YONG CHUNG,167841,True,9474
+WSC2001,39,IT PC/Network Support,NL,Netherlands,10,,448.0,,,JEROEN THOOLEN,167850,True,9483
+WSC2001,39,IT PC/Network Support,AE,United Arab Emirates,11,,434.0,,,ALANOUD ALHAJJI,167851,True,9484
+WSC2001,39,IT PC/Network Support,AU,Australia,2,Silver,525.0,,,HEATH WILLIAMS,167842,True,9475
+WSC2001,39,IT PC/Network Support,FI,Finland,2,Silver,523.0,,,SAMPO AHOKAS,167843,True,9476
+WSC2001,39,IT PC/Network Support,DE,Germany,4,Diploma,513.0,,,RALF STEIN,167844,True,9477
+WSC2001,39,IT PC/Network Support,CH,Switzerland,5,Diploma,510.0,,,CHRISTIAN BEYELER,167845,True,9478
+WSC2001,39,IT PC/Network Support,CA,Canada,6,Diploma,505.0,,,MARK RICHARDSON,167847,True,9480
+WSC2001,39,IT PC/Network Support,HK,"Hong Kong, China",6,Diploma,506.0,,,CHI LEUNG YEUNG,167846,True,9479
+WSC2001,39,IT PC/Network Support,NZ,New Zealand,8,Diploma,503.0,,,ANDREW THOMAS,167848,True,9481
+WSC2001,39,IT PC/Network Support,KR,Korea,9,,495.0,,,HYUN JUNG KIM,167849,True,9482
+WSC2001,40,Graphic Design Technology,AU,Australia,1,Gold,539.0,,,MARCUS KOSTELAC,167878,True,9498
+WSC2001,40,Graphic Design Technology,FI,Finland,10,,473.0,,,LAURA VAINIO,167887,True,9507
+WSC2001,40,Graphic Design Technology,TW,Chinese Taipei,11,,466.0,,,HSIN-I CHENG,167888,True,9508
+WSC2001,40,Graphic Design Technology,AE,United Arab Emirates,12,,455.0,,,YOUSIF ALMARRI,167889,True,9509
+WSC2001,40,Graphic Design Technology,SE,Sweden,12,,453.0,,,ISABELLE NORMAN,167890,True,9510
+WSC2001,40,Graphic Design Technology,SG,Singapore,2,Silver,536.0,,,WAYE PINN TAN,167879,True,9499
+WSC2001,40,Graphic Design Technology,BR,Brazil,3,Bronze,531.0,,,BRUNO LUCIANO VILLARDO MARTINS,167880,True,9500
+WSC2001,40,Graphic Design Technology,KR,Korea,3,Bronze,529.0,,,HEA MI KIM,167881,True,9501
+WSC2001,40,Graphic Design Technology,NO,Norway,5,Diploma,523.0,,,SIMEN KJUS,167882,True,9502
+WSC2001,40,Graphic Design Technology,IE,Ireland,6,Diploma,513.0,,,SIOBHAN DESMOND,167883,True,9503
+WSC2001,40,Graphic Design Technology,CA,Canada,7,Diploma,502.0,,,MANON THERRIEN,167884,True,9504
+WSC2001,40,Graphic Design Technology,NL,Netherlands,8,,496.0,,,CHRISTY VAN DER SMAN,167885,True,9505
+WSC2001,40,Graphic Design Technology,HK,"Hong Kong, China",9,,484.0,,,KAM WAH YU,167886,True,9506

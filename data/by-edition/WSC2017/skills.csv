@@ -1,0 +1,53 @@
+﻿edition,skill,name,status,skill_id,type
+WSC2017,01,Polymechanics and Automation,active,482,official
+WSC2017,02,Information Network Cabling,active,483,official
+WSC2017,03,Manufacturing Team Challenge,active,484,official
+WSC2017,04,Mechatronics,active,485,official
+WSC2017,05,Mechanical Engineering CAD,active,486,official
+WSC2017,06,CNC Turning,active,487,official
+WSC2017,07,CNC Milling,active,488,official
+WSC2017,08,Architectural Stonemasonry,active,489,official
+WSC2017,09,IT Software Solutions for Business,active,490,official
+WSC2017,10,Welding,active,491,official
+WSC2017,11,Print Media Technology,active,492,official
+WSC2017,12,Wall and Floor Tiling,active,493,official
+WSC2017,13,Autobody Repair,active,494,official
+WSC2017,14,Aircraft Maintenance,active,495,official
+WSC2017,15,Plumbing and Heating,active,496,official
+WSC2017,16,Electronics,active,497,official
+WSC2017,17,Web Design and Development,active,498,official
+WSC2017,18,Electrical Installations,active,499,official
+WSC2017,19,Industrial Control,active,500,official
+WSC2017,20,Bricklaying,active,501,official
+WSC2017,21,Plastering and Drywall Systems,active,502,official
+WSC2017,22,Painting and Decorating,active,503,official
+WSC2017,23,Mobile Robotics,active,504,official
+WSC2017,24,Cabinetmaking,active,505,official
+WSC2017,25,Joinery,active,506,official
+WSC2017,26,Carpentry,active,507,official
+WSC2017,27,Jewellery,active,508,official
+WSC2017,28,Floristry,active,509,official
+WSC2017,29,Hairdressing,active,510,official
+WSC2017,30,Beauty Therapy,active,511,official
+WSC2017,31,Fashion Technology,active,512,official
+WSC2017,32,Pâtisserie and Confectionery,active,513,official
+WSC2017,33,Automobile Technology,active,514,official
+WSC2017,34,Cooking,active,515,official
+WSC2017,35,Restaurant Service,active,516,official
+WSC2017,36,Car Painting,active,517,official
+WSC2017,37,Landscape Gardening,active,518,official
+WSC2017,38,Refrigeration and Air Conditioning,active,519,official
+WSC2017,39,IT Network Systems Administration,active,520,official
+WSC2017,40,Graphic Design Technology,active,521,official
+WSC2017,41,Health and Social Care,active,522,official
+WSC2017,42,Construction Metal Work,active,523,official
+WSC2017,43,Plastic Die Engineering,active,524,official
+WSC2017,44,Visual Merchandising,active,525,official
+WSC2017,45,Prototype Modelling,active,526,official
+WSC2017,46,Concrete Construction Work,active,528,official
+WSC2017,47,Bakery,active,529,official
+WSC2017,48,Industrial Mechanic Millwright,active,530,official
+WSC2017,49,Heavy Vehicle Maintenance,active,531,official
+WSC2017,D1,3D Digital Game Art,active,532,demo
+WSC2017,D2,Freight Forwarding,active,533,demo
+WSC2017,ES01,Water Technology,active,534,exhibition

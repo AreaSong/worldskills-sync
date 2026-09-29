@@ -1,0 +1,48 @@
+﻿edition,skill,name,status,skill_id,type
+WSC2007,01,Polymechanics/Automation,active,1,official
+WSC2007,02,Telecommunication Distribution Technology,active,47,official
+WSC2007,03,Manufacturing Team Challenge,active,2,official
+WSC2007,04,Mechatronics,active,3,official
+WSC2007,05,Mech. Eng. CADD,active,4,official
+WSC2007,06,CNC Turning,active,5,official
+WSC2007,07,CNC Milling,active,6,official
+WSC2007,09,IT/Software Applications,active,7,official
+WSC2007,10,Welding,active,8,official
+WSC2007,11,Printing,active,39,official
+WSC2007,12,Wall and Floor Tiling,active,10,official
+WSC2007,13,Autobody Repair,active,11,official
+WSC2007,14,Metal Roofing,active,12,official
+WSC2007,15,Plumbing,active,13,official
+WSC2007,16,Industrial Electronics,active,14,official
+WSC2007,17,Web Design,active,15,official
+WSC2007,18,Electrical Installations,active,16,official
+WSC2007,19,Industrial Control,active,17,official
+WSC2007,20,Bricklaying,active,18,official
+WSC2007,21,Stonemasonry,active,19,official
+WSC2007,22,Painting and Decorating,active,20,official
+WSC2007,24,Cabinetmaking,active,21,official
+WSC2007,25,Joinery,active,22,official
+WSC2007,26,Carpentry,active,23,official
+WSC2007,27,Jewellery,active,24,official
+WSC2007,28,Floristry,active,25,official
+WSC2007,29,Ladies'/Men's Hairdressing,active,26,official
+WSC2007,30,Beauty Therapy,active,27,official
+WSC2007,31,Ladies Dressmaking,active,28,official
+WSC2007,32,Confectioner/Pastry Cook,active,29,official
+WSC2007,33,Automobile Technology,active,30,official
+WSC2007,34,Cooking,active,31,official
+WSC2007,35,Restaurant Service,active,32,official
+WSC2007,36,Car Painting,active,33,official
+WSC2007,37,Landscape Gardening,active,34,official
+WSC2007,38,Refrigeration,active,35,official
+WSC2007,39,IT PC/Network Support,active,36,official
+WSC2007,40,Graphic Design Technology,active,37,official
+WSC2007,D1,Caring,active,40,official
+WSC2007,D2,Mobile Robotics,active,9,official
+WSC2007,D3,Mould Making,active,41,official
+WSC2007,D4,Bakery,active,38,official
+WSC2007,HM1,Mechanical Device Control,active,42,official
+WSC2007,HM2,Construction Metal Work,active,43,official
+WSC2007,HM3,Pattern Making,active,44,official
+WSC2007,HM4,Plastering,active,45,official
+WSC2007,HM5,Sheet Metal Technology,active,46,official

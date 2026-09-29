@@ -1,0 +1,44 @@
+﻿edition,skill,name,status,skill_id,type
+WSC2003,01,Mechanical Systems Technician,active,87,official
+WSC2003,02,Press tool making,active,88,official
+WSC2003,03,Instrument making,active,89,official
+WSC2003,04,Mechatronics,active,90,official
+WSC2003,05,Mech. Eng. CADD,active,91,official
+WSC2003,06,CNC Turning,active,92,official
+WSC2003,07,CNC Milling,active,93,official
+WSC2003,08,Construction steel work,active,94,official
+WSC2003,09,IT/Software Applications,active,95,official
+WSC2003,10,Welding,active,96,official
+WSC2003,11,Pattern Making,active,97,official
+WSC2003,12,Wall and Floor Tiling,active,98,official
+WSC2003,13,Autobody Repair,active,99,official
+WSC2003,14,Sheet metal work,active,100,official
+WSC2003,15,Plumbing,active,101,official
+WSC2003,16,Industrial Electronics,active,102,official
+WSC2003,18,Electrical Installations,active,103,official
+WSC2003,19,Industrial Control,active,104,official
+WSC2003,20,Bricklaying,active,105,official
+WSC2003,21,Stonemasonry,active,106,official
+WSC2003,22,Painting and Decorating,active,107,official
+WSC2003,23,Plastering,active,108,official
+WSC2003,24,Cabinetmaking,active,109,official
+WSC2003,25,Joinery,active,110,official
+WSC2003,26,Carpentry,active,111,official
+WSC2003,27,Jewellery,active,112,official
+WSC2003,28,Floristry,active,113,official
+WSC2003,29,Ladies'/Men's Hairdressing,active,114,official
+WSC2003,31,Ladies Dressmaking,active,115,official
+WSC2003,32,Confectioner/Pastry Cook,active,116,official
+WSC2003,33,Automobile Technology,active,117,official
+WSC2003,34,Cooking,active,118,official
+WSC2003,35,Restaurant Service,active,119,official
+WSC2003,36,Car Painting,active,120,official
+WSC2003,37,Landscape Gardening,active,121,official
+WSC2003,38,Refrigeration,active,122,official
+WSC2003,39,IT PC/Network Support,active,123,official
+WSC2003,40,Graphic Design Technology,active,124,official
+WSC2003,41,Beauty Therapy,active,125,official
+WSC2003,42,Polymechanics/Automation,active,126,demo
+WSC2003,43,Web Design,active,127,demo
+WSC2003,44,Manufacturing Team Challenge,active,1367,demo
+WSC2003,45,Bakery,active,128,demo

@@ -1,0 +1,65 @@
+﻿edition,skill,name,status,skill_id,type
+WSC2026,01,Industrial Mechanics,active,2410,official
+WSC2026,02,ICT Network Infrastructure,active,2412,official
+WSC2026,03,Intelligent Security Technology,active,2694,official
+WSC2026,04,Mechatronics,active,2411,official
+WSC2026,05,Mechanical Engineering CAD,active,2408,official
+WSC2026,06,CNC Turning,active,2433,official
+WSC2026,07,CNC Milling,active,2406,official
+WSC2026,08,Mobile Applications Development,active,2416,official
+WSC2026,09,Software Applications Development,active,2429,official
+WSC2026,10,Welding,active,2446,official
+WSC2026,11,Software Testing,active,2697,official
+WSC2026,12,Wall and Floor Tiling,active,2414,official
+WSC2026,13,Autobody Repair,active,2405,official
+WSC2026,14,Aircraft Maintenance,active,2435,official
+WSC2026,15,Plumbing and Heating,active,2417,official
+WSC2026,16,Electronics,active,2436,official
+WSC2026,17,Web Technologies,active,2439,official
+WSC2026,18,Electrical Installations,active,2442,official
+WSC2026,19,Industrial Control,active,2427,official
+WSC2026,20,Bricklaying,active,2434,official
+WSC2026,21,Plastering and Drywall Systems,active,2441,official
+WSC2026,22,Painting and Decorating,active,2409,official
+WSC2026,23,Autonomous Mobile Robotics,active,2413,official
+WSC2026,24,Cabinetmaking,active,2444,official
+WSC2026,25,Joinery,active,2420,official
+WSC2026,26,Carpentry,active,2437,official
+WSC2026,27,Jewellery,active,2443,official
+WSC2026,28,Floristry,active,2458,official
+WSC2026,29,Hairdressing,active,2445,official
+WSC2026,30,Beauty Therapy,active,2421,official
+WSC2026,31,Fashion Technology,active,2424,official
+WSC2026,32,Pâtisserie and Confectionery,active,2418,official
+WSC2026,33,Automobile Technology,active,2459,official
+WSC2026,34,Cooking,active,2457,official
+WSC2026,35,Restaurant Service,active,2432,official
+WSC2026,36,Car Painting,active,2438,official
+WSC2026,37,Landscape Gardening,active,2449,official
+WSC2026,38,Refrigeration and Air Conditioning,active,2415,official
+WSC2026,39,IT Network Systems Administration,active,2447,official
+WSC2026,40,Graphic Design Technology,active,2448,official
+WSC2026,41,Health and Social Care,active,2431,official
+WSC2026,42,Dental Prosthetics,active,2692,official
+WSC2026,43,Retail Sales,active,2696,official
+WSC2026,44,Visual Merchandising,active,2430,official
+WSC2026,45,Digital Interactive Media Design,active,2693,official
+WSC2026,46,Concrete Construction Work,active,2450,official
+WSC2026,47,Bakery,active,2456,official
+WSC2026,48,Industry 4.0,active,2452,official
+WSC2026,49,Heavy Vehicle Technology,active,2425,official
+WSC2026,50,3D Digital Game Art,active,2451,official
+WSC2026,51,Logistics and Freight Forwarding,active,2423,official
+WSC2026,52,Chemical Laboratory Technology,active,2440,official
+WSC2026,53,Cloud Computing,active,2455,official
+WSC2026,54,Cyber Security,active,2461,official
+WSC2026,55,Water Technology,active,2428,official
+WSC2026,56,Hotel Reception,active,2454,official
+WSC2026,57,Additive Manufacturing,active,2463,official
+WSC2026,58,Digital Construction,active,2419,official
+WSC2026,59,Industrial Design Technology,active,2462,official
+WSC2026,60,Optoelectronic Technology,active,2460,official
+WSC2026,61,Rail Vehicle Technology,active,2695,official
+WSC2026,62,Renewable Energy,active,2453,official
+WSC2026,63,Robot Systems Integration,active,2407,official
+WSC2026,64,Unmanned Aerial Systems,active,2698,official

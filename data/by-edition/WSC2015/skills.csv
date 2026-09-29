@@ -1,0 +1,51 @@
+﻿edition,skill,name,status,skill_id,type
+WSC2015,01,Polymechanics and Automation,active,428,official
+WSC2015,02,Information Network Cabling,active,427,official
+WSC2015,03,Manufacturing Team Challenge,active,426,official
+WSC2015,04,Mechatronics,active,425,official
+WSC2015,05,Mechanical Engineering Design - CAD,active,424,official
+WSC2015,06,CNC Turning,active,423,official
+WSC2015,07,CNC Milling,active,422,official
+WSC2015,08,Architectural Stonemasonry,active,421,official
+WSC2015,09,IT Software Solutions for Business,active,420,official
+WSC2015,10,Welding,active,419,official
+WSC2015,11,Print Media Technology,active,418,official
+WSC2015,12,Wall and Floor Tiling,active,417,official
+WSC2015,13,Autobody Repair,active,416,official
+WSC2015,14,Aircraft Maintenance,active,415,official
+WSC2015,15,Plumbing and Heating,active,414,official
+WSC2015,16,Electronics,active,413,official
+WSC2015,17,Web Design,active,412,official
+WSC2015,18,Electrical Installations,active,411,official
+WSC2015,19,Industrial Control,active,410,official
+WSC2015,20,Bricklaying,active,409,official
+WSC2015,21,Plastering and Drywall Systems,active,408,official
+WSC2015,22,Painting and Decorating,active,407,official
+WSC2015,23,Mobile Robotics,active,406,official
+WSC2015,24,Cabinetmaking,active,405,official
+WSC2015,25,Joinery,active,404,official
+WSC2015,26,Carpentry,active,403,official
+WSC2015,27,Jewellery,active,402,official
+WSC2015,28,Floristry,active,401,official
+WSC2015,29,Hairdressing,active,400,official
+WSC2015,30,Beauty Therapy,active,399,official
+WSC2015,31,Fashion Technology,active,398,official
+WSC2015,32,Pâtisserie and Confectionery,active,397,official
+WSC2015,33,Automobile Technology,active,396,official
+WSC2015,34,Cooking,active,395,official
+WSC2015,35,Restaurant Service,active,394,official
+WSC2015,36,Car Painting,active,393,official
+WSC2015,37,Landscape Gardening,active,392,official
+WSC2015,38,Refrigeration and Air Conditioning,active,391,official
+WSC2015,39,IT Network Systems Administration,active,390,official
+WSC2015,40,Graphic Design Technology,active,389,official
+WSC2015,41,Health and Social Care,active,388,official
+WSC2015,42,Construction Metal Work,active,387,official
+WSC2015,43,Plastic Die Engineering,active,429,official
+WSC2015,44,Visual Merchandising and Window Dressing,active,384,official
+WSC2015,45,Prototype Modelling,active,386,official
+WSC2015,46,Sheet Metal Technology,active,434,official
+WSC2015,D1,Concrete Construction Work,active,430,demo
+WSC2015,D2,Bakery,active,431,demo
+WSC2015,D3,Industrial Mechanics Millwright,active,432,demo
+WSC2015,D4,Heavy Vehicle Maintenance,active,433,demo

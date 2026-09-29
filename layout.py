@@ -32,6 +32,33 @@ KIND_CODES = {
     "competition-documents": "DOC",
     "official-document": "OFF",
     "skill-resource": "SKL",
+    "supporting-documents": "SUP",
+    "meeting-documents": "MTG",
+    "video": "VID",
+    "hall-layout": "HAL",
+    "organizing-guide": "ORG",
+    "marketing-resource": "MKT",
+    "report": "RPT",
+    "general": "GEN",
+    "minutes": "MIN",
+    "centre-resource": "CEN",
+    "learning-resource": "LRN",
+    "resource-hub": "HUB",
+    "wsss": "WSS",
+    "hse": "HSE",
+    "news-resource": "NEW",
+    "software": "SFW",
+    "forum-uploads": "FOR",
+    "museum-archive": "MAR",
+    "museum-photo": "MPH",
+    "object": "OBJ",
+    "archive": "ARC",
+    "museum-record": "MRC",
+    "resource-centre": "RCH",
+    "conference-uploads": "CNF",
+    "software-guide": "SFG",
+    "standards-assessment-guide": "SAG",
+    "marking-forms": "FRM",
 }
 
 KIND_FROM_LABEL = {label: KIND_CODES[key] for key, label in DOC_TYPES.items()}
@@ -62,18 +89,7 @@ LANG_FROM_LABEL["未标注"] = "und"
 LANG_FROM_LABEL["und"] = "und"
 LANG_FROM_LABEL["mul"] = "mul"
 
-KIND_ASSET = {
-    "TD": "td",
-    "TP": "tp",
-    "IL": "il",
-    "SMP": "smp",
-    "COR": "cor",
-    "RES": "other",
-    "RST": "other",
-    "DOC": "other",
-    "OFF": "other",
-    "SKL": "other",
-}
+KIND_ASSET = {code: code.lower() for code in KIND_CODES.values()}
 
 MAX_ASSET_BYTES = 1_800_000_000
 STORED_SUFFIXES = {".zip", ".gz", ".7z", ".rar", ".bz2", ".xz"}
@@ -313,6 +329,14 @@ def write_indexes(root: Path, records: Iterable[dict[str, Any]]) -> None:
         "releases": sorted({item["release"] for item in items}),
         "assets": sorted({item.get("asset") for item in items if item.get("asset")}),
     }
+    data_summary = root / "data" / "summary.json"
+    if data_summary.exists():
+        try:
+            payload = json.loads(data_summary.read_text(encoding="utf-8"))
+            if isinstance(payload, dict):
+                summary["data"] = payload
+        except json.JSONDecodeError:
+            pass
     dump(index_dir / "summary.json", summary)
 
 

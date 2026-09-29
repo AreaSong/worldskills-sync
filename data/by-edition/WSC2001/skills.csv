@@ -1,0 +1,40 @@
+﻿edition,skill,name,status,skill_id,type
+WSC2001,01,Fitting,active,129,official
+WSC2001,02,Press tool making,active,130,official
+WSC2001,03,Instrument making,active,131,official
+WSC2001,04,Mechatronics,active,132,official
+WSC2001,05,Mech. Eng. CADD,active,133,official
+WSC2001,06,CNC Turning,active,134,official
+WSC2001,07,CNC Milling,active,135,official
+WSC2001,08,Construction steel work,active,136,official
+WSC2001,09,IT/Software Applications,active,137,official
+WSC2001,10,Welding,active,138,official
+WSC2001,11,Pattern Making,active,139,official
+WSC2001,12,Wall and Floor Tiling,active,140,official
+WSC2001,13,Autobody Repair,active,141,official
+WSC2001,14,Sheet metal work,active,142,official
+WSC2001,15,Plumbing,active,143,official
+WSC2001,16,Industrial Electronics,active,144,official
+WSC2001,18,Electrical Installations,active,145,official
+WSC2001,19,Industrial Control,active,146,official
+WSC2001,20,Bricklaying,active,147,official
+WSC2001,21,Stonemasonry,active,148,official
+WSC2001,22,Painting and Decorating,active,149,official
+WSC2001,23,Plastering,active,150,official
+WSC2001,24,Cabinetmaking,active,151,official
+WSC2001,25,Joinery,active,152,official
+WSC2001,26,Carpentry,active,153,official
+WSC2001,27,Jewellery,active,154,official
+WSC2001,28,Floristry,active,155,official
+WSC2001,29,Ladies' hairdressing,active,156,official
+WSC2001,30,Men's hairdressing,active,157,official
+WSC2001,31,Ladies Dressmaking,active,158,official
+WSC2001,32,Confectioner/Pastry Cook,active,159,official
+WSC2001,33,Automobile Technology,active,160,official
+WSC2001,34,Cooking,active,161,official
+WSC2001,35,Restaurant Service,active,162,official
+WSC2001,36,Car Painting,active,163,official
+WSC2001,37,Landscape Gardening,active,164,official
+WSC2001,38,Refrigeration,active,165,official
+WSC2001,39,IT PC/Network Support,active,166,official
+WSC2001,40,Graphic Design Technology,active,167,official

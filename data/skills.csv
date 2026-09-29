@@ -1,0 +1,753 @@
+﻿edition,skill,name,status,skill_id,type
+WSC2001,01,Fitting,active,129,official
+WSC2001,02,Press tool making,active,130,official
+WSC2001,03,Instrument making,active,131,official
+WSC2001,04,Mechatronics,active,132,official
+WSC2001,05,Mech. Eng. CADD,active,133,official
+WSC2001,06,CNC Turning,active,134,official
+WSC2001,07,CNC Milling,active,135,official
+WSC2001,08,Construction steel work,active,136,official
+WSC2001,09,IT/Software Applications,active,137,official
+WSC2001,10,Welding,active,138,official
+WSC2001,11,Pattern Making,active,139,official
+WSC2001,12,Wall and Floor Tiling,active,140,official
+WSC2001,13,Autobody Repair,active,141,official
+WSC2001,14,Sheet metal work,active,142,official
+WSC2001,15,Plumbing,active,143,official
+WSC2001,16,Industrial Electronics,active,144,official
+WSC2001,18,Electrical Installations,active,145,official
+WSC2001,19,Industrial Control,active,146,official
+WSC2001,20,Bricklaying,active,147,official
+WSC2001,21,Stonemasonry,active,148,official
+WSC2001,22,Painting and Decorating,active,149,official
+WSC2001,23,Plastering,active,150,official
+WSC2001,24,Cabinetmaking,active,151,official
+WSC2001,25,Joinery,active,152,official
+WSC2001,26,Carpentry,active,153,official
+WSC2001,27,Jewellery,active,154,official
+WSC2001,28,Floristry,active,155,official
+WSC2001,29,Ladies' hairdressing,active,156,official
+WSC2001,30,Men's hairdressing,active,157,official
+WSC2001,31,Ladies Dressmaking,active,158,official
+WSC2001,32,Confectioner/Pastry Cook,active,159,official
+WSC2001,33,Automobile Technology,active,160,official
+WSC2001,34,Cooking,active,161,official
+WSC2001,35,Restaurant Service,active,162,official
+WSC2001,36,Car Painting,active,163,official
+WSC2001,37,Landscape Gardening,active,164,official
+WSC2001,38,Refrigeration,active,165,official
+WSC2001,39,IT PC/Network Support,active,166,official
+WSC2001,40,Graphic Design Technology,active,167,official
+WSC2003,01,Mechanical Systems Technician,active,87,official
+WSC2003,02,Press tool making,active,88,official
+WSC2003,03,Instrument making,active,89,official
+WSC2003,04,Mechatronics,active,90,official
+WSC2003,05,Mech. Eng. CADD,active,91,official
+WSC2003,06,CNC Turning,active,92,official
+WSC2003,07,CNC Milling,active,93,official
+WSC2003,08,Construction steel work,active,94,official
+WSC2003,09,IT/Software Applications,active,95,official
+WSC2003,10,Welding,active,96,official
+WSC2003,11,Pattern Making,active,97,official
+WSC2003,12,Wall and Floor Tiling,active,98,official
+WSC2003,13,Autobody Repair,active,99,official
+WSC2003,14,Sheet metal work,active,100,official
+WSC2003,15,Plumbing,active,101,official
+WSC2003,16,Industrial Electronics,active,102,official
+WSC2003,18,Electrical Installations,active,103,official
+WSC2003,19,Industrial Control,active,104,official
+WSC2003,20,Bricklaying,active,105,official
+WSC2003,21,Stonemasonry,active,106,official
+WSC2003,22,Painting and Decorating,active,107,official
+WSC2003,23,Plastering,active,108,official
+WSC2003,24,Cabinetmaking,active,109,official
+WSC2003,25,Joinery,active,110,official
+WSC2003,26,Carpentry,active,111,official
+WSC2003,27,Jewellery,active,112,official
+WSC2003,28,Floristry,active,113,official
+WSC2003,29,Ladies'/Men's Hairdressing,active,114,official
+WSC2003,31,Ladies Dressmaking,active,115,official
+WSC2003,32,Confectioner/Pastry Cook,active,116,official
+WSC2003,33,Automobile Technology,active,117,official
+WSC2003,34,Cooking,active,118,official
+WSC2003,35,Restaurant Service,active,119,official
+WSC2003,36,Car Painting,active,120,official
+WSC2003,37,Landscape Gardening,active,121,official
+WSC2003,38,Refrigeration,active,122,official
+WSC2003,39,IT PC/Network Support,active,123,official
+WSC2003,40,Graphic Design Technology,active,124,official
+WSC2003,41,Beauty Therapy,active,125,official
+WSC2003,42,Polymechanics/Automation,active,126,demo
+WSC2003,43,Web Design,active,127,demo
+WSC2003,44,Manufacturing Team Challenge,active,1367,demo
+WSC2003,45,Bakery,active,128,demo
+WSC2005,01,Polymechanics/Automation,active,48,official
+WSC2005,03,Manufacturing Team Challenge,active,49,official
+WSC2005,04,Mechatronics,active,50,official
+WSC2005,05,Mech. Eng. CADD,active,51,official
+WSC2005,06,CNC Machining,active,52,official
+WSC2005,09,IT/Software Applications,active,53,official
+WSC2005,10,Welding,active,54,official
+WSC2005,12,Wall and Floor Tiling,active,55,official
+WSC2005,13,Autobody Repair,active,56,official
+WSC2005,15,Plumbing,active,57,official
+WSC2005,16,Industrial Electronics,active,58,official
+WSC2005,17,Web Design,active,59,official
+WSC2005,18,Electrical Installations,active,60,official
+WSC2005,19,Industrial Control,active,61,official
+WSC2005,20,Bricklaying,active,62,official
+WSC2005,21,Stonemasonry,active,63,official
+WSC2005,22,Painting and Decorating,active,64,official
+WSC2005,24,Cabinetmaking,active,65,official
+WSC2005,25,Joinery,active,66,official
+WSC2005,26,Carpentry,active,67,official
+WSC2005,27,Jewellery,active,68,official
+WSC2005,28,Floristry,active,69,official
+WSC2005,29,Ladies'/Men's Hairdressing,active,70,official
+WSC2005,30,Beauty Therapy,active,71,official
+WSC2005,31,Ladies Dressmaking,active,72,official
+WSC2005,32,Confectioner/Pastry Cook,active,73,official
+WSC2005,33,Automobile Technology,active,74,official
+WSC2005,34,Cooking,active,75,official
+WSC2005,35,Restaurant Service,active,76,official
+WSC2005,36,Car Painting,active,77,official
+WSC2005,37,Landscape Gardening,active,78,official
+WSC2005,38,Refrigeration,active,79,official
+WSC2005,39,IT PC/Network Support,active,80,official
+WSC2005,40,Graphic Design Technology,active,81,official
+WSC2005,43,Telecommunication Distribution Technology,active,82,official
+WSC2005,44,Printing,active,83,official
+WSC2005,46,Sheet-Construction Steelwork,active,84,official
+WSC2005,47,Tinsmith (Roofing),active,85,official
+WSC2005,48,Transport Technology,active,86,official
+WSC2007,01,Polymechanics/Automation,active,1,official
+WSC2007,02,Telecommunication Distribution Technology,active,47,official
+WSC2007,03,Manufacturing Team Challenge,active,2,official
+WSC2007,04,Mechatronics,active,3,official
+WSC2007,05,Mech. Eng. CADD,active,4,official
+WSC2007,06,CNC Turning,active,5,official
+WSC2007,07,CNC Milling,active,6,official
+WSC2007,09,IT/Software Applications,active,7,official
+WSC2007,10,Welding,active,8,official
+WSC2007,11,Printing,active,39,official
+WSC2007,12,Wall and Floor Tiling,active,10,official
+WSC2007,13,Autobody Repair,active,11,official
+WSC2007,14,Metal Roofing,active,12,official
+WSC2007,15,Plumbing,active,13,official
+WSC2007,16,Industrial Electronics,active,14,official
+WSC2007,17,Web Design,active,15,official
+WSC2007,18,Electrical Installations,active,16,official
+WSC2007,19,Industrial Control,active,17,official
+WSC2007,20,Bricklaying,active,18,official
+WSC2007,21,Stonemasonry,active,19,official
+WSC2007,22,Painting and Decorating,active,20,official
+WSC2007,24,Cabinetmaking,active,21,official
+WSC2007,25,Joinery,active,22,official
+WSC2007,26,Carpentry,active,23,official
+WSC2007,27,Jewellery,active,24,official
+WSC2007,28,Floristry,active,25,official
+WSC2007,29,Ladies'/Men's Hairdressing,active,26,official
+WSC2007,30,Beauty Therapy,active,27,official
+WSC2007,31,Ladies Dressmaking,active,28,official
+WSC2007,32,Confectioner/Pastry Cook,active,29,official
+WSC2007,33,Automobile Technology,active,30,official
+WSC2007,34,Cooking,active,31,official
+WSC2007,35,Restaurant Service,active,32,official
+WSC2007,36,Car Painting,active,33,official
+WSC2007,37,Landscape Gardening,active,34,official
+WSC2007,38,Refrigeration,active,35,official
+WSC2007,39,IT PC/Network Support,active,36,official
+WSC2007,40,Graphic Design Technology,active,37,official
+WSC2007,D1,Caring,active,40,official
+WSC2007,D2,Mobile Robotics,active,9,official
+WSC2007,D3,Mould Making,active,41,official
+WSC2007,D4,Bakery,active,38,official
+WSC2007,HM1,Mechanical Device Control,active,42,official
+WSC2007,HM2,Construction Metal Work,active,43,official
+WSC2007,HM3,Pattern Making,active,44,official
+WSC2007,HM4,Plastering,active,45,official
+WSC2007,HM5,Sheet Metal Technology,active,46,official
+WSC2009,01,Polymechanics/Automation,active,251,official
+WSC2009,02,Information Network Cabling,active,296,official
+WSC2009,03,Manufacturing Team Challenge,active,252,official
+WSC2009,04,Mechatronics,active,253,official
+WSC2009,05,Mechanical Engineering Design - CAD,active,254,official
+WSC2009,06,CNC Turning,active,255,official
+WSC2009,07,CNC Milling,active,256,official
+WSC2009,08,Mould Making,active,179,official
+WSC2009,09,IT/Software Applications,active,257,official
+WSC2009,10,Welding,active,258,official
+WSC2009,11,Offset Printing,active,289,official
+WSC2009,12,Wall and Floor Tiling,active,260,official
+WSC2009,13,Autobody Repair,active,261,official
+WSC2009,14,Metal Roofing,active,262,official
+WSC2009,15,Plumbing and Heating,active,263,official
+WSC2009,16,Electronics,active,264,official
+WSC2009,17,Web Design,active,265,official
+WSC2009,18,Electrical Installations,active,266,official
+WSC2009,19,Industrial Control,active,267,official
+WSC2009,20,Bricklaying,active,268,official
+WSC2009,21,Stonemasonry,active,269,official
+WSC2009,22,Painting and Decorating,active,270,official
+WSC2009,23,Mobile Robotics,active,259,official
+WSC2009,24,Cabinetmaking,active,271,official
+WSC2009,25,Joinery,active,272,official
+WSC2009,26,Carpentry,active,273,official
+WSC2009,27,Jewellery,active,274,official
+WSC2009,28,Floristry,active,275,official
+WSC2009,29,Ladies'/Men's Hairdressing,active,276,official
+WSC2009,30,Beauty Therapy,active,277,official
+WSC2009,31,Fashion Technology,active,278,official
+WSC2009,32,Confectioner/Pastry Cook,active,279,official
+WSC2009,33,Automobile Technology,active,280,official
+WSC2009,34,Cooking,active,281,official
+WSC2009,35,Restaurant Service,active,282,official
+WSC2009,36,Car Painting,active,283,official
+WSC2009,37,Landscape Gardening,active,284,official
+WSC2009,38,Refrigeration,active,285,official
+WSC2009,39,IT PC/Network Support,active,286,official
+WSC2009,40,Graphic Design Technology,active,287,official
+WSC2009,41,Caring,active,290,official
+WSC2009,D1,Aircraft Maintenance,active,177,official
+WSC2009,D2,Construction Metal Work,active,293,official
+WSC2009,D3,Plastering and Drywall Systems,active,176,official
+WSC2009,HM1,Sheet Metal Technology,active,295,official
+WSC2011,01,Polymechanics/Automation,active,292,official
+WSC2011,02,Information Network Cabling,active,335,official
+WSC2011,03,Manufacturing Team Challenge,active,294,official
+WSC2011,04,Mechatronics,active,297,official
+WSC2011,05,Mechanical Engineering Design - CAD,active,298,official
+WSC2011,06,CNC Turning,active,299,official
+WSC2011,07,CNC Milling,active,300,official
+WSC2011,08,Mould Making,active,291,official
+WSC2011,09,IT Software Solutions for Business,active,301,official
+WSC2011,10,Welding,active,302,official
+WSC2011,11,Offset Printing,active,331,official
+WSC2011,12,Wall and Floor Tiling,active,304,official
+WSC2011,13,Autobody Repair,active,305,official
+WSC2011,14,Aircraft Maintenance,active,288,official
+WSC2011,15,Plumbing and Heating,active,306,official
+WSC2011,16,Electronics,active,307,official
+WSC2011,17,Web Design,active,308,official
+WSC2011,18,Electrical Installations,active,309,official
+WSC2011,19,Industrial Control,active,310,official
+WSC2011,20,Bricklaying,active,311,official
+WSC2011,21,Plastering and Drywall Systems,active,178,official
+WSC2011,22,Painting and Decorating,active,313,official
+WSC2011,23,Mobile Robotics,active,303,official
+WSC2011,24,Cabinetmaking,active,314,official
+WSC2011,25,Joinery,active,315,official
+WSC2011,26,Carpentry,active,316,official
+WSC2011,27,Jewellery,active,317,official
+WSC2011,28,Floristry,active,318,official
+WSC2011,29,Ladies'/Men's Hairdressing,active,319,official
+WSC2011,30,Beauty Therapy,active,320,official
+WSC2011,31,Fashion Technology,active,321,official
+WSC2011,32,Confectioner/Pastry Cook,active,322,official
+WSC2011,33,Automobile Technology,active,323,official
+WSC2011,34,Cooking,active,324,official
+WSC2011,35,Restaurant Service,active,325,official
+WSC2011,36,Car Painting,active,326,official
+WSC2011,37,Landscape Gardening,active,327,official
+WSC2011,38,Refrigeration and Air Conditioning,active,328,official
+WSC2011,39,IT Network Systems Administration,active,329,official
+WSC2011,40,Graphic Design Technology,active,330,official
+WSC2011,41,Caring,active,332,official
+WSC2011,42,Construction Metal Work,active,333,official
+WSC2011,43,Sheet Metal Technology,active,334,official
+WSC2011,D1,Visual Merchandising,active,336,official
+WSC2011,D2,Creative Modelling,active,337,official
+WSC2011,HM1,Stonemasonry,active,312,official
+WSC2013,01,Polymechanics/Automation,active,338,official
+WSC2013,02,Information Network Cabling,active,339,official
+WSC2013,03,Manufacturing Team Challenge,active,340,official
+WSC2013,04,Mechatronics,active,341,official
+WSC2013,05,Mechanical Engineering Design - CAD,active,342,official
+WSC2013,06,CNC Turning,active,343,official
+WSC2013,07,CNC Milling,active,344,official
+WSC2013,08,Architectural Stonemasonry,active,382,official
+WSC2013,09,IT Software Solutions for Business,active,345,official
+WSC2013,10,Welding,active,346,official
+WSC2013,11,Print Media Technology,active,347,official
+WSC2013,12,Wall and Floor Tiling,active,348,official
+WSC2013,13,Autobody Repair,active,349,official
+WSC2013,14,Aircraft Maintenance,active,350,official
+WSC2013,15,Plumbing and Heating,active,351,official
+WSC2013,16,Electronics,active,352,official
+WSC2013,17,Web Design,active,353,official
+WSC2013,18,Electrical Installations,active,354,official
+WSC2013,19,Industrial Control,active,355,official
+WSC2013,20,Bricklaying,active,356,official
+WSC2013,21,Plastering and Drywall Systems,active,357,official
+WSC2013,22,Painting and Decorating,active,358,official
+WSC2013,23,Mobile Robotics,active,359,official
+WSC2013,24,Cabinetmaking,active,360,official
+WSC2013,25,Joinery,active,361,official
+WSC2013,26,Carpentry,active,362,official
+WSC2013,27,Jewellery,active,363,official
+WSC2013,28,Floristry,active,364,official
+WSC2013,29,Hairdressing,active,365,official
+WSC2013,30,Beauty Therapy,active,366,official
+WSC2013,31,Fashion Technology,active,367,official
+WSC2013,32,Confectioner/Pastry Cook,active,368,official
+WSC2013,33,Automobile Technology,active,369,official
+WSC2013,34,Cooking,active,370,official
+WSC2013,35,Restaurant Service,active,371,official
+WSC2013,36,Car Painting,active,372,official
+WSC2013,37,Landscape Gardening,active,373,official
+WSC2013,38,Refrigeration and Air Conditioning,active,374,official
+WSC2013,39,IT Network Systems Administration,active,375,official
+WSC2013,40,Graphic Design Technology,active,376,official
+WSC2013,41,Health and Social Care,active,377,official
+WSC2013,42,Construction Metal Work,active,378,official
+WSC2013,43,Sheet Metal Technology,active,379,official
+WSC2013,44,Visual Merchandising/Window Dressing,active,380,official
+WSC2013,45,Prototype Modelling,active,381,official
+WSC2013,D1,Plastic Die Engineering,active,385,official
+WSC2015,01,Polymechanics and Automation,active,428,official
+WSC2015,02,Information Network Cabling,active,427,official
+WSC2015,03,Manufacturing Team Challenge,active,426,official
+WSC2015,04,Mechatronics,active,425,official
+WSC2015,05,Mechanical Engineering Design - CAD,active,424,official
+WSC2015,06,CNC Turning,active,423,official
+WSC2015,07,CNC Milling,active,422,official
+WSC2015,08,Architectural Stonemasonry,active,421,official
+WSC2015,09,IT Software Solutions for Business,active,420,official
+WSC2015,10,Welding,active,419,official
+WSC2015,11,Print Media Technology,active,418,official
+WSC2015,12,Wall and Floor Tiling,active,417,official
+WSC2015,13,Autobody Repair,active,416,official
+WSC2015,14,Aircraft Maintenance,active,415,official
+WSC2015,15,Plumbing and Heating,active,414,official
+WSC2015,16,Electronics,active,413,official
+WSC2015,17,Web Design,active,412,official
+WSC2015,18,Electrical Installations,active,411,official
+WSC2015,19,Industrial Control,active,410,official
+WSC2015,20,Bricklaying,active,409,official
+WSC2015,21,Plastering and Drywall Systems,active,408,official
+WSC2015,22,Painting and Decorating,active,407,official
+WSC2015,23,Mobile Robotics,active,406,official
+WSC2015,24,Cabinetmaking,active,405,official
+WSC2015,25,Joinery,active,404,official
+WSC2015,26,Carpentry,active,403,official
+WSC2015,27,Jewellery,active,402,official
+WSC2015,28,Floristry,active,401,official
+WSC2015,29,Hairdressing,active,400,official
+WSC2015,30,Beauty Therapy,active,399,official
+WSC2015,31,Fashion Technology,active,398,official
+WSC2015,32,Pâtisserie and Confectionery,active,397,official
+WSC2015,33,Automobile Technology,active,396,official
+WSC2015,34,Cooking,active,395,official
+WSC2015,35,Restaurant Service,active,394,official
+WSC2015,36,Car Painting,active,393,official
+WSC2015,37,Landscape Gardening,active,392,official
+WSC2015,38,Refrigeration and Air Conditioning,active,391,official
+WSC2015,39,IT Network Systems Administration,active,390,official
+WSC2015,40,Graphic Design Technology,active,389,official
+WSC2015,41,Health and Social Care,active,388,official
+WSC2015,42,Construction Metal Work,active,387,official
+WSC2015,43,Plastic Die Engineering,active,429,official
+WSC2015,44,Visual Merchandising and Window Dressing,active,384,official
+WSC2015,45,Prototype Modelling,active,386,official
+WSC2015,46,Sheet Metal Technology,active,434,official
+WSC2015,D1,Concrete Construction Work,active,430,demo
+WSC2015,D2,Bakery,active,431,demo
+WSC2015,D3,Industrial Mechanics Millwright,active,432,demo
+WSC2015,D4,Heavy Vehicle Maintenance,active,433,demo
+WSC2017,01,Polymechanics and Automation,active,482,official
+WSC2017,02,Information Network Cabling,active,483,official
+WSC2017,03,Manufacturing Team Challenge,active,484,official
+WSC2017,04,Mechatronics,active,485,official
+WSC2017,05,Mechanical Engineering CAD,active,486,official
+WSC2017,06,CNC Turning,active,487,official
+WSC2017,07,CNC Milling,active,488,official
+WSC2017,08,Architectural Stonemasonry,active,489,official
+WSC2017,09,IT Software Solutions for Business,active,490,official
+WSC2017,10,Welding,active,491,official
+WSC2017,11,Print Media Technology,active,492,official
+WSC2017,12,Wall and Floor Tiling,active,493,official
+WSC2017,13,Autobody Repair,active,494,official
+WSC2017,14,Aircraft Maintenance,active,495,official
+WSC2017,15,Plumbing and Heating,active,496,official
+WSC2017,16,Electronics,active,497,official
+WSC2017,17,Web Design and Development,active,498,official
+WSC2017,18,Electrical Installations,active,499,official
+WSC2017,19,Industrial Control,active,500,official
+WSC2017,20,Bricklaying,active,501,official
+WSC2017,21,Plastering and Drywall Systems,active,502,official
+WSC2017,22,Painting and Decorating,active,503,official
+WSC2017,23,Mobile Robotics,active,504,official
+WSC2017,24,Cabinetmaking,active,505,official
+WSC2017,25,Joinery,active,506,official
+WSC2017,26,Carpentry,active,507,official
+WSC2017,27,Jewellery,active,508,official
+WSC2017,28,Floristry,active,509,official
+WSC2017,29,Hairdressing,active,510,official
+WSC2017,30,Beauty Therapy,active,511,official
+WSC2017,31,Fashion Technology,active,512,official
+WSC2017,32,Pâtisserie and Confectionery,active,513,official
+WSC2017,33,Automobile Technology,active,514,official
+WSC2017,34,Cooking,active,515,official
+WSC2017,35,Restaurant Service,active,516,official
+WSC2017,36,Car Painting,active,517,official
+WSC2017,37,Landscape Gardening,active,518,official
+WSC2017,38,Refrigeration and Air Conditioning,active,519,official
+WSC2017,39,IT Network Systems Administration,active,520,official
+WSC2017,40,Graphic Design Technology,active,521,official
+WSC2017,41,Health and Social Care,active,522,official
+WSC2017,42,Construction Metal Work,active,523,official
+WSC2017,43,Plastic Die Engineering,active,524,official
+WSC2017,44,Visual Merchandising,active,525,official
+WSC2017,45,Prototype Modelling,active,526,official
+WSC2017,46,Concrete Construction Work,active,528,official
+WSC2017,47,Bakery,active,529,official
+WSC2017,48,Industrial Mechanic Millwright,active,530,official
+WSC2017,49,Heavy Vehicle Maintenance,active,531,official
+WSC2017,D1,3D Digital Game Art,active,532,demo
+WSC2017,D2,Freight Forwarding,active,533,demo
+WSC2017,ES01,Water Technology,active,534,exhibition
+WSC2019,01,Polymechanics and Automation,active,596,official
+WSC2019,02,Information Network Cabling,active,595,official
+WSC2019,03,Manufacturing Team Challenge,active,593,official
+WSC2019,04,Mechatronics,active,594,official
+WSC2019,05,Mechanical Engineering CAD,active,598,official
+WSC2019,06,CNC Turning,active,597,official
+WSC2019,07,CNC Milling,active,599,official
+WSC2019,08,Architectural Stonemasonry,active,601,official
+WSC2019,09,IT Software Solutions for Business,active,602,official
+WSC2019,10,Welding,active,600,official
+WSC2019,11,Print Media Technology,active,603,official
+WSC2019,12,Wall and Floor Tiling,active,604,official
+WSC2019,13,Autobody Repair,active,606,official
+WSC2019,14,Aircraft Maintenance,active,607,official
+WSC2019,15,Plumbing and Heating,active,605,official
+WSC2019,16,Electronics,active,608,official
+WSC2019,17,Web Technologies,active,609,official
+WSC2019,18,Electrical Installations,active,611,official
+WSC2019,19,Industrial Control,active,610,official
+WSC2019,20,Bricklaying,active,613,official
+WSC2019,21,Plastering and Drywall Systems,active,612,official
+WSC2019,22,Painting and Decorating,active,614,official
+WSC2019,23,Mobile Robotics,active,615,official
+WSC2019,24,Cabinetmaking,active,618,official
+WSC2019,25,Joinery,active,617,official
+WSC2019,26,Carpentry,active,616,official
+WSC2019,27,Jewellery,active,620,official
+WSC2019,28,Floristry,active,619,official
+WSC2019,29,Hairdressing,active,621,official
+WSC2019,30,Beauty Therapy,active,622,official
+WSC2019,31,Fashion Technology,active,623,official
+WSC2019,32,Pâtisserie and Confectionery,active,624,official
+WSC2019,33,Automobile Technology,active,625,official
+WSC2019,34,Cooking,active,626,official
+WSC2019,35,Restaurant Service,active,631,official
+WSC2019,36,Car Painting,active,627,official
+WSC2019,37,Landscape Gardening,active,628,official
+WSC2019,38,Refrigeration and Air Conditioning,active,630,official
+WSC2019,39,IT Network Systems Administration,active,629,official
+WSC2019,40,Graphic Design Technology,active,632,official
+WSC2019,41,Health and Social Care,active,634,official
+WSC2019,42,Construction Metal Work,active,639,official
+WSC2019,43,Plastic Die Engineering,active,633,official
+WSC2019,44,Visual Merchandising,active,641,official
+WSC2019,45,Prototype Modelling,active,636,official
+WSC2019,46,Concrete Construction Work,active,635,official
+WSC2019,47,Bakery,active,638,official
+WSC2019,48,Industrial Mechanic Millwright,active,637,official
+WSC2019,49,Heavy Vehicle Technology,active,643,official
+WSC2019,50,3D Digital Game Art,active,642,official
+WSC2019,51,Freight Forwarding,active,640,official
+WSC2019,52,Chemical Laboratory Technology,active,644,official
+WSC2019,53,Cloud Computing,active,645,official
+WSC2019,54,Cyber Security,active,646,official
+WSC2019,55,Water Technology,active,647,official
+WSC2019,56,Hotel Reception,active,648,official
+WSC2019,FS01,Rapid Prototyping,active,719,presentation
+WSC2019,FS02,Agricultural Biotechnology,active,720,presentation
+WSC2019,FS03,Virtual and Augmented Reality,active,721,presentation
+WSC2019,FS04,Blockchain-based Solutions,active,722,presentation
+WSC2019,FS05,Composite Technologies,active,723,presentation
+WSC2019,FS06,Enterprise Information Systems Security,active,724,presentation
+WSC2019,FS07,Industrial Design Technology,active,725,presentation
+WSC2019,FS08,Robot Systems Integration,active,726,presentation
+WSC2019,FS09,Internet of Things,active,727,presentation
+WSC2019,FS10,Machine Learning and Big Data,active,729,presentation
+WSC2019,FS11,Mobile Applications Development,active,730,presentation
+WSC2019,FS12,Quantum Technology,active,731,presentation
+WSC2019,FS13,Mechanical Reverse Engineering,active,732,presentation
+WSC2019,FS14,Drone Operating,active,733,presentation
+WSC2019,FS15,Building Information Modelling (BIM),active,735,presentation
+WSC2019,FS16,Space Systems Engineering,active,746,presentation
+WSC2019,FSS01,Digital Factory,active,736,exhibition
+WSC2019,FSS02,Digital Farming,active,737,exhibition
+WSC2019,FSS03,Digital Fashion Designer,active,738,exhibition
+WSC2019,FSS04,Robotic Welding,active,739,exhibition
+WSC2019,FSS05,Neural Interface Design,active,740,exhibition
+WSC2019,FSS06,Life-cycle Management,active,741,exhibition
+WSC2019,FSS08,Mineral Synthesis and Processing,active,743,exhibition
+WSC2019,FSS09,Laser Technology,active,744,exhibition
+WSC2019,FSS10,Industry 4.0,active,745,exhibition
+WSC2019,WSJ01,Electrical Installations,active,707,juniors
+WSC2019,WSJ02,Graphic Design Technology,active,708,juniors
+WSC2019,WSJ03,Mobile Robotics,active,709,juniors
+WSC2019,WSJ04,Polymechanics and Automation,active,710,juniors
+WSC2019,WSJ05,Restaurant Service,active,711,juniors
+WSC2019,WSJ06,Painting and Decorating,active,712,juniors
+WSC2019,WSJ07,Plumbing and Heating,active,713,juniors
+WSC2019,WSJ08,Hairdressing,active,714,juniors
+WSC2019,WSJ09,Drone Operating,active,715,juniors
+WSC2019,WSJ10,Web Technologies,active,716,juniors
+WSC2019,WSJ11,IT Network Systems Administration,active,717,juniors
+WSC2019,WSJ12,Industrial Control,active,718,juniors
+WSC2019,WSJ13,Robot Systems Integration,active,747,juniors
+WSC2022,01,Industrial Mechanics,active,677,official
+WSC2022,02,Information Network Cabling,active,676,official
+WSC2022,03,Manufacturing Team Challenge,active,662,official
+WSC2022,04,Mechatronics,active,701,official
+WSC2022,05,Mechanical Engineering CAD,active,654,official
+WSC2022,06,CNC Turning,active,649,official
+WSC2022,07,CNC Milling,active,691,official
+WSC2022,08,Mobile Applications Development,active,1016,official
+WSC2022,09,IT Software Solutions for Business,active,669,official
+WSC2022,10,Welding,active,675,official
+WSC2022,11,Print Media Technology,active,683,official
+WSC2022,12,Wall and Floor Tiling,active,687,official
+WSC2022,13,Autobody Repair,active,689,official
+WSC2022,14,Aircraft Maintenance,active,700,official
+WSC2022,15,Plumbing and Heating,active,672,official
+WSC2022,16,Electronics,active,684,official
+WSC2022,17,Web Technologies,active,650,official
+WSC2022,18,Electrical Installations,active,659,official
+WSC2022,19,Industrial Control,active,702,official
+WSC2022,20,Bricklaying,active,656,official
+WSC2022,21,Plastering and Drywall Systems,active,698,official
+WSC2022,22,Painting and Decorating,active,668,official
+WSC2022,23,Mobile Robotics,active,697,official
+WSC2022,24,Cabinetmaking,active,678,official
+WSC2022,25,Joinery,active,655,official
+WSC2022,26,Carpentry,active,693,official
+WSC2022,27,Jewellery,active,658,official
+WSC2022,28,Floristry,active,694,official
+WSC2022,29,Hairdressing,active,696,official
+WSC2022,30,Beauty Therapy,active,666,official
+WSC2022,31,Fashion Technology,active,653,official
+WSC2022,32,Pâtisserie and Confectionery,active,688,official
+WSC2022,33,Automobile Technology,active,695,official
+WSC2022,34,Cooking,active,685,official
+WSC2022,35,Restaurant Service,active,682,official
+WSC2022,36,Car Painting,active,651,official
+WSC2022,37,Landscape Gardening,active,699,official
+WSC2022,38,Refrigeration and Air Conditioning,active,664,official
+WSC2022,39,IT Network Systems Administration,active,665,official
+WSC2022,40,Graphic Design Technology,active,660,official
+WSC2022,41,Health and Social Care,active,679,official
+WSC2022,42,Construction Metal Work,active,670,official
+WSC2022,43,Plastic Die Engineering,active,671,official
+WSC2022,44,Visual Merchandising,active,663,official
+WSC2022,45,Prototype Modelling,active,657,official
+WSC2022,46,Concrete Construction Work,active,674,official
+WSC2022,47,Bakery,active,703,official
+WSC2022,48,Industry 4.0,active,1015,official
+WSC2022,49,Heavy Vehicle Technology,active,686,official
+WSC2022,50,3D Digital Game Art,active,661,official
+WSC2022,51,Freight Forwarding,active,680,official
+WSC2022,52,Chemical Laboratory Technology,active,667,official
+WSC2022,53,Cloud Computing,active,690,official
+WSC2022,54,Cyber Security,active,673,official
+WSC2022,55,Water Technology,active,704,official
+WSC2022,56,Hotel Reception,active,681,official
+WSC2022,57,Additive Manufacturing,active,1012,official
+WSC2022,58,Digital Construction,active,1013,official
+WSC2022,59,Industrial Design Technology,active,1014,official
+WSC2022,60,Optoelectronic Technology,active,1017,official
+WSC2022,61,Rail Vehicle Technology,active,1018,official
+WSC2022,62,Renewable Energy,active,1019,official
+WSC2022,63,Robot Systems Integration,active,1020,official
+WSC2022SE,01,Industrial Mechanics,active,1462,official
+WSC2022SE,02,Information Network Cabling,active,1494,official
+WSC2022SE,03,Manufacturing Team Challenge,active,1460,official
+WSC2022SE,04,Mechatronics,active,1458,official
+WSC2022SE,05,Mechanical Engineering CAD,active,1457,official
+WSC2022SE,06,CNC Turning,active,1491,official
+WSC2022SE,07,CNC Milling,active,1467,official
+WSC2022SE,08,Mobile Applications Development,active,1487,official
+WSC2022SE,09,IT Software Solutions for Business,active,1466,official
+WSC2022SE,10,Welding,active,1499,official
+WSC2022SE,11,Print Media Technology,active,1463,official
+WSC2022SE,12,Wall and Floor Tiling,active,1471,official
+WSC2022SE,13,Autobody Repair,active,1464,official
+WSC2022SE,14,Aircraft Maintenance,active,1477,official
+WSC2022SE,15,Plumbing and Heating,active,1519,official
+WSC2022SE,16,Electronics,active,1508,official
+WSC2022SE,17,Web Technologies,active,1482,official
+WSC2022SE,18,Electrical Installations,active,1465,official
+WSC2022SE,19,Industrial Control,active,1483,official
+WSC2022SE,20,Bricklaying,active,1489,official
+WSC2022SE,21,Plastering and Drywall Systems,active,1497,official
+WSC2022SE,22,Painting and Decorating,active,1516,official
+WSC2022SE,23,Mobile Robotics,active,1461,official
+WSC2022SE,24,Cabinetmaking,active,1495,official
+WSC2022SE,25,Joinery,active,1469,official
+WSC2022SE,26,Carpentry,active,1488,official
+WSC2022SE,27,Jewellery,active,1513,official
+WSC2022SE,28,Floristry,active,1480,official
+WSC2022SE,29,Hairdressing,active,1504,official
+WSC2022SE,30,Beauty Therapy,active,1501,official
+WSC2022SE,31,Fashion Technology,active,1481,official
+WSC2022SE,32,Pâtisserie and Confectionery,active,1474,official
+WSC2022SE,33,Automobile Technology,active,1473,official
+WSC2022SE,34,Cooking,active,1511,official
+WSC2022SE,35,Restaurant Service,active,1492,official
+WSC2022SE,36,Car Painting,active,1479,official
+WSC2022SE,37,Landscape Gardening,active,1509,official
+WSC2022SE,38,Refrigeration and Air Conditioning,active,1496,official
+WSC2022SE,39,IT Network Systems Administration,active,1518,official
+WSC2022SE,40,Graphic Design Technology,active,1498,official
+WSC2022SE,41,Health and Social Care,active,1512,official
+WSC2022SE,42,Construction Metal Work,active,1485,official
+WSC2022SE,43,Plastic Die Engineering,active,1503,official
+WSC2022SE,44,Visual Merchandising,active,1478,official
+WSC2022SE,45,Prototype Modelling,active,1500,official
+WSC2022SE,46,Concrete Construction Work,active,1507,official
+WSC2022SE,47,Bakery,active,1472,official
+WSC2022SE,48,Industry 4.0,active,1476,official
+WSC2022SE,49,Heavy Vehicle Technology,active,1484,official
+WSC2022SE,50,3D Digital Game Art,active,1515,official
+WSC2022SE,51,Freight Forwarding,active,1493,official
+WSC2022SE,52,Chemical Laboratory Technology,active,1502,official
+WSC2022SE,53,Cloud Computing,active,1510,official
+WSC2022SE,54,Cyber Security,active,1468,official
+WSC2022SE,55,Water Technology,active,1490,official
+WSC2022SE,56,Hotel Reception,active,1486,official
+WSC2022SE,57,Additive Manufacturing,active,1514,official
+WSC2022SE,58,Digital Construction,active,1470,official
+WSC2022SE,60,Optoelectronic Technology,active,1475,official
+WSC2022SE,62,Renewable Energy,active,1517,official
+WSC2022SE,63,Robot Systems Integration,active,1459,official
+WSC2022SE,E01,Stonemasonry,active,1565,exhibition
+WSC2024,01,Industrial Mechanics,active,1660,official
+WSC2024,02,Information Network Cabling,active,1662,official
+WSC2024,03,Manufacturing Team Challenge,active,1663,official
+WSC2024,04,Mechatronics,active,1665,official
+WSC2024,05,Mechanical Engineering CAD,active,1664,official
+WSC2024,06,CNC Turning,active,1658,official
+WSC2024,07,CNC Milling,active,1661,official
+WSC2024,08,Mobile Applications Development,active,1659,official
+WSC2024,09,IT Software Solutions for Business,active,1680,official
+WSC2024,10,Welding,active,1672,official
+WSC2024,12,Wall and Floor Tiling,active,1686,official
+WSC2024,13,Autobody Repair,active,1671,official
+WSC2024,14,Aircraft Maintenance,active,1673,official
+WSC2024,15,Plumbing and Heating,active,1687,official
+WSC2024,16,Electronics,active,1688,official
+WSC2024,17,Web Technologies,active,1693,official
+WSC2024,18,Electrical Installations,active,1677,official
+WSC2024,19,Industrial Control,active,1683,official
+WSC2024,20,Bricklaying,active,1695,official
+WSC2024,21,Plastering and Drywall Systems,active,1685,official
+WSC2024,22,Painting and Decorating,active,1691,official
+WSC2024,23,Autonomous Mobile Robotics,active,1696,official
+WSC2024,24,Cabinetmaking,active,1704,official
+WSC2024,25,Joinery,active,1717,official
+WSC2024,26,Carpentry,active,1698,official
+WSC2024,27,Jewellery,active,1681,official
+WSC2024,28,Floristry,active,1690,official
+WSC2024,29,Hairdressing,active,1675,official
+WSC2024,30,Beauty Therapy,active,1712,official
+WSC2024,31,Fashion Technology,active,1697,official
+WSC2024,32,Pâtisserie and Confectionery,active,1711,official
+WSC2024,33,Automobile Technology,active,1669,official
+WSC2024,34,Cooking,active,1670,official
+WSC2024,35,Restaurant Service,active,1699,official
+WSC2024,36,Car Painting,active,1718,official
+WSC2024,37,Landscape Gardening,active,1713,official
+WSC2024,38,Refrigeration and Air Conditioning,active,1674,official
+WSC2024,39,IT Network Systems Administration,active,1694,official
+WSC2024,40,Graphic Design Technology,active,1701,official
+WSC2024,41,Health and Social Care,active,1716,official
+WSC2024,42,Construction Metal Work,active,1710,official
+WSC2024,44,Visual Merchandising,active,1684,official
+WSC2024,46,Concrete Construction Work,active,1692,official
+WSC2024,47,Bakery,active,1667,official
+WSC2024,48,Industry 4.0,active,1703,official
+WSC2024,49,Heavy Vehicle Technology,active,1679,official
+WSC2024,50,3D Digital Game Art,active,1708,official
+WSC2024,51,Logistics and Freight Forwarding,active,1689,official
+WSC2024,52,Chemical Laboratory Technology,active,1676,official
+WSC2024,53,Cloud Computing,active,1706,official
+WSC2024,54,Cyber Security,active,1678,official
+WSC2024,55,Water Technology,active,1707,official
+WSC2024,56,Hotel Reception,active,1666,official
+WSC2024,57,Additive Manufacturing,active,1700,official
+WSC2024,58,Digital Construction,active,1714,official
+WSC2024,59,Industrial Design Technology,active,1705,official
+WSC2024,60,Optoelectronic Technology,active,1702,official
+WSC2024,62,Renewable Energy,active,1709,official
+WSC2024,63,Robot Systems Integration,active,1657,official
+WSC2024,E01,Stonemasonry,active,1719,exhibition
+WSC2024,E02,Heavy Truck Maintenance,active,1835,exhibition
+WSC2024,E03,Rail Vehicle Technology,active,1715,exhibition
+WSC2026,01,Industrial Mechanics,active,2410,official
+WSC2026,02,ICT Network Infrastructure,active,2412,official
+WSC2026,03,Intelligent Security Technology,active,2694,official
+WSC2026,04,Mechatronics,active,2411,official
+WSC2026,05,Mechanical Engineering CAD,active,2408,official
+WSC2026,06,CNC Turning,active,2433,official
+WSC2026,07,CNC Milling,active,2406,official
+WSC2026,08,Mobile Applications Development,active,2416,official
+WSC2026,09,Software Applications Development,active,2429,official
+WSC2026,10,Welding,active,2446,official
+WSC2026,11,Software Testing,active,2697,official
+WSC2026,12,Wall and Floor Tiling,active,2414,official
+WSC2026,13,Autobody Repair,active,2405,official
+WSC2026,14,Aircraft Maintenance,active,2435,official
+WSC2026,15,Plumbing and Heating,active,2417,official
+WSC2026,16,Electronics,active,2436,official
+WSC2026,17,Web Technologies,active,2439,official
+WSC2026,18,Electrical Installations,active,2442,official
+WSC2026,19,Industrial Control,active,2427,official
+WSC2026,20,Bricklaying,active,2434,official
+WSC2026,21,Plastering and Drywall Systems,active,2441,official
+WSC2026,22,Painting and Decorating,active,2409,official
+WSC2026,23,Autonomous Mobile Robotics,active,2413,official
+WSC2026,24,Cabinetmaking,active,2444,official
+WSC2026,25,Joinery,active,2420,official
+WSC2026,26,Carpentry,active,2437,official
+WSC2026,27,Jewellery,active,2443,official
+WSC2026,28,Floristry,active,2458,official
+WSC2026,29,Hairdressing,active,2445,official
+WSC2026,30,Beauty Therapy,active,2421,official
+WSC2026,31,Fashion Technology,active,2424,official
+WSC2026,32,Pâtisserie and Confectionery,active,2418,official
+WSC2026,33,Automobile Technology,active,2459,official
+WSC2026,34,Cooking,active,2457,official
+WSC2026,35,Restaurant Service,active,2432,official
+WSC2026,36,Car Painting,active,2438,official
+WSC2026,37,Landscape Gardening,active,2449,official
+WSC2026,38,Refrigeration and Air Conditioning,active,2415,official
+WSC2026,39,IT Network Systems Administration,active,2447,official
+WSC2026,40,Graphic Design Technology,active,2448,official
+WSC2026,41,Health and Social Care,active,2431,official
+WSC2026,42,Dental Prosthetics,active,2692,official
+WSC2026,43,Retail Sales,active,2696,official
+WSC2026,44,Visual Merchandising,active,2430,official
+WSC2026,45,Digital Interactive Media Design,active,2693,official
+WSC2026,46,Concrete Construction Work,active,2450,official
+WSC2026,47,Bakery,active,2456,official
+WSC2026,48,Industry 4.0,active,2452,official
+WSC2026,49,Heavy Vehicle Technology,active,2425,official
+WSC2026,50,3D Digital Game Art,active,2451,official
+WSC2026,51,Logistics and Freight Forwarding,active,2423,official
+WSC2026,52,Chemical Laboratory Technology,active,2440,official
+WSC2026,53,Cloud Computing,active,2455,official
+WSC2026,54,Cyber Security,active,2461,official
+WSC2026,55,Water Technology,active,2428,official
+WSC2026,56,Hotel Reception,active,2454,official
+WSC2026,57,Additive Manufacturing,active,2463,official
+WSC2026,58,Digital Construction,active,2419,official
+WSC2026,59,Industrial Design Technology,active,2462,official
+WSC2026,60,Optoelectronic Technology,active,2460,official
+WSC2026,61,Rail Vehicle Technology,active,2695,official
+WSC2026,62,Renewable Energy,active,2453,official
+WSC2026,63,Robot Systems Integration,active,2407,official
+WSC2026,64,Unmanned Aerial Systems,active,2698,official

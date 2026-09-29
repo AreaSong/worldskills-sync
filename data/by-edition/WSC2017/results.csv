@@ -1,0 +1,1129 @@
+﻿edition,skill,skill_name,member_code,member_name,position,medal,mark,best_of_nation,albert_vidal_award,competitor_names,person_ids,published,result_id
+WSC2017,01,Polymechanics and Automation,BR,Brazil,1,Gold,724.0,,,BRUNO GRUNER,29977,True,5420
+WSC2017,01,Polymechanics and Automation,DE,Germany,10,,611.0,,,DARIUS FAUER,29488,True,5429
+WSC2017,01,Polymechanics and Automation,PT,Portugal,11,,501.0,,,EDGAR LUCAS,30792,True,5430
+WSC2017,01,Polymechanics and Automation,RU,Russia,12,,392.0,,,ALEKSEI OVCHINNIKOV,31618,True,5431
+WSC2017,01,Polymechanics and Automation,CH,Switzerland,2,Silver,720.0,,,MARCO MICHEL,28739,True,5421
+WSC2017,01,Polymechanics and Automation,CN,China,2,Silver,718.0,,,PEIQIANG TANG,31723,True,5422
+WSC2017,01,Polymechanics and Automation,JP,Japan,4,Medallion for Excellence,713.0,,,RYO TAKEZAKI,28101,True,5424
+WSC2017,01,Polymechanics and Automation,KR,Korea,4,Medallion for Excellence,714.0,,,GYEONGJIN GO,29775,True,5423
+WSC2017,01,Polymechanics and Automation,TH,Thailand,6,Medallion for Excellence,705.0,,,CHALOTORN CHOOSAENG,27640,True,5425
+WSC2017,01,Polymechanics and Automation,AT,Austria,7,,695.0,,,MICHAEL FINK,27866,True,5426
+WSC2017,01,Polymechanics and Automation,TW,Chinese Taipei,8,,679.0,,,SHAO-CHIH HSU,30923,True,5427
+WSC2017,01,Polymechanics and Automation,LI,Principality of Liechtenstein,9,,675.0,,,MICHAEL SPRECHER,27696,True,5428
+WSC2017,02,Information Network Cabling,CN,China,1,Gold,729.0,,,JIAWEI LIANG,31707,True,5432
+WSC2017,02,Information Network Cabling,JP,Japan,1,Gold,727.0,,,YOSHIAKI SHIMIZU,28082,True,5433
+WSC2017,02,Information Network Cabling,TH,Thailand,10,,693.0,,,RUNGROJ KETWORAKITTI,31291,True,5441
+WSC2017,02,Information Network Cabling,BY,Belarus,11,,680.0,,,ANDREI SACHYSHYN,32025,True,5443
+WSC2017,02,Information Network Cabling,SE,Sweden,11,,682.0,,,SIMON FRANZÉN,29008,True,5442
+WSC2017,02,Information Network Cabling,AE,United Arab Emirates,13,,673.0,,,MAHIMMED ALHEBSI,32537,True,5444
+WSC2017,02,Information Network Cabling,VN,Vietnam,13,,672.0,,,NGUYEN HOANG ANH,31076,True,5445
+WSC2017,02,Information Network Cabling,GE,Georgia,15,,661.0,,,DAVIT DAVITASHVILI,29963,True,5447
+WSC2017,02,Information Network Cabling,ZM,Zambia,15,,662.0,True,,CHISANGA CHOOMBE,30392,True,5446
+WSC2017,02,Information Network Cabling,KR,Korea,3,Bronze,722.0,,,JAEYOUNG BAEK,29719,True,5434
+WSC2017,02,Information Network Cabling,SG,Singapore,3,Bronze,721.0,,,KAI HAO ANDREW TAN,27822,True,5435
+WSC2017,02,Information Network Cabling,BR,Brazil,5,Medallion for Excellence,711.0,,,RUBENS SANTOS,31645,True,5436
+WSC2017,02,Information Network Cabling,MO,"Macao, China",5,Medallion for Excellence,709.0,,,CHI SENG CHONG,31555,True,5437
+WSC2017,02,Information Network Cabling,CO,Colombia,7,Medallion for Excellence,708.0,,,SANTIAGO CASTRO FRANCO,27556,True,5438
+WSC2017,02,Information Network Cabling,NO,Norway,8,Medallion for Excellence,704.0,,,STÅLE BRÅ,28757,True,5439
+WSC2017,02,Information Network Cabling,RU,Russia,9,,696.0,,,ALEKSANDR ALEKSANDROV,29863,True,5440
+WSC2017,03,Manufacturing Team Challenge,BR,Brazil,1,Gold,720.0,,,WILLON SANTOS; THIAGO LIMA; MATEUS GOMES,31227; 31228; 31606,True,5449
+WSC2017,03,Manufacturing Team Challenge,JP,Japan,1,Gold,722.0,,,YUHEI UENO; TAKU MOGAMI; TOMOHIRO ASO,28092; 28093; 28094,True,5448
+WSC2017,03,Manufacturing Team Challenge,CO,Colombia,10,,623.0,,,JEISSON CAMILO RIVERA CAMELO; PEDRO ESTIBEN RAMIREZ SAENZ; JOHN ESTEBAN SANCHEZ SALAZAR,27559; 27561; 25093,True,5457
+WSC2017,03,Manufacturing Team Challenge,ZM,Zambia,11,,581.0,,,REAGAN TEMBO; CHARLES LUMBWE; CHARITY MUTALE MUTALE,31324; 31325; 31326,True,5458
+WSC2017,03,Manufacturing Team Challenge,CN,China,3,Bronze,718.0,,,PEITONG LIU; YUNAN GAO; ZHIYUAN ZHAN,31802; 31803; 31804,True,5450
+WSC2017,03,Manufacturing Team Challenge,KR,Korea,3,Bronze,717.0,,,SURAK KIM; DOHUN KWAK; SANGMIN LEE,29716; 29717; 29718,True,5451
+WSC2017,03,Manufacturing Team Challenge,RU,Russia,5,Medallion for Excellence,706.0,,,VIKTOR RYZHOV; SERGEI SYCHUGOV; DMITRII KOSTIASHIN,31599; 31601; 31603,True,5452
+WSC2017,03,Manufacturing Team Challenge,FR,France,6,Medallion for Excellence,700.0,,,AURELIEN SIAT; THÉO MARCHANDEAU; JULIEN HEYER,31915; 31916; 31917,True,5453
+WSC2017,03,Manufacturing Team Challenge,TW,Chinese Taipei,7,,688.0,,,KUAN-HUNG CHEN; JIN-CHENG LIN; YI-HAN CHEN,30925; 30926; 30927,True,5454
+WSC2017,03,Manufacturing Team Challenge,UK,United Kingdom,8,,660.0,,,JAKE GREEN; ALEXANDER MCCLUSKEY; JACOB PARKER,30223; 30224; 30225,True,5455
+WSC2017,03,Manufacturing Team Challenge,FI,Finland,9,,649.0,,,TAPIO IMMONEN; EETU RUNNE; EEMI SALORANTA,29831; 29832; 29833,True,5456
+WSC2017,04,Mechatronics,BR,Brazil,1,Gold,734.0,,,GUSTAVO ANDREOLA; LUCAS TOCHETTO,29978; 29979,True,5459
+WSC2017,04,Mechatronics,CH,Switzerland,1,Gold,732.0,,,CÉDRIC ACHERMANN; FABIEN GYGER,28736; 28737,True,5462
+WSC2017,04,Mechatronics,CN,China,1,Gold,734.0,,,YIZHEN DENG; ZIJIN YE,31808; 31809,True,5460
+WSC2017,04,Mechatronics,JP,Japan,1,Gold,733.0,True,,SHOMA OKANO; KENTA SATO,28096; 28097,True,5461
+WSC2017,04,Mechatronics,IN,India,10,Medallion for Excellence,721.0,,,ANAND KUMAR THATHIMAKULA ARUMUGAM; VARUN HANUMANTH GOWDA,31996; 31997,True,5468
+WSC2017,04,Mechatronics,KR,Korea,10,Medallion for Excellence,720.0,,,JEONGHYEOK LEE; TAEYEONG PARK,29675; 29676,True,5469
+WSC2017,04,Mechatronics,HU,Hungary,12,Medallion for Excellence,717.0,,,KRISTOF BALAZS SIPOS; ZOLTAN TAKACS,30643; 30644,True,5471
+WSC2017,04,Mechatronics,UK,United Kingdom,12,Medallion for Excellence,718.0,,,SAMUEL HILLIER; THOMAS REVELL,30227; 30228,True,5470
+WSC2017,04,Mechatronics,SG,Singapore,14,Medallion for Excellence,712.0,,,YI AN CLARENCE LIM; ELJER CHUA,26736; 26737,True,5472
+WSC2017,04,Mechatronics,DE,Germany,15,Medallion for Excellence,707.0,,,JAN HÜGEL; ROBIN EHRET,29105; 29106,True,5474
+WSC2017,04,Mechatronics,TH,Thailand,15,Medallion for Excellence,709.0,,,JAKAPAT RUEMRAK; PATIPAN TIMAI,31293; 31294,True,5473
+WSC2017,04,Mechatronics,MY,Malaysia,17,Medallion for Excellence,700.0,,,FATHUL AMMAR AMSYAR HASBULLAH; MUHAMAD ZULHISYAM HAIROMAN,30713; 30714,True,5477
+WSC2017,04,Mechatronics,PT,Portugal,17,Medallion for Excellence,702.0,,,FÁBIO OLIVEIRA; PEDRO SARDINHA,30782; 20229,True,5475
+WSC2017,04,Mechatronics,SE,Sweden,17,Medallion for Excellence,702.0,,,WILHELM VON HEIDEKEN; ADRIAN BENTLAND,29012; 29027,True,5476
+WSC2017,04,Mechatronics,VN,Vietnam,20,,699.0,,,NGUYEN THUAN HAI; DOAN MINH TIEN,31081; 31082,True,5478
+WSC2017,04,Mechatronics,IR,Iran,21,,696.0,,,SEYED BEHNAM HEIDARIAN; VAHID NAEIMIAN,32428; 32431,True,5479
+WSC2017,04,Mechatronics,MA,Morocco,21,,694.0,,,YOUSSEF ABOUHAFSA; ZAKARIA MAHFOUDI,32621; 32625,True,5480
+WSC2017,04,Mechatronics,AT,Austria,23,,685.0,,,JULIAN AIGNER; JÜRGEN ANZINGER,27862; 27863,True,5483
+WSC2017,04,Mechatronics,ES,Spain,23,,687.0,,,CARLOS GRILLO; ERIC LLANSA,29606; 30017,True,5481
+WSC2017,04,Mechatronics,ID,Indonesia,23,,687.0,,,ROBI SUHADINAH; ANGGA ADI PRASETYA,29429; 29430,True,5482
+WSC2017,04,Mechatronics,BE,Belgium,26,,683.0,,,NICOLAS ANDRÈS; ALEXANDRE FRÉDÉRICK,30662; 30663,True,5485
+WSC2017,04,Mechatronics,BY,Belarus,26,,682.0,,,DZMITRY LEHANKOU; DZMITRY ZABROTSKI,32026; 32027,True,5487
+WSC2017,04,Mechatronics,FR,France,26,,683.0,,,ANTONIN ROMANO; FLORIAN LONG,31918; 31919,True,5486
+WSC2017,04,Mechatronics,MO,"Macao, China",26,,684.0,,,KENG FAI CHENG; HOU WENG WONG,31500; 31502,True,5484
+WSC2017,04,Mechatronics,NL,Netherlands,30,,678.0,,,STEFAN BROOS; JEFFREY DE ZEEUW,29520; 29521,True,5488
+WSC2017,04,Mechatronics,ZA,South Africa,30,,676.0,,,DEWALD BRAND; ANGELIQUE JORDAAN,31207; 31208,True,5489
+WSC2017,04,Mechatronics,AE,United Arab Emirates,32,,670.0,,,SHAHIN ALMUTAWA; EIDHA ALRASHDI,32506; 32505,True,5491
+WSC2017,04,Mechatronics,EE,Estonia,32,,671.0,,,ARNOLD KUUSKLAID; JÜRGEN ALEKAND,29093; 32402,True,5490
+WSC2017,04,Mechatronics,NO,Norway,32,,669.0,,,VINJAR VEDERHUS; ESPEN BRANDTZÆG GODØ,28476; 28527,True,5492
+WSC2017,04,Mechatronics,US,United States of America,35,,659.0,,,JOSHUA WHITTINGTON; COREY CLEGHORN,28786; 28787,True,5493
+WSC2017,04,Mechatronics,KZ,Kazakhstan,36,,653.0,,,VILGELM LIMANSKIY; KLIMKOV ALEXEY,32650; 32651,True,5494
+WSC2017,04,Mechatronics,ZM,Zambia,36,,651.0,,,PAUL MASUPELO; JIMMY KACHENJELA,30286; 30287,True,5495
+WSC2017,04,Mechatronics,CA,Canada,5,Bronze,730.0,True,,AVERY BIRD; THEODOR WILLERT,26818; 26819,True,5463
+WSC2017,04,Mechatronics,HK,"Hong Kong, China",5,Medallion for Excellence,728.0,True,,CHUN YAT KONG; TSZ KIN SO,32153; 32154,True,5465
+WSC2017,04,Mechatronics,TW,Chinese Taipei,5,Bronze,730.0,,,CHIA-CHEN TSAI; YU-CHENG CHIAO,29974; 29975,True,5464
+WSC2017,04,Mechatronics,CO,Colombia,8,Medallion for Excellence,725.0,,,EVER ANDRES OSORIO FLORES; JAIME ORLANDO CARDENAS CRESPO,27563; 27564,True,5466
+WSC2017,04,Mechatronics,RU,Russia,8,Medallion for Excellence,724.0,,,MAKSIM AKSENOV; ALEKSANDR ARAPOV,31604; 31605,True,5467
+WSC2017,05,Mechanical Engineering CAD,KR,Korea,1,Gold,768.0,True,,JAEEUN SEO,29674,True,5496
+WSC2017,05,Mechanical Engineering CAD,UK,United Kingdom,10,Medallion for Excellence,706.0,,,BETSY CROSBIE,30226,True,5505
+WSC2017,05,Mechanical Engineering CAD,JP,Japan,11,Medallion for Excellence,703.0,,,YUJI TSUCHIYA,28095,True,5506
+WSC2017,05,Mechanical Engineering CAD,PT,Portugal,11,Medallion for Excellence,702.0,,,RENATO CARVALHO,30780,True,5507
+WSC2017,05,Mechanical Engineering CAD,CH,Switzerland,13,Medallion for Excellence,700.0,,,ROGER KRAUER,28732,True,5508
+WSC2017,05,Mechanical Engineering CAD,CA,Canada,14,,696.0,,,DAVID LISTER,26817,True,5509
+WSC2017,05,Mechanical Engineering CAD,ID,Indonesia,15,,686.0,,,ALIF HAFIZHUL ARKAN,29431,True,5510
+WSC2017,05,Mechanical Engineering CAD,MY,Malaysia,16,,680.0,,,MUHD SYAFIQ TUMIN,30712,True,5511
+WSC2017,05,Mechanical Engineering CAD,TH,Thailand,16,,680.0,,,SUPHAKIT PHUDAENGCHUEAK,31310,True,5512
+WSC2017,05,Mechanical Engineering CAD,AE,United Arab Emirates,18,,666.0,,,SALEM SALEH,32504,True,5513
+WSC2017,05,Mechanical Engineering CAD,NL,Netherlands,19,,659.0,,,JELLE HENDRIKS,29519,True,5514
+WSC2017,05,Mechanical Engineering CAD,BR,Brazil,2,Silver,738.0,,,KÉVIN NASCIMENTO,22713,True,5497
+WSC2017,05,Mechanical Engineering CAD,CN,China,2,Silver,738.0,,,QIJIA CHEN,31741,True,5498
+WSC2017,05,Mechanical Engineering CAD,IN,India,20,,653.0,,,MARSHAL LAZAR WILSON,31964,True,5515
+WSC2017,05,Mechanical Engineering CAD,BY,Belarus,21,,640.0,,,DZMITRY BUKSA,32464,True,5516
+WSC2017,05,Mechanical Engineering CAD,ES,Spain,22,,615.0,,,IKER BORDE,30179,True,5518
+WSC2017,05,Mechanical Engineering CAD,HK,"Hong Kong, China",22,,616.0,,,TING-KWAN SIN,32152,True,5517
+WSC2017,05,Mechanical Engineering CAD,KZ,Kazakhstan,24,,593.0,,,YERKEBULAN SULTANGALIYEV,32978,True,5519
+WSC2017,05,Mechanical Engineering CAD,SE,Sweden,25,,568.0,,,VIKTOR GUSTAFSSON,29011,True,5520
+WSC2017,05,Mechanical Engineering CAD,VN,Vietnam,4,Medallion for Excellence,728.0,True,,NGUYEN VAN TUAN,31089,True,5499
+WSC2017,05,Mechanical Engineering CAD,LI,Principality of Liechtenstein,5,Medallion for Excellence,716.0,,,NATHALIE JOHANNA EGGER,27697,True,5500
+WSC2017,05,Mechanical Engineering CAD,RU,Russia,5,Medallion for Excellence,715.0,,,ALBERT MINEEV,31602,True,5501
+WSC2017,05,Mechanical Engineering CAD,CO,Colombia,7,Medallion for Excellence,707.0,,,GIOVANNY ANDRES SANCHEZ CAPERA,27790,True,5503
+WSC2017,05,Mechanical Engineering CAD,IR,Iran,7,Medallion for Excellence,707.0,,,ESMAEIL FEIZOLLAHI,32446,True,5504
+WSC2017,05,Mechanical Engineering CAD,TW,Chinese Taipei,7,Medallion for Excellence,709.0,,,CHIA-HUNG LIN,30812,True,5502
+WSC2017,06,CNC Turning,BR,Brazil,1,Gold,748.0,True,,MATEUS MORIEL,29980,True,5521
+WSC2017,06,CNC Turning,CO,Colombia,11,,692.0,True,,SERGIO ANDRES SUESCUN SANABRIA,27558,True,5531
+WSC2017,06,CNC Turning,DE,Germany,11,,691.0,,,LUKAS BOSSLET,27324,True,5532
+WSC2017,06,CNC Turning,DK,Denmark,11,,690.0,,,RENÉ KLING HANSEN,29919,True,5533
+WSC2017,06,CNC Turning,CA,Canada,14,,688.0,,,JONATHAN ADAIR,26813,True,5534
+WSC2017,06,CNC Turning,NO,Norway,15,,681.0,,,TOBIAS ALM,28472,True,5536
+WSC2017,06,CNC Turning,ZA,South Africa,15,,683.0,,,RENIER WEPENER,31206,True,5535
+WSC2017,06,CNC Turning,SE,Sweden,17,,679.0,,,NAM PHAM,29009,True,5537
+WSC2017,06,CNC Turning,IN,India,18,,674.0,,,ANURADH THANDAYAN MADAPPURAKKAL,31994,True,5538
+WSC2017,06,CNC Turning,BY,Belarus,19,,671.0,,,YURY KASACH,32470,True,5539
+WSC2017,06,CNC Turning,CN,China,2,Silver,744.0,,,ZHIMIN CHEN,31710,True,5522
+WSC2017,06,CNC Turning,KR,Korea,3,Bronze,737.0,,,GUMIN HEO,29667,True,5523
+WSC2017,06,CNC Turning,JP,Japan,4,Medallion for Excellence,734.0,,,YUTA ASAZU,28087,True,5524
+WSC2017,06,CNC Turning,RU,Russia,4,Medallion for Excellence,732.0,,,BORIS SATAROV,31594,True,5525
+WSC2017,06,CNC Turning,AT,Austria,6,Medallion for Excellence,720.0,,,MARCO KERN,27858,True,5527
+WSC2017,06,CNC Turning,TH,Thailand,6,Medallion for Excellence,722.0,,,JEERAWAT SAKUNEE,27639,True,5526
+WSC2017,06,CNC Turning,CH,Switzerland,8,Medallion for Excellence,716.0,,,PATRICK MEIER,28733,True,5528
+WSC2017,06,CNC Turning,SG,Singapore,9,Medallion for Excellence,701.0,,,MIN LI RACHEL HO,26733,True,5529
+WSC2017,06,CNC Turning,TW,Chinese Taipei,9,Medallion for Excellence,700.0,,,SHI-BIN CHEN,30938,True,5530
+WSC2017,07,CNC Milling,CN,China,1,Gold,743.0,True,,DENGHUI YANG,31709,True,5540
+WSC2017,07,CNC Milling,TH,Thailand,10,Medallion for Excellence,710.0,,,PATIPAN NAWAPAN,27638,True,5549
+WSC2017,07,CNC Milling,RU,Russia,11,Medallion for Excellence,707.0,,,ALEKSANDR KAZMIN,31593,True,5550
+WSC2017,07,CNC Milling,DE,Germany,12,,691.0,,,EVA WAHL,28460,True,5552
+WSC2017,07,CNC Milling,NL,Netherlands,12,,693.0,,,MARCO QUENÉ,29788,True,5551
+WSC2017,07,CNC Milling,SG,Singapore,14,,687.0,,,CHEN YI LOY,26732,True,5554
+WSC2017,07,CNC Milling,VN,Vietnam,14,,689.0,,,HOANG KIM DIEP,31077,True,5553
+WSC2017,07,CNC Milling,UK,United Kingdom,16,,685.0,,,ETHAN DAVIES,30192,True,5555
+WSC2017,07,CNC Milling,IN,India,17,,676.0,,,SARATH VISWESH PRABHAKAR,32009,True,5556
+WSC2017,07,CNC Milling,BY,Belarus,18,,660.0,,,ERNEST YANCHYK,32472,True,5557
+WSC2017,07,CNC Milling,PT,Portugal,18,,658.0,,,FLÁVIO PEREIRA,30778,True,5558
+WSC2017,07,CNC Milling,JP,Japan,2,Silver,734.0,,,MITSUAKI KEMMOCHI,28086,True,5541
+WSC2017,07,CNC Milling,KR,Korea,2,Silver,732.0,,,JEONGJUN YOON,29666,True,5542
+WSC2017,07,CNC Milling,SE,Sweden,20,,646.0,,,JOEL LINDH,30264,True,5559
+WSC2017,07,CNC Milling,CA,Canada,21,,642.0,,,SILAS MEECHES,26518,True,5560
+WSC2017,07,CNC Milling,SA,Saudi Arabia,22,,630.0,,,MANSOUR ALDAWSARI,30261,True,5561
+WSC2017,07,CNC Milling,BR,Brazil,4,Medallion for Excellence,720.0,,,RODRIGO KELLER,29981,True,5544
+WSC2017,07,CNC Milling,CH,Switzerland,4,Medallion for Excellence,720.0,,,SILVIO TÖNZ,28734,True,5545
+WSC2017,07,CNC Milling,FR,France,4,Medallion for Excellence,722.0,,,LUPIN DOUCET,31913,True,5543
+WSC2017,07,CNC Milling,AT,Austria,7,Medallion for Excellence,716.0,,,JULIAN KRUG,27857,True,5546
+WSC2017,07,CNC Milling,ID,Indonesia,7,Medallion for Excellence,715.0,,,ADITYA HARTANTO,20179,True,5548
+WSC2017,07,CNC Milling,TW,Chinese Taipei,7,Medallion for Excellence,716.0,,,CHING-WEN CHEN,30729,True,5547
+WSC2017,08,Architectural Stonemasonry,BR,Brazil,1,Gold,745.0,,,PABLO PAULO,29982,True,5562
+WSC2017,08,Architectural Stonemasonry,DE,Germany,10,,621.0,,,RICHARD CRIVELLARO,31352,True,5571
+WSC2017,08,Architectural Stonemasonry,FI,Finland,11,,565.0,,,JUUSO-PETTERI KERKKÄNEN,29816,True,5572
+WSC2017,08,Architectural Stonemasonry,UK,United Kingdom,2,Silver,739.0,,,ARCHIE STOKE-FAIERS,30200,True,5563
+WSC2017,08,Architectural Stonemasonry,FR,France,3,Bronze,713.0,,,JOSEPH COURTIN,31566,True,5564
+WSC2017,08,Architectural Stonemasonry,KR,Korea,3,Bronze,712.0,,,SANGMIN LEE,29647,True,5566
+WSC2017,08,Architectural Stonemasonry,RU,Russia,3,Bronze,713.0,,,RAFAEL IAKHIN,31560,True,5565
+WSC2017,08,Architectural Stonemasonry,IT,"South Tyrol, Italy",6,Medallion for Excellence,700.0,,,DAVID SCHÜTZ,30582,True,5567
+WSC2017,08,Architectural Stonemasonry,CH,Switzerland,7,,688.0,,,SONJA MONN,28723,True,5568
+WSC2017,08,Architectural Stonemasonry,AT,Austria,8,,680.0,,,ROBERT MOSER,27845,True,5569
+WSC2017,08,Architectural Stonemasonry,JP,Japan,9,,665.0,,,JUN ASAI,28262,True,5570
+WSC2017,09,IT Software Solutions for Business,CH,Switzerland,1,Gold,730.0,,,MANUEL ALLENSPACH,28728,True,5574
+WSC2017,09,IT Software Solutions for Business,RU,Russia,1,Gold,731.0,,,ANNA DERBENEVA,31592,True,5573
+WSC2017,09,IT Software Solutions for Business,MO,"Macao, China",10,Medallion for Excellence,708.0,,,KIN HENG CHEANG,31488,True,5583
+WSC2017,09,IT Software Solutions for Business,PH,Philippines,10,Medallion for Excellence,709.0,,,JOVEN H. HAYAGAN,31798,True,5582
+WSC2017,09,IT Software Solutions for Business,AE,United Arab Emirates,12,Medallion for Excellence,704.0,,,NOUF ALKAABI,32502,True,5585
+WSC2017,09,IT Software Solutions for Business,ID,Indonesia,12,Medallion for Excellence,705.0,,,ARRIVAL DWI SENTOSA,19214,True,5584
+WSC2017,09,IT Software Solutions for Business,BR,Brazil,14,,699.0,,,SÉRGIO ALVES,29983,True,5587
+WSC2017,09,IT Software Solutions for Business,RO,Romania,14,Medallion for Excellence,700.0,,,BOGDAN GHIRAN,32222,True,5586
+WSC2017,09,IT Software Solutions for Business,MY,Malaysia,16,,696.0,,,MUHAMMAD 'AMMAR MUHAMMAD SANI,30720,True,5588
+WSC2017,09,IT Software Solutions for Business,SG,Singapore,16,,694.0,,,"JUN YI, AUSTIN TEO",27821,True,5589
+WSC2017,09,IT Software Solutions for Business,HR,Croatia,18,,692.0,True,,IVAN DUMANCIC,30508,True,5591
+WSC2017,09,IT Software Solutions for Business,IR,Iran,18,,691.0,,,MOHAMMADREZA TAYYEBI,24170,True,5592
+WSC2017,09,IT Software Solutions for Business,SA,Saudi Arabia,18,,693.0,True,,HUSSAIN KADHIM,30535,True,5590
+WSC2017,09,IT Software Solutions for Business,CO,Colombia,21,,687.0,,,CRISTIAN JAIR ROJAS VELANDIA,27512,True,5593
+WSC2017,09,IT Software Solutions for Business,BY,Belarus,22,,684.0,,,DZIANIS CHEBIARACHKA,32410,True,5594
+WSC2017,09,IT Software Solutions for Business,IN,India,23,,672.0,,,MEHER RISHIKA NORI,32030,True,5595
+WSC2017,09,IT Software Solutions for Business,FI,Finland,24,,669.0,,,JOHAN HÄNDELIN,29826,True,5596
+WSC2017,09,IT Software Solutions for Business,JP,Japan,24,,669.0,,,RYO YAMAMOTO,28081,True,5597
+WSC2017,09,IT Software Solutions for Business,ZA,South Africa,26,,649.0,,,IHSAAN CLASSEN,31476,True,5598
+WSC2017,09,IT Software Solutions for Business,KW,Kuwait,27,,632.0,,,BADER ALSOULAH,34069,True,5599
+WSC2017,09,IT Software Solutions for Business,CN,China,3,Bronze,724.0,,,RUN DU,31706,True,5576
+WSC2017,09,IT Software Solutions for Business,DE,Germany,3,Bronze,726.0,,,JONAS WANKE,31330,True,5575
+WSC2017,09,IT Software Solutions for Business,VN,Vietnam,3,Bronze,724.0,,,TRAN NGUYEN BA PHUOC,31087,True,5577
+WSC2017,09,IT Software Solutions for Business,HK,"Hong Kong, China",6,Medallion for Excellence,721.0,,,TAK KI CHONG,32149,True,5579
+WSC2017,09,IT Software Solutions for Business,KR,Korea,6,Medallion for Excellence,723.0,,,KIHWAN NAM,29660,True,5578
+WSC2017,09,IT Software Solutions for Business,MA,Morocco,6,Medallion for Excellence,721.0,,,OUSSAMA AGARDOUH,32616,True,5580
+WSC2017,09,IT Software Solutions for Business,TW,Chinese Taipei,9,Medallion for Excellence,720.0,,,CHANG-TING KAO,30809,True,5581
+WSC2017,10,Welding,CN,China,1,Gold,737.0,,,XIANHAI NING,31725,True,5600
+WSC2017,10,Welding,CA,Canada,12,Medallion for Excellence,715.0,,,ANDREW CHRISTENSEN,26822,True,5611
+WSC2017,10,Welding,BR,Brazil,13,Medallion for Excellence,712.0,,,RAFAEL DÁRIO,30084,True,5612
+WSC2017,10,Welding,HU,Hungary,14,Medallion for Excellence,707.0,,,DANIEL ZAJA,30645,True,5613
+WSC2017,10,Welding,IE,Ireland,15,Medallion for Excellence,704.0,,,EOIN SHORTALL,31893,True,5614
+WSC2017,10,Welding,IR,Iran,15,Medallion for Excellence,704.0,,,ALIREZA BADRI,32440,True,5615
+WSC2017,10,Welding,BE,Belgium,17,Medallion for Excellence,700.0,,,PIETER SAMAN,30664,True,5616
+WSC2017,10,Welding,MN,Mongolia,17,Medallion for Excellence,700.0,True,,JANLAV-OIDOV JADAMBA,31242,True,5617
+WSC2017,10,Welding,AT,Austria,19,,695.0,,,DAVID BLANK,27867,True,5619
+WSC2017,10,Welding,NZ,New Zealand,19,,697.0,,,ANDREW CHAMPION,27056,True,5618
+WSC2017,10,Welding,JP,Japan,2,Silver,731.0,,,JUNYA KASAGI,28103,True,5602
+WSC2017,10,Welding,KR,Korea,2,Silver,733.0,,,YEONGJU PARK,29682,True,5601
+WSC2017,10,Welding,AE,United Arab Emirates,21,,690.0,,,MAHMOUD ALNOUIMI,32510,True,5621
+WSC2017,10,Welding,CH,Switzerland,21,,692.0,,,SEVERIN SEILER,28740,True,5620
+WSC2017,10,Welding,NO,Norway,21,,690.0,,,JON ARNE HJELMSTADBAKK,28474,True,5622
+WSC2017,10,Welding,IN,India,24,,689.0,,,OMKAR VIRENDRA SAVANT,31990,True,5623
+WSC2017,10,Welding,ZA,South Africa,25,,680.0,,,PHILIPPUS TERBLANCHE,31212,True,5624
+WSC2017,10,Welding,BY,Belarus,26,,677.0,,,SIARHEI MATSKEVICH,32125,True,5625
+WSC2017,10,Welding,SE,Sweden,26,,677.0,,,JOAKIM CARLSSON,29013,True,5626
+WSC2017,10,Welding,ES,Spain,28,,670.0,,,FERNANDO GONZÁLEZ,30185,True,5627
+WSC2017,10,Welding,ID,Indonesia,29,,652.0,,,RIZAL HAFIZHI,32191,True,5628
+WSC2017,10,Welding,SA,Saudi Arabia,30,,649.0,,,SAJAD ALJARASH,30675,True,5629
+WSC2017,10,Welding,KZ,Kazakhstan,31,,644.0,,,ALEXANDR SAGEL,32720,True,5630
+WSC2017,10,Welding,BH,Kingdom of Bahrain,32,,637.0,,,ALI MOHAMED,32520,True,5631
+WSC2017,10,Welding,KW,Kuwait,32,,635.0,True,,SALMAN ALSHAMMARI,34070,True,5632
+WSC2017,10,Welding,ZM,Zambia,34,,633.0,,,JIMMY CHIPOKOSA,31315,True,5633
+WSC2017,10,Welding,TW,Chinese Taipei,4,Bronze,730.0,,,JIAN-HONG LIN,30736,True,5603
+WSC2017,10,Welding,US,United States of America,4,Medallion for Excellence,728.0,True,,CHANDLER VINCENT,29261,True,5604
+WSC2017,10,Welding,AU,Australia,6,Medallion for Excellence,721.0,,,DYLAN BOLCH,32301,True,5606
+WSC2017,10,Welding,MY,Malaysia,6,Medallion for Excellence,722.0,,,MUHAMMAD ZULHILMI MOHD SABERI,30715,True,5605
+WSC2017,10,Welding,RU,Russia,6,Medallion for Excellence,721.0,,,VADIM MINDIGALIEV,31620,True,5607
+WSC2017,10,Welding,NL,Netherlands,9,Medallion for Excellence,717.0,,,BRENT KOEKKOEK,29524,True,5609
+WSC2017,10,Welding,TH,Thailand,9,Medallion for Excellence,718.0,,,SANTI CHOOKAEW,31232,True,5608
+WSC2017,10,Welding,UK,United Kingdom,9,Medallion for Excellence,716.0,,,JOSH PEEK,30229,True,5610
+WSC2017,11,Print Media Technology,BR,Brazil,1,Gold,720.0,,,MURILO SILVA,29987,True,5634
+WSC2017,11,Print Media Technology,FR,France,1,Gold,718.0,,,JÉRÉMY KOOTZ,31466,True,5635
+WSC2017,11,Print Media Technology,RU,Russia,10,,625.0,,,ANZHELIKA AKSENOVA,31642,True,5643
+WSC2017,11,Print Media Technology,BE,Belgium,11,,619.0,,,VINCENT TONOLA,30661,True,5644
+WSC2017,11,Print Media Technology,CH,Switzerland,3,Bronze,707.0,,,JANINE BIGLER,28727,True,5636
+WSC2017,11,Print Media Technology,DE,Germany,4,Medallion for Excellence,701.0,,,FLORIAN KRAUS,28457,True,5638
+WSC2017,11,Print Media Technology,JP,Japan,4,Medallion for Excellence,703.0,,,MANATSU HAYASE,28083,True,5637
+WSC2017,11,Print Media Technology,AT,Austria,6,Medallion for Excellence,700.0,,,DOMINIK STEININGER,26681,True,5639
+WSC2017,11,Print Media Technology,CN,China,7,,662.0,,,HUIFANG YANG,31708,True,5641
+WSC2017,11,Print Media Technology,HK,"Hong Kong, China",7,,664.0,,,YEE TUNG WONG,32150,True,5640
+WSC2017,11,Print Media Technology,US,United States of America,9,,661.0,,,CHANDLER KERR,28495,True,5642
+WSC2017,12,Wall and Floor Tiling,CN,China,1,Gold,736.0,,,ZHAOJU CUI,31701,True,5645
+WSC2017,12,Wall and Floor Tiling,BR,Brazil,13,Medallion for Excellence,703.0,,,GILBERTO SANTOS,30071,True,5657
+WSC2017,12,Wall and Floor Tiling,BE,Belgium,14,,697.0,,,JOHN PAUQUET,30658,True,5658
+WSC2017,12,Wall and Floor Tiling,BY,Belarus,15,,681.0,,,DZMITRY PISARAU,32124,True,5660
+WSC2017,12,Wall and Floor Tiling,IN,India,15,,683.0,,,SHAILENDRA CHAUHAN,31979,True,5659
+WSC2017,12,Wall and Floor Tiling,MY,Malaysia,15,,681.0,,,MARINSUN LANUN,30706,True,5661
+WSC2017,12,Wall and Floor Tiling,HK,"Hong Kong, China",18,,678.0,,,KIM FAI YIP,26988,True,5662
+WSC2017,12,Wall and Floor Tiling,CO,Colombia,19,,675.0,,,JUAN CAMILO CAVICHE BASTIDAS,27549,True,5663
+WSC2017,12,Wall and Floor Tiling,AT,Austria,2,Silver,729.0,,,ANDREAS STIEGLER,27854,True,5646
+WSC2017,12,Wall and Floor Tiling,TH,Thailand,20,,672.0,,,NATTAWAT PUNHAUANGK,31286,True,5664
+WSC2017,12,Wall and Floor Tiling,EE,Estonia,21,,669.0,,,JAANUS STEINFELDT,28367,True,5665
+WSC2017,12,Wall and Floor Tiling,AU,Australia,22,,665.0,,,BRAYDEN GAUCI,32297,True,5666
+WSC2017,12,Wall and Floor Tiling,UK,United Kingdom,23,,662.0,,,ARMONDAS TAMULIS,30214,True,5667
+WSC2017,12,Wall and Floor Tiling,IR,Iran,24,,591.0,,,DAVOUD DOUDKANLOOY MILAN,32449,True,5668
+WSC2017,12,Wall and Floor Tiling,NA,Namibia,25,,573.0,,,SAKARIA NDANINGINA,27228,True,5669
+WSC2017,12,Wall and Floor Tiling,ZM,Zambia,26,,543.0,,,RUTH KAMPENGELE,30672,True,5670
+WSC2017,12,Wall and Floor Tiling,KR,Korea,3,Bronze,726.0,,,JEONGSEOP KIM,29654,True,5647
+WSC2017,12,Wall and Floor Tiling,NL,Netherlands,4,Medallion for Excellence,721.0,,,WILHELM SCHOLTEN,29513,True,5648
+WSC2017,12,Wall and Floor Tiling,CH,Switzerland,5,Medallion for Excellence,709.0,,,MARTIN SCHULER,26972,True,5651
+WSC2017,12,Wall and Floor Tiling,ID,Indonesia,5,Medallion for Excellence,711.0,,,MUHAMMAD MUSLIH,29325,True,5649
+WSC2017,12,Wall and Floor Tiling,IT,"South Tyrol, Italy",5,Medallion for Excellence,711.0,,,ALEXANDER TASCHLER,30593,True,5650
+WSC2017,12,Wall and Floor Tiling,RU,Russia,5,Medallion for Excellence,709.0,,,MIKHAIL UKHANKIN,31565,True,5652
+WSC2017,12,Wall and Floor Tiling,DE,Germany,9,Medallion for Excellence,707.0,,,RAPHAEL ROSSOL,30302,True,5653
+WSC2017,12,Wall and Floor Tiling,DK,Denmark,9,Medallion for Excellence,705.0,,,FREDERIK NIELSEN,29918,True,5656
+WSC2017,12,Wall and Floor Tiling,FR,France,9,Medallion for Excellence,706.0,,,FLORIAN SERVANT,31579,True,5654
+WSC2017,12,Wall and Floor Tiling,TW,Chinese Taipei,9,Medallion for Excellence,706.0,,,PO-JEN CHEN,30803,True,5655
+WSC2017,13,Autobody Repair,CN,China,1,Gold,736.0,,,SHANWEI YANG,31731,True,5671
+WSC2017,13,Autobody Repair,JP,Japan,10,Medallion for Excellence,704.0,,,RYUYA IKEDA,28112,True,5680
+WSC2017,13,Autobody Repair,NO,Norway,10,Medallion for Excellence,702.0,,,EVEN AASEN,28477,True,5681
+WSC2017,13,Autobody Repair,AT,Austria,12,,698.0,,,SIMON WINDER,28691,True,5682
+WSC2017,13,Autobody Repair,RU,Russia,12,,697.0,,,IGOR IVANOV,31629,True,5683
+WSC2017,13,Autobody Repair,SE,Sweden,14,,684.0,,,ELIAS KARLSSON,29021,True,5684
+WSC2017,13,Autobody Repair,IR,Iran,15,,679.0,,,AFSHIN FEKRI HAMLABAD,32427,True,5685
+WSC2017,13,Autobody Repair,IT,"South Tyrol, Italy",16,,676.0,,,GEORG PROFANTER,30604,True,5686
+WSC2017,13,Autobody Repair,ES,Spain,17,,668.0,,,MARC COBOS,30193,True,5687
+WSC2017,13,Autobody Repair,CA,Canada,18,,658.0,,,VYOLAINE DUJMOVIC,26828,True,5688
+WSC2017,13,Autobody Repair,IN,India,18,,656.0,,,MANMOHAN MANMOHAN,31957,True,5689
+WSC2017,13,Autobody Repair,CH,Switzerland,2,Silver,731.0,,,HEIKO ZUMBRUNN,28749,True,5672
+WSC2017,13,Autobody Repair,BY,Belarus,20,,653.0,,,DZMITRY ZUBKOU,32166,True,5690
+WSC2017,13,Autobody Repair,ID,Indonesia,21,,646.0,,,DEKA WIDYATMOKO YUDHIARTO,29416,True,5691
+WSC2017,13,Autobody Repair,ZA,South Africa,22,,629.0,,,YAQOOB DAMON,31264,True,5692
+WSC2017,13,Autobody Repair,UK,United Kingdom,3,Bronze,723.0,,,ANDREW GAULT,30236,True,5673
+WSC2017,13,Autobody Repair,DK,Denmark,4,Medallion for Excellence,718.0,,,NICHLAS ROSENKILDE THOMSEN,29925,True,5675
+WSC2017,13,Autobody Repair,TW,Chinese Taipei,4,Medallion for Excellence,720.0,,,BO-YUAN HUANG,30819,True,5674
+WSC2017,13,Autobody Repair,DE,Germany,6,Medallion for Excellence,717.0,,,MIRKO BETZ,29254,True,5676
+WSC2017,13,Autobody Repair,KR,Korea,6,Medallion for Excellence,717.0,,,MINSEONG KIM,29811,True,5677
+WSC2017,13,Autobody Repair,FR,France,8,Medallion for Excellence,713.0,,,KÉVIN MASCLE-GIRARD,31921,True,5678
+WSC2017,13,Autobody Repair,BR,Brazil,9,Medallion for Excellence,710.0,,,PAULO MOLAIA,29986,True,5679
+WSC2017,14,Aircraft Maintenance,FI,Finland,1,Gold,733.0,,,MATIAS KORRI,29843,True,5693
+WSC2017,14,Aircraft Maintenance,NZ,New Zealand,1,Gold,732.0,True,,JARROD WOOD,27059,True,5694
+WSC2017,14,Aircraft Maintenance,FR,France,11,,691.0,,,CHRISTOPHE GUICHEMERRE,31920,True,5703
+WSC2017,14,Aircraft Maintenance,SG,Singapore,11,,689.0,,,WEI TING LOW,26740,True,5704
+WSC2017,14,Aircraft Maintenance,RU,Russia,13,,682.0,,,ROMAN DONCHEVSKII,32668,True,5705
+WSC2017,14,Aircraft Maintenance,AE,United Arab Emirates,14,,650.0,,,YASER RAHMANI,32535,True,5706
+WSC2017,14,Aircraft Maintenance,SA,Saudi Arabia,15,,618.0,,,KHALID ALABDULKARIM,30768,True,5707
+WSC2017,14,Aircraft Maintenance,ZM,Zambia,16,,586.0,,,EUPHRASIA MULENGA,30288,True,5708
+WSC2017,14,Aircraft Maintenance,KR,Korea,3,Bronze,728.0,,,YEONSEONG JEONG,29689,True,5695
+WSC2017,14,Aircraft Maintenance,BR,Brazil,4,Medallion for Excellence,725.0,,,RAFAEL DE BORBA,29988,True,5696
+WSC2017,14,Aircraft Maintenance,UK,United Kingdom,5,Medallion for Excellence,722.0,,,JOSEPH MASSEY,29394,True,5697
+WSC2017,14,Aircraft Maintenance,CA,Canada,6,Medallion for Excellence,712.0,,,ALEXANDRE SIDORCHUK,26230,True,5698
+WSC2017,14,Aircraft Maintenance,IE,Ireland,7,Medallion for Excellence,708.0,,,COLUM FARRELLY,31966,True,5699
+WSC2017,14,Aircraft Maintenance,CN,China,8,Medallion for Excellence,700.0,,,FANGYI ZOU,31730,True,5700
+WSC2017,14,Aircraft Maintenance,SE,Sweden,8,,698.0,,,CAROLINE SÖDERQVIST,29024,True,5702
+WSC2017,14,Aircraft Maintenance,TW,Chinese Taipei,8,Medallion for Excellence,700.0,,,CHUN-CHUAN CHEN,30818,True,5701
+WSC2017,15,Plumbing and Heating,AT,Austria,1,Gold,729.0,,,ARMIN TAXER,27853,True,5709
+WSC2017,15,Plumbing and Heating,CH,Switzerland,1,Gold,728.0,,,MARCEL WYSS,28722,True,5710
+WSC2017,15,Plumbing and Heating,MY,Malaysia,11,Medallion for Excellence,701.0,,,MOHD FERDAUS ZAKARIA @ ROSLAN,30703,True,5722
+WSC2017,15,Plumbing and Heating,NL,Netherlands,11,Medallion for Excellence,703.0,,,JULIAN VAN LOHUIZEN,30328,True,5719
+WSC2017,15,Plumbing and Heating,RU,Russia,11,Medallion for Excellence,702.0,,,MAKSIM SHEVCHENKO,31434,True,5720
+WSC2017,15,Plumbing and Heating,US,United States of America,11,Medallion for Excellence,702.0,,,ASHER CHICOINE,27880,True,5721
+WSC2017,15,Plumbing and Heating,FI,Finland,15,Medallion for Excellence,700.0,,,NESTORI RÄISÄNEN,29822,True,5723
+WSC2017,15,Plumbing and Heating,FR,France,15,,698.0,,,ANTHONY CHARRON,31578,True,5724
+WSC2017,15,Plumbing and Heating,TW,Chinese Taipei,17,,694.0,,,CHIA-LIANG KO,30800,True,5725
+WSC2017,15,Plumbing and Heating,JP,Japan,18,,688.0,,,YUUTA SEKINE,28070,True,5726
+WSC2017,15,Plumbing and Heating,BR,Brazil,19,,680.0,,,LUCIANO BARBOSA,30072,True,5727
+WSC2017,15,Plumbing and Heating,VN,Vietnam,19,,678.0,,,PHAM VAN THANH,31075,True,5728
+WSC2017,15,Plumbing and Heating,IT,"South Tyrol, Italy",21,,672.0,,,PATRICK KIENZL,30592,True,5729
+WSC2017,15,Plumbing and Heating,MN,Mongolia,22,,660.0,,,DOLGORMAA TSOLMONJAV,31240,True,5731
+WSC2017,15,Plumbing and Heating,ZA,South Africa,22,,662.0,,,SIYABONGA MAKHATHINI,31203,True,5730
+WSC2017,15,Plumbing and Heating,CA,Canada,24,,655.0,,,JUSTIN FISHER,26806,True,5732
+WSC2017,15,Plumbing and Heating,HU,Hungary,25,,644.0,,,ADAM MIKLOS,30639,True,5733
+WSC2017,15,Plumbing and Heating,BY,Belarus,26,,641.0,,,ARTSIOM RYZHUK,32076,True,5734
+WSC2017,15,Plumbing and Heating,ES,Spain,26,,641.0,,,SAMUEL TORRES,29237,True,5735
+WSC2017,15,Plumbing and Heating,KZ,Kazakhstan,28,,627.0,,,VALERIY ONISHENKO,32528,True,5737
+WSC2017,15,Plumbing and Heating,NA,Namibia,28,,628.0,,,ALBERTINA SHITALANGAHO,27226,True,5736
+WSC2017,15,Plumbing and Heating,IR,Iran,3,Bronze,720.0,,,NIMA HOSSEINPOURSALOUKOLAEI,32475,True,5713
+WSC2017,15,Plumbing and Heating,KR,Korea,3,Bronze,721.0,,,HYEONGWOOK KIM,29646,True,5711
+WSC2017,15,Plumbing and Heating,SE,Sweden,3,Bronze,721.0,True,,BJÖRN LANDIN,29003,True,5712
+WSC2017,15,Plumbing and Heating,UK,United Kingdom,3,Bronze,719.0,,,DANIEL MARTINS,30213,True,5714
+WSC2017,15,Plumbing and Heating,CN,China,7,Medallion for Excellence,717.0,,,KE ZHENG,31696,True,5715
+WSC2017,15,Plumbing and Heating,DE,Germany,8,Medallion for Excellence,710.0,,,LUKAS HEYN,29100,True,5717
+WSC2017,15,Plumbing and Heating,IE,Ireland,8,Medallion for Excellence,710.0,,,DAVID DONEGAN,31891,True,5718
+WSC2017,15,Plumbing and Heating,NZ,New Zealand,8,Medallion for Excellence,712.0,,,HUNTER TURNER,27050,True,5716
+WSC2017,16,Electronics,TW,Chinese Taipei,1,Gold,735.0,,,YU-CHIH TSAI,30735,True,5738
+WSC2017,16,Electronics,CN,China,10,Medallion for Excellence,709.0,,,WEIYE ZENG,31712,True,5747
+WSC2017,16,Electronics,FI,Finland,11,Medallion for Excellence,701.0,,,ESA VAREMO,29828,True,5748
+WSC2017,16,Electronics,SG,Singapore,11,Medallion for Excellence,700.0,,,WEI KANG DYLAN LIM,26734,True,5749
+WSC2017,16,Electronics,IN,India,13,,688.0,,,HARSHA PRABAKARAN,31991,True,5750
+WSC2017,16,Electronics,CA,Canada,14,,683.0,,,JUDD FOSTER,26510,True,5751
+WSC2017,16,Electronics,MY,Malaysia,14,,683.0,,,MUHAMMAD YUSRI BAHARUDDIN,30711,True,5752
+WSC2017,16,Electronics,DE,Germany,16,,674.0,,,JULIAN ULMER,29104,True,5754
+WSC2017,16,Electronics,VN,Vietnam,16,,676.0,,,NINH THANH NGUYEN,31078,True,5753
+WSC2017,16,Electronics,MO,"Macao, China",18,,672.0,,,TANG WONG,31490,True,5755
+WSC2017,16,Electronics,BY,Belarus,19,,641.0,,,ULADZISLAU SIOMIK,32479,True,5756
+WSC2017,16,Electronics,CH,Switzerland,2,Silver,731.0,,,JANNIC SCHÄREN,28735,True,5739
+WSC2017,16,Electronics,KR,Korea,2,Silver,731.0,,,INBEOM SHIN,29669,True,5740
+WSC2017,16,Electronics,MA,Morocco,20,,615.0,,,YASSINE ARRAD,32627,True,5757
+WSC2017,16,Electronics,SA,Saudi Arabia,21,,605.0,,,YASIR ALTHEYABI,30676,True,5758
+WSC2017,16,Electronics,AE,United Arab Emirates,22,,596.0,,,OMAR ALHEBSI,33177,True,5759
+WSC2017,16,Electronics,KZ,Kazakhstan,22,,595.0,,,DMITRIY VINOKUROV,32526,True,5760
+WSC2017,16,Electronics,IR,Iran,4,Medallion for Excellence,720.0,True,,ALIREZA ABDOLKARIMI,32422,True,5741
+WSC2017,16,Electronics,AT,Austria,5,Medallion for Excellence,716.0,,,DANIEL FRANK,27860,True,5742
+WSC2017,16,Electronics,ID,Indonesia,5,Medallion for Excellence,715.0,,,HELMI YULIARDI,29433,True,5744
+WSC2017,16,Electronics,JP,Japan,5,Medallion for Excellence,716.0,,,HIDEAKI INUKAI,28089,True,5743
+WSC2017,16,Electronics,BR,Brazil,8,Medallion for Excellence,712.0,,,GABRIEL SOUZA,31608,True,5745
+WSC2017,16,Electronics,RU,Russia,8,Medallion for Excellence,710.0,,,MAKSIM KADNIKOV,31595,True,5746
+WSC2017,17,Web Design and Development,CH,Switzerland,1,Gold,730.0,,,EMIL VON WATTENWYL,28730,True,5763
+WSC2017,17,Web Design and Development,KR,Korea,1,Gold,731.0,,,DONGWOOK HUH,29665,True,5761
+WSC2017,17,Web Design and Development,MO,"Macao, China",1,Gold,729.0,True,,HOK KIN FONG,31486,True,5764
+WSC2017,17,Web Design and Development,RU,Russia,1,Gold,731.0,True,,KONSTANTIN LARIN,31441,True,5762
+WSC2017,17,Web Design and Development,CA,Canada,10,Medallion for Excellence,718.0,,,JUN ZHENG,26811,True,5770
+WSC2017,17,Web Design and Development,PH,Philippines,10,Medallion for Excellence,716.0,True,,JALANIE M. DIMACALING,31797,True,5771
+WSC2017,17,Web Design and Development,SG,Singapore,12,Medallion for Excellence,714.0,,,CLARENCE TAY YAN CHONG,26731,True,5772
+WSC2017,17,Web Design and Development,CO,Colombia,13,Medallion for Excellence,710.0,,,BRAYAN ESTIVEN LUCAS PEÑA,27557,True,5773
+WSC2017,17,Web Design and Development,AT,Austria,14,Medallion for Excellence,703.0,,,SIMON HELL,28690,True,5775
+WSC2017,17,Web Design and Development,IR,Iran,14,Medallion for Excellence,705.0,,,MOHAMMAD HOSEINI RAD,32434,True,5774
+WSC2017,17,Web Design and Development,JP,Japan,14,Medallion for Excellence,703.0,,,AZUSA SANO,23030,True,5776
+WSC2017,17,Web Design and Development,HU,Hungary,17,Medallion for Excellence,700.0,,,GERGELY SANDOR BIHARY,30642,True,5777
+WSC2017,17,Web Design and Development,MY,Malaysia,17,Medallion for Excellence,700.0,,,TEOH JIA JUN,30710,True,5778
+WSC2017,17,Web Design and Development,UK,United Kingdom,19,,697.0,,,ALFIE HOPKIN,30219,True,5779
+WSC2017,17,Web Design and Development,US,United States of America,19,,696.0,,,RILEY JOHNSON,29852,True,5780
+WSC2017,17,Web Design and Development,RO,Romania,21,,692.0,True,,DANIELA STIRCU,32224,True,5782
+WSC2017,17,Web Design and Development,TH,Thailand,21,,694.0,,,PONGSATORN JINTANA,31292,True,5781
+WSC2017,17,Web Design and Development,AE,United Arab Emirates,23,,686.0,,,SULAIMAN AHMED,32503,True,5785
+WSC2017,17,Web Design and Development,LV,Latvia,23,,687.0,,,IGORS NOVICKIS,32403,True,5783
+WSC2017,17,Web Design and Development,SE,Sweden,23,,687.0,,,ERIC NORMAN,29033,True,5784
+WSC2017,17,Web Design and Development,DE,Germany,26,,679.0,,,NURULLAH YEL,29103,True,5788
+WSC2017,17,Web Design and Development,ES,Spain,26,,680.0,,,ROBERT LARA,30132,True,5786
+WSC2017,17,Web Design and Development,MA,Morocco,26,,679.0,,,HAMZA MOUSTAID,32673,True,5789
+WSC2017,17,Web Design and Development,NL,Netherlands,26,,680.0,,,SVEN VAN DER ZEE,29518,True,5787
+WSC2017,17,Web Design and Development,IN,India,30,,668.0,,,SAURABH MAHENDRA GUPTA,32008,True,5791
+WSC2017,17,Web Design and Development,KZ,Kazakhstan,30,,669.0,,,ALEXANDR DAVYDOV,32557,True,5790
+WSC2017,17,Web Design and Development,SA,Saudi Arabia,32,,666.0,,,ABDULRAHMAN ALQAHTANI,30536,True,5792
+WSC2017,17,Web Design and Development,BH,Kingdom of Bahrain,33,,660.0,True,,MALEEHA MUZAFAR,32519,True,5793
+WSC2017,17,Web Design and Development,BY,Belarus,34,,654.0,,,VALERYIA LADUTSKA,32077,True,5795
+WSC2017,17,Web Design and Development,GE,Georgia,34,,656.0,,,TSOTNE NAZARASHVILI,29781,True,5794
+WSC2017,17,Web Design and Development,BR,Brazil,5,Medallion for Excellence,725.0,,,ERIC SILVA,30076,True,5765
+WSC2017,17,Web Design and Development,CN,China,5,Medallion for Excellence,725.0,,,YUANYUAN KONG,31817,True,5766
+WSC2017,17,Web Design and Development,HK,"Hong Kong, China",5,Medallion for Excellence,723.0,,,"YIK HEI, ONIKUR CHAN",32151,True,5767
+WSC2017,17,Web Design and Development,ID,Indonesia,8,Medallion for Excellence,722.0,,,MICHAEL REYNALD,24289,True,5768
+WSC2017,17,Web Design and Development,TW,Chinese Taipei,8,Medallion for Excellence,721.0,,,RUEI-FONG LYU,30810,True,5769
+WSC2017,18,Electrical Installations,CH,Switzerland,1,Gold,767.0,True,,BEAT SCHRANZ,28717,True,5796
+WSC2017,18,Electrical Installations,BE,Belgium,10,Medallion for Excellence,715.0,,,PAUL VAN DEN HEEDE,30653,True,5805
+WSC2017,18,Electrical Installations,TH,Thailand,11,Medallion for Excellence,712.0,,,THEERASAK JANMAN,31284,True,5806
+WSC2017,18,Electrical Installations,TW,Chinese Taipei,11,Medallion for Excellence,710.0,,,JHE-WEI JHANG,30919,True,5807
+WSC2017,18,Electrical Installations,BR,Brazil,13,Medallion for Excellence,709.0,,,PAULO MEDEIROS,29989,True,5808
+WSC2017,18,Electrical Installations,ID,Indonesia,14,Medallion for Excellence,705.0,,,WAHYU RESAWARDANA,29320,True,5809
+WSC2017,18,Electrical Installations,NO,Norway,14,Medallion for Excellence,705.0,,,ERIK VASBOTTEN,28478,True,5810
+WSC2017,18,Electrical Installations,NZ,New Zealand,14,Medallion for Excellence,704.0,,,CHABBETHAI CHIA,27086,True,5811
+WSC2017,18,Electrical Installations,HK,"Hong Kong, China",17,Medallion for Excellence,700.0,,,SIU LAM CHAN,32144,True,5813
+WSC2017,18,Electrical Installations,LV,Latvia,17,Medallion for Excellence,700.0,,,ANDIS LACIS,32467,True,5814
+WSC2017,18,Electrical Installations,VN,Vietnam,17,Medallion for Excellence,701.0,,,CHU VAN TUOI,31074,True,5812
+WSC2017,18,Electrical Installations,CN,China,2,Silver,755.0,,,HUI DONG,31801,True,5797
+WSC2017,18,Electrical Installations,AT,Austria,20,,692.0,,,WOLFGANG BRANDSTETTER,28687,True,5815
+WSC2017,18,Electrical Installations,ES,Spain,20,,692.0,,,VÍCTOR TERRAZAS,30162,True,5816
+WSC2017,18,Electrical Installations,CA,Canada,22,,687.0,,,DANIEL NELSON,26548,True,5817
+WSC2017,18,Electrical Installations,UK,United Kingdom,22,,686.0,,,MATTHEW DOE,30204,True,5818
+WSC2017,18,Electrical Installations,IE,Ireland,24,,682.0,,,KEVIN HOUGH,31888,True,5819
+WSC2017,18,Electrical Installations,MY,Malaysia,24,,680.0,,,KU SITI KHADIJAH KU PERA,30700,True,5820
+WSC2017,18,Electrical Installations,SE,Sweden,24,,680.0,,,ROBIN STATTIN,29002,True,5821
+WSC2017,18,Electrical Installations,PT,Portugal,27,,678.0,,,RODRIGO FARIAS,30772,True,5822
+WSC2017,18,Electrical Installations,MN,Mongolia,28,,674.0,,,TUGULDUR LKHAGVASUREN,31239,True,5824
+WSC2017,18,Electrical Installations,ZA,South Africa,28,,675.0,,,MTHOKOZISI SANGA,31201,True,5823
+WSC2017,18,Electrical Installations,IT,"South Tyrol, Italy",3,Bronze,750.0,,,HANNES INNERBICHLER,29750,True,5798
+WSC2017,18,Electrical Installations,HU,Hungary,30,,672.0,,,PETER LEIDL,30635,True,5825
+WSC2017,18,Electrical Installations,AE,United Arab Emirates,31,,647.0,,,FAISAL ALAMERI,32498,True,5826
+WSC2017,18,Electrical Installations,NA,Namibia,32,,641.0,,,TJIHIMISE B. KARAERUA,27222,True,5827
+WSC2017,18,Electrical Installations,BY,Belarus,33,,638.0,,,ULADZISLAU KRAUTSOU,32164,True,5828
+WSC2017,18,Electrical Installations,KZ,Kazakhstan,33,,636.0,,,VALERIY KOTSURENKO,33115,True,5829
+WSC2017,18,Electrical Installations,BH,Kingdom of Bahrain,35,,622.0,,,MOHAMED JAFFAR,32516,True,5830
+WSC2017,18,Electrical Installations,SA,Saudi Arabia,36,,617.0,,,SAUD GHARAWI,30673,True,5831
+WSC2017,18,Electrical Installations,FI,Finland,4,Medallion for Excellence,735.0,,,WERNER SILLANPÄÄ,29818,True,5799
+WSC2017,18,Electrical Installations,DE,Germany,5,Medallion for Excellence,727.0,,,LUCAS WEISENBERGER,26434,True,5801
+WSC2017,18,Electrical Installations,JP,Japan,5,Medallion for Excellence,729.0,,,DAIKI INOUE,28046,True,5800
+WSC2017,18,Electrical Installations,MO,"Macao, China",7,Medallion for Excellence,722.0,,,TONG IOK LEI,31491,True,5802
+WSC2017,18,Electrical Installations,KR,Korea,8,Medallion for Excellence,716.0,,,YONGJIN GWON,29651,True,5804
+WSC2017,18,Electrical Installations,RU,Russia,8,Medallion for Excellence,718.0,,,ROMAN GLAZUNOV,31636,True,5803
+WSC2017,19,Industrial Control,BR,Brazil,1,Gold,728.0,,,LUCAS SANTOS,30062,True,5834
+WSC2017,19,Industrial Control,CH,Switzerland,1,Gold,729.0,,,SIMON FURRER,28731,True,5833
+WSC2017,19,Industrial Control,CN,China,1,Gold,730.0,,,QIANG YUAN,31713,True,5832
+WSC2017,19,Industrial Control,AT,Austria,10,Medallion for Excellence,700.0,,,GEORG WAHLMÜLLER,27861,True,5842
+WSC2017,19,Industrial Control,DE,Germany,10,,699.0,,,PHILIPP WINTERSCHEID,28459,True,5843
+WSC2017,19,Industrial Control,SE,Sweden,10,Medallion for Excellence,701.0,,,JOHANNES JOHNSSON,29010,True,5841
+WSC2017,19,Industrial Control,FI,Finland,13,,696.0,,,SAMU LAHTI,29829,True,5845
+WSC2017,19,Industrial Control,FR,France,13,,697.0,,,MELVEEN ANNE,31914,True,5844
+WSC2017,19,Industrial Control,CA,Canada,15,,686.0,,,RYLEY LAFRANCE,26509,True,5846
+WSC2017,19,Industrial Control,RU,Russia,16,,677.0,,,VITALII GOLOLOBOV,31596,True,5847
+WSC2017,19,Industrial Control,IR,Iran,17,,674.0,,,SEYED SINA ISAPOUR,32443,True,5848
+WSC2017,19,Industrial Control,SG,Singapore,17,,672.0,,,YI SHU KEON HO,28401,True,5849
+WSC2017,19,Industrial Control,NZ,New Zealand,19,,670.0,,,LOGAN SANDERS,27087,True,5850
+WSC2017,19,Industrial Control,IE,Ireland,20,,654.0,,,BRENDAN MULDOWNEY,31885,True,5851
+WSC2017,19,Industrial Control,ES,Spain,21,,638.0,,,NAHUEL ARCE-LEAL,30178,True,5852
+WSC2017,19,Industrial Control,ID,Indonesia,4,Medallion for Excellence,725.0,,,GRAHA LOUVIT SHAMARATUNGGA,29432,True,5835
+WSC2017,19,Industrial Control,KR,Korea,5,Medallion for Excellence,720.0,,,HEUNGSEOP LEE,29670,True,5836
+WSC2017,19,Industrial Control,PT,Portugal,6,Medallion for Excellence,713.0,,,JOSÉ PEREIRA,30779,True,5837
+WSC2017,19,Industrial Control,JP,Japan,7,Medallion for Excellence,709.0,,,SHOJI TANAKA,28090,True,5838
+WSC2017,19,Industrial Control,TW,Chinese Taipei,8,Medallion for Excellence,704.0,,,WEI CIOU,30817,True,5840
+WSC2017,19,Industrial Control,VN,Vietnam,8,Medallion for Excellence,705.0,,,NGUYEN TAT TOAI,29894,True,5839
+WSC2017,20,Bricklaying,AT,Austria,1,Gold,733.0,,,ROBERT GRADL,27846,True,5854
+WSC2017,20,Bricklaying,CN,China,1,Gold,734.0,,,ZHIBIN LIANG,31683,True,5853
+WSC2017,20,Bricklaying,BR,Brazil,11,Medallion for Excellence,714.0,,,SILVIO CRISPIM,30063,True,5863
+WSC2017,20,Bricklaying,UK,United Kingdom,11,Medallion for Excellence,712.0,,,JOSHUA HUNTER,30201,True,5864
+WSC2017,20,Bricklaying,TW,Chinese Taipei,13,Medallion for Excellence,711.0,,,CHENG-YI ZHOU,30796,True,5865
+WSC2017,20,Bricklaying,ID,Indonesia,14,Medallion for Excellence,701.0,,,MUHAMMAD NASIR,29318,True,5866
+WSC2017,20,Bricklaying,RU,Russia,14,Medallion for Excellence,700.0,,,PAVEL KAZANTSEV,31561,True,5867
+WSC2017,20,Bricklaying,TH,Thailand,14,Medallion for Excellence,700.0,,,PONGSAKORN PRAMKASEM,31233,True,5868
+WSC2017,20,Bricklaying,DK,Denmark,17,,698.0,,,JACOB TRÆRUP AHLGREEN,29914,True,5869
+WSC2017,20,Bricklaying,IR,Iran,18,,687.0,,,MOHAMMADJAVAD TAHANI,32485,True,5870
+WSC2017,20,Bricklaying,CA,Canada,19,,680.0,,,PIERRE-OLIVIER DESMARAIS,26784,True,5872
+WSC2017,20,Bricklaying,KR,Korea,19,,681.0,,,BYEONGHAK LEE,29648,True,5871
+WSC2017,20,Bricklaying,MY,Malaysia,21,,674.0,,,MUHAMMAD DIN DUIN,30698,True,5873
+WSC2017,20,Bricklaying,MN,Mongolia,22,,659.0,,,MYAGMARSUREN TSETSEGBADAM,31238,True,5874
+WSC2017,20,Bricklaying,BY,Belarus,23,,648.0,,,ANDREI PIATKOUSKI,32044,True,5875
+WSC2017,20,Bricklaying,HU,Hungary,23,,648.0,,,ÁDÁM ZOLTÁN HÉDL,30632,True,5876
+WSC2017,20,Bricklaying,US,United States of America,25,,642.0,,,LUKE DUTTON,29495,True,5877
+WSC2017,20,Bricklaying,KZ,Kazakhstan,26,,631.0,,,ROMAN SHISHKIN,32487,True,5878
+WSC2017,20,Bricklaying,HK,"Hong Kong, China",27,,616.0,,,HO HIM YAU,27828,True,5879
+WSC2017,20,Bricklaying,ZA,South Africa,28,,584.0,,,MIHLE MVELAKUBI,31217,True,5880
+WSC2017,20,Bricklaying,NA,Namibia,29,,581.0,,,KAKORO JOHANNES,27218,True,5881
+WSC2017,20,Bricklaying,ZM,Zambia,29,,581.0,,,NTOWA MWALE,29722,True,5882
+WSC2017,20,Bricklaying,AU,Australia,3,Bronze,728.0,,,TRYSTAN SAMMUT,32178,True,5855
+WSC2017,20,Bricklaying,VN,Vietnam,4,Medallion for Excellence,724.0,,,HOA TONG THO,31956,True,5856
+WSC2017,20,Bricklaying,CH,Switzerland,5,Medallion for Excellence,718.0,,,KEVIN HOFER,28720,True,5861
+WSC2017,20,Bricklaying,DE,Germany,5,Medallion for Excellence,720.0,,,JANNES WULFES,29095,True,5857
+WSC2017,20,Bricklaying,FR,France,5,Medallion for Excellence,719.0,,,ROMAIN MICHON,31567,True,5860
+WSC2017,20,Bricklaying,IN,India,5,Medallion for Excellence,720.0,,,ROHIM MOMIN,31978,True,5858
+WSC2017,20,Bricklaying,IT,"South Tyrol, Italy",5,Medallion for Excellence,718.0,,,ANTON PUTZER,30583,True,5862
+WSC2017,20,Bricklaying,NL,Netherlands,5,Medallion for Excellence,720.0,,,TIM KLESSENS,29507,True,5859
+WSC2017,21,Plastering and Drywall Systems,FR,France,1,Gold,726.0,,,ALEXIS GUIMONT,31577,True,5883
+WSC2017,21,Plastering and Drywall Systems,LI,Principality of Liechtenstein,1,Gold,724.0,True,,RAFFAEL BECK,27699,True,5884
+WSC2017,21,Plastering and Drywall Systems,BR,Brazil,10,Medallion for Excellence,700.0,,,WANDERSON SANTOS,30073,True,5892
+WSC2017,21,Plastering and Drywall Systems,IE,Ireland,11,,697.0,,,STEPHEN MURRAY,31890,True,5893
+WSC2017,21,Plastering and Drywall Systems,UK,United Kingdom,12,,693.0,,,HARRISON MOY,30211,True,5894
+WSC2017,21,Plastering and Drywall Systems,KZ,Kazakhstan,13,,692.0,True,,SMIRNOV YEVGENIY,32488,True,5895
+WSC2017,21,Plastering and Drywall Systems,DE,Germany,14,,678.0,,,LUKAS KIRSCHMER,30301,True,5896
+WSC2017,21,Plastering and Drywall Systems,HU,Hungary,15,,649.0,,,GABOR LOCZI,30638,True,5897
+WSC2017,21,Plastering and Drywall Systems,BY,Belarus,16,,645.0,,,ALIAKSEI KAVALCHUK,32411,True,5898
+WSC2017,21,Plastering and Drywall Systems,ZA,South Africa,17,,644.0,,,NGOAKO MOSHOKOA,31202,True,5899
+WSC2017,21,Plastering and Drywall Systems,ZM,Zambia,18,,600.0,,,FEBIAN MULENGA,31328,True,5900
+WSC2017,21,Plastering and Drywall Systems,AE,United Arab Emirates,19,,595.0,,,RASHID AL ALI,32542,True,5901
+WSC2017,21,Plastering and Drywall Systems,KR,Korea,3,Bronze,723.0,,,SUHYEON KIM,29693,True,5885
+WSC2017,21,Plastering and Drywall Systems,JP,Japan,4,Medallion for Excellence,720.0,,,TAKAMITSU KOYANO,28069,True,5886
+WSC2017,21,Plastering and Drywall Systems,RU,Russia,5,Medallion for Excellence,710.0,,,DANIL PISKUNOV,31433,True,5887
+WSC2017,21,Plastering and Drywall Systems,AT,Austria,6,Medallion for Excellence,707.0,,,LUKAS HOFER,27852,True,5888
+WSC2017,21,Plastering and Drywall Systems,CH,Switzerland,6,Medallion for Excellence,707.0,,,FABIENNE NIEDERHAUSER,28724,True,5889
+WSC2017,21,Plastering and Drywall Systems,CN,China,6,Medallion for Excellence,707.0,,,WEILIE GU,31695,True,5890
+WSC2017,21,Plastering and Drywall Systems,TW,Chinese Taipei,9,Medallion for Excellence,705.0,,,WEI-HSUAN CHEN,30799,True,5891
+WSC2017,22,Painting and Decorating,AT,Austria,1,Gold,767.0,True,,SEBASTIAN GRUBER,27851,True,5902
+WSC2017,22,Painting and Decorating,IT,"South Tyrol, Italy",11,Medallion for Excellence,703.0,,,DOMINIK MITTERSTIELER,30591,True,5912
+WSC2017,22,Painting and Decorating,LI,Principality of Liechtenstein,12,,696.0,,,DEBORAH BAERTSCH,27700,True,5914
+WSC2017,22,Painting and Decorating,SE,Sweden,12,,697.0,,,EMIL ERIKSSON,29026,True,5913
+WSC2017,22,Painting and Decorating,DE,Germany,14,,690.0,,,PATRICK RÖDER,29099,True,5915
+WSC2017,22,Painting and Decorating,NL,Netherlands,14,,689.0,,,HANS HUIZINGA,29512,True,5916
+WSC2017,22,Painting and Decorating,HK,"Hong Kong, China",16,,685.0,,,MEI SZE WONG,26989,True,5917
+WSC2017,22,Painting and Decorating,BE,Belgium,17,,680.0,,,SABRINA SCHEEN,30657,True,5918
+WSC2017,22,Painting and Decorating,EE,Estonia,18,,676.0,,,ALISA LARINA,29092,True,5919
+WSC2017,22,Painting and Decorating,MY,Malaysia,19,,649.0,,,MUHAMMAD ZULKIFLI SAHDAN,30702,True,5920
+WSC2017,22,Painting and Decorating,CH,Switzerland,2,Silver,744.0,,,SANDRA LÜTHI,28716,True,5903
+WSC2017,22,Painting and Decorating,BY,Belarus,20,,635.0,,,VIKTAR SHMYHIN,32218,True,5921
+WSC2017,22,Painting and Decorating,KZ,Kazakhstan,21,,631.0,,,ANNA BOBYLOVA,32553,True,5922
+WSC2017,22,Painting and Decorating,AE,United Arab Emirates,22,,612.0,,,ALI KASHWANI,32217,True,5923
+WSC2017,22,Painting and Decorating,FR,France,3,Bronze,738.0,,,JUSTINE BOSSARD,31576,True,5904
+WSC2017,22,Painting and Decorating,HU,Hungary,4,Medallion for Excellence,733.0,True,,SZABOLCS CSEKE,30637,True,5905
+WSC2017,22,Painting and Decorating,UK,United Kingdom,5,Medallion for Excellence,728.0,,,JORDAN CHARTERS,30210,True,5906
+WSC2017,22,Painting and Decorating,FI,Finland,6,Medallion for Excellence,720.0,,,MARI LAPPALAINEN,29821,True,5907
+WSC2017,22,Painting and Decorating,TW,Chinese Taipei,6,Medallion for Excellence,718.0,,,CHIH-CHIANG SU,30798,True,5908
+WSC2017,22,Painting and Decorating,DK,Denmark,8,Medallion for Excellence,714.0,,,REBEKKA GULDBRAND VEDSTESEN,28898,True,5909
+WSC2017,22,Painting and Decorating,BR,Brazil,9,Medallion for Excellence,709.0,,,PAULO RICARDO,29992,True,5910
+WSC2017,22,Painting and Decorating,RU,Russia,9,Medallion for Excellence,709.0,,,OLGA IACHMENEVA,31641,True,5911
+WSC2017,23,Mobile Robotics,KR,Korea,1,Gold,740.0,,,MINHYEONG HWANG; JUHYUK HWANG,29677; 29678,True,5924
+WSC2017,23,Mobile Robotics,ID,Indonesia,10,Medallion for Excellence,709.0,,,ANDY YUNIAWAN; EKO MUSTOFA,29427; 29428,True,5934
+WSC2017,23,Mobile Robotics,TW,Chinese Taipei,10,Medallion for Excellence,711.0,,,YI-YUNG CHIU; FU-CHENG HSIEH,30928; 30933,True,5933
+WSC2017,23,Mobile Robotics,IN,India,12,Medallion for Excellence,704.0,,,SAMARTH MAHESH GOUDAR; VIBHOR MANOJ MESHRAM,31961; 31962,True,5935
+WSC2017,23,Mobile Robotics,BR,Brazil,13,Medallion for Excellence,700.0,,,GUILHERME RABUSKE; THEODORO CARDOSO,30082; 30083,True,5936
+WSC2017,23,Mobile Robotics,SG,Singapore,13,,698.0,,,SHU TING WONG; RAYMOND TAY,28529; 28530,True,5937
+WSC2017,23,Mobile Robotics,CO,Colombia,15,,696.0,,,SANTIAGO SALAZAR TOBON; JHONATAN BENITEZ,27565; 240338,True,5938
+WSC2017,23,Mobile Robotics,MA,Morocco,15,,696.0,True,,MOHAMMED HMINAT; MAKRAM CHARHIL,32639; 32712,True,5939
+WSC2017,23,Mobile Robotics,TR,Türkiye,17,,690.0,,,HÜSEYIN GEDIK; OGUZCAN ÇELIK,32329; 32330,True,5940
+WSC2017,23,Mobile Robotics,AT,Austria,18,,682.0,,,DAVID PRODINGER; FABIAN ROHRMOSER,27864; 27865,True,5941
+WSC2017,23,Mobile Robotics,MO,"Macao, China",18,,682.0,,,WAN LONG CHIO; KIN WANG LAO,31489; 32189,True,5942
+WSC2017,23,Mobile Robotics,PT,Portugal,18,,681.0,,,JOÃO PAIVA; MIGUEL MAGRO,32065; 32897,True,5944
+WSC2017,23,Mobile Robotics,TH,Thailand,18,,682.0,,,KHOMSAN TONGBOON; TADA AUNTANKAD,31295; 31296,True,5943
+WSC2017,23,Mobile Robotics,RU,Russia,2,Silver,731.0,,,PAVEL FADEEV; ANDREI DIUBANOV,31616; 31617,True,5925
+WSC2017,23,Mobile Robotics,CR,Costa Rica,22,,678.0,,,JOSTIN MURILLO ARAYA; LUIS GABRIEL GÓMEZ MARTÍNEZ,27713; 28562,True,5945
+WSC2017,23,Mobile Robotics,BY,Belarus,23,,669.0,,,ALIAKSANDR MATSVIAICHUK; ANDREI CHASLOU,32039; 32040,True,5946
+WSC2017,23,Mobile Robotics,DE,Germany,23,,669.0,,,MAX BOSSE; CHRISTOPH BERLING,29107; 29108,True,5947
+WSC2017,23,Mobile Robotics,ZA,South Africa,25,,666.0,,,TIAAN DU PLESSIS; JACOBUS LOUW,31209; 31210,True,5948
+WSC2017,23,Mobile Robotics,CN,China,3,Bronze,728.0,,,ZAORONG LIANG; BINBIN YE,31720; 31721,True,5926
+WSC2017,23,Mobile Robotics,JP,Japan,3,Bronze,728.0,,,SHUJI KOKUNE; RYOTA YAMAMOTO,28098; 28099,True,5927
+WSC2017,23,Mobile Robotics,AE,United Arab Emirates,5,Medallion for Excellence,721.0,True,,IBRAHIM ALRAEESI; HAMAD ALREMEITHI,32509; 32508,True,5928
+WSC2017,23,Mobile Robotics,CA,Canada,5,Medallion for Excellence,720.0,,,BROCK CHIASSON; SEAN FURBER,26820; 26821,True,5930
+WSC2017,23,Mobile Robotics,HK,"Hong Kong, China",5,Medallion for Excellence,720.0,,,PAK YEUNG NG; KA CHING LEUNG,32158; 32159,True,5931
+WSC2017,23,Mobile Robotics,IR,Iran,5,Medallion for Excellence,720.0,,,MOHAMMADHADI NAJAFI; AMIRHOSSEIN BEHZADFAR,32286; 32287,True,5932
+WSC2017,23,Mobile Robotics,NL,Netherlands,5,Medallion for Excellence,721.0,,,LENNARD BUCKS; BEREND VAN DE DONK,29522; 29523,True,5929
+WSC2017,24,Cabinetmaking,CH,Switzerland,1,Gold,728.0,,,SVEN BÜRKI,28721,True,5950
+WSC2017,24,Cabinetmaking,TW,Chinese Taipei,1,Gold,730.0,,,CHIN-HAO CHENG,30797,True,5949
+WSC2017,24,Cabinetmaking,AU,Australia,10,Medallion for Excellence,713.0,,,NICHOLAS JOHNSTON,32291,True,5959
+WSC2017,24,Cabinetmaking,HU,Hungary,10,Medallion for Excellence,712.0,,,ROLAND LISZI,30633,True,5960
+WSC2017,24,Cabinetmaking,IE,Ireland,10,Medallion for Excellence,714.0,,,SEAN HOGAN,31887,True,5958
+WSC2017,24,Cabinetmaking,KR,Korea,13,Medallion for Excellence,705.0,,,HYEOKJUN KWON,29649,True,5961
+WSC2017,24,Cabinetmaking,JP,Japan,14,Medallion for Excellence,700.0,,,KYOUHEI SHIMOJYOU,28044,True,5962
+WSC2017,24,Cabinetmaking,MY,Malaysia,14,Medallion for Excellence,700.0,,,MOHD IZUWAN MAT RABI,30699,True,5963
+WSC2017,24,Cabinetmaking,DK,Denmark,16,,694.0,,,JACOB PRIMDAHL ABRAHAMSEN,29915,True,5965
+WSC2017,24,Cabinetmaking,ID,Indonesia,16,,695.0,,,ROI CAHYO SAPUTRO,29319,True,5964
+WSC2017,24,Cabinetmaking,CN,China,18,,688.0,,,JI WU,31684,True,5967
+WSC2017,24,Cabinetmaking,FI,Finland,18,,690.0,,,ISAK LUKKARINEN,29817,True,5966
+WSC2017,24,Cabinetmaking,LV,Latvia,20,,684.0,,,DAVIS RAIMONDS RASUPS,32400,True,5968
+WSC2017,24,Cabinetmaking,IN,India,21,,678.0,,,ANANT KUMAR,31980,True,5969
+WSC2017,24,Cabinetmaking,BY,Belarus,22,,673.0,,,IVAN SKORB,32181,True,5970
+WSC2017,24,Cabinetmaking,IR,Iran,22,,673.0,,,SEYED MOHAMMAD SADEGH FALAHATI,32476,True,5971
+WSC2017,24,Cabinetmaking,RU,Russia,22,,672.0,,,NIKOLAI GOLIKOV,31562,True,5972
+WSC2017,24,Cabinetmaking,CO,Colombia,25,,668.0,,,JHONNY ANDRÉS GRAJALES RIVERA,27791,True,5974
+WSC2017,24,Cabinetmaking,CR,Costa Rica,25,,670.0,True,,DAVID SANCHO  ROJAS,27709,True,5973
+WSC2017,24,Cabinetmaking,NL,Netherlands,27,,658.0,,,RUUD VAN DER HEIJDEN,29508,True,5975
+WSC2017,24,Cabinetmaking,AE,United Arab Emirates,28,,638.0,,,AHMED ALAMRI,32583,True,5976
+WSC2017,24,Cabinetmaking,ES,Spain,28,,638.0,,,JAVIER TAIXE,30161,True,5977
+WSC2017,24,Cabinetmaking,BR,Brazil,3,Bronze,726.0,,,FABIO SERPA,30065,True,5951
+WSC2017,24,Cabinetmaking,UK,United Kingdom,3,Bronze,724.0,,,ANGUS BRUCE-GARDNER,185875,True,5952
+WSC2017,24,Cabinetmaking,IT,"South Tyrol, Italy",5,Medallion for Excellence,723.0,,,PHILIPP ZINGERLE,30584,True,5953
+WSC2017,24,Cabinetmaking,AT,Austria,6,Medallion for Excellence,720.0,,,MATHIAS MADERTHANER,27847,True,5954
+WSC2017,24,Cabinetmaking,CA,Canada,6,Medallion for Excellence,718.0,,,SCOTT DOMBOWSKY-ONESKI,,True,5956
+WSC2017,24,Cabinetmaking,FR,France,6,Medallion for Excellence,720.0,,,ROMAIN KAUFFMANN,31568,True,5955
+WSC2017,24,Cabinetmaking,DE,Germany,9,Medallion for Excellence,717.0,,,MARKUS FIGL,28461,True,5957
+WSC2017,25,Joinery,FR,France,1,Gold,743.0,,,ANTHONY CHATELAIN,31573,True,5978
+WSC2017,25,Joinery,KR,Korea,1,Gold,741.0,,,KYEOM JIN CHO,29652,True,5979
+WSC2017,25,Joinery,DE,Germany,11,Medallion for Excellence,714.0,,,FABIAN ACKERMANN,30130,True,5988
+WSC2017,25,Joinery,RU,Russia,11,Medallion for Excellence,714.0,,,VITALII BONDARENKO,33157,True,5989
+WSC2017,25,Joinery,AU,Australia,13,Medallion for Excellence,700.0,,,JOSHUA MORRISSEY,32293,True,5990
+WSC2017,25,Joinery,ID,Indonesia,13,,698.0,,,PUJI SULISTIONO,29321,True,5993
+WSC2017,25,Joinery,JP,Japan,13,Medallion for Excellence,700.0,,,HIDETSUGU FURUMI,28047,True,5991
+WSC2017,25,Joinery,UK,United Kingdom,13,Medallion for Excellence,700.0,,,CONOR WILLMOTT,30205,True,5992
+WSC2017,25,Joinery,HK,"Hong Kong, China",17,,697.0,,,YIU PAN SUEN,26991,True,5994
+WSC2017,25,Joinery,IE,Ireland,18,,690.0,,,JAMES MCSWINEY,31889,True,5996
+WSC2017,25,Joinery,IR,Iran,18,,689.0,,,AIDIN FEIZ ARBABI,32426,True,5997
+WSC2017,25,Joinery,MN,Mongolia,18,,691.0,,,ERDENEMUNKH NYAMDORJ,31241,True,5995
+WSC2017,25,Joinery,MY,Malaysia,21,,678.0,,,AMRUL RIDWAN MOHD AZAM,30701,True,5998
+WSC2017,25,Joinery,BY,Belarus,22,,666.0,,,ARTEM KAPUSTA,32184,True,5999
+WSC2017,25,Joinery,ES,Spain,23,,653.0,,,DARÍO BARRIENTOS,30163,True,6000
+WSC2017,25,Joinery,NA,Namibia,23,,652.0,,,JUSTINA ASHIYANA,27224,True,6001
+WSC2017,25,Joinery,AE,United Arab Emirates,25,,640.0,,,TAHA ALHOSANI,32539,True,6002
+WSC2017,25,Joinery,BR,Brazil,3,Bronze,730.0,,,RUI NETO,30064,True,5981
+WSC2017,25,Joinery,CH,Switzerland,3,Bronze,732.0,,,FABIO HOLENSTEIN,28715,True,5980
+WSC2017,25,Joinery,HU,Hungary,5,Medallion for Excellence,728.0,,,BENCE STADLER,30636,True,5983
+WSC2017,25,Joinery,TW,Chinese Taipei,5,Medallion for Excellence,729.0,,,CHIEN-CHUN CHAO,30920,True,5982
+WSC2017,25,Joinery,BE,Belgium,7,Medallion for Excellence,723.0,True,,JULIEN NEULENS,30654,True,5984
+WSC2017,25,Joinery,AT,Austria,8,Medallion for Excellence,720.0,,,WALTER SAILER,27850,True,5985
+WSC2017,25,Joinery,CN,China,9,Medallion for Excellence,715.0,,,ZEKUN CHEN,31691,True,5987
+WSC2017,25,Joinery,DK,Denmark,9,Medallion for Excellence,717.0,,,FREDERIK RIBER,29917,True,5986
+WSC2017,26,Carpentry,KR,Korea,1,Gold,725.0,,,JAEYEON JANG,29650,True,6003
+WSC2017,26,Carpentry,JP,Japan,11,,692.0,,,KOTA MORIWAKI,28045,True,6013
+WSC2017,26,Carpentry,RU,Russia,11,,691.0,,,BULAT GALIULLIN,31563,True,6014
+WSC2017,26,Carpentry,UK,United Kingdom,13,,685.0,,,CAMERON NUTT,30203,True,6015
+WSC2017,26,Carpentry,HU,Hungary,14,,671.0,,,GABOR PILTMAN,30634,True,6016
+WSC2017,26,Carpentry,NZ,New Zealand,14,,669.0,,,TODD HAMILTON,27047,True,6017
+WSC2017,26,Carpentry,BR,Brazil,16,,666.0,,,EWERTON OLIVEIRA,30070,True,6018
+WSC2017,26,Carpentry,BY,Belarus,17,,661.0,,,VALIANTSIN PASIUTSIN,32182,True,6019
+WSC2017,26,Carpentry,NA,Namibia,18,,638.0,,,ZANODEAN ZAAL,27220,True,6020
+WSC2017,26,Carpentry,ZM,Zambia,18,,636.0,,,AARON TONGA,31327,True,6021
+WSC2017,26,Carpentry,AU,Australia,2,Silver,720.0,,,RYAN GRIEGER,32292,True,6006
+WSC2017,26,Carpentry,CH,Switzerland,2,Silver,722.0,,,FLORIAN NOCK,28725,True,6004
+WSC2017,26,Carpentry,FR,France,2,Silver,720.0,,,MARIO BEL,31569,True,6007
+WSC2017,26,Carpentry,IT,"South Tyrol, Italy",2,Silver,722.0,,,MORITZ MAYR,30585,True,6005
+WSC2017,26,Carpentry,AT,Austria,6,Medallion for Excellence,715.0,,,MICHAEL MÜHLMANN,28686,True,6008
+WSC2017,26,Carpentry,DE,Germany,6,Medallion for Excellence,714.0,,,KEVIN HOFACKER,29096,True,6009
+WSC2017,26,Carpentry,DK,Denmark,8,Medallion for Excellence,705.0,,,JESPER SONNE NØRGAARD,29916,True,6010
+WSC2017,26,Carpentry,CN,China,9,Medallion for Excellence,701.0,,,YAN XU,31692,True,6011
+WSC2017,26,Carpentry,NL,Netherlands,9,Medallion for Excellence,700.0,,,RICK LAMMERINK,29509,True,6012
+WSC2017,27,Jewellery,RU,Russia,1,Gold,736.0,,,NIKITA STEPIN,31442,True,6022
+WSC2017,27,Jewellery,IR,Iran,10,,694.0,,,AMIN HASHEMI AKHGAR,32438,True,6031
+WSC2017,27,Jewellery,IT,"South Tyrol, Italy",11,,680.0,,,ALEXANDER STRICKER,30596,True,6032
+WSC2017,27,Jewellery,PT,Portugal,12,,673.0,,,ANA POMBO,30777,True,6033
+WSC2017,27,Jewellery,CO,Colombia,13,,668.0,,,CARLOS HOLMES REALPE LLANTEN,27805,True,6034
+WSC2017,27,Jewellery,NO,Norway,14,,616.0,,,SUNNIVA LØKKEVIK,29344,True,6036
+WSC2017,27,Jewellery,SE,Sweden,14,,617.0,,,JULIA GÖRANSSON,29005,True,6035
+WSC2017,27,Jewellery,AE,United Arab Emirates,16,,592.0,,,SUNDUS ALHOSANI,32538,True,6037
+WSC2017,27,Jewellery,ID,Indonesia,17,,575.0,,,AIDIN PANULUHJATI,29410,True,6038
+WSC2017,27,Jewellery,BR,Brazil,2,Silver,732.0,,,ANDREI CHIESA,155974,True,6023
+WSC2017,27,Jewellery,CN,China,3,Bronze,718.0,,,FAN HU,31699,True,6025
+WSC2017,27,Jewellery,FR,France,3,Bronze,718.0,,,JEANNE-MARIE GIVELET,31463,True,6026
+WSC2017,27,Jewellery,TW,Chinese Taipei,3,Bronze,720.0,,,JING-FANG LIN,30807,True,6024
+WSC2017,27,Jewellery,KR,Korea,6,Medallion for Excellence,713.0,,,SANGKYU JUNG,29715,True,6027
+WSC2017,27,Jewellery,IN,India,7,Medallion for Excellence,708.0,,,ASRAF JAMAL,32000,True,6029
+WSC2017,27,Jewellery,UK,United Kingdom,7,Medallion for Excellence,710.0,,,ALEXANDER WOOD,30216,True,6028
+WSC2017,27,Jewellery,JP,Japan,9,Medallion for Excellence,700.0,,,MISAKI TAKANO,135566,True,6030
+WSC2017,28,Floristry,CN,China,1,Gold,750.0,,,SHENHAN PAN,200224,True,6039
+WSC2017,28,Floristry,MO,"Macao, China",10,Medallion for Excellence,701.0,,,I WA UN,31487,True,6048
+WSC2017,28,Floristry,SE,Sweden,10,,699.0,,,OLIVIA JERNEHOLT,29004,True,6049
+WSC2017,28,Floristry,RU,Russia,12,,697.0,,,ANASTASIIA LASACHENKO,31590,True,6050
+WSC2017,28,Floristry,AT,Austria,13,,693.0,,,JENNIFER MEYER,28688,True,6051
+WSC2017,28,Floristry,ID,Indonesia,14,,683.0,,,FACHRIZAR HARDI KURNIA,30111,True,6052
+WSC2017,28,Floristry,BR,Brazil,15,,679.0,,,NICOLE FERNANDA DESOUZA,30074,True,6053
+WSC2017,28,Floristry,NZ,New Zealand,16,,659.0,,,NICOLE KEEBER,28049,True,6054
+WSC2017,28,Floristry,AE,United Arab Emirates,17,,642.0,,,EISSA AL MARZOOQI,32213,True,6055
+WSC2017,28,Floristry,ES,Spain,18,,632.0,,,MARTA BUSTO,30176,True,6056
+WSC2017,28,Floristry,JP,Japan,19,,629.0,,,MANA DOUJIMA,28077,True,6057
+WSC2017,28,Floristry,FR,France,2,Silver,724.0,,,NOLWENN PITTET,31461,True,6041
+WSC2017,28,Floristry,KR,Korea,2,Silver,725.0,,,GUNHO LEE,29657,True,6040
+WSC2017,28,Floristry,KZ,Kazakhstan,20,,620.0,,,AIDANA UMBETOVA,32555,True,6058
+WSC2017,28,Floristry,HU,Hungary,4,Medallion for Excellence,721.0,,,DANIEL TAKACS,30640,True,6042
+WSC2017,28,Floristry,TW,Chinese Taipei,4,Medallion for Excellence,720.0,,,PO-HAN WU,30806,True,6043
+WSC2017,28,Floristry,NL,Netherlands,6,Medallion for Excellence,715.0,,,ESTHER WEIJENBERG,29514,True,6044
+WSC2017,28,Floristry,DE,Germany,7,Medallion for Excellence,709.0,,,MAXIMILIAN MARTIN,29101,True,6046
+WSC2017,28,Floristry,IT,"South Tyrol, Italy",7,Medallion for Excellence,708.0,,,VERENA VIEIDER,30594,True,6047
+WSC2017,28,Floristry,TH,Thailand,7,Medallion for Excellence,710.0,,,PRAMOT KARUM,31290,True,6045
+WSC2017,29,Hairdressing,FR,France,1,Gold,758.0,,,MATHIEU LEGER,31468,True,6059
+WSC2017,29,Hairdressing,MY,Malaysia,10,Medallion for Excellence,715.0,,,CAROLINA EVE SAMBAG,30718,True,6068
+WSC2017,29,Hairdressing,SE,Sweden,10,Medallion for Excellence,713.0,,,OLIVIA JONSSON,29019,True,6070
+WSC2017,29,Hairdressing,UK,United Kingdom,10,Medallion for Excellence,715.0,,,BRIDIE THORNE,30231,True,6069
+WSC2017,29,Hairdressing,BR,Brazil,13,Medallion for Excellence,709.0,,,VITÓRIA GUIMARÃES,30089,True,6071
+WSC2017,29,Hairdressing,ES,Spain,13,Medallion for Excellence,707.0,True,,TOMÁS RIVERA,30189,True,6072
+WSC2017,29,Hairdressing,BY,Belarus,15,Medallion for Excellence,700.0,True,,NADZEYA KASHTELIAN,32043,True,6074
+WSC2017,29,Hairdressing,HK,"Hong Kong, China",15,Medallion for Excellence,702.0,,,CHUN KIU LI,32156,True,6073
+WSC2017,29,Hairdressing,HU,Hungary,15,Medallion for Excellence,700.0,,,ALEXANDRA KOVACS,30648,True,6075
+WSC2017,29,Hairdressing,US,United States of America,15,Medallion for Excellence,700.0,,,KYLIE BURKEY,27875,True,6076
+WSC2017,29,Hairdressing,ID,Indonesia,19,,698.0,,,NUR AISYAH ADHA,29420,True,6077
+WSC2017,29,Hairdressing,IN,India,19,,696.0,,,ARUMUGAM KARAN,31974,True,6078
+WSC2017,29,Hairdressing,FI,Finland,2,Silver,741.0,,,TAIJU KOIVULA,29839,True,6060
+WSC2017,29,Hairdressing,RU,Russia,2,Silver,740.0,,,EGOR KOSTIKOV,31623,True,6061
+WSC2017,29,Hairdressing,NO,Norway,21,,694.0,,,LEIF ANDERS ØVERLAND,29087,True,6080
+WSC2017,29,Hairdressing,TH,Thailand,21,,695.0,,,SUPHAKORN SITTHIPROM,31311,True,6079
+WSC2017,29,Hairdressing,AT,Austria,23,,690.0,,,MARCEL BRANDTNER,27870,True,6082
+WSC2017,29,Hairdressing,CO,Colombia,23,,691.0,,,SULY ANDREA JIMÉNEZ HURTADO,27544,True,6081
+WSC2017,29,Hairdressing,CA,Canada,25,,682.0,,,SARA DRAINVILLE,26825,True,6083
+WSC2017,29,Hairdressing,NL,Netherlands,26,,675.0,,,EMMY PAN ANUN,29527,True,6084
+WSC2017,29,Hairdressing,BE,Belgium,27,,672.0,,,MÉLANIE PIRONNET,30666,True,6085
+WSC2017,29,Hairdressing,KZ,Kazakhstan,28,,662.0,,,POLINA SINEBRYUKOVA,33113,True,6086
+WSC2017,29,Hairdressing,ZA,South Africa,29,,634.0,,,SHANA-LEE SMALE,31215,True,6087
+WSC2017,29,Hairdressing,GE,Georgia,30,,630.0,,,MALVINA MUTIDZE,30497,True,6088
+WSC2017,29,Hairdressing,BB,Barbados,31,,614.0,,,TAKIYA JORDAN,27627,True,6089
+WSC2017,29,Hairdressing,ZM,Zambia,32,,567.0,,,BRENDA MAIBA,31279,True,6090
+WSC2017,29,Hairdressing,TR,Türkiye,33,,443.0,True,,AYFER YAZICI,32334,True,6091
+WSC2017,29,Hairdressing,CN,China,4,Medallion for Excellence,731.0,,,QIN WANG,31734,True,6062
+WSC2017,29,Hairdressing,AU,Australia,5,Medallion for Excellence,728.0,True,,GABY WARE,32303,True,6063
+WSC2017,29,Hairdressing,KR,Korea,5,Medallion for Excellence,728.0,,,GEUNTAEK KIM,29686,True,6064
+WSC2017,29,Hairdressing,IT,"South Tyrol, Italy",7,Medallion for Excellence,724.0,,,MARION MÜLLER,30600,True,6065
+WSC2017,29,Hairdressing,JP,Japan,8,Medallion for Excellence,721.0,,,KEIYA KAWAMURA,28107,True,6066
+WSC2017,29,Hairdressing,TW,Chinese Taipei,8,Medallion for Excellence,720.0,,,CHUN-YU WU,30726,True,6067
+WSC2017,30,Beauty Therapy,UK,United Kingdom,1,Gold,765.0,True,,KAIYA SWAIN,30230,True,6092
+WSC2017,30,Beauty Therapy,RU,Russia,10,Medallion for Excellence,714.0,,,ALINA TREBNIKOVA,31622,True,6101
+WSC2017,30,Beauty Therapy,TH,Thailand,10,Medallion for Excellence,713.0,,,YOTHIN SINWIAPROMARACH,31297,True,6102
+WSC2017,30,Beauty Therapy,CH,Switzerland,12,Medallion for Excellence,711.0,,,VALERIA MELINA TSCHANN,28745,True,6103
+WSC2017,30,Beauty Therapy,FI,Finland,13,Medallion for Excellence,706.0,,,IIDA HAVERI,29837,True,6104
+WSC2017,30,Beauty Therapy,IE,Ireland,13,Medallion for Excellence,705.0,,,CIARA DALY,31894,True,6105
+WSC2017,30,Beauty Therapy,CA,Canada,15,,698.0,,,ANNE MATIOWSKY,26823,True,6108
+WSC2017,30,Beauty Therapy,DE,Germany,15,,699.0,,,JOHANNA VOLZ,29872,True,6107
+WSC2017,30,Beauty Therapy,SG,Singapore,15,Medallion for Excellence,700.0,,,SI SI NG,26926,True,6106
+WSC2017,30,Beauty Therapy,HU,Hungary,18,,691.0,,,VIKTORIA DORA PAPP,30646,True,6110
+WSC2017,30,Beauty Therapy,SE,Sweden,18,,693.0,,,BEATRICE EJDEMYR,29016,True,6109
+WSC2017,30,Beauty Therapy,CN,China,2,Silver,730.0,,,YINGYING LIANG,31727,True,6093
+WSC2017,30,Beauty Therapy,KR,Korea,2,Silver,728.0,,,CHAEYOUNG SHIN,29684,True,6094
+WSC2017,30,Beauty Therapy,JP,Japan,20,,686.0,,,YUMIHO TAKAHASHI,28104,True,6112
+WSC2017,30,Beauty Therapy,ZA,South Africa,20,,687.0,,,TARRYN BROWN,31475,True,6111
+WSC2017,30,Beauty Therapy,BR,Brazil,22,,684.0,,,TAYNAN NUNES,30092,True,6113
+WSC2017,30,Beauty Therapy,MO,"Macao, China",22,,683.0,,,CHI KEI TAI,31677,True,6114
+WSC2017,30,Beauty Therapy,ID,Indonesia,24,,677.0,,,INDAH EGES WAHYUNI,29536,True,6115
+WSC2017,30,Beauty Therapy,NL,Netherlands,25,,674.0,,,SHANA VELTMAN,29525,True,6116
+WSC2017,30,Beauty Therapy,BY,Belarus,26,,669.0,,,ANTANINA ANTANOVICH,32413,True,6117
+WSC2017,30,Beauty Therapy,IT,"South Tyrol, Italy",27,,666.0,,,EVI THALER,30598,True,6118
+WSC2017,30,Beauty Therapy,ES,Spain,28,,661.0,,,KAREN REY,30187,True,6120
+WSC2017,30,Beauty Therapy,NO,Norway,28,,662.0,,,CARINA LARSEN,29086,True,6119
+WSC2017,30,Beauty Therapy,AU,Australia,4,Bronze,727.0,,,LILY CAMPBELL,32302,True,6095
+WSC2017,30,Beauty Therapy,HK,"Hong Kong, China",4,Bronze,726.0,,,WAI YIN LAU,32155,True,6096
+WSC2017,30,Beauty Therapy,IN,India,6,Medallion for Excellence,724.0,,,KARISHMA SUNIL GUPTA,31972,True,6097
+WSC2017,30,Beauty Therapy,FR,France,7,Medallion for Excellence,720.0,,,NOÉMIE BADEY,31471,True,6100
+WSC2017,30,Beauty Therapy,MY,Malaysia,7,Medallion for Excellence,721.0,,,TIEU JENG YEE,30716,True,6098
+WSC2017,30,Beauty Therapy,TW,Chinese Taipei,7,Medallion for Excellence,721.0,,,HSIU-JUNG HO,30932,True,6099
+WSC2017,31,Fashion Technology,CN,China,1,Gold,749.0,,,PING HU,31759,True,6121
+WSC2017,31,Fashion Technology,CA,Canada,11,Medallion for Excellence,712.0,,,GABRIEL LEBLANC,26808,True,6131
+WSC2017,31,Fashion Technology,MY,Malaysia,12,Medallion for Excellence,709.0,,,MARUFAH JAILAN,30707,True,6132
+WSC2017,31,Fashion Technology,FR,France,13,Medallion for Excellence,705.0,,,TAHSIN-KERIM IBIS,31464,True,6134
+WSC2017,31,Fashion Technology,MO,"Macao, China",13,Medallion for Excellence,706.0,,,WENG CHONG CHIO,31675,True,6133
+WSC2017,31,Fashion Technology,BE,Belgium,15,Medallion for Excellence,701.0,,,LOÏC GLUCKMANN,30659,True,6135
+WSC2017,31,Fashion Technology,LV,Latvia,15,,699.0,,,ELINA SKRINDZEVSKA,32468,True,6136
+WSC2017,31,Fashion Technology,IN,India,17,,693.0,,,TALAT RAZIA,31989,True,6137
+WSC2017,31,Fashion Technology,BY,Belarus,18,,690.0,,,VOLHA KUSHNER,32183,True,6138
+WSC2017,31,Fashion Technology,IR,Iran,18,,689.0,,,SEYEDEH ATEFEH NABAVI CHASHMI,32421,True,6139
+WSC2017,31,Fashion Technology,BR,Brazil,2,Silver,741.0,,,RHANY MOREIRA,29994,True,6122
+WSC2017,31,Fashion Technology,PT,Portugal,20,,686.0,,,JOANA QUEIRÓS,30775,True,6140
+WSC2017,31,Fashion Technology,HK,"Hong Kong, China",21,,679.0,,,"KA MAN, CARMEN POON",32146,True,6141
+WSC2017,31,Fashion Technology,FI,Finland,22,,675.0,,,AINO LAMMI,29824,True,6142
+WSC2017,31,Fashion Technology,JP,Japan,22,,675.0,,,KANAKO FUKUDA,28076,True,6143
+WSC2017,31,Fashion Technology,AE,United Arab Emirates,24,,665.0,,,HESSA AL SHAWAB,32211,True,6144
+WSC2017,31,Fashion Technology,KZ,Kazakhstan,25,,654.0,,,NAZERKE TAYSHYBAYEVA,32556,True,6145
+WSC2017,31,Fashion Technology,NO,Norway,26,,646.0,,,JONAS KALSETH FOLLESTAD,27843,True,6146
+WSC2017,31,Fashion Technology,ES,Spain,27,,642.0,,,ALICIA MARTÍNEZ,30175,True,6147
+WSC2017,31,Fashion Technology,BB,Barbados,28,,638.0,,,ROSHIDA GRIFFITH,27626,True,6148
+WSC2017,31,Fashion Technology,SA,Saudi Arabia,29,,633.0,,,LOJUN SERRI,30769,True,6149
+WSC2017,31,Fashion Technology,ZM,Zambia,29,,631.0,,,KABILA KABENSE,30393,True,6150
+WSC2017,31,Fashion Technology,TW,Chinese Taipei,3,Bronze,737.0,,,ZI-JIN LI,30804,True,6123
+WSC2017,31,Fashion Technology,KR,Korea,4,Medallion for Excellence,731.0,,,SANGEUI MOON,29656,True,6124
+WSC2017,31,Fashion Technology,TH,Thailand,5,Medallion for Excellence,723.0,,,PUTTAPORN THAMMANUKUL,31287,True,6125
+WSC2017,31,Fashion Technology,RU,Russia,6,Medallion for Excellence,720.0,,,ELENA KOZHINOVA,31437,True,6126
+WSC2017,31,Fashion Technology,AT,Austria,7,Medallion for Excellence,713.0,,,ISABELLA SCHIERL,27855,True,6130
+WSC2017,31,Fashion Technology,CH,Switzerland,7,Medallion for Excellence,715.0,,,FLURINA RÜESCH,28726,True,6127
+WSC2017,31,Fashion Technology,CO,Colombia,7,Medallion for Excellence,715.0,,,LAURA MELISSA RODRÍGUEZ MUÑOZ,27550,True,6128
+WSC2017,31,Fashion Technology,ID,Indonesia,7,Medallion for Excellence,715.0,,,ANGGUN NURDILA,29407,True,6129
+WSC2017,32,Pâtisserie and Confectionery,FI,Finland,1,Gold,747.0,True,,EMELIINA PAPINNIEMI,29841,True,6151
+WSC2017,32,Pâtisserie and Confectionery,IT,"South Tyrol, Italy",12,Medallion for Excellence,706.0,,,VERONIKA GEISER,30602,True,6162
+WSC2017,32,Pâtisserie and Confectionery,CA,Canada,13,,699.0,,,DAPHNÉ HÉROUX,26826,True,6164
+WSC2017,32,Pâtisserie and Confectionery,RU,Russia,13,Medallion for Excellence,701.0,,,STEPAN KIRILLIN,31625,True,6163
+WSC2017,32,Pâtisserie and Confectionery,AU,Australia,15,,696.0,,,MARY GEORGE,32304,True,6166
+WSC2017,32,Pâtisserie and Confectionery,BY,Belarus,15,,697.0,,,ZLATA SHPAK,32042,True,6165
+WSC2017,32,Pâtisserie and Confectionery,DK,Denmark,17,,694.0,,,BLYP SOPHIE RAARUP KNUDSEN,29922,True,6167
+WSC2017,32,Pâtisserie and Confectionery,ID,Indonesia,18,,688.0,,,MUMTAHANAH --,29421,True,6169
+WSC2017,32,Pâtisserie and Confectionery,MO,"Macao, China",18,,689.0,,,IOK SAN NG,31517,True,6168
+WSC2017,32,Pâtisserie and Confectionery,AT,Austria,2,Silver,743.0,,,MAGDALENA HALBMAYR,27871,True,6152
+WSC2017,32,Pâtisserie and Confectionery,FR,France,2,Silver,742.0,,,LOUIS AGNELLET,31470,True,6153
+WSC2017,32,Pâtisserie and Confectionery,IN,India,2,Silver,741.0,True,,MOHIT DUDEJA,31976,True,6154
+WSC2017,32,Pâtisserie and Confectionery,NL,Netherlands,20,,681.0,,,IRIS KLEINJAN,29529,True,6171
+WSC2017,32,Pâtisserie and Confectionery,UK,United Kingdom,20,,683.0,,,STEVEN LODGE,30232,True,6170
+WSC2017,32,Pâtisserie and Confectionery,HU,Hungary,22,,677.0,,,DORA ERZSEBET VARGA,30650,True,6172
+WSC2017,32,Pâtisserie and Confectionery,AE,United Arab Emirates,23,,674.0,,,BADER ABDULRAZZAQ,32209,True,6173
+WSC2017,32,Pâtisserie and Confectionery,IR,Iran,24,,655.0,,,NEGAR AMIRIPOUR,32424,True,6175
+WSC2017,32,Pâtisserie and Confectionery,MA,Morocco,24,,657.0,,,HAMZA EL FALEH,32617,True,6174
+WSC2017,32,Pâtisserie and Confectionery,GE,Georgia,26,,652.0,,,ANA-KRISTINE TATISHVILI,30498,True,6176
+WSC2017,32,Pâtisserie and Confectionery,CN,China,5,Medallion for Excellence,734.0,,,HAORAN LYU,31807,True,6155
+WSC2017,32,Pâtisserie and Confectionery,KR,Korea,6,Medallion for Excellence,730.0,,,SEUNGHA LEE,29687,True,6156
+WSC2017,32,Pâtisserie and Confectionery,DE,Germany,7,Medallion for Excellence,722.0,,,FABIAN BÖCKELER,28458,True,6157
+WSC2017,32,Pâtisserie and Confectionery,JP,Japan,7,Medallion for Excellence,722.0,,,MIHO KAGAWA,28108,True,6158
+WSC2017,32,Pâtisserie and Confectionery,BR,Brazil,9,Medallion for Excellence,715.0,,,THAIS LIMA,30060,True,6159
+WSC2017,32,Pâtisserie and Confectionery,CH,Switzerland,9,Medallion for Excellence,715.0,,,UTHAYA UMAPARAN,28744,True,6160
+WSC2017,32,Pâtisserie and Confectionery,TW,Chinese Taipei,9,Medallion for Excellence,714.0,,,FANG-TING KUO,30728,True,6161
+WSC2017,33,Automobile Technology,TW,Chinese Taipei,1,Gold,769.0,True,,MIN-HENG CHEN,30820,True,6177
+WSC2017,33,Automobile Technology,CA,Canada,11,Medallion for Excellence,716.0,,,AARON TAVES,26218,True,6187
+WSC2017,33,Automobile Technology,CO,Colombia,11,Medallion for Excellence,716.0,,,DANIEL FELIPE TAPIAS RODRIGUEZ,27572,True,6188
+WSC2017,33,Automobile Technology,PT,Portugal,11,Medallion for Excellence,714.0,True,,ADMÁRIO FERREIRA,30793,True,6189
+WSC2017,33,Automobile Technology,DE,Germany,14,Medallion for Excellence,713.0,,,SEBASTIAN KNOPF,29055,True,6190
+WSC2017,33,Automobile Technology,MA,Morocco,14,Medallion for Excellence,713.0,,,MOHCINE YAQOUTI,32624,True,6191
+WSC2017,33,Automobile Technology,BE,Belgium,16,Medallion for Excellence,708.0,,,JOHANN KRINGS,30668,True,6193
+WSC2017,33,Automobile Technology,IN,India,16,Medallion for Excellence,710.0,,,ADITYA PRATAP SINGH RATHORE,31958,True,6192
+WSC2017,33,Automobile Technology,BR,Brazil,18,Medallion for Excellence,702.0,,,LUCAS LIRA,31224,True,6194
+WSC2017,33,Automobile Technology,DK,Denmark,19,,698.0,,,SANDER STENSGAARD KRISTENSEN,27410,True,6195
+WSC2017,33,Automobile Technology,CN,China,2,Silver,746.0,,,WENHAO YANG,31862,True,6178
+WSC2017,33,Automobile Technology,IR,Iran,20,,690.0,,,MOHAMMAD HAMIDI,32432,True,6196
+WSC2017,33,Automobile Technology,US,United States of America,20,,689.0,,,JONATHAN ROBERTSON,27677,True,6197
+WSC2017,33,Automobile Technology,NZ,New Zealand,22,,687.0,,,LOGAN CANDY,28041,True,6198
+WSC2017,33,Automobile Technology,BY,Belarus,23,,682.0,,,ALIAKSEI SHCHARA,32165,True,6199
+WSC2017,33,Automobile Technology,IE,Ireland,23,,682.0,,,GAVIN LYNE,31397,True,6200
+WSC2017,33,Automobile Technology,SE,Sweden,23,,682.0,,,JONATHAN RYDBERG,29022,True,6201
+WSC2017,33,Automobile Technology,RU,Russia,26,,679.0,,,EVGENII BULDASHEV,31630,True,6202
+WSC2017,33,Automobile Technology,ID,Indonesia,27,,676.0,,,SAHAL AMRI,29417,True,6203
+WSC2017,33,Automobile Technology,ES,Spain,28,,666.0,,,MIGUEL PAZ,30194,True,6204
+WSC2017,33,Automobile Technology,BB,Barbados,29,,662.0,True,,AKEIL CRAIG-BROWNE,27623,True,6205
+WSC2017,33,Automobile Technology,TH,Thailand,29,,660.0,,,SANIT AKACHAT,31304,True,6206
+WSC2017,33,Automobile Technology,JP,Japan,3,Bronze,743.0,,,YUYA SHIMOHARA,28113,True,6179
+WSC2017,33,Automobile Technology,MY,Malaysia,3,Bronze,742.0,True,,MUHAMMAD ASYRAFF YUSNI,30719,True,6180
+WSC2017,33,Automobile Technology,NL,Netherlands,31,,655.0,,,RICO NIEUWKOOP,29532,True,6207
+WSC2017,33,Automobile Technology,NO,Norway,32,,651.0,,,ALEKSANDER L SEVERINSEN,28528,True,6208
+WSC2017,33,Automobile Technology,ZA,South Africa,33,,636.0,,,YASEEN EBRAHIM,30581,True,6209
+WSC2017,33,Automobile Technology,SA,Saudi Arabia,34,,628.0,,,ABDULRAHMAN ALJUMAH,30513,True,6210
+WSC2017,33,Automobile Technology,BH,Kingdom of Bahrain,35,,621.0,,,HUSAIN MAKI HASAN,34164,True,6211
+WSC2017,33,Automobile Technology,KZ,Kazakhstan,36,,617.0,,,DIDAR DISSENOV,32551,True,6212
+WSC2017,33,Automobile Technology,IT,"South Tyrol, Italy",5,Medallion for Excellence,738.0,,,MARTIN NIEDERKOFLER,30605,True,6181
+WSC2017,33,Automobile Technology,KR,Korea,6,Medallion for Excellence,731.0,,,SUNGYOON KIL,29810,True,6182
+WSC2017,33,Automobile Technology,AT,Austria,7,Medallion for Excellence,724.0,,,KLAUS LEHMERHOFER,28979,True,6183
+WSC2017,33,Automobile Technology,AE,United Arab Emirates,8,Medallion for Excellence,718.0,,,SAEED ALHOSANI,32536,True,6186
+WSC2017,33,Automobile Technology,CH,Switzerland,8,Medallion for Excellence,720.0,,,RIET BULFONI,28748,True,6184
+WSC2017,33,Automobile Technology,FR,France,8,Medallion for Excellence,720.0,,,JIMMY ROSE,31922,True,6185
+WSC2017,34,Cooking,IT,"South Tyrol, Italy",1,Gold,768.0,True,,THOMAS TUTZER,30599,True,6213
+WSC2017,34,Cooking,SG,Singapore,10,Medallion for Excellence,724.0,,,MUHAMMAD DANIAL SUBOH,26738,True,6222
+WSC2017,34,Cooking,CN,China,11,Medallion for Excellence,720.0,,,DI QU,31728,True,6223
+WSC2017,34,Cooking,CH,Switzerland,12,Medallion for Excellence,718.0,,,EVELYNE TANNER,28743,True,6224
+WSC2017,34,Cooking,SE,Sweden,12,Medallion for Excellence,718.0,,,GUSTAV LEONHARDT,29018,True,6225
+WSC2017,34,Cooking,CA,Canada,14,Medallion for Excellence,716.0,,,VICTORIA HISLOP,26433,True,6226
+WSC2017,34,Cooking,BR,Brazil,15,Medallion for Excellence,713.0,,,GERSON NUNES,30090,True,6227
+WSC2017,34,Cooking,FI,Finland,16,Medallion for Excellence,710.0,,,JOHAN KURKELA,29838,True,6228
+WSC2017,34,Cooking,CO,Colombia,17,Medallion for Excellence,708.0,,,MARÍA FERNANDA LONDOÑO BOHÓRQUEZ,27567,True,6229
+WSC2017,34,Cooking,TW,Chinese Taipei,18,Medallion for Excellence,707.0,,,YA-TING CHANG,30725,True,6230
+WSC2017,34,Cooking,NO,Norway,19,Medallion for Excellence,705.0,,,TORKIL S HELMERSEN,29846,True,6231
+WSC2017,34,Cooking,TH,Thailand,2,Silver,745.0,True,,NATCHA SAENGOW,31298,True,6214
+WSC2017,34,Cooking,NZ,New Zealand,20,Medallion for Excellence,702.0,,,NICHOLAS TODD,27057,True,6232
+WSC2017,34,Cooking,BE,Belgium,21,Medallion for Excellence,700.0,,,LIONEL VAN ROYEN,30665,True,6233
+WSC2017,34,Cooking,ZA,South Africa,21,Medallion for Excellence,700.0,True,,MONIQUE DUNN,31214,True,6234
+WSC2017,34,Cooking,ES,Spain,23,,696.0,,,RICARDO CASTAÑEDA,30188,True,6235
+WSC2017,34,Cooking,MO,"Macao, China",23,,696.0,,,POU I CHEONG,32190,True,6236
+WSC2017,34,Cooking,JP,Japan,25,,694.0,,,ERIKO AOKI,28263,True,6237
+WSC2017,34,Cooking,ID,Indonesia,26,,692.0,,,IRADAHLIANI DARMAWAN SALEH,29419,True,6238
+WSC2017,34,Cooking,LV,Latvia,27,,691.0,,,KRISTIANA STEINFELDE,32469,True,6239
+WSC2017,34,Cooking,IN,India,28,,690.0,,,SAHIL BUDHIRAJA,31973,True,6240
+WSC2017,34,Cooking,NL,Netherlands,29,,687.0,,,JASON DE HAAN,29526,True,6241
+WSC2017,34,Cooking,AT,Austria,3,Bronze,738.0,,,CHRISTOPH FÜRNSCHUSS,27869,True,6217
+WSC2017,34,Cooking,DK,Denmark,3,Bronze,740.0,True,,CHRISTIAN JUNG HOON KLEINERT,29921,True,6215
+WSC2017,34,Cooking,MY,Malaysia,3,Bronze,739.0,,,LAI JIA YI,30717,True,6216
+WSC2017,34,Cooking,RU,Russia,30,,686.0,,,SERGEI KHRKHRIAN,31627,True,6242
+WSC2017,34,Cooking,NA,Namibia,31,,684.0,True,,KAUTE KAVEZEMBUA,27232,True,6243
+WSC2017,34,Cooking,DE,Germany,32,,680.0,,,JOHANNES MESSNER,29487,True,6244
+WSC2017,34,Cooking,CR,Costa Rica,33,,676.0,,,DANIEL CHAVES RAMOS,27715,True,6245
+WSC2017,34,Cooking,HU,Hungary,34,,674.0,,,HUNOR ZOLTAN EGETO,30647,True,6248
+WSC2017,34,Cooking,BY,Belarus,35,,673.0,,,ANASTASIYA DZIAMIDAVA,32477,True,6246
+WSC2017,34,Cooking,HK,"Hong Kong, China",35,,673.0,,,SUI YIN LI,30020,True,6247
+WSC2017,34,Cooking,MN,Mongolia,37,,672.0,,,DAGVASUREN BATSAIKHAN,32220,True,6249
+WSC2017,34,Cooking,AE,United Arab Emirates,38,,670.0,,,NADA AL ZARA,32216,True,6250
+WSC2017,34,Cooking,GE,Georgia,39,,646.0,,,LIA LOMIDZE,30840,True,6251
+WSC2017,34,Cooking,BB,Barbados,40,,641.0,,,TINISHA HALL,27621,True,6252
+WSC2017,34,Cooking,IR,Iran,41,,637.0,,,NARJES RABOUBI FAROUJI,32423,True,6253
+WSC2017,34,Cooking,ZM,Zambia,42,,617.0,,,ALINA KARIMAMUSAMA,30279,True,6254
+WSC2017,34,Cooking,KR,Korea,6,Medallion for Excellence,733.0,,,DAESEONG JIN,29777,True,6218
+WSC2017,34,Cooking,FR,France,7,Medallion for Excellence,731.0,,,PAUL MARCON,31469,True,6219
+WSC2017,34,Cooking,UK,United Kingdom,8,Medallion for Excellence,727.0,,,RUTH HANSOM,30856,True,6220
+WSC2017,34,Cooking,VN,Vietnam,9,Medallion for Excellence,726.0,,,VU HOANG TRINH,31356,True,6221
+WSC2017,35,Restaurant Service,CH,Switzerland,1,Gold,750.0,,,TATJANA CAVIEZEL,28746,True,6255
+WSC2017,35,Restaurant Service,DK,Denmark,10,Medallion for Excellence,713.0,,,EMMA HOFF HJORTH,29924,True,6267
+WSC2017,35,Restaurant Service,IE,Ireland,10,Medallion for Excellence,714.0,True,,KATHLYN LEAHY,31895,True,6266
+WSC2017,35,Restaurant Service,IN,India,10,Medallion for Excellence,715.0,,,KARAN DILSHER DHALIWAL,31977,True,6264
+WSC2017,35,Restaurant Service,TH,Thailand,10,Medallion for Excellence,715.0,,,CHULARAT THUMACHAICHUSAK,31309,True,6265
+WSC2017,35,Restaurant Service,CN,China,14,Medallion for Excellence,705.0,,,YIFAN CHEN,31729,True,6268
+WSC2017,35,Restaurant Service,FR,France,14,Medallion for Excellence,705.0,,,NATHAN COLETTE,30573,True,6269
+WSC2017,35,Restaurant Service,HU,Hungary,16,Medallion for Excellence,701.0,,,VIKTORIA BERNADETT SVAJDA,30651,True,6270
+WSC2017,35,Restaurant Service,MO,"Macao, China",16,Medallion for Excellence,701.0,,,WEI HE,30612,True,6271
+WSC2017,35,Restaurant Service,RU,Russia,16,Medallion for Excellence,700.0,,,NATALIA BARANOVA,30832,True,6272
+WSC2017,35,Restaurant Service,SG,Singapore,16,Medallion for Excellence,700.0,,,ZAHIRAH ZAINOL,28669,True,6273
+WSC2017,35,Restaurant Service,ID,Indonesia,2,Silver,739.0,True,,ANDRE GILITASHA,29422,True,6256
+WSC2017,35,Restaurant Service,TW,Chinese Taipei,2,Silver,737.0,,,YONG-CHI YANG,30722,True,6257
+WSC2017,35,Restaurant Service,ES,Spain,20,,698.0,,,CARLOS CARMONA PEREZ,30191,True,6274
+WSC2017,35,Restaurant Service,KR,Korea,20,,696.0,,,YEONGSEOP IM,29688,True,6275
+WSC2017,35,Restaurant Service,IT,"South Tyrol, Italy",22,,693.0,,,HANNES TINKHAUSER,30603,True,6277
+WSC2017,35,Restaurant Service,NL,Netherlands,22,,694.0,,,NIKKI PREIN,29531,True,6276
+WSC2017,35,Restaurant Service,NZ,New Zealand,22,,692.0,,,KIMBERLEY DE SCHOT,27058,True,6278
+WSC2017,35,Restaurant Service,DE,Germany,25,,683.0,,,PAUL MANFRED VALTEN STIEBLER,29113,True,6279
+WSC2017,35,Restaurant Service,PT,Portugal,25,,681.0,,,SARA GOMES,30765,True,6280
+WSC2017,35,Restaurant Service,BR,Brazil,27,,679.0,,,MATHEUS LOBATO,30094,True,6281
+WSC2017,35,Restaurant Service,HK,"Hong Kong, China",27,,679.0,,,SIN YU KWAN,30022,True,6282
+WSC2017,35,Restaurant Service,ZA,South Africa,29,,676.0,,,LEE-ANN SMITH,30580,True,6283
+WSC2017,35,Restaurant Service,BY,Belarus,30,,672.0,,,YANA BUGLAK,32409,True,6284
+WSC2017,35,Restaurant Service,JP,Japan,30,,672.0,,,SAYURI OKUNO,28141,True,6285
+WSC2017,35,Restaurant Service,NO,Norway,32,,666.0,,,SARA BJERKELUND,30087,True,6286
+WSC2017,35,Restaurant Service,SE,Sweden,33,,657.0,,,SOFIE LANGKJAER,29913,True,6287
+WSC2017,35,Restaurant Service,AE,United Arab Emirates,34,,641.0,,,HAMED ALSAYES,32534,True,6288
+WSC2017,35,Restaurant Service,GE,Georgia,35,,610.0,True,,ZURAB SHAVISHVILI,30858,True,6290
+WSC2017,35,Restaurant Service,KZ,Kazakhstan,35,,611.0,,,POLINA SIDELNIKOVA,32550,True,6289
+WSC2017,35,Restaurant Service,ZM,Zambia,37,,552.0,,,JERE MULUMBI,32849,True,6291
+WSC2017,35,Restaurant Service,AT,Austria,4,Bronze,736.0,,,MONIKA PÖLLABAUER,27872,True,6258
+WSC2017,35,Restaurant Service,FI,Finland,5,Medallion for Excellence,729.0,,,HENNA KANGAS,29842,True,6260
+WSC2017,35,Restaurant Service,UK,United Kingdom,5,Medallion for Excellence,730.0,,,ELIZABETH FORKUOH,30233,True,6259
+WSC2017,35,Restaurant Service,EE,Estonia,7,Medallion for Excellence,726.0,,,ERIK TAMMELEHT,28365,True,6261
+WSC2017,35,Restaurant Service,AU,Australia,8,Medallion for Excellence,719.0,,,EMILIA MONTAGUE,32305,True,6263
+WSC2017,35,Restaurant Service,BE,Belgium,8,Medallion for Excellence,720.0,,,CLÉMENT JACQMAIN,30667,True,6262
+WSC2017,36,Car Painting,CN,China,1,Gold,753.0,,,YINGCHENG JIANG,31732,True,6292
+WSC2017,36,Car Painting,SE,Sweden,11,Medallion for Excellence,712.0,,,OLLE KARLSSON,29023,True,6302
+WSC2017,36,Car Painting,AU,Australia,12,Medallion for Excellence,706.0,,,DUSTI-LEE FRANCHI,32306,True,6303
+WSC2017,36,Car Painting,IN,India,13,Medallion for Excellence,702.0,,,SHAHAD SHAHIDA MANZIL,31959,True,6304
+WSC2017,36,Car Painting,CA,Canada,14,,697.0,,,ASHLEY WEBER,26830,True,6306
+WSC2017,36,Car Painting,NZ,New Zealand,14,,697.0,,,ALEX BANKS,27061,True,6307
+WSC2017,36,Car Painting,TH,Thailand,14,,698.0,,,POND BANPACHART,27633,True,6305
+WSC2017,36,Car Painting,ES,Spain,17,,693.0,,,SILVIA FOLGUEIRA,30195,True,6308
+WSC2017,36,Car Painting,RU,Russia,17,,692.0,,,IURII MITIN,31631,True,6309
+WSC2017,36,Car Painting,TW,Chinese Taipei,17,,692.0,,,SHIH-TI YAN,30931,True,6310
+WSC2017,36,Car Painting,UK,United Kingdom,2,Silver,742.0,,,DARYL HEAD,30624,True,6293
+WSC2017,36,Car Painting,ID,Indonesia,20,,685.0,,,TEGUH KAMALUDIN,29418,True,6311
+WSC2017,36,Car Painting,FI,Finland,21,,681.0,,,ROOPE ROKKONEN,29844,True,6312
+WSC2017,36,Car Painting,MA,Morocco,22,,676.0,,,ZAKARIA LAHKAK,32626,True,6314
+WSC2017,36,Car Painting,PT,Portugal,22,,678.0,,,LIONEL DIAS,30794,True,6313
+WSC2017,36,Car Painting,HK,"Hong Kong, China",24,,670.0,,,TSZ HONG CHENG,32157,True,6315
+WSC2017,36,Car Painting,ZA,South Africa,25,,655.0,,,LIVHUWANI NETSHITUNI,31216,True,6316
+WSC2017,36,Car Painting,IR,Iran,26,,641.0,,,MOHAMMAD JABBARI,32474,True,6317
+WSC2017,36,Car Painting,CH,Switzerland,3,Bronze,738.0,,,MAURUS VON HOLZEN,28747,True,6294
+WSC2017,36,Car Painting,DE,Germany,3,Bronze,738.0,True,,JONAS HEINZE,29873,True,6295
+WSC2017,36,Car Painting,FR,France,3,Bronze,736.0,,,ENZO BARRAGATO,31923,True,6296
+WSC2017,36,Car Painting,KR,Korea,6,Medallion for Excellence,735.0,,,JUNSIK KIM,29692,True,6297
+WSC2017,36,Car Painting,DK,Denmark,7,Medallion for Excellence,728.0,,,MADS PALLISGAARD HOLM,28902,True,6298
+WSC2017,36,Car Painting,JP,Japan,8,Medallion for Excellence,721.0,,,YUTO FUKAMI,28114,True,6299
+WSC2017,36,Car Painting,BR,Brazil,9,Medallion for Excellence,718.0,,,LUCAS YURI BESSONI CAMPOS,154790,True,6300
+WSC2017,36,Car Painting,NO,Norway,9,Medallion for Excellence,716.0,True,,GULLBJØRG EKRE,27842,True,6301
+WSC2017,37,Landscape Gardening,IT,"South Tyrol, Italy",1,Gold,747.0,,,TONI MITTERMAIR; HANNES KOFLER,30589; 30590,True,6318
+WSC2017,37,Landscape Gardening,AU,Australia,10,Medallion for Excellence,701.0,,,ALEXANDER HALLS; DOUGAL KING,32294; 32295,True,6328
+WSC2017,37,Landscape Gardening,FI,Finland,10,Medallion for Excellence,700.0,,,MIIKKA KÄÄNTÄ; JANI KINNUNEN,141226; 29820,True,6329
+WSC2017,37,Landscape Gardening,TW,Chinese Taipei,10,Medallion for Excellence,702.0,,,TAO-HUNG CHIANG; JR-PIN PAN,30921; 30922,True,6327
+WSC2017,37,Landscape Gardening,CO,Colombia,13,,698.0,,,MELVIS ROSLIN MORALES CARVAJAL; DANIEL EDUARDO ORLAS ZULETA,27546; 27547,True,6330
+WSC2017,37,Landscape Gardening,ES,Spain,14,,695.0,,,DANIEL PASCUAL; SERGIO RUBIO,30164; 30165,True,6331
+WSC2017,37,Landscape Gardening,CA,Canada,15,,685.0,,,BRANDON DI SABATO; MARILOU MORIN,26804; 26805,True,6332
+WSC2017,37,Landscape Gardening,JP,Japan,15,,683.0,,,RYO SUGIMOTO; REIJI TAMURA,28048; 28068,True,6333
+WSC2017,37,Landscape Gardening,NL,Netherlands,15,,683.0,,,STEFAN SCHOOLDERMAN; TIMO KRUIZE,29510; 29511,True,6334
+WSC2017,37,Landscape Gardening,IR,Iran,18,,663.0,,,POORYA VEISI JAHANABADI; HOSSEIN BODAGHI,32430; 32441,True,6335
+WSC2017,37,Landscape Gardening,NO,Norway,18,,663.0,,,KASPER AURSTAD; MADS-ANDRE JOAKIMSEN,29084; 29085,True,6336
+WSC2017,37,Landscape Gardening,CH,Switzerland,2,Silver,739.0,,,BENJAMIN RÄBER; NILS BUCHER,28718; 28719,True,6319
+WSC2017,37,Landscape Gardening,RU,Russia,20,,655.0,,,ANASTASIA OKSINENKO; ANASTASIIA TIUNOVA,31639; 31640,True,6337
+WSC2017,37,Landscape Gardening,BE,Belgium,21,,651.0,,,JULIEN BOVEROUX; MISCHA MEYS,30655; 30656,True,6338
+WSC2017,37,Landscape Gardening,AE,United Arab Emirates,22,,645.0,,,SULTAN ALMAZROUEI; HAMAD ALABDOULI,32540; 32541,True,6339
+WSC2017,37,Landscape Gardening,ZM,Zambia,23,,633.0,,,WINFRED SIMPAMBA; CLAY CHIMUKA,31314; 31481,True,6340
+WSC2017,37,Landscape Gardening,CN,China,3,Bronze,734.0,,,SHIYANG WANG; WEI SUN,31693; 31694,True,6321
+WSC2017,37,Landscape Gardening,EE,Estonia,3,Bronze,736.0,True,,ERIK RÜÜTEL; MAIROLD MÄND,28368; 28370,True,6320
+WSC2017,37,Landscape Gardening,UK,United Kingdom,5,Medallion for Excellence,725.0,,,WILL BURBERRY; ADAM FERGUSON,30207; 30209,True,6322
+WSC2017,37,Landscape Gardening,DE,Germany,6,Medallion for Excellence,720.0,,,MICHAEL SCHMIDT; VITUS PIRSCHLINGER,29865; 29866,True,6323
+WSC2017,37,Landscape Gardening,FR,France,7,Medallion for Excellence,716.0,,,CÉDRIC CLAUSS; LUCAS MEYER,31574; 31575,True,6324
+WSC2017,37,Landscape Gardening,AT,Austria,8,Medallion for Excellence,706.0,,,KATHARINA STRASSER; GABRIEL RAUCH,26679; 26680,True,6325
+WSC2017,37,Landscape Gardening,BR,Brazil,8,Medallion for Excellence,706.0,,,DAVI FONSECA; YUDI HAYASHI,31612; 31613,True,6326
+WSC2017,38,Refrigeration and Air Conditioning,KR,Korea,1,Gold,739.0,,,SEUNGWOO CHAE,29653,True,6341
+WSC2017,38,Refrigeration and Air Conditioning,RU,Russia,1,Gold,737.0,,,VADIM POLIAKOV,31435,True,6342
+WSC2017,38,Refrigeration and Air Conditioning,TW,Chinese Taipei,10,Medallion for Excellence,711.0,,,JUI-HUNG TSAI,30801,True,6350
+WSC2017,38,Refrigeration and Air Conditioning,TH,Thailand,11,Medallion for Excellence,703.0,,,PIYANAN CHAOPLAYNA,31285,True,6351
+WSC2017,38,Refrigeration and Air Conditioning,ES,Spain,12,Medallion for Excellence,700.0,,,EMANUEL BUDEANU,30171,True,6352
+WSC2017,38,Refrigeration and Air Conditioning,HK,"Hong Kong, China",13,,697.0,,,CHI CHING LAU,32145,True,6353
+WSC2017,38,Refrigeration and Air Conditioning,PT,Portugal,13,,695.0,,,BRUNO DIAS,30774,True,6354
+WSC2017,38,Refrigeration and Air Conditioning,NO,Norway,15,,691.0,,,OLVE LYNGSTAD SKJERVE,28479,True,6355
+WSC2017,38,Refrigeration and Air Conditioning,MA,Morocco,16,,688.0,,,ABDELKBIR KADDOURI,32614,True,6356
+WSC2017,38,Refrigeration and Air Conditioning,NL,Netherlands,16,,687.0,,,ROBIN SMETS,30206,True,6357
+WSC2017,38,Refrigeration and Air Conditioning,JP,Japan,18,,680.0,,,YOSHIKI SUGANUMA,28075,True,6358
+WSC2017,38,Refrigeration and Air Conditioning,DE,Germany,19,,676.0,,,TIM SCHUSTER,29331,True,6359
+WSC2017,38,Refrigeration and Air Conditioning,IR,Iran,20,,658.0,,,IMAN ALIREZANEJAD,32444,True,6360
+WSC2017,38,Refrigeration and Air Conditioning,ZA,South Africa,20,,656.0,,,TYRONE CLAUDE BUNCE,31204,True,6361
+WSC2017,38,Refrigeration and Air Conditioning,AE,United Arab Emirates,22,,625.0,,,ROUDHA BIN BAHR,32543,True,6362
+WSC2017,38,Refrigeration and Air Conditioning,KZ,Kazakhstan,23,,556.0,,,VADIM KUZMENKO,32531,True,6363
+WSC2017,38,Refrigeration and Air Conditioning,CN,China,3,Bronze,735.0,,,ZHIQING WU,31736,True,6343
+WSC2017,38,Refrigeration and Air Conditioning,BR,Brazil,4,Medallion for Excellence,723.0,,,WISLEY PEREIRA,29997,True,6344
+WSC2017,38,Refrigeration and Air Conditioning,CA,Canada,4,Medallion for Excellence,721.0,,,RYAN MATSUBA,26504,True,6345
+WSC2017,38,Refrigeration and Air Conditioning,MY,Malaysia,4,Medallion for Excellence,721.0,,,MOHAMMAD AFIZ RUSLAN,30721,True,6346
+WSC2017,38,Refrigeration and Air Conditioning,AU,Australia,7,Medallion for Excellence,718.0,,,NATHAN MCHUGH,32296,True,6347
+WSC2017,38,Refrigeration and Air Conditioning,CO,Colombia,7,Medallion for Excellence,716.0,,,ANDRÉS FELIPE ARIAS GÓMEZ,27548,True,6348
+WSC2017,38,Refrigeration and Air Conditioning,US,United States of America,7,Medallion for Excellence,716.0,,,KRZYSZTOF ZAMAJTYS,28789,True,6349
+WSC2017,39,IT Network Systems Administration,KR,Korea,1,Gold,724.0,,,SUNGWON YUN,29659,True,6364
+WSC2017,39,IT Network Systems Administration,RU,Russia,1,Gold,723.0,,,LEONID SHMAKOV,30112,True,6365
+WSC2017,39,IT Network Systems Administration,DE,Germany,10,Medallion for Excellence,709.0,,,KAI REDMANN,243618,True,6374
+WSC2017,39,IT Network Systems Administration,LI,Principality of Liechtenstein,10,Medallion for Excellence,710.0,,,RICCARDO SOMMA,27701,True,6373
+WSC2017,39,IT Network Systems Administration,TW,Chinese Taipei,12,Medallion for Excellence,707.0,,,CHIH-HUNG LEI,30808,True,6375
+WSC2017,39,IT Network Systems Administration,UK,United Kingdom,13,Medallion for Excellence,704.0,,,SHANE CARPENTER,30218,True,6376
+WSC2017,39,IT Network Systems Administration,CA,Canada,14,Medallion for Excellence,700.0,,,KEVIN COUDERC-DUBOIS,26810,True,6377
+WSC2017,39,IT Network Systems Administration,CH,Switzerland,14,Medallion for Excellence,700.0,,,PASCAL MATHIS,28729,True,6378
+WSC2017,39,IT Network Systems Administration,MY,Malaysia,16,,689.0,,,JEFFREY TING MING YEONG,30708,True,6379
+WSC2017,39,IT Network Systems Administration,CO,Colombia,17,,679.0,,,JEFFRY STEVEN HERNÁNDEZ TORRES,27552,True,6382
+WSC2017,39,IT Network Systems Administration,HR,Croatia,17,,681.0,,,DANIJEL DMITROVIC,30507,True,6380
+WSC2017,39,IT Network Systems Administration,MO,"Macao, China",17,,679.0,,,WAI WENG LO,31485,True,6383
+WSC2017,39,IT Network Systems Administration,PT,Portugal,17,,681.0,,,LUÍS VIEIRA,30773,True,6381
+WSC2017,39,IT Network Systems Administration,IR,Iran,21,,678.0,,,POURIA DEHGHANI,32281,True,6384
+WSC2017,39,IT Network Systems Administration,ID,Indonesia,22,,670.0,,,NASOHI CIPTANDANI,18078,True,6385
+WSC2017,39,IT Network Systems Administration,KZ,Kazakhstan,23,,657.0,,,VLADISLAV SHLAGER,31856,True,6386
+WSC2017,39,IT Network Systems Administration,ES,Spain,24,,646.0,,,OSCAR LATORRE,30131,True,6387
+WSC2017,39,IT Network Systems Administration,NL,Netherlands,24,,644.0,,,RENS VLEMMINGS,29517,True,6389
+WSC2017,39,IT Network Systems Administration,SA,Saudi Arabia,24,,646.0,,,ALWALEED ALHINDI,30506,True,6388
+WSC2017,39,IT Network Systems Administration,SE,Sweden,27,,638.0,,,ANTON SÖDERBERG,29007,True,6390
+WSC2017,39,IT Network Systems Administration,AE,United Arab Emirates,28,,633.0,,,NASSER BADER,32501,True,6391
+WSC2017,39,IT Network Systems Administration,ZA,South Africa,29,,628.0,,,CEE-JAY LAKEY,31390,True,6392
+WSC2017,39,IT Network Systems Administration,AT,Austria,3,Bronze,719.0,,,PATRICK TAIBEL,28689,True,6368
+WSC2017,39,IT Network Systems Administration,CN,China,3,Bronze,721.0,,,WEI XIAO,31704,True,6366
+WSC2017,39,IT Network Systems Administration,HU,Hungary,3,Bronze,720.0,,,AKOS VARGA,30641,True,6367
+WSC2017,39,IT Network Systems Administration,JP,Japan,3,Bronze,719.0,,,RYOICHI SATOYAMA,28080,True,6369
+WSC2017,39,IT Network Systems Administration,SG,Singapore,3,Bronze,719.0,,,KANGLI LI,26729,True,6370
+WSC2017,39,IT Network Systems Administration,BR,Brazil,8,Medallion for Excellence,713.0,,,RENATO JUCÁ,30099,True,6371
+WSC2017,39,IT Network Systems Administration,FR,France,8,Medallion for Excellence,713.0,,,AURÉLIEN BRUNO,31465,True,6372
+WSC2017,40,Graphic Design Technology,TW,Chinese Taipei,1,Gold,756.0,,,YU-ZHEN HUANG,30821,True,6393
+WSC2017,40,Graphic Design Technology,IN,India,10,Medallion for Excellence,708.0,,,SIMOUL PREMRAJ ALVA,32001,True,6403
+WSC2017,40,Graphic Design Technology,SG,Singapore,10,Medallion for Excellence,710.0,,,KIN LIN LOW,26727,True,6402
+WSC2017,40,Graphic Design Technology,DE,Germany,12,Medallion for Excellence,707.0,,,JONAS TURTSCHAN,29332,True,6404
+WSC2017,40,Graphic Design Technology,BR,Brazil,13,Medallion for Excellence,700.0,,,LARISSA MOREIRA,29998,True,6406
+WSC2017,40,Graphic Design Technology,ID,Indonesia,13,Medallion for Excellence,700.0,,,ANTON PRIYATNA,29409,True,6407
+WSC2017,40,Graphic Design Technology,NZ,New Zealand,13,Medallion for Excellence,701.0,,,SARAH BROWNING,27052,True,6405
+WSC2017,40,Graphic Design Technology,AE,United Arab Emirates,16,,695.0,,,MARIAM AL ALI,32500,True,6408
+WSC2017,40,Graphic Design Technology,NL,Netherlands,17,,686.0,,,IVI BRULS,29515,True,6409
+WSC2017,40,Graphic Design Technology,SE,Sweden,17,,685.0,,,ESTER WIKSTRÖM,29112,True,6410
+WSC2017,40,Graphic Design Technology,TH,Thailand,17,,685.0,,,AMARIN SORNSUNGNOEN,31231,True,6411
+WSC2017,40,Graphic Design Technology,CN,China,2,Silver,752.0,,,YUEZHI FANG,31702,True,6394
+WSC2017,40,Graphic Design Technology,PT,Portugal,20,,679.0,,,EMANUEL SOUSA,30776,True,6412
+WSC2017,40,Graphic Design Technology,IR,Iran,21,,673.0,,,HESAM BEIK MOHAMMADLOO,32425,True,6413
+WSC2017,40,Graphic Design Technology,ZA,South Africa,22,,669.0,,,JASON GEYER,31205,True,6414
+WSC2017,40,Graphic Design Technology,HK,"Hong Kong, China",23,,656.0,,,CHIN MING MA,32147,True,6415
+WSC2017,40,Graphic Design Technology,JP,Japan,24,,629.0,,,MIHO AOKI,28078,True,6416
+WSC2017,40,Graphic Design Technology,BH,Kingdom of Bahrain,25,,604.0,,,SHAIKHA ALABBASI,32517,True,6417
+WSC2017,40,Graphic Design Technology,BE,Belgium,26,,594.0,,,ANTHONY KARPOWICZ,30660,True,6418
+WSC2017,40,Graphic Design Technology,GE,Georgia,26,,592.0,,,SALOME TSIKARIDZE,29780,True,6419
+WSC2017,40,Graphic Design Technology,KZ,Kazakhstan,28,,529.0,,,KIRILL KAZAKU,32529,True,6420
+WSC2017,40,Graphic Design Technology,IT,"South Tyrol, Italy",3,Bronze,744.0,,,DEBORAH PSENNER,30595,True,6395
+WSC2017,40,Graphic Design Technology,KR,Korea,4,Medallion for Excellence,731.0,,,SEONYEONG KIM,29658,True,6396
+WSC2017,40,Graphic Design Technology,RU,Russia,5,Medallion for Excellence,728.0,,,ANNA BELIKOVA,31591,True,6397
+WSC2017,40,Graphic Design Technology,AT,Austria,6,Medallion for Excellence,720.0,,,LUKAS DIEMLING,27856,True,6398
+WSC2017,40,Graphic Design Technology,CA,Canada,6,Medallion for Excellence,719.0,,,KYLA HENRY,26809,True,6399
+WSC2017,40,Graphic Design Technology,FR,France,6,Medallion for Excellence,719.0,,,SANDY CHAMPION,31462,True,6400
+WSC2017,40,Graphic Design Technology,LV,Latvia,9,Medallion for Excellence,716.0,True,,KATRINA ELIZABETE SILE,32407,True,6401
+WSC2017,41,Health and Social Care,CH,Switzerland,1,Gold,725.0,,,IRINA TUOR,28742,True,6422
+WSC2017,41,Health and Social Care,FI,Finland,1,Gold,726.0,,,SOFIA SUNDQVIST,29840,True,6421
+WSC2017,41,Health and Social Care,RU,Russia,10,,665.0,,,ALEKSANDRA KRAINOVA,31624,True,6430
+WSC2017,41,Health and Social Care,SE,Sweden,11,,662.0,,,SEBASTIAN SUNDBERG,29020,True,6431
+WSC2017,41,Health and Social Care,BH,Kingdom of Bahrain,12,,624.0,,,MARYAM A.HAMEED,32524,True,6432
+WSC2017,41,Health and Social Care,HU,Hungary,12,,623.0,,,ZSOLT SIMON,30649,True,6433
+WSC2017,41,Health and Social Care,NL,Netherlands,14,,615.0,,,ROMY LECLUSE,29528,True,6434
+WSC2017,41,Health and Social Care,SG,Singapore,3,Bronze,716.0,,,FAZIRA ZULKIFLI,26739,True,6423
+WSC2017,41,Health and Social Care,TW,Chinese Taipei,4,Medallion for Excellence,713.0,,,PANG-CHIEN YUAN,30727,True,6424
+WSC2017,41,Health and Social Care,IT,"South Tyrol, Italy",5,Medallion for Excellence,709.0,,,THERESA PIPPERGER,30601,True,6425
+WSC2017,41,Health and Social Care,BR,Brazil,6,Medallion for Excellence,706.0,,,JULIA RIBEIRO,30091,True,6426
+WSC2017,41,Health and Social Care,DE,Germany,6,Medallion for Excellence,704.0,,,LAURA VOSSKÖTTER,29862,True,6427
+WSC2017,41,Health and Social Care,AE,United Arab Emirates,8,,696.0,,,KEFAH ALMENTHERI,32511,True,6428
+WSC2017,41,Health and Social Care,CO,Colombia,9,,693.0,,,JOSE ALEXANDER DURAN PALOMINO,22468,True,6429
+WSC2017,42,Construction Metal Work,KR,Korea,1,Gold,746.0,,,SEONGYONG CHO,29668,True,6435
+WSC2017,42,Construction Metal Work,FR,France,10,,678.0,,,MAXIME BESNARD,31580,True,6445
+WSC2017,42,Construction Metal Work,UK,United Kingdom,10,,680.0,,,MACAULAY REAVILL,30220,True,6444
+WSC2017,42,Construction Metal Work,FI,Finland,12,,672.0,,,JUHO NISSINEN,29827,True,6446
+WSC2017,42,Construction Metal Work,RU,Russia,13,,659.0,,,SALAVAT ZAMALIEV,31635,True,6447
+WSC2017,42,Construction Metal Work,AT,Austria,2,Silver,725.0,,,FRANZ KALSS,27859,True,6436
+WSC2017,42,Construction Metal Work,BR,Brazil,2,Silver,724.0,,,MICHAEL FERRAZ,31825,True,6437
+WSC2017,42,Construction Metal Work,CN,China,4,Medallion for Excellence,717.0,,,TAO BIAN,31711,True,6438
+WSC2017,42,Construction Metal Work,JP,Japan,5,Medallion for Excellence,709.0,,,NAOTO ENSHU,28088,True,6439
+WSC2017,42,Construction Metal Work,AU,Australia,6,Medallion for Excellence,700.0,,,BRETT MCPAUL,32299,True,6441
+WSC2017,42,Construction Metal Work,IE,Ireland,6,Medallion for Excellence,702.0,,,AARON RONAN,31886,True,6440
+WSC2017,42,Construction Metal Work,TW,Chinese Taipei,6,Medallion for Excellence,700.0,,,GUAN-YU CHEN,30734,True,6442
+WSC2017,42,Construction Metal Work,CH,Switzerland,9,,699.0,,,MICHAEL GRAF,28738,True,6443
+WSC2017,43,Plastic Die Engineering,CN,China,1,Gold,727.0,,,ZHANG ZHIBIN,31722,True,6448
+WSC2017,43,Plastic Die Engineering,IE,Ireland,10,,563.0,,,MICHEÁL FLYNN,31892,True,6457
+WSC2017,43,Plastic Die Engineering,KR,Korea,2,Silver,720.0,,,NARAE KIM,29679,True,6449
+WSC2017,43,Plastic Die Engineering,JP,Japan,3,Bronze,717.0,,,HAYATO MIYASAKA,28100,True,6450
+WSC2017,43,Plastic Die Engineering,ID,Indonesia,4,Medallion for Excellence,705.0,,,RISKY AGUNG TARIGAN,29426,True,6451
+WSC2017,43,Plastic Die Engineering,TW,Chinese Taipei,4,Medallion for Excellence,705.0,,,TING-YEN LIU,30813,True,6452
+WSC2017,43,Plastic Die Engineering,BR,Brazil,6,,695.0,,,EDSON FELIX,29999,True,6453
+WSC2017,43,Plastic Die Engineering,IN,India,7,,677.0,,,TAMILSELVAN PERIYASAMY,31993,True,6455
+WSC2017,43,Plastic Die Engineering,TH,Thailand,7,,679.0,,,PEERAPAT SEANGATE,27632,True,6454
+WSC2017,43,Plastic Die Engineering,RU,Russia,9,,567.0,,,ALEKSANDR VOROBEV,31754,True,6456
+WSC2017,44,Visual Merchandising,NL,Netherlands,1,Gold,744.0,True,,PIEN HOVELING,29516,True,6458
+WSC2017,44,Visual Merchandising,DE,Germany,10,,680.0,,,MELVIN SUCKOW,29253,True,6467
+WSC2017,44,Visual Merchandising,IN,India,10,,680.0,,,NITISH KUMAR,32031,True,6468
+WSC2017,44,Visual Merchandising,MO,"Macao, China",10,,678.0,,,WENG I KOK,31676,True,6469
+WSC2017,44,Visual Merchandising,AE,United Arab Emirates,13,,670.0,,,SHAHAD AL HOSANI,32214,True,6471
+WSC2017,44,Visual Merchandising,SG,Singapore,13,,672.0,,,MUHAMMAD ZAFHIR NORDIN,26728,True,6470
+WSC2017,44,Visual Merchandising,KZ,Kazakhstan,15,,652.0,,,NAZAR GORBACHYOV,32574,True,6472
+WSC2017,44,Visual Merchandising,RU,Russia,2,Silver,725.0,,,UMAR NURSHINOV,31443,True,6459
+WSC2017,44,Visual Merchandising,UK,United Kingdom,2,Silver,725.0,,,CATHERINE ABBOTT,30217,True,6460
+WSC2017,44,Visual Merchandising,SE,Sweden,4,Medallion for Excellence,719.0,,,JOHANNA HANSSON,29006,True,6461
+WSC2017,44,Visual Merchandising,HK,"Hong Kong, China",5,Medallion for Excellence,715.0,,,CHI SING LUNG,32148,True,6462
+WSC2017,44,Visual Merchandising,BR,Brazil,6,Medallion for Excellence,703.0,,,ANA JACINTO,30075,True,6463
+WSC2017,44,Visual Merchandising,FI,Finland,6,Medallion for Excellence,701.0,,,SALLA KÄYHKÖ,29825,True,6464
+WSC2017,44,Visual Merchandising,LV,Latvia,8,Medallion for Excellence,700.0,,,LINDA VILKA,32405,True,6465
+WSC2017,44,Visual Merchandising,CN,China,9,,684.0,,,CHUJIE SUN,31705,True,6466
+WSC2017,45,Prototype Modelling,CN,China,1,Gold,749.0,,,FENGJIE HUANG,31724,True,6473
+WSC2017,45,Prototype Modelling,TW,Chinese Taipei,10,,624.0,,,YA-HAN CHANG,30814,True,6482
+WSC2017,45,Prototype Modelling,DE,Germany,11,,483.0,,,MARCEL SWIERCZOK,29109,True,6483
+WSC2017,45,Prototype Modelling,ID,Indonesia,2,Silver,722.0,,,RIZKI DWI AFRIANTO,29425,True,6476
+WSC2017,45,Prototype Modelling,KR,Korea,2,Silver,720.0,,,HYUNWOOK JEONG,29681,True,6474
+WSC2017,45,Prototype Modelling,IN,India,4,Bronze,718.0,,,KIRAN KIRAN,31992,True,6475
+WSC2017,45,Prototype Modelling,BR,Brazil,5,Medallion for Excellence,711.0,,,BENEDITO VITOR,30081,True,6477
+WSC2017,45,Prototype Modelling,CH,Switzerland,6,Medallion for Excellence,700.0,,,MANUEL BIERI,29449,True,6478
+WSC2017,45,Prototype Modelling,RU,Russia,7,,698.0,,,FEDOR ZAVIALIK,31619,True,6479
+WSC2017,45,Prototype Modelling,JP,Japan,8,,684.0,,,MASATO TAKAKI,28102,True,6480
+WSC2017,45,Prototype Modelling,TH,Thailand,9,,660.0,,,JINTAWAT SRILIW,27631,True,6481
+WSC2017,46,Concrete Construction Work,AT,Austria,1,Gold,727.0,,,ALEXANDER TURY; DAVID WAGNER,27848; 27849,True,6484
+WSC2017,46,Concrete Construction Work,DE,Germany,2,Silver,720.0,,,MEDIN MURATI; TIMO SCHÖN,29097; 29098,True,6485
+WSC2017,46,Concrete Construction Work,BR,Brazil,3,Bronze,710.0,,,MATHEUS COSTA; MATHEUS SANTOS,31644; 31660,True,6486
+WSC2017,46,Concrete Construction Work,RU,Russia,4,Medallion for Excellence,700.0,,,VLADISLAV RYZHIKOV; MAXIM LEONTYEV,31431; 31432,True,6487
+WSC2017,46,Concrete Construction Work,FR,France,5,,692.0,True,,KEVIN DEVOS; JORIS SAMPAYO,31570; 31571,True,6488
+WSC2017,46,Concrete Construction Work,KZ,Kazakhstan,6,,590.0,,,BERIK MAKHAMBETOV; KASYMZHAN TURGANBEK,32544; 32545,True,6489
+WSC2017,46,Concrete Construction Work,ZM,Zambia,7,,581.0,,,MARAH MASUPA; CHANSA PUTA,29723; 29724,True,6490
+WSC2017,47,Bakery,CH,Switzerland,1,Gold,728.0,,,RAMONA BOLLIGER,28741,True,6493
+WSC2017,47,Bakery,CN,China,1,Gold,730.0,,,YEZHAO CAI,31805,True,6491
+WSC2017,47,Bakery,FR,France,1,Gold,729.0,,,DAMIEN BESSON,31467,True,6492
+WSC2017,47,Bakery,FI,Finland,11,,690.0,,,SANNI KUMPULAINEN,30384,True,6501
+WSC2017,47,Bakery,US,United States of America,12,,686.0,,,JORDYN BAKER,29401,True,6502
+WSC2017,47,Bakery,RU,Russia,13,,682.0,,,MARINA ARBUZOVA,31621,True,6503
+WSC2017,47,Bakery,AE,United Arab Emirates,14,,670.0,,,IBRAHIM AL ZAABI,32215,True,6504
+WSC2017,47,Bakery,ES,Spain,15,,663.0,,,HONG YE,30186,True,6505
+WSC2017,47,Bakery,KZ,Kazakhstan,15,,661.0,,,TILEKTES ALKUVADOVA,32971,True,6506
+WSC2017,47,Bakery,TR,Türkiye,17,,637.0,,,ILAYDA ARATEMUR,32332,True,6507
+WSC2017,47,Bakery,TW,Chinese Taipei,4,Bronze,726.0,,,CHI-WEI LI,30723,True,6494
+WSC2017,47,Bakery,KR,Korea,5,Medallion for Excellence,720.0,,,GYEONGMIN LEE,29683,True,6495
+WSC2017,47,Bakery,AT,Austria,6,Medallion for Excellence,709.0,,,JULIA RUMETSHOFER,27868,True,6496
+WSC2017,47,Bakery,DK,Denmark,7,Medallion for Excellence,706.0,,,LASSE NØRUP BENTSEN,29920,True,6497
+WSC2017,47,Bakery,IT,"South Tyrol, Italy",7,Medallion for Excellence,705.0,,,FLORIAN GOLLER,30597,True,6498
+WSC2017,47,Bakery,BR,Brazil,9,,699.0,,,LUCAS ALCANTARA,30093,True,6500
+WSC2017,47,Bakery,SE,Sweden,9,Medallion for Excellence,700.0,,,LINN ERIKSSON,29946,True,6499
+WSC2017,48,Industrial Mechanic Millwright,CN,China,1,Gold,779.0,,True,BIAO SONG,31778,True,6508
+WSC2017,48,Industrial Mechanic Millwright,FI,Finland,10,,637.0,,,JERE KUISMA,29830,True,6517
+WSC2017,48,Industrial Mechanic Millwright,KZ,Kazakhstan,11,,471.0,,,OLEG BABKIN,33325,True,6518
+WSC2017,48,Industrial Mechanic Millwright,AU,Australia,2,Silver,724.0,,,BRADLEY INGHAM,32300,True,6510
+WSC2017,48,Industrial Mechanic Millwright,BR,Brazil,2,Silver,726.0,,,KENNEDY YAMASHITA,193396,True,6509
+WSC2017,48,Industrial Mechanic Millwright,NZ,New Zealand,4,Medallion for Excellence,720.0,,,SHEA KEIR,27054,True,6511
+WSC2017,48,Industrial Mechanic Millwright,TW,Chinese Taipei,5,Medallion for Excellence,711.0,,,MONG-MING TSO,30811,True,6512
+WSC2017,48,Industrial Mechanic Millwright,CA,Canada,6,Medallion for Excellence,700.0,,,DEANNA REYNOLDS,26816,True,6513
+WSC2017,48,Industrial Mechanic Millwright,NO,Norway,7,,696.0,,,ROBIN BULLEN,28473,True,6514
+WSC2017,48,Industrial Mechanic Millwright,RU,Russia,7,,695.0,,,MAKSIM POPULOV,31597,True,6515
+WSC2017,48,Industrial Mechanic Millwright,JP,Japan,9,,680.0,,,TATSUYA KAWAZOE,28091,True,6516
+WSC2017,49,Heavy Vehicle Maintenance,CH,Switzerland,1,Gold,748.0,,,ADRIAN KRÄHENBÜHL,26973,True,6519
+WSC2017,49,Heavy Vehicle Maintenance,DE,Germany,10,,682.0,,,ANDREAS ENZENSBERGER,29864,True,6529
+WSC2017,49,Heavy Vehicle Maintenance,LV,Latvia,10,,684.0,,,JANIS OZOLS,32401,True,6528
+WSC2017,49,Heavy Vehicle Maintenance,NO,Norway,12,,674.0,,,ERIK STØKKEN AKER,28475,True,6530
+WSC2017,49,Heavy Vehicle Maintenance,IE,Ireland,13,,660.0,,,GARY HORGAN,31896,True,6531
+WSC2017,49,Heavy Vehicle Maintenance,MA,Morocco,14,,645.0,,,AYOUB MORJANI,32620,True,6532
+WSC2017,49,Heavy Vehicle Maintenance,KZ,Kazakhstan,15,,619.0,,,VITALIY KUCHERENKO,32552,True,6533
+WSC2017,49,Heavy Vehicle Maintenance,ZM,Zambia,16,,604.0,,,TUMBAMA KYAILUSA,31317,True,6534
+WSC2017,49,Heavy Vehicle Maintenance,RU,Russia,2,Silver,726.0,,,NIKOLAI LARIONOV,31633,True,6520
+WSC2017,49,Heavy Vehicle Maintenance,DK,Denmark,3,Bronze,723.0,,,SØREN LYKKE DØSSING,28897,True,6521
+WSC2017,49,Heavy Vehicle Maintenance,AU,Australia,4,Medallion for Excellence,711.0,,,LOUISE AZZOPARDI,32307,True,6523
+WSC2017,49,Heavy Vehicle Maintenance,FR,France,4,Medallion for Excellence,713.0,,,GUILLAUME LEROUX,31924,True,6522
+WSC2017,49,Heavy Vehicle Maintenance,CA,Canada,6,Medallion for Excellence,710.0,,,TANNER TENDLER,26499,True,6524
+WSC2017,49,Heavy Vehicle Maintenance,AT,Austria,7,Medallion for Excellence,702.0,,,DANIEL CHIRITA,28980,True,6525
+WSC2017,49,Heavy Vehicle Maintenance,BR,Brazil,7,Medallion for Excellence,702.0,,,JOÃO DA SILVA,31223,True,6526
+WSC2017,49,Heavy Vehicle Maintenance,CN,China,9,,698.0,,,JIE WU,31733,True,6527
+WSC2017,D1,3D Digital Game Art,SG,Singapore,1,Gold,773.0,True,,NG JUN XUAN,28400,True,6535
+WSC2017,D1,3D Digital Game Art,KR,Korea,2,Silver,747.0,,,EUNHO KIM,29655,True,6536
+WSC2017,D1,3D Digital Game Art,CN,China,3,Bronze,722.0,,,ZONGLIN ZHENG,31700,True,6537
+WSC2017,D1,3D Digital Game Art,ES,Spain,4,Medallion for Excellence,702.0,,,JOSÉ-MARÍA ZÁRRAGA,30173,True,6538
+WSC2017,D1,3D Digital Game Art,RU,Russia,4,Medallion for Excellence,700.0,,,ANASTASIA KIM,31589,True,6539
+WSC2017,D1,3D Digital Game Art,FI,Finland,6,,694.0,,,KAROLA KAUTONEN,32483,True,6540
+WSC2017,D1,3D Digital Game Art,AU,Australia,7,,682.0,,,ALEXANDER SCHMIDT,32298,True,6541
+WSC2017,D1,3D Digital Game Art,UK,United Kingdom,7,,680.0,,,DANIEL MCCABE,30215,True,6542
+WSC2017,D1,3D Digital Game Art,AE,United Arab Emirates,9,,634.0,,,MAITHA MOHAMED,32499,True,6543
+WSC2017,D2,Freight Forwarding,RU,Russia,1,Gold,721.0,,,GLEB SHMONIN,31632,True,6544
+WSC2017,D2,Freight Forwarding,SG,Singapore,1,Gold,720.0,,,WEN XIN OLIVIA LOW,28490,True,6545
+WSC2017,D2,Freight Forwarding,AT,Austria,3,Bronze,680.0,,,SARAH RUCKENSTUHL,27873,True,6546
+WSC2017,D2,Freight Forwarding,CN,China,4,,677.0,,,SIYU ZHOU,31762,True,6547

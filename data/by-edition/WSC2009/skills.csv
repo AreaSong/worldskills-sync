@@ -1,0 +1,46 @@
+﻿edition,skill,name,status,skill_id,type
+WSC2009,01,Polymechanics/Automation,active,251,official
+WSC2009,02,Information Network Cabling,active,296,official
+WSC2009,03,Manufacturing Team Challenge,active,252,official
+WSC2009,04,Mechatronics,active,253,official
+WSC2009,05,Mechanical Engineering Design - CAD,active,254,official
+WSC2009,06,CNC Turning,active,255,official
+WSC2009,07,CNC Milling,active,256,official
+WSC2009,08,Mould Making,active,179,official
+WSC2009,09,IT/Software Applications,active,257,official
+WSC2009,10,Welding,active,258,official
+WSC2009,11,Offset Printing,active,289,official
+WSC2009,12,Wall and Floor Tiling,active,260,official
+WSC2009,13,Autobody Repair,active,261,official
+WSC2009,14,Metal Roofing,active,262,official
+WSC2009,15,Plumbing and Heating,active,263,official
+WSC2009,16,Electronics,active,264,official
+WSC2009,17,Web Design,active,265,official
+WSC2009,18,Electrical Installations,active,266,official
+WSC2009,19,Industrial Control,active,267,official
+WSC2009,20,Bricklaying,active,268,official
+WSC2009,21,Stonemasonry,active,269,official
+WSC2009,22,Painting and Decorating,active,270,official
+WSC2009,23,Mobile Robotics,active,259,official
+WSC2009,24,Cabinetmaking,active,271,official
+WSC2009,25,Joinery,active,272,official
+WSC2009,26,Carpentry,active,273,official
+WSC2009,27,Jewellery,active,274,official
+WSC2009,28,Floristry,active,275,official
+WSC2009,29,Ladies'/Men's Hairdressing,active,276,official
+WSC2009,30,Beauty Therapy,active,277,official
+WSC2009,31,Fashion Technology,active,278,official
+WSC2009,32,Confectioner/Pastry Cook,active,279,official
+WSC2009,33,Automobile Technology,active,280,official
+WSC2009,34,Cooking,active,281,official
+WSC2009,35,Restaurant Service,active,282,official
+WSC2009,36,Car Painting,active,283,official
+WSC2009,37,Landscape Gardening,active,284,official
+WSC2009,38,Refrigeration,active,285,official
+WSC2009,39,IT PC/Network Support,active,286,official
+WSC2009,40,Graphic Design Technology,active,287,official
+WSC2009,41,Caring,active,290,official
+WSC2009,D1,Aircraft Maintenance,active,177,official
+WSC2009,D2,Construction Metal Work,active,293,official
+WSC2009,D3,Plastering and Drywall Systems,active,176,official
+WSC2009,HM1,Sheet Metal Technology,active,295,official

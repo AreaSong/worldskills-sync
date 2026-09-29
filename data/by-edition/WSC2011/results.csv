@@ -1,0 +1,835 @@
+﻿edition,skill,skill_name,member_code,member_name,position,medal,mark,best_of_nation,albert_vidal_award,competitor_names,person_ids,published,result_id
+WSC2011,01,Polymechanics/Automation,KR,Korea,1,Gold,537.0,,,YEA CHAN YU,8043,True,3077
+WSC2011,01,Polymechanics/Automation,TW,Chinese Taipei,10,,484.0,,,SHU-WEI CHANG,7217,True,3086
+WSC2011,01,Polymechanics/Automation,IN,India,11,,467.0,,,ABDUL MUBASH KALLAN,6936,True,3087
+WSC2011,01,Polymechanics/Automation,PT,Portugal,11,,466.0,,,JOÃO CRUZ,7134,True,3088
+WSC2011,01,Polymechanics/Automation,NZ,New Zealand,13,,452.0,,,MATHEW PASCOE,8028,True,3089
+WSC2011,01,Polymechanics/Automation,ES,Spain,14,,445.0,,,SERGIO MEDINA,7786,True,3090
+WSC2011,01,Polymechanics/Automation,BR,Brazil,2,Silver,527.0,,,RODRIGO PANIFER,8353,True,3079
+WSC2011,01,Polymechanics/Automation,DE,Germany,2,Silver,528.0,,,NILS MICHALIK,7586,True,3078
+WSC2011,01,Polymechanics/Automation,JP,Japan,2,Silver,526.0,,,KATSUHIRO IWAI,8464,True,3080
+WSC2011,01,Polymechanics/Automation,AT,Austria,5,Medallion for Excellence,523.0,,,PATRIK FRÖWIS,8292,True,3081
+WSC2011,01,Polymechanics/Automation,CH,Switzerland,6,Medallion for Excellence,516.0,,,SANDRO BURKART,8303,True,3083
+WSC2011,01,Polymechanics/Automation,NL,Netherlands,6,Medallion for Excellence,517.0,,,TIM VAN DEN HEUVEL,7886,True,3082
+WSC2011,01,Polymechanics/Automation,LI,Principality of Liechtenstein,8,Medallion for Excellence,512.0,,,ILIR AJGERAJ,8325,True,3084
+WSC2011,01,Polymechanics/Automation,FI,Finland,9,Medallion for Excellence,500.0,,,MIIKA LAARI,8191,True,3085
+WSC2011,02,Information Network Cabling,JP,Japan,1,Gold,569.0,,,HARUKI MORINO,8446,True,3091
+WSC2011,02,Information Network Cabling,AE,United Arab Emirates,10,,466.0,,,SALEH ALDHANHANI,7997,True,3100
+WSC2011,02,Information Network Cabling,BR,Brazil,10,,465.0,,,OTHON BARRETO,8352,True,3101
+WSC2011,02,Information Network Cabling,KR,Korea,2,Silver,536.0,,,JIN HYUK LEE,8042,True,3092
+WSC2011,02,Information Network Cabling,SG,Singapore,3,Bronze,517.0,,,JUN WEI WILLIAM CHAN,8055,True,3093
+WSC2011,02,Information Network Cabling,VN,Vietnam,4,Medallion for Excellence,510.0,,,NGUYEN XUAN LOC,6811,True,3094
+WSC2011,02,Information Network Cabling,HK,"Hong Kong, China",5,,499.0,,,KAM WING LAI,7647,True,3095
+WSC2011,02,Information Network Cabling,SE,Sweden,6,,488.0,,,SIMON HYTTSTEN,4165,True,3096
+WSC2011,02,Information Network Cabling,TH,Thailand,6,,487.0,,,THAWAT KUMPAN,8789,True,3097
+WSC2011,02,Information Network Cabling,MO,"Macao, China",8,,484.0,,,KA MAN AO,7137,True,3098
+WSC2011,02,Information Network Cabling,NO,Norway,9,,478.0,,,FREDRIK STØRDAL GUNDERSEN,7854,True,3099
+WSC2011,03,Manufacturing Team Challenge,JP,Japan,1,Gold,570.0,,,SYOGO HAYAKAWA; TOMOFUMI JITOUSONO; MOTOKI OOTAKE,6679; 8506; 6665,True,3102
+WSC2011,03,Manufacturing Team Challenge,FR,France,2,Silver,514.0,,,FLORENT DEVRIESE; JEAN-BAPTISTE HENRY; AUDREY WEBER,7332; 7331; 7330,True,3103
+WSC2011,03,Manufacturing Team Challenge,AU,Australia,3,Bronze,503.0,,,MATHEW HALL; BEN HOOPER; MICHAEL THEOBALD,6858; 6862; 6863,True,3104
+WSC2011,03,Manufacturing Team Challenge,TW,Chinese Taipei,4,,499.0,,,JIH-SHENG CHENG; CHUNG-WEN KU; YU-CHENG LIN,7215; 7216; 7214,True,3105
+WSC2011,03,Manufacturing Team Challenge,FI,Finland,5,,485.0,,,KASPER HAHTONEN; OIVA PARTANEN; JUHA PETERI,8190; 8188; 8189,True,3106
+WSC2011,03,Manufacturing Team Challenge,NL,Netherlands,5,,485.0,,,BART BIEMANS; KEVIN PETERS; DENNIS VAN WERKHOVEN,7825; 7826; 7824,True,3107
+WSC2011,03,Manufacturing Team Challenge,UK,United Kingdom,7,,482.0,,,SAMUEL ANDREWS; KYLE BURKITT; RACHAEL CARR,7034; 7035; 7036,True,3108
+WSC2011,03,Manufacturing Team Challenge,KR,Korea,8,,463.0,,,HWAN SOO JEONG; DONG GYUN KANG; SOO WOONG KIM,8039; 8041; 8040,True,3109
+WSC2011,04,Mechatronics,BR,Brazil,1,Gold,557.0,,,CHRISTIAN ALESSI; MAICON PASIN,7465; 7464,True,3111
+WSC2011,04,Mechatronics,JP,Japan,1,Gold,559.0,,,YUYA KAWABE; HIDENORI MISHINA,8435; 8434,True,3110
+WSC2011,04,Mechatronics,FI,Finland,10,Medallion for Excellence,510.0,,,JOONAS NUOLIJOKI; TOMI SUMMANEN,8187; 8186,True,3120
+WSC2011,04,Mechatronics,MO,"Macao, China",10,Medallion for Excellence,511.0,,,CHI WAI LEONG; CHIN MENG TOU,7140; 7141,True,3119
+WSC2011,04,Mechatronics,CA,Canada,12,Medallion for Excellence,506.0,,,THIERRY LECOURS; GABRIEL THÉRIEN,6714; 6713,True,3121
+WSC2011,04,Mechatronics,MY,Malaysia,13,Medallion for Excellence,502.0,,,MARZUKI MOHAMAD; ABDUL RAHIM MUDA,7511; 7512,True,3122
+WSC2011,04,Mechatronics,TH,Thailand,13,Medallion for Excellence,501.0,,,APICHIT SRICHAIRATTANA; APHILAK THONGJIB,8790; 8791,True,3123
+WSC2011,04,Mechatronics,UK,United Kingdom,13,Medallion for Excellence,500.0,,,CHRISTOPHER DOWNEY; MARK MAGINTY,7033,True,3124
+WSC2011,04,Mechatronics,SG,Singapore,16,,495.0,,,BIN YANG DANIEL CHAN; RAY HWEE LO,7859; 7821,True,3125
+WSC2011,04,Mechatronics,AT,Austria,17,,489.0,,,MANFRED EDLINGER; MANUEL REIGNER,8059; 8058,True,3128
+WSC2011,04,Mechatronics,FR,France,17,,490.0,,,JÉRÉMY BILERI; BILLY POUGET,7329; 7328,True,3127
+WSC2011,04,Mechatronics,IR,Iran,17,,490.0,,,MOJTABA ESFANDIARI; MOHAMMAD ALI HOSSEINI KHIABANI,6992; 6976,True,3126
+WSC2011,04,Mechatronics,HU,Hungary,20,,486.0,,,LÁSZLÓ LOSONCZY; ISTVÁN ULLRICH,7071; 7072,True,3130
+WSC2011,04,Mechatronics,MA,Morocco,20,,487.0,,,ABDERRAHMAN RAJI; MOHAMMED SAHANE,6965; 6964,True,3129
+WSC2011,04,Mechatronics,PT,Portugal,20,,486.0,,,JOÃO COSTA; HUGO GONÇALVES,7244; 7245,True,3131
+WSC2011,04,Mechatronics,EE,Estonia,23,,482.0,,,RAIT KUHI; KRISTEN LALIN,7281; 7280,True,3132
+WSC2011,04,Mechatronics,ID,Indonesia,23,,481.0,,,AGAM PINANDITA; JEFRI SATRIA,7698; 7697,True,3133
+WSC2011,04,Mechatronics,VN,Vietnam,25,,479.0,,,DAM CHI KIEN; NGUYEN DUC VINH,6809; 6810,True,3134
+WSC2011,04,Mechatronics,CO,Colombia,26,,474.0,,,JAYDIS GUERRA; CAMILO GUERRERO,6829; 6828,True,3135
+WSC2011,04,Mechatronics,ES,Spain,26,,472.0,,,GUILLERMO ARTO; MANUEL FAURO,7785; 7784,True,3136
+WSC2011,04,Mechatronics,IN,India,28,,458.0,,,JIBI JOSEPH; NIKHIL RAJ K V,6902; 6935,True,3137
+WSC2011,04,Mechatronics,MX,Mexico,28,,456.0,,,MOISES BECERRA; HUGO SANCHEZ,8354; 8355,True,3138
+WSC2011,04,Mechatronics,KR,Korea,3,Bronze,545.0,,,GEUN YONG NO; JUNG MO YANG,8038; 8037,True,3113
+WSC2011,04,Mechatronics,SE,Sweden,3,Bronze,545.0,,,ANDERS WADMAN; VIKTOR ÖHLÉN,8528; 222,True,3112
+WSC2011,04,Mechatronics,AE,United Arab Emirates,30,,448.0,,,SAUD AL MAAZMI; HASHIM HABIB,8867; 7267,True,3140
+WSC2011,04,Mechatronics,ZA,South Africa,30,,449.0,,,TULANI MZAYIDUME; KHUMBULANI SIGENU,8621; 8622,True,3139
+WSC2011,04,Mechatronics,CH,Switzerland,5,Medallion for Excellence,538.0,,,ADRIAN KAMER; RETO MEIER,8383; 8382,True,3114
+WSC2011,04,Mechatronics,NL,Netherlands,6,Medallion for Excellence,533.0,,,TOM WESSTEIN; DANNY DE VRIES,7880; 7879,True,3115
+WSC2011,04,Mechatronics,DE,Germany,7,Medallion for Excellence,527.0,,,TOBIAS DIETRICH; CHRISTIAN SCHWEIZER,7584; 7585,True,3116
+WSC2011,04,Mechatronics,NO,Norway,7,Medallion for Excellence,526.0,,,AXEL GUNNARSON; MILAN SUBOTIC,7849; 7850,True,3117
+WSC2011,04,Mechatronics,TW,Chinese Taipei,9,Medallion for Excellence,518.0,,,WEI-JIE TSENG; WEI-ZHE ZHANG,7212; 7213,True,3118
+WSC2011,05,Mechanical Engineering Design - CAD,BR,Brazil,1,Gold,540.0,,,GUILHERME SOUZA,7463,True,3141
+WSC2011,05,Mechanical Engineering Design - CAD,FI,Finland,10,Medallion for Excellence,506.0,,,JANI SIHVOLA,8185,True,3151
+WSC2011,05,Mechanical Engineering Design - CAD,NL,Netherlands,10,Medallion for Excellence,507.0,,,TOM VAN DE VALK,7881,True,3150
+WSC2011,05,Mechanical Engineering Design - CAD,ID,Indonesia,12,Medallion for Excellence,501.0,,,ACHMAD NUR SILMI,7695,True,3152
+WSC2011,05,Mechanical Engineering Design - CAD,TN,Tunisia,13,,498.0,,,THAMEUR BETTAIEB,8640,True,3153
+WSC2011,05,Mechanical Engineering Design - CAD,ES,Spain,14,,494.0,,,GAIZKA DOMÍNGUEZ,7783,True,3155
+WSC2011,05,Mechanical Engineering Design - CAD,TW,Chinese Taipei,14,,494.0,,,PO-YEN HSIEH,7211,True,3156
+WSC2011,05,Mechanical Engineering Design - CAD,VN,Vietnam,14,,495.0,,,HOANG VAN TUNG,6808,True,3154
+WSC2011,05,Mechanical Engineering Design - CAD,FR,France,17,,478.0,,,VICTOR N'GUYEN VANDANH,7327,True,3157
+WSC2011,05,Mechanical Engineering Design - CAD,PT,Portugal,18,,470.0,,,RUBEN CARVALHO,7243,True,3158
+WSC2011,05,Mechanical Engineering Design - CAD,AE,United Arab Emirates,19,,426.0,,,ADEL AL MARZOOQI,8868,True,3159
+WSC2011,05,Mechanical Engineering Design - CAD,CO,Colombia,19,,425.0,,,DUVAN VILLAQUIRAN,6827,True,3160
+WSC2011,05,Mechanical Engineering Design - CAD,SG,Singapore,2,Silver,534.0,,,ZE SHENG JONATHAN TAN,7613,True,3142
+WSC2011,05,Mechanical Engineering Design - CAD,CH,Switzerland,3,Bronze,523.0,,,PASCAL BRUNNER,8381,True,3143
+WSC2011,05,Mechanical Engineering Design - CAD,JP,Japan,3,Bronze,522.0,,,SEIYA KOBAYASHI,8433,True,3145
+WSC2011,05,Mechanical Engineering Design - CAD,UK,United Kingdom,3,Bronze,522.0,,,RYAN SHERIDAN,185887,True,3144
+WSC2011,05,Mechanical Engineering Design - CAD,AT,Austria,6,Medallion for Excellence,520.0,,,GERALD GRUBER,8291,True,3146
+WSC2011,05,Mechanical Engineering Design - CAD,KR,Korea,6,Medallion for Excellence,519.0,,,JUNG YUNG SHIN,8036,True,3147
+WSC2011,05,Mechanical Engineering Design - CAD,CN,China,8,Medallion for Excellence,515.0,,,JUNYANG WEI,8632,True,3148
+WSC2011,05,Mechanical Engineering Design - CAD,CA,Canada,9,Medallion for Excellence,510.0,,,MICHAEL CHRISTENSEN,8578,True,3149
+WSC2011,06,CNC Turning,JP,Japan,1,Gold,535.0,,,HARUKI ABE,8432,True,3161
+WSC2011,06,CNC Turning,KR,Korea,1,Gold,534.0,,,SUN JIC OH,8035,True,3163
+WSC2011,06,CNC Turning,TH,Thailand,1,Gold,534.0,,,TEERANUN CHOPPANID,7670,True,3162
+WSC2011,06,CNC Turning,SE,Sweden,10,Medallion for Excellence,504.0,,,PONTUS PERSSON,7711,True,3170
+WSC2011,06,CNC Turning,FR,France,11,,497.0,,,QUENTIN OSTERROTH,7326,True,3173
+WSC2011,06,CNC Turning,NO,Norway,11,,499.0,,,MARTIN MUNKEBY,7848,True,3171
+WSC2011,06,CNC Turning,SG,Singapore,11,,499.0,,,HAN JIE ONG,8087,True,3172
+WSC2011,06,CNC Turning,UK,United Kingdom,14,,495.0,,,PHILLIP SPOWART,7031,True,3174
+WSC2011,06,CNC Turning,FI,Finland,15,,482.0,,,OSSI LILJA,8184,True,3175
+WSC2011,06,CNC Turning,IN,India,16,,461.0,,,BISWARANJAN PRADHAN,6934,True,3176
+WSC2011,06,CNC Turning,CO,Colombia,17,,451.0,,,JAVIER BRICEÑO,6826,True,3177
+WSC2011,06,CNC Turning,ES,Spain,18,,445.0,,,KEVIN GRAN,7782,True,3178
+WSC2011,06,CNC Turning,US,United States of America,19,,441.0,,,MAXWELL HERSHEY,8540,True,3179
+WSC2011,06,CNC Turning,BR,Brazil,4,Medallion for Excellence,531.0,,,RAFAEL SANTOS,7462,True,3164
+WSC2011,06,CNC Turning,DE,Germany,5,Medallion for Excellence,521.0,,,KONSTANTIN MICHEL,7583,True,3166
+WSC2011,06,CNC Turning,TW,Chinese Taipei,5,Medallion for Excellence,523.0,,,TZU-LING TU,7210,True,3165
+WSC2011,06,CNC Turning,AT,Austria,7,Medallion for Excellence,520.0,,,MARTIN FINK,8290,True,3167
+WSC2011,06,CNC Turning,CN,China,7,Medallion for Excellence,519.0,,,GUODONG SHENG,8633,True,3168
+WSC2011,06,CNC Turning,CH,Switzerland,9,Medallion for Excellence,507.0,,,RAPHAEL BICHET,8302,True,3169
+WSC2011,07,CNC Milling,JP,Japan,1,Gold,545.0,,,KENGO WATANABE,8431,True,3180
+WSC2011,07,CNC Milling,KR,Korea,1,Gold,544.0,,,MIN GU LEE,8034,True,3181
+WSC2011,07,CNC Milling,NL,Netherlands,10,,496.0,,,CHRIS VAN HELMOND,7885,True,3189
+WSC2011,07,CNC Milling,UK,United Kingdom,10,,494.0,,,DAVID NICHOLL,7030,True,3190
+WSC2011,07,CNC Milling,CA,Canada,12,,492.0,,,LUKE MOORE,6715,True,3191
+WSC2011,07,CNC Milling,AT,Austria,13,,488.0,,,PAUL LADSTÄTTER,8063,True,3192
+WSC2011,07,CNC Milling,FI,Finland,13,,486.0,,,LASSE TUOMINEN,8067,True,3193
+WSC2011,07,CNC Milling,SE,Sweden,15,,480.0,,,OSKAR JONSSON,11596,True,3194
+WSC2011,07,CNC Milling,FR,France,16,,472.0,,,YANN CHESSERON,7325,True,3195
+WSC2011,07,CNC Milling,US,United States of America,17,,468.0,,,JOSEPH KING,8539,True,3196
+WSC2011,07,CNC Milling,BE,Belgium,18,,449.0,,,ARNAUD HAJDU,7743,True,3197
+WSC2011,07,CNC Milling,ES,Spain,19,,439.0,,,LARRAITZ URANGA,7781,True,3198
+WSC2011,07,CNC Milling,BR,Brazil,3,Bronze,535.0,,,THIAGO CARVALHO,26971,True,3183
+WSC2011,07,CNC Milling,LI,Principality of Liechtenstein,3,Bronze,536.0,,,SANDRO OSPELT,8324,True,3182
+WSC2011,07,CNC Milling,CH,Switzerland,5,Medallion for Excellence,532.0,,,TOBIAS MEYER,8301,True,3184
+WSC2011,07,CNC Milling,CN,China,6,Medallion for Excellence,521.0,,,ZEMIN WANG,8634,True,3185
+WSC2011,07,CNC Milling,SG,Singapore,7,Medallion for Excellence,512.0,,,ZHAOXIONG KENNY LIN,7678,True,3186
+WSC2011,07,CNC Milling,TW,Chinese Taipei,7,Medallion for Excellence,510.0,,,CHENG-SHEN KO,7209,True,3187
+WSC2011,07,CNC Milling,PT,Portugal,9,Medallion for Excellence,502.0,,,CLÁUDIO COSTA,7242,True,3188
+WSC2011,08,Mould Making,KR,Korea,1,Gold,538.0,,,JUN OH LEE,8033,True,3199
+WSC2011,08,Mould Making,TH,Thailand,2,Silver,516.0,,,SARAWUT KHAW-NGOEN,9662,True,3200
+WSC2011,08,Mould Making,TW,Chinese Taipei,3,Bronze,513.0,,,SHAO-MIN LEE,7208,True,3201
+WSC2011,08,Mould Making,AT,Austria,4,Medallion for Excellence,509.0,,,MARTIN HINTEREGGER,8289,True,3203
+WSC2011,08,Mould Making,ID,Indonesia,4,Medallion for Excellence,510.0,,,LUTFY EKA BIARDHIAN,165257,True,3202
+WSC2011,08,Mould Making,IN,India,6,,497.0,,,SHAHEER V,6933,True,3204
+WSC2011,08,Mould Making,BR,Brazil,7,,487.0,,,LUCAS TERRA,7460,True,3205
+WSC2011,08,Mould Making,JP,Japan,8,,430.0,,,TAKUMA YOSHIDA,8429,True,3206
+WSC2011,09,IT Software Solutions for Business,SG,Singapore,1,Gold,547.0,,,WAI KUAN CHOW,8086,True,3207
+WSC2011,09,IT Software Solutions for Business,ID,Indonesia,10,Medallion for Excellence,513.0,,,SEPTI SETIAWATI,7420,True,3216
+WSC2011,09,IT Software Solutions for Business,FI,Finland,11,Medallion for Excellence,509.0,,,JUHA KIISKI,8183,True,3217
+WSC2011,09,IT Software Solutions for Business,SA,Saudi Arabia,12,Medallion for Excellence,504.0,,,RIYADH ALTAYIB,8259,True,3218
+WSC2011,09,IT Software Solutions for Business,HK,"Hong Kong, China",13,,496.0,,,KA WAI WONG,7649,True,3219
+WSC2011,09,IT Software Solutions for Business,ES,Spain,14,,482.0,,,HÉCTOR ALCALDE,7780,True,3222
+WSC2011,09,IT Software Solutions for Business,FR,France,14,,484.0,,,LAËTITIA HUAULME,7324,True,3220
+WSC2011,09,IT Software Solutions for Business,TW,Chinese Taipei,14,,482.0,,,WEN-HUI CHANG,7207,True,3221
+WSC2011,09,IT Software Solutions for Business,OM,Oman,17,,479.0,,,QAIS AL TOUBI,8665,True,3223
+WSC2011,09,IT Software Solutions for Business,MO,"Macao, China",18,,467.0,,,I KEI LEI,8612,True,3224
+WSC2011,09,IT Software Solutions for Business,JP,Japan,19,,453.0,,,REINA SAKAKIBARA,8428,True,3226
+WSC2011,09,IT Software Solutions for Business,TH,Thailand,19,,454.0,,,WANNARAT KOWITANARATKORNKUL,8812,True,3225
+WSC2011,09,IT Software Solutions for Business,BR,Brazil,2,Silver,544.0,,,PAOLO BUENO,7459,True,3208
+WSC2011,09,IT Software Solutions for Business,KR,Korea,2,Silver,543.0,,,YUN CHEOL HA,8032,True,3209
+WSC2011,09,IT Software Solutions for Business,IN,India,21,,437.0,,,PRIYANKA NAG,6932,True,3227
+WSC2011,09,IT Software Solutions for Business,CA,Canada,4,Medallion for Excellence,522.0,,,STEVEN HEIDEL,6716,True,3210
+WSC2011,09,IT Software Solutions for Business,AE,United Arab Emirates,5,Medallion for Excellence,518.0,,,ABDUL RAHMAN AL MARZOOQI,8869,True,3212
+WSC2011,09,IT Software Solutions for Business,AU,Australia,5,Medallion for Excellence,517.0,,,ANDREW SEELEY,6856,True,3213
+WSC2011,09,IT Software Solutions for Business,IR,Iran,5,Medallion for Excellence,519.0,,,SAMAN SOLTANI,11114,True,3211
+WSC2011,09,IT Software Solutions for Business,CH,Switzerland,8,Medallion for Excellence,516.0,,,SANDRA JOHANNA SCHMID,8300,True,3214
+WSC2011,09,IT Software Solutions for Business,VN,Vietnam,8,Medallion for Excellence,514.0,,,NGUYEN TRUNG HIEU,6806,True,3215
+WSC2011,10,Welding,KR,Korea,1,Gold,540.0,,,HYEON WOO KIM,8031,True,3228
+WSC2011,10,Welding,IR,Iran,10,Medallion for Excellence,524.0,,,JAVAD MINAJOUBARI,6991,True,3237
+WSC2011,10,Welding,CA,Canada,11,Medallion for Excellence,521.0,,,MIKAEL HUDON,6717,True,3238
+WSC2011,10,Welding,TW,Chinese Taipei,12,Medallion for Excellence,516.0,,,YEN-JU TSENG,7206,True,3239
+WSC2011,10,Welding,FR,France,13,Medallion for Excellence,513.0,,,GUILLAUME MASURE,7321,True,3240
+WSC2011,10,Welding,SE,Sweden,13,Medallion for Excellence,511.0,,,MARKUS FREDRIKSSON,7709,True,3241
+WSC2011,10,Welding,AT,Austria,15,Medallion for Excellence,509.0,,,MARKUS AICHINGER,11900,True,3243
+WSC2011,10,Welding,NZ,New Zealand,15,Medallion for Excellence,510.0,,,BRADLEY WOOD,7907,True,3242
+WSC2011,10,Welding,ID,Indonesia,17,Medallion for Excellence,506.0,,,EKAK NOVIANTO,7694,True,3244
+WSC2011,10,Welding,MY,Malaysia,18,,499.0,,,MUHAMMAD AZMIE BAKAR,7510,True,3245
+WSC2011,10,Welding,PT,Portugal,19,,496.0,,,MÁRCIO SILVA,7241,True,3246
+WSC2011,10,Welding,AU,Australia,2,Silver,534.0,,,GUY BROOKS,6864,True,3231
+WSC2011,10,Welding,CN,China,2,Silver,535.0,,,XIANFENG PEI,8635,True,3230
+WSC2011,10,Welding,US,United States of America,2,Silver,536.0,,,BRADLEY CLINK,7055,True,3229
+WSC2011,10,Welding,ZA,South Africa,20,,493.0,,,CHRISTAAN VAN ZIJL,7142,True,3247
+WSC2011,10,Welding,FI,Finland,21,,489.0,,,RIKU LÄHTEENMAA,8182,True,3248
+WSC2011,10,Welding,CH,Switzerland,22,,482.0,,,FRANZ-JOSEF VENETZ,8384,True,3249
+WSC2011,10,Welding,DE,Germany,22,,480.0,,,HEIKO FREYER,7582,True,3250
+WSC2011,10,Welding,BE,Belgium,24,,475.0,,,TIMOTI LICATA,7742,True,3251
+WSC2011,10,Welding,NO,Norway,24,,475.0,,,MATS FREMO RØSKAFT,7847,True,3252
+WSC2011,10,Welding,HK,"Hong Kong, China",26,,455.0,,,WAI MAN CHAN,7648,True,3255
+WSC2011,10,Welding,OM,Oman,26,,456.0,,,ABDULRAHMAN AL BREIKI,8751,True,3254
+WSC2011,10,Welding,TN,Tunisia,26,,457.0,,,AYMEN ELLEUCH,8656,True,3253
+WSC2011,10,Welding,CO,Colombia,29,,452.0,,,JUAN ANTONIO CORRALES,6830,True,3256
+WSC2011,10,Welding,SA,Saudi Arabia,29,,450.0,,,TURKI ALDOSSARY,7343,True,3257
+WSC2011,10,Welding,AE,United Arab Emirates,31,,440.0,,,AHMED ALSHEHHI,8870,True,3258
+WSC2011,10,Welding,BR,Brazil,5,Bronze,532.0,,,LUCAS FILGUEIRA,7458,True,3232
+WSC2011,10,Welding,UK,United Kingdom,5,Bronze,532.0,,,JAKE RAMBALDINI,7029,True,3233
+WSC2011,10,Welding,JP,Japan,7,Medallion for Excellence,528.0,,,TOSHIYASU INAKI,8427,True,3235
+WSC2011,10,Welding,NL,Netherlands,7,Medallion for Excellence,529.0,,,EDWIN MABELIS,7884,True,3234
+WSC2011,10,Welding,TH,Thailand,7,Medallion for Excellence,527.0,,,AKARAPOL MAPHONGPHENG,8814,True,3236
+WSC2011,11,Offset Printing,JP,Japan,1,Gold,542.0,,,MAKIKO ITO,8426,True,3259
+WSC2011,11,Offset Printing,US,United States of America,10,,457.0,,,BENJAMIN PHILLIPS,8588,True,3268
+WSC2011,11,Offset Printing,SE,Sweden,11,,453.0,,,ELSA CHRISTOPHIS,7705,True,3269
+WSC2011,11,Offset Printing,FI,Finland,2,Silver,531.0,,,SUSANNA VIRTANEN,8181,True,3260
+WSC2011,11,Offset Printing,BE,Belgium,3,Bronze,527.0,,,OLIVIER DELOGE,7741,True,3261
+WSC2011,11,Offset Printing,DE,Germany,4,Medallion for Excellence,518.0,,,SASCHA EPP,6667,True,3262
+WSC2011,11,Offset Printing,FR,France,4,Medallion for Excellence,517.0,,,JULIEN MERCIER,7323,True,3263
+WSC2011,11,Offset Printing,DK,Denmark,6,Medallion for Excellence,514.0,,,MADS AABY NIELSEN,8575,True,3264
+WSC2011,11,Offset Printing,CH,Switzerland,7,,491.0,,,MICHAEL THOMAS BIELI,8481,True,3265
+WSC2011,11,Offset Printing,CA,Canada,8,,488.0,,,TOM MIDDLEBRO,8518,True,3266
+WSC2011,11,Offset Printing,HK,"Hong Kong, China",9,,463.0,,,TSZ FUNG CHEUNG,7083,True,3267
+WSC2011,12,Wall and Floor Tiling,CH,Switzerland,1,Gold,532.0,,,THOMAS GUGGER,8385,True,3270
+WSC2011,12,Wall and Floor Tiling,AU,Australia,11,Medallion for Excellence,510.0,,,JAKE HALL,6855,True,3281
+WSC2011,12,Wall and Floor Tiling,ID,Indonesia,11,Medallion for Excellence,511.0,,,NUGROHO PRIYO UTOMO,7693,True,3280
+WSC2011,12,Wall and Floor Tiling,HK,"Hong Kong, China",13,Medallion for Excellence,506.0,,,TUNG LEUNG LAM,7466,True,3282
+WSC2011,12,Wall and Floor Tiling,SE,Sweden,13,Medallion for Excellence,506.0,,,ADAM RENSTRÖM,7704,True,3283
+WSC2011,12,Wall and Floor Tiling,UK,United Kingdom,15,,486.0,,,IAN MCMAHON,7028,True,3284
+WSC2011,12,Wall and Floor Tiling,LU,Luxembourg,16,,476.0,,,PATRICK STREIT,7506,True,3285
+WSC2011,12,Wall and Floor Tiling,BE,Belgium,17,,471.0,,,MICHAËL PENSATO,7740,True,3286
+WSC2011,12,Wall and Floor Tiling,HU,Hungary,18,,465.0,,,ÁDÁM SZÁRAZ,7070,True,3287
+WSC2011,12,Wall and Floor Tiling,EE,Estonia,19,,448.0,,,TAAVI MICHELSON,7279,True,3288
+WSC2011,12,Wall and Floor Tiling,DE,Germany,2,Silver,527.0,,,JOHANNES FLEISCHMANN,7531,True,3271
+WSC2011,12,Wall and Floor Tiling,ES,Spain,20,,414.0,,,SERGIO SUÁREZ,7779,True,3289
+WSC2011,12,Wall and Floor Tiling,AT,Austria,3,Bronze,524.0,,,ANDREAS LIFTINGER,8287,True,3272
+WSC2011,12,Wall and Floor Tiling,IT,"South Tyrol, Italy",3,Bronze,522.0,,,LUCAS GIANORDOLI,7729,True,3273
+WSC2011,12,Wall and Floor Tiling,KR,Korea,3,Bronze,522.0,,,CHAN HO LEE,8030,True,3274
+WSC2011,12,Wall and Floor Tiling,BR,Brazil,6,Medallion for Excellence,519.0,,,JECIVALDO SILVA,7457,True,3275
+WSC2011,12,Wall and Floor Tiling,FR,France,6,Medallion for Excellence,517.0,,,JESSY TEMPLIER,7320,True,3277
+WSC2011,12,Wall and Floor Tiling,TH,Thailand,6,Medallion for Excellence,518.0,,,KAMFONG SAINGAM,8813,True,3276
+WSC2011,12,Wall and Floor Tiling,NL,Netherlands,9,Medallion for Excellence,515.0,,,GUIDO VAN DINGENEN,7823,True,3278
+WSC2011,12,Wall and Floor Tiling,TW,Chinese Taipei,9,Medallion for Excellence,513.0,,,YU-HSUAN CHOU,7205,True,3279
+WSC2011,13,Autobody Repair,JP,Japan,1,Gold,534.0,,,YUICHI SAWAKI,8424,True,3290
+WSC2011,13,Autobody Repair,FI,Finland,10,,496.0,,,TONI ERKKILÄ,8180,True,3299
+WSC2011,13,Autobody Repair,US,United States of America,10,,495.0,,,CAMERON MCCREERY,6705,True,3300
+WSC2011,13,Autobody Repair,DE,Germany,12,,488.0,,,VINCENT WICKER,7581,True,3301
+WSC2011,13,Autobody Repair,NZ,New Zealand,13,,479.0,,,ANDRÉ PRINSLOO,7906,True,3302
+WSC2011,13,Autobody Repair,ES,Spain,14,,465.0,,,DAVID MARTÍNEZ,7778,True,3303
+WSC2011,13,Autobody Repair,ZA,South Africa,15,,413.0,,,TASLEEM NICHOLAS,7260,True,3304
+WSC2011,13,Autobody Repair,DK,Denmark,2,Silver,525.0,,,NIKOLAJ VINTHER BUUR-MOURIDSEN,8361,True,3291
+WSC2011,13,Autobody Repair,TW,Chinese Taipei,2,Silver,525.0,,,MIN-CHEN CHO,7204,True,3292
+WSC2011,13,Autobody Repair,UK,United Kingdom,2,Silver,524.0,,,ROSS VARNAM,7027,True,3293
+WSC2011,13,Autobody Repair,KR,Korea,5,Medallion for Excellence,521.0,,,HYEON WOO JU,8029,True,3294
+WSC2011,13,Autobody Repair,CA,Canada,6,Medallion for Excellence,518.0,,,NIGEL RENSCHLER,6718,True,3295
+WSC2011,13,Autobody Repair,NO,Norway,7,Medallion for Excellence,513.0,,,PETTER KRISTIANSEN,154561,True,3296
+WSC2011,13,Autobody Repair,AU,Australia,8,Medallion for Excellence,503.0,,,CRAIG AGNEW,6854,True,3297
+WSC2011,13,Autobody Repair,FR,France,8,Medallion for Excellence,503.0,,,DIMITRI COLLAS,7319,True,3298
+WSC2011,14,Aircraft Maintenance,IE,Ireland,1,Gold,557.0,,,COLIN CALLAGHAN,8737,True,3305
+WSC2011,14,Aircraft Maintenance,FI,Finland,2,Silver,518.0,,,ANTTI UKKONEN,8179,True,3306
+WSC2011,14,Aircraft Maintenance,CA,Canada,3,Bronze,511.0,,,RYAN GOMES,6748,True,3307
+WSC2011,14,Aircraft Maintenance,UK,United Kingdom,4,,491.0,,,KERRY MCSTEA,7026,True,3308
+WSC2011,14,Aircraft Maintenance,ES,Spain,5,,488.0,,,FRANCISCO NAVARRO,7777,True,3309
+WSC2011,14,Aircraft Maintenance,NL,Netherlands,6,,479.0,,,NICK BRESSERS,7822,True,3310
+WSC2011,14,Aircraft Maintenance,FR,France,7,,457.0,,,BAPTISTE BARRAUD,7318,True,3311
+WSC2011,15,Plumbing and Heating,UK,United Kingdom,1,Gold,559.0,,,SHANE TREVITT,7025,True,3312
+WSC2011,15,Plumbing and Heating,AU,Australia,10,Medallion for Excellence,506.0,,,PHILLIP LITTLE,6853,True,3322
+WSC2011,15,Plumbing and Heating,IE,Ireland,10,Medallion for Excellence,505.0,,,DANIEL RATTIGAN,8738,True,3323
+WSC2011,15,Plumbing and Heating,IT,"South Tyrol, Italy",10,Medallion for Excellence,507.0,,,FLORIAN MITTELBERGER,7728,True,3321
+WSC2011,15,Plumbing and Heating,SE,Sweden,13,Medallion for Excellence,502.0,,,CHRISTOFFER SAMUELSSON,7708,True,3325
+WSC2011,15,Plumbing and Heating,TH,Thailand,13,Medallion for Excellence,504.0,,,NAWIN CHOBSORN,8815,True,3324
+WSC2011,15,Plumbing and Heating,FI,Finland,15,,493.0,,,MARKUS VIITALA,8178,True,3328
+WSC2011,15,Plumbing and Heating,IS,Iceland,15,,494.0,,,FRIDRIK OSKARSSON,7866,True,3327
+WSC2011,15,Plumbing and Heating,NL,Netherlands,15,,494.0,,,JOWIN BOERBOOM,7813,True,3326
+WSC2011,15,Plumbing and Heating,DK,Denmark,18,,490.0,,,CASPAR CHRISTIANSEN,7835,True,3330
+WSC2011,15,Plumbing and Heating,MY,Malaysia,18,,491.0,,,WILSON KULING,7608,True,3329
+WSC2011,15,Plumbing and Heating,AT,Austria,2,Silver,546.0,,,STEFAN EICHINGER,7911,True,3313
+WSC2011,15,Plumbing and Heating,CH,Switzerland,2,Silver,546.0,,,FLORIAN MÜLLER,8377,True,3314
+WSC2011,15,Plumbing and Heating,ID,Indonesia,20,,477.0,,,BUDIMAN SYAHPUTRA,7692,True,3332
+WSC2011,15,Plumbing and Heating,LU,Luxembourg,20,,477.0,,,MARTIN BERKELS,7505,True,3331
+WSC2011,15,Plumbing and Heating,CA,Canada,22,,464.0,,,MAXIME PICHÉ,6719,True,3333
+WSC2011,15,Plumbing and Heating,TW,Chinese Taipei,22,,463.0,,,YU-YU LIN,7203,True,3334
+WSC2011,15,Plumbing and Heating,HK,"Hong Kong, China",24,,461.0,,,SING YU TAI,7646,True,3335
+WSC2011,15,Plumbing and Heating,US,United States of America,25,,452.0,,,RYAN SPINDEN,8538,True,3336
+WSC2011,15,Plumbing and Heating,IN,India,26,,435.0,,,RADHESHYAM BEHERA,6931,True,3337
+WSC2011,15,Plumbing and Heating,JP,Japan,4,Medallion for Excellence,541.0,,,SHOICHI HONDA,8425,True,3315
+WSC2011,15,Plumbing and Heating,DE,Germany,5,Medallion for Excellence,525.0,,,STEFAN EBNER,7079,True,3316
+WSC2011,15,Plumbing and Heating,KR,Korea,5,Medallion for Excellence,523.0,,,MIN SEOK KIM,8027,True,3317
+WSC2011,15,Plumbing and Heating,FR,France,7,Medallion for Excellence,519.0,,,SÉVERIN GOUILLON,7317,True,3318
+WSC2011,15,Plumbing and Heating,ES,Spain,8,Medallion for Excellence,513.0,,,JUAN GABRIEL SIRVENT,7771,True,3319
+WSC2011,15,Plumbing and Heating,NZ,New Zealand,8,Medallion for Excellence,512.0,,,SCOTT NICHOLSON,7905,True,3320
+WSC2011,16,Electronics,BR,Brazil,1,Gold,553.0,,,GABRIEL DESPINDULA,7456,True,3338
+WSC2011,16,Electronics,CA,Canada,10,,496.0,,,DANIEL HALL,6720,True,3347
+WSC2011,16,Electronics,DE,Germany,11,,489.0,,,FELIX WALTER,7580,True,3348
+WSC2011,16,Electronics,MA,Morocco,11,,487.0,,,YASSINE ELMOSTARHFIR,6962,True,3349
+WSC2011,16,Electronics,UK,United Kingdom,13,,481.0,,,ANDREW FIELDING,7024,True,3350
+WSC2011,16,Electronics,CO,Colombia,14,,474.0,,,EDICSON GARZON,6825,True,3351
+WSC2011,16,Electronics,ES,Spain,15,,470.0,,,DANIEL RICHART,7776,True,3353
+WSC2011,16,Electronics,IN,India,15,,468.0,,,ASHOK KUMAR M,6930,True,3354
+WSC2011,16,Electronics,PT,Portugal,15,,470.0,,,CARLOS REIS,7240,True,3352
+WSC2011,16,Electronics,TN,Tunisia,18,,463.0,,,HOUCEM BENKRIR,8680,True,3355
+WSC2011,16,Electronics,TH,Thailand,19,,460.0,,,KIATTISAK WONGANAN,8816,True,3356
+WSC2011,16,Electronics,CH,Switzerland,2,Silver,545.0,,,BASIL BRUNNER,8380,True,3340
+WSC2011,16,Electronics,TW,Chinese Taipei,2,Silver,546.0,,,YIN-TING CHANG,7202,True,3339
+WSC2011,16,Electronics,KR,Korea,4,Medallion for Excellence,539.0,,,SEONG JAE KIM,8026,True,3341
+WSC2011,16,Electronics,JP,Japan,5,Medallion for Excellence,532.0,,,SHUTO MATSUURA,8423,True,3342
+WSC2011,16,Electronics,FI,Finland,6,Medallion for Excellence,516.0,,,VILLE VIITALA,8177,True,3343
+WSC2011,16,Electronics,VN,Vietnam,6,Medallion for Excellence,515.0,,,LE ANH TUAN,6805,True,3344
+WSC2011,16,Electronics,IR,Iran,8,,499.0,,,ALIREZA SALEHI,6990,True,3345
+WSC2011,16,Electronics,SG,Singapore,8,,498.0,,,CHEE KIT TANG,7788,True,3346
+WSC2011,17,Web Design,BR,Brazil,1,Gold,551.0,,,NATÃ BARBOSA,7455,True,3357
+WSC2011,17,Web Design,SE,Sweden,12,Medallion for Excellence,516.0,,,LINUS UNNEBÄCK,7707,True,3368
+WSC2011,17,Web Design,ID,Indonesia,13,Medallion for Excellence,503.0,,,MOEHAMMAD AHMAD YUNUS,7419,True,3369
+WSC2011,17,Web Design,ES,Spain,14,,497.0,,,CRISTIAN TORRIJOS,7775,True,3370
+WSC2011,17,Web Design,BE,Belgium,15,,494.0,,,GUILLAUME GIANSANTE,7739,True,3372
+WSC2011,17,Web Design,CA,Canada,15,,494.0,,,RILEY VAN RYSWYK,6754,True,3371
+WSC2011,17,Web Design,TH,Thailand,15,,493.0,,,ANUCHA PETCHAGUN,8817,True,3373
+WSC2011,17,Web Design,AU,Australia,18,,490.0,,,BLAKE CANNELL,6852,True,3374
+WSC2011,17,Web Design,FI,Finland,19,,483.0,,,DRAZEN DODIK,8176,True,3375
+WSC2011,17,Web Design,KR,Korea,2,Silver,547.0,,,KYOUNG WOON KO,8024,True,3358
+WSC2011,17,Web Design,CO,Colombia,20,,473.0,,,STITH TORRES,6824,True,3376
+WSC2011,17,Web Design,IN,India,20,,473.0,,,SHAILESH LOHIA,6929,True,3377
+WSC2011,17,Web Design,FR,France,22,,470.0,,,NADIM RAAD,7316,True,3378
+WSC2011,17,Web Design,OM,Oman,22,,468.0,,,SAID AL RIYAMI,8666,True,3379
+WSC2011,17,Web Design,AE,United Arab Emirates,24,,459.0,,,MARWAN AL MANSOORI,8871,True,3382
+WSC2011,17,Web Design,JM,Jamaica,24,,460.0,,,RUSHIO BILLINGS,8781,True,3381
+WSC2011,17,Web Design,SA,Saudi Arabia,24,,461.0,,,RAKAN ALGHOFAILI,8258,True,3380
+WSC2011,17,Web Design,US,United States of America,27,,436.0,,,BRETT PATTERSON,8537,True,3383
+WSC2011,17,Web Design,MO,"Macao, China",3,Bronze,540.0,,,MAN FAI HO,8613,True,3359
+WSC2011,17,Web Design,UK,United Kingdom,4,Medallion for Excellence,532.0,,,DAVID BOWEN,7023,True,3360
+WSC2011,17,Web Design,IR,Iran,5,Medallion for Excellence,529.0,,,MIR MOHAMMAD REZA MOUSAVI JEYD,6989,True,3361
+WSC2011,17,Web Design,CN,China,6,Medallion for Excellence,526.0,,,QIAN LI,8636,True,3362
+WSC2011,17,Web Design,TW,Chinese Taipei,6,Medallion for Excellence,525.0,,,BO-YUAN SU,7201,True,3363
+WSC2011,17,Web Design,CH,Switzerland,8,Medallion for Excellence,519.0,,,SEBASTIAN HÄNI,8299,True,3367
+WSC2011,17,Web Design,JP,Japan,8,Medallion for Excellence,521.0,,,DAISUKE NAGAI,8422,True,3365
+WSC2011,17,Web Design,SG,Singapore,8,Medallion for Excellence,521.0,,,SHAN XIAN YONG,8085,True,3364
+WSC2011,17,Web Design,VN,Vietnam,8,Medallion for Excellence,520.0,,,LE THI THUY DUONG,6804,True,3366
+WSC2011,18,Electrical Installations,AU,Australia,1,Gold,531.0,,,BENJAMIN HOUGHTON,6851,True,3386
+WSC2011,18,Electrical Installations,CH,Switzerland,1,Gold,533.0,,,GIAN-ANDREA CASAULTA,8480,True,3384
+WSC2011,18,Electrical Installations,IE,Ireland,1,Gold,533.0,,,KIERAN DOHERTY,8739,True,3385
+WSC2011,18,Electrical Installations,FI,Finland,10,Medallion for Excellence,523.0,,,MATTI ALARAUTALAHTI,8175,True,3393
+WSC2011,18,Electrical Installations,TW,Chinese Taipei,10,Medallion for Excellence,521.0,,,YI-CHIA CHEN,7200,True,3394
+WSC2011,18,Electrical Installations,FR,France,12,Medallion for Excellence,520.0,,,PIERRICK MANDIN,7315,True,3395
+WSC2011,18,Electrical Installations,BR,Brazil,13,Medallion for Excellence,515.0,,,LUCAS SOUZA,7454,True,3396
+WSC2011,18,Electrical Installations,CA,Canada,13,Medallion for Excellence,514.0,,,TIMOTHY TWA,6721,True,3397
+WSC2011,18,Electrical Installations,BE,Belgium,15,Medallion for Excellence,511.0,,,PIERRE-OLIVIER VAN ISACKER,7073,True,3398
+WSC2011,18,Electrical Installations,NZ,New Zealand,16,Medallion for Excellence,504.0,,,SHAUN MCINERNEY,7904,True,3399
+WSC2011,18,Electrical Installations,NL,Netherlands,17,Medallion for Excellence,500.0,,,RUBEN VAN GEMERT,7812,True,3401
+WSC2011,18,Electrical Installations,TH,Thailand,17,Medallion for Excellence,500.0,,,APITEP SRIMUANGMAI,8818,True,3400
+WSC2011,18,Electrical Installations,ES,Spain,19,,496.0,,,GUILLERMO RULL,7774,True,3403
+WSC2011,18,Electrical Installations,MY,Malaysia,19,,496.0,,,MUHAMMAD NORSYAZANI ABDUL KADIR,7509,True,3402
+WSC2011,18,Electrical Installations,DE,Germany,21,,489.0,,,DANIEL WAGNER,4252,True,3404
+WSC2011,18,Electrical Installations,HU,Hungary,21,,488.0,,,FERENC CSÍKOS,6884,True,3405
+WSC2011,18,Electrical Installations,ID,Indonesia,21,,487.0,,,YUDI AZWAR HAMID,7418,True,3406
+WSC2011,18,Electrical Installations,AT,Austria,24,,485.0,,,DOMINIK RECHBERGER,8286,True,3407
+WSC2011,18,Electrical Installations,MO,"Macao, China",25,,461.0,,,CHENG KU,7104,True,3408
+WSC2011,18,Electrical Installations,VN,Vietnam,25,,461.0,,,TRAN VAN TOI,8785,True,3409
+WSC2011,18,Electrical Installations,IS,Iceland,27,,457.0,,,ARNAR HELGI AGUSTSSON,7890,True,3410
+WSC2011,18,Electrical Installations,OM,Oman,28,,443.0,,,AMRAN AL BULUSHI,8684,True,3411
+WSC2011,18,Electrical Installations,AE,United Arab Emirates,29,,437.0,,,OMAR AL MARZOOQI,8872,True,3412
+WSC2011,18,Electrical Installations,TN,Tunisia,30,,431.0,,,MOHSEN BONDKA,8657,True,3413
+WSC2011,18,Electrical Installations,KR,Korea,4,Bronze,530.0,,,SEON JUNG HWANG,8023,True,3387
+WSC2011,18,Electrical Installations,NO,Norway,4,Bronze,529.0,,,BERNT ERLEND FRIDELL,7853,True,3388
+WSC2011,18,Electrical Installations,JP,Japan,6,Medallion for Excellence,525.0,,,RIKIYA SEKI,8421,True,3392
+WSC2011,18,Electrical Installations,PT,Portugal,6,Medallion for Excellence,526.0,,,PEDRO CORDEIRO,7239,True,3390
+WSC2011,18,Electrical Installations,SE,Sweden,6,Medallion for Excellence,526.0,,,ANDREAS HOLMBERG,7917,True,3391
+WSC2011,18,Electrical Installations,UK,United Kingdom,6,Medallion for Excellence,527.0,,,CHRISTOPHER YOUNG,7022,True,3389
+WSC2011,19,Industrial Control,KR,Korea,1,Gold,548.0,,,HEE JAE YOO,8021,True,3414
+WSC2011,19,Industrial Control,AT,Austria,10,Medallion for Excellence,517.0,,,THOMAS SCHNEIDER,8285,True,3423
+WSC2011,19,Industrial Control,FI,Finland,11,Medallion for Excellence,510.0,,,TUOMAS PIRTTIJOKI,8174,True,3425
+WSC2011,19,Industrial Control,TW,Chinese Taipei,11,Medallion for Excellence,512.0,,,HSUAN-YANG HSU,7199,True,3424
+WSC2011,19,Industrial Control,LI,Principality of Liechtenstein,13,Medallion for Excellence,503.0,,,SEBASTIAN KIND,8323,True,3426
+WSC2011,19,Industrial Control,IE,Ireland,14,,497.0,,,DANIEL DZIERZBA,8740,True,3427
+WSC2011,19,Industrial Control,SE,Sweden,14,,495.0,,,TOBIAS WINGE,7706,True,3428
+WSC2011,19,Industrial Control,BE,Belgium,16,,491.0,,,JOHAN MONET,7738,True,3429
+WSC2011,19,Industrial Control,ID,Indonesia,16,,489.0,,,TOFIK HARTONO,7417,True,3430
+WSC2011,19,Industrial Control,IT,"South Tyrol, Italy",18,,488.0,,,DAVID SMANIOTTO,7727,True,3431
+WSC2011,19,Industrial Control,CA,Canada,19,,484.0,,,MICHAEL DEMERS,8570,True,3432
+WSC2011,19,Industrial Control,JP,Japan,2,Silver,541.0,,,YUKI OKAYAMA,8420,True,3415
+WSC2011,19,Industrial Control,NZ,New Zealand,20,,478.0,,,DANIEL BERRY,7903,True,3433
+WSC2011,19,Industrial Control,LU,Luxembourg,21,,470.0,,,POL MEDERNACH,7504,True,3434
+WSC2011,19,Industrial Control,ES,Spain,22,,456.0,,,JOSÉ ANTONIO GARCÍA,7773,True,3435
+WSC2011,19,Industrial Control,PT,Portugal,23,,453.0,,,MARCO SOARES,7238,True,3436
+WSC2011,19,Industrial Control,TN,Tunisia,24,,447.0,,,FEKER JAGHMOUM,8654,True,3437
+WSC2011,19,Industrial Control,MA,Morocco,25,,437.0,,,TAHA ZOUHRI,6959,True,3438
+WSC2011,19,Industrial Control,CH,Switzerland,3,Bronze,537.0,,,ANDRIN CAVEGN,8479,True,3416
+WSC2011,19,Industrial Control,BR,Brazil,4,Medallion for Excellence,532.0,,,MARCOS PAULO SANTOS,7453,True,3417
+WSC2011,19,Industrial Control,AU,Australia,5,Medallion for Excellence,528.0,,,DAVID MCPHERSON,6850,True,3418
+WSC2011,19,Industrial Control,DE,Germany,6,Medallion for Excellence,521.0,,,DOMINIC EICHINGER,7530,True,3421
+WSC2011,19,Industrial Control,NL,Netherlands,6,Medallion for Excellence,523.0,,,HENRIE MEYER,7883,True,3419
+WSC2011,19,Industrial Control,SG,Singapore,6,Medallion for Excellence,521.0,,,TING WEI CHONG,7677,True,3420
+WSC2011,19,Industrial Control,FR,France,9,Medallion for Excellence,520.0,,,AURÉLIEN CADIOU,7314,True,3422
+WSC2011,20,Bricklaying,DK,Denmark,1,Gold,540.0,,,NICOLAI MUNKSGAARD ASMUSSEN,7600,True,3439
+WSC2011,20,Bricklaying,UK,United Kingdom,1,Gold,539.0,,,PHILIP GREEN,7021,True,3440
+WSC2011,20,Bricklaying,FR,France,10,Medallion for Excellence,512.0,,,ARTHUR MAYER,7313,True,3449
+WSC2011,20,Bricklaying,ID,Indonesia,10,Medallion for Excellence,513.0,,,SURANTO SURANTO,7680,True,3448
+WSC2011,20,Bricklaying,VN,Vietnam,10,Medallion for Excellence,511.0,,,MAI VAN VIET,6803,True,3450
+WSC2011,20,Bricklaying,DE,Germany,13,Medallion for Excellence,505.0,,,DOMINIK CHYLEK,6833,True,3451
+WSC2011,20,Bricklaying,NZ,New Zealand,14,Medallion for Excellence,502.0,,,BENJAMIN ROCHE,7902,True,3452
+WSC2011,20,Bricklaying,BE,Belgium,15,,498.0,,,MIGUËL OCAP,7737,True,3453
+WSC2011,20,Bricklaying,TW,Chinese Taipei,16,,495.0,,,CHIA-YEN WU,7198,True,3454
+WSC2011,20,Bricklaying,NL,Netherlands,17,,491.0,,,TWAN SCHIPHORST,7745,True,3455
+WSC2011,20,Bricklaying,LI,Principality of Liechtenstein,18,,486.0,,,MARTIN NOSER,8322,True,3456
+WSC2011,20,Bricklaying,US,United States of America,18,,485.0,,,BRADLEY WRIGHT,6706,True,3457
+WSC2011,20,Bricklaying,SE,Sweden,20,,479.0,,,OSKAR HANSSON,7703,True,3458
+WSC2011,20,Bricklaying,TH,Thailand,21,,469.0,,,KUMAREE ARUNSUKHO,8819,True,3459
+WSC2011,20,Bricklaying,HU,Hungary,22,,452.0,,,ZOLTÁN LAKLIA,7069,True,3460
+WSC2011,20,Bricklaying,CO,Colombia,23,,436.0,,,JUAN DAVID CANO,6823,True,3461
+WSC2011,20,Bricklaying,EE,Estonia,24,,424.0,,,PRIIT MÄNNIK,7278,True,3462
+WSC2011,20,Bricklaying,AU,Australia,3,Bronze,526.0,,,LESTER TIBBLES,6849,True,3442
+WSC2011,20,Bricklaying,CH,Switzerland,3,Bronze,526.0,,,MORGAN CONUS,7977,True,3443
+WSC2011,20,Bricklaying,IT,"South Tyrol, Italy",3,Bronze,528.0,,,MICHAEL PAREINER,7726,True,3441
+WSC2011,20,Bricklaying,AT,Austria,6,Medallion for Excellence,522.0,,,THOMAS GAUGL,7980,True,3445
+WSC2011,20,Bricklaying,KR,Korea,6,Medallion for Excellence,524.0,,,SEONG HWA JANG,8020,True,3444
+WSC2011,20,Bricklaying,CA,Canada,8,Medallion for Excellence,520.0,,,NICOLAS RICHARD,6722,True,3446
+WSC2011,20,Bricklaying,FI,Finland,8,Medallion for Excellence,519.0,,,SAMU-PEKKA TOIVANEN,8173,True,3447
+WSC2011,21,Plastering and Drywall Systems,IE,Ireland,1,Gold,548.0,,,GARY CONDON,8745,True,3463
+WSC2011,21,Plastering and Drywall Systems,KR,Korea,2,Silver,529.0,,,GYU JIN HAN,8022,True,3464
+WSC2011,21,Plastering and Drywall Systems,CH,Switzerland,3,Bronze,525.0,,,ROSINA EBNETER,8298,True,3465
+WSC2011,21,Plastering and Drywall Systems,JP,Japan,4,Medallion for Excellence,513.0,,,KADUMI USHIMARU,8417,True,3466
+WSC2011,21,Plastering and Drywall Systems,UK,United Kingdom,5,Medallion for Excellence,508.0,,,JAMIE FINERAN,7020,True,3467
+WSC2011,21,Plastering and Drywall Systems,TW,Chinese Taipei,6,Medallion for Excellence,505.0,,,HUNG-JU LIN,7197,True,3468
+WSC2011,21,Plastering and Drywall Systems,FR,France,7,,490.0,,,AURÉLIEN COULON,7312,True,3469
+WSC2011,21,Plastering and Drywall Systems,DE,Germany,8,,473.0,,,ARMIN HUMMEL,7579,True,3470
+WSC2011,21,Plastering and Drywall Systems,CO,Colombia,9,,453.0,,,JAVIER RAMIREZ,6822,True,3472
+WSC2011,21,Plastering and Drywall Systems,ES,Spain,9,,455.0,,,JAIRO FRANCOS,7772,True,3471
+WSC2011,22,Painting and Decorating,AT,Austria,1,Gold,529.0,,,RENATE LÄSSER,8284,True,3473
+WSC2011,22,Painting and Decorating,DK,Denmark,1,Gold,528.0,,,JESPER GULD NIELSEN,7599,True,3474
+WSC2011,22,Painting and Decorating,HK,"Hong Kong, China",10,,496.0,,,A DUONG TRINH,7467,True,3483
+WSC2011,22,Painting and Decorating,UK,United Kingdom,10,,498.0,,,RACHEL TERRAS,7019,True,3482
+WSC2011,22,Painting and Decorating,IT,"South Tyrol, Italy",12,,489.0,,,DOMINIK GRUBER,7725,True,3484
+WSC2011,22,Painting and Decorating,HU,Hungary,13,,463.0,,,BALÁZS ZSOLT SZABÓ,7068,True,3485
+WSC2011,22,Painting and Decorating,OM,Oman,14,,442.0,,,ABDULLAH AL MAHROUQI,8752,True,3486
+WSC2011,22,Painting and Decorating,BE,Belgium,15,,432.0,,,NIKOLA DIZ TORRES,7736,True,3487
+WSC2011,22,Painting and Decorating,FI,Finland,3,Bronze,525.0,,,AKU KORHONEN,8172,True,3476
+WSC2011,22,Painting and Decorating,TW,Chinese Taipei,3,Bronze,525.0,,,CHIANG WU,7196,True,3475
+WSC2011,22,Painting and Decorating,CH,Switzerland,5,Medallion for Excellence,521.0,,,MARINA FELLER,8297,True,3477
+WSC2011,22,Painting and Decorating,SE,Sweden,5,Medallion for Excellence,519.0,,,ANDREAS GÄRDIN HYTTSTEN,7702,True,3478
+WSC2011,22,Painting and Decorating,FR,France,7,Medallion for Excellence,512.0,,,XAVIER VINCENT,7311,True,3480
+WSC2011,22,Painting and Decorating,KR,Korea,7,Medallion for Excellence,513.0,,,HYUN SEUNG LEE,8019,True,3479
+WSC2011,22,Painting and Decorating,AU,Australia,9,Medallion for Excellence,506.0,,,GUSTAVO ASCIUTTO,6848,True,3481
+WSC2011,23,Mobile Robotics,KR,Korea,1,Gold,588.0,,True,BYEONG YEON BAE; JEONG PYO GONG,8018; 8017,True,3488
+WSC2011,23,Mobile Robotics,CO,Colombia,11,,477.0,,,RAPHAEL PLAZAS; CRISTIAN SEGURA,6821; 6820,True,3500
+WSC2011,23,Mobile Robotics,FI,Finland,11,,477.0,,,AKU ILOLA; JASU ROMO,8171; 8170,True,3499
+WSC2011,23,Mobile Robotics,UK,United Kingdom,11,,479.0,,,DARREN LEWIS; PUJABEN VARSANI,7018; 7017,True,3498
+WSC2011,23,Mobile Robotics,AE,United Arab Emirates,14,,467.0,,,ABDULLA ALBASTAKI; SAIF ALSHEHHI,8873; 8874,True,3502
+WSC2011,23,Mobile Robotics,NL,Netherlands,14,,468.0,,,NATHALIE GOOSSENS; SAMANTHA VAN SPELDE,7820; 7819,True,3501
+WSC2011,23,Mobile Robotics,JP,Japan,2,Silver,525.0,,,HIROKI GOTO; SHU IKITA,8419; 8418,True,3489
+WSC2011,23,Mobile Robotics,ID,Indonesia,3,Bronze,522.0,,,MUHAMMAD TAWAKKAL GAFFAR; DENI SETIAWAN,7688; 7687,True,3490
+WSC2011,23,Mobile Robotics,SG,Singapore,4,Medallion for Excellence,515.0,,,CHIA KAI TAN; SHI JIE TANG,7676; 7675,True,3491
+WSC2011,23,Mobile Robotics,BR,Brazil,5,Medallion for Excellence,510.0,,,LEANDRO MACHADO; ANDRE PERIPOLLI,7452; 7451,True,3493
+WSC2011,23,Mobile Robotics,IR,Iran,5,Medallion for Excellence,510.0,,,MOHSEN FALAHI; MOJTABA KARIMI,6987; 6988,True,3492
+WSC2011,23,Mobile Robotics,CA,Canada,7,Medallion for Excellence,503.0,,,BENJAMIN CHURCH; ADRIAN SCHUT,6723; 6724,True,3494
+WSC2011,23,Mobile Robotics,DE,Germany,8,,495.0,,,MARCO CHRUSZCZ; ROBERT REICHERT,7577; 7578,True,3495
+WSC2011,23,Mobile Robotics,TW,Chinese Taipei,9,,483.0,,,TSUNG-TI HSU; MING-CHANG TSAI,7194; 7195,True,3496
+WSC2011,23,Mobile Robotics,ZA,South Africa,9,,482.0,,,TREMAINE FERREIRA; ALLAN VAN DEN BERG,7338; 7339,True,3497
+WSC2011,24,Cabinetmaking,DE,Germany,1,Gold,539.0,,,RICHARD M. SCHAUER,7529,True,3503
+WSC2011,24,Cabinetmaking,EE,Estonia,10,Medallion for Excellence,504.0,,,SILVER KÄMÄRÄ,7277,True,3513
+WSC2011,24,Cabinetmaking,NZ,New Zealand,10,Medallion for Excellence,505.0,,,ROBERT HAMILTON,7901,True,3512
+WSC2011,24,Cabinetmaking,TW,Chinese Taipei,10,Medallion for Excellence,503.0,,,KAI-CHUN CHUANG,7193,True,3514
+WSC2011,24,Cabinetmaking,AT,Austria,13,,498.0,,,ROMAN DIENBAUER,8283,True,3516
+WSC2011,24,Cabinetmaking,BR,Brazil,13,,499.0,,,RAFAEL TROMBINI,7450,True,3515
+WSC2011,24,Cabinetmaking,JP,Japan,15,,496.0,,,SEIYA TAKAHASHI,8416,True,3517
+WSC2011,24,Cabinetmaking,LI,Principality of Liechtenstein,16,,493.0,,,BENJAMIN VETSCH,8321,True,3518
+WSC2011,24,Cabinetmaking,SE,Sweden,16,,492.0,,,DAVID LÖWING,7701,True,3519
+WSC2011,24,Cabinetmaking,DK,Denmark,18,,488.0,,,MAX MALCHO OLSEN,7834,True,3521
+WSC2011,24,Cabinetmaking,UK,United Kingdom,18,,490.0,,,CHRISTOPHER WALLIS,7016,True,3520
+WSC2011,24,Cabinetmaking,CH,Switzerland,2,Silver,535.0,,,PETER MÜLLER,8378,True,3504
+WSC2011,24,Cabinetmaking,US,United States of America,20,,485.0,,,BRETT OTTINGER,6708,True,3522
+WSC2011,24,Cabinetmaking,ES,Spain,21,,469.0,,,JOSÉ BARÓ,7770,True,3523
+WSC2011,24,Cabinetmaking,HU,Hungary,22,,450.0,,,ANDRÁS BOTOS,7067,True,3524
+WSC2011,24,Cabinetmaking,MY,Malaysia,23,,401.0,,,LIBAU ANAK MUNAN,7610,True,3525
+WSC2011,24,Cabinetmaking,CA,Canada,3,Bronze,531.0,,,JONATHAN SINKE,6725,True,3505
+WSC2011,24,Cabinetmaking,FR,France,3,Bronze,531.0,,,PAUL JANVIER,7310,True,3506
+WSC2011,24,Cabinetmaking,KR,Korea,3,Bronze,530.0,,,DONG HWAN CHOI,8016,True,3507
+WSC2011,24,Cabinetmaking,IT,"South Tyrol, Italy",6,Medallion for Excellence,522.0,,,JAKOB EGGER,7724,True,3508
+WSC2011,24,Cabinetmaking,AU,Australia,7,Medallion for Excellence,513.0,,,BEN COOPER,6847,True,3510
+WSC2011,24,Cabinetmaking,FI,Finland,7,Medallion for Excellence,514.0,,,VEIJO KAUPPILA,8169,True,3509
+WSC2011,24,Cabinetmaking,ID,Indonesia,9,Medallion for Excellence,511.0,,,FARIS WAHYUDI,7686,True,3511
+WSC2011,25,Joinery,KR,Korea,1,Gold,551.0,,,SEUNG HYEON WANG,8015,True,3526
+WSC2011,25,Joinery,CA,Canada,10,,490.0,,,ALEX VOCAL,6726,True,3535
+WSC2011,25,Joinery,HU,Hungary,11,,481.0,,,ZOLTÁN ÓNODI,7066,True,3536
+WSC2011,25,Joinery,DK,Denmark,12,,475.0,,,MADS GROTH,7598,True,3538
+WSC2011,25,Joinery,NZ,New Zealand,12,,476.0,,,CHRIS EVANS,7900,True,3537
+WSC2011,25,Joinery,FI,Finland,14,,470.0,,,TONI LEHTIMÄKI,8168,True,3540
+WSC2011,25,Joinery,JP,Japan,14,,472.0,,,KENTA YOSHIIE,8415,True,3539
+WSC2011,25,Joinery,TH,Thailand,16,,469.0,,,APIWAT VONGLAKHON,8820,True,3541
+WSC2011,25,Joinery,ES,Spain,17,,461.0,,,RICHARD VALDÉS,7769,True,3543
+WSC2011,25,Joinery,PT,Portugal,17,,462.0,,,DESIDÉRIO CORREIA,7237,True,3542
+WSC2011,25,Joinery,CH,Switzerland,2,Silver,545.0,,,PETER ENZLER,8379,True,3527
+WSC2011,25,Joinery,UK,United Kingdom,3,Bronze,535.0,,,ADAM BUSHNELL,7015,True,3528
+WSC2011,25,Joinery,ID,Indonesia,4,Medallion for Excellence,531.0,,,MUHAMAD BUKHORI,7685,True,3529
+WSC2011,25,Joinery,AT,Austria,5,Medallion for Excellence,527.0,,,ALEXANDER HAAS,8282,True,3530
+WSC2011,25,Joinery,DE,Germany,6,Medallion for Excellence,524.0,,,ERIK BRANDENBURG,7528,True,3532
+WSC2011,25,Joinery,FR,France,6,Medallion for Excellence,524.0,,,LOÏC ROYER,7309,True,3531
+WSC2011,25,Joinery,TW,Chinese Taipei,8,Medallion for Excellence,509.0,,,MING-HSUEH WU,7192,True,3533
+WSC2011,25,Joinery,BE,Belgium,9,,498.0,,,JÉRÔME KRINGELS,7735,True,3534
+WSC2011,26,Carpentry,KR,Korea,1,Gold,538.0,,,SANG HYUN KIM,8014,True,3544
+WSC2011,26,Carpentry,CH,Switzerland,10,,494.0,,,JONATHAN KISSLING,8520,True,3553
+WSC2011,26,Carpentry,HU,Hungary,10,,494.0,,,DÁVID NAGY,7065,True,3554
+WSC2011,26,Carpentry,CA,Canada,12,,479.0,,,DANY MONTEMBEAULT,6727,True,3555
+WSC2011,26,Carpentry,FI,Finland,13,,470.0,,,JOONAS VUOKILA,8167,True,3556
+WSC2011,26,Carpentry,ES,Spain,14,,439.0,,,SERGIO VERGARA,7768,True,3558
+WSC2011,26,Carpentry,NZ,New Zealand,14,,440.0,,,ANDREW WATSON,7899,True,3557
+WSC2011,26,Carpentry,FR,France,2,Silver,530.0,,,FLAVIEN PARENT,7308,True,3545
+WSC2011,26,Carpentry,JP,Japan,2,Silver,528.0,,,SHOTA MORI,8414,True,3546
+WSC2011,26,Carpentry,DE,Germany,4,Bronze,527.0,,,PHILIPP STICH,7078,True,3547
+WSC2011,26,Carpentry,AT,Austria,5,Medallion for Excellence,519.0,,,ANDREAS SCHAFFER,7979,True,3549
+WSC2011,26,Carpentry,UK,United Kingdom,5,Medallion for Excellence,520.0,,,JOE PRICE,7014,True,3548
+WSC2011,26,Carpentry,NL,Netherlands,7,Medallion for Excellence,511.0,,,RALPH MOOIJMAN,7818,True,3550
+WSC2011,26,Carpentry,DK,Denmark,8,Medallion for Excellence,508.0,,,MIKKEL FAIGH RATZ,7833,True,3551
+WSC2011,26,Carpentry,IT,"South Tyrol, Italy",9,Medallion for Excellence,503.0,,,VALENTIN DOMANEGG,7723,True,3552
+WSC2011,27,Jewellery,BR,Brazil,1,Gold,527.0,,,RODRIGO SILVA,7449,True,3560
+WSC2011,27,Jewellery,KR,Korea,1,Gold,528.0,,,MIN GI LEE,8013,True,3559
+WSC2011,27,Jewellery,CH,Switzerland,10,,499.0,,,FLORIAN ZUMSTEIN,8387,True,3568
+WSC2011,27,Jewellery,TW,Chinese Taipei,11,,496.0,,,MING-HUI HUNG,7191,True,3569
+WSC2011,27,Jewellery,NO,Norway,12,,491.0,,,LISE MARIE CHESTERFLEDT ZACHARIASSEN,7525,True,3571
+WSC2011,27,Jewellery,UK,United Kingdom,12,,492.0,,,ROBYN ALLEN,7013,True,3570
+WSC2011,27,Jewellery,IN,India,14,,461.0,,,PRASENJIT DARI,6928,True,3572
+WSC2011,27,Jewellery,AE,United Arab Emirates,15,,406.0,,,HAMDA ALHAFEDH,7861,True,3573
+WSC2011,27,Jewellery,FR,France,3,Bronze,517.0,,,PAUL NGUYEN,7307,True,3562
+WSC2011,27,Jewellery,JP,Japan,3,Bronze,518.0,,,TAKASHI SHIIYA,8413,True,3561
+WSC2011,27,Jewellery,FI,Finland,5,Medallion for Excellence,515.0,,,SANNI JAKOLEFF,8066,True,3564
+WSC2011,27,Jewellery,IR,Iran,5,Medallion for Excellence,513.0,,,MEHRDAD BORZOO,8521,True,3565
+WSC2011,27,Jewellery,PT,Portugal,5,Medallion for Excellence,515.0,,,JONATAS GUEDES,7236,True,3563
+WSC2011,27,Jewellery,AU,Australia,8,Medallion for Excellence,511.0,,,NATALEE HIBBINS,6846,True,3567
+WSC2011,27,Jewellery,TH,Thailand,8,Medallion for Excellence,511.0,,,AKOM OCHAROS,8821,True,3566
+WSC2011,28,Floristry,KR,Korea,1,Gold,555.0,,,HWAN YOO,8012,True,3574
+WSC2011,28,Floristry,AT,Austria,10,,494.0,,,LISA ROBAUSCH,8281,True,3584
+WSC2011,28,Floristry,JP,Japan,10,,493.0,,,MISAKI KUBOTA,8412,True,3585
+WSC2011,28,Floristry,NZ,New Zealand,10,,495.0,,,AROHA HEBBERD,7898,True,3583
+WSC2011,28,Floristry,AU,Australia,13,,486.0,,,TAMIKA MACKRELL,6845,True,3586
+WSC2011,28,Floristry,CH,Switzerland,13,,485.0,,,RAHEL BRUNNER,8236,True,3587
+WSC2011,28,Floristry,BE,Belgium,15,,470.0,,,LAURA BRUMENIL,7734,True,3589
+WSC2011,28,Floristry,HU,Hungary,15,,470.0,,,DIÁNA TAKÁCS,6883,True,3588
+WSC2011,28,Floristry,MX,Mexico,17,,454.0,,,MIGUEL SANTOS,8351,True,3590
+WSC2011,28,Floristry,ID,Indonesia,18,,435.0,,,ASTRID JASINTHA RASMINI,7416,True,3591
+WSC2011,28,Floristry,TW,Chinese Taipei,2,Silver,547.0,,,WEN-MIN KU,7190,True,3575
+WSC2011,28,Floristry,FI,Finland,3,Bronze,525.0,,,JENNIINA TIIKKAINEN,8166,True,3576
+WSC2011,28,Floristry,NO,Norway,4,Medallion for Excellence,520.0,,,TRINE OLAFSRUD,7524,True,3578
+WSC2011,28,Floristry,SE,Sweden,4,Medallion for Excellence,522.0,,,EMMA HANSSON,7700,True,3577
+WSC2011,28,Floristry,TH,Thailand,6,Medallion for Excellence,517.0,,,PAKAWAT SANGKUN,8822,True,3579
+WSC2011,28,Floristry,UK,United Kingdom,6,Medallion for Excellence,517.0,,,VICTORIA RICHARDS,7012,True,3580
+WSC2011,28,Floristry,FR,France,8,Medallion for Excellence,507.0,,,BRICE JUSTICE,7306,True,3582
+WSC2011,28,Floristry,MO,"Macao, China",8,Medallion for Excellence,508.0,,,IAN IAN FAN,7138,True,3581
+WSC2011,29,Ladies'/Men's Hairdressing,FR,France,1,Gold,550.0,,,CAROLINE SCHMITT,7305,True,3592
+WSC2011,29,Ladies'/Men's Hairdressing,SG,Singapore,10,Medallion for Excellence,509.0,,,SING GUAN NOEL NG,7674,True,3601
+WSC2011,29,Ladies'/Men's Hairdressing,SE,Sweden,11,Medallion for Excellence,503.0,,,EVELINA FRANSSON,7666,True,3602
+WSC2011,29,Ladies'/Men's Hairdressing,TW,Chinese Taipei,11,Medallion for Excellence,501.0,,,JUEI-MAO TANG,7189,True,3603
+WSC2011,29,Ladies'/Men's Hairdressing,US,United States of America,13,Medallion for Excellence,500.0,,,LAINA CALL,6707,True,3604
+WSC2011,29,Ladies'/Men's Hairdressing,HU,Hungary,14,,495.0,,,MÁTÉ HINTENBERGER,7064,True,3606
+WSC2011,29,Ladies'/Men's Hairdressing,MO,"Macao, China",14,,497.0,,,CHI CHONG CHEANG,8614,True,3605
+WSC2011,29,Ladies'/Men's Hairdressing,NO,Norway,16,,487.0,,,THAO PHUONG NGUYEN,7845,True,3608
+WSC2011,29,Ladies'/Men's Hairdressing,NZ,New Zealand,16,,488.0,,,LAURA SIMPSON,7897,True,3607
+WSC2011,29,Ladies'/Men's Hairdressing,BR,Brazil,18,,483.0,,,DANIELA MELLO,7448,True,3610
+WSC2011,29,Ladies'/Men's Hairdressing,IS,Iceland,18,,484.0,,,JOHANNA STEFNISDOTTIR,7865,True,3609
+WSC2011,29,Ladies'/Men's Hairdressing,KR,Korea,2,Silver,541.0,,,WON JEONG LEE,8222,True,3593
+WSC2011,29,Ladies'/Men's Hairdressing,ES,Spain,20,,477.0,,,RAQUEL MARTÍNEZ,7767,True,3612
+WSC2011,29,Ladies'/Men's Hairdressing,JP,Japan,20,,478.0,,,KUNPEI YOSHIDA,8411,True,3611
+WSC2011,29,Ladies'/Men's Hairdressing,EE,Estonia,22,,472.0,,,JEKATERINA SEDUNOVA,7276,True,3613
+WSC2011,29,Ladies'/Men's Hairdressing,JM,Jamaica,22,,471.0,,,SASHAMOIE BATTICK,8782,True,3614
+WSC2011,29,Ladies'/Men's Hairdressing,ID,Indonesia,24,,446.0,,,JATI NUR ROCHMA,7684,True,3615
+WSC2011,29,Ladies'/Men's Hairdressing,IN,India,25,,423.0,,,KUMAR ABHISHEK S,6927,True,3616
+WSC2011,29,Ladies'/Men's Hairdressing,AU,Australia,3,Bronze,538.0,,,ALEXIS SCOTT,6844,True,3594
+WSC2011,29,Ladies'/Men's Hairdressing,FI,Finland,3,Bronze,536.0,,,KERTTU JOHANSSON,8165,True,3595
+WSC2011,29,Ladies'/Men's Hairdressing,CN,China,5,Medallion for Excellence,532.0,,,QINGSHAN ZHU,8637,True,3596
+WSC2011,29,Ladies'/Men's Hairdressing,UK,United Kingdom,5,Medallion for Excellence,530.0,,,ELIZABETH HALE,7011,True,3597
+WSC2011,29,Ladies'/Men's Hairdressing,TH,Thailand,7,Medallion for Excellence,525.0,,,WIWAT PANSAWAT,8823,True,3598
+WSC2011,29,Ladies'/Men's Hairdressing,CA,Canada,8,Medallion for Excellence,516.0,,,KAYLYN MACK,6728,True,3600
+WSC2011,29,Ladies'/Men's Hairdressing,DK,Denmark,8,Medallion for Excellence,518.0,,,BIRGITTE SCHJØDT NIELSEN,8101,True,3599
+WSC2011,30,Beauty Therapy,SG,Singapore,1,Gold,536.0,,,SHUNER VILLANUEVA LEONG,7673,True,3617
+WSC2011,30,Beauty Therapy,IE,Ireland,10,Medallion for Excellence,509.0,,,CLARE CULLEN,8741,True,3626
+WSC2011,30,Beauty Therapy,TH,Thailand,10,Medallion for Excellence,507.0,,,WARAPAN TICHAN,8824,True,3627
+WSC2011,30,Beauty Therapy,CH,Switzerland,12,Medallion for Excellence,506.0,,,NATASCHA JENNY SPAHR,8478,True,3628
+WSC2011,30,Beauty Therapy,SE,Sweden,13,Medallion for Excellence,503.0,,,IDA NYKVIST WIBECK,7665,True,3629
+WSC2011,30,Beauty Therapy,HU,Hungary,14,,498.0,,,MÁTÉ VARGA,7063,True,3631
+WSC2011,30,Beauty Therapy,JP,Japan,14,,498.0,,,KAZUE MORIMOTO,8410,True,3630
+WSC2011,30,Beauty Therapy,TW,Chinese Taipei,14,,497.0,,,SZU-TZU CHEN,7188,True,3632
+WSC2011,30,Beauty Therapy,ES,Spain,17,,485.0,,,ANDREA ORTOLÁ,7696,True,3633
+WSC2011,30,Beauty Therapy,US,United States of America,18,,453.0,,,RAYCHEL BLAND,6709,True,3634
+WSC2011,30,Beauty Therapy,ID,Indonesia,19,,450.0,,,SUHARYATI SUHARYATI,7415,True,3635
+WSC2011,30,Beauty Therapy,FI,Finland,2,Silver,531.0,,,HEIDI HUTTUNEN,8164,True,3618
+WSC2011,30,Beauty Therapy,IN,India,20,,409.0,,,SAVITHA VENKATESH,6911,True,3636
+WSC2011,30,Beauty Therapy,CA,Canada,3,Bronze,527.0,,,JENICA BUBAR,6729,True,3619
+WSC2011,30,Beauty Therapy,HK,"Hong Kong, China",4,Medallion for Excellence,524.0,,,CHOI TING CHUN,8356,True,3620
+WSC2011,30,Beauty Therapy,FR,France,5,Medallion for Excellence,520.0,,,MARINE SARRAZIN,7304,True,3621
+WSC2011,30,Beauty Therapy,AU,Australia,6,Medallion for Excellence,516.0,,,ALEX ODGERS,6843,True,3622
+WSC2011,30,Beauty Therapy,KR,Korea,7,Medallion for Excellence,512.0,,,NU RI JUN,8010,True,3623
+WSC2011,30,Beauty Therapy,MY,Malaysia,7,Medallion for Excellence,510.0,,,SIA WAN YING,7439,True,3624
+WSC2011,30,Beauty Therapy,UK,United Kingdom,7,Medallion for Excellence,510.0,,,HAYLEY WRIGHT,7010,True,3625
+WSC2011,31,Fashion Technology,CH,Switzerland,1,Gold,544.0,,,NADJA HUMBEL,8498,True,3637
+WSC2011,31,Fashion Technology,JP,Japan,11,Medallion for Excellence,504.0,,,MIKA KURODA,8409,True,3647
+WSC2011,31,Fashion Technology,UK,United Kingdom,12,Medallion for Excellence,500.0,,,RUARAIDH ANDREW,7009,True,3648
+WSC2011,31,Fashion Technology,AU,Australia,13,,492.0,,,RHAMAN DONOVAN,6842,True,3650
+WSC2011,31,Fashion Technology,TN,Tunisia,13,,494.0,,,MARWA HADDAR,8655,True,3649
+WSC2011,31,Fashion Technology,PT,Portugal,15,,477.0,,,LEANDRO COSTA,7235,True,3651
+WSC2011,31,Fashion Technology,IN,India,16,,451.0,,,SUKRITI SINGH,6924,True,3652
+WSC2011,31,Fashion Technology,ES,Spain,17,,411.0,,,SARAH DEL MONTE,7766,True,3653
+WSC2011,31,Fashion Technology,MO,"Macao, China",2,Silver,526.0,,,KA I HONG,7139,True,3638
+WSC2011,31,Fashion Technology,TH,Thailand,2,Silver,524.0,,,THANYARAT DUANGTA,8825,True,3640
+WSC2011,31,Fashion Technology,TW,Chinese Taipei,2,Silver,525.0,,,HSIU-CHUN LIN,7187,True,3639
+WSC2011,31,Fashion Technology,VN,Vietnam,5,Medallion for Excellence,516.0,,,VU MAI HIEN,6802,True,3641
+WSC2011,31,Fashion Technology,CA,Canada,6,Medallion for Excellence,508.0,,,KATY DELISLE,6731,True,3643
+WSC2011,31,Fashion Technology,FI,Finland,6,Medallion for Excellence,510.0,,,JUULIA PEUHKURI,8163,True,3642
+WSC2011,31,Fashion Technology,FR,France,8,Medallion for Excellence,505.0,,,JULIEN BONNET,7303,True,3646
+WSC2011,31,Fashion Technology,ID,Indonesia,8,Medallion for Excellence,507.0,,,SYARIFA KAMELIA,7683,True,3644
+WSC2011,31,Fashion Technology,KR,Korea,8,Medallion for Excellence,506.0,,,YU JIN KIM,8009,True,3645
+WSC2011,32,Confectioner/Pastry Cook,AT,Austria,1,Gold,526.0,,,STEFAN LUBINGER,8280,True,3656
+WSC2011,32,Confectioner/Pastry Cook,FR,France,1,Gold,528.0,,,ALEXIS BOUILLET,7302,True,3654
+WSC2011,32,Confectioner/Pastry Cook,JP,Japan,1,Gold,527.0,,,MIRINA UENO,8450,True,3655
+WSC2011,32,Confectioner/Pastry Cook,CA,Canada,11,Medallion for Excellence,509.0,,,MARIE-EVE LAZURE,6733,True,3664
+WSC2011,32,Confectioner/Pastry Cook,IT,"South Tyrol, Italy",11,Medallion for Excellence,508.0,,,LISA VORHAUSER,7722,True,3665
+WSC2011,32,Confectioner/Pastry Cook,NO,Norway,13,,498.0,,,INGER MARIE BRÅSTAD,7852,True,3666
+WSC2011,32,Confectioner/Pastry Cook,HU,Hungary,14,,490.0,,,NÓRA PÁLYI,7062,True,3667
+WSC2011,32,Confectioner/Pastry Cook,ES,Spain,15,,475.0,,,MARCOS ZARAGOZA,7765,True,3668
+WSC2011,32,Confectioner/Pastry Cook,IN,India,16,,449.0,,,PAYAL CHOUDHARY,6910,True,3669
+WSC2011,32,Confectioner/Pastry Cook,ID,Indonesia,17,,435.0,,,NAKITA SABRINA CAMELIA,7682,True,3671
+WSC2011,32,Confectioner/Pastry Cook,MX,Mexico,17,,437.0,,,IONATAN ORTIZ,7397,True,3670
+WSC2011,32,Confectioner/Pastry Cook,CH,Switzerland,4,Bronze,524.0,,,JASMIN ENZLER,8386,True,3657
+WSC2011,32,Confectioner/Pastry Cook,KR,Korea,4,Bronze,524.0,,,GUN HEE YU,8008,True,3658
+WSC2011,32,Confectioner/Pastry Cook,BR,Brazil,6,Medallion for Excellence,518.0,,,PRISCILA TEIXEIRA,7447,True,3659
+WSC2011,32,Confectioner/Pastry Cook,TW,Chinese Taipei,7,Medallion for Excellence,515.0,,,SHU-YING CHEN,7186,True,3660
+WSC2011,32,Confectioner/Pastry Cook,UK,United Kingdom,7,Medallion for Excellence,515.0,,,STEFAN HOWELLS,7008,True,3661
+WSC2011,32,Confectioner/Pastry Cook,DK,Denmark,9,Medallion for Excellence,510.0,,,CAMILLA WINTHER,7832,True,3663
+WSC2011,32,Confectioner/Pastry Cook,FI,Finland,9,Medallion for Excellence,512.0,,,ENNI RANTALA,8162,True,3662
+WSC2011,33,Automobile Technology,CH,Switzerland,1,Gold,545.0,,,FLAVIO HELFENSTEIN,8125,True,3672
+WSC2011,33,Automobile Technology,JP,Japan,1,Gold,545.0,,,SHOTA TAKEDA,661,True,3673
+WSC2011,33,Automobile Technology,CA,Canada,10,Medallion for Excellence,507.0,,,CLAUDE CÔTÉ,6734,True,3684
+WSC2011,33,Automobile Technology,FR,France,10,Medallion for Excellence,508.0,,,AURÉLIEN SCHERRER,7301,True,3682
+WSC2011,33,Automobile Technology,IT,"South Tyrol, Italy",10,Medallion for Excellence,509.0,,,THOMAS PACHER,7720,True,3681
+WSC2011,33,Automobile Technology,MY,Malaysia,10,Medallion for Excellence,507.0,,,STANLEEY TAIMING,7508,True,3685
+WSC2011,33,Automobile Technology,SE,Sweden,10,Medallion for Excellence,508.0,,,LARS KVICK,7664,True,3683
+WSC2011,33,Automobile Technology,BE,Belgium,15,Medallion for Excellence,505.0,,,BILLY REUTER,7733,True,3687
+WSC2011,33,Automobile Technology,NO,Norway,15,Medallion for Excellence,505.0,,,THOMAS HAALAND,7844,True,3686
+WSC2011,33,Automobile Technology,DE,Germany,17,Medallion for Excellence,501.0,,,FRANZ HAVLAT,,True,3688
+WSC2011,33,Automobile Technology,TH,Thailand,17,Medallion for Excellence,500.0,,,TARA KROEKKRAILERT,8826,True,3689
+WSC2011,33,Automobile Technology,AT,Austria,19,,498.0,,,THOMAS MAURER,8061,True,3690
+WSC2011,33,Automobile Technology,DK,Denmark,19,,497.0,,,PALLE LUND SCHMIDT,7597,True,3691
+WSC2011,33,Automobile Technology,PT,Portugal,21,,488.0,,,JORGE SIMÕES,7234,True,3692
+WSC2011,33,Automobile Technology,ES,Spain,22,,480.0,,,JUAN JOSÉ SAN MIGUEL,7764,True,3693
+WSC2011,33,Automobile Technology,CO,Colombia,23,,476.0,,,ALVARO RODRIGUEZ,6819,True,3694
+WSC2011,33,Automobile Technology,OM,Oman,24,,467.0,,,MAHMOOD AL GHAFRI,8682,True,3695
+WSC2011,33,Automobile Technology,NZ,New Zealand,25,,463.0,,,CURTIS HARTLEY,7896,True,3696
+WSC2011,33,Automobile Technology,ZA,South Africa,26,,459.0,,,FREDERIK BEZUIDENHOUT,7340,True,3697
+WSC2011,33,Automobile Technology,ID,Indonesia,27,,456.0,,,EDUARD WAHYU RAMADHAN,7414,True,3698
+WSC2011,33,Automobile Technology,MA,Morocco,28,,450.0,,,EL MOSTAFA MAHIRI,6961,True,3699
+WSC2011,33,Automobile Technology,AE,United Arab Emirates,29,,423.0,,,SAEED MATLAEI,8875,True,3700
+WSC2011,33,Automobile Technology,UK,United Kingdom,3,Bronze,539.0,,,JOHN COULDRIDGE,7007,True,3674
+WSC2011,33,Automobile Technology,KR,Korea,4,Medallion for Excellence,533.0,,,GUK SEONG AHN,8007,True,3676
+WSC2011,33,Automobile Technology,TW,Chinese Taipei,4,Medallion for Excellence,535.0,,,CHENG-CHE LU,7185,True,3675
+WSC2011,33,Automobile Technology,US,United States of America,6,Medallion for Excellence,530.0,,,DANIEL LEHMKUHL,6710,True,3677
+WSC2011,33,Automobile Technology,AU,Australia,7,Medallion for Excellence,526.0,,,ROMAIN MARTEAU,6841,True,3678
+WSC2011,33,Automobile Technology,FI,Finland,7,Medallion for Excellence,526.0,,,HANNU PÖNTINEN,8161,True,3679
+WSC2011,33,Automobile Technology,IE,Ireland,9,Medallion for Excellence,513.0,,,PAUL FURLONG,8742,True,3680
+WSC2011,34,Cooking,NO,Norway,1,Gold,538.0,,,ØYVIND BØE DALELV,7851,True,3702
+WSC2011,34,Cooking,UK,United Kingdom,1,Gold,538.0,,,BEN MURPHY,7006,True,3701
+WSC2011,34,Cooking,EE,Estonia,12,Medallion for Excellence,516.0,,,KRESTINA ÕUN,7275,True,3714
+WSC2011,34,Cooking,TW,Chinese Taipei,12,Medallion for Excellence,516.0,,,CHEN CHENG-DIAN,7184,True,3712
+WSC2011,34,Cooking,VN,Vietnam,12,Medallion for Excellence,516.0,,,TAT HA MY LINH,6801,True,3713
+WSC2011,34,Cooking,JP,Japan,15,Medallion for Excellence,512.0,,,MAI NOJIMA,8408,True,3715
+WSC2011,34,Cooking,FR,France,16,Medallion for Excellence,507.0,,,MAXENCE BARBOT,7300,True,3717
+WSC2011,34,Cooking,HK,"Hong Kong, China",16,Medallion for Excellence,507.0,,,KA KEUNG SIT,7645,True,3716
+WSC2011,34,Cooking,FI,Finland,18,Medallion for Excellence,503.0,,,TONI TOIVANEN,8160,True,3719
+WSC2011,34,Cooking,US,United States of America,18,Medallion for Excellence,504.0,,,RACHEL KOPPELMAN,8577,True,3718
+WSC2011,34,Cooking,SG,Singapore,20,,498.0,,,KOH SHAO YU,7672,True,3720
+WSC2011,34,Cooking,BE,Belgium,21,,487.0,,,DAMIEN GORJANEC,7732,True,3722
+WSC2011,34,Cooking,DK,Denmark,21,,487.0,,,RASMUS M. THOMASSEN,8593,True,3721
+WSC2011,34,Cooking,MY,Malaysia,23,,478.0,,,MOHD AIMAN YUSOF,7507,True,3724
+WSC2011,34,Cooking,PT,Portugal,23,,479.0,,,RICARDO ISIDRO,7233,True,3723
+WSC2011,34,Cooking,IE,Ireland,25,,470.0,,,SUSAN MURPHY,8743,True,3725
+WSC2011,34,Cooking,JM,Jamaica,25,,468.0,,,ROCHELLE GRINDLEY,8783,True,3726
+WSC2011,34,Cooking,ES,Spain,27,,467.0,,,LUIS GARGALLO,7763,True,3727
+WSC2011,34,Cooking,CO,Colombia,28,,462.0,,,FRANCISCO DONADO,8644,True,3728
+WSC2011,34,Cooking,HU,Hungary,29,,454.0,,,ÁDÁM LÁSZLÓ DEÁK,7061,True,3729
+WSC2011,34,Cooking,AT,Austria,3,Bronze,533.0,,,THOMAS SCHÄFFER,7805,True,3703
+WSC2011,34,Cooking,IN,India,30,,451.0,,,ANSHUL AGGARWAL,6925,True,3730
+WSC2011,34,Cooking,NL,Netherlands,31,,411.0,,,RAYMOND PLAT,7792,True,3731
+WSC2011,34,Cooking,BR,Brazil,4,Medallion for Excellence,529.0,,,LAYSA MENEZES,7446,True,3704
+WSC2011,34,Cooking,TH,Thailand,4,Medallion for Excellence,527.0,,,PRATCHAYA CHOPNGAM,9066,True,3705
+WSC2011,34,Cooking,CA,Canada,6,Medallion for Excellence,524.0,,,ANTOINE CORRIVEAU,6735,True,3708
+WSC2011,34,Cooking,NZ,New Zealand,6,Medallion for Excellence,526.0,,,MEGAN ANDERSON,7895,True,3706
+WSC2011,34,Cooking,SE,Sweden,6,Medallion for Excellence,526.0,,,EMMA ERLANDSSON,7663,True,3707
+WSC2011,34,Cooking,CH,Switzerland,9,Medallion for Excellence,522.0,,,SANDRINE EISENHUT,8445,True,3710
+WSC2011,34,Cooking,DE,Germany,9,Medallion for Excellence,522.0,,,PAUL EMDE,7501,True,3709
+WSC2011,34,Cooking,KR,Korea,9,Medallion for Excellence,521.0,,,HONG OOK KIM,8006,True,3711
+WSC2011,35,Restaurant Service,CH,Switzerland,1,Gold,550.0,,,SABRINA ANITA KELLER,8444,True,3732
+WSC2011,35,Restaurant Service,BR,Brazil,12,Medallion for Excellence,507.0,,,HEMILTON SANTOS,7445,True,3744
+WSC2011,35,Restaurant Service,UK,United Kingdom,12,Medallion for Excellence,507.0,,,WOJCIECH PASTOR,7005,True,3743
+WSC2011,35,Restaurant Service,DK,Denmark,14,,497.0,,,NICOLAI MARTENS,165836,True,3745
+WSC2011,35,Restaurant Service,TW,Chinese Taipei,14,,496.0,,,SZU-MEI LIN,7183,True,3746
+WSC2011,35,Restaurant Service,TH,Thailand,16,,493.0,,,THINNAKORN TIBINTHA,8828,True,3747
+WSC2011,35,Restaurant Service,ES,Spain,17,,490.0,,,GUILLERMO GONZÁLEZ,7762,True,3748
+WSC2011,35,Restaurant Service,NZ,New Zealand,17,,489.0,,,KIRSTY LISTER,4577,True,3749
+WSC2011,35,Restaurant Service,ID,Indonesia,19,,481.0,,,NINIK PRASETYA,7413,True,3750
+WSC2011,35,Restaurant Service,AU,Australia,2,Silver,538.0,,,KATE CROCKER,6840,True,3733
+WSC2011,35,Restaurant Service,FI,Finland,2,Silver,537.0,,,MARIA SUIHKONEN,8158,True,3734
+WSC2011,35,Restaurant Service,NL,Netherlands,20,,478.0,,,KIMBERLY THORNE,7791,True,3751
+WSC2011,35,Restaurant Service,JP,Japan,21,,452.0,,,YUKA KOBAYASHI,8407,True,3752
+WSC2011,35,Restaurant Service,PT,Portugal,22,,443.0,,,MILTON FURTADO,7232,True,3753
+WSC2011,35,Restaurant Service,US,United States of America,23,,420.0,,,MELISSA RUBINCAN,6711,True,3754
+WSC2011,35,Restaurant Service,NO,Norway,4,Medallion for Excellence,523.0,,,CAMILLA LAIHO,7843,True,3735
+WSC2011,35,Restaurant Service,DE,Germany,5,Medallion for Excellence,518.0,,,REGINA RAGER,7575,True,3738
+WSC2011,35,Restaurant Service,FR,France,5,Medallion for Excellence,519.0,,,DÉBORAH TEINTURIER,7299,True,3736
+WSC2011,35,Restaurant Service,IE,Ireland,5,Medallion for Excellence,518.0,,,DERMOTT JEWELL,8834,True,3737
+WSC2011,35,Restaurant Service,AT,Austria,8,Medallion for Excellence,516.0,,,JULIA HEILIG,7910,True,3739
+WSC2011,35,Restaurant Service,CA,Canada,9,Medallion for Excellence,510.0,,,HUBERT GRAVEL,6741,True,3741
+WSC2011,35,Restaurant Service,SE,Sweden,9,Medallion for Excellence,510.0,,,EMELIE SAJLAND,7662,True,3742
+WSC2011,35,Restaurant Service,SG,Singapore,9,Medallion for Excellence,511.0,,,GIM HUI ONG,8084,True,3740
+WSC2011,36,Car Painting,KR,Korea,1,Gold,532.0,,,DONG CHEOL AN,8005,True,3755
+WSC2011,36,Car Painting,FI,Finland,10,Medallion for Excellence,510.0,,,OUTI SALLINEN,8159,True,3764
+WSC2011,36,Car Painting,JP,Japan,11,,496.0,,,KENTARO ABIRU,6600,True,3766
+WSC2011,36,Car Painting,TW,Chinese Taipei,11,,497.0,,,YUN-CHE LEE,7182,True,3765
+WSC2011,36,Car Painting,ES,Spain,13,,476.0,,,GERMÁN REY,7761,True,3767
+WSC2011,36,Car Painting,NL,Netherlands,14,,472.0,,,STEN TEGELS,7882,True,3768
+WSC2011,36,Car Painting,MA,Morocco,15,,462.0,,,MOHAMMED MRINI,6960,True,3770
+WSC2011,36,Car Painting,TH,Thailand,15,,462.0,,,KRISSADA CHINJUNTHUEK,8829,True,3769
+WSC2011,36,Car Painting,IN,India,17,,422.0,,,SANDEEP KUMAR,6926,True,3771
+WSC2011,36,Car Painting,AU,Australia,2,Silver,529.0,,,KYE SZENIAK,6839,True,3756
+WSC2011,36,Car Painting,CA,Canada,3,Bronze,523.0,,,AARON HEBB,6742,True,3759
+WSC2011,36,Car Painting,NO,Norway,3,Bronze,522.0,,,FREDRIK RØED MEEK,7842,True,3760
+WSC2011,36,Car Painting,SE,Sweden,3,Bronze,523.0,,,ERIK GROTH,7661,True,3758
+WSC2011,36,Car Painting,UK,United Kingdom,3,Bronze,524.0,,,BEN EATON,7004,True,3757
+WSC2011,36,Car Painting,DK,Denmark,7,Medallion for Excellence,521.0,,,GLENN HOLST NIELSEN,8100,True,3761
+WSC2011,36,Car Painting,FR,France,8,Medallion for Excellence,515.0,,,DAVID CLUZEL,7298,True,3762
+WSC2011,36,Car Painting,NZ,New Zealand,8,Medallion for Excellence,514.0,,,DREW AVERY,7894,True,3763
+WSC2011,37,Landscape Gardening,CH,Switzerland,1,Gold,557.0,,,CHRISTOF SCHWEIZER; ANDREAS STADLIN,8476; 8477,True,3772
+WSC2011,37,Landscape Gardening,NL,Netherlands,11,,494.0,,,BASTIAAN GERMERAAD; SJORS MEULEMAN,7817; 7816,True,3782
+WSC2011,37,Landscape Gardening,CA,Canada,12,,490.0,,,DOMINIC FORTIN; SIMON LAFLAMME,6743; 6744,True,3783
+WSC2011,37,Landscape Gardening,EE,Estonia,13,,476.0,,,ALLAR LAUREND; RAJAR RAHKEMA,7274; 7273,True,3784
+WSC2011,37,Landscape Gardening,FI,Finland,13,,474.0,,,REETTA HÖYHTYÄ; LAURA JANTUNEN,8157; 8156,True,3785
+WSC2011,37,Landscape Gardening,TW,Chinese Taipei,15,,443.0,,,HUI-FANG LEE; TZU-PING LO,7181; 7180,True,3786
+WSC2011,37,Landscape Gardening,ES,Spain,16,,437.0,,,DANIEL CANO; ALBERTO LOZANO,7760; 7759,True,3787
+WSC2011,37,Landscape Gardening,SE,Sweden,2,Silver,529.0,,,STEFAN ALLANSSON; MIKAEL ANDERSSON,7660; 7659,True,3773
+WSC2011,37,Landscape Gardening,UK,United Kingdom,2,Silver,528.0,,,SIMON ABBOTT; JAMES CUFFEY,7002; 7003,True,3774
+WSC2011,37,Landscape Gardening,IT,"South Tyrol, Italy",4,Medallion for Excellence,520.0,,,MATTHIAS ERSCHBAUMER; MATTHIAS SPECHTENHAUSER,7718; 7719,True,3775
+WSC2011,37,Landscape Gardening,NO,Norway,5,Medallion for Excellence,516.0,,,CARL-HENRIK GJELSTAD; TOR-ANDERS KRISTIANSEN,7840; 7841,True,3776
+WSC2011,37,Landscape Gardening,DE,Germany,6,Medallion for Excellence,513.0,,,CHRISTOPH BAEUERLE; JONAS ROMBACH,7526; 7527,True,3777
+WSC2011,37,Landscape Gardening,AT,Austria,7,Medallion for Excellence,509.0,,,BERNHARD GIERLINGER; MARTIN HÖFLER,8279; 8278,True,3778
+WSC2011,37,Landscape Gardening,FR,France,7,Medallion for Excellence,508.0,,,BENOÎT CAMPAS; DYLAN CHAUVAT,7297; 7296,True,3779
+WSC2011,37,Landscape Gardening,AU,Australia,9,Medallion for Excellence,503.0,,,RICHARD MAY; THOMAS RAMSEY,6838; 6837,True,3781
+WSC2011,37,Landscape Gardening,JP,Japan,9,Medallion for Excellence,503.0,,,YOSHIHIRO FUJISAKI; NAOKI INO,8403; 8404,True,3780
+WSC2011,38,Refrigeration and Air Conditioning,BR,Brazil,1,Gold,544.0,,,WILLIAN SOUSA,7444,True,3788
+WSC2011,38,Refrigeration and Air Conditioning,IE,Ireland,10,Medallion for Excellence,523.0,,,VINNIE SULLIVAN,8744,True,3797
+WSC2011,38,Refrigeration and Air Conditioning,CH,Switzerland,11,Medallion for Excellence,518.0,,,ETIENNE CRISTINI,8558,True,3798
+WSC2011,38,Refrigeration and Air Conditioning,CA,Canada,12,Medallion for Excellence,506.0,,,SEAN DONNAN,6745,True,3799
+WSC2011,38,Refrigeration and Air Conditioning,TH,Thailand,13,Medallion for Excellence,503.0,,,JAROON THIPYOD,8830,True,3800
+WSC2011,38,Refrigeration and Air Conditioning,VN,Vietnam,14,,497.0,,,NGUYEN THANH DUNG,6800,True,3801
+WSC2011,38,Refrigeration and Air Conditioning,DE,Germany,15,,493.0,,,GEORG LAMBARDT,8649,True,3802
+WSC2011,38,Refrigeration and Air Conditioning,US,United States of America,15,,491.0,,,JOHN HUHN,8536,True,3803
+WSC2011,38,Refrigeration and Air Conditioning,FR,France,17,,476.0,,,JULIEN LAFON,7295,True,3806
+WSC2011,38,Refrigeration and Air Conditioning,NO,Norway,17,,478.0,,,JOACHIM STRØMME,7839,True,3804
+WSC2011,38,Refrigeration and Air Conditioning,ZA,South Africa,17,,478.0,,,DE WET BRITZ,7257,True,3805
+WSC2011,38,Refrigeration and Air Conditioning,AU,Australia,2,Silver,540.0,,,LIAM JANETZKI,6836,True,3789
+WSC2011,38,Refrigeration and Air Conditioning,ES,Spain,20,,475.0,,,MARIO LAHOZ,7758,True,3807
+WSC2011,38,Refrigeration and Air Conditioning,PT,Portugal,21,,469.0,,,PAULO VICENTE,7231,True,3808
+WSC2011,38,Refrigeration and Air Conditioning,MX,Mexico,22,,455.0,,,PEDRO HUERTA,8349,True,3810
+WSC2011,38,Refrigeration and Air Conditioning,TN,Tunisia,22,,457.0,,,MOHAMED SEBRI,8658,True,3809
+WSC2011,38,Refrigeration and Air Conditioning,MA,Morocco,24,,451.0,,,MOHAMMED EL BAOUCHI,6963,True,3811
+WSC2011,38,Refrigeration and Air Conditioning,OM,Oman,25,,446.0,,,YOUNIS AL AGHBARI,8753,True,3812
+WSC2011,38,Refrigeration and Air Conditioning,JP,Japan,3,Bronze,529.0,,,EIICHI FUSHIMI,8402,True,3793
+WSC2011,38,Refrigeration and Air Conditioning,KR,Korea,3,Bronze,530.0,,,MIN KI CHANG,8004,True,3790
+WSC2011,38,Refrigeration and Air Conditioning,NL,Netherlands,3,Bronze,529.0,,,GEERT DORRESTEIJN,7815,True,3791
+WSC2011,38,Refrigeration and Air Conditioning,TW,Chinese Taipei,3,Bronze,528.0,,,PO-HAN LEE,7179,True,3794
+WSC2011,38,Refrigeration and Air Conditioning,UK,United Kingdom,3,Bronze,529.0,,,STUART MILLAR,7001,True,3792
+WSC2011,38,Refrigeration and Air Conditioning,HK,"Hong Kong, China",8,Medallion for Excellence,527.0,,,LOK HIM MAK,7644,True,3795
+WSC2011,38,Refrigeration and Air Conditioning,MY,Malaysia,8,Medallion for Excellence,526.0,,,NG VUI CHIEN,7609,True,3796
+WSC2011,39,IT Network Systems Administration,JP,Japan,1,Gold,547.0,,,ATSUYA KAMIOKA,,True,3814
+WSC2011,39,IT Network Systems Administration,SG,Singapore,1,Gold,547.0,,,JARED SIM,8083,True,3813
+WSC2011,39,IT Network Systems Administration,CO,Colombia,11,Medallion for Excellence,508.0,,,OSCAR CASTILLO,6815,True,3823
+WSC2011,39,IT Network Systems Administration,DE,Germany,12,Medallion for Excellence,505.0,,,JULIAN JOST,7500,True,3824
+WSC2011,39,IT Network Systems Administration,AT,Austria,13,Medallion for Excellence,501.0,,,LUKAS STEINHAUSER,7909,True,3825
+WSC2011,39,IT Network Systems Administration,CA,Canada,13,Medallion for Excellence,501.0,,,GUILLAUME PARENT,6746,True,3826
+WSC2011,39,IT Network Systems Administration,UK,United Kingdom,15,,496.0,,,MATTHEW MACK,7000,True,3827
+WSC2011,39,IT Network Systems Administration,PT,Portugal,16,,491.0,,,RAFAEL ROQUE,7230,True,3829
+WSC2011,39,IT Network Systems Administration,TW,Chinese Taipei,16,,493.0,,,CHENG-EN LEE,7178,True,3828
+WSC2011,39,IT Network Systems Administration,HK,"Hong Kong, China",18,,489.0,,,CHUN HONG TANG,7643,True,3830
+WSC2011,39,IT Network Systems Administration,LI,Principality of Liechtenstein,18,,489.0,,,MATHIAS VETSCH,8319,True,3831
+WSC2011,39,IT Network Systems Administration,MO,"Macao, China",20,,485.0,,,KA FAI WONG,8615,True,3832
+WSC2011,39,IT Network Systems Administration,US,United States of America,20,,484.0,,,MATTHEW VICARI,8535,True,3833
+WSC2011,39,IT Network Systems Administration,ES,Spain,22,,481.0,,,TAMARA BESITI,7757,True,3834
+WSC2011,39,IT Network Systems Administration,SE,Sweden,23,,467.0,,,PETER SÖNNERFORS,7521,True,3835
+WSC2011,39,IT Network Systems Administration,BE,Belgium,24,,462.0,,,THOMAS SCHIFANO,7731,True,3837
+WSC2011,39,IT Network Systems Administration,OM,Oman,24,,463.0,,,MOHAMMED AL BALUSHI,8683,True,3836
+WSC2011,39,IT Network Systems Administration,EE,Estonia,26,,436.0,,,RIIN OTS,7272,True,3839
+WSC2011,39,IT Network Systems Administration,PY,Paraguay,26,,436.0,,,ELVIO VELAZQUEZ,9033,True,3838
+WSC2011,39,IT Network Systems Administration,IR,Iran,3,Bronze,541.0,,,POUYA PIRHOSSEINLOO,6986,True,3815
+WSC2011,39,IT Network Systems Administration,CH,Switzerland,4,Medallion for Excellence,538.0,,,TOBIAS MEIER,8296,True,3816
+WSC2011,39,IT Network Systems Administration,MY,Malaysia,5,Medallion for Excellence,531.0,,,SHUM E HAN,7498,True,3817
+WSC2011,39,IT Network Systems Administration,FR,France,6,Medallion for Excellence,527.0,,,ALBÉRIC ALEXANDRE,7294,True,3818
+WSC2011,39,IT Network Systems Administration,FI,Finland,7,Medallion for Excellence,524.0,,,MARKUS LINTUALA,8155,True,3819
+WSC2011,39,IT Network Systems Administration,HU,Hungary,7,Medallion for Excellence,524.0,,,GÁBOR SZABÓ,7060,True,3820
+WSC2011,39,IT Network Systems Administration,BR,Brazil,9,Medallion for Excellence,517.0,,,AVNER SANTOS,7443,True,3822
+WSC2011,39,IT Network Systems Administration,KR,Korea,9,Medallion for Excellence,517.0,,,HYANG RAE PARK,8003,True,3821
+WSC2011,40,Graphic Design Technology,IT,"South Tyrol, Italy",1,Gold,552.0,,,KARIN FISCHNALLER,7716,True,3840
+WSC2011,40,Graphic Design Technology,AU,Australia,11,Medallion for Excellence,511.0,,,NICK SHARP,6835,True,3851
+WSC2011,40,Graphic Design Technology,BE,Belgium,11,Medallion for Excellence,511.0,,,THOMAS PALACIN-DANTHINE,7730,True,3850
+WSC2011,40,Graphic Design Technology,NO,Norway,13,,498.0,,,RINO MARTINSEN,7838,True,3852
+WSC2011,40,Graphic Design Technology,AT,Austria,14,,494.0,,,DOMENIC HARTMANN,8062,True,3853
+WSC2011,40,Graphic Design Technology,TH,Thailand,14,,492.0,,,PITI PRAVICHPAIBUL,8831,True,3855
+WSC2011,40,Graphic Design Technology,TW,Chinese Taipei,14,,493.0,,,HUANG-CHUN CHAN,7177,True,3854
+WSC2011,40,Graphic Design Technology,SA,Saudi Arabia,17,,490.0,,,ABDULRAHMAN ALQARAAWI,8256,True,3856
+WSC2011,40,Graphic Design Technology,DK,Denmark,18,,486.0,,,MALENE BOEL KRONBORG,7831,True,3857
+WSC2011,40,Graphic Design Technology,AE,United Arab Emirates,19,,482.0,,,TAGHRID AL ALI,8877,True,3859
+WSC2011,40,Graphic Design Technology,JP,Japan,19,,482.0,,,NAO HATANAKA,8400,True,3858
+WSC2011,40,Graphic Design Technology,BR,Brazil,2,Silver,545.0,,,GUILHERME VIEIRA,7442,True,3841
+WSC2011,40,Graphic Design Technology,FR,France,2,Silver,543.0,,,ALEXIA ROUX,7293,True,3842
+WSC2011,40,Graphic Design Technology,HK,"Hong Kong, China",21,,473.0,,,YIK CHAI CHENG,7082,True,3860
+WSC2011,40,Graphic Design Technology,CO,Colombia,22,,465.0,,,LILIANA MORALES,6818,True,3861
+WSC2011,40,Graphic Design Technology,OM,Oman,23,,450.0,,,TAHA AL BUSAFI,8667,True,3862
+WSC2011,40,Graphic Design Technology,VN,Vietnam,24,,446.0,,,NGUYEN MINH TAI,6799,True,3863
+WSC2011,40,Graphic Design Technology,US,United States of America,25,,439.0,,,VICTORIA BROWN,8534,True,3864
+WSC2011,40,Graphic Design Technology,KR,Korea,4,Medallion for Excellence,533.0,,,JI MIN HAM,8011,True,3843
+WSC2011,40,Graphic Design Technology,FI,Finland,5,Medallion for Excellence,530.0,,,HEIKKI SALO,8154,True,3844
+WSC2011,40,Graphic Design Technology,CA,Canada,6,Medallion for Excellence,521.0,,,ANDREW POWER,6747,True,3846
+WSC2011,40,Graphic Design Technology,SG,Singapore,6,Medallion for Excellence,522.0,,,MAY PENG THAM,8082,True,3845
+WSC2011,40,Graphic Design Technology,UK,United Kingdom,8,Medallion for Excellence,517.0,,,JONATHAN CLEAVE,6999,True,3847
+WSC2011,40,Graphic Design Technology,ES,Spain,9,Medallion for Excellence,512.0,,,DIEGO ESCRIBANO,7756,True,3849
+WSC2011,40,Graphic Design Technology,ID,Indonesia,9,Medallion for Excellence,514.0,,,RANDHI REGA ALVIAN,7412,True,3848
+WSC2011,41,Caring,SG,Singapore,1,Gold,557.0,,,RACHEL CHLOE CHUA; KAIYUN JASLYN LI,8080; 8081,True,3865
+WSC2011,41,Caring,UK,United Kingdom,11,,487.0,,,EMMA FITZPATRICK; FRANCES MCMENEMY,6998; 6996,True,3875
+WSC2011,41,Caring,CO,Colombia,12,,456.0,,,AURA MARIN; CHRISTIAN CAMILO SERNA GAMEZ,6817; 159636,True,3876
+WSC2011,41,Caring,AE,United Arab Emirates,13,,434.0,,,ASMA ALMESMARI; DALAL ALNUAIMI,8878; 9041,True,3877
+WSC2011,41,Caring,FI,Finland,2,Silver,528.0,,,NOORA JÄNKÄLÄ; MARI KURULA,8153; 8152,True,3866
+WSC2011,41,Caring,SE,Sweden,2,Silver,526.0,,,MIKAEL ERIKSSON; MATTIAS NILSSON,7656; 7657,True,3867
+WSC2011,41,Caring,NL,Netherlands,4,Medallion for Excellence,513.0,,,AMANDA KRUISE; WESSEL VAN DE VEERDONK,8572; 7744,True,3868
+WSC2011,41,Caring,BR,Brazil,5,Medallion for Excellence,510.0,,,JÉSSICA AMARAL; RENATA MACHADO,7441; 7440,True,3869
+WSC2011,41,Caring,NO,Norway,6,Medallion for Excellence,506.0,,,SOLBJØRG BYBERG; EDEL SUSANNE HETLAND,7836; 7837,True,3870
+WSC2011,41,Caring,FR,France,7,,498.0,,,MÉLANIE GOUEZEL; JONATHAN VALOIS,7292; 7291,True,3871
+WSC2011,41,Caring,IT,"South Tyrol, Italy",7,,497.0,,,PATRICK BOZNER; MARTINA GOLLER,7714; 7715,True,3872
+WSC2011,41,Caring,CH,Switzerland,9,,494.0,,,ARJETA BEHLULI; SARAH NEF,8295; 8294,True,3873
+WSC2011,41,Caring,ES,Spain,9,,493.0,,,NURIA FERNÁNDEZ; TAMARA HERNÁNDEZ,7755; 7754,True,3874
+WSC2011,42,Construction Metal Work,AT,Austria,1,Gold,554.0,,,FLORIAN SALHOFER,8060,True,3878
+WSC2011,42,Construction Metal Work,CH,Switzerland,2,Silver,523.0,,,THOMAS ZURFLUH,8475,True,3879
+WSC2011,42,Construction Metal Work,FR,France,3,Bronze,515.0,,,LUCAS GOETSCHY,7290,True,3880
+WSC2011,42,Construction Metal Work,AU,Australia,4,Medallion for Excellence,505.0,,,MICHAEL ASHTON,8628,True,3881
+WSC2011,42,Construction Metal Work,JP,Japan,5,,496.0,,,TAKAAKI SUZUKI,176238,True,3884
+WSC2011,42,Construction Metal Work,KR,Korea,5,,497.0,,,SEUNG HWAN YUN,8002,True,3882
+WSC2011,42,Construction Metal Work,TW,Chinese Taipei,5,,497.0,,,TA-SHUO WANG,7176,True,3883
+WSC2011,42,Construction Metal Work,IE,Ireland,8,,474.0,,,MICHAEL DUGGAN,8746,True,3885
+WSC2011,42,Construction Metal Work,FI,Finland,9,,439.0,,,KAI KOSKINEN,8151,True,3886
+WSC2011,43,Sheet Metal Technology,KR,Korea,1,Gold,531.0,,,YONG JAE JEON,8001,True,3888
+WSC2011,43,Sheet Metal Technology,TW,Chinese Taipei,1,Gold,533.0,,,SHENG-PIN LO,7175,True,3887
+WSC2011,43,Sheet Metal Technology,JP,Japan,3,Bronze,518.0,,,TATSUYA MATSUI,8398,True,3889
+WSC2011,43,Sheet Metal Technology,AU,Australia,4,Medallion for Excellence,507.0,,,RUSSELL ROUTLEDGE,6834,True,3890
+WSC2011,43,Sheet Metal Technology,NZ,New Zealand,5,,486.0,,,WILLIAM TAYLOR,7893,True,3891
+WSC2011,43,Sheet Metal Technology,CA,Canada,6,,483.0,,,MARC-ANDRÉ LAMBERT,6749,True,3892
+WSC2011,43,Sheet Metal Technology,FR,France,7,,442.0,,,TOM THERY,7289,True,3893
+WSC2011,D1,Visual Merchandising,UK,United Kingdom,1,Gold,526.0,,,KIRSTY HOADLEY,6995,True,3894
+WSC2011,D1,Visual Merchandising,NL,Netherlands,2,Silver,515.0,,,PHILINE VAN DEN HUL,7814,True,3895
+WSC2011,D1,Visual Merchandising,SG,Singapore,3,Bronze,510.0,,,YI QI LOH,8079,True,3896
+WSC2011,D1,Visual Merchandising,FI,Finland,4,,449.0,,,MARIINA JYLÄSKOSKI,7810,True,3897
+WSC2011,D2,Creative Modelling,JP,Japan,1,Gold,523.0,,,KEISEI SOGABE,8397,True,3898
+WSC2011,D2,Creative Modelling,TH,Thailand,1,Gold,521.0,,,TANONGSAK HENGSAWAD,9661,True,3899
+WSC2011,D2,Creative Modelling,CH,Switzerland,3,Bronze,511.0,,,JAN ZÜLLIG,3185,True,3900
+WSC2011,D2,Creative Modelling,FI,Finland,4,Medallion for Excellence,506.0,,,TIMO-SEPPO PIRILÄ,8150,True,3901
+WSC2011,D2,Creative Modelling,ID,Indonesia,4,Medallion for Excellence,504.0,,,RAHARTO RAHARTO,7411,True,3902
+WSC2011,D2,Creative Modelling,SG,Singapore,6,,435.0,,,QINGSEN SONG,8078,True,3903
+WSC2011,HM1,Stonemasonry,FR,France,1,Gold,527.0,,,MICHAËL ESNAULT,7288,True,3904
+WSC2011,HM1,Stonemasonry,UK,United Kingdom,1,Gold,526.0,,,CHRISTOPHER BERRIDGE,6994,True,3905
+WSC2011,HM1,Stonemasonry,KR,Korea,3,Bronze,519.0,,,MIN CHUL LEE,8000,True,3906
+WSC2011,HM1,Stonemasonry,CH,Switzerland,4,Medallion for Excellence,509.0,,,MANUEL CADUFF,8099,True,3907
+WSC2011,HM1,Stonemasonry,AT,Austria,5,,497.0,,,MELANIE SEIDL,7978,True,3908
+WSC2011,HM1,Stonemasonry,PT,Portugal,6,,488.0,,,FÁBIO REIS,7229,True,3909
+WSC2011,HM1,Stonemasonry,FI,Finland,7,,434.0,,,KIMMO RAATIKAINEN,8149,True,3910

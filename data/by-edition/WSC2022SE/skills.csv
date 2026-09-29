@@ -1,0 +1,63 @@
+﻿edition,skill,name,status,skill_id,type
+WSC2022SE,01,Industrial Mechanics,active,1462,official
+WSC2022SE,02,Information Network Cabling,active,1494,official
+WSC2022SE,03,Manufacturing Team Challenge,active,1460,official
+WSC2022SE,04,Mechatronics,active,1458,official
+WSC2022SE,05,Mechanical Engineering CAD,active,1457,official
+WSC2022SE,06,CNC Turning,active,1491,official
+WSC2022SE,07,CNC Milling,active,1467,official
+WSC2022SE,08,Mobile Applications Development,active,1487,official
+WSC2022SE,09,IT Software Solutions for Business,active,1466,official
+WSC2022SE,10,Welding,active,1499,official
+WSC2022SE,11,Print Media Technology,active,1463,official
+WSC2022SE,12,Wall and Floor Tiling,active,1471,official
+WSC2022SE,13,Autobody Repair,active,1464,official
+WSC2022SE,14,Aircraft Maintenance,active,1477,official
+WSC2022SE,15,Plumbing and Heating,active,1519,official
+WSC2022SE,16,Electronics,active,1508,official
+WSC2022SE,17,Web Technologies,active,1482,official
+WSC2022SE,18,Electrical Installations,active,1465,official
+WSC2022SE,19,Industrial Control,active,1483,official
+WSC2022SE,20,Bricklaying,active,1489,official
+WSC2022SE,21,Plastering and Drywall Systems,active,1497,official
+WSC2022SE,22,Painting and Decorating,active,1516,official
+WSC2022SE,23,Mobile Robotics,active,1461,official
+WSC2022SE,24,Cabinetmaking,active,1495,official
+WSC2022SE,25,Joinery,active,1469,official
+WSC2022SE,26,Carpentry,active,1488,official
+WSC2022SE,27,Jewellery,active,1513,official
+WSC2022SE,28,Floristry,active,1480,official
+WSC2022SE,29,Hairdressing,active,1504,official
+WSC2022SE,30,Beauty Therapy,active,1501,official
+WSC2022SE,31,Fashion Technology,active,1481,official
+WSC2022SE,32,Pâtisserie and Confectionery,active,1474,official
+WSC2022SE,33,Automobile Technology,active,1473,official
+WSC2022SE,34,Cooking,active,1511,official
+WSC2022SE,35,Restaurant Service,active,1492,official
+WSC2022SE,36,Car Painting,active,1479,official
+WSC2022SE,37,Landscape Gardening,active,1509,official
+WSC2022SE,38,Refrigeration and Air Conditioning,active,1496,official
+WSC2022SE,39,IT Network Systems Administration,active,1518,official
+WSC2022SE,40,Graphic Design Technology,active,1498,official
+WSC2022SE,41,Health and Social Care,active,1512,official
+WSC2022SE,42,Construction Metal Work,active,1485,official
+WSC2022SE,43,Plastic Die Engineering,active,1503,official
+WSC2022SE,44,Visual Merchandising,active,1478,official
+WSC2022SE,45,Prototype Modelling,active,1500,official
+WSC2022SE,46,Concrete Construction Work,active,1507,official
+WSC2022SE,47,Bakery,active,1472,official
+WSC2022SE,48,Industry 4.0,active,1476,official
+WSC2022SE,49,Heavy Vehicle Technology,active,1484,official
+WSC2022SE,50,3D Digital Game Art,active,1515,official
+WSC2022SE,51,Freight Forwarding,active,1493,official
+WSC2022SE,52,Chemical Laboratory Technology,active,1502,official
+WSC2022SE,53,Cloud Computing,active,1510,official
+WSC2022SE,54,Cyber Security,active,1468,official
+WSC2022SE,55,Water Technology,active,1490,official
+WSC2022SE,56,Hotel Reception,active,1486,official
+WSC2022SE,57,Additive Manufacturing,active,1514,official
+WSC2022SE,58,Digital Construction,active,1470,official
+WSC2022SE,60,Optoelectronic Technology,active,1475,official
+WSC2022SE,62,Renewable Energy,active,1517,official
+WSC2022SE,63,Robot Systems Integration,active,1459,official
+WSC2022SE,E01,Stonemasonry,active,1565,exhibition

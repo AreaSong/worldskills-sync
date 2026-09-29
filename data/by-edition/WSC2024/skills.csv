@@ -1,0 +1,63 @@
+﻿edition,skill,name,status,skill_id,type
+WSC2024,01,Industrial Mechanics,active,1660,official
+WSC2024,02,Information Network Cabling,active,1662,official
+WSC2024,03,Manufacturing Team Challenge,active,1663,official
+WSC2024,04,Mechatronics,active,1665,official
+WSC2024,05,Mechanical Engineering CAD,active,1664,official
+WSC2024,06,CNC Turning,active,1658,official
+WSC2024,07,CNC Milling,active,1661,official
+WSC2024,08,Mobile Applications Development,active,1659,official
+WSC2024,09,IT Software Solutions for Business,active,1680,official
+WSC2024,10,Welding,active,1672,official
+WSC2024,12,Wall and Floor Tiling,active,1686,official
+WSC2024,13,Autobody Repair,active,1671,official
+WSC2024,14,Aircraft Maintenance,active,1673,official
+WSC2024,15,Plumbing and Heating,active,1687,official
+WSC2024,16,Electronics,active,1688,official
+WSC2024,17,Web Technologies,active,1693,official
+WSC2024,18,Electrical Installations,active,1677,official
+WSC2024,19,Industrial Control,active,1683,official
+WSC2024,20,Bricklaying,active,1695,official
+WSC2024,21,Plastering and Drywall Systems,active,1685,official
+WSC2024,22,Painting and Decorating,active,1691,official
+WSC2024,23,Autonomous Mobile Robotics,active,1696,official
+WSC2024,24,Cabinetmaking,active,1704,official
+WSC2024,25,Joinery,active,1717,official
+WSC2024,26,Carpentry,active,1698,official
+WSC2024,27,Jewellery,active,1681,official
+WSC2024,28,Floristry,active,1690,official
+WSC2024,29,Hairdressing,active,1675,official
+WSC2024,30,Beauty Therapy,active,1712,official
+WSC2024,31,Fashion Technology,active,1697,official
+WSC2024,32,Pâtisserie and Confectionery,active,1711,official
+WSC2024,33,Automobile Technology,active,1669,official
+WSC2024,34,Cooking,active,1670,official
+WSC2024,35,Restaurant Service,active,1699,official
+WSC2024,36,Car Painting,active,1718,official
+WSC2024,37,Landscape Gardening,active,1713,official
+WSC2024,38,Refrigeration and Air Conditioning,active,1674,official
+WSC2024,39,IT Network Systems Administration,active,1694,official
+WSC2024,40,Graphic Design Technology,active,1701,official
+WSC2024,41,Health and Social Care,active,1716,official
+WSC2024,42,Construction Metal Work,active,1710,official
+WSC2024,44,Visual Merchandising,active,1684,official
+WSC2024,46,Concrete Construction Work,active,1692,official
+WSC2024,47,Bakery,active,1667,official
+WSC2024,48,Industry 4.0,active,1703,official
+WSC2024,49,Heavy Vehicle Technology,active,1679,official
+WSC2024,50,3D Digital Game Art,active,1708,official
+WSC2024,51,Logistics and Freight Forwarding,active,1689,official
+WSC2024,52,Chemical Laboratory Technology,active,1676,official
+WSC2024,53,Cloud Computing,active,1706,official
+WSC2024,54,Cyber Security,active,1678,official
+WSC2024,55,Water Technology,active,1707,official
+WSC2024,56,Hotel Reception,active,1666,official
+WSC2024,57,Additive Manufacturing,active,1700,official
+WSC2024,58,Digital Construction,active,1714,official
+WSC2024,59,Industrial Design Technology,active,1705,official
+WSC2024,60,Optoelectronic Technology,active,1702,official
+WSC2024,62,Renewable Energy,active,1709,official
+WSC2024,63,Robot Systems Integration,active,1657,official
+WSC2024,E01,Stonemasonry,active,1719,exhibition
+WSC2024,E02,Heavy Truck Maintenance,active,1835,exhibition
+WSC2024,E03,Rail Vehicle Technology,active,1715,exhibition

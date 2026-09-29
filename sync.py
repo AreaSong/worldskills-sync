@@ -10,6 +10,7 @@ import json
 import os
 import re
 import sqlite3
+import subprocess
 import sys
 import time
 from email.message import EmailMessage
@@ -23,6 +24,7 @@ from bs4 import BeautifulSoup
 from classify import (
     CMS_SECTION_TO_DOC,
     CMS_SLUG_TO_CODE,
+    EDITION_EVENT_IDS,
     EDITION_NAMES,
     MEMBER_AREA_CODES,
     RESOURCE_TYPE_TO_DOC,
@@ -39,14 +41,17 @@ from classify import (
 from layout import (
     existing_source,
     finalize_records,
+    kind_code,
     pack_releases,
     place_file,
     prune_empty_dirs,
     record_from_row,
+    release_tag,
     sha256_file,
     unique_relpath,
     write_indexes,
 )
+from tables import refresh_tables, update_resource_catalog
 
 ROOT = Path(__file__).resolve().parent
 SESSION_DIR = ROOT / ".session"
@@ -70,7 +75,7 @@ USER_AGENT = (
     "Chrome/128.0.0.0 Safari/537.36"
 )
 TD_LANGS = ("en", "zh", "de", "es", "fr", "ja", "ko", "pt", "fi", "ru", "ar")
-MAX_BYTES = 512 * 1024 * 1024
+MAX_BYTES = 1_800_000_000
 
 
 class LoginRequired(RuntimeError):
@@ -171,15 +176,16 @@ def cookies_from_storage() -> httpx.Cookies:
     return cookies
 
 
-def make_client() -> httpx.Client:
+def make_client(*, require_login: bool = True) -> httpx.Client:
     token = load_token()
-    if not token:
+    if require_login and not token:
         raise LoginRequired("还没有登录令牌")
     headers = {
         "User-Agent": USER_AGENT,
         "Accept": "application/json,application/pdf,*/*",
-        "Authorization": f"Bearer {token}",
     }
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
     return httpx.Client(
         cookies=cookies_from_storage(),
         headers=headers,
@@ -306,6 +312,7 @@ def export_tables(db: sqlite3.Connection) -> None:
         writer.writerow(["届次", "类型", "文件名", "网址"])
         for row in db.execute("SELECT * FROM items WHERE skill_number IS NULL OR skill_number = ''"):
             writer.writerow([row["edition_name"], row["doc_type"], row["filename"], row["url"]])
+    update_resource_catalog(ROOT, db.execute("SELECT * FROM items").fetchall())
     export_indexes(db)
 
 
@@ -330,10 +337,8 @@ def queue_item(
     source: str,
     extra_key: str = "",
 ) -> bool:
-    if info.edition_code and not member_area_code(info.edition_code):
+    if not member_area_code(info.edition_code):
         return False
-    if not info.edition_code:
-        info.edition_name = "未识别届次"
     key = extra_key or canonical_url(url)
     return enqueue(
         db,
@@ -412,22 +417,7 @@ def load_events(client: httpx.Client, skills: SkillIndex) -> None:
         if len(items) < 100:
             break
         offset += 100
-    extras = {
-        "WSC2022": 536,
-        "WSC2022SE": 594,
-        "WSC2001": 3,
-        "WSC2003": 4,
-        "WSC2005": 5,
-        "WSC2007": 6,
-        "WSC2009": 7,
-        "WSC2011": 8,
-        "WSC2013": 9,
-        "WSC2015": 10,
-        "WSC2017": 316,
-        "WSC2019": 364,
-        "WSC2024": 579,
-        "WSC2026": 611,
-    }
+    extras = EDITION_EVENT_IDS
     for code, event_id in extras.items():
         skills.event_ids.setdefault(code, event_id)
         skills.event_names.setdefault(event_id, edition_name(code))
@@ -758,6 +748,7 @@ def discover(db: sqlite3.Connection, client: httpx.Client) -> None:
     added += discover_cms(db, client, skills)
     db.commit()
     print(f"新加入队列 {added} 个文件。当前队列 {count_state(db, 'queued')}。")
+    refresh_tables(ROOT, client, db.execute("SELECT * FROM items").fetchall())
 
 
 def is_binary_ok(response: httpx.Response) -> bool:
@@ -892,6 +883,10 @@ def download(args: argparse.Namespace) -> None:
     finally:
         db.execute("UPDATE items SET state = 'queued' WHERE state = 'working'")
         db.commit()
+        try:
+            refresh_tables(ROOT, client, db.execute("SELECT * FROM items").fetchall())
+        except Exception as exc:
+            print(f"名单表更新失败：{exc}")
         export_tables(db)
         client.close()
         print(
@@ -1052,7 +1047,7 @@ def pack(args: argparse.Namespace) -> None:
     for item in written:
         print(f"{item['asset']}  {item['files']} 个文件  {item['bytes']} 字节")
     print(f"清单：{DIST / 'manifest.json'}")
-    print("尚未上传 GitHub Release。需要时再单独发布。")
+    print("上传：python sync.py publish")
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -1068,11 +1063,17 @@ def build_parser() -> argparse.ArgumentParser:
     download_parser.add_argument("--retry-errors", action="store_true")
     sub.add_parser("discover", help="只扫描目录，不下载")
     sub.add_parser("status", help="查看进度")
+    sub.add_parser("data", help="刷新届次、项目、成员、成绩等名单表")
     reindex_parser = sub.add_parser("reindex", help="把已下载文件迁到正文库并生成索引")
     reindex_parser.add_argument("--dry-run", action="store_true", help="只预览新路径，不移动文件")
     pack_parser = sub.add_parser("pack", help="按届次和类型打成 Release zip")
     pack_parser.add_argument("--edition", help="如 WSC2005，默认打包已保存的全部届次")
     pack_parser.add_argument("--kind", help="TD/TP/IL 等，默认该届次下全部分类")
+    publish_parser = sub.add_parser("publish", help="打包并把 zip 上传到 GitHub Releases")
+    publish_parser.add_argument("--edition", help="如 WSC2005，默认上传已打包的全部届次")
+    publish_parser.add_argument("--kind", help="TD/TP/IL 等，默认该届次下全部分类")
+    publish_parser.add_argument("--skip-data", action="store_true", help="跳过刷新名单表")
+    publish_parser.add_argument("--dry-run", action="store_true", help="只打包，不上传")
     return parser
 
 
@@ -1084,6 +1085,64 @@ def run_discover() -> None:
     finally:
         export_tables(db)
         client.close()
+
+
+def run_data() -> None:
+    db = connect()
+    client = make_client(require_login=False)
+    try:
+        refresh_tables(ROOT, client, db.execute("SELECT * FROM items").fetchall())
+    finally:
+        export_tables(db)
+        client.close()
+
+
+def publish(args: argparse.Namespace) -> None:
+    if not args.skip_data:
+        run_data()
+    pack(args)
+    if args.dry_run:
+        print("这是预览，没有上传 GitHub。")
+        return
+    manifest_path = DIST / "manifest.json"
+    if not manifest_path.exists():
+        raise SystemExit("没有打包清单。请先下载文件再 publish。")
+    items = json.loads(manifest_path.read_text(encoding="utf-8"))
+    wanted = release_tag(args.edition) if args.edition else None
+    grouped: dict[str, list[Path]] = {}
+    for item in items:
+        tag = item.get("release") or ""
+        if wanted and tag != wanted:
+            continue
+        path = Path(item.get("path") or "")
+        if not path.is_file():
+            path = DIST / str(item.get("asset") or "")
+        if path.is_file():
+            grouped.setdefault(tag, []).append(path)
+    if not grouped:
+        raise SystemExit("没有可上传的 zip。请先 download 再 publish。")
+    titles = {release_tag(code): f"{name} ({code})" for code, name in EDITION_NAMES.items()}
+    for tag, files in grouped.items():
+        title = titles.get(tag, tag)
+        notes = (
+            f"{title} 竞赛资料包。\n\n"
+            "名单和索引在仓库的 data/ 与 indexes/。\n"
+            "zip 内路径与 store/ 一致，解压到 store/ 即可。"
+        )
+        viewed = subprocess.run(["gh", "release", "view", tag], cwd=ROOT, capture_output=True, text=True)
+        if viewed.returncode != 0:
+            created = subprocess.run(
+                ["gh", "release", "create", tag, "--title", title, "--notes", notes],
+                cwd=ROOT,
+            )
+            if created.returncode != 0:
+                raise SystemExit(f"无法创建 Release {tag}。请确认已安装 gh 并已登录。")
+        for path in files:
+            print(f"上传 {path.name} -> {tag}")
+            uploaded = subprocess.run(["gh", "release", "upload", tag, str(path), "--clobber"], cwd=ROOT)
+            if uploaded.returncode != 0:
+                raise SystemExit(f"上传失败 {path.name}")
+    print("文件已上传到 GitHub Releases。请把 data/ 和 indexes/ 提交到 git。")
 
 
 def _self_test() -> None:
@@ -1117,6 +1176,10 @@ def _self_test() -> None:
     )
     assert record["store_path"] == "WSC2005/TP/38/actual/und/TP38_38FI.zip"
     assert record["release"] == "wsc-2005-helsinki"
+    assert kind_code("视频") == "VID"
+    assert kind_code("video") == "VID"
+    assert RESOURCE_TYPE_TO_DOC[3] == "video"
+    assert RESOURCE_TYPE_TO_DOC[19] == "wsss"
     print("self-test ok")
 
 
@@ -1142,6 +1205,10 @@ def main(argv: list[str] | None = None) -> None:
             reindex(args)
         elif args.command == "pack":
             pack(args)
+        elif args.command == "data":
+            run_data()
+        elif args.command == "publish":
+            publish(args)
     except LoginRequired:
         raise SystemExit("登录已失效。请运行：python sync.py login") from None
 

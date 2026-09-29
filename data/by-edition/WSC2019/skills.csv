@@ -1,0 +1,95 @@
+﻿edition,skill,name,status,skill_id,type
+WSC2019,01,Polymechanics and Automation,active,596,official
+WSC2019,02,Information Network Cabling,active,595,official
+WSC2019,03,Manufacturing Team Challenge,active,593,official
+WSC2019,04,Mechatronics,active,594,official
+WSC2019,05,Mechanical Engineering CAD,active,598,official
+WSC2019,06,CNC Turning,active,597,official
+WSC2019,07,CNC Milling,active,599,official
+WSC2019,08,Architectural Stonemasonry,active,601,official
+WSC2019,09,IT Software Solutions for Business,active,602,official
+WSC2019,10,Welding,active,600,official
+WSC2019,11,Print Media Technology,active,603,official
+WSC2019,12,Wall and Floor Tiling,active,604,official
+WSC2019,13,Autobody Repair,active,606,official
+WSC2019,14,Aircraft Maintenance,active,607,official
+WSC2019,15,Plumbing and Heating,active,605,official
+WSC2019,16,Electronics,active,608,official
+WSC2019,17,Web Technologies,active,609,official
+WSC2019,18,Electrical Installations,active,611,official
+WSC2019,19,Industrial Control,active,610,official
+WSC2019,20,Bricklaying,active,613,official
+WSC2019,21,Plastering and Drywall Systems,active,612,official
+WSC2019,22,Painting and Decorating,active,614,official
+WSC2019,23,Mobile Robotics,active,615,official
+WSC2019,24,Cabinetmaking,active,618,official
+WSC2019,25,Joinery,active,617,official
+WSC2019,26,Carpentry,active,616,official
+WSC2019,27,Jewellery,active,620,official
+WSC2019,28,Floristry,active,619,official
+WSC2019,29,Hairdressing,active,621,official
+WSC2019,30,Beauty Therapy,active,622,official
+WSC2019,31,Fashion Technology,active,623,official
+WSC2019,32,Pâtisserie and Confectionery,active,624,official
+WSC2019,33,Automobile Technology,active,625,official
+WSC2019,34,Cooking,active,626,official
+WSC2019,35,Restaurant Service,active,631,official
+WSC2019,36,Car Painting,active,627,official
+WSC2019,37,Landscape Gardening,active,628,official
+WSC2019,38,Refrigeration and Air Conditioning,active,630,official
+WSC2019,39,IT Network Systems Administration,active,629,official
+WSC2019,40,Graphic Design Technology,active,632,official
+WSC2019,41,Health and Social Care,active,634,official
+WSC2019,42,Construction Metal Work,active,639,official
+WSC2019,43,Plastic Die Engineering,active,633,official
+WSC2019,44,Visual Merchandising,active,641,official
+WSC2019,45,Prototype Modelling,active,636,official
+WSC2019,46,Concrete Construction Work,active,635,official
+WSC2019,47,Bakery,active,638,official
+WSC2019,48,Industrial Mechanic Millwright,active,637,official
+WSC2019,49,Heavy Vehicle Technology,active,643,official
+WSC2019,50,3D Digital Game Art,active,642,official
+WSC2019,51,Freight Forwarding,active,640,official
+WSC2019,52,Chemical Laboratory Technology,active,644,official
+WSC2019,53,Cloud Computing,active,645,official
+WSC2019,54,Cyber Security,active,646,official
+WSC2019,55,Water Technology,active,647,official
+WSC2019,56,Hotel Reception,active,648,official
+WSC2019,FS01,Rapid Prototyping,active,719,presentation
+WSC2019,FS02,Agricultural Biotechnology,active,720,presentation
+WSC2019,FS03,Virtual and Augmented Reality,active,721,presentation
+WSC2019,FS04,Blockchain-based Solutions,active,722,presentation
+WSC2019,FS05,Composite Technologies,active,723,presentation
+WSC2019,FS06,Enterprise Information Systems Security,active,724,presentation
+WSC2019,FS07,Industrial Design Technology,active,725,presentation
+WSC2019,FS08,Robot Systems Integration,active,726,presentation
+WSC2019,FS09,Internet of Things,active,727,presentation
+WSC2019,FS10,Machine Learning and Big Data,active,729,presentation
+WSC2019,FS11,Mobile Applications Development,active,730,presentation
+WSC2019,FS12,Quantum Technology,active,731,presentation
+WSC2019,FS13,Mechanical Reverse Engineering,active,732,presentation
+WSC2019,FS14,Drone Operating,active,733,presentation
+WSC2019,FS15,Building Information Modelling (BIM),active,735,presentation
+WSC2019,FS16,Space Systems Engineering,active,746,presentation
+WSC2019,FSS01,Digital Factory,active,736,exhibition
+WSC2019,FSS02,Digital Farming,active,737,exhibition
+WSC2019,FSS03,Digital Fashion Designer,active,738,exhibition
+WSC2019,FSS04,Robotic Welding,active,739,exhibition
+WSC2019,FSS05,Neural Interface Design,active,740,exhibition
+WSC2019,FSS06,Life-cycle Management,active,741,exhibition
+WSC2019,FSS08,Mineral Synthesis and Processing,active,743,exhibition
+WSC2019,FSS09,Laser Technology,active,744,exhibition
+WSC2019,FSS10,Industry 4.0,active,745,exhibition
+WSC2019,WSJ01,Electrical Installations,active,707,juniors
+WSC2019,WSJ02,Graphic Design Technology,active,708,juniors
+WSC2019,WSJ03,Mobile Robotics,active,709,juniors
+WSC2019,WSJ04,Polymechanics and Automation,active,710,juniors
+WSC2019,WSJ05,Restaurant Service,active,711,juniors
+WSC2019,WSJ06,Painting and Decorating,active,712,juniors
+WSC2019,WSJ07,Plumbing and Heating,active,713,juniors
+WSC2019,WSJ08,Hairdressing,active,714,juniors
+WSC2019,WSJ09,Drone Operating,active,715,juniors
+WSC2019,WSJ10,Web Technologies,active,716,juniors
+WSC2019,WSJ11,IT Network Systems Administration,active,717,juniors
+WSC2019,WSJ12,Industrial Control,active,718,juniors
+WSC2019,WSJ13,Robot Systems Integration,active,747,juniors
