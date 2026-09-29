@@ -12,7 +12,6 @@ import re
 import sqlite3
 import sys
 import time
-from dataclasses import dataclass
 from email.message import EmailMessage
 from pathlib import Path
 from typing import Any
@@ -24,7 +23,6 @@ from bs4 import BeautifulSoup
 from classify import (
     CMS_SECTION_TO_DOC,
     CMS_SLUG_TO_CODE,
-    DOC_TYPES,
     EDITION_NAMES,
     MEMBER_AREA_CODES,
     RESOURCE_TYPE_TO_DOC,
@@ -35,7 +33,19 @@ from classify import (
     lang_folder,
     member_area_code,
     pad_skill,
+    parse_lang,
     parse_list_title,
+)
+from layout import (
+    existing_source,
+    finalize_records,
+    pack_releases,
+    place_file,
+    prune_empty_dirs,
+    record_from_row,
+    sha256_file,
+    unique_relpath,
+    write_indexes,
 )
 
 ROOT = Path(__file__).resolve().parent
@@ -44,6 +54,8 @@ STORAGE_STATE = SESSION_DIR / "storage_state.json"
 TOKEN_PATH = SESSION_DIR / "access_token"
 DOWNLOADS = ROOT / "downloads"
 ARCHIVE = DOWNLOADS / "archive"
+STORE = ROOT / "store"
+DIST = ROOT / "dist"
 DB_PATH = DOWNLOADS / "catalog.sqlite"
 CATALOG_CSV = DOWNLOADS / "catalog.csv"
 FORBIDDEN_CSV = DOWNLOADS / "forbidden.csv"
@@ -116,21 +128,19 @@ def looks_like_login(response: httpx.Response) -> bool:
 
 
 def classified_path(info: Classified, filename: str) -> Path:
-    skill_dir = "未识别"
-    if info.skill_number and info.skill_name:
-        skill_dir = f"{info.skill_number} {info.skill_name}"
-    elif info.skill_number:
-        skill_dir = info.skill_number
-    parts = [
-        safe_component(skill_dir),
-        safe_component(info.edition_name),
-        safe_component(doc_folder(info.doc_key)),
-    ]
-    if info.stage:
-        parts.append(safe_component(info.stage))
-    parts.append(safe_component(lang_folder(info.lang_code)))
-    parts.append(safe_component(filename))
-    return ARCHIVE.joinpath(*parts)
+    record = record_from_row(
+        {
+            "edition_code": info.edition_code,
+            "edition_name": info.edition_name,
+            "skill_number": info.skill_number,
+            "skill_name": info.skill_name,
+            "doc_type": info.doc_key,
+            "stage": info.stage,
+            "language": info.lang_code or "",
+            "filename": filename,
+        }
+    )
+    return STORE / record["store_path"]
 
 
 def load_token() -> str | None:
@@ -220,6 +230,9 @@ def connect() -> sqlite3.Connection:
         """
     )
     db.execute("CREATE INDEX IF NOT EXISTS idx_items_state ON items(state)")
+    columns = {row[1] for row in db.execute("PRAGMA table_info(items)")}
+    if "sha256" not in columns:
+        db.execute("ALTER TABLE items ADD COLUMN sha256 TEXT")
     return db
 
 
@@ -293,6 +306,19 @@ def export_tables(db: sqlite3.Connection) -> None:
         writer.writerow(["届次", "类型", "文件名", "网址"])
         for row in db.execute("SELECT * FROM items WHERE skill_number IS NULL OR skill_number = ''"):
             writer.writerow([row["edition_name"], row["doc_type"], row["filename"], row["url"]])
+    export_indexes(db)
+
+
+def items_records(db: sqlite3.Connection) -> list[dict[str, Any]]:
+    records = [record_from_row(row) for row in db.execute("SELECT * FROM items")]
+    done = [item for item in records if item.get("state") == "done"]
+    rest = [item for item in records if item.get("state") != "done"]
+    finalize_records(done)
+    return done + rest
+
+
+def export_indexes(db: sqlite3.Connection) -> None:
+    write_indexes(ROOT, items_records(db))
 
 
 def queue_item(
@@ -794,23 +820,18 @@ def process_one(db: sqlite3.Connection, client: httpx.Client, row: sqlite3.Row, 
     disposition = filename_from_disposition(response.headers.get("content-disposition"))
     if disposition and not disposition.startswith("report_requested"):
         filename = disposition
-    skill_dir = "未识别"
-    if row["skill_number"] and row["skill_name"]:
-        skill_dir = f"{row['skill_number']} {row['skill_name']}"
-    elif row["skill_number"]:
-        skill_dir = row["skill_number"]
-    chunks = [
-        safe_component(skill_dir),
-        safe_component(row["edition_name"] or "未识别届次"),
-        safe_component(row["doc_type"] or "资源"),
-    ]
-    if row["stage"]:
-        chunks.append(safe_component(row["stage"]))
-    chunks.append(safe_component(row["language"] or "未标注"))
-    chunks.append(safe_component(filename))
-    target = ARCHIVE.joinpath(*chunks)
-    target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_bytes(data)
+    digest = hashlib.sha256(data).hexdigest()
+    record = record_from_row({**{key: row[key] for key in row.keys()}, "filename": filename, "sha256": digest, "local_path": ""})
+    target = STORE / record["store_path"]
+    if target.exists() and sha256_file(target) == digest:
+        pass
+    elif target.exists():
+        target = target.with_name(f"{target.stem}-{digest[:8]}{target.suffix}")
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(data)
+    else:
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(data)
     mark(
         db,
         row["key"],
@@ -819,9 +840,10 @@ def process_one(db: sqlite3.Connection, client: httpx.Client, row: sqlite3.Row, 
         local_path=target.relative_to(ROOT).as_posix(),
         http_status=response.status_code,
         bytes=len(data),
+        sha256=digest,
         error=None,
     )
-    print(f"已保存 {len(data)} 字节  {target.relative_to(ARCHIVE)}")
+    print(f"已保存 {len(data)} 字节  {target.relative_to(STORE)}")
 
 
 def download(args: argparse.Namespace) -> None:
@@ -842,7 +864,7 @@ def download(args: argparse.Namespace) -> None:
         else:
             print("继续未完成的队列。若要重新扫描网站，请加 --refresh")
         queued = count_state(db, "queued")
-        print(f"队列 {queued}。保存位置：{ARCHIVE}")
+        print(f"队列 {queued}。保存位置：{STORE}")
         seen = 0
         while True:
             if args.max and seen >= args.max:
@@ -970,10 +992,71 @@ def show_status() -> None:
     )
     for state, label in labels:
         print(f"{label}：{count_state(db, state)}")
+    if STORE.exists():
+        print(f"正文库：{STORE}")
+    if (ROOT / "indexes" / "summary.json").exists():
+        print(f"索引：{ROOT / 'indexes' / 'summary.json'}")
+
+
+def reindex(args: argparse.Namespace) -> None:
+    db = connect()
+    STORE.mkdir(parents=True, exist_ok=True)
+    moved = 0
+    missing = 0
+    used: dict[str, str] = {}
+    rows = db.execute("SELECT * FROM items WHERE state = 'done' ORDER BY edition_code, skill_number, filename").fetchall()
+    for row in rows:
+        record = record_from_row(row)
+        record["store_path"] = unique_relpath(record["store_path"], used, row["key"])
+        src = existing_source(ROOT, STORE, row)
+        dest = STORE / record["store_path"]
+        if src is None:
+            missing += 1
+            print(f"找不到  {row['filename']}")
+            continue
+        dest = place_file(src, dest, dry_run=args.dry_run)
+        store_rel = dest.relative_to(STORE).as_posix() if dest.is_relative_to(STORE) else record["store_path"]
+        src_rel = src.relative_to(ROOT).as_posix() if src.is_relative_to(ROOT) else str(src)
+        if args.dry_run:
+            print(f"{src_rel} -> store/{store_rel}")
+            moved += 1
+            continue
+        digest = row["sha256"] if "sha256" in row.keys() and row["sha256"] else sha256_file(dest)
+        mark(
+            db,
+            row["key"],
+            local_path=(STORE / store_rel).relative_to(ROOT).as_posix(),
+            sha256=digest,
+            bytes=dest.stat().st_size,
+            filename=row["filename"],
+        )
+        if src.is_relative_to(ARCHIVE):
+            prune_empty_dirs(src.parent, ARCHIVE)
+        moved += 1
+        if moved % 25 == 0:
+            print(f"已整理 {moved}")
+    if not args.dry_run:
+        export_tables(db)
+    print(f"整理完成：{moved} 个文件" + (f"，缺 {missing}" if missing else ""))
+    if args.dry_run:
+        print("这是预览，没有移动文件。去掉 --dry-run 才会真正整理。")
+
+
+def pack(args: argparse.Namespace) -> None:
+    db = connect()
+    records = items_records(db)
+    written = pack_releases(STORE, DIST, records, edition=args.edition, kind=args.kind)
+    if not written:
+        print("没有可打包的已保存文件。")
+        return
+    for item in written:
+        print(f"{item['asset']}  {item['files']} 个文件  {item['bytes']} 字节")
+    print(f"清单：{DIST / 'manifest.json'}")
+    print("尚未上传 GitHub Release。需要时再单独发布。")
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="把 WorldSkills 会员区竞赛资料按技能自动归档")
+    parser = argparse.ArgumentParser(description="把 WorldSkills 会员区竞赛资料下载到正文库，并用索引按技能、届次、语言查阅")
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("login", help="打开浏览器登录并保存会话")
     download_parser = sub.add_parser("download", help="发现并下载文件")
@@ -985,6 +1068,11 @@ def build_parser() -> argparse.ArgumentParser:
     download_parser.add_argument("--retry-errors", action="store_true")
     sub.add_parser("discover", help="只扫描目录，不下载")
     sub.add_parser("status", help="查看进度")
+    reindex_parser = sub.add_parser("reindex", help="把已下载文件迁到正文库并生成索引")
+    reindex_parser.add_argument("--dry-run", action="store_true", help="只预览新路径，不移动文件")
+    pack_parser = sub.add_parser("pack", help="按届次和类型打成 Release zip")
+    pack_parser.add_argument("--edition", help="如 WSC2005，默认打包已保存的全部届次")
+    pack_parser.add_argument("--kind", help="TD/TP/IL 等，默认该届次下全部分类")
     return parser
 
 
@@ -1011,9 +1099,24 @@ def _self_test() -> None:
     number, name = parse_list_title("33 Automobile Technology")
     assert number == "33" and name == "Automobile Technology"
     path = classified_path(tp, "WSC2026_TP24_actual_en.zip")
-    assert "24" in path.as_posix()
-    assert "正式" in path.as_posix()
-    assert "英语" in path.as_posix()
+    posix = path.as_posix()
+    assert "WSC2026/TP/24/actual/en/WSC2026_TP24_actual_en.zip" in posix
+    assert parse_lang("WSC2026_TP10_38FI_pre_EN_v3.zip") == "en"
+    assert parse_lang("TP01_36KR.zip") is None
+    record = record_from_row(
+        {
+            "edition_code": "WSC2005",
+            "doc_type": "试题",
+            "skill_number": "38",
+            "stage": "正式",
+            "language": "未标注",
+            "filename": "TP38_38FI.zip",
+            "state": "done",
+            "bytes": 10,
+        }
+    )
+    assert record["store_path"] == "WSC2005/TP/38/actual/und/TP38_38FI.zip"
+    assert record["release"] == "wsc-2005-helsinki"
     print("self-test ok")
 
 
@@ -1035,6 +1138,10 @@ def main(argv: list[str] | None = None) -> None:
             run_discover()
         elif args.command == "status":
             show_status()
+        elif args.command == "reindex":
+            reindex(args)
+        elif args.command == "pack":
+            pack(args)
     except LoginRequired:
         raise SystemExit("登录已失效。请运行：python sync.py login") from None
 

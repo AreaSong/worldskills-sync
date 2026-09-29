@@ -166,23 +166,36 @@ def member_area_code(code: str | None) -> bool:
     return bool(code) and code in MEMBER_AREA_CODES
 
 
+KNOWN_LANGS = frozenset(code[:2] for code in LANG_FOLDERS)
+NON_LANG_TOKENS = frozenset({"tp", "td", "il", "sm", "ws", "of", "to", "or", "by", "at", "v1", "v2", "v3"})
+HOST_TOKEN_RE = re.compile(r"_\d{2}[A-Za-z]{2}(?=_|$|\.)")
+LANG_TOKEN_RE = re.compile(r"(?:^|[_\-.])([A-Za-z]{2})(?=$|[_\-.])")
+
+
+def file_stem(name: str) -> str:
+    return name.rsplit(".", 1)[0] if "." in name else name
+
+
+def parse_langs(text: str) -> list[str]:
+    stem = HOST_TOKEN_RE.sub("", file_stem(text))
+    found: list[str] = []
+    for match in LANG_TOKEN_RE.finditer(stem):
+        code = match.group(1).lower()
+        if code in NON_LANG_TOKENS:
+            continue
+        if code in KNOWN_LANGS:
+            if code not in found:
+                found.append(code)
+    return found
+
+
 def parse_lang(text: str) -> str | None:
-    lowered = text.lower()
-    match = re.search(r"(?:^|[_\-.])([a-z]{2})(?:_[a-z]{2})?(?:\.[a-z0-9]+)$", lowered)
-    if not match:
-        match = re.search(r"_([a-z]{2})(?:_[a-z]{2})?$", Path_stem(lowered))
-    if not match:
+    found = parse_langs(text)
+    if not found:
         return None
-    code = match.group(1)
-    if code in LANG_FOLDERS or f"{code}_us" in LANG_FOLDERS:
-        return code
-    return None
-
-
-def Path_stem(name: str) -> str:
-    if "." in name:
-        return name.rsplit(".", 1)[0]
-    return name
+    if len(found) == 1:
+        return found[0]
+    return "mul"
 
 
 def parse_stage(text: str, tags: list[str] | None = None) -> str | None:
@@ -263,9 +276,9 @@ def classify(
             code = "WSC2022SE"
     number = pad_skill(skill_number) or tag_skill or file_skill
     stage = parse_stage(filename, tags) or tag_stage
-    lang = (lang_code or parse_lang(filename) or "").lower() or None
-    if lang:
-        lang = lang.replace("-", "_")[:2]
+    lang = (lang_code or parse_lang(filename) or "").lower().replace("-", "_") or None
+    if lang and lang not in {"mul", "und"}:
+        lang = lang.split("_", 1)[0][:2]
     key = doc_key or "resources"
     if isinstance(key, int):
         key = RESOURCE_TYPE_TO_DOC.get(key, "resources")

@@ -1,5 +1,7 @@
 .session/
 downloads/
+store/
+dist/
 .venv/
 __pycache__/
 *.pyc
