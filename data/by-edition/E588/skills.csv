@@ -1,0 +1,50 @@
+﻿edition,skill,name,status,skill_id,type
+E588,101,Ajoneuvotekniikka,active,1250,official
+E588,102,Autokorinkorjaus,active,1251,official
+E588,103,Automaalaus,active,1252,official
+E588,104,Kuljetuslogistiikka,active,1253,official
+E588,105,Metsäkoneenkäyttö,active,1254,official
+E588,201,CAD-suunnittelu,active,1255,official
+E588,202,Mediatekniikka,active,1256,official
+E588,203,Mediasuunnittelu,active,1257,official
+E588,204,Tietojenkäsittely,active,1258,official
+E588,205,Tietokoneet ja verkot,active,1259,official
+E588,206,Verkkosivujen tuottaminen,active,1260,official
+E588,208,Pelituotanto,active,1261,official
+E588,301,Asiakaspalvelu ja myynti,active,1262,official
+E588,302,Hiusmuotoilu,active,1263,official
+E588,303,Kauneudenhoito,active,1264,official
+E588,304,Floristiikka,active,1265,official
+E588,305,Lähihoitaja,active,1266,official
+E588,306,Puhdistuspalvelu,active,1267,official
+E588,307,Vaatteenvalmistus,active,1268,official
+E588,308,Visuaalinen myyntityö,active,1269,official
+E588,310,Yrittäjyys,active,1270,official
+E588,312,Matkailu,active,1271,official
+E588,313,Taloushallinto,active,1272,official
+E588,314,Turvapalvelu,active,1273,official
+E588,315,Hyvinvointiteknologia,active,1274,official
+E588,401,Huonekalupuuseppä,active,1275,official
+E588,402,Ilmastointiasennus,active,1276,official
+E588,404,Rakennuspinnoittaminen,active,1277,official
+E588,405,Putkiasennus,active,1278,official
+E588,406,Sähköasennus,active,1279,official
+E588,407,Talonrakentaminen,active,1280,official
+E588,410,Viherrakentaminen,active,1281,official
+E588,411,Infrarakentaminen,active,1282,official
+E588,501,Leipuri-kondiittori,active,1283,official
+E588,502,Kokki,active,1284,official
+E588,504,Tarjoilija,active,1285,official
+E588,601,Automaatioasennus,active,1286,official
+E588,602,Elektroniikka ja robotiikka,active,1287,official
+E588,603,CNC-koneistus,active,1288,official
+E588,605,Hitsaus,active,1289,official
+E588,606,Kappaletavara-automaatio,active,1290,official
+E588,607,Koneenasennus ja kunnossapito,active,1291,official
+E588,N1,Lentokonehuolto,active,1295,official
+E588,N2,Merenkulku,active,1296,official
+E588,N3,Jalkineala,active,1297,official
+E588,N4,eSport,active,1298,official
+E588,P1,Ravintolapalvelu-Kokki,active,1292,official
+E588,P2,Kiinteistönhoito,active,1293,official
+E588,P3,Liiketoiminta,active,1294,official

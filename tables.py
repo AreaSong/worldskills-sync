@@ -10,7 +10,15 @@ from typing import Any
 
 import httpx
 
-from classify import EDITION_EVENT_IDS, EDITION_NAMES, MEMBER_AREA_CODES, pad_skill
+from classify import (
+    EDITION_EVENT_IDS,
+    EDITION_NAMES,
+    GLOBAL_CODE,
+    code_from_event,
+    event_type_of,
+    pad_skill,
+    register_edition,
+)
 from layout import record_from_row
 
 API = "https://api.worldskills.org"
@@ -72,34 +80,45 @@ def write_csv(path: Path, rows: list[dict[str, Any]], fields: list[str]) -> None
             writer.writerow({key: row.get(key, "") for key in fields})
 
 
+def event_type_code(value: Any) -> str:
+    if isinstance(value, dict):
+        return str(value.get("code") or value.get("name") or "").strip()
+    return str(value or "").strip()
+
+
 def fetch_editions(client: httpx.Client) -> list[dict[str, Any]]:
     found: dict[str, dict[str, Any]] = {}
-    for item in paginate(client, "/events?type=competition", "events", limit=100):
-        code = item.get("code") or ""
-        if code in MEMBER_AREA_CODES:
-            found[code] = {
-                "edition": code,
-                "event_id": item.get("id") or "",
-                "name": text_of(item.get("name")) or EDITION_NAMES.get(code, code),
-                "start_date": item.get("start_date") or "",
-                "end_date": item.get("end_date") or "",
-                "town": item.get("town") or "",
-                "venue": item.get("venue") or "",
-            }
-    rows = []
-    for code in MEMBER_AREA_CODES:
-        row = found.get(code) or {
+    for item in paginate(client, "/events", "events", limit=100):
+        name = text_of(item.get("name"))
+        event_id = item.get("id")
+        code = code_from_event(item.get("code"), name, event_id)
+        etype = event_type_code(item.get("type"))
+        register_edition(code, name or EDITION_NAMES.get(code, code), event_id, etype)
+        found[code] = {
             "edition": code,
-            "event_id": EDITION_EVENT_IDS.get(code, ""),
+            "event_id": event_id or "",
+            "event_type": etype,
+            "name": name or EDITION_NAMES.get(code, code),
+            "start_date": item.get("start_date") or "",
+            "end_date": item.get("end_date") or "",
+            "town": item.get("town") or "",
+            "venue": item.get("venue") or "",
+        }
+    for code, event_id in EDITION_EVENT_IDS.items():
+        if code == GLOBAL_CODE or code in found:
+            continue
+        found[code] = {
+            "edition": code,
+            "event_id": event_id,
+            "event_type": event_type_of(code),
             "name": EDITION_NAMES.get(code, code),
             "start_date": "",
             "end_date": "",
             "town": "",
             "venue": "",
         }
-        if not row.get("event_id"):
-            row["event_id"] = EDITION_EVENT_IDS.get(code, "")
-        rows.append(row)
+    rows = list(found.values())
+    rows.sort(key=lambda item: (str(item.get("start_date") or "9999"), str(item.get("edition") or "")))
     return rows
 
 
@@ -180,10 +199,10 @@ def fetch_results(client: httpx.Client) -> list[dict[str, Any]]:
     events = (data or {}).get("events") if status == 200 and isinstance(data, dict) else []
     rows: list[dict[str, Any]] = []
     for event in events or []:
-        code = event.get("code") or ""
-        if code not in MEMBER_AREA_CODES:
-            continue
+        name = text_of(event.get("name"))
         event_id = event.get("id")
+        code = code_from_event(event.get("code"), name, event_id)
+        register_edition(code, name or EDITION_NAMES.get(code, code), event_id, "competition")
         status, payload = json_get(client, f"/results/events/{event_id}")
         if status != 200 or not isinstance(payload, dict):
             print(f"成绩表 {code} 无法读取 HTTP {status}")
@@ -235,9 +254,9 @@ def fetch_il_index(client: httpx.Client, editions: list[dict[str, Any]]) -> list
         id_to_code[event_id] = item["edition"]
     for event in data.get("events") or []:
         event_id = event.get("id")
-        code = id_to_code.get(event_id)
-        if not code:
-            continue
+        name = text_of(event.get("name"))
+        code = id_to_code.get(event_id) or code_from_event(event.get("code"), name, event_id)
+        register_edition(code, name or EDITION_NAMES.get(code, code), event_id, "preparation_meeting" if code.startswith(("CPW", "CIW")) else "")
         list_status, lists = json_get(client, f"/il/events/{event_id}/lists")
         if list_status != 200 or not isinstance(lists, dict):
             continue
@@ -327,7 +346,7 @@ def write_data_dir(
     write_csv(
         data_dir / "editions.csv",
         editions,
-        ["edition", "event_id", "name", "start_date", "end_date", "town", "venue"],
+        ["edition", "event_id", "event_type", "name", "start_date", "end_date", "town", "venue"],
     )
     write_csv(data_dir / "members.csv", members, ["member_id", "code", "name", "name_1058", "country"])
     skill_fields = ["edition", "skill", "name", "status", "skill_id", "type"]

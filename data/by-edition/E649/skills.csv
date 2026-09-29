@@ -1,0 +1,44 @@
+﻿edition,skill,name,status,skill_id,type
+E649,101,101 Ajoneuvotekniikka,active,3504,official
+E649,102,102 Autokorinkorjaus,active,3495,official
+E649,104,104 Kuljetuslogistiikka,active,3501,official
+E649,105,105 Metsäkoneenkäyttö,active,3499,official
+E649,106,106 Sisälogistiikka,active,3503,official
+E649,201,201 CAD-suunnittelu,active,3498,official
+E649,203,203 Mediasuunnittelu,active,3496,official
+E649,204,204 Järjestelmäasiantuntija,active,3537,official
+E649,205,205 Tietoverkkoasennus,active,3511,official
+E649,206,206 Web-kehitys,active,3500,official
+E649,208,208 Pelituotanto,active,3524,official
+E649,209,209 Kyberturvallisuus,active,3528,official
+E649,301,301 Asiakaspalvelu ja myynti,active,3530,official
+E649,302,302 Hiusmuotoilu,active,3535,official
+E649,303,303 Kauneudenhoito,active,3502,official
+E649,304,304 Floristiikka,active,3532,official
+E649,305,305 Lähihoitaja,active,3517,official
+E649,306,306 Puhtauspalvelu,active,3512,official
+E649,307,307 Vaatteenvalmistus,active,3508,official
+E649,309,309 Hevostenhoito,active,3536,official
+E649,310,310 Yrittäjyys,active,3510,official
+E649,311,311 Eläintenhoito,active,3521,official
+E649,312,312 Matkailu,active,3506,official
+E649,313,313 Taloushallinto,active,3531,official
+E649,314,314 Turvapalvelu,active,3529,official
+E649,315,315 Hyvinvointiteknologia,active,3515,official
+E649,316,316 Kiinteistönhoito,active,3507,official
+E649,317,317 Kasvatus ja ohjaus,active,3534,official
+E649,401,401 Puuseppä,active,3519,official
+E649,404,404 Maalaus ja tapetointi,active,3516,official
+E649,405,405 Putkiasennus,active,3520,official
+E649,406,406 Sähköasennus,active,3533,official
+E649,407,407 Talonrakentaminen,active,3526,official
+E649,410,410 Viherrakentaminen,active,3505,official
+E649,411,411 Infrarakentaminen,active,3523,official
+E649,501,501 Leipuri-kondiittori,active,3522,official
+E649,502,502 Kokki,active,3527,official
+E649,504,504 Tarjoilija,active,3525,official
+E649,602,602 Elektroniikka-asennus,active,3513,official
+E649,603,603 CNC-koneistus,active,3509,official
+E649,604,604 Laborantti,active,3518,official
+E649,605,605 Hitsaus ja levytyöt,active,3514,official
+E649,606,606 Kappaletavara-automaatio,active,3497,official

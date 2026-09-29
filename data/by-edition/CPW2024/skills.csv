@@ -1,0 +1,63 @@
+﻿edition,skill,name,status,skill_id,type
+CPW2024,01,Industrial Mechanics,active,2060,official
+CPW2024,02,Information Network Cabling,active,1999,official
+CPW2024,03,Manufacturing Team Challenge,active,2004,official
+CPW2024,04,Mechatronics,active,2047,official
+CPW2024,05,Mechanical Engineering CAD,active,2006,official
+CPW2024,06,CNC Turning,active,2022,official
+CPW2024,07,CNC Milling,active,2043,official
+CPW2024,08,Mobile Applications Development,active,2044,official
+CPW2024,09,IT Software Solutions for Business,active,2009,official
+CPW2024,10,Welding,active,1998,official
+CPW2024,12,Wall and Floor Tiling,active,2019,official
+CPW2024,13,Autobody Repair,active,2041,official
+CPW2024,14,Aircraft Maintenance,active,2023,official
+CPW2024,15,Plumbing and Heating,active,2057,official
+CPW2024,16,Electronics,active,2017,official
+CPW2024,17,Web Technologies,active,2037,official
+CPW2024,18,Electrical Installations,active,2028,official
+CPW2024,19,Industrial Control,active,2024,official
+CPW2024,20,Bricklaying,active,2003,official
+CPW2024,21,Plastering and Drywall Systems,active,2016,official
+CPW2024,22,Painting and Decorating,active,2046,official
+CPW2024,23,Autonomous Mobile Robotics,active,2029,official
+CPW2024,24,Cabinetmaking,active,2025,official
+CPW2024,25,Joinery,active,2014,official
+CPW2024,26,Carpentry,active,2012,official
+CPW2024,27,Jewellery,active,2040,official
+CPW2024,28,Floristry,active,2030,official
+CPW2024,29,Hairdressing,active,2050,official
+CPW2024,30,Beauty Therapy,active,2010,official
+CPW2024,31,Fashion Technology,active,2059,official
+CPW2024,32,Pâtisserie and Confectionery,active,2007,official
+CPW2024,33,Automobile Technology,active,2008,official
+CPW2024,34,Cooking,active,2035,official
+CPW2024,35,Restaurant Service,active,2039,official
+CPW2024,36,Car Painting,active,2042,official
+CPW2024,37,Landscape Gardening,active,2048,official
+CPW2024,38,Refrigeration and Air Conditioning,active,2034,official
+CPW2024,39,IT Network Systems Administration,active,2002,official
+CPW2024,40,Graphic Design Technology,active,2053,official
+CPW2024,41,Health and Social Care,active,2020,official
+CPW2024,42,Construction Metal Work,active,2026,official
+CPW2024,44,Visual Merchandising,active,2058,official
+CPW2024,46,Concrete Construction Work,active,2005,official
+CPW2024,47,Bakery,active,2036,official
+CPW2024,48,Industry 4.0,active,2001,official
+CPW2024,49,Heavy Vehicle Technology,active,2013,official
+CPW2024,50,3D Digital Game Art,active,2015,official
+CPW2024,51,Logistics and Freight Forwarding,active,2031,official
+CPW2024,52,Chemical Laboratory Technology,active,2055,official
+CPW2024,53,Cloud Computing,active,2038,official
+CPW2024,54,Cyber Security,active,2052,official
+CPW2024,55,Water Technology,active,2033,official
+CPW2024,56,Hotel Reception,active,2021,official
+CPW2024,57,Additive Manufacturing,active,2049,official
+CPW2024,58,Digital Construction,active,2032,official
+CPW2024,59,Industrial Design Technology,active,2027,official
+CPW2024,60,Optoelectronic Technology,active,2045,official
+CPW2024,62,Renewable Energy,active,2011,official
+CPW2024,63,Robot Systems Integration,active,2056,official
+CPW2024,E01,Stonemasonry,active,2018,exhibition
+CPW2024,E02,Heavy Truck Maintenance,active,2051,exhibition
+CPW2024,E03,Rail Vehicle Technology,active,2000,exhibition

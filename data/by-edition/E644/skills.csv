@@ -1,0 +1,34 @@
+﻿edition,skill,name,status,skill_id,type
+E644,C01,Floristry,active,3361,official
+E644,C02,Fashion Technology,active,3357,official
+E644,C03,Hairdressing,active,3375,official
+E644,C04,Welding,active,3353,official
+E644,C05,Robot systems integration,active,3368,official
+E644,C06,Mechanical Engineering CAD,active,3362,official
+E644,C07,Plastic die engeering,active,3351,official
+E644,C08,CNC Milling,active,3370,official
+E644,C09,Mechatronics,active,3363,official
+E644,C10,Industry 4.0,active,3347,official
+E644,C11,IT Network System,active,3348,official
+E644,C12,Graphic design,active,3350,official
+E644,C13,Web Technologies,active,3364,official
+E644,C14,Industrial control,active,3346,official
+E644,C15,Cooking,active,3344,official
+E644,C16,Bakery,active,3355,official
+E644,C17,Butchery,active,3359,official
+E644,C18,Restaurant Service,active,3373,official
+E644,C19,Metal Roofing,active,3376,official
+E644,C20,Refrigeration and air conditioning,active,3366,official
+E644,C21,Painting and decorating,active,3365,official
+E644,C22,Electrical installations,active,3371,official
+E644,C23,Plumbing and heating,active,3349,official
+E644,C24,Wall and floor tilling,active,3358,official
+E644,C25,Cabinetmaking,active,3374,official
+E644,C26,Joinery,active,3345,official
+E644,C27,Bricklaying,active,3354,official
+E644,C28,Landscape gardening,active,3372,official
+E644,C29,Automobile technology,active,3360,official
+E644,C30,Logistics,active,3356,official
+E644,C31,Truck Driver,active,3369,official
+E644,D01,Aircraft Maintenance,active,3367,official
+E644,D02,Health Care Service,active,3352,official

@@ -1,0 +1,50 @@
+﻿edition,skill,name,status,skill_id,type
+ES2021,04,Mechatronics,active,776,official
+ES2021,05,Mechanical Engineering Design – CAD,active,779,official
+ES2021,07,CNC-Milling,active,777,official
+ES2021,08,Architectural Stonemasonry,active,783,official
+ES2021,10,Welding,active,780,official
+ES2021,12,Wall and Floor Tiling,active,784,official
+ES2021,15,Plumbing and Heating,active,785,official
+ES2021,16,Electronics Prototyping,active,862,host_member
+ES2021,17,Web Development,active,775,official
+ES2021,18,Electrical Installations,active,788,official
+ES2021,19,Industrial Control,active,781,official
+ES2021,20,Bricklaying,active,789,official
+ES2021,21,Plastering and Dry Wall Systems,active,790,official
+ES2021,22,Painting and Decorating,active,791,official
+ES2021,23,Mobile Robotics,active,782,official
+ES2021,24,Cabinetmaking,active,793,official
+ES2021,25,Joinery,active,792,official
+ES2021,28,Floristry,active,770,official
+ES2021,29,Hairdressing,active,803,official
+ES2021,30,Beauty Therapy,active,804,official
+ES2021,31,Fashion Technology,active,771,official
+ES2021,33,Automobile Technology,active,799,official
+ES2021,34,Cooking,active,806,official
+ES2021,35,Restaurant Service,active,807,official
+ES2021,36,Bakery,active,805,official
+ES2021,38,Refrigeration and Air Conditioning,active,786,official
+ES2021,39,ICT Specialists,active,774,official
+ES2021,40,Graphic Design,active,773,official
+ES2021,44,Visual Merchandising / Window Dressing,active,772,official
+ES2021,49,Metal Roofing,active,794,official
+ES2021,50,Floor Laying,active,795,official
+ES2021,51,Landscape Gardening,active,796,official
+ES2021,52,Concrete Construction,active,787,official
+ES2021,53,Heavy Vehicle Technology,active,800,official
+ES2021,54,Heavy Truck Maintenance,active,801,official
+ES2021,57,Hotel Receptioning,active,809,official
+ES2021,D2,Glass Construction Technology,active,797,demo
+ES2021,D3,Sheet Metal Work,active,798,demo
+ES2021,D6,Butchery,active,811,demo
+ES2021,HP1,Entrepreneurship Business Development Team Challenge,active,813,host_member
+ES2021,HP10,CNC-Turning,active,778,demo
+ES2021,HP11,Retail Sales,active,810,demo
+ES2021,HP2,Industry 4.0,active,814,host_member
+ES2021,HP3,Industrial Mechanics,active,815,host_member
+ES2021,HP5,Chemical Laboratory Technician,active,812,demo
+ES2021,HP6,Freight Forwarding,active,802,demo
+ES2021,HP7,Robot Systems Integration,active,965,demo
+ES2021,HP8,Pharmacy Technician,active,966,demo
+ES2021,HP9,Health and Social Care,active,808,official

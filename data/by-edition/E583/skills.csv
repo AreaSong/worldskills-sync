@@ -1,0 +1,64 @@
+﻿edition,skill,name,status,skill_id,type
+E583,02,Information Network Cabling,active,1092,official
+E583,03,Manufacturing Team Challenge,active,1105,official
+E583,04,Mechatronics,active,1097,official
+E583,05,Mechanical Engineering Design - CAD,active,1095,official
+E583,06,CNC Turning,active,1093,official
+E583,07,CNC Milling,active,1098,official
+E583,08,Architectural Stonemasonry,active,1099,official
+E583,09,IT Software Solutions for Business,active,1094,official
+E583,10,Welding,active,1109,official
+E583,11,Print Media Technology,active,1090,official
+E583,12,Wall and Floor Tiling,active,1091,official
+E583,13,Autobody Repair,active,1111,official
+E583,14,Aircraft Maintenance,active,1101,official
+E583,15,Plumbing and Heating,active,1107,official
+E583,16,Electronics,active,1117,official
+E583,17,Web design,active,1110,official
+E583,18,Electrical Installations,active,1118,official
+E583,19,Industrial Control,active,1103,official
+E583,20,Bricklaying,active,1115,official
+E583,21,Plastering and Drywall Systems,active,1100,official
+E583,22,Painting and Decorating,active,1106,official
+E583,23,Mobile Robotics,active,1102,official
+E583,24,Cabinetmaking,active,1116,official
+E583,25,Joinery,active,1113,official
+E583,26,Carpentry,active,1104,official
+E583,27,Jewellery,active,1152,official
+E583,28,Floristry,active,1112,official
+E583,29,Hairdressing,active,1120,official
+E583,30,Beauty Therapy,active,1150,official
+E583,31,Fashion Technology,active,1119,official
+E583,32,Pâtisserie and Confectionery,active,1114,official
+E583,33,Automobile Technology,active,1133,official
+E583,34,Cooking,active,1108,official
+E583,35,Restaurant Service,active,1096,official
+E583,36,Car Painting,active,1131,official
+E583,37,Landscape Gardening,active,1129,official
+E583,38,Refrigeration and Air Conditioning,active,1121,official
+E583,39,IT Network Systems Administration,active,1127,official
+E583,40,Graphic Design Technology,active,1128,official
+E583,41,Health and Social Care,active,1130,official
+E583,42,Construction Metal Work,active,1134,official
+E583,44,Visual merchandising,active,1123,official
+E583,46,Concrete Construction Work,active,1140,official
+E583,47,Bakery,active,1122,official
+E583,49,Heavy Vehicle Maintenance,active,1143,official
+E583,50,3D Digital Game Art,active,1126,official
+E583,54,Cyber Security,active,1124,official
+E583,56,Hotel Reception,active,1148,official
+E583,D1,Marble Design,active,1151,demo
+E583,D2,Entrepreneurship Team Challenge,active,1132,demo
+E583,E49,Metal Roofing,active,1125,official
+E583,E50,Floor Laying,active,1136,official
+E583,E54,Truck Maintenance,active,1147,official
+E583,N1,Sheet Metal Work,active,1141,official
+E583,N10,Robot Systems Integration,active,1146,official
+E583,N11,Butchery,active,1142,official
+E583,N2,Horticulture,active,1137,official
+E583,N3,Motorcycle Technology,active,1149,official
+E583,N4,Wine Tester,active,1139,official
+E583,N5,Social Care,active,1135,official
+E583,N6,Road Building,active,1144,official
+E583,N8,Glass Construction Technology,active,1145,official
+E583,N9,Cleanliness professions,active,1138,official

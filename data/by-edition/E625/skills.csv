@@ -1,0 +1,33 @@
+﻿edition,skill,name,status,skill_id,type
+E625,02,Information Network Cabling,active,2752,official
+E625,04,Mechatronics,active,2756,official
+E625,05,Mechanical Engineering CAD,active,2755,official
+E625,08,Industrial Automation,active,2750,official
+E625,09,IT Software Solutions for Business,active,2754,official
+E625,10,Welding,active,2762,official
+E625,12,Wall and Floor Tiling,active,2760,official
+E625,15,Plumbing and Heating,active,2757,official
+E625,16,Electronics,active,2744,official
+E625,17,Web Technologies,active,2761,official
+E625,18,Electrical Installations,active,2743,official
+E625,19,Industrial Control,active,2751,official
+E625,23,Autonomous Mobile Robotics,active,2736,official
+E625,24,Cabinetmaking,active,2739,official
+E625,26,Carpentry,active,2740,official
+E625,29,Hairdressing,active,2747,official
+E625,30,Beauty Therapy,active,2738,official
+E625,31,Fashion Technology,active,2745,official
+E625,33,Automobile Technology,active,2735,official
+E625,34,Cooking,active,2741,official
+E625,35,Restaurant Service,active,2759,official
+E625,38,Refrigeration and Air Conditioning,active,2758,official
+E625,39,IT Network Systems Administration,active,2753,official
+E625,40,Graphic Design Technology,active,2746,official
+E625,47,Bakery,active,2737,official
+E625,48,Industry 4.0,active,2749,official
+E625,50,3D Digital Game Art,active,2734,official
+E625,54,Cyber Security,active,2742,official
+E625,56,Hotel Reception,active,2748,official
+E625,D1,CNC Maintenance,active,2763,demo
+E625,D2,Collaborative Robot,active,2764,demo
+E625,D3,Internet-Of-Things,active,2765,demo

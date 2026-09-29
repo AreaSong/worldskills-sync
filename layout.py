@@ -16,6 +16,7 @@ from typing import Any, Iterable
 from classify import (
     DOC_TYPES,
     EDITION_NAMES,
+    GLOBAL_CODE,
     LANG_FOLDERS,
     parse_lang,
     parse_stage,
@@ -68,6 +69,9 @@ KIND_FROM_LABEL.update({code: code for code in KIND_CODES.values()})
 STAGE_CODES = {"正式": "actual", "赛前": "pre", "提案": "proposal", "actual": "actual", "pre": "pre", "proposal": "proposal"}
 
 EDITION_SLUGS = {
+    "WSC1995": "1995-lyon",
+    "WSC1997": "1997-st-gallen",
+    "WSC1999": "1999-montreal",
     "WSC2001": "2001-seoul",
     "WSC2003": "2003-st-gallen",
     "WSC2005": "2005-helsinki",
@@ -82,6 +86,18 @@ EDITION_SLUGS = {
     "WSC2022SE": "2022-special-edition",
     "WSC2024": "2024-lyon",
     "WSC2026": "2026-shanghai",
+    "WSC2028": "2028-aichi",
+    "ES2021": "2021-graz",
+    "ES2023": "2023-gdansk",
+    "ES2025": "2025-herning",
+    "ES2027": "2027-dusseldorf",
+    "CPW2022": "2022-shanghai-prep",
+    "CPW2024": "2024-lyon-prep",
+    "CPW2026": "2026-shanghai-prep",
+    "CIW2023": "2023-ciw",
+    "CIW2025": "2025-ciw",
+    "CER2026": "2026-shanghai-ceremonies",
+    GLOBAL_CODE: "global",
 }
 
 LANG_FROM_LABEL = {label: code.split("_")[0] for code, label in LANG_FOLDERS.items()}
@@ -131,11 +147,22 @@ def skill_code(number: str | None) -> str:
 def edition_slug(code: str | None) -> str:
     if not code:
         return "unknown"
-    return EDITION_SLUGS.get(code, code.lower())
+    if code in EDITION_SLUGS:
+        return EDITION_SLUGS[code]
+    return re.sub(r"[^a-z0-9]+", "-", code.lower()).strip("-") or "unknown"
 
 
 def release_tag(code: str | None) -> str:
-    return f"wsc-{edition_slug(code)}"
+    if not code or code == GLOBAL_CODE:
+        return "global"
+    slug = edition_slug(code)
+    if code.startswith("WSC"):
+        return f"wsc-{slug}"
+    prefix_match = re.match(r"^([A-Za-z]+)", code)
+    prefix = prefix_match.group(1).lower() if prefix_match else "evt"
+    if slug.startswith(prefix + "-") or slug == prefix:
+        return slug
+    return f"{prefix}-{slug}"
 
 
 def safe_part(name: str) -> str:

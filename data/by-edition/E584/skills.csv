@@ -1,0 +1,17 @@
+﻿edition,skill,name,status,skill_id,type
+E584,04,Mechatronics,active,1153,official
+E584,05,Mechanical Engineering CAD,active,1155,official
+E584,10,Welding,active,1154,official
+E584,12,Wall and Floor Tiling,active,1157,official
+E584,15,Plumbing and Heating,active,1159,official
+E584,18,Electrical Installations,active,1158,official
+E584,20,Bricklaying,active,1160,official
+E584,25,Joinery,active,1161,official
+E584,29,Hairdressing,active,1162,official
+E584,31,Fashion Technology,active,1168,official
+E584,33,Automotive Technology,active,1167,official
+E584,34,Cooking,active,1163,official
+E584,35,Restaurant Service,active,1166,official
+E584,38,Refrigeration and Air Conditioning,active,1164,official
+E584,55,Water Technology,active,1165,official
+E584,57,Web Technologies,active,1156,official

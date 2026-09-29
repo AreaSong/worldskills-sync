@@ -1,0 +1,45 @@
+﻿edition,skill,name,status,skill_id,type
+E580,03,Precision Machining,active,968,official
+E580,04,Mechatronics,active,969,official
+E580,05,Mechanical Engineering CAD,active,970,official
+E580,06,CNC Machining,active,971,official
+E580,08,IT Office Software Applications,active,972,official
+E580,10,Welding,active,973,official
+E580,13,Autobody Repair,active,974,official
+E580,14,Aerospace Technology,active,975,official
+E580,15,Plumbing,active,976,official
+E580,16,Electronics,active,977,official
+E580,17,Web Design and Development,active,978,official
+E580,18,Electrical Installations,active,979,official
+E580,19,Industrial Control,active,980,official
+E580,20,Bricklaying,active,981,official
+E580,23,Mobile Robotics,active,982,official
+E580,24,Cabinetmaking,active,983,official
+E580,26,Carpentry,active,984,official
+E580,29,Hairstyling,active,985,official
+E580,30,Aesthetics,active,986,official
+E580,31,Fashion Technology,active,987,official
+E580,32,Baking,active,988,official
+E580,33,Automobile Technology,active,989,official
+E580,34,Cooking,active,990,official
+E580,36,Car Painting,active,991,official
+E580,37,Landscape Gardening,active,992,official
+E580,38,Refrigeration and Air Conditioning,active,993,official
+E580,39,IT Network Systems Administration,active,994,official
+E580,40,Graphic Design Technology,active,995,official
+E580,43,Sheet Metal Work,active,996,official
+E580,48,Industrial Mechanic-Millwright,active,997,official
+E580,49,Heavy Vehicle Technology,active,998,official
+E580,50,3D Digital Game Art,active,999,official
+E580,52,Architectural Technology & Design,active,1000,official
+E580,53,Outdoor Power and Recreation Equipment,active,1001,official
+E580,54,Photography,active,1002,official
+E580,55,Sprinkler Fitter,active,1003,official
+E580,81,Steamfitter / Pipefitter,active,1004,official
+E580,82,Video Production,active,1005,official
+E580,83,Job search,active,1006,official
+E580,84,Job Skill Demonstration,active,1007,official
+E580,85,Public Speaking,active,1008,official
+E580,87/88,2D & 3D Character Computer Animation,active,1009,official
+E580,92,Workplace Safety,active,1010,official
+E580,D1,Cloud Computing,active,1011,demo

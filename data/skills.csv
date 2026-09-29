@@ -1,4 +1,2151 @@
 ﻿edition,skill,name,status,skill_id,type
+Abilympics2027,01,Basket Making,active,3190,official
+Abilympics2027,02,Cabinet and Furniture Making,active,3191,official
+Abilympics2027,03,Computer Programming,active,3192,official
+Abilympics2027,04,Computer Assembly,active,3193,official
+Abilympics2027,05,Creating Web Pages,active,3194,official
+Abilympics2027,06,Dress Making (Production Sewing),active,3195,official
+Abilympics2027,07,Electronic Assembly and Testing,active,3196,official
+Abilympics2027,08,English Word Processing,active,3197,official
+Abilympics2027,09,Floral Arrangement,active,3198,official
+Abilympics2027,10,Photography (Outdoor/Studio),active,3199,official
+Abilympics2027,11,Tailoring,active,3200,official
+Abilympics2027,12,Wood Carving,active,3201,official
+Abilympics2027,13,Administration and Management of Network Systems,active,3202,official
+Abilympics2027,14,Bakery,active,3203,official
+Abilympics2027,15,Bicycle Assembly,active,3204,official
+Abilympics2027,16,Cabinetmaking (Advanced),active,3205,official
+Abilympics2027,17,Character Design,active,3206,official
+Abilympics2027,18,Cake Decoration,active,3207,official
+Abilympics2027,19,Cleaning Services,active,3208,official
+Abilympics2027,20,Cooking (Individual),active,3209,official
+Abilympics2027,21,Cooking (Team Work),active,3210,official
+Abilympics2027,22,Crochet,active,3211,official
+Abilympics2027,23,Data Management and Processing,active,3212,official
+Abilympics2027,24,Electrical Installation,active,3213,official
+Abilympics2027,25,Embroidery,active,3214,official
+Abilympics2027,26,Engineering Design CAD,active,3215,official
+Abilympics2027,27,Fashion and Design,active,3216,official
+Abilympics2027,28,Fruit and Vegetable Carving,active,3217,official
+Abilympics2027,29,Hairdressing,active,3218,official
+Abilympics2027,30,Hand Knitting,active,3219,official
+Abilympics2027,31,Landscape Gardening,active,3220,official
+Abilympics2027,32,Manicure,active,3221,official
+Abilympics2027,33,Massage,active,3222,official
+Abilympics2027,34,Painting and Decorating,active,3223,official
+Abilympics2027,35,Painting and Waste reuse,active,3224,official
+Abilympics2027,36,Pâtisserie and Confectionery,active,3225,official
+Abilympics2027,37,Poster Design,active,3226,official
+Abilympics2027,38,Publishing,active,3227,official
+Abilympics2027,39,Restaurant Service,active,3228,official
+Abilympics2027,40,Welding,active,3229,official
+Abilympics2027,41,Logistics,active,3230,official
+Abilympics2027,42,Property Management,active,3231,official
+Abilympics2027,43,Business,active,3232,official
+CIW2023,01,Industrial Mechanics,active,1779,official
+CIW2023,02,Information Network Cabling,active,1780,official
+CIW2023,03,Manufacturing Team Challenge,active,1774,official
+CIW2023,04,Mechatronics,active,1773,official
+CIW2023,05,Mechanical Engineering CAD,active,1786,official
+CIW2023,06,CNC Turning,active,1788,official
+CIW2023,07,CNC Milling,active,1781,official
+CIW2023,08,Mobile Applications Development,active,1822,official
+CIW2023,09,IT Software Solutions for Business,active,1776,official
+CIW2023,10,Welding,active,1810,official
+CIW2023,11,Print Media Technology,active,1783,official
+CIW2023,12,Wall and Floor Tiling,active,1777,official
+CIW2023,13,Autobody Repair,active,1775,official
+CIW2023,14,Aircraft Maintenance,active,1820,official
+CIW2023,15,Plumbing and Heating,active,1778,official
+CIW2023,16,Electronics,active,1772,official
+CIW2023,17,Web Technologies,active,1814,official
+CIW2023,18,Electrical Installations,active,1784,official
+CIW2023,19,Industrial Control,active,1807,official
+CIW2023,20,Bricklaying,active,1808,official
+CIW2023,21,Plastering and Drywall Systems,active,1811,official
+CIW2023,22,Painting and Decorating,active,1833,official
+CIW2023,23,Mobile Robotics,active,1793,official
+CIW2023,24,Cabinetmaking,active,1796,official
+CIW2023,25,Joinery,active,1815,official
+CIW2023,26,Carpentry,active,1809,official
+CIW2023,27,Jewellery,active,1832,official
+CIW2023,28,Floristry,active,1816,official
+CIW2023,29,Hairdressing,active,1825,official
+CIW2023,30,Beauty Therapy,active,1801,official
+CIW2023,31,Fashion Technology,active,1813,official
+CIW2023,32,Pâtisserie and Confectionery,active,1802,official
+CIW2023,33,Automobile Technology,active,1818,official
+CIW2023,34,Cooking,active,1805,official
+CIW2023,35,Restaurant Service,active,1789,official
+CIW2023,36,Car Painting,active,1785,official
+CIW2023,37,Landscape Gardening,active,1804,official
+CIW2023,38,Refrigeration and Air Conditioning,active,1827,official
+CIW2023,39,IT Network Systems Administration,active,1790,official
+CIW2023,40,Graphic Design Technology,active,1795,official
+CIW2023,41,Health and Social Care,active,1828,official
+CIW2023,42,Construction Metal Work,active,1830,official
+CIW2023,44,Visual Merchandising,active,1787,official
+CIW2023,45,Prototype Modelling,active,1826,official
+CIW2023,46,Concrete Construction Work,active,1821,official
+CIW2023,47,Bakery,active,1812,official
+CIW2023,48,Industry 4.0,active,1782,official
+CIW2023,49,Heavy Vehicle Technology,active,1794,official
+CIW2023,50,3D Digital Game Art,active,1831,official
+CIW2023,51,Freight Forwarding,active,1800,official
+CIW2023,52,Chemical Laboratory Technology,active,1819,official
+CIW2023,53,Cloud Computing,active,1823,official
+CIW2023,54,Cyber Security,active,1792,official
+CIW2023,55,Water Technology,active,1799,official
+CIW2023,56,Hotel Reception,active,1829,official
+CIW2023,57,Additive Manufacturing,active,1803,official
+CIW2023,58,Digital Construction,active,1824,official
+CIW2023,59,Industrial Design Technology,active,1806,official
+CIW2023,60,Optoelectronic Technology,active,1817,official
+CIW2023,61,Rail Vehicle Technology,active,1797,official
+CIW2023,62,Renewable Energy,active,1798,official
+CIW2023,63,Robot Systems Integration,active,1791,official
+CIW2023,P01,Stonemasonry,active,1771,presentation
+CIW2025,01,Industrial Mechanics,active,2817,official
+CIW2025,02,Information Network Cabling,active,2789,official
+CIW2025,04,Mechatronics,active,2814,official
+CIW2025,05,Mechanical Engineering CAD,active,2823,official
+CIW2025,06,CNC Turning,active,2813,official
+CIW2025,07,CNC Milling,active,2801,official
+CIW2025,08,Mobile Applications Development,active,2784,official
+CIW2025,09,IT Software Solutions for Business,active,2818,official
+CIW2025,10,Welding,active,2781,official
+CIW2025,12,Wall and Floor Tiling,active,2783,official
+CIW2025,13,Autobody Repair,active,2782,official
+CIW2025,14,Aircraft Maintenance,active,2791,official
+CIW2025,15,Plumbing and Heating,active,2829,official
+CIW2025,16,Electronics,active,2787,official
+CIW2025,17,Web Technologies,active,2819,official
+CIW2025,18,Electrical Installations,active,2803,official
+CIW2025,19,Industrial Control,active,2778,official
+CIW2025,20,Bricklaying,active,2802,official
+CIW2025,21,Plastering and Drywall Systems,active,2828,official
+CIW2025,22,Painting and Decorating,active,2794,official
+CIW2025,23,Autonomous Mobile Robotics,active,2827,official
+CIW2025,24,Cabinetmaking,active,2809,official
+CIW2025,25,Joinery,active,2806,official
+CIW2025,26,Carpentry,active,2816,official
+CIW2025,27,Jewellery,active,2795,official
+CIW2025,28,Floristry,active,2770,official
+CIW2025,29,Hairdressing,active,2800,official
+CIW2025,30,Beauty Therapy,active,2767,official
+CIW2025,31,Fashion Technology,active,2772,official
+CIW2025,32,Pâtisserie and Confectionery,active,2804,official
+CIW2025,33,Automobile Technology,active,2822,official
+CIW2025,34,Cooking,active,2775,official
+CIW2025,35,Restaurant Service,active,2768,official
+CIW2025,36,Car Painting,active,2786,official
+CIW2025,37,Landscape Gardening,active,2815,official
+CIW2025,38,Refrigeration and Air Conditioning,active,2774,official
+CIW2025,39,IT Network Systems Administration,active,2769,official
+CIW2025,40,Graphic Design Technology,active,2820,official
+CIW2025,41,Health and Social Care,active,2785,official
+CIW2025,44,Visual Merchandising,active,2797,official
+CIW2025,46,Concrete Construction Work,active,2796,official
+CIW2025,47,Bakery,active,2773,official
+CIW2025,48,Industry 4.0,active,2808,official
+CIW2025,49,Heavy Vehicle Technology,active,2771,official
+CIW2025,50,3D Digital Game Art,active,2793,official
+CIW2025,51,Logistics and Freight Forwarding,active,2776,official
+CIW2025,52,Chemical Laboratory Technology,active,2821,official
+CIW2025,53,Cloud Computing,active,2799,official
+CIW2025,54,Cyber Security,active,2825,official
+CIW2025,55,Water Technology,active,2790,official
+CIW2025,56,Hotel Reception,active,2777,official
+CIW2025,57,Additive Manufacturing,active,2766,official
+CIW2025,58,Digital Construction,active,2792,official
+CIW2025,59,Industrial Design Technology,active,2805,official
+CIW2025,60,Optoelectronic Technology,active,2788,official
+CIW2025,62,Renewable Energy,active,2779,official
+CIW2025,63,Robot Systems Integration,active,2826,official
+CIW2025,PO1,Dental Prosthetics,active,2807,possible_official
+CIW2025,PO2,Digital Interactive Media Design,active,2798,possible_official
+CIW2025,PO3,Intelligent Security Technology,active,2824,possible_official
+CIW2025,PO4,Rail Vehicle Technology,active,2780,possible_official
+CIW2025,PO5,Retail Sales,active,2811,possible_official
+CIW2025,PO6,Software Testing,active,2810,possible_official
+CIW2025,PO7,Unmanned Aerial Systems,active,2812,possible_official
+CPM2027,04,Mechatronics,active,3400,official
+CPM2027,05,Mechanical Engineering - CAD,active,3395,official
+CPM2027,06,CNC Turning,active,3422,official
+CPM2027,07,CNC-Milling,active,3413,official
+CPM2027,10,Welding,active,3391,official
+CPM2027,12,Wall and Floor Tiling,active,3401,official
+CPM2027,15,Plumbing and Heating,active,3381,official
+CPM2027,16,Electronics Prototyping,active,3378,official
+CPM2027,17,Web Technologies,active,3387,official
+CPM2027,18,Electrical Installations,active,3407,official
+CPM2027,19,Industrial Control,active,3392,official
+CPM2027,20,Bricklaying,active,3384,official
+CPM2027,21,Plastering and Dry Wall Systems,active,3420,official
+CPM2027,22,Painting and Decorating,active,3383,official
+CPM2027,24,Cabinetmaking,active,3425,official
+CPM2027,25,Joinery,active,3427,official
+CPM2027,26,Carpentry,active,3411,official
+CPM2027,27,Robot Systems Integration,active,3415,official
+CPM2027,28,Floristry,active,3406,official
+CPM2027,29,Hairdressing,active,3404,official
+CPM2027,30,Beauty Therapy,active,3419,official
+CPM2027,31,Fashion Design and Technology Team Challenge,active,3418,official
+CPM2027,32,Butchery,active,3386,official
+CPM2027,33,Automobile Technology,active,3379,official
+CPM2027,34,Cooking,active,3405,official
+CPM2027,35,Restaurant Service,active,3396,official
+CPM2027,36,Bakery,active,3412,official
+CPM2027,37,Pâtisserie and Confectionery,active,3398,official
+CPM2027,38,Refrigeration Technologies,active,3394,official
+CPM2027,39,IT Network Systems Administration,active,3390,official
+CPM2027,40,Graphic Design Technology,active,3417,official
+CPM2027,41,Health and Social Care,active,3397,official
+CPM2027,42,Digital Construction,active,3414,official
+CPM2027,43,Cyber Security,active,3388,official
+CPM2027,45,Software Applications Development,active,3399,official
+CPM2027,46,Entrepreneurship,active,3426,official
+CPM2027,48,Industry 4.0,active,3408,official
+CPM2027,49,Metal Roofing,active,3424,official
+CPM2027,50,Floor Laying,active,3385,official
+CPM2027,51,Landscape Gardening,active,3382,official
+CPM2027,52,Aircraft Maintenance,active,3389,official
+CPM2027,53,Heavy Vehicle Technology,active,3416,official
+CPM2027,54,Truck and Bus Technology,active,3393,official
+CPM2027,55,Autobody Repair,active,3402,official
+CPM2027,56,Car Painting,active,3403,official
+CPM2027,57,Hotel Reception,active,3380,official
+CPM2027,HP1,Freight Forwarding,active,3428,presentation
+CPM2027,HP2,Water Technology,active,3421,presentation
+CPM2027,HP3,Concrete Construction,active,3409,presentation
+CPM2027,HP4,Mobile Application Development,active,3410,presentation
+CPM2027,HP5,Architectural Stonemasonry,active,3423,presentation
+CPW2022,01,Industrial Mechanics,active,1331,official
+CPW2022,02,Information Network Cabling,active,1322,official
+CPW2022,03,Manufacturing Team Challenge,active,1306,official
+CPW2022,04,Mechatronics,active,1345,official
+CPW2022,05,Mechanical Engineering CAD,active,1337,official
+CPW2022,06,CNC Turning,active,1362,official
+CPW2022,07,CNC Milling,active,1333,official
+CPW2022,08,Mobile Applications Development,active,1347,official
+CPW2022,09,IT Software Solutions for Business,active,1310,official
+CPW2022,10,Welding,active,1304,official
+CPW2022,11,Print Media Technology,active,1323,official
+CPW2022,12,Wall and Floor Tiling,active,1308,official
+CPW2022,13,Autobody Repair,active,1355,official
+CPW2022,14,Aircraft Maintenance,active,1330,official
+CPW2022,15,Plumbing and Heating,active,1328,official
+CPW2022,16,Electronics,active,1329,official
+CPW2022,17,Web Technologies,active,1318,official
+CPW2022,18,Electrical Installations,active,1324,official
+CPW2022,19,Industrial Control,active,1326,official
+CPW2022,20,Bricklaying,active,1343,official
+CPW2022,21,Plastering and Drywall Systems,active,1307,official
+CPW2022,22,Painting and Decorating,active,1315,official
+CPW2022,23,Mobile Robotics,active,1359,official
+CPW2022,24,Cabinetmaking,active,1319,official
+CPW2022,25,Joinery,active,1364,official
+CPW2022,26,Carpentry,active,1365,official
+CPW2022,27,Jewellery,active,1366,official
+CPW2022,28,Floristry,active,1351,official
+CPW2022,29,Hairdressing,active,1320,official
+CPW2022,30,Beauty Therapy,active,1361,official
+CPW2022,31,Fashion Technology,active,1335,official
+CPW2022,32,Pâtisserie and Confectionery,active,1316,official
+CPW2022,33,Automobile Technology,active,1353,official
+CPW2022,34,Cooking,active,1346,official
+CPW2022,35,Restaurant Service,active,1327,official
+CPW2022,36,Car Painting,active,1325,official
+CPW2022,37,Landscape Gardening,active,1341,official
+CPW2022,38,Refrigeration and Air Conditioning,active,1363,official
+CPW2022,39,IT Network Systems Administration,active,1317,official
+CPW2022,40,Graphic Design Technology,active,1313,official
+CPW2022,41,Health and Social Care,active,1338,official
+CPW2022,42,Construction Metal Work,active,1348,official
+CPW2022,43,Plastic Die Engineering,active,1344,official
+CPW2022,44,Visual Merchandising,active,1314,official
+CPW2022,45,Prototype Modelling,active,1312,official
+CPW2022,46,Concrete Construction Work,active,1336,official
+CPW2022,47,Bakery,active,1358,official
+CPW2022,48,Industry 4.0,active,1350,official
+CPW2022,49,Heavy Vehicle Technology,active,1354,official
+CPW2022,50,3D Digital Game Art,active,1349,official
+CPW2022,51,Freight Forwarding,active,1356,official
+CPW2022,52,Chemical Laboratory Technology,active,1309,official
+CPW2022,53,Cloud Computing,active,1339,official
+CPW2022,54,Cyber Security,active,1342,official
+CPW2022,55,Water Technology,active,1360,official
+CPW2022,56,Hotel Reception,active,1305,official
+CPW2022,57,Additive Manufacturing,active,1352,official
+CPW2022,58,Digital Construction,active,1340,official
+CPW2022,59,Industrial Design Technology,active,1332,official
+CPW2022,60,Optoelectronic Technology,active,1321,official
+CPW2022,61,Rail Vehicle Technology,active,1357,official
+CPW2022,62,Renewable Energy,active,1334,official
+CPW2022,63,Robot Systems Integration,active,1311,official
+CPW2024,01,Industrial Mechanics,active,2060,official
+CPW2024,02,Information Network Cabling,active,1999,official
+CPW2024,03,Manufacturing Team Challenge,active,2004,official
+CPW2024,04,Mechatronics,active,2047,official
+CPW2024,05,Mechanical Engineering CAD,active,2006,official
+CPW2024,06,CNC Turning,active,2022,official
+CPW2024,07,CNC Milling,active,2043,official
+CPW2024,08,Mobile Applications Development,active,2044,official
+CPW2024,09,IT Software Solutions for Business,active,2009,official
+CPW2024,10,Welding,active,1998,official
+CPW2024,12,Wall and Floor Tiling,active,2019,official
+CPW2024,13,Autobody Repair,active,2041,official
+CPW2024,14,Aircraft Maintenance,active,2023,official
+CPW2024,15,Plumbing and Heating,active,2057,official
+CPW2024,16,Electronics,active,2017,official
+CPW2024,17,Web Technologies,active,2037,official
+CPW2024,18,Electrical Installations,active,2028,official
+CPW2024,19,Industrial Control,active,2024,official
+CPW2024,20,Bricklaying,active,2003,official
+CPW2024,21,Plastering and Drywall Systems,active,2016,official
+CPW2024,22,Painting and Decorating,active,2046,official
+CPW2024,23,Autonomous Mobile Robotics,active,2029,official
+CPW2024,24,Cabinetmaking,active,2025,official
+CPW2024,25,Joinery,active,2014,official
+CPW2024,26,Carpentry,active,2012,official
+CPW2024,27,Jewellery,active,2040,official
+CPW2024,28,Floristry,active,2030,official
+CPW2024,29,Hairdressing,active,2050,official
+CPW2024,30,Beauty Therapy,active,2010,official
+CPW2024,31,Fashion Technology,active,2059,official
+CPW2024,32,Pâtisserie and Confectionery,active,2007,official
+CPW2024,33,Automobile Technology,active,2008,official
+CPW2024,34,Cooking,active,2035,official
+CPW2024,35,Restaurant Service,active,2039,official
+CPW2024,36,Car Painting,active,2042,official
+CPW2024,37,Landscape Gardening,active,2048,official
+CPW2024,38,Refrigeration and Air Conditioning,active,2034,official
+CPW2024,39,IT Network Systems Administration,active,2002,official
+CPW2024,40,Graphic Design Technology,active,2053,official
+CPW2024,41,Health and Social Care,active,2020,official
+CPW2024,42,Construction Metal Work,active,2026,official
+CPW2024,44,Visual Merchandising,active,2058,official
+CPW2024,46,Concrete Construction Work,active,2005,official
+CPW2024,47,Bakery,active,2036,official
+CPW2024,48,Industry 4.0,active,2001,official
+CPW2024,49,Heavy Vehicle Technology,active,2013,official
+CPW2024,50,3D Digital Game Art,active,2015,official
+CPW2024,51,Logistics and Freight Forwarding,active,2031,official
+CPW2024,52,Chemical Laboratory Technology,active,2055,official
+CPW2024,53,Cloud Computing,active,2038,official
+CPW2024,54,Cyber Security,active,2052,official
+CPW2024,55,Water Technology,active,2033,official
+CPW2024,56,Hotel Reception,active,2021,official
+CPW2024,57,Additive Manufacturing,active,2049,official
+CPW2024,58,Digital Construction,active,2032,official
+CPW2024,59,Industrial Design Technology,active,2027,official
+CPW2024,60,Optoelectronic Technology,active,2045,official
+CPW2024,62,Renewable Energy,active,2011,official
+CPW2024,63,Robot Systems Integration,active,2056,official
+CPW2024,E01,Stonemasonry,active,2018,exhibition
+CPW2024,E02,Heavy Truck Maintenance,active,2051,exhibition
+CPW2024,E03,Rail Vehicle Technology,active,2000,exhibition
+CPW2026,01,Industrial Mechanics,active,2972,official
+CPW2026,02,ICT Network Infrastructure,active,2977,official
+CPW2026,04,Mechatronics,active,2974,official
+CPW2026,05,Mechanical Engineering CAD,active,2969,official
+CPW2026,06,CNC Turning,active,2976,official
+CPW2026,07,CNC Milling,active,2970,official
+CPW2026,08,Mobile Applications Development,active,2989,official
+CPW2026,09,Software Applications Development,active,2973,official
+CPW2026,10,Welding,active,2979,official
+CPW2026,12,Wall and Floor Tiling,active,2988,official
+CPW2026,13,Autobody Repair,active,2981,official
+CPW2026,14,Aircraft Maintenance,active,2994,official
+CPW2026,15,Plumbing and Heating,active,2987,official
+CPW2026,16,Electronics,active,3020,official
+CPW2026,17,Web Technologies,active,2991,official
+CPW2026,18,Electrical Installations,active,2978,official
+CPW2026,19,Industrial Control,active,2971,official
+CPW2026,20,Bricklaying,active,3009,official
+CPW2026,21,Plastering and Drywall Systems,active,2985,official
+CPW2026,22,Painting and Decorating,active,2975,official
+CPW2026,23,Autonomous Mobile Robotics,active,3024,official
+CPW2026,24,Cabinetmaking,active,3027,official
+CPW2026,25,Joinery,active,2997,official
+CPW2026,26,Carpentry,active,3021,official
+CPW2026,27,Jewellery,active,3026,official
+CPW2026,28,Floristry,active,3023,official
+CPW2026,29,Hairdressing,active,3018,official
+CPW2026,30,Beauty Therapy,active,3005,official
+CPW2026,31,Fashion Technology,active,3019,official
+CPW2026,32,Pâtisserie and Confectionery,active,2999,official
+CPW2026,33,Automobile Technology,active,2982,official
+CPW2026,34,Cooking,active,2998,official
+CPW2026,35,Restaurant Service,active,3017,official
+CPW2026,36,Car Painting,active,3031,official
+CPW2026,37,Landscape Gardening,active,3029,official
+CPW2026,38,Refrigeration and Air Conditioning,active,2984,official
+CPW2026,39,IT Network Systems Administration,active,2995,official
+CPW2026,40,Graphic Design Technology,active,3025,official
+CPW2026,41,Health and Social Care,active,2986,official
+CPW2026,44,Visual Merchandising,active,3000,official
+CPW2026,46,Concrete Construction Work,active,2990,official
+CPW2026,47,Bakery,active,2993,official
+CPW2026,48,Industry 4.0,active,2980,official
+CPW2026,49,Heavy Vehicle Technology,active,3002,official
+CPW2026,50,3D Digital Game Art,active,2996,official
+CPW2026,51,Logistics and Freight Forwarding,active,3007,official
+CPW2026,52,Chemical Laboratory Technology,active,2983,official
+CPW2026,53,Cloud Computing,active,3022,official
+CPW2026,54,Cyber Security,active,3001,official
+CPW2026,55,Water Technology,active,2992,official
+CPW2026,56,Hotel Reception,active,3030,official
+CPW2026,57,Additive Manufacturing,active,3006,official
+CPW2026,58,Digital Construction,active,3003,official
+CPW2026,59,Industrial Design Technology,active,3016,official
+CPW2026,60,Optoelectronic Technology,active,3004,official
+CPW2026,62,Renewable Energy,active,3014,official
+CPW2026,63,Robot Systems Integration,active,3008,official
+CPW2026,PO1,Dental Prosthetics,active,3010,possible_official
+CPW2026,PO2,Digital Interactive Media Design,active,3013,possible_official
+CPW2026,PO3,Intelligent Security Technology,active,3011,possible_official
+CPW2026,PO4,Rail Vehicle Technology,active,3012,possible_official
+CPW2026,PO5,Retail Sales,active,3015,possible_official
+CPW2026,PO6,Software Testing,active,3028,possible_official
+CPW2026,PO7,Unmanned Aerial Systems,active,2968,possible_official
+E438,02,Information Network Cabling,active,568,official
+E438,03,Manufacturing Team Challenge,active,573,official
+E438,04,Mechatronics,active,574,official
+E438,05,Mechanical Engineering Design - CAD,active,575,official
+E438,06,CNC Turning,active,576,official
+E438,07,CNC Milling,active,577,official
+E438,08,Architectural Stonemasonry,active,560,official
+E438,10,Welding,active,578,official
+E438,11,Print Media Technology,active,564,official
+E438,12,Wall and Floor Tiling,active,548,official
+E438,13,Autobody Repair,active,569,official
+E438,14,Aircraft Maintenance,active,542,official
+E438,15,Plumbing and Heating,active,549,official
+E438,17,Web design,active,565,official
+E438,18,Electrical Installations,active,550,official
+E438,19,Industrial Control,active,570,official
+E438,20,Bricklaying,active,551,official
+E438,21,Plastering and Drywall Systems,active,552,official
+E438,22,Painting and Decorating,active,553,official
+E438,23,Mobile Robotics,active,571,official
+E438,24,Cabinetmaking,active,554,official
+E438,25,Joinery,active,555,official
+E438,26,Carpentry,active,556,official
+E438,27,Jewellery,active,581,official
+E438,28,Floristry,active,587,official
+E438,29,Hairdressing,active,582,official
+E438,30,Beauty Therapy,active,583,official
+E438,31,Fashion Technology,active,584,official
+E438,32,Pâtisserie and Confectionery,active,536,official
+E438,33,Automobile Technology,active,543,official
+E438,34,Cooking,active,537,official
+E438,35,Restaurant Service,active,538,official
+E438,36,Car Painting,active,544,official
+E438,37,Landscape Gardening,active,588,official
+E438,38,Refrigeration and Air Conditioning,active,572,official
+E438,39,IT Network Systems Administration,active,566,official
+E438,40,Graphic Design Technology,active,567,official
+E438,41,Health and Social Care,active,585,official
+E438,42,Construction Metal Work,active,557,official
+E438,43,Sheet Metal Technology,active,579,official
+E438,46,Concrete Construction Work,active,558,official
+E438,47,Bakery,active,539,official
+E438,49,Heavy Vehicle Maintenance,active,545,official
+E438,50,Floor Laying,active,559,official
+E438,D3,Truck Maintenance,active,546,official
+E438,E49,Metal Roofing,active,561,official
+E438,MD02,Fishmonger,active,590,demo
+E438,MD03,Dental technician,active,591,demo
+E438,MD04,Upholstery,active,592,demo
+E438,N10,Robotics Integrator,active,580,official
+E438,N11,Butchery,active,540,official
+E438,N2,Horticulture,active,589,official
+E438,N3,Motorcycle Technology,active,547,official
+E438,N4,Wine Tester,active,541,official
+E438,N6,Road Building,active,562,official
+E438,N8,Mirror Factory,active,563,official
+E438,N9,Cleanliness professions,active,586,official
+E438,ZZ,WSFR Needs,active,706,official
+E570,01,IT Network Systems Administration,active,748,official
+E570,02,Information Network Cabling,active,749,official
+E570,03,Web Technologies,active,750,official
+E570,04,IT Software Solutions for Business,active,751,official
+E570,05,Internet of Things,active,752,official
+E570,06,Refrigeration & Air-conditioning,active,753,official
+E570,07,CNC Maintenance,active,754,official
+E570,08,Industrial Automation,active,755,official
+E570,09,Electrical Installations,active,756,official
+E570,10,Mobile Robotics,active,757,official
+E570,11,Electronics,active,758,official
+E570,12,Mechanical Engineering – CAD,active,759,official
+E570,13,Mechatronics,active,760,official
+E570,14,Cooking,active,762,official
+E570,15,Restaurant Service,active,763,official
+E570,16,Hairdressing,active,764,official
+E570,17,Beauty Therapy,active,765,official
+E570,18,Fashion Technology,active,766,official
+E570,19,Graphic Design Technology,active,767,official
+E570,20,Automobile Technology,active,768,official
+E570,D1,Industrial Control,active,761,demo
+E570,D2,Rapid Transit Systems,active,769,demo
+E576,01,IT Network Systems Administration,active,864,official
+E576,02,Information Network Cabling,active,865,official
+E576,03,Web Technologies,active,866,official
+E576,04,IT Software Solutions for Business,active,867,official
+E576,05,Internet of Things,active,868,official
+E576,06,Refrigeration & Air-conditioning,active,869,official
+E576,07,CNC Maintenance,active,870,official
+E576,08,Industrial Automation,active,871,official
+E576,09,Electrical Installations,active,872,official
+E576,10,Mobile Robotics,active,873,official
+E576,11,Electronics,active,874,official
+E576,12,Mechanical Engineering – CAD,active,875,official
+E576,13,Mechatronics,active,876,official
+E576,14,Cooking,active,877,official
+E576,15,Restaurant Service,active,878,official
+E576,16,Hairdressing,active,879,official
+E576,17,Beauty Therapy,active,880,official
+E576,18,Fashion Technology,active,881,official
+E576,19,Graphic Design Technology,active,882,official
+E576,20,Automobile Technology,active,883,official
+E576,D1,Industrial Control,active,884,demo
+E576,D2,Rapid Transit Systems,active,885,demo
+E577,02,Information Network Cabling,active,889,official
+E577,03,Manufacturing Team Challenge,active,886,official
+E577,04,Mechatronics,active,887,official
+E577,05,Mechanical Engineering Design - CAD,active,891,official
+E577,06,CNC Turning,active,888,official
+E577,07,CNC Milling,active,892,official
+E577,08,Architectural Stonemasonry,active,890,official
+E577,09,IT Software Solutions for Business,active,945,official
+E577,10,Welding,active,893,official
+E577,11,Print Media Technology,active,894,official
+E577,12,Wall and Floor Tiling,active,921,official
+E577,13,Autobody Repair,active,895,official
+E577,14,Aircraft Maintenance,active,920,official
+E577,15,Plumbing and Heating,active,896,official
+E577,16,Electronics,active,946,official
+E577,17,Web design,active,898,official
+E577,18,Electrical Installations,active,897,official
+E577,19,Industrial Control,active,923,official
+E577,20,Bricklaying,active,925,official
+E577,21,Plastering and Drywall Systems,active,929,official
+E577,22,Painting and Decorating,active,924,official
+E577,23,Mobile Robotics,active,926,official
+E577,24,Cabinetmaking,active,927,official
+E577,25,Joinery,active,928,official
+E577,26,Carpentry,active,931,official
+E577,27,Jewellery,active,932,official
+E577,28,Floristry,active,930,official
+E577,29,Hairdressing,active,918,official
+E577,30,Beauty Therapy,active,908,official
+E577,31,Fashion Technology,active,939,official
+E577,32,Pâtisserie and Confectionery,active,938,official
+E577,33,Automobile Technology,active,919,official
+E577,34,Cooking,active,934,official
+E577,35,Restaurant Service,active,902,official
+E577,36,Car Painting,active,922,official
+E577,37,Landscape Gardening,active,933,official
+E577,38,Refrigeration and Air Conditioning,active,914,official
+E577,39,IT Network Systems Administration,active,899,official
+E577,40,Graphic Design Technology,active,912,official
+E577,41,Health and Social Care,active,903,official
+E577,42,Construction Metal Work,active,942,official
+E577,44,Visual merchandising,active,947,official
+E577,46,Concrete Construction Work,active,911,official
+E577,47,Bakery,active,916,official
+E577,49,Heavy Vehicle Maintenance,active,941,official
+E577,50,3D Digital Game Art,active,943,official
+E577,54,Cyber Security,active,944,official
+E577,56,Hotel Reception,active,948,official
+E577,D1,Marble Design,active,967,demo
+E577,D2,Entrepreneurship Team Challenge,active,1026,demo
+E577,E49,Metal Roofing,active,904,official
+E577,E50,Floor Laying,active,905,official
+E577,E54,Truck Maintenance,active,913,official
+E577,N1,Sheet Metal Work,active,906,official
+E577,N10,Robot Systems Integration,active,935,official
+E577,N11,Butchery,active,907,official
+E577,N2,Horticulture,active,915,official
+E577,N3,Motorcycle Technology,active,917,official
+E577,N4,Wine Tester,active,936,official
+E577,N5,Social Care,active,1025,official
+E577,N6,Road Building,active,909,official
+E577,N8,Glass Construction Technology,active,900,official
+E577,N9,Cleanliness professions,active,901,official
+E578,04,Mechatronics,active,959,official
+E578,05,Mechanical Engineering CAD,active,961,official
+E578,10,Welding,active,960,official
+E578,12,Wall and Floor Tiling,active,955,official
+E578,15,Plumbing and Heating,active,953,official
+E578,18,Electrical Installations,active,951,official
+E578,20,Bricklaying,active,950,official
+E578,25,Joinery,active,952,official
+E578,29,Hairdressing,active,957,official
+E578,31,Fashion Technology,active,962,official
+E578,33,Automotive Technology,active,949,official
+E578,34,Cooking,active,956,official
+E578,35,Restaurant Service,active,958,official
+E578,38,Refrigeration and Air Conditioning,active,954,official
+E578,55,Water Technology,active,964,official
+E578,57,Web Technologies,active,963,official
+E580,03,Precision Machining,active,968,official
+E580,04,Mechatronics,active,969,official
+E580,05,Mechanical Engineering CAD,active,970,official
+E580,06,CNC Machining,active,971,official
+E580,08,IT Office Software Applications,active,972,official
+E580,10,Welding,active,973,official
+E580,13,Autobody Repair,active,974,official
+E580,14,Aerospace Technology,active,975,official
+E580,15,Plumbing,active,976,official
+E580,16,Electronics,active,977,official
+E580,17,Web Design and Development,active,978,official
+E580,18,Electrical Installations,active,979,official
+E580,19,Industrial Control,active,980,official
+E580,20,Bricklaying,active,981,official
+E580,23,Mobile Robotics,active,982,official
+E580,24,Cabinetmaking,active,983,official
+E580,26,Carpentry,active,984,official
+E580,29,Hairstyling,active,985,official
+E580,30,Aesthetics,active,986,official
+E580,31,Fashion Technology,active,987,official
+E580,32,Baking,active,988,official
+E580,33,Automobile Technology,active,989,official
+E580,34,Cooking,active,990,official
+E580,36,Car Painting,active,991,official
+E580,37,Landscape Gardening,active,992,official
+E580,38,Refrigeration and Air Conditioning,active,993,official
+E580,39,IT Network Systems Administration,active,994,official
+E580,40,Graphic Design Technology,active,995,official
+E580,43,Sheet Metal Work,active,996,official
+E580,48,Industrial Mechanic-Millwright,active,997,official
+E580,49,Heavy Vehicle Technology,active,998,official
+E580,50,3D Digital Game Art,active,999,official
+E580,52,Architectural Technology & Design,active,1000,official
+E580,53,Outdoor Power and Recreation Equipment,active,1001,official
+E580,54,Photography,active,1002,official
+E580,55,Sprinkler Fitter,active,1003,official
+E580,81,Steamfitter / Pipefitter,active,1004,official
+E580,82,Video Production,active,1005,official
+E580,83,Job search,active,1006,official
+E580,84,Job Skill Demonstration,active,1007,official
+E580,85,Public Speaking,active,1008,official
+E580,87/88,2D & 3D Character Computer Animation,active,1009,official
+E580,92,Workplace Safety,active,1010,official
+E580,D1,Cloud Computing,active,1011,demo
+E581,28,Floristry,active,1023,official
+E581,29,Hairdressing,active,1024,official
+E581,32,Pâtisserie and Confectionery,active,1022,official
+E581,47,Bakery,active,1021,official
+E582,02,Information Network Cabling,active,1030,official
+E582,03,Manufacturing Team Challenge,active,1038,official
+E582,04,Mechatronics,active,1031,official
+E582,05,Mechanical Engineering Design - CAD,active,1028,official
+E582,06,CNC Turning,active,1027,official
+E582,07,CNC Milling,active,1035,official
+E582,08,Architectural Stonemasonry,active,1047,official
+E582,09,IT Software Solutions for Business,active,1029,official
+E582,10,Welding,active,1032,official
+E582,11,Print Media Technology,active,1033,official
+E582,12,Wall and Floor Tiling,active,1041,official
+E582,13,Autobody Repair,active,1040,official
+E582,14,Aircraft Maintenance,active,1042,official
+E582,15,Plumbing and Heating,active,1049,official
+E582,16,Electronics,active,1043,official
+E582,17,Web design,active,1045,official
+E582,18,Electrical Installations,active,1048,official
+E582,19,Industrial Control,active,1052,official
+E582,20,Bricklaying,active,1039,official
+E582,21,Plastering and Drywall Systems,active,1036,official
+E582,22,Painting and Decorating,active,1046,official
+E582,23,Mobile Robotics,active,1055,official
+E582,24,Cabinetmaking,active,1037,official
+E582,25,Joinery,active,1034,official
+E582,26,Carpentry,active,1044,official
+E582,27,Jewellery,active,1053,official
+E582,28,Floristry,active,1054,official
+E582,29,Hairdressing,active,1051,official
+E582,30,Beauty Therapy,active,1057,official
+E582,31,Fashion Technology,active,1056,official
+E582,32,Pâtisserie and Confectionery,active,1080,official
+E582,33,Automobile Technology,active,1061,official
+E582,34,Cooking,active,1087,official
+E582,35,Restaurant Service,active,1068,official
+E582,36,Car Painting,active,1065,official
+E582,37,Landscape Gardening,active,1066,official
+E582,38,Refrigeration and Air Conditioning,active,1085,official
+E582,39,IT Network Systems Administration,active,1072,official
+E582,40,Graphic Design Technology,active,1059,official
+E582,41,Health and Social Care,active,1071,official
+E582,42,Construction Metal Work,active,1076,official
+E582,44,Visual merchandising,active,1063,official
+E582,46,Concrete Construction Work,active,1062,official
+E582,47,Bakery,active,1078,official
+E582,49,Heavy Vehicle Maintenance,active,1064,official
+E582,50,3D Digital Game Art,active,1083,official
+E582,54,Cyber Security,active,1081,official
+E582,56,Hotel Reception,active,1069,official
+E582,58,Digital Construction,active,1169,official
+E582,D1,Marble Design,active,1086,demo
+E582,D2,Entrepreneurship Team Challenge,active,1088,demo
+E582,E49,Metal Roofing,active,1070,official
+E582,E50,Floor Laying,active,1060,official
+E582,E54,Truck Maintenance,active,1079,official
+E582,N1,Sheet Metal Work,active,1082,official
+E582,N10,Robot Systems Integration,active,1067,official
+E582,N11,Butchery,active,1073,official
+E582,N2,Horticulture,active,1050,official
+E582,N3,Motorcycle Technology,active,1074,official
+E582,N4,Wine Tester,active,1075,official
+E582,N5,Social Care,active,1089,official
+E582,N6,Road Building,active,1077,official
+E582,N8,Glass Construction Technology,active,1084,official
+E582,N9,Cleanliness professions,active,1058,official
+E583,02,Information Network Cabling,active,1092,official
+E583,03,Manufacturing Team Challenge,active,1105,official
+E583,04,Mechatronics,active,1097,official
+E583,05,Mechanical Engineering Design - CAD,active,1095,official
+E583,06,CNC Turning,active,1093,official
+E583,07,CNC Milling,active,1098,official
+E583,08,Architectural Stonemasonry,active,1099,official
+E583,09,IT Software Solutions for Business,active,1094,official
+E583,10,Welding,active,1109,official
+E583,11,Print Media Technology,active,1090,official
+E583,12,Wall and Floor Tiling,active,1091,official
+E583,13,Autobody Repair,active,1111,official
+E583,14,Aircraft Maintenance,active,1101,official
+E583,15,Plumbing and Heating,active,1107,official
+E583,16,Electronics,active,1117,official
+E583,17,Web design,active,1110,official
+E583,18,Electrical Installations,active,1118,official
+E583,19,Industrial Control,active,1103,official
+E583,20,Bricklaying,active,1115,official
+E583,21,Plastering and Drywall Systems,active,1100,official
+E583,22,Painting and Decorating,active,1106,official
+E583,23,Mobile Robotics,active,1102,official
+E583,24,Cabinetmaking,active,1116,official
+E583,25,Joinery,active,1113,official
+E583,26,Carpentry,active,1104,official
+E583,27,Jewellery,active,1152,official
+E583,28,Floristry,active,1112,official
+E583,29,Hairdressing,active,1120,official
+E583,30,Beauty Therapy,active,1150,official
+E583,31,Fashion Technology,active,1119,official
+E583,32,Pâtisserie and Confectionery,active,1114,official
+E583,33,Automobile Technology,active,1133,official
+E583,34,Cooking,active,1108,official
+E583,35,Restaurant Service,active,1096,official
+E583,36,Car Painting,active,1131,official
+E583,37,Landscape Gardening,active,1129,official
+E583,38,Refrigeration and Air Conditioning,active,1121,official
+E583,39,IT Network Systems Administration,active,1127,official
+E583,40,Graphic Design Technology,active,1128,official
+E583,41,Health and Social Care,active,1130,official
+E583,42,Construction Metal Work,active,1134,official
+E583,44,Visual merchandising,active,1123,official
+E583,46,Concrete Construction Work,active,1140,official
+E583,47,Bakery,active,1122,official
+E583,49,Heavy Vehicle Maintenance,active,1143,official
+E583,50,3D Digital Game Art,active,1126,official
+E583,54,Cyber Security,active,1124,official
+E583,56,Hotel Reception,active,1148,official
+E583,D1,Marble Design,active,1151,demo
+E583,D2,Entrepreneurship Team Challenge,active,1132,demo
+E583,E49,Metal Roofing,active,1125,official
+E583,E50,Floor Laying,active,1136,official
+E583,E54,Truck Maintenance,active,1147,official
+E583,N1,Sheet Metal Work,active,1141,official
+E583,N10,Robot Systems Integration,active,1146,official
+E583,N11,Butchery,active,1142,official
+E583,N2,Horticulture,active,1137,official
+E583,N3,Motorcycle Technology,active,1149,official
+E583,N4,Wine Tester,active,1139,official
+E583,N5,Social Care,active,1135,official
+E583,N6,Road Building,active,1144,official
+E583,N8,Glass Construction Technology,active,1145,official
+E583,N9,Cleanliness professions,active,1138,official
+E584,04,Mechatronics,active,1153,official
+E584,05,Mechanical Engineering CAD,active,1155,official
+E584,10,Welding,active,1154,official
+E584,12,Wall and Floor Tiling,active,1157,official
+E584,15,Plumbing and Heating,active,1159,official
+E584,18,Electrical Installations,active,1158,official
+E584,20,Bricklaying,active,1160,official
+E584,25,Joinery,active,1161,official
+E584,29,Hairdressing,active,1162,official
+E584,31,Fashion Technology,active,1168,official
+E584,33,Automotive Technology,active,1167,official
+E584,34,Cooking,active,1163,official
+E584,35,Restaurant Service,active,1166,official
+E584,38,Refrigeration and Air Conditioning,active,1164,official
+E584,55,Water Technology,active,1165,official
+E584,57,Web Technologies,active,1156,official
+E588,101,Ajoneuvotekniikka,active,1250,official
+E588,102,Autokorinkorjaus,active,1251,official
+E588,103,Automaalaus,active,1252,official
+E588,104,Kuljetuslogistiikka,active,1253,official
+E588,105,Metsäkoneenkäyttö,active,1254,official
+E588,201,CAD-suunnittelu,active,1255,official
+E588,202,Mediatekniikka,active,1256,official
+E588,203,Mediasuunnittelu,active,1257,official
+E588,204,Tietojenkäsittely,active,1258,official
+E588,205,Tietokoneet ja verkot,active,1259,official
+E588,206,Verkkosivujen tuottaminen,active,1260,official
+E588,208,Pelituotanto,active,1261,official
+E588,301,Asiakaspalvelu ja myynti,active,1262,official
+E588,302,Hiusmuotoilu,active,1263,official
+E588,303,Kauneudenhoito,active,1264,official
+E588,304,Floristiikka,active,1265,official
+E588,305,Lähihoitaja,active,1266,official
+E588,306,Puhdistuspalvelu,active,1267,official
+E588,307,Vaatteenvalmistus,active,1268,official
+E588,308,Visuaalinen myyntityö,active,1269,official
+E588,310,Yrittäjyys,active,1270,official
+E588,312,Matkailu,active,1271,official
+E588,313,Taloushallinto,active,1272,official
+E588,314,Turvapalvelu,active,1273,official
+E588,315,Hyvinvointiteknologia,active,1274,official
+E588,401,Huonekalupuuseppä,active,1275,official
+E588,402,Ilmastointiasennus,active,1276,official
+E588,404,Rakennuspinnoittaminen,active,1277,official
+E588,405,Putkiasennus,active,1278,official
+E588,406,Sähköasennus,active,1279,official
+E588,407,Talonrakentaminen,active,1280,official
+E588,410,Viherrakentaminen,active,1281,official
+E588,411,Infrarakentaminen,active,1282,official
+E588,501,Leipuri-kondiittori,active,1283,official
+E588,502,Kokki,active,1284,official
+E588,504,Tarjoilija,active,1285,official
+E588,601,Automaatioasennus,active,1286,official
+E588,602,Elektroniikka ja robotiikka,active,1287,official
+E588,603,CNC-koneistus,active,1288,official
+E588,605,Hitsaus,active,1289,official
+E588,606,Kappaletavara-automaatio,active,1290,official
+E588,607,Koneenasennus ja kunnossapito,active,1291,official
+E588,N1,Lentokonehuolto,active,1295,official
+E588,N2,Merenkulku,active,1296,official
+E588,N3,Jalkineala,active,1297,official
+E588,N4,eSport,active,1298,official
+E588,P1,Ravintolapalvelu-Kokki,active,1292,official
+E588,P2,Kiinteistönhoito,active,1293,official
+E588,P3,Liiketoiminta,active,1294,official
+E598,01,IT Network Systems Administration,active,1577,official
+E598,02,Information Network Cabling,active,1579,official
+E598,03,Web Technologies,active,1574,official
+E598,04,IT Software Solutions for Business,active,1569,official
+E598,05,Internet of Things,active,1576,official
+E598,06,Refrigeration & Air-conditioning,active,1570,official
+E598,07,CNC Maintenance,active,1573,official
+E598,08,Industrial Automation,active,1571,official
+E598,09,Electrical Installations,active,1568,official
+E598,10,Mobile Robotics,active,1566,official
+E598,11,Electronics,active,1572,official
+E598,12,Mechanical Engineering – CAD,active,1587,official
+E598,13,Mechatronics,active,1583,official
+E598,14,Cooking,active,1580,official
+E598,15,Restaurant Service,active,1586,official
+E598,16,Hairdressing,active,1584,official
+E598,17,Beauty Therapy,active,1575,official
+E598,18,Fashion Technology,active,1581,official
+E598,19,Graphic Design Technology,active,1585,official
+E598,20,Automobile Technology,active,1578,official
+E598,D1,Industrial Control,active,1582,demo
+E598,D2,Rapid Transit Systems,active,1567,demo
+E601,01,Maintenance industrielle,active,1720,official
+E601,02,Information Network Cabling,active,1598,official
+E601,03,Manufacturing Team Challenge,active,1602,official
+E601,04,Mechatronics,active,1601,official
+E601,05,Mechanical Engineering Design - CAD,active,1597,official
+E601,06,CNC Turning,active,1606,official
+E601,07,CNC Milling,active,1607,official
+E601,09,IT Software Solutions for Business,active,1596,official
+E601,10,Welding,active,1612,official
+E601,11,Print Media Technology,active,1608,official
+E601,12,Wall and Floor Tiling,active,1627,official
+E601,13,Autobody Repair,active,1651,official
+E601,14,Aircraft Maintenance,active,1610,official
+E601,15,Plumbing and Heating,active,1622,official
+E601,16,Electronics,active,1639,official
+E601,17,Web design,active,1611,official
+E601,18,Electrical Installations,active,1631,official
+E601,19,Industrial Control,active,1624,official
+E601,20,Bricklaying,active,1603,official
+E601,21,Plastering and Drywall Systems,active,1593,official
+E601,22,Painting and Decorating,active,1595,official
+E601,23,Mobile Robotics,active,1600,official
+E601,24,Cabinetmaking,active,1594,official
+E601,25,Joinery,active,1632,official
+E601,26,Carpentry,active,1617,official
+E601,27,Jewellery,active,1641,official
+E601,28,Floristry,active,1655,official
+E601,29,Hairdressing,active,1646,official
+E601,30,Beauty Therapy,active,1614,official
+E601,31,Fashion Technology,active,1635,official
+E601,32,Pâtisserie and Confectionery,active,1644,official
+E601,33,Automobile Technology,active,1628,official
+E601,34,Cooking,active,1653,official
+E601,35,Restaurant Service,active,1626,official
+E601,36,Car Painting,active,1625,official
+E601,37,Landscape Gardening,active,1620,official
+E601,38,Refrigeration and Air Conditioning,active,1623,official
+E601,39,IT Network Systems Administration,active,1615,official
+E601,40,Graphic Design Technology,active,1604,official
+E601,41,Health and Social Care,active,1616,official
+E601,42,Construction Metal Work,active,1619,official
+E601,44,Visual merchandising,active,1609,official
+E601,46,Concrete Construction Work,active,1634,official
+E601,47,Bakery,active,1613,official
+E601,48,Industrie 4.0,active,1721,official
+E601,49,Heavy Vehicle Maintenance,active,1647,official
+E601,50,3D Digital Game Art,active,1629,official
+E601,53,Cloud Computing,active,1722,official
+E601,54,Cyber Security,active,1630,official
+E601,56,Hotel Reception,active,1638,official
+E601,57,Fabrication Additive,active,1723,official
+E601,58,Digital Construction,active,1640,official
+E601,63,Robot Systems Integration,active,1645,official
+E601,D1,Marble Design,active,1643,demo
+E601,E46,Entrepreneurship Team Challenge,active,1642,official
+E601,E49,Metal Roofing,active,1621,official
+E601,E50,Floor Laying,active,1650,official
+E601,E54,Truck Maintenance,active,1637,official
+E601,E8,Architectural Stonemasonry,active,1605,official
+E601,N1,Sheet Metal Work,active,1648,official
+E601,N11,Butchery,active,1633,official
+E601,N2,Horticulture,active,1652,official
+E601,N3,Motorcycle Technology,active,1656,official
+E601,N4,Wine Tester,active,1636,official
+E601,N5,Social Care,active,1618,official
+E601,N6,Road Building,active,1654,official
+E601,N7,Leatherwork,active,1834,official
+E601,N8,Glass Construction Technology,active,1649,official
+E601,N8E,Glass Construction Technology Euro,active,1836,official
+E601,N9,Cleanliness professions,active,1599,official
+E614,01,IT Network System,active,2169,official
+E614,02,Landscape gardening,active,2170,official
+E614,03,Floristry,active,2171,official
+E614,04,Butchery,active,2172,official
+E614,05,Bakery,active,2173,official
+E614,06,Wall and floor tilling,active,2174,official
+E614,07,Hairdressing,active,2175,official
+E614,08,Mechanical Engineering CAD,active,2176,official
+E614,09,Truck Driver,active,2177,official
+E614,10,Industrial control,active,2178,official
+E614,11,Cooking,active,2179,official
+E614,12,Cabinetmaking,active,2180,official
+E614,13,Fashion Technology,active,2181,official
+E614,14,CNC Milling,active,2182,official
+E614,15,Industry 4.0,active,2183,official
+E614,16,Graphic design,active,2184,official
+E614,17,Electrical installations,active,2185,official
+E614,18,Robot systems integration,active,2186,official
+E614,19,Bricklaying,active,2187,official
+E614,20,Mechatronics,active,2188,official
+E614,21,Joinery,active,2189,official
+E614,22,Painting and decorating,active,2190,official
+E614,23,Plastering and drywall system,active,2191,official
+E614,24,Plastic die engeering,active,2192,official
+E614,25,Plumbing and heating,active,2193,official
+E614,26,Restaurant Service,active,2194,official
+E614,27,Welding,active,2195,official
+E614,28,Automobile technology,active,2196,official
+E614,29,Refrigeration and air conditioning,active,2197,official
+E614,30,Metal Roofing,active,2198,official
+E614,31,Web Technologies,active,2199,official
+E615,02,Information Network Cabling,active,2217,official
+E615,05,Mechanical Engineering CAD,active,2209,official
+E615,10,Welding,active,2205,official
+E615,12,Wall and Floor Tiling,active,2204,official
+E615,15,Plumbing and Heating,active,2202,official
+E615,18,Electrical Installations,active,2207,official
+E615,20,Bricklaying,active,2201,official
+E615,25,Joinery,active,2206,official
+E615,26,Carpentry,active,2220,official
+E615,27,Jewellery,active,2216,official
+E615,29,Hairdressing,active,2212,official
+E615,30,Beauty Therapy,active,2219,official
+E615,31,Fashion Technology,active,2203,official
+E615,33,Automotive Technology,active,2200,official
+E615,34,Cooking,active,2211,official
+E615,35,Restaurant Service,active,2210,official
+E615,46,Concrete Construction Work,active,2218,official
+E615,48,Industry 4.0,active,2213,official
+E615,55,Water Technology,active,2208,official
+E615,56,Hotel Reception,active,2214,official
+E615,58,Digital Construction,active,2215,official
+E617,101,101 Ajoneuvotekniikka,active,2276,official
+E617,102,102 Autokorinkorjaus,active,2269,official
+E617,104,104 Kuljetuslogistiikka,active,2282,official
+E617,105,105 Metsäkoneenkäyttö,active,2279,official
+E617,201,201 CAD-suunnittelu,active,2306,official
+E617,203,203 Mediasuunnittelu,active,2280,official
+E617,204,204 Järjestelmäasiantuntija,active,2260,official
+E617,205,205 Tietoverkkoasennus,active,2294,official
+E617,206,206 Web-kehitys,active,2264,official
+E617,208,208 Pelituotanto,active,2261,official
+E617,301,301 Asiakaspalvelu ja myynti,active,2273,official
+E617,302,302 Hiusmuotoilu,active,2267,official
+E617,303,303 Kauneudenhoito,active,2277,official
+E617,304,304 Floristiikka,active,2272,official
+E617,305,305 Lähihoitaja,active,2262,official
+E617,306,306 Puhtauspalvelu,active,2263,official
+E617,307,307 Vaatteenvalmistus,active,2300,official
+E617,309,309 Hevostenhoito,active,2287,official
+E617,310,310 Yrittäjyys,active,2303,official
+E617,311,311 Eläintenhoito,active,2286,official
+E617,312,312 Matkailu,active,2301,official
+E617,313,313 Taloushallinto,active,2268,official
+E617,314,314 Turvapalvelu,active,2283,official
+E617,315,315 Hyvinvointiteknologia,active,2278,official
+E617,316,316 Kiinteistönhoito,active,2265,official
+E617,401,401 Puuseppä,active,2270,official
+E617,402,402 Ilmastointiasennus,active,2307,official
+E617,404,404 Maalaus ja tapetointi,active,2266,official
+E617,405,405 Putkiasennus,active,2295,official
+E617,406,406 Sähköasennus,active,2271,official
+E617,407,407 Talonrakentaminen,active,2275,official
+E617,410,410 Viherrakentaminen,active,2285,official
+E617,411,411 Infrarakentaminen,active,2290,official
+E617,501,501 Leipuri-kondiittori,active,2291,official
+E617,502,502 Kokki,active,2292,official
+E617,504,504 Tarjoilija,active,2281,official
+E617,602,602 Elektroniikka-asennus,active,2289,official
+E617,603,603 CNC-koneistus,active,2296,official
+E617,604,604 Laborantti,active,2293,official
+E617,605,605 Hitsaus ja levytyöt,active,2305,official
+E617,606,606 Kappaletavara-automaatio,active,2288,official
+E617,607,607 Koneenasennus ja kunnossapito,active,2297,official
+E617,P1,P1 Ravintola- ja cateringpalvelut,active,2298,official
+E617,P2,P2 Kiinteistönhoito,active,2284,official
+E617,P3,P3 Liiketoiminta,active,2302,official
+E617,P4,P4 Puhtauspalvelu,active,2274,official
+E617,P5,P5 Logistiikka,active,2304,official
+E617,T9,Taitaja9,active,2259,official
+E618,101,101 Ajoneuvotekniikka,active,2404,official
+E618,102,102 Autokorinkorjaus,active,2356,official
+E618,104,104 Kuljetuslogistiikka,active,2338,official
+E618,105,105 Metsäkoneenkäyttö,active,2337,official
+E618,201,201 CAD-suunnittelu,active,2326,official
+E618,203,203 Mediasuunnittelu,active,2314,official
+E618,204,204 Järjestelmäasiantuntija,active,2323,official
+E618,205,205 Tietoverkkoasennus,active,2340,official
+E618,206,206 Web-kehitys,active,2309,official
+E618,208,208 Pelituotanto,active,2319,official
+E618,301,301 Asiakaspalvelu ja myynti,active,2354,official
+E618,302,302 Hiusmuotoilu,active,2325,official
+E618,303,303 Kauneudenhoito,active,2313,official
+E618,304,304 Floristiikka,active,2336,official
+E618,305,305 Lähihoitaja,active,2342,official
+E618,306,306 Puhtauspalvelu,active,2318,official
+E618,307,307 Vaatteenvalmistus,active,2353,official
+E618,309,309 Hevostenhoito,active,2333,official
+E618,310,310 Yrittäjyys,active,2310,official
+E618,311,311 Eläintenhoito,active,2334,official
+E618,312,312 Matkailu,active,2322,official
+E618,313,313 Taloushallinto,active,2349,official
+E618,314,314 Turvapalvelu,active,2348,official
+E618,315,315 Hyvinvointiteknologia,active,2316,official
+E618,316,316 Kiinteistönhoito,active,2328,official
+E618,401,401 Puuseppä,active,2312,official
+E618,402,402 Ilmastointiasennus,active,2315,official
+E618,404,404 Maalaus ja tapetointi,active,2311,official
+E618,405,405 Putkiasennus,active,2352,official
+E618,406,406 Sähköasennus,active,2335,official
+E618,407,407 Talonrakentaminen,active,2344,official
+E618,410,410 Viherrakentaminen,active,2346,official
+E618,411,411 Infrarakentaminen,active,2324,official
+E618,501,501 Leipuri-kondiittori,active,2329,official
+E618,502,502 Kokki,active,2317,official
+E618,504,504 Tarjoilija,active,2339,official
+E618,602,602 Elektroniikka-asennus,active,2355,official
+E618,603,603 CNC-koneistus,active,2341,official
+E618,604,604 Laborantti,active,2343,official
+E618,605,605 Hitsaus ja levytyöt,active,2351,official
+E618,606,606 Kappaletavara-automaatio,active,2320,official
+E618,607,607 Koneenasennus ja kunnossapito,active,2345,official
+E618,AN1,AN1 Teollisuus 4.0,active,2464,demo
+E618,AN2,AN2 Musiikki,active,2465,demo
+E618,AN3,AN3 Maanmittaus,active,2466,presentation
+E618,AN4,AN4 Veneenrakennus,active,2467,presentation
+E618,AN5,AN5 Maatalousteknologia,active,2468,presentation
+E618,AN6,AN6 Sisustus,active,2469,presentation
+E618,AN7,AN7 Merenkulkuala,active,2470,presentation
+E618,P1,P1 Ravintola- ja cateringpalvelut,active,2347,official
+E618,P2,P2 Kiinteistönhoito,active,2331,official
+E618,P3,P3 Liiketoiminta,active,2332,official
+E618,P4,P4 Puhtauspalvelu,active,2308,official
+E618,P5,P5 Logistiikka,active,2350,official
+E618,T9,Taitaja9,active,2330,official
+E622,01,Industrial Mechanics,active,2532,official
+E622,02,Information Network Cabling,active,2533,official
+E622,04,Mechatronics,active,2536,official
+E622,05,Mechanical Engineering CAD,active,2537,official
+E622,06,CNC Turning,active,2538,official
+E622,07,CNC Milling,active,2539,official
+E622,08,Mobile Applications Development,active,2540,official
+E622,09,IT Software Solutions for Business,active,2541,official
+E622,10,Welding,active,2542,official
+E622,12,Wall and Floor Tiling,active,2543,official
+E622,13,Autobody Repais,active,2544,official
+E622,14,Aircraft Maintenance,active,2545,official
+E622,15,Plumbing and Heating,active,2546,official
+E622,16,Electronics,active,2547,official
+E622,17,Web Technologies,active,2548,official
+E622,18,Electrical Installations,active,2549,official
+E622,19,Industrial Control,active,2550,official
+E622,20,Bricklaying,active,2551,official
+E622,21,Plastering and Drywall Systems,active,2552,official
+E622,22,Painting and Decorating,active,2553,official
+E622,23,Autonomous Mobile Robotics,active,2554,official
+E622,24,Cabinetmaking,active,2555,official
+E622,25,Joinery,active,2556,official
+E622,26,Carpentry,active,2557,official
+E622,27,Jewellery,active,2558,official
+E622,31,Fashion Technology,active,2559,official
+E622,32,Patisserie and Confectionery,active,2560,official
+E622,33,Automobile Technology,active,2561,official
+E622,36,Car Painting,active,2562,official
+E622,37,Green Space Construction,active,2563,official
+E622,38,Refrigeration Systems,active,2564,official
+E622,39,IT Network Systems Administration,active,2565,official
+E622,40,Graphic Design Technology,active,2566,official
+E622,44,Visual Merchandising,active,2567,official
+E622,46,Concrete Construction Work,active,2568,official
+E622,47,Bakery,active,2569,official
+E622,48,Industry 4.0,active,2570,official
+E622,49,Heavy Vehicle Technology,active,2571,official
+E622,50,3D Digital Game Art,active,2572,official
+E622,51,Logistics and Freight Forwarding,active,2573,official
+E622,52,Chemical Laboratory Technology,active,2574,official
+E622,53,Cloud Computing,active,2575,official
+E622,54,Cyber Security,active,2576,official
+E622,55,Water Technology,active,2577,official
+E622,57,Additive Manufacturing,active,2578,official
+E622,58,Digital Construction,active,2579,official
+E622,59,Industrial Design Technology,active,2580,official
+E622,60,Optoelectronic Technology,active,2581,official
+E622,61,Rail Vehicle Technology,active,2582,official
+E622,62,Green Energy Technology,active,2583,official
+E622,63,Robot Systems Integration,active,2584,official
+E623,15,Plumbing and Heating,active,2700,official
+E623,29,Hairdressing,active,2701,official
+E624,C01,Floristry,active,2705,official
+E624,C02,Fashion Technology,active,2712,official
+E624,C03,Hairdressing,active,2713,official
+E624,C04,Welding,active,2726,official
+E624,C05,Robot systems integration,active,2720,official
+E624,C06,Mechanical Engineering CAD,active,2710,official
+E624,C07,Plastic die engeering,active,2732,official
+E624,C08,CNC Milling,active,2715,official
+E624,C09,Mechatronics,active,2722,official
+E624,C10,Industry 4.0,active,2719,official
+E624,C11,IT Network System,active,2703,official
+E624,C12,Graphic design,active,2728,official
+E624,C13,Web Technologies,active,2707,official
+E624,C14,Industrial control,active,2711,official
+E624,C15,Cooking,active,2721,official
+E624,C16,Bakery,active,2702,official
+E624,C17,Butchery,active,2706,official
+E624,C18,Restaurant Service,active,2718,official
+E624,C19,Metal Roofing,active,2731,official
+E624,C20,Refrigeration and air conditioning,active,2725,official
+E624,C21,Painting and decorating,active,2724,official
+E624,C22,Electrical installations,active,2717,official
+E624,C23,Plumbing and heating,active,2714,official
+E624,C24,Wall and floor tilling,active,2704,official
+E624,C25,Cabinetmaking,active,2716,official
+E624,C26,Joinery,active,2727,official
+E624,C27,Bricklaying,active,2723,official
+E624,C28,Landscape gardening,active,2708,official
+E624,C29,Automobile technology,active,2730,official
+E624,C30,Logistics,active,2733,official
+E624,C31,Truck Driver,active,2709,official
+E624,D01,Aircraft Maintenance,active,3032,official
+E624,D02,Health Care Service,active,3033,official
+E625,02,Information Network Cabling,active,2752,official
+E625,04,Mechatronics,active,2756,official
+E625,05,Mechanical Engineering CAD,active,2755,official
+E625,08,Industrial Automation,active,2750,official
+E625,09,IT Software Solutions for Business,active,2754,official
+E625,10,Welding,active,2762,official
+E625,12,Wall and Floor Tiling,active,2760,official
+E625,15,Plumbing and Heating,active,2757,official
+E625,16,Electronics,active,2744,official
+E625,17,Web Technologies,active,2761,official
+E625,18,Electrical Installations,active,2743,official
+E625,19,Industrial Control,active,2751,official
+E625,23,Autonomous Mobile Robotics,active,2736,official
+E625,24,Cabinetmaking,active,2739,official
+E625,26,Carpentry,active,2740,official
+E625,29,Hairdressing,active,2747,official
+E625,30,Beauty Therapy,active,2738,official
+E625,31,Fashion Technology,active,2745,official
+E625,33,Automobile Technology,active,2735,official
+E625,34,Cooking,active,2741,official
+E625,35,Restaurant Service,active,2759,official
+E625,38,Refrigeration and Air Conditioning,active,2758,official
+E625,39,IT Network Systems Administration,active,2753,official
+E625,40,Graphic Design Technology,active,2746,official
+E625,47,Bakery,active,2737,official
+E625,48,Industry 4.0,active,2749,official
+E625,50,3D Digital Game Art,active,2734,official
+E625,54,Cyber Security,active,2742,official
+E625,56,Hotel Reception,active,2748,official
+E625,D1,CNC Maintenance,active,2763,demo
+E625,D2,Collaborative Robot,active,2764,demo
+E625,D3,Internet-Of-Things,active,2765,demo
+E631,01,Industrial Mechanics,active,2831,official
+E631,02,Information Network Cabling,active,2854,official
+E631,04,Mechatronics,active,2833,official
+E631,05,CAD Mechanical Engineering Design,active,2834,official
+E631,09,IT Software Solutions for Business,active,2835,official
+E631,10,Welding,active,2836,official
+E631,17,Web Design,active,2837,official
+E631,18,Electrical Installations,active,2838,official
+E631,19,Industrial Control,active,2839,official
+E631,20,Bricklaying,active,2855,official
+E631,23,Mobile Robotics,active,2841,official
+E631,29,Hairdressing,active,2842,official
+E631,32,Patisserie and Confectionery,active,2843,official
+E631,33,Automobile Technology,active,2845,official
+E631,34,Cooking,active,2846,official
+E631,39,IT Network Systems Administration,active,2847,official
+E631,48,Industry 4.0,active,2830,official
+E631,54,Cyber ​​Security,active,2848,official
+E631,60,Optoelectronic Technology,active,2849,official
+E631,97,Technical Irrigation,active,2853,official
+E631,98,Photovoltaic Power Systems,active,2850,official
+E631,A1,3D Digital Game Art,active,2851,official
+E631,CL06,CNC Machining,active,2852,official
+E632,101,101 Ajoneuvotekniikka,active,2909,official
+E632,102,102 Autokorinkorjaus,active,2906,official
+E632,103,103 Automaalaus,active,2905,official
+E632,104,104 Kuljetuslogistiikka,active,2902,official
+E632,105,105 Metsäkoneen käyttö,active,2904,official
+E632,202,202 Mediatekniikka,active,2903,official
+E632,203,203 Mediasuunnittelu,active,2916,official
+E632,204,204 Järjestelmäasiantuntija,active,2908,official
+E632,205,205 Tietoverkkoasennus,active,2911,official
+E632,206,206 Web-kehitys,active,2910,official
+E632,208,208 Pelituotanto,active,2924,official
+E632,301,301 Asiakaspalvelu ja myynti,active,2907,official
+E632,302,302 Hiusmuotoilu,active,2913,official
+E632,303,303 Kauneudenhoito,active,2915,official
+E632,304,304 Floristiikka,active,2914,official
+E632,305,305 Lähihoitaja,active,2922,official
+E632,306,306 Puhtauspalvelu,active,2946,official
+E632,307,307 Vaatteenvalmistus,active,2921,official
+E632,309,309 Hevostenhoito,active,2950,official
+E632,310,310 Yrittäjyys,active,2939,official
+E632,311,311 Eläintenhoito,active,2920,official
+E632,312,312 Matkailu,active,2919,official
+E632,313,313 Taloushallinto,active,2918,official
+E632,314,314 Turvapalvelu,active,2942,official
+E632,315,315 Hyvinvointiteknologia,active,2947,official
+E632,316,316 Kiinteistönhoito,active,2926,official
+E632,401,401 Puuseppä,active,2936,official
+E632,404,404 Maalaus ja tapetointi,active,2933,official
+E632,405,405 Putkiasennus,active,2923,official
+E632,406,406 Sähköasennus,active,2938,official
+E632,407,407 Talonrakentaminen,active,2940,official
+E632,410,410 Viherrakentaminen,active,2917,official
+E632,411,411 Infrarakentaminen,active,2941,official
+E632,501,501 Leipuri-kondiittori,active,2943,official
+E632,502,502 Kokki,active,2934,official
+E632,504,504 Tarjoilija,active,2944,official
+E632,601,601 Automaatioasennus,active,2951,official
+E632,602,602 Elektroniikka-asennus,active,2932,official
+E632,603,603 CNC-koneistus,active,2937,official
+E632,604,604 Laborantti,active,2931,official
+E632,605,605 Hitsaus ja levytyöt,active,2925,official
+E632,606,606 Kappaletavara-automaatio,active,2927,official
+E632,P1,P1 Ravintola- ja cateringpalvelut,active,2928,official
+E632,P2,P2 Kiinteistönhoito,active,2929,official
+E632,P3,P3 Liiketoiminta,active,2945,official
+E632,P4,P4 Puhtauspalvelu,active,2935,official
+E632,P5,P5 Logistiikka,active,2930,official
+E632,T9,Taitaja9,active,2912,official
+E633,101,101 Ajoneuvotekniikka,active,2856,official
+E633,102,102 Autokorinkorjaus,active,2857,official
+E633,103,103 Automaalaus,active,2858,official
+E633,104,104 Kuljetuslogistiikka,active,2859,official
+E633,105,105 Metsäkoneen käyttö,active,2860,official
+E633,202,202 Mediatekniikka,active,2901,official
+E633,203,203 Mediasuunnittelu,active,2870,official
+E633,204,204 Järjestelmäasiantuntija,active,2874,official
+E633,205,205 Tietoverkkoasennus,active,2868,official
+E633,206,206 Web-kehitys,active,2881,official
+E633,208,208 Pelituotanto,active,2900,official
+E633,301,301 Asiakaspalvelu ja myynti,active,2898,official
+E633,302,302 Hiusmuotoilu,active,2867,official
+E633,303,303 Kauneudenhoito,active,2889,official
+E633,304,304 Floristiikka,active,2888,official
+E633,305,305 Lähihoitaja,active,2879,official
+E633,306,306 Puhtauspalvelu,active,2892,official
+E633,307,307 Vaatteenvalmistus,active,2886,official
+E633,309,309 Hevostenhoito,active,2949,official
+E633,310,310 Yrittäjyys,active,2882,official
+E633,311,311 Eläintenhoito,active,2876,official
+E633,312,312 Matkailu,active,2873,official
+E633,313,313 Taloushallinto,active,2884,official
+E633,314,314 Turvapalvelu,active,2862,official
+E633,315,315 Hyvinvointiteknologia,active,2871,official
+E633,316,316 Kiinteistönhoito,active,2875,official
+E633,401,401 Puuseppä,active,2869,official
+E633,404,404 Maalaus ja tapetointi,active,2872,official
+E633,405,405 Putkiasennus,active,2864,official
+E633,406,406 Sähköasennus,active,2878,official
+E633,407,407 Talonrakentaminen,active,2885,official
+E633,410,410 Viherrakentaminen,active,2891,official
+E633,411,411 Infrarakentaminen,active,2895,official
+E633,501,501 Leipuri-kondiittori,active,2896,official
+E633,502,502 Kokki,active,2865,official
+E633,504,504 Tarjoilija,active,2866,official
+E633,601,601 Automaatioasennus,active,2948,official
+E633,602,602 Elektroniikka-asennus,active,2863,official
+E633,603,603 CNC-koneistus,active,2883,official
+E633,604,604 Laborantti,active,2877,official
+E633,605,605 Hitsaus ja levytyöt,active,2890,official
+E633,606,606 Kappaletavara-automaatio,active,2887,official
+E633,P1,P1 Ravintola- ja cateringpalvelut,active,2897,official
+E633,P2,P2 Kiinteistönhoito,active,2893,official
+E633,P3,P3 Liiketoiminta,active,2894,official
+E633,P4,P4 Puhtauspalvelu,active,2899,official
+E633,P5,P5 Logistiikka,active,2880,official
+E633,T9,Taitaja9,active,2861,official
+E637,101,101 Ajoneuvotekniikka,active,3069,official
+E637,102,102 Autokorinkorjaus,active,3042,official
+E637,104,104 Kuljetuslogistiikka,active,3039,official
+E637,105,105 Metsäkoneenkäyttö,active,3046,official
+E637,106,106 Sisälogistiikka,active,3493,official
+E637,201,201 CAD-suunnittelu,active,3072,official
+E637,203,203 Mediasuunnittelu,active,3065,official
+E637,204,204 Järjestelmäasiantuntija,active,3059,official
+E637,205,205 Tietoverkkoasennus,active,3071,official
+E637,206,206 Web-kehitys,active,3062,official
+E637,208,208 Pelituotanto,active,3064,official
+E637,209,209 Kyberturvallisuus,active,3074,official
+E637,301,301 Asiakaspalvelu ja myynti,active,3052,official
+E637,302,302 Hiusmuotoilu,active,3068,official
+E637,303,303 Kauneudenhoito,active,3034,official
+E637,304,304 Floristiikka,active,3036,official
+E637,305,305 Lähihoitaja,active,3056,official
+E637,306,306 Puhtauspalvelu,active,3050,official
+E637,307,307 Vaatteenvalmistus,active,3048,official
+E637,309,309 Hevostenhoito,active,3038,official
+E637,310,310 Yrittäjyys,active,3070,official
+E637,311,311 Eläintenhoito,active,3057,official
+E637,312,312 Matkailu,active,3045,official
+E637,313,313 Taloushallinto,active,3060,official
+E637,314,314 Turvapalvelu,active,3037,official
+E637,315,315 Hyvinvointiteknologia,active,3051,official
+E637,316,316 Kiinteistönhoito,active,3043,official
+E637,317,317 Kasvatus ja ohjaus,active,3494,official
+E637,401,401 Puuseppä,active,3058,official
+E637,404,404 Maalaus ja tapetointi,active,3047,official
+E637,405,405 Putkiasennus,active,3063,official
+E637,406,406 Sähköasennus,active,3055,official
+E637,407,407 Talonrakentaminen,active,3044,official
+E637,410,410 Viherrakentaminen,active,3067,official
+E637,411,411 Infrarakentaminen,active,3061,official
+E637,501,501 Leipuri-kondiittori,active,3066,official
+E637,502,502 Kokki,active,3035,official
+E637,504,504 Tarjoilija,active,3041,official
+E637,602,602 Elektroniikka-asennus,active,3040,official
+E637,603,603 CNC-koneistus,active,3049,official
+E637,604,604 Laborantti,active,3053,official
+E637,605,605 Hitsaus ja levytyöt,active,3054,official
+E637,606,606 Kappaletavara-automaatio,active,3073,official
+E637,T9,Taitaja9,active,3233,juniors
+E640,01,Møbelsnedker,active,3075,official
+E644,C01,Floristry,active,3361,official
+E644,C02,Fashion Technology,active,3357,official
+E644,C03,Hairdressing,active,3375,official
+E644,C04,Welding,active,3353,official
+E644,C05,Robot systems integration,active,3368,official
+E644,C06,Mechanical Engineering CAD,active,3362,official
+E644,C07,Plastic die engeering,active,3351,official
+E644,C08,CNC Milling,active,3370,official
+E644,C09,Mechatronics,active,3363,official
+E644,C10,Industry 4.0,active,3347,official
+E644,C11,IT Network System,active,3348,official
+E644,C12,Graphic design,active,3350,official
+E644,C13,Web Technologies,active,3364,official
+E644,C14,Industrial control,active,3346,official
+E644,C15,Cooking,active,3344,official
+E644,C16,Bakery,active,3355,official
+E644,C17,Butchery,active,3359,official
+E644,C18,Restaurant Service,active,3373,official
+E644,C19,Metal Roofing,active,3376,official
+E644,C20,Refrigeration and air conditioning,active,3366,official
+E644,C21,Painting and decorating,active,3365,official
+E644,C22,Electrical installations,active,3371,official
+E644,C23,Plumbing and heating,active,3349,official
+E644,C24,Wall and floor tilling,active,3358,official
+E644,C25,Cabinetmaking,active,3374,official
+E644,C26,Joinery,active,3345,official
+E644,C27,Bricklaying,active,3354,official
+E644,C28,Landscape gardening,active,3372,official
+E644,C29,Automobile technology,active,3360,official
+E644,C30,Logistics,active,3356,official
+E644,C31,Truck Driver,active,3369,official
+E644,D01,Aircraft Maintenance,active,3367,official
+E644,D02,Health Care Service,active,3352,official
+E649,101,101 Ajoneuvotekniikka,active,3504,official
+E649,102,102 Autokorinkorjaus,active,3495,official
+E649,104,104 Kuljetuslogistiikka,active,3501,official
+E649,105,105 Metsäkoneenkäyttö,active,3499,official
+E649,106,106 Sisälogistiikka,active,3503,official
+E649,201,201 CAD-suunnittelu,active,3498,official
+E649,203,203 Mediasuunnittelu,active,3496,official
+E649,204,204 Järjestelmäasiantuntija,active,3537,official
+E649,205,205 Tietoverkkoasennus,active,3511,official
+E649,206,206 Web-kehitys,active,3500,official
+E649,208,208 Pelituotanto,active,3524,official
+E649,209,209 Kyberturvallisuus,active,3528,official
+E649,301,301 Asiakaspalvelu ja myynti,active,3530,official
+E649,302,302 Hiusmuotoilu,active,3535,official
+E649,303,303 Kauneudenhoito,active,3502,official
+E649,304,304 Floristiikka,active,3532,official
+E649,305,305 Lähihoitaja,active,3517,official
+E649,306,306 Puhtauspalvelu,active,3512,official
+E649,307,307 Vaatteenvalmistus,active,3508,official
+E649,309,309 Hevostenhoito,active,3536,official
+E649,310,310 Yrittäjyys,active,3510,official
+E649,311,311 Eläintenhoito,active,3521,official
+E649,312,312 Matkailu,active,3506,official
+E649,313,313 Taloushallinto,active,3531,official
+E649,314,314 Turvapalvelu,active,3529,official
+E649,315,315 Hyvinvointiteknologia,active,3515,official
+E649,316,316 Kiinteistönhoito,active,3507,official
+E649,317,317 Kasvatus ja ohjaus,active,3534,official
+E649,401,401 Puuseppä,active,3519,official
+E649,404,404 Maalaus ja tapetointi,active,3516,official
+E649,405,405 Putkiasennus,active,3520,official
+E649,406,406 Sähköasennus,active,3533,official
+E649,407,407 Talonrakentaminen,active,3526,official
+E649,410,410 Viherrakentaminen,active,3505,official
+E649,411,411 Infrarakentaminen,active,3523,official
+E649,501,501 Leipuri-kondiittori,active,3522,official
+E649,502,502 Kokki,active,3527,official
+E649,504,504 Tarjoilija,active,3525,official
+E649,602,602 Elektroniikka-asennus,active,3513,official
+E649,603,603 CNC-koneistus,active,3509,official
+E649,604,604 Laborantti,active,3518,official
+E649,605,605 Hitsaus ja levytyöt,active,3514,official
+E649,606,606 Kappaletavara-automaatio,active,3497,official
+ES2021,04,Mechatronics,active,776,official
+ES2021,05,Mechanical Engineering Design – CAD,active,779,official
+ES2021,07,CNC-Milling,active,777,official
+ES2021,08,Architectural Stonemasonry,active,783,official
+ES2021,10,Welding,active,780,official
+ES2021,12,Wall and Floor Tiling,active,784,official
+ES2021,15,Plumbing and Heating,active,785,official
+ES2021,16,Electronics Prototyping,active,862,host_member
+ES2021,17,Web Development,active,775,official
+ES2021,18,Electrical Installations,active,788,official
+ES2021,19,Industrial Control,active,781,official
+ES2021,20,Bricklaying,active,789,official
+ES2021,21,Plastering and Dry Wall Systems,active,790,official
+ES2021,22,Painting and Decorating,active,791,official
+ES2021,23,Mobile Robotics,active,782,official
+ES2021,24,Cabinetmaking,active,793,official
+ES2021,25,Joinery,active,792,official
+ES2021,28,Floristry,active,770,official
+ES2021,29,Hairdressing,active,803,official
+ES2021,30,Beauty Therapy,active,804,official
+ES2021,31,Fashion Technology,active,771,official
+ES2021,33,Automobile Technology,active,799,official
+ES2021,34,Cooking,active,806,official
+ES2021,35,Restaurant Service,active,807,official
+ES2021,36,Bakery,active,805,official
+ES2021,38,Refrigeration and Air Conditioning,active,786,official
+ES2021,39,ICT Specialists,active,774,official
+ES2021,40,Graphic Design,active,773,official
+ES2021,44,Visual Merchandising / Window Dressing,active,772,official
+ES2021,49,Metal Roofing,active,794,official
+ES2021,50,Floor Laying,active,795,official
+ES2021,51,Landscape Gardening,active,796,official
+ES2021,52,Concrete Construction,active,787,official
+ES2021,53,Heavy Vehicle Technology,active,800,official
+ES2021,54,Heavy Truck Maintenance,active,801,official
+ES2021,57,Hotel Receptioning,active,809,official
+ES2021,D2,Glass Construction Technology,active,797,demo
+ES2021,D3,Sheet Metal Work,active,798,demo
+ES2021,D6,Butchery,active,811,demo
+ES2021,HP1,Entrepreneurship Business Development Team Challenge,active,813,host_member
+ES2021,HP10,CNC-Turning,active,778,demo
+ES2021,HP11,Retail Sales,active,810,demo
+ES2021,HP2,Industry 4.0,active,814,host_member
+ES2021,HP3,Industrial Mechanics,active,815,host_member
+ES2021,HP5,Chemical Laboratory Technician,active,812,demo
+ES2021,HP6,Freight Forwarding,active,802,demo
+ES2021,HP7,Robot Systems Integration,active,965,demo
+ES2021,HP8,Pharmacy Technician,active,966,demo
+ES2021,HP9,Health and Social Care,active,808,official
+ES2023,04,Mechatronics,active,1412,official
+ES2023,05,Mechanical Engineering Design – CAD,active,1419,official
+ES2023,06,CNC-Turning,active,1415,official
+ES2023,07,CNC-Milling,active,1420,official
+ES2023,08,Architectural Stonemasonry,active,1446,official
+ES2023,10,Welding,active,1406,official
+ES2023,12,Wall and Floor Tiling,active,1413,official
+ES2023,15,Plumbing and Heating,active,1414,official
+ES2023,16,Electronics Prototyping,active,1442,official
+ES2023,17,Web Development,active,1409,official
+ES2023,18,Electrical Installations,active,1428,official
+ES2023,19,Industrial Control,active,1443,official
+ES2023,20,Bricklaying,active,1418,official
+ES2023,21,Plastering and Dry Wall Systems,active,1416,official
+ES2023,22,Painting and Decorating,active,1423,official
+ES2023,24,Cabinetmaking,active,1417,official
+ES2023,25,Joinery,active,1422,official
+ES2023,26,Carpentry,active,1438,official
+ES2023,27,Robot Systems Integration,active,1444,official
+ES2023,28,Floristry,active,1408,official
+ES2023,29,Hairdressing,active,1436,official
+ES2023,30,Beauty Therapy,active,1437,official
+ES2023,31,Fashion Design and Technology Team Challenge,active,1411,official
+ES2023,32,Butchery,active,1452,official
+ES2023,33,Automobile Technology,active,1427,official
+ES2023,34,Cooking,active,1424,official
+ES2023,35,Restaurant Service,active,1431,official
+ES2023,36,Bakery,active,1439,official
+ES2023,37,Pâtisserie and Confectionery,active,1425,official
+ES2023,38,Refrigeration and Air Conditioning,active,1429,official
+ES2023,39,ICT Specialists,active,1410,official
+ES2023,40,Graphic Design Technology,active,1407,official
+ES2023,41,Health and Social Care,active,1433,official
+ES2023,42,Digital Construction,active,1447,official
+ES2023,44,Visual Merchandising / Window Dressing,active,1440,official
+ES2023,46,Entrepreneurship / Business Development Team Challenge,active,1449,official
+ES2023,49,Metal Roofing,active,1455,official
+ES2023,50,Floor Laying,active,1421,official
+ES2023,51,Landscape Gardening,active,1435,official
+ES2023,53,Heavy Vehicle Technology,active,1434,official
+ES2023,54,Truck and Bus Technology,active,1451,official
+ES2023,55,Autobody Repair,active,1432,official
+ES2023,56,Car Painting,active,1426,official
+ES2023,57,Hotel Reception,active,1430,official
+ES2023,HP1,IT Software Solutions for Business,active,1441,presentation
+ES2025,04,Mechatronics,active,2065,official
+ES2025,05,Mechanical Engineering - CAD,active,2075,official
+ES2025,07,CNC-Milling,active,2086,official
+ES2025,10,Welding,active,2067,official
+ES2025,12,Wall and Floor Tiling,active,2076,official
+ES2025,15,Plumbing and Heating,active,2073,official
+ES2025,16,Electronics Prototyping,active,2097,official
+ES2025,17,Web Development,active,2068,official
+ES2025,18,Electrical Installations,active,2069,official
+ES2025,19,Industrial Control,active,2095,official
+ES2025,20,Bricklaying,active,2082,official
+ES2025,21,Plastering and Dry Wall Systems,active,2084,official
+ES2025,22,Painting and Decorating,active,2083,official
+ES2025,24,Cabinetmaking,active,2070,official
+ES2025,25,Joinery,active,2077,official
+ES2025,26,Carpentry,active,2080,official
+ES2025,27,Robot Systems Integration,active,2090,official
+ES2025,28,Floristry,active,2072,official
+ES2025,29,Hairdressing,active,2062,official
+ES2025,30,Beauty Therapy,active,2081,official
+ES2025,31,Fashion Design and Technology Team Challenge,active,2096,official
+ES2025,33,Automobile Technology,active,2063,official
+ES2025,34,Cooking,active,2061,official
+ES2025,35,Restaurant Service,active,2064,official
+ES2025,36,Bakery,active,2089,official
+ES2025,37,Pâtisserie and Confectionery,active,2093,official
+ES2025,38,Refrigeration and Air Conditioning,active,2078,official
+ES2025,39,IT Network Systems Administration,active,2074,official
+ES2025,40,Graphic Design Technology,active,2071,official
+ES2025,41,Health and Social Care,active,2091,official
+ES2025,45,Software Applications Development,active,2094,official
+ES2025,46,Entrepreneurship / Business Development Team Challenge,active,2079,official
+ES2025,48,Industry 4.0,active,2098,official
+ES2025,50,Floor Laying,active,2092,official
+ES2025,51,Landscape Gardening,active,2088,official
+ES2025,53,Heavy Vehicle Technology,active,2085,official
+ES2025,54,Truck and Bus Technology,active,2087,official
+ES2025,57,Hotel Reception,active,2066,official
+ES2025,HPS,(HPS) Concrete Construction,active,2691,presentation
+ES2027,04,Mechatronics,active,3239,official
+ES2027,05,Mechanical Engineering - CAD,active,3243,official
+ES2027,06,CNC Turning,active,3248,official
+ES2027,07,CNC-Milling,active,3276,official
+ES2027,10,Welding,active,3279,official
+ES2027,12,Wall and Floor Tiling,active,3251,official
+ES2027,15,Plumbing and Heating,active,3334,official
+ES2027,16,Electronics Prototyping,active,3268,official
+ES2027,17,Web Technologies,active,3333,official
+ES2027,18,Electrical Installations,active,3271,official
+ES2027,19,Industrial Control,active,3269,official
+ES2027,20,Bricklaying,active,3270,official
+ES2027,21,Plastering and Dry Wall Systems,active,3267,official
+ES2027,22,Painting and Decorating,active,3331,official
+ES2027,24,Cabinetmaking,active,3328,official
+ES2027,25,Joinery,active,3335,official
+ES2027,26,Carpentry,active,3244,official
+ES2027,27,Robot Systems Integration,active,3235,official
+ES2027,28,Floristry,active,3247,official
+ES2027,29,Hairdressing,active,3255,official
+ES2027,30,Beauty Therapy,active,3329,official
+ES2027,31,Fashion Design and Technology Team Challenge,active,3240,official
+ES2027,32,Butchery,active,3256,official
+ES2027,33,Automobile Technology,active,3258,official
+ES2027,34,Cooking,active,3273,official
+ES2027,35,Restaurant Service,active,3264,official
+ES2027,36,Bakery,active,3338,official
+ES2027,37,Pâtisserie and Confectionery,active,3266,official
+ES2027,38,Refrigeration Technologies,active,3336,official
+ES2027,39,IT Network Systems Administration,active,3245,official
+ES2027,40,Graphic Design Technology,active,3238,official
+ES2027,41,Health and Social Care,active,3241,official
+ES2027,42,Digital Construction,active,3278,official
+ES2027,43,Cyber Security,active,3254,official
+ES2027,45,Software Applications Development,active,3330,official
+ES2027,46,Entrepreneurship,active,3263,official
+ES2027,48,Industry 4.0,active,3332,official
+ES2027,49,Metal Roofing,active,3275,official
+ES2027,50,Floor Laying,active,3250,official
+ES2027,51,Landscape Gardening,active,3259,official
+ES2027,52,Aircraft Maintenance,active,3260,official
+ES2027,53,Heavy Vehicle Technology,active,3261,official
+ES2027,54,Truck and Bus Technology,active,3272,official
+ES2027,55,Autobody Repair,active,3277,official
+ES2027,56,Car Painting,active,3377,official
+ES2027,57,Hotel Reception,active,3237,official
+ES2027,HP1,Freight Forwarding,active,3339,presentation
+ES2027,HP2,Water Technology,active,3340,presentation
+ES2027,HP3,Concrete Construction,active,3341,presentation
+ES2027,HP4,Mobile Application Development,active,3342,presentation
+ES2027,HP5,Architectural Stonemasonry,active,3343,presentation
+NSCO2023,04,Mechatronics,active,1983,official
+NSCO2023,05,Mechanical Engineering CAD,active,1985,official
+NSCO2023,10,Welding,active,1984,official
+NSCO2023,12,Wall and Floor Tiling,active,1995,official
+NSCO2023,15,Plumbing and Heating,active,1990,official
+NSCO2023,17,Web Technologies,active,1994,official
+NSCO2023,18,Electrical Installations,active,1988,official
+NSCO2023,20,Bricklaying,active,1981,official
+NSCO2023,25,Joinery,active,1989,official
+NSCO2023,29,Hairdressing,active,1992,official
+NSCO2023,31,Fashion Technology,active,1986,official
+NSCO2023,33,Automotive Technology,active,1982,official
+NSCO2023,34,Cooking,active,1996,official
+NSCO2023,35,Restaurant Service,active,1993,official
+NSCO2023,38,Refrigeration and Air Conditioning,active,1991,official
+NSCO2023,55,Water Technology,active,1987,official
+NSCS2025,04,Mechatronics,active,2966,official
+NSCS2025,05,Mechanical Engineering CAD,active,2953,official
+NSCS2025,10,Welding,active,2955,official
+NSCS2025,12,Wall and Floor Tiling,active,2962,official
+NSCS2025,15,Plumbing and Heating,active,2967,official
+NSCS2025,17,Web Technologies,active,2960,official
+NSCS2025,18,Electrical Installations,active,2961,official
+NSCS2025,20,Bricklaying,active,2963,official
+NSCS2025,25,Joinery,active,2957,official
+NSCS2025,29,Hairdressing,active,2954,official
+NSCS2025,31,Fashion Technology,active,2964,official
+NSCS2025,33,Automotive Technology,active,2958,official
+NSCS2025,34,Cooking,active,2959,official
+NSCS2025,35,Restaurant Service,active,2956,official
+NSCS2025,38,Refrigeration and Air Conditioning,active,2965,official
+NSCS2025,55,Water Technology,active,2952,official
+SDW2026,04,Mechatronics,active,3152,official
+SDW2026,05,Mechanical Engineering - CAD,active,3166,official
+SDW2026,06,CNC Turning,active,3188,official
+SDW2026,07,CNC-Milling,active,3145,official
+SDW2026,10,Welding,active,3177,official
+SDW2026,12,Wall and Floor Tiling,active,3155,official
+SDW2026,15,Plumbing and Heating,active,3151,official
+SDW2026,16,Electronics Prototyping,active,3181,official
+SDW2026,17,Web Development,active,3163,official
+SDW2026,18,Electrical Installations,active,3147,official
+SDW2026,19,Industrial Control,active,3168,official
+SDW2026,20,Bricklaying,active,3170,official
+SDW2026,21,Plastering and Dry Wall Systems,active,3174,official
+SDW2026,22,Painting and Decorating,active,3162,official
+SDW2026,24,Cabinetmaking,active,3164,official
+SDW2026,25,Joinery,active,3172,official
+SDW2026,26,Carpentry,active,3180,official
+SDW2026,27,Robot Systems Integration,active,3160,official
+SDW2026,28,Floristry,active,3161,official
+SDW2026,29,Hairdressing,active,3158,official
+SDW2026,30,Beauty Therapy,active,3149,official
+SDW2026,31,Fashion Design and Technology Team Challenge,active,3179,official
+SDW2026,32,Butchery,active,3184,official
+SDW2026,33,Automobile Technology,active,3156,official
+SDW2026,34,Cooking,active,3148,official
+SDW2026,35,Restaurant Service,active,3165,official
+SDW2026,36,Bakery,active,3150,official
+SDW2026,37,Pâtisserie and Confectionery,active,3171,official
+SDW2026,38,Refrigeration and Air Conditioning,active,3157,official
+SDW2026,39,IT Network Systems Administration,active,3178,official
+SDW2026,40,Graphic Design Technology,active,3169,official
+SDW2026,41,Health and Social Care,active,3175,official
+SDW2026,42,Digital Construction,active,3185,official
+SDW2026,43,Cyber Security,active,3187,official
+SDW2026,45,Software Applications Development,active,3159,official
+SDW2026,46,Entrepreneurship / Business Development Team Challenge,active,3154,official
+SDW2026,48,Industry 4.0,active,3146,official
+SDW2026,49,Metal Roofing,active,3186,official
+SDW2026,50,Floor Laying,active,3173,official
+SDW2026,51,Landscape Gardening,active,3176,official
+SDW2026,52,Aircraft Maintenance,active,3189,official
+SDW2026,53,Heavy Vehicle Technology,active,3167,official
+SDW2026,54,Truck and Bus Technology,active,3153,official
+SDW2026,55,Autobody Repair,active,3183,official
+SDW2026,56,Car Painting,active,3182,official
+SDW2026,57,Hotel Reception,active,3144,official
+SSK2022,01,Polymechaniker/in Automation,active,1232,official
+SSK2022,04,Automatiker/in,active,1172,official
+SSK2022,05,Konstrukteur/in,active,1214,official
+SSK2022,06,Polymechaniker/in Drehen,active,1233,official
+SSK2022,07,Polymechaniker/in CNC Fräsen,active,1234,official
+SSK2022,08,Steinmetz/in  I  Bau und Renovation,active,1241,official
+SSK2022,09,IT Software Solutions for Business,active,1211,official
+SSK2022,10,Schweisser/in,active,1303,official
+SSK2022,12,Plattenleger/in,active,1231,official
+SSK2022,13A,Carrosseriespengler/in,active,1181,official
+SSK2022,13B,Fahrzeugschlosser/in,active,1190,official
+SSK2022,15A,Heizungsinstallateur/in,active,1204,official
+SSK2022,15B,Sanitärinstallateur/in,active,1237,official
+SSK2022,16,Elektroniker/in,active,1185,official
+SSK2022,17,Web Technologies,active,1245,official
+SSK2022,20,Maurer/in,active,1222,official
+SSK2022,21,Gipser/in - Trockenbauer/in,active,1202,official
+SSK2022,22,Maler/in,active,1221,official
+SSK2022,24,Schreiner/in I  Möbelschreiner,active,1239,official
+SSK2022,25,Schreiner/in I  Bauschreiner,active,1238,official
+SSK2022,26,Zimmermann/Zimmerin,active,1249,official
+SSK2022,28,Florist/in,active,1193,official
+SSK2022,29,Coiffeur / Coiffeuse,active,1182,official
+SSK2022,30,Kosmetiker/in,active,1215,official
+SSK2022,31,Bekleidungsgestalter/in,active,1176,official
+SSK2022,32,Bäcker/in-Konditor/in-Confiseur/in I Konditorei-Confiserie,active,1175,official
+SSK2022,33,Automobil-Mechatroniker/in  I  Personenwagen,active,1173,official
+SSK2022,33WS,Automobil-Mechatroniker/in I WorldSkills Training,active,1590,official
+SSK2022,34,Cooking,active,1216,official
+SSK2022,35,Restaurant Service,active,1236,official
+SSK2022,36,Carrosserielackierer/in,active,1180,official
+SSK2022,37,Gärtner/in I  Garten- und Landschaftsbau,active,1195,official
+SSK2022,38A,Kältesystem-Monteur/in,active,1212,official
+SSK2022,38B,Lüftungsanlagenbauer/in,active,1220,official
+SSK2022,38C,Kältesystem-Planer/in,active,1213,official
+SSK2022,39,Cloud Computing,active,1210,official
+SSK2022,41,Fachmann/-frau Gesundheit,active,1301,official
+SSK2022,42,Metallbauer/in,active,1224,official
+SSK2022,45,Formenbauer/in,active,1194,official
+SSK2022,47,Bäcker/in-Konditor/in-Confiseur/in I Bäckerei-Konditorei,active,1174,official
+SSK2022,48,Industry 4.0,active,1588,official
+SSK2022,49,Spengler/in,active,1240,official
+SSK2022,50A,"Boden-Parkettleger/in, Parkett",active,1177,official
+SSK2022,50B,Boden-Parkettleger/in  I  textile und elastische Beläge,active,1404,official
+SSK2022,51,Gerüstbauer/in,active,1201,official
+SSK2022,52,Abdichter/in,active,1170,official
+SSK2022,53,Storenmonteur/in,active,1242,official
+SSK2022,54,Cyber Security,active,1405,official
+SSK2022,55,Dachdecker/in,active,1183,official
+SSK2022,56,Hotel Reception,active,1205,official
+SSK2022,57,Fassadenbauer/in,active,1191,official
+SSK2022,58,Metallbaukonstrukteur/in,active,1225,official
+SSK2022,61,Gleisbauer/in,active,1203,official
+SSK2022,62,Detailhandelsfachmann/-frau I  Bäckerei-Konditorei-Confiserie,active,1184,official
+SSK2022,63,Mediamatics,active,1223,official
+SSK2022,64,Fleischfachmann/-frau,active,1192,official
+SSK2022,65,Gebäudereiniger/in,active,1196,official
+SSK2022,66,Gemüsegärtner/in,active,1200,official
+SSK2022,67,Milchtechnologe/login,active,1227,official
+SSK2022,68,Hufschmied/in,active,1207,official
+SSK2022,69,Landtechnikberufe,active,1217,official
+SSK2022,70,Landwirt/in,active,1218,official
+SSK2022,71,Logistiker/in,active,1219,official
+SSK2022,72,Strassentransportfachmann/-frau,active,1244,official
+SSK2022,73,Fachmann/-frau Textilpflege,active,1188,official
+SSK2022,74,Weintechnologe/login,active,1246,official
+SSK2022,75,Kaufmann/-frau,active,1402,official
+SSK2022,76,Anlagen- und Apparatebauer/in,active,1171,official
+SSK2022,77,Hotellerie - Hauswirtschaft,active,1206,official
+SSK2022,78,Gebäudetechnikplaner/in Heizung,active,1197,official
+SSK2022,79,Gebäudetechnikplaner/in Lüftung,active,1198,official
+SSK2022,80,Gebäudetechnikplaner/in Sanitär,active,1199,official
+SSK2022,81,Strassenbauer/in,active,1243,official
+SSK2022,82,Fahrradmechaniker/in,active,1189,official
+SSK2022,83,Motorradmechaniker/in,active,1228,official
+SSK2022,84A,Raumausstatter/in,active,1235,official
+SSK2022,84B,Wohntextilgestalter/in,active,1248,official
+SSK2022,85,Entrepreneurship,active,1299,official
+SSK2022,86,Isolierspengler/in,active,1209,official
+SSK2022,87,Winzer/in,active,1247,official
+SSK2022,88,Interactive Media Designer,active,1208,official
+SSK2022,90,Bootbauer/in,active,1178,official
+SSK2022,91,Bootfachwart/in,active,1179,official
+SSK2022,92,Fachmann/-frau Bewegungs- und Gesundheitsförderung,active,1186,official
+SSK2022,93A,Fachmann/-frau Betriebsunterhalt I Hausdienst,active,1187,official
+SSK2022,93B,Fachmann/-frau Betriebsunterhalt I  Werkdienst,active,1300,official
+SSK2022,94,Medizinprodukttechnologe/login,active,1403,official
+SSK2022,95,Ofenbauer/in,active,1230,official
+SSK2022,96,Mikromechaniker/in - Mikrozeichner/in,active,1226,official
+SSK2022,97,Obstfachmann/-frau,active,1229,official
+SSK2022,D54,Automobilmechatroniker/in Nutzfahrzeuge,active,1589,official
+SSK2025,01,Polymechaniker/-in Automation,active,2586,official
+SSK2025,04,Automatiker/-in,active,2590,official
+SSK2025,05,Konstrukteur/-in,active,2610,official
+SSK2025,06,Polymechaniker/-in CNC Drehen,active,2587,official
+SSK2025,07,Polymechaniker/-in CNC Fräsen,active,2593,official
+SSK2025,08,Steinmetz/-in I Bau und Renovation,active,2605,official
+SSK2025,09,IT Software Solutions for Business,active,2594,official
+SSK2025,10,Schweisser/-in,active,2601,official
+SSK2025,11,Medientechnologe/-login I Print,active,2677,official
+SSK2025,12,Plattenleger/-in,active,2608,official
+SSK2025,13A,Carrosseriespengler/-in,active,2620,official
+SSK2025,13B,Fahrzeugschlosser/-in,active,2615,official
+SSK2025,15A,Heizungsinstallateur/-in,active,2595,official
+SSK2025,15B,Sanitärinstallateur/-in,active,2597,official
+SSK2025,16,Elektroniker/-in,active,2602,official
+SSK2025,17,Web Technologies,active,2606,official
+SSK2025,18,Elektroinstallateur/-in,active,2682,official
+SSK2025,20,Maurer/-in,active,2616,official
+SSK2025,21,Gipser/-in-Trockenbauer/-in,active,2618,official
+SSK2025,22,Maler/-in,active,2617,official
+SSK2025,24,Schreiner/-in I Möbelschreiner/-in,active,2669,official
+SSK2025,25,Schreiner/-in I Massivholzschreiner/-in,active,2666,official
+SSK2025,26,Zimmermann/Zimmerin,active,2673,official
+SSK2025,27,Goldschmied/-in,active,2686,official
+SSK2025,28,Florist/-in,active,2653,official
+SSK2025,29,Coiffeur/Coiffeuse,active,2643,official
+SSK2025,31,Bekleidungsgestalter/-in,active,2637,official
+SSK2025,32,Bäcker/-in-Konditor/-in-Confiseur/-in I Konditorei-Confiserie,active,2647,official
+SSK2025,33,Automobil-Mechatroniker/-in I Personenwagen,active,2630,official
+SSK2025,34,Cooking,active,2671,official
+SSK2025,35,Restaurant Service,active,2629,official
+SSK2025,36,Carrosserielackierer/-in,active,2626,official
+SSK2025,37,Gärtner/-in I Garten- und Landschaftsbau,active,2667,official
+SSK2025,38A,Kältesystem-Monteur/-in,active,2631,official
+SSK2025,38B,Lüftungsanlagenbauer/-in,active,2623,official
+SSK2025,38C,Kältesystem-Planer/-in,active,2672,official
+SSK2025,41,Fachmann/-frau Gesundheit,active,2660,official
+SSK2025,42,Metallbauer/-in,active,2654,official
+SSK2025,45,Formenbauer/-in,active,2641,official
+SSK2025,47,Bäcker/-in-Konditor/-in-Confiseur/-in I Bäckerei-Konditorei,active,2640,official
+SSK2025,48,Industry 4.0,active,2609,official
+SSK2025,49,Spengler/-in,active,2622,official
+SSK2025,50A,Boden-Parkettleger/-in I Parkett,active,2646,official
+SSK2025,50B,Boden-Parkettleger/-in I textile und elastische Beläge,active,2614,official
+SSK2025,52A,Abdichter/-in,active,2604,official
+SSK2025,52B,Dachdecker/-in,active,2599,official
+SSK2025,52C,Fassadenbauer/-in,active,2612,official
+SSK2025,52D,Gerüstbauer/-in,active,2600,official
+SSK2025,52E,Fachmann/-frau Sonnenschutz und Storentechnik,active,2689,official
+SSK2025,53,Cloud Computing,active,2655,official
+SSK2025,54,Cyber Security,active,2585,official
+SSK2025,56,Hotel Reception,active,2607,official
+SSK2025,58,Metallbaukonstrukteur/-in,active,2645,official
+SSK2025,60,Automobilmechatroniker/-in I Nutzfahrzeuge,active,2588,official
+SSK2025,61,Gleisbauer/-in,active,2596,official
+SSK2025,62,Detailhandelsfachmann/-frau I Bäckerei-Konditorei-Confiserie,active,2603,official
+SSK2025,63,Mediamatics,active,2589,official
+SSK2025,64,Fleischfachmann/-frau,active,2598,official
+SSK2025,65,Fachmann/-frau Reinigungstechnik,active,2688,official
+SSK2025,66,Gemüsegärtner/-in,active,2592,official
+SSK2025,67,Milchtechnologe/-login,active,2613,official
+SSK2025,68,Hufschmied/-in,active,2625,official
+SSK2025,69,"Landmaschinen-, Baumaschinen- und Motorgerätemechaniker/-in",active,2681,official
+SSK2025,70,Landwirt/-in,active,2619,official
+SSK2025,71,Logistiker/-in,active,2649,official
+SSK2025,72,Strassentransportfachmann/-frau,active,2650,official
+SSK2025,73,Fachmann/-frau Textilpflege,active,2642,official
+SSK2025,74,Weinfachmann/-frau,active,2687,official
+SSK2025,76,Anlagen- und Apparatebauer/-in,active,2627,official
+SSK2025,77,Hotellerie-Hauswirtschaft,active,2656,official
+SSK2025,78,Gebäudetechnikplaner/-in Heizung,active,2648,official
+SSK2025,79,Gebäudetechnikplaner/-in Lüftung,active,2665,official
+SSK2025,80,Gebäudetechnikplaner/-in Sanitär,active,2663,official
+SSK2025,81,Strassenbauer/-in,active,2639,official
+SSK2025,82,Fahrradmechaniker/-in,active,2633,official
+SSK2025,83,Motorradmechaniker/-in,active,2621,official
+SSK2025,84A,Raumausstatter/-in,active,2668,official
+SSK2025,84B,Wohntextilgestalter/-in,active,2659,official
+SSK2025,85,Entrepreneurship/Business Development,active,2661,official
+SSK2025,88,Interactive Media Designer,active,2636,official
+SSK2025,89,Fachmann/-frau Betreuung,active,2683,official
+SSK2025,90,Bootbauer/-in,active,2638,official
+SSK2025,92,Fachmann/-frau Bewegungs- und Gesundheitsförderung,active,2651,official
+SSK2025,93A,Fachmann/-frau Betriebsunterhalt I Hausdienst,active,2664,official
+SSK2025,93B,Fachmann/-frau Betriebsunterhalt I Werkdienst,active,2628,official
+SSK2025,94,Medizinprodukttechnologe/-login,active,2670,official
+SSK2025,95,Ofenbauer/-in,active,2662,official
+SSK2025,96A,Mikromechaniker/-in,active,2674,official
+SSK2025,96B,Mikrozeichner/-in,active,2678,official
+SSK2025,96C,Qualitätsfachmann/-frau in Mikrotechnik,active,2679,official
+SSK2025,98,Polygraf/-in,active,2676,official
+SSK2025,99,Drogist/-in,active,2685,official
+Taitaja2023Espoo,101,Ajoneuvotekniikka,active,1520,official
+Taitaja2023Espoo,102,Autokorinkorjaus,active,1522,official
+Taitaja2023Espoo,103,Automaalaus,active,1528,official
+Taitaja2023Espoo,104,Kuljetuslogistiikka,active,1549,official
+Taitaja2023Espoo,105,Metsäkoneenkäyttö,active,1531,official
+Taitaja2023Espoo,201,CAD-suunnittelu,active,1526,official
+Taitaja2023Espoo,203,Mediasuunnittelu,active,1557,official
+Taitaja2023Espoo,204,Tietojenkäsittely,active,1542,official
+Taitaja2023Espoo,205,Tietokoneet ja -verkot,active,1536,official
+Taitaja2023Espoo,206,Web-kehitys,active,1524,official
+Taitaja2023Espoo,208,Pelituotanto,active,1537,official
+Taitaja2023Espoo,301,Asiakaspalvelu ja myynti,active,1547,official
+Taitaja2023Espoo,302,Hiusmuotoilu,active,1555,official
+Taitaja2023Espoo,303,Kauneudenhoito,active,1533,official
+Taitaja2023Espoo,304,Floristiikka,active,1534,official
+Taitaja2023Espoo,305,Lähihoitaja,active,1529,official
+Taitaja2023Espoo,306,Puhdistuspalvelu,active,1558,official
+Taitaja2023Espoo,307,Vaatteenvalmistus,active,1539,official
+Taitaja2023Espoo,309,Hevostenhoito,active,1591,official
+Taitaja2023Espoo,310,Yrittäjyys,active,1545,official
+Taitaja2023Espoo,311,Eläintenhoito,active,1560,official
+Taitaja2023Espoo,312,Matkailu,active,1532,official
+Taitaja2023Espoo,313,Taloushallinto,active,1556,official
+Taitaja2023Espoo,314,Turvapalvelu,active,1538,official
+Taitaja2023Espoo,315,Hyvinvointiteknologia,active,1527,official
+Taitaja2023Espoo,316,Kiinteistönhoito,active,1561,official
+Taitaja2023Espoo,401,Puuseppä,active,1548,official
+Taitaja2023Espoo,404,Maalaus ja tapetointi,active,1525,official
+Taitaja2023Espoo,405,Putkiasennus,active,1523,official
+Taitaja2023Espoo,406,Sähköasennus,active,1543,official
+Taitaja2023Espoo,407,Talonrakentaminen,active,1546,official
+Taitaja2023Espoo,410,Viherrakentaminen,active,1540,official
+Taitaja2023Espoo,411,Infrarakentaminen,active,1559,official
+Taitaja2023Espoo,501,Leipuri-kondiittori,active,1553,official
+Taitaja2023Espoo,502,Kokki,active,1550,official
+Taitaja2023Espoo,504,Tarjoilija,active,1544,official
+Taitaja2023Espoo,602,Elektroniikka ja robotiikka,active,1535,official
+Taitaja2023Espoo,603,CNC-koneistus,active,1552,official
+Taitaja2023Espoo,604,Laborantti,active,1562,official
+Taitaja2023Espoo,605,Hitsaus,active,1551,official
+Taitaja2023Espoo,606,Kappaletavara-automaatio,active,1530,official
+Taitaja2023Espoo,607,Koneenasennus ja kunnossapito,active,1592,official
+Taitaja2023Espoo,P1,Ravintola- ja cateringpalvelut,active,1554,official
+Taitaja2023Espoo,P2,Kiinteistönhoito,active,1541,official
+Taitaja2023Espoo,P3,Liiketoiminta,active,1521,official
+Taitaja2023Espoo,P4,Puhdistuspalvelu,active,1563,official
+Taitaja2023Espoo,P5,Logistiikka,active,1564,official
+Taitaja2024Kuopio-finaali,101,Ajoneuvotekniikka,active,1936,official
+Taitaja2024Kuopio-finaali,102,Autokorinkorjaus,active,1962,official
+Taitaja2024Kuopio-finaali,103,Automaalaus,active,1932,official
+Taitaja2024Kuopio-finaali,104,Kuljetuslogistiikka,active,1938,official
+Taitaja2024Kuopio-finaali,105,Metsäkoneenkäyttö,active,1935,official
+Taitaja2024Kuopio-finaali,202,Mediatekniikka,active,1953,official
+Taitaja2024Kuopio-finaali,203,Mediasuunnittelu,active,1946,official
+Taitaja2024Kuopio-finaali,204,Tietojenkäsittely,active,1944,official
+Taitaja2024Kuopio-finaali,205,Tietokoneet ja -verkot,active,1956,official
+Taitaja2024Kuopio-finaali,206,Web-kehitys,active,1939,official
+Taitaja2024Kuopio-finaali,208,Pelituotanto,active,1940,official
+Taitaja2024Kuopio-finaali,301,Asiakaspalvelu ja myynti,active,1933,official
+Taitaja2024Kuopio-finaali,302,Hiusmuotoilu,active,1943,official
+Taitaja2024Kuopio-finaali,303,Kauneudenhoito,active,1934,official
+Taitaja2024Kuopio-finaali,304,Floristiikka,active,1941,official
+Taitaja2024Kuopio-finaali,305,Lähihoitaja,active,1937,official
+Taitaja2024Kuopio-finaali,306,Puhdistuspalvelu,active,1942,official
+Taitaja2024Kuopio-finaali,307,Vaatteenvalmistus,active,1949,official
+Taitaja2024Kuopio-finaali,308,Visuaalinen myyntityö,active,1950,official
+Taitaja2024Kuopio-finaali,309,Hevostenhoito,active,1948,official
+Taitaja2024Kuopio-finaali,310,Yrittäjyys,active,1954,official
+Taitaja2024Kuopio-finaali,311,Eläintenhoito,active,1955,official
+Taitaja2024Kuopio-finaali,312,Matkailu,active,1951,official
+Taitaja2024Kuopio-finaali,313,Taloushallinto,active,1947,official
+Taitaja2024Kuopio-finaali,314,Turvapalvelu,active,1952,official
+Taitaja2024Kuopio-finaali,315,Hyvinvointiteknologia,active,1977,official
+Taitaja2024Kuopio-finaali,316,Kiinteistönhoito,active,1979,official
+Taitaja2024Kuopio-finaali,401,Puuseppä,active,1958,official
+Taitaja2024Kuopio-finaali,404,Maalaus ja tapetointi,active,1969,official
+Taitaja2024Kuopio-finaali,405,Putkiasennus,active,1957,official
+Taitaja2024Kuopio-finaali,406,Sähköasennus,active,1971,official
+Taitaja2024Kuopio-finaali,407,Talonrakentaminen,active,1959,official
+Taitaja2024Kuopio-finaali,410,Viherrakentaminen,active,1972,official
+Taitaja2024Kuopio-finaali,411,Infrarakentaminen,active,1965,official
+Taitaja2024Kuopio-finaali,501,Leipuri-kondiittori,active,1974,official
+Taitaja2024Kuopio-finaali,502,Kokki,active,1960,official
+Taitaja2024Kuopio-finaali,504,Tarjoilija,active,1961,official
+Taitaja2024Kuopio-finaali,601,Automaatioasennus,active,1980,official
+Taitaja2024Kuopio-finaali,602,Elektroniikka ja robotiikka,active,1975,official
+Taitaja2024Kuopio-finaali,603,CNC-koneistus,active,1973,official
+Taitaja2024Kuopio-finaali,604,Laborantti,active,1978,official
+Taitaja2024Kuopio-finaali,605,Hitsaus,active,1966,official
+Taitaja2024Kuopio-finaali,606,Kappaletavara-automaatio,active,1968,official
+Taitaja2024Kuopio-finaali,607,Koneenasennus ja kunnossapito,active,1963,official
+Taitaja2024Kuopio-finaali,AN1,Lentokonehuolto,active,2168,presentation
+Taitaja2024Kuopio-finaali,P1,Ravintola- ja cateringpalvelut,active,1967,official
+Taitaja2024Kuopio-finaali,P2,Kiinteistönhoito,active,1964,official
+Taitaja2024Kuopio-finaali,P3,Liiketoiminta,active,1976,official
+Taitaja2024Kuopio-finaali,P4,Puhdistuspalvelu,active,1970,official
+Taitaja2024Kuopio-finaali,P5,Logistiikka,active,1945,official
+Taitaja2024Kuopio-finaali,T9,Taitaja9,active,1997,official
+Taitaja2024Kuopio-semifinaalit,101,Ajoneuvotekniikka,active,1907,official
+Taitaja2024Kuopio-semifinaalit,102,Autokorinkorjaus,active,1899,official
+Taitaja2024Kuopio-semifinaalit,103,Automaalaus,active,1921,official
+Taitaja2024Kuopio-semifinaalit,104,Kuljetuslogistiikka,active,1917,official
+Taitaja2024Kuopio-semifinaalit,105,Metsäkoneenkäyttö,active,1898,official
+Taitaja2024Kuopio-semifinaalit,202,Mediatekniikka,active,1929,official
+Taitaja2024Kuopio-semifinaalit,203,Mediasuunnittelu,active,1915,official
+Taitaja2024Kuopio-semifinaalit,204,Tietojenkäsittely,active,1886,official
+Taitaja2024Kuopio-semifinaalit,205,Tietokoneet ja -verkot,active,1919,official
+Taitaja2024Kuopio-semifinaalit,206,Web-kehitys,active,1896,official
+Taitaja2024Kuopio-semifinaalit,208,Pelituotanto,active,1894,official
+Taitaja2024Kuopio-semifinaalit,301,Asiakaspalvelu ja myynti,active,1892,official
+Taitaja2024Kuopio-semifinaalit,302,Hiusmuotoilu,active,1887,official
+Taitaja2024Kuopio-semifinaalit,303,Kauneudenhoito,active,1902,official
+Taitaja2024Kuopio-semifinaalit,304,Floristiikka,active,1908,official
+Taitaja2024Kuopio-semifinaalit,305,Lähihoitaja,active,1911,official
+Taitaja2024Kuopio-semifinaalit,306,Puhdistuspalvelu,active,1913,official
+Taitaja2024Kuopio-semifinaalit,307,Vaatteenvalmistus,active,1884,official
+Taitaja2024Kuopio-semifinaalit,308,Visuaalinen myyntityö,active,1930,official
+Taitaja2024Kuopio-semifinaalit,309,Hevostenhoito,active,1904,official
+Taitaja2024Kuopio-semifinaalit,310,Yrittäjyys,active,1916,official
+Taitaja2024Kuopio-semifinaalit,311,Eläintenhoito,active,1909,official
+Taitaja2024Kuopio-semifinaalit,312,Matkailu,active,1905,official
+Taitaja2024Kuopio-semifinaalit,313,Taloushallinto,active,1926,official
+Taitaja2024Kuopio-semifinaalit,314,Turvapalvelu,active,1901,official
+Taitaja2024Kuopio-semifinaalit,315,Hyvinvointiteknologia,active,1924,official
+Taitaja2024Kuopio-semifinaalit,316,Kiinteistönhoito,active,1923,official
+Taitaja2024Kuopio-semifinaalit,401,Puuseppä,active,1910,official
+Taitaja2024Kuopio-semifinaalit,404,Maalaus ja tapetointi,active,1906,official
+Taitaja2024Kuopio-semifinaalit,405,Putkiasennus,active,1888,official
+Taitaja2024Kuopio-semifinaalit,406,Sähköasennus,active,1890,official
+Taitaja2024Kuopio-semifinaalit,407,Talonrakentaminen,active,1903,official
+Taitaja2024Kuopio-semifinaalit,410,Viherrakentaminen,active,1928,official
+Taitaja2024Kuopio-semifinaalit,411,Infrarakentaminen,active,1885,official
+Taitaja2024Kuopio-semifinaalit,501,Leipuri-kondiittori,active,1889,official
+Taitaja2024Kuopio-semifinaalit,502,Kokki,active,1925,official
+Taitaja2024Kuopio-semifinaalit,504,Tarjoilija,active,1897,official
+Taitaja2024Kuopio-semifinaalit,601,Automaatioasennus,active,1931,official
+Taitaja2024Kuopio-semifinaalit,602,Elektroniikka ja robotiikka,active,1914,official
+Taitaja2024Kuopio-semifinaalit,603,CNC-koneistus,active,1893,official
+Taitaja2024Kuopio-semifinaalit,604,Laborantti,active,1891,official
+Taitaja2024Kuopio-semifinaalit,605,Hitsaus,active,1922,official
+Taitaja2024Kuopio-semifinaalit,606,Kappaletavara-automaatio,active,1912,official
+Taitaja2024Kuopio-semifinaalit,607,Koneenasennus ja kunnossapito,active,1895,official
+Taitaja2024Kuopio-semifinaalit,P1,Ravintola- ja cateringpalvelut,active,1920,official
+Taitaja2024Kuopio-semifinaalit,P2,Kiinteistönhoito,active,1918,official
+Taitaja2024Kuopio-semifinaalit,P3,Liiketoiminta,active,1927,official
+Taitaja2024Kuopio-semifinaalit,P4,Puhdistuspalvelu,active,1900,official
+Taitaja2024Kuopio-semifinaalit,P5,Logistiikka,active,1883,official
+WSC1995,01,Fitting,active,2492,official
+WSC1995,02,Press Tool Making,active,2493,official
+WSC1995,03,Instrument Making,active,2494,official
+WSC1995,04,Mechatronics,active,2495,official
+WSC1995,05,Engineering Drafting CAD,active,2496,official
+WSC1995,06,Turning / CNC,active,2497,official
+WSC1995,07,Milling / CNC,active,2498,official
+WSC1995,08,Construction Steel Work,active,2499,official
+WSC1995,09,Information Technology,active,2500,official
+WSC1995,10,Welding,active,2501,official
+WSC1995,11,Pattern Making,active,2502,official
+WSC1995,12,Wall and Floor Tiling,active,2503,official
+WSC1995,13,Autobody Repair,active,2504,official
+WSC1995,14,Sheet Metal Work,active,2505,official
+WSC1995,15,Plumbing,active,2506,official
+WSC1995,16,Industrial Electronics,active,2507,official
+WSC1995,17,Electronic Applications,active,2508,official
+WSC1995,18,Commercial Wiring,active,2509,official
+WSC1995,19,Industrial Wiring,active,2510,official
+WSC1995,20,Bricklaying,active,2511,official
+WSC1995,21,Stonemasonry,active,2512,official
+WSC1995,22,Painting and Decorating,active,2513,official
+WSC1995,23,Plastering,active,2514,official
+WSC1995,24,Cabinetmaking,active,2515,official
+WSC1995,25,Joinery,active,2516,official
+WSC1995,26,Carpentry,active,2517,official
+WSC1995,27,Jewellery,active,2518,official
+WSC1995,28,Floristry,active,2519,official
+WSC1995,29,Ladies' Hairdressing,active,2520,official
+WSC1995,30,Men's Hairdressing,active,2521,official
+WSC1995,31,Ladies' Dressmaking,active,2522,official
+WSC1995,33,Automobile Technology,active,2523,official
+WSC1995,34,Cookery,active,2524,official
+WSC1995,35,Waiting,active,2525,official
+WSC1995,36,Car Painting,active,2526,official
+WSC1995,37,Agricultural Mechanics,active,2527,official
+WSC1995,38,Refrigeration Technic,active,2528,official
+WSC1995,45,Heavy Vehicle Maintenance,active,2529,official
+WSC1995,47,Graphic Design,active,2530,official
+WSC1995,48,Roofing,active,2531,official
+WSC1997,01,Fitting,active,213,official
+WSC1997,02,Press tool making,active,214,official
+WSC1997,03,Instrument making,active,215,official
+WSC1997,04,Mechatronics,active,216,official
+WSC1997,05,Mechanical Engineering Drafting CAD,active,217,official
+WSC1997,06,CNC Turning,active,218,official
+WSC1997,07,CNC Milling,active,219,official
+WSC1997,08,Construction steel work,active,220,official
+WSC1997,09,Information Technology,active,221,official
+WSC1997,10,Welding,active,222,official
+WSC1997,11,Pattern Making,active,223,official
+WSC1997,12,Wall and Floor Tiling,active,224,official
+WSC1997,13,Autobody Repair,active,225,official
+WSC1997,14,Sheet metal work,active,226,official
+WSC1997,15,Plumbing,active,227,official
+WSC1997,16,Industrial Electronics,active,228,official
+WSC1997,17,Electronic Applications,active,229,official
+WSC1997,18,Commercial wiring,active,230,official
+WSC1997,19,Industrial wiring,active,231,official
+WSC1997,20,Bricklaying,active,232,official
+WSC1997,21,Stonemasonry,active,233,official
+WSC1997,22,Painting and Decorating,active,234,official
+WSC1997,23,Plastering,active,235,official
+WSC1997,24,Cabinetmaking,active,236,official
+WSC1997,25,Joinery,active,237,official
+WSC1997,26,Carpentry,active,238,official
+WSC1997,27,Jewellery,active,239,official
+WSC1997,28,Floristry,active,240,official
+WSC1997,29,Ladies' hairdressing,active,241,official
+WSC1997,30,Men's hairdressing,active,242,official
+WSC1997,31,Ladies Dressmaking,active,243,official
+WSC1997,33,Automobile Technology,active,244,official
+WSC1997,34,Cookery,active,245,official
+WSC1997,35,Restaurant Service,active,246,official
+WSC1997,36,Car Painting,active,247,official
+WSC1997,37,Agricultural mechanics,active,248,official
+WSC1997,38,Refrigeration Technic,active,249,official
+WSC1997,40,Tinsmith (Roofing),active,250,official
+WSC1999,01,Fitting,active,175,official
+WSC1999,02,Press tool making,active,174,official
+WSC1999,03,Instrument making,active,173,official
+WSC1999,04,Mechatronics,active,172,official
+WSC1999,05,Mech. Eng. CADD,active,171,official
+WSC1999,06,CNC Turning,active,170,official
+WSC1999,07,CNC Milling,active,169,official
+WSC1999,08,Construction steel work,active,168,official
+WSC1999,09,IT/Software Applications,active,180,official
+WSC1999,10,Welding,active,181,official
+WSC1999,11,Pattern Making,active,182,official
+WSC1999,12,Wall and Floor Tiling,active,183,official
+WSC1999,13,Autobody Repair,active,184,official
+WSC1999,14,Sheet metal work,active,185,official
+WSC1999,15,Plumbing,active,186,official
+WSC1999,16,Industrial Electronics,active,187,official
+WSC1999,17,Electronic Applications,active,188,official
+WSC1999,18,Commercial wiring,active,189,official
+WSC1999,19,Industrial wiring,active,190,official
+WSC1999,20,Bricklaying,active,191,official
+WSC1999,21,Stonemasonry,active,192,official
+WSC1999,22,Painting and Decorating,active,193,official
+WSC1999,23,Plastering,active,194,official
+WSC1999,24,Cabinetmaking,active,195,official
+WSC1999,25,Joinery,active,196,official
+WSC1999,26,Carpentry,active,197,official
+WSC1999,27,Jewellery,active,198,official
+WSC1999,28,Floristry,active,199,official
+WSC1999,29,Ladies' hairdressing,active,200,official
+WSC1999,30,Men's hairdressing,active,201,official
+WSC1999,31,Ladies Dressmaking,active,202,official
+WSC1999,33,Automobile Technology,active,203,official
+WSC1999,34,Cooking,active,204,official
+WSC1999,35,Restaurant Service,active,205,official
+WSC1999,36,Car Painting,active,206,official
+WSC1999,38,Refrigeration,active,207,official
+WSC1999,41,Graphic Design Technology,active,208,official
+WSC1999,42,Confectioner/Pastry Cook,active,209,official
+WSC1999,43,Beauty Care,active,210,official
+WSC1999,44,Landscape Gardening,active,211,official
+WSC1999,45,IT PC/Network Support,active,212,official
 WSC2001,01,Fitting,active,129,official
 WSC2001,02,Press tool making,active,130,official
 WSC2001,03,Instrument making,active,131,official
@@ -751,3 +2898,287 @@ WSC2026,61,Rail Vehicle Technology,active,2695,official
 WSC2026,62,Renewable Energy,active,2453,official
 WSC2026,63,Robot Systems Integration,active,2407,official
 WSC2026,64,Unmanned Aerial Systems,active,2698,official
+WSC2028,01,Industrial Mechanics,active,3437,official
+WSC2028,02,ICT Network Infrastructure,active,3433,official
+WSC2028,03,Intelligent Security Technology,active,3432,official
+WSC2028,04,Mechatronics,active,3431,official
+WSC2028,05,Mechanical Engineering CAD,active,3430,official
+WSC2028,06,CNC Turning,active,3435,official
+WSC2028,07,CNC Milling,active,3440,official
+WSC2028,08,Mobile Applications Development,active,3429,official
+WSC2028,09,Software Applications Development,active,3434,official
+WSC2028,10,Welding,active,3448,official
+WSC2028,11,Software Testing,active,3443,official
+WSC2028,12,Wall and Floor Tiling,active,3464,official
+WSC2028,13,Autobody Repair,active,3469,official
+WSC2028,14,Aircraft Maintenance,active,3458,official
+WSC2028,15,Plumbing and Heating,active,3466,official
+WSC2028,16,Electronics,active,3450,official
+WSC2028,17,Web Technologies,active,3447,official
+WSC2028,18,Electrical Installations,active,3474,official
+WSC2028,19,Industrial Control,active,3478,official
+WSC2028,20,Bricklaying,active,3472,official
+WSC2028,21,Plastering and Drywall Systems,active,3476,official
+WSC2028,22,Painting and Decorating,active,3436,official
+WSC2028,23,Autonomous Mobile Robotics,active,3488,official
+WSC2028,24,Cabinetmaking,active,3475,official
+WSC2028,25,Joinery,active,3462,official
+WSC2028,26,Carpentry,active,3463,official
+WSC2028,27,Jewellery,active,3445,official
+WSC2028,28,Floristry,active,3441,official
+WSC2028,29,Hairdressing,active,3452,official
+WSC2028,30,Beauty Therapy,active,3468,official
+WSC2028,31,Fashion Technology,active,3446,official
+WSC2028,32,Pâtisserie and Confectionery,active,3459,official
+WSC2028,33,Automobile Technology,active,3456,official
+WSC2028,34,Cooking,active,3481,official
+WSC2028,35,Restaurant Service,active,3473,official
+WSC2028,36,Car Painting,active,3490,official
+WSC2028,37,Landscape Gardening,active,3479,official
+WSC2028,38,Refrigeration and Air Conditioning,active,3470,official
+WSC2028,39,IT Network Systems Administration,active,3487,official
+WSC2028,40,Graphic Design Technology,active,3485,official
+WSC2028,41,Health and Social Care,active,3486,official
+WSC2028,42,Dental Prosthetics,active,3438,official
+WSC2028,43,Retail Sales,active,3442,official
+WSC2028,44,Visual Merchandising,active,3460,official
+WSC2028,45,Digital Interactive Media Design,active,3461,official
+WSC2028,46,Concrete Construction Work,active,3465,official
+WSC2028,47,Bakery,active,3453,official
+WSC2028,48,Industry 4.0,active,3454,official
+WSC2028,49,Heavy Vehicle Technology,active,3477,official
+WSC2028,50,3D Digital Game Art,active,3491,official
+WSC2028,51,Logistics and Freight Forwarding,active,3471,official
+WSC2028,52,Chemical Laboratory Technology,active,3489,official
+WSC2028,53,Cloud Computing,active,3482,official
+WSC2028,54,Cyber Security,active,3492,official
+WSC2028,55,Water Technology,active,3480,official
+WSC2028,56,Hotel Reception,active,3483,official
+WSC2028,57,Additive Manufacturing,active,3484,official
+WSC2028,58,Digital Construction,active,3457,official
+WSC2028,59,Industrial Design Technology,active,3455,official
+WSC2028,60,Optoelectronic Technology,active,3439,official
+WSC2028,61,Rail Vehicle Technology,active,3451,official
+WSC2028,62,Renewable Energy,active,3444,official
+WSC2028,63,Robot Systems Integration,active,3449,official
+WSC2028,64,Unmanned Aerial Systems,active,3467,official
+WSECPM2020,04,Mechatronics,active,816,official
+WSECPM2020,05,Mechanical Engineering Design – CAD,active,817,official
+WSECPM2020,07,CNC-Milling,active,818,official
+WSECPM2020,08,Architectural Stonemasonry,active,819,official
+WSECPM2020,10,Welding,active,820,official
+WSECPM2020,12,Wall and Floor Tiling,active,821,official
+WSECPM2020,15,Plumbing and Heating,active,822,official
+WSECPM2020,17,Web Development,active,823,official
+WSECPM2020,18,Electrical Installations,active,824,official
+WSECPM2020,19,Industrial Control,active,825,official
+WSECPM2020,20,Bricklaying,active,826,official
+WSECPM2020,21,Plastering and Dry Wall Systems,active,828,official
+WSECPM2020,22,Painting and Decorating,active,829,official
+WSECPM2020,23,Mobile Robotics,active,830,official
+WSECPM2020,24,Cabinetmaking,active,831,official
+WSECPM2020,25,Joinery,active,832,official
+WSECPM2020,28,Floristry,active,833,official
+WSECPM2020,29,Hairdressing,active,834,official
+WSECPM2020,30,Beauty Therapy,active,827,official
+WSECPM2020,31,Fashion Technology,active,835,official
+WSECPM2020,33,Automobile Technology,active,836,official
+WSECPM2020,34,Cooking,active,837,official
+WSECPM2020,35,Restaurant Service,active,838,official
+WSECPM2020,36,Bakery,active,839,official
+WSECPM2020,38,Refrigeration and Air Conditioning,active,840,official
+WSECPM2020,39,ICT Specialists,active,841,official
+WSECPM2020,40,Graphic Design,active,842,official
+WSECPM2020,41,Health and Social Care,active,843,official
+WSECPM2020,44,Visual Merchandising / Window Dressing,active,844,official
+WSECPM2020,49,Metal Roofing,active,845,official
+WSECPM2020,50,Floor Laying,active,846,official
+WSECPM2020,51,Landscape Gardening,active,847,official
+WSECPM2020,52,Concrete Construction,active,848,official
+WSECPM2020,53,Heavy Vehicle Technology,active,849,official
+WSECPM2020,54,Heavy Truck Maintenance,active,850,official
+WSECPM2020,57,Hotel Receptioning,active,851,official
+WSECPM2020,D1,CNC-Turning,active,852,demo
+WSECPM2020,D2,Glass Construction Technology,active,853,demo
+WSECPM2020,D3,Sheet Metal Work,active,854,demo
+WSECPM2020,D5,Retail Sales,active,856,demo
+WSECPM2020,D6,Butchery,active,857,demo
+WSECPM2020,HP1,Entrepreneurship Business Development Team Challenge,active,859,host_member
+WSECPM2020,HP2,Industry 4.0,active,860,host_member
+WSECPM2020,HP3,Mechanical Engineering Technician,active,861,host_member
+WSECPM2020,HP4,Electronics Prototyping,active,863,host_member
+WSECPM2020,HP5,Freight Forwarding,active,855,demo
+WSECPM2020,HP6,Chemical Laboratory Technician,active,858,demo
+WSECPM2025,04,Mechatronics,active,2225,official
+WSECPM2025,05,Mechanical Engineering – CAD,active,2227,official
+WSECPM2025,07,CNC-Milling,active,2223,official
+WSECPM2025,10,Welding,active,2224,official
+WSECPM2025,12,Wall and Floor Tiling,active,2226,official
+WSECPM2025,15,Plumbing and Heating,active,2222,official
+WSECPM2025,16,Electronics Prototyping,active,2228,official
+WSECPM2025,17,Web Development,active,2251,official
+WSECPM2025,18,Electrical Installations,active,2247,official
+WSECPM2025,19,Industrial Control,active,2241,official
+WSECPM2025,20,Bricklaying,active,2244,official
+WSECPM2025,21,Plastering and Dry Wall Systems,active,2229,official
+WSECPM2025,22,Painting and Decorating,active,2258,official
+WSECPM2025,24,Cabinetmaking,active,2255,official
+WSECPM2025,25,Joinery,active,2232,official
+WSECPM2025,26,Carpentry,active,2248,official
+WSECPM2025,27,Robot Systems Integration,active,2238,official
+WSECPM2025,28,Floristry,active,2250,official
+WSECPM2025,29,Hairdressing,active,2237,official
+WSECPM2025,30,Beauty Therapy,active,2243,official
+WSECPM2025,31,Fashion Design and Technology Team Challenge,active,2233,official
+WSECPM2025,33,Automobile Technology,active,2242,official
+WSECPM2025,34,Cooking,active,2246,official
+WSECPM2025,35,Restaurant Servive,active,2257,official
+WSECPM2025,36,Bakery,active,2249,official
+WSECPM2025,37,Pâtisserie and Confectionery,active,2231,official
+WSECPM2025,38,Refrigeration and Air Conditioning,active,2245,official
+WSECPM2025,39,IT Network Systems Administration,active,2252,official
+WSECPM2025,40,Graphic Design Technology,active,2253,official
+WSECPM2025,41,Health and Social Care,active,2254,official
+WSECPM2025,45,IT Software Solutions for Business,active,2236,official
+WSECPM2025,46,Entrepreneurship / Business Development Team Challenge,active,2235,official
+WSECPM2025,48,Industry 4.0,active,2234,official
+WSECPM2025,50,Floor Laying,active,2239,official
+WSECPM2025,51,Landscape Gardening,active,2240,official
+WSECPM2025,53,Heavy Vehicle Technology,active,2230,official
+WSECPM2025,54,Truck and Bus Technology,active,2256,official
+WSECPM2025,57,Hotel Reception,active,2221,official
+WSFR2025,01,Maintenance industrielle,active,2112,official
+WSFR2025,02,Information Network Cabling,active,2118,official
+WSFR2025,03,Manufacturing Team Challenge,active,2099,official
+WSFR2025,04,Mechatronics,active,2120,official
+WSFR2025,05,Mechanical Engineering Design - CAD,active,2138,official
+WSFR2025,06,CNC Turning,active,2108,official
+WSFR2025,07,CNC Milling,active,2103,official
+WSFR2025,09,IT Software Solutions for Business,active,2122,official
+WSFR2025,10,Welding,active,2137,official
+WSFR2025,11,Print Media Technology,active,2121,official
+WSFR2025,12,Wall and Floor Tiling,active,2124,official
+WSFR2025,13,Autobody Repair,active,2101,official
+WSFR2025,14,Aircraft Maintenance,active,2150,official
+WSFR2025,15,Plumbing and Heating,active,2107,official
+WSFR2025,16,Electronics,active,2111,official
+WSFR2025,17,Web design,active,2135,official
+WSFR2025,18,Electrical Installations,active,2139,official
+WSFR2025,19,Industrial Control,active,2113,official
+WSFR2025,20,Bricklaying,active,2142,official
+WSFR2025,21,Plastering and Drywall Systems,active,2106,official
+WSFR2025,22,Painting and Decorating,active,2133,official
+WSFR2025,24,Cabinetmaking,active,2131,official
+WSFR2025,25,Joinery,active,2134,official
+WSFR2025,26,Carpentry,active,2116,official
+WSFR2025,27,Jewellery,active,2105,official
+WSFR2025,28,Floristry,active,2109,official
+WSFR2025,29,Hairdressing,active,2102,official
+WSFR2025,30,Beauty Therapy,active,2152,official
+WSFR2025,31,Fashion Technology,active,2158,official
+WSFR2025,32,Pâtisserie and Confectionery,active,2167,official
+WSFR2025,33,Automobile Technology,active,2117,official
+WSFR2025,34,Cooking,active,2115,official
+WSFR2025,35,Restaurant Service,active,2145,official
+WSFR2025,36,Car Painting,active,2136,official
+WSFR2025,37,Landscape Gardening,active,2114,official
+WSFR2025,38,Refrigeration and Air Conditioning,active,2127,official
+WSFR2025,39,IT Network Systems Administration,active,2155,official
+WSFR2025,40,Graphic Design Technology,active,2148,official
+WSFR2025,41,Health and Social Care,active,2143,official
+WSFR2025,42,Construction Metal Work,active,2140,official
+WSFR2025,44,Visual merchandising,active,2160,official
+WSFR2025,46,Concrete Construction Work,active,2147,official
+WSFR2025,47,Bakery,active,2125,official
+WSFR2025,48,Industrie 4.0,active,2130,official
+WSFR2025,49,Heavy Vehicle Maintenance,active,2166,official
+WSFR2025,50,3D Digital Game Art,active,2165,official
+WSFR2025,53,Cloud Technology,active,2161,official
+WSFR2025,54,Cyber Security,active,2149,official
+WSFR2025,56,Hotel Reception,active,2146,official
+WSFR2025,57,Fabrication Additive,active,2156,official
+WSFR2025,58,Digital Construction,active,2129,official
+WSFR2025,63,Robot Systems Integration,active,2154,official
+WSFR2025,D1,Marble Design,active,2162,official
+WSFR2025,E46,Entrepreneurship Team Challenge,active,2126,official
+WSFR2025,E49,Metal Roofing,active,2119,official
+WSFR2025,E50,Floor Laying,active,2128,official
+WSFR2025,E54,Truck Maintenance,active,2159,official
+WSFR2025,E8,Architectural Stonemasonry,active,2163,official
+WSFR2025,N1,Sheet Metal Work,active,2151,official
+WSFR2025,N11,Butchery,active,2123,official
+WSFR2025,N2,Horticulture,active,2100,official
+WSFR2025,N3,Motorcycle Technology,active,2132,official
+WSFR2025,N4,Wine Tester,active,2141,official
+WSFR2025,N5,Social Care,active,2110,official
+WSFR2025,N6,Road Building,active,2153,official
+WSFR2025,N7,Leatherwork,active,2157,official
+WSFR2025,N8,Glass Construction Technology,active,2164,official
+WSFR2025,N9,Cleanliness professions,active,2104,official
+WSFR2027,01,Maintenance industrielle,active,3120,official
+WSFR2027,02,Information Network Cabling,active,3124,official
+WSFR2027,03,Manufacturing Team Challenge,active,3107,official
+WSFR2027,04,Mechatronics,active,3105,official
+WSFR2027,05,Mechanical Engineering Design - CAD,active,3086,official
+WSFR2027,06,CNC Turning,active,3083,official
+WSFR2027,07,CNC Milling,active,3126,official
+WSFR2027,09,IT Software Solutions for Business,active,3082,official
+WSFR2027,10,Welding,active,3098,official
+WSFR2027,11,Print Media Technology,active,3140,official
+WSFR2027,12,Wall and Floor Tiling,active,3130,official
+WSFR2027,13,Autobody Repair,active,3111,official
+WSFR2027,14,Aircraft Maintenance,active,3135,official
+WSFR2027,15,Plumbing and Heating,active,3113,official
+WSFR2027,16,Electronics,active,3106,official
+WSFR2027,17,Web design,active,3095,official
+WSFR2027,18,Electrical Installations,active,3109,official
+WSFR2027,19,Industrial Control,active,3090,official
+WSFR2027,20,Bricklaying,active,3103,official
+WSFR2027,21,Plastering and Drywall Systems,active,3078,official
+WSFR2027,22,Painting and Decorating,active,3123,official
+WSFR2027,24,Cabinetmaking,active,3089,official
+WSFR2027,25,Joinery,active,3136,official
+WSFR2027,26,Carpentry,active,3134,official
+WSFR2027,27,Jewellery,active,3133,official
+WSFR2027,28,Floristry,active,3091,official
+WSFR2027,29,Hairdressing,active,3116,official
+WSFR2027,30,Beauty Therapy,active,3101,official
+WSFR2027,31,Fashion Technology,active,3117,official
+WSFR2027,32,Pâtisserie and Confectionery,active,3100,official
+WSFR2027,33,Automobile Technology,active,3129,official
+WSFR2027,34,Cooking,active,3143,official
+WSFR2027,35,Restaurant Service,active,3080,official
+WSFR2027,36,Car Painting,active,3102,official
+WSFR2027,37,Landscape Gardening,active,3137,official
+WSFR2027,38,Refrigeration and Air Conditioning,active,3085,official
+WSFR2027,39,IT Network Systems Administration,active,3097,official
+WSFR2027,40,Graphic Design Technology,active,3084,official
+WSFR2027,41,Health and Social Care,active,3076,official
+WSFR2027,42,Construction Metal Work,active,3081,official
+WSFR2027,46,Concrete Construction Work,active,3114,official
+WSFR2027,47,Bakery,active,3125,official
+WSFR2027,48,Industrie 4.0,active,3099,official
+WSFR2027,49,Heavy Vehicle Maintenance,active,3139,official
+WSFR2027,50,3D Digital Game Art,active,3127,official
+WSFR2027,53,Cloud Technology,active,3093,official
+WSFR2027,54,Cyber Security,active,3079,official
+WSFR2027,56,Hotel Reception,active,3118,official
+WSFR2027,57,Fabrication Additive,active,3131,official
+WSFR2027,58,Digital Construction,active,3087,official
+WSFR2027,63,Robot Systems Integration,active,3108,official
+WSFR2027,D1,Marble Design,active,3128,official
+WSFR2027,E46,Entrepreneurship Team Challenge,active,3092,official
+WSFR2027,E49,Metal Roofing,active,3096,official
+WSFR2027,E50,Floor Laying,active,3104,official
+WSFR2027,E54,Truck Maintenance,active,3094,official
+WSFR2027,E8,Architectural Stonemasonry,active,3115,official
+WSFR2027,N1,Sheet Metal Work,active,3142,official
+WSFR2027,N11,Butchery,active,3121,official
+WSFR2027,N2,Horticulture,active,3132,official
+WSFR2027,N3,Motorcycle Technology,active,3112,official
+WSFR2027,N4,Wine Tester,active,3122,official
+WSFR2027,N5,Social Care,active,3138,official
+WSFR2027,N6,Road Building,active,3088,official
+WSFR2027,N7,Leatherwork,active,3110,official
+WSFR2027,N8,Glass Construction Technology,active,3119,official
+WSFR2027,N9,Cleanliness professions,active,3077,official

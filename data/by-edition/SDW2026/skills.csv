@@ -1,0 +1,47 @@
+﻿edition,skill,name,status,skill_id,type
+SDW2026,04,Mechatronics,active,3152,official
+SDW2026,05,Mechanical Engineering - CAD,active,3166,official
+SDW2026,06,CNC Turning,active,3188,official
+SDW2026,07,CNC-Milling,active,3145,official
+SDW2026,10,Welding,active,3177,official
+SDW2026,12,Wall and Floor Tiling,active,3155,official
+SDW2026,15,Plumbing and Heating,active,3151,official
+SDW2026,16,Electronics Prototyping,active,3181,official
+SDW2026,17,Web Development,active,3163,official
+SDW2026,18,Electrical Installations,active,3147,official
+SDW2026,19,Industrial Control,active,3168,official
+SDW2026,20,Bricklaying,active,3170,official
+SDW2026,21,Plastering and Dry Wall Systems,active,3174,official
+SDW2026,22,Painting and Decorating,active,3162,official
+SDW2026,24,Cabinetmaking,active,3164,official
+SDW2026,25,Joinery,active,3172,official
+SDW2026,26,Carpentry,active,3180,official
+SDW2026,27,Robot Systems Integration,active,3160,official
+SDW2026,28,Floristry,active,3161,official
+SDW2026,29,Hairdressing,active,3158,official
+SDW2026,30,Beauty Therapy,active,3149,official
+SDW2026,31,Fashion Design and Technology Team Challenge,active,3179,official
+SDW2026,32,Butchery,active,3184,official
+SDW2026,33,Automobile Technology,active,3156,official
+SDW2026,34,Cooking,active,3148,official
+SDW2026,35,Restaurant Service,active,3165,official
+SDW2026,36,Bakery,active,3150,official
+SDW2026,37,Pâtisserie and Confectionery,active,3171,official
+SDW2026,38,Refrigeration and Air Conditioning,active,3157,official
+SDW2026,39,IT Network Systems Administration,active,3178,official
+SDW2026,40,Graphic Design Technology,active,3169,official
+SDW2026,41,Health and Social Care,active,3175,official
+SDW2026,42,Digital Construction,active,3185,official
+SDW2026,43,Cyber Security,active,3187,official
+SDW2026,45,Software Applications Development,active,3159,official
+SDW2026,46,Entrepreneurship / Business Development Team Challenge,active,3154,official
+SDW2026,48,Industry 4.0,active,3146,official
+SDW2026,49,Metal Roofing,active,3186,official
+SDW2026,50,Floor Laying,active,3173,official
+SDW2026,51,Landscape Gardening,active,3176,official
+SDW2026,52,Aircraft Maintenance,active,3189,official
+SDW2026,53,Heavy Vehicle Technology,active,3167,official
+SDW2026,54,Truck and Bus Technology,active,3153,official
+SDW2026,55,Autobody Repair,active,3183,official
+SDW2026,56,Car Painting,active,3182,official
+SDW2026,57,Hotel Reception,active,3144,official

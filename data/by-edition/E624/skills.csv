@@ -1,0 +1,34 @@
+﻿edition,skill,name,status,skill_id,type
+E624,C01,Floristry,active,2705,official
+E624,C02,Fashion Technology,active,2712,official
+E624,C03,Hairdressing,active,2713,official
+E624,C04,Welding,active,2726,official
+E624,C05,Robot systems integration,active,2720,official
+E624,C06,Mechanical Engineering CAD,active,2710,official
+E624,C07,Plastic die engeering,active,2732,official
+E624,C08,CNC Milling,active,2715,official
+E624,C09,Mechatronics,active,2722,official
+E624,C10,Industry 4.0,active,2719,official
+E624,C11,IT Network System,active,2703,official
+E624,C12,Graphic design,active,2728,official
+E624,C13,Web Technologies,active,2707,official
+E624,C14,Industrial control,active,2711,official
+E624,C15,Cooking,active,2721,official
+E624,C16,Bakery,active,2702,official
+E624,C17,Butchery,active,2706,official
+E624,C18,Restaurant Service,active,2718,official
+E624,C19,Metal Roofing,active,2731,official
+E624,C20,Refrigeration and air conditioning,active,2725,official
+E624,C21,Painting and decorating,active,2724,official
+E624,C22,Electrical installations,active,2717,official
+E624,C23,Plumbing and heating,active,2714,official
+E624,C24,Wall and floor tilling,active,2704,official
+E624,C25,Cabinetmaking,active,2716,official
+E624,C26,Joinery,active,2727,official
+E624,C27,Bricklaying,active,2723,official
+E624,C28,Landscape gardening,active,2708,official
+E624,C29,Automobile technology,active,2730,official
+E624,C30,Logistics,active,2733,official
+E624,C31,Truck Driver,active,2709,official
+E624,D01,Aircraft Maintenance,active,3032,official
+E624,D02,Health Care Service,active,3033,official

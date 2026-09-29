@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""用你自己的会员登录，把 2001–2026 竞赛资料下载并按技能、届次、类型、语言归档。"""
+"""用你自己的会员登录，把能拿到的竞赛资料、资源库和名单下载并按技能、赛事、类型、语言归档。"""
 
 from __future__ import annotations
 
@@ -26,10 +26,11 @@ from classify import (
     CMS_SLUG_TO_CODE,
     EDITION_EVENT_IDS,
     EDITION_NAMES,
-    MEMBER_AREA_CODES,
+    GLOBAL_CODE,
     RESOURCE_TYPE_TO_DOC,
     Classified,
     classify,
+    code_from_event,
     doc_folder,
     edition_name,
     lang_folder,
@@ -37,6 +38,7 @@ from classify import (
     pad_skill,
     parse_lang,
     parse_list_title,
+    register_edition,
 )
 from layout import (
     existing_source,
@@ -69,6 +71,10 @@ UNIDENTIFIED_CSV = DOWNLOADS / "unidentified.csv"
 API = "https://api.worldskills.org"
 CMS = "https://worldskills.org"
 INTERNAL_DOCS = f"{CMS}/internal/competition-documentation/"
+PUBLIC_PAGES = (
+    ("https://worldskills.org/about/", "report"),
+    ("https://worldskills.org/media/member-resources/", "skill-resource"),
+)
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -109,6 +115,17 @@ def canonical_url(url: str) -> str:
     pairs = [(k, v) for k, v in parse_qsl(parsed.query, keep_blank_values=True) if k not in {"tkn", "ccm_token"}]
     pairs.sort()
     return urlunparse((parsed.scheme, parsed.netloc, parsed.path, "", urlencode(pairs, doseq=True), ""))
+
+
+def resource_download_key(url: str) -> str:
+    match = re.search(r"/resources/download/(\d+)", url)
+    if match:
+        return f"{API}/resources/download/{match.group(1)}"
+    return canonical_url(url)
+
+
+def resource_download_url(resource_id: int | str) -> str:
+    return f"{API}/resources/download/{resource_id}"
 
 
 def filename_from_disposition(header: str | None) -> str | None:
@@ -337,9 +354,12 @@ def queue_item(
     source: str,
     extra_key: str = "",
 ) -> bool:
+    if not info.edition_code:
+        info.edition_code = GLOBAL_CODE
+        info.edition_name = edition_name(GLOBAL_CODE)
     if not member_area_code(info.edition_code):
         return False
-    key = extra_key or canonical_url(url)
+    key = extra_key or resource_download_key(url)
     return enqueue(
         db,
         {
@@ -398,7 +418,7 @@ def load_events(client: httpx.Client, skills: SkillIndex) -> None:
     offset = 0
     seen: set[int] = set()
     while True:
-        status, data = api_get(client, f"{API}/events?type=competition&limit=100&offset={offset}")
+        status, data = api_get(client, f"{API}/events?limit=100&offset={offset}")
         if status != 200 or not data:
             break
         items = data.get("events") or []
@@ -409,16 +429,19 @@ def load_events(client: httpx.Client, skills: SkillIndex) -> None:
             break
         seen |= ids
         for event in items:
-            code = event.get("code") or ""
-            if not member_area_code(code):
-                continue
-            skills.event_ids[code] = event["id"]
-            skills.event_names[event["id"]] = text_of(event.get("name")) or edition_name(code)
+            name = text_of(event.get("name"))
+            event_id = event["id"]
+            etype = event.get("type")
+            if isinstance(etype, dict):
+                etype = etype.get("code") or ""
+            code = code_from_event(event.get("code"), name, event_id)
+            register_edition(code, name or edition_name(code), event_id, str(etype or ""))
+            skills.event_ids[code] = event_id
+            skills.event_names[event_id] = name or edition_name(code)
         if len(items) < 100:
             break
         offset += 100
-    extras = EDITION_EVENT_IDS
-    for code, event_id in extras.items():
+    for code, event_id in EDITION_EVENT_IDS.items():
         skills.event_ids.setdefault(code, event_id)
         skills.event_names.setdefault(event_id, edition_name(code))
 
@@ -438,16 +461,17 @@ def load_skill_maps(client: httpx.Client, skills: SkillIndex) -> None:
             name = text_of(skill.get("name"))
             if number and name:
                 skills.add(code, number, name, event_id)
+        time.sleep(0.05)
 
 
-def iter_resources(client: httpx.Client, type_id: int, tag: str):
+def iter_resources(client: httpx.Client, type_id: int, tag: str | None = None):
     offset = 0
     limit = 50
     while True:
-        status, data = api_get(
-            client,
-            f"{API}/resources?type={type_id}&tags={tag}&limit={limit}&offset={offset}",
-        )
+        query = f"{API}/resources?type={type_id}&limit={limit}&offset={offset}"
+        if tag:
+            query += f"&tags={tag}"
+        status, data = api_get(client, query)
         if status in {400, 403}:
             return
         if status != 200 or not data:
@@ -471,28 +495,30 @@ def latest_version(resource: dict[str, Any]) -> dict[str, Any] | None:
 
 def discover_resources(db: sqlite3.Connection, client: httpx.Client, skills: SkillIndex) -> int:
     added = 0
-    for code in MEMBER_AREA_CODES:
-        for type_id, doc_key in RESOURCE_TYPE_TO_DOC.items():
-            for row in iter_resources(client, type_id, code):
-                name = text_of(row.get("name"))
-                tags = row.get("tags") or []
-                filename = name or f"resource-{row['id']}"
-                url = f"{API}/resources/download/{row['id']}"
-                info = classify(
-                    filename=filename,
-                    tags=tags,
-                    doc_key=doc_key,
-                    edition_hint=code,
-                )
-                if info.skill_number:
-                    info.skill_name = skills.name(code, info.skill_number)
-                info.edition_code = code
-                info.edition_name = edition_name(code)
-                info.doc_key = doc_key
-                if queue_item(db, url=url, info=info, filename=filename, source="resources"):
-                    added += 1
+    seen: set[int] = set()
+    for type_id, doc_key in RESOURCE_TYPE_TO_DOC.items():
+        typed = 0
+        for row in iter_resources(client, type_id):
+            resource_id = row.get("id")
+            if not resource_id or resource_id in seen:
+                continue
+            seen.add(resource_id)
+            name = text_of(row.get("name"))
+            tags = row.get("tags") or []
+            filename = name or f"resource-{resource_id}"
+            url = resource_download_url(resource_id)
+            info = classify(
+                filename=filename,
+                tags=tags,
+                doc_key=doc_key,
+            )
+            if info.skill_number:
+                info.skill_name = skills.name(info.edition_code, info.skill_number)
+            if queue_item(db, url=url, info=info, filename=filename, source="resources"):
+                added += 1
+                typed += 1
         db.commit()
-        print(f"资源目录 {code} 已加入队列")
+        print(f"资源类型 {doc_key} 新加入 {typed}")
     return added
 
 
@@ -512,9 +538,30 @@ def probe_td_langs(client: httpx.Client, document_id: int, skill_id: int) -> lis
     return found or ["en"]
 
 
+def skillman_targets(client: httpx.Client, skills: SkillIndex) -> dict[str, int]:
+    wanted: dict[str, int] = {}
+    status, data = api_get(client, f"{API}/skillman/events")
+    if status == 200 and data:
+        id_to_code = {event_id: code for code, event_id in skills.event_ids.items()}
+        for event in data.get("events") or []:
+            event_id = event.get("id")
+            name = text_of(event.get("name"))
+            code = code_from_event(event.get("code"), name, event_id) or id_to_code.get(event_id)
+            if not code:
+                continue
+            register_edition(code, name or edition_name(code), event_id)
+            skills.event_ids[code] = event_id
+            skills.event_names[event_id] = name or edition_name(code)
+            wanted[code] = event_id
+    for code, event_id in list(skills.event_ids.items()):
+        if str(code).startswith("WSC"):
+            wanted.setdefault(code, event_id)
+    return wanted
+
+
 def discover_skillman(db: sqlite3.Connection, client: httpx.Client, skills: SkillIndex) -> int:
     added = 0
-    for code, event_id in skills.event_ids.items():
+    for code, event_id in skillman_targets(client, skills).items():
         status, data = api_get(client, f"{API}/skillman/documents/events/{event_id}")
         if status in {400, 403}:
             info = classify(edition_hint=code, doc_key="technical-description")
@@ -531,6 +578,9 @@ def discover_skillman(db: sqlite3.Connection, client: httpx.Client, skills: Skil
         if status != 200 or not data:
             continue
         documents = data.get("documents") or []
+        if not documents:
+            print(f"{code} 技能管理无在线文档")
+            continue
         for document in documents:
             doc_id = document["id"]
             doc_name = text_of(document.get("name")).lower()
@@ -574,12 +624,13 @@ def discover_il(db: sqlite3.Connection, client: httpx.Client, skills: SkillIndex
         return 0
     for event in data.get("events") or []:
         event_id = event["id"]
+        name = text_of(event.get("name"))
         code = next((item for item, stored in skills.event_ids.items() if stored == event_id), None)
         if not code:
-            name = text_of(event.get("name"))
-            code = next((item for item, title in EDITION_NAMES.items() if title == name), None)
-        if not code or not member_area_code(code):
-            continue
+            code = code_from_event(event.get("code"), name, event_id)
+            register_edition(code, name or edition_name(code), event_id)
+            skills.event_ids[code] = event_id
+            skills.event_names[event_id] = name or edition_name(code)
         list_status, lists = api_get(client, f"{API}/il/events/{event_id}/lists")
         if list_status in {400, 403}:
             info = classify(edition_hint=code, doc_key="infrastructure-list")
@@ -678,6 +729,35 @@ def discover_cms(db: sqlite3.Connection, client: httpx.Client, skills: SkillInde
     return added
 
 
+def discover_public_pages(db: sqlite3.Connection, client: httpx.Client, skills: SkillIndex) -> int:
+    added = 0
+    for page_url, doc_key in PUBLIC_PAGES:
+        try:
+            response = client.get(page_url, headers={"Accept": "text/html"})
+        except httpx.HTTPError:
+            continue
+        if looks_like_login(response) or response.status_code >= 400:
+            continue
+        soup = BeautifulSoup(response.text, "html.parser")
+        found = 0
+        for anchor in soup.select("a[href]"):
+            href = anchor.get("href") or ""
+            match = re.search(r"/resources/download/(\d+)", href)
+            if not match:
+                continue
+            url = resource_download_url(match.group(1))
+            filename = anchor.get_text(" ", strip=True) or f"resource-{match.group(1)}"
+            info = classify(filename=filename, doc_key=doc_key)
+            if info.skill_number:
+                info.skill_name = skills.name(info.edition_code, info.skill_number)
+            if queue_item(db, url=url, info=info, filename=filename, source="public"):
+                added += 1
+                found += 1
+        db.commit()
+        print(f"公开页 {page_url} 新加入 {found}")
+    return added
+
+
 def discover_sample(db: sqlite3.Connection, client: httpx.Client) -> None:
     skills = SkillIndex()
     load_events(client, skills)
@@ -746,6 +826,7 @@ def discover(db: sqlite3.Connection, client: httpx.Client) -> None:
     added += discover_skillman(db, client, skills)
     added += discover_il(db, client, skills)
     added += discover_cms(db, client, skills)
+    added += discover_public_pages(db, client, skills)
     db.commit()
     print(f"新加入队列 {added} 个文件。当前队列 {count_state(db, 'queued')}。")
     refresh_tables(ROOT, client, db.execute("SELECT * FROM items").fetchall())
@@ -1051,7 +1132,7 @@ def pack(args: argparse.Namespace) -> None:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="把 WorldSkills 会员区竞赛资料下载到正文库，并用索引按技能、届次、语言查阅")
+    parser = argparse.ArgumentParser(description="把 WorldSkills 会员区可读资料下载到正文库，并用索引按技能、赛事、语言查阅")
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("login", help="打开浏览器登录并保存会话")
     download_parser = sub.add_parser("download", help="发现并下载文件")
@@ -1155,6 +1236,10 @@ def _self_test() -> None:
     assert td.skill_number == "33" and td.lang_code == "zh"
     se = classify(filename="WSC2022_TP01_actual.zip", tags=["WSC2022SE", "Skill 01"])
     assert se.edition_code == "WSC2022SE"
+    es = classify(filename="ES2025_TD12_en.pdf", tags=["ES2025", "Skill 12"], doc_key="technical-description")
+    assert es.edition_code == "ES2025" and es.skill_number == "12"
+    untagged = classify(filename="WSI_MS_benefits_of_membership.pdf", tags=["Official Document"], doc_key="official-document")
+    assert untagged.edition_code == GLOBAL_CODE
     number, name = parse_list_title("33 Automobile Technology")
     assert number == "33" and name == "Automobile Technology"
     path = classified_path(tp, "WSC2026_TP24_actual_en.zip")
@@ -1176,6 +1261,8 @@ def _self_test() -> None:
     )
     assert record["store_path"] == "WSC2005/TP/38/actual/und/TP38_38FI.zip"
     assert record["release"] == "wsc-2005-helsinki"
+    assert release_tag("ES2025") == "es-2025-herning"
+    assert release_tag(GLOBAL_CODE) == "global"
     assert kind_code("视频") == "VID"
     assert kind_code("video") == "VID"
     assert RESOURCE_TYPE_TO_DOC[3] == "video"

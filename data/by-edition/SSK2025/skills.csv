@@ -1,0 +1,93 @@
+﻿edition,skill,name,status,skill_id,type
+SSK2025,01,Polymechaniker/-in Automation,active,2586,official
+SSK2025,04,Automatiker/-in,active,2590,official
+SSK2025,05,Konstrukteur/-in,active,2610,official
+SSK2025,06,Polymechaniker/-in CNC Drehen,active,2587,official
+SSK2025,07,Polymechaniker/-in CNC Fräsen,active,2593,official
+SSK2025,08,Steinmetz/-in I Bau und Renovation,active,2605,official
+SSK2025,09,IT Software Solutions for Business,active,2594,official
+SSK2025,10,Schweisser/-in,active,2601,official
+SSK2025,11,Medientechnologe/-login I Print,active,2677,official
+SSK2025,12,Plattenleger/-in,active,2608,official
+SSK2025,13A,Carrosseriespengler/-in,active,2620,official
+SSK2025,13B,Fahrzeugschlosser/-in,active,2615,official
+SSK2025,15A,Heizungsinstallateur/-in,active,2595,official
+SSK2025,15B,Sanitärinstallateur/-in,active,2597,official
+SSK2025,16,Elektroniker/-in,active,2602,official
+SSK2025,17,Web Technologies,active,2606,official
+SSK2025,18,Elektroinstallateur/-in,active,2682,official
+SSK2025,20,Maurer/-in,active,2616,official
+SSK2025,21,Gipser/-in-Trockenbauer/-in,active,2618,official
+SSK2025,22,Maler/-in,active,2617,official
+SSK2025,24,Schreiner/-in I Möbelschreiner/-in,active,2669,official
+SSK2025,25,Schreiner/-in I Massivholzschreiner/-in,active,2666,official
+SSK2025,26,Zimmermann/Zimmerin,active,2673,official
+SSK2025,27,Goldschmied/-in,active,2686,official
+SSK2025,28,Florist/-in,active,2653,official
+SSK2025,29,Coiffeur/Coiffeuse,active,2643,official
+SSK2025,31,Bekleidungsgestalter/-in,active,2637,official
+SSK2025,32,Bäcker/-in-Konditor/-in-Confiseur/-in I Konditorei-Confiserie,active,2647,official
+SSK2025,33,Automobil-Mechatroniker/-in I Personenwagen,active,2630,official
+SSK2025,34,Cooking,active,2671,official
+SSK2025,35,Restaurant Service,active,2629,official
+SSK2025,36,Carrosserielackierer/-in,active,2626,official
+SSK2025,37,Gärtner/-in I Garten- und Landschaftsbau,active,2667,official
+SSK2025,38A,Kältesystem-Monteur/-in,active,2631,official
+SSK2025,38B,Lüftungsanlagenbauer/-in,active,2623,official
+SSK2025,38C,Kältesystem-Planer/-in,active,2672,official
+SSK2025,41,Fachmann/-frau Gesundheit,active,2660,official
+SSK2025,42,Metallbauer/-in,active,2654,official
+SSK2025,45,Formenbauer/-in,active,2641,official
+SSK2025,47,Bäcker/-in-Konditor/-in-Confiseur/-in I Bäckerei-Konditorei,active,2640,official
+SSK2025,48,Industry 4.0,active,2609,official
+SSK2025,49,Spengler/-in,active,2622,official
+SSK2025,50A,Boden-Parkettleger/-in I Parkett,active,2646,official
+SSK2025,50B,Boden-Parkettleger/-in I textile und elastische Beläge,active,2614,official
+SSK2025,52A,Abdichter/-in,active,2604,official
+SSK2025,52B,Dachdecker/-in,active,2599,official
+SSK2025,52C,Fassadenbauer/-in,active,2612,official
+SSK2025,52D,Gerüstbauer/-in,active,2600,official
+SSK2025,52E,Fachmann/-frau Sonnenschutz und Storentechnik,active,2689,official
+SSK2025,53,Cloud Computing,active,2655,official
+SSK2025,54,Cyber Security,active,2585,official
+SSK2025,56,Hotel Reception,active,2607,official
+SSK2025,58,Metallbaukonstrukteur/-in,active,2645,official
+SSK2025,60,Automobilmechatroniker/-in I Nutzfahrzeuge,active,2588,official
+SSK2025,61,Gleisbauer/-in,active,2596,official
+SSK2025,62,Detailhandelsfachmann/-frau I Bäckerei-Konditorei-Confiserie,active,2603,official
+SSK2025,63,Mediamatics,active,2589,official
+SSK2025,64,Fleischfachmann/-frau,active,2598,official
+SSK2025,65,Fachmann/-frau Reinigungstechnik,active,2688,official
+SSK2025,66,Gemüsegärtner/-in,active,2592,official
+SSK2025,67,Milchtechnologe/-login,active,2613,official
+SSK2025,68,Hufschmied/-in,active,2625,official
+SSK2025,69,"Landmaschinen-, Baumaschinen- und Motorgerätemechaniker/-in",active,2681,official
+SSK2025,70,Landwirt/-in,active,2619,official
+SSK2025,71,Logistiker/-in,active,2649,official
+SSK2025,72,Strassentransportfachmann/-frau,active,2650,official
+SSK2025,73,Fachmann/-frau Textilpflege,active,2642,official
+SSK2025,74,Weinfachmann/-frau,active,2687,official
+SSK2025,76,Anlagen- und Apparatebauer/-in,active,2627,official
+SSK2025,77,Hotellerie-Hauswirtschaft,active,2656,official
+SSK2025,78,Gebäudetechnikplaner/-in Heizung,active,2648,official
+SSK2025,79,Gebäudetechnikplaner/-in Lüftung,active,2665,official
+SSK2025,80,Gebäudetechnikplaner/-in Sanitär,active,2663,official
+SSK2025,81,Strassenbauer/-in,active,2639,official
+SSK2025,82,Fahrradmechaniker/-in,active,2633,official
+SSK2025,83,Motorradmechaniker/-in,active,2621,official
+SSK2025,84A,Raumausstatter/-in,active,2668,official
+SSK2025,84B,Wohntextilgestalter/-in,active,2659,official
+SSK2025,85,Entrepreneurship/Business Development,active,2661,official
+SSK2025,88,Interactive Media Designer,active,2636,official
+SSK2025,89,Fachmann/-frau Betreuung,active,2683,official
+SSK2025,90,Bootbauer/-in,active,2638,official
+SSK2025,92,Fachmann/-frau Bewegungs- und Gesundheitsförderung,active,2651,official
+SSK2025,93A,Fachmann/-frau Betriebsunterhalt I Hausdienst,active,2664,official
+SSK2025,93B,Fachmann/-frau Betriebsunterhalt I Werkdienst,active,2628,official
+SSK2025,94,Medizinprodukttechnologe/-login,active,2670,official
+SSK2025,95,Ofenbauer/-in,active,2662,official
+SSK2025,96A,Mikromechaniker/-in,active,2674,official
+SSK2025,96B,Mikrozeichner/-in,active,2678,official
+SSK2025,96C,Qualitätsfachmann/-frau in Mikrotechnik,active,2679,official
+SSK2025,98,Polygraf/-in,active,2676,official
+SSK2025,99,Drogist/-in,active,2685,official

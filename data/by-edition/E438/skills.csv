@@ -1,0 +1,59 @@
+﻿edition,skill,name,status,skill_id,type
+E438,02,Information Network Cabling,active,568,official
+E438,03,Manufacturing Team Challenge,active,573,official
+E438,04,Mechatronics,active,574,official
+E438,05,Mechanical Engineering Design - CAD,active,575,official
+E438,06,CNC Turning,active,576,official
+E438,07,CNC Milling,active,577,official
+E438,08,Architectural Stonemasonry,active,560,official
+E438,10,Welding,active,578,official
+E438,11,Print Media Technology,active,564,official
+E438,12,Wall and Floor Tiling,active,548,official
+E438,13,Autobody Repair,active,569,official
+E438,14,Aircraft Maintenance,active,542,official
+E438,15,Plumbing and Heating,active,549,official
+E438,17,Web design,active,565,official
+E438,18,Electrical Installations,active,550,official
+E438,19,Industrial Control,active,570,official
+E438,20,Bricklaying,active,551,official
+E438,21,Plastering and Drywall Systems,active,552,official
+E438,22,Painting and Decorating,active,553,official
+E438,23,Mobile Robotics,active,571,official
+E438,24,Cabinetmaking,active,554,official
+E438,25,Joinery,active,555,official
+E438,26,Carpentry,active,556,official
+E438,27,Jewellery,active,581,official
+E438,28,Floristry,active,587,official
+E438,29,Hairdressing,active,582,official
+E438,30,Beauty Therapy,active,583,official
+E438,31,Fashion Technology,active,584,official
+E438,32,Pâtisserie and Confectionery,active,536,official
+E438,33,Automobile Technology,active,543,official
+E438,34,Cooking,active,537,official
+E438,35,Restaurant Service,active,538,official
+E438,36,Car Painting,active,544,official
+E438,37,Landscape Gardening,active,588,official
+E438,38,Refrigeration and Air Conditioning,active,572,official
+E438,39,IT Network Systems Administration,active,566,official
+E438,40,Graphic Design Technology,active,567,official
+E438,41,Health and Social Care,active,585,official
+E438,42,Construction Metal Work,active,557,official
+E438,43,Sheet Metal Technology,active,579,official
+E438,46,Concrete Construction Work,active,558,official
+E438,47,Bakery,active,539,official
+E438,49,Heavy Vehicle Maintenance,active,545,official
+E438,50,Floor Laying,active,559,official
+E438,D3,Truck Maintenance,active,546,official
+E438,E49,Metal Roofing,active,561,official
+E438,MD02,Fishmonger,active,590,demo
+E438,MD03,Dental technician,active,591,demo
+E438,MD04,Upholstery,active,592,demo
+E438,N10,Robotics Integrator,active,580,official
+E438,N11,Butchery,active,540,official
+E438,N2,Horticulture,active,589,official
+E438,N3,Motorcycle Technology,active,547,official
+E438,N4,Wine Tester,active,541,official
+E438,N6,Road Building,active,562,official
+E438,N8,Mirror Factory,active,563,official
+E438,N9,Cleanliness professions,active,586,official
+E438,ZZ,WSFR Needs,active,706,official

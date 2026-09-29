@@ -1,0 +1,52 @@
+﻿edition,skill,name,status,skill_id,type
+E622,01,Industrial Mechanics,active,2532,official
+E622,02,Information Network Cabling,active,2533,official
+E622,04,Mechatronics,active,2536,official
+E622,05,Mechanical Engineering CAD,active,2537,official
+E622,06,CNC Turning,active,2538,official
+E622,07,CNC Milling,active,2539,official
+E622,08,Mobile Applications Development,active,2540,official
+E622,09,IT Software Solutions for Business,active,2541,official
+E622,10,Welding,active,2542,official
+E622,12,Wall and Floor Tiling,active,2543,official
+E622,13,Autobody Repais,active,2544,official
+E622,14,Aircraft Maintenance,active,2545,official
+E622,15,Plumbing and Heating,active,2546,official
+E622,16,Electronics,active,2547,official
+E622,17,Web Technologies,active,2548,official
+E622,18,Electrical Installations,active,2549,official
+E622,19,Industrial Control,active,2550,official
+E622,20,Bricklaying,active,2551,official
+E622,21,Plastering and Drywall Systems,active,2552,official
+E622,22,Painting and Decorating,active,2553,official
+E622,23,Autonomous Mobile Robotics,active,2554,official
+E622,24,Cabinetmaking,active,2555,official
+E622,25,Joinery,active,2556,official
+E622,26,Carpentry,active,2557,official
+E622,27,Jewellery,active,2558,official
+E622,31,Fashion Technology,active,2559,official
+E622,32,Patisserie and Confectionery,active,2560,official
+E622,33,Automobile Technology,active,2561,official
+E622,36,Car Painting,active,2562,official
+E622,37,Green Space Construction,active,2563,official
+E622,38,Refrigeration Systems,active,2564,official
+E622,39,IT Network Systems Administration,active,2565,official
+E622,40,Graphic Design Technology,active,2566,official
+E622,44,Visual Merchandising,active,2567,official
+E622,46,Concrete Construction Work,active,2568,official
+E622,47,Bakery,active,2569,official
+E622,48,Industry 4.0,active,2570,official
+E622,49,Heavy Vehicle Technology,active,2571,official
+E622,50,3D Digital Game Art,active,2572,official
+E622,51,Logistics and Freight Forwarding,active,2573,official
+E622,52,Chemical Laboratory Technology,active,2574,official
+E622,53,Cloud Computing,active,2575,official
+E622,54,Cyber Security,active,2576,official
+E622,55,Water Technology,active,2577,official
+E622,57,Additive Manufacturing,active,2578,official
+E622,58,Digital Construction,active,2579,official
+E622,59,Industrial Design Technology,active,2580,official
+E622,60,Optoelectronic Technology,active,2581,official
+E622,61,Rail Vehicle Technology,active,2582,official
+E622,62,Green Energy Technology,active,2583,official
+E622,63,Robot Systems Integration,active,2584,official

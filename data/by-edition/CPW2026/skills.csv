@@ -1,0 +1,65 @@
+﻿edition,skill,name,status,skill_id,type
+CPW2026,01,Industrial Mechanics,active,2972,official
+CPW2026,02,ICT Network Infrastructure,active,2977,official
+CPW2026,04,Mechatronics,active,2974,official
+CPW2026,05,Mechanical Engineering CAD,active,2969,official
+CPW2026,06,CNC Turning,active,2976,official
+CPW2026,07,CNC Milling,active,2970,official
+CPW2026,08,Mobile Applications Development,active,2989,official
+CPW2026,09,Software Applications Development,active,2973,official
+CPW2026,10,Welding,active,2979,official
+CPW2026,12,Wall and Floor Tiling,active,2988,official
+CPW2026,13,Autobody Repair,active,2981,official
+CPW2026,14,Aircraft Maintenance,active,2994,official
+CPW2026,15,Plumbing and Heating,active,2987,official
+CPW2026,16,Electronics,active,3020,official
+CPW2026,17,Web Technologies,active,2991,official
+CPW2026,18,Electrical Installations,active,2978,official
+CPW2026,19,Industrial Control,active,2971,official
+CPW2026,20,Bricklaying,active,3009,official
+CPW2026,21,Plastering and Drywall Systems,active,2985,official
+CPW2026,22,Painting and Decorating,active,2975,official
+CPW2026,23,Autonomous Mobile Robotics,active,3024,official
+CPW2026,24,Cabinetmaking,active,3027,official
+CPW2026,25,Joinery,active,2997,official
+CPW2026,26,Carpentry,active,3021,official
+CPW2026,27,Jewellery,active,3026,official
+CPW2026,28,Floristry,active,3023,official
+CPW2026,29,Hairdressing,active,3018,official
+CPW2026,30,Beauty Therapy,active,3005,official
+CPW2026,31,Fashion Technology,active,3019,official
+CPW2026,32,Pâtisserie and Confectionery,active,2999,official
+CPW2026,33,Automobile Technology,active,2982,official
+CPW2026,34,Cooking,active,2998,official
+CPW2026,35,Restaurant Service,active,3017,official
+CPW2026,36,Car Painting,active,3031,official
+CPW2026,37,Landscape Gardening,active,3029,official
+CPW2026,38,Refrigeration and Air Conditioning,active,2984,official
+CPW2026,39,IT Network Systems Administration,active,2995,official
+CPW2026,40,Graphic Design Technology,active,3025,official
+CPW2026,41,Health and Social Care,active,2986,official
+CPW2026,44,Visual Merchandising,active,3000,official
+CPW2026,46,Concrete Construction Work,active,2990,official
+CPW2026,47,Bakery,active,2993,official
+CPW2026,48,Industry 4.0,active,2980,official
+CPW2026,49,Heavy Vehicle Technology,active,3002,official
+CPW2026,50,3D Digital Game Art,active,2996,official
+CPW2026,51,Logistics and Freight Forwarding,active,3007,official
+CPW2026,52,Chemical Laboratory Technology,active,2983,official
+CPW2026,53,Cloud Computing,active,3022,official
+CPW2026,54,Cyber Security,active,3001,official
+CPW2026,55,Water Technology,active,2992,official
+CPW2026,56,Hotel Reception,active,3030,official
+CPW2026,57,Additive Manufacturing,active,3006,official
+CPW2026,58,Digital Construction,active,3003,official
+CPW2026,59,Industrial Design Technology,active,3016,official
+CPW2026,60,Optoelectronic Technology,active,3004,official
+CPW2026,62,Renewable Energy,active,3014,official
+CPW2026,63,Robot Systems Integration,active,3008,official
+CPW2026,PO1,Dental Prosthetics,active,3010,possible_official
+CPW2026,PO2,Digital Interactive Media Design,active,3013,possible_official
+CPW2026,PO3,Intelligent Security Technology,active,3011,possible_official
+CPW2026,PO4,Rail Vehicle Technology,active,3012,possible_official
+CPW2026,PO5,Retail Sales,active,3015,possible_official
+CPW2026,PO6,Software Testing,active,3028,possible_official
+CPW2026,PO7,Unmanned Aerial Systems,active,2968,possible_official

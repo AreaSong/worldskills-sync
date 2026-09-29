@@ -1,0 +1,64 @@
+﻿edition,skill,name,status,skill_id,type
+CIW2023,01,Industrial Mechanics,active,1779,official
+CIW2023,02,Information Network Cabling,active,1780,official
+CIW2023,03,Manufacturing Team Challenge,active,1774,official
+CIW2023,04,Mechatronics,active,1773,official
+CIW2023,05,Mechanical Engineering CAD,active,1786,official
+CIW2023,06,CNC Turning,active,1788,official
+CIW2023,07,CNC Milling,active,1781,official
+CIW2023,08,Mobile Applications Development,active,1822,official
+CIW2023,09,IT Software Solutions for Business,active,1776,official
+CIW2023,10,Welding,active,1810,official
+CIW2023,11,Print Media Technology,active,1783,official
+CIW2023,12,Wall and Floor Tiling,active,1777,official
+CIW2023,13,Autobody Repair,active,1775,official
+CIW2023,14,Aircraft Maintenance,active,1820,official
+CIW2023,15,Plumbing and Heating,active,1778,official
+CIW2023,16,Electronics,active,1772,official
+CIW2023,17,Web Technologies,active,1814,official
+CIW2023,18,Electrical Installations,active,1784,official
+CIW2023,19,Industrial Control,active,1807,official
+CIW2023,20,Bricklaying,active,1808,official
+CIW2023,21,Plastering and Drywall Systems,active,1811,official
+CIW2023,22,Painting and Decorating,active,1833,official
+CIW2023,23,Mobile Robotics,active,1793,official
+CIW2023,24,Cabinetmaking,active,1796,official
+CIW2023,25,Joinery,active,1815,official
+CIW2023,26,Carpentry,active,1809,official
+CIW2023,27,Jewellery,active,1832,official
+CIW2023,28,Floristry,active,1816,official
+CIW2023,29,Hairdressing,active,1825,official
+CIW2023,30,Beauty Therapy,active,1801,official
+CIW2023,31,Fashion Technology,active,1813,official
+CIW2023,32,Pâtisserie and Confectionery,active,1802,official
+CIW2023,33,Automobile Technology,active,1818,official
+CIW2023,34,Cooking,active,1805,official
+CIW2023,35,Restaurant Service,active,1789,official
+CIW2023,36,Car Painting,active,1785,official
+CIW2023,37,Landscape Gardening,active,1804,official
+CIW2023,38,Refrigeration and Air Conditioning,active,1827,official
+CIW2023,39,IT Network Systems Administration,active,1790,official
+CIW2023,40,Graphic Design Technology,active,1795,official
+CIW2023,41,Health and Social Care,active,1828,official
+CIW2023,42,Construction Metal Work,active,1830,official
+CIW2023,44,Visual Merchandising,active,1787,official
+CIW2023,45,Prototype Modelling,active,1826,official
+CIW2023,46,Concrete Construction Work,active,1821,official
+CIW2023,47,Bakery,active,1812,official
+CIW2023,48,Industry 4.0,active,1782,official
+CIW2023,49,Heavy Vehicle Technology,active,1794,official
+CIW2023,50,3D Digital Game Art,active,1831,official
+CIW2023,51,Freight Forwarding,active,1800,official
+CIW2023,52,Chemical Laboratory Technology,active,1819,official
+CIW2023,53,Cloud Computing,active,1823,official
+CIW2023,54,Cyber Security,active,1792,official
+CIW2023,55,Water Technology,active,1799,official
+CIW2023,56,Hotel Reception,active,1829,official
+CIW2023,57,Additive Manufacturing,active,1803,official
+CIW2023,58,Digital Construction,active,1824,official
+CIW2023,59,Industrial Design Technology,active,1806,official
+CIW2023,60,Optoelectronic Technology,active,1817,official
+CIW2023,61,Rail Vehicle Technology,active,1797,official
+CIW2023,62,Renewable Energy,active,1798,official
+CIW2023,63,Robot Systems Integration,active,1791,official
+CIW2023,P01,Stonemasonry,active,1771,presentation

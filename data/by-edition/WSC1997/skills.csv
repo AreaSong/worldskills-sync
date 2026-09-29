@@ -1,0 +1,39 @@
+﻿edition,skill,name,status,skill_id,type
+WSC1997,01,Fitting,active,213,official
+WSC1997,02,Press tool making,active,214,official
+WSC1997,03,Instrument making,active,215,official
+WSC1997,04,Mechatronics,active,216,official
+WSC1997,05,Mechanical Engineering Drafting CAD,active,217,official
+WSC1997,06,CNC Turning,active,218,official
+WSC1997,07,CNC Milling,active,219,official
+WSC1997,08,Construction steel work,active,220,official
+WSC1997,09,Information Technology,active,221,official
+WSC1997,10,Welding,active,222,official
+WSC1997,11,Pattern Making,active,223,official
+WSC1997,12,Wall and Floor Tiling,active,224,official
+WSC1997,13,Autobody Repair,active,225,official
+WSC1997,14,Sheet metal work,active,226,official
+WSC1997,15,Plumbing,active,227,official
+WSC1997,16,Industrial Electronics,active,228,official
+WSC1997,17,Electronic Applications,active,229,official
+WSC1997,18,Commercial wiring,active,230,official
+WSC1997,19,Industrial wiring,active,231,official
+WSC1997,20,Bricklaying,active,232,official
+WSC1997,21,Stonemasonry,active,233,official
+WSC1997,22,Painting and Decorating,active,234,official
+WSC1997,23,Plastering,active,235,official
+WSC1997,24,Cabinetmaking,active,236,official
+WSC1997,25,Joinery,active,237,official
+WSC1997,26,Carpentry,active,238,official
+WSC1997,27,Jewellery,active,239,official
+WSC1997,28,Floristry,active,240,official
+WSC1997,29,Ladies' hairdressing,active,241,official
+WSC1997,30,Men's hairdressing,active,242,official
+WSC1997,31,Ladies Dressmaking,active,243,official
+WSC1997,33,Automobile Technology,active,244,official
+WSC1997,34,Cookery,active,245,official
+WSC1997,35,Restaurant Service,active,246,official
+WSC1997,36,Car Painting,active,247,official
+WSC1997,37,Agricultural mechanics,active,248,official
+WSC1997,38,Refrigeration Technic,active,249,official
+WSC1997,40,Tinsmith (Roofing),active,250,official

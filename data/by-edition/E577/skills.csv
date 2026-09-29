@@ -1,0 +1,64 @@
+﻿edition,skill,name,status,skill_id,type
+E577,02,Information Network Cabling,active,889,official
+E577,03,Manufacturing Team Challenge,active,886,official
+E577,04,Mechatronics,active,887,official
+E577,05,Mechanical Engineering Design - CAD,active,891,official
+E577,06,CNC Turning,active,888,official
+E577,07,CNC Milling,active,892,official
+E577,08,Architectural Stonemasonry,active,890,official
+E577,09,IT Software Solutions for Business,active,945,official
+E577,10,Welding,active,893,official
+E577,11,Print Media Technology,active,894,official
+E577,12,Wall and Floor Tiling,active,921,official
+E577,13,Autobody Repair,active,895,official
+E577,14,Aircraft Maintenance,active,920,official
+E577,15,Plumbing and Heating,active,896,official
+E577,16,Electronics,active,946,official
+E577,17,Web design,active,898,official
+E577,18,Electrical Installations,active,897,official
+E577,19,Industrial Control,active,923,official
+E577,20,Bricklaying,active,925,official
+E577,21,Plastering and Drywall Systems,active,929,official
+E577,22,Painting and Decorating,active,924,official
+E577,23,Mobile Robotics,active,926,official
+E577,24,Cabinetmaking,active,927,official
+E577,25,Joinery,active,928,official
+E577,26,Carpentry,active,931,official
+E577,27,Jewellery,active,932,official
+E577,28,Floristry,active,930,official
+E577,29,Hairdressing,active,918,official
+E577,30,Beauty Therapy,active,908,official
+E577,31,Fashion Technology,active,939,official
+E577,32,Pâtisserie and Confectionery,active,938,official
+E577,33,Automobile Technology,active,919,official
+E577,34,Cooking,active,934,official
+E577,35,Restaurant Service,active,902,official
+E577,36,Car Painting,active,922,official
+E577,37,Landscape Gardening,active,933,official
+E577,38,Refrigeration and Air Conditioning,active,914,official
+E577,39,IT Network Systems Administration,active,899,official
+E577,40,Graphic Design Technology,active,912,official
+E577,41,Health and Social Care,active,903,official
+E577,42,Construction Metal Work,active,942,official
+E577,44,Visual merchandising,active,947,official
+E577,46,Concrete Construction Work,active,911,official
+E577,47,Bakery,active,916,official
+E577,49,Heavy Vehicle Maintenance,active,941,official
+E577,50,3D Digital Game Art,active,943,official
+E577,54,Cyber Security,active,944,official
+E577,56,Hotel Reception,active,948,official
+E577,D1,Marble Design,active,967,demo
+E577,D2,Entrepreneurship Team Challenge,active,1026,demo
+E577,E49,Metal Roofing,active,904,official
+E577,E50,Floor Laying,active,905,official
+E577,E54,Truck Maintenance,active,913,official
+E577,N1,Sheet Metal Work,active,906,official
+E577,N10,Robot Systems Integration,active,935,official
+E577,N11,Butchery,active,907,official
+E577,N2,Horticulture,active,915,official
+E577,N3,Motorcycle Technology,active,917,official
+E577,N4,Wine Tester,active,936,official
+E577,N5,Social Care,active,1025,official
+E577,N6,Road Building,active,909,official
+E577,N8,Glass Construction Technology,active,900,official
+E577,N9,Cleanliness professions,active,901,official

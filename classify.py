@@ -113,7 +113,12 @@ LANG_FOLDERS = {
     "th": "泰语",
 }
 
+GLOBAL_CODE = "GLOBAL"
+
 EDITION_NAMES = {
+    "WSC1995": "WorldSkills Lyon 1995",
+    "WSC1997": "WorldSkills St. Gallen 1997",
+    "WSC1999": "WorldSkills Montreal 1999",
     "WSC2001": "WorldSkills Seoul 2001",
     "WSC2003": "WorldSkills St Gallen 2003",
     "WSC2005": "WorldSkills Helsinki 2005",
@@ -128,11 +133,42 @@ EDITION_NAMES = {
     "WSC2022SE": "WorldSkills Competition 2022 Special Edition",
     "WSC2024": "WorldSkills Lyon 2024",
     "WSC2026": "WorldSkills Shanghai 2026",
+    "WSC2028": "WorldSkills Aichi 2028",
+    "ES2021": "EuroSkills Graz 2021",
+    "ES2023": "EuroSkills Gdansk 2023",
+    "ES2025": "EuroSkills Herning 2025",
+    "ES2027": "EuroSkills Düsseldorf 2027",
+    "CPW2022": "Competition Preparation Week Shanghai 2022",
+    "CPW2024": "Competition Preparation Week Lyon 2024",
+    "CPW2026": "Competition Preparation Week Shanghai 2026",
+    "CIW2023": "Competition Infrastructure Workshop 2023",
+    "CIW2025": "Competition Infrastructure Workshop 2025",
+    "CER2026": "WorldSkills Shanghai 2026 Ceremonies",
+    GLOBAL_CODE: "未标注赛事",
 }
 
-MEMBER_AREA_CODES = tuple(EDITION_NAMES.keys())
+EDITION_TYPES: dict[str, str] = {
+    "CPW2022": "preparation_meeting",
+    "CPW2024": "preparation_meeting",
+    "CPW2026": "preparation_meeting",
+    "CIW2023": "preparation_meeting",
+    "CIW2025": "preparation_meeting",
+    "CER2026": "competition",
+    GLOBAL_CODE: "",
+}
+
+NAME_TO_CODE = {
+    "Competition Infrastructure Workshop 2023": "CIW2023",
+    "WorldSkills Shanghai 2026 Ceremonies": "CER2026",
+    "WorldSkills Shanghai 2022": "WSC2022",
+}
+
+MEMBER_AREA_CODES = tuple(code for code in EDITION_NAMES if code != GLOBAL_CODE)
 
 EDITION_EVENT_IDS = {
+    "WSC1995": 621,
+    "WSC1997": 1,
+    "WSC1999": 2,
     "WSC2001": 3,
     "WSC2003": 4,
     "WSC2005": 5,
@@ -147,6 +183,17 @@ EDITION_EVENT_IDS = {
     "WSC2022SE": 594,
     "WSC2024": 579,
     "WSC2026": 611,
+    "WSC2028": 630,
+    "ES2021": 572,
+    "ES2023": 593,
+    "ES2025": 612,
+    "ES2027": 639,
+    "CPW2022": 590,
+    "CPW2024": 609,
+    "CPW2026": 635,
+    "CIW2023": 603,
+    "CIW2025": 626,
+    "CER2026": 646,
 }
 
 CMS_SLUG_TO_CODE = {
@@ -177,14 +224,15 @@ CMS_SECTION_TO_DOC = {
 }
 
 SKILL_TAG_RE = re.compile(r"^Skill\s+(\d+)$", re.I)
-CODE_TAG_RE = re.compile(r"^WSC(\d{4})(SE)?$", re.I)
-FILENAME_CODE_RE = re.compile(r"\bWSC(\d{4})(SE)?\b", re.I)
+EVENT_PREFIXES = "WSC|ES|CPW|CIW|GA|SSK|WSFR|NSCS|NSCO|CPM|SDW|WSEGA|WSAL|NSC|CER"
+CODE_TAG_RE = re.compile(rf"^({EVENT_PREFIXES})(\d{{4}})(SE)?$", re.I)
+FILENAME_CODE_RE = re.compile(rf"\b({EVENT_PREFIXES})(\d{{4}})(SE)?\b", re.I)
 TP_RE = re.compile(
-    r"WSC(\d{4})(SE)?[_ ]TP([0-9]{1,3}|[A-Z]\d?)(?:[_]([A-Za-z0-9]+))*",
+    rf"({EVENT_PREFIXES})(\d{{4}})(SE)?[_ ]TP([0-9]{{1,3}}|[A-Z]\d?)(?:[_]([A-Za-z0-9]+))*",
     re.I,
 )
-TD_RE = re.compile(r"WSC(\d{4})(SE)?[_ ]TD[_ ]?([0-9]{1,3}|[A-Z]\d?)", re.I)
-IL_RE = re.compile(r"WSC(\d{4})(SE)?[_ ]IL[_ ]?([0-9]{1,3}|[A-Z]\d?)", re.I)
+TD_RE = re.compile(rf"({EVENT_PREFIXES})(\d{{4}})(SE)?[_ ]TD[_ ]?([0-9]{{1,3}}|[A-Z]\d?)", re.I)
+IL_RE = re.compile(rf"({EVENT_PREFIXES})(\d{{4}})(SE)?[_ ]IL[_ ]?([0-9]{{1,3}}|[A-Z]\d?)", re.I)
 LANG_SUFFIX_RE = re.compile(r"(?:^|[_\-.])([a-z]{2})(?:_[A-Z]{2})?(?:\.[A-Za-z0-9]+)?$")
 LIST_NAME_RE = re.compile(r"^(\d{1,3})\s+(.+)$")
 
@@ -225,8 +273,53 @@ def edition_name(code: str | None, fallback: str = "未识别届次") -> str:
     return EDITION_NAMES.get(code, fallback)
 
 
+def normalize_event_code(code: str | None) -> str | None:
+    if not code:
+        return None
+    text = re.sub(r"\s+", "", str(code).strip())
+    return text or None
+
+
+def event_type_of(code: str | None) -> str:
+    if not code:
+        return ""
+    return EDITION_TYPES.get(code, "competition" if str(code).startswith(("WSC", "ES")) else "")
+
+
+def register_edition(code: str, name: str = "", event_id: int | None = None, event_type: str = "") -> str:
+    normalized = normalize_event_code(code) or GLOBAL_CODE
+    if name and (normalized not in EDITION_NAMES or EDITION_NAMES[normalized] == normalized):
+        EDITION_NAMES[normalized] = name
+    elif normalized not in EDITION_NAMES:
+        EDITION_NAMES[normalized] = name or normalized
+    if event_id is not None:
+        EDITION_EVENT_IDS.setdefault(normalized, int(event_id))
+    if event_type:
+        EDITION_TYPES.setdefault(normalized, event_type)
+    return normalized
+
+
+def code_from_event(code: str | None, name: str | None = None, event_id: int | None = None) -> str:
+    normalized = normalize_event_code(code)
+    if normalized:
+        return normalized
+    title = (name or "").strip()
+    if title in NAME_TO_CODE:
+        return NAME_TO_CODE[title]
+    if event_id is not None:
+        for known, stored in EDITION_EVENT_IDS.items():
+            if stored == event_id:
+                return known
+        return f"E{event_id}"
+    return GLOBAL_CODE
+
+
+def archive_codes() -> tuple[str, ...]:
+    return tuple(code for code in EDITION_NAMES if code != GLOBAL_CODE)
+
+
 def member_area_code(code: str | None) -> bool:
-    return bool(code) and code in MEMBER_AREA_CODES
+    return bool(code)
 
 
 KNOWN_LANGS = frozenset(code[:2] for code in LANG_FOLDERS)
@@ -272,27 +365,29 @@ def parse_stage(text: str, tags: list[str] | None = None) -> str | None:
     return None
 
 
+def compose_event_code(prefix: str, year: str, se: str | None) -> str:
+    prefix = prefix.upper()
+    suffix = "SE" if se else ""
+    if prefix == "WSC" and year == "2022" and suffix:
+        return "WSC2022SE"
+    return f"{prefix}{year}{suffix}"
+
+
 def parse_code_from_text(text: str) -> str | None:
-    match = re.search(r"WSC\s*(\d{4})\s*(SE)?", text, re.I)
+    match = FILENAME_CODE_RE.search(text.replace(" ", ""))
+    if not match:
+        match = re.search(rf"({EVENT_PREFIXES})\s*(\d{{4}})\s*(SE)?", text, re.I)
     if not match:
         return None
-    year = match.group(1)
-    suffix = "SE" if match.group(2) else ""
-    code = f"WSC{year}{suffix}"
-    if year == "2022" and suffix:
-        return "WSC2022SE"
-    return code if member_area_code(code) else code
+    return compose_event_code(match.group(1), match.group(2), match.group(3))
 
 
 def parse_skill_from_filename(name: str) -> tuple[str | None, str | None]:
     for regex in (TP_RE, TD_RE, IL_RE):
         match = regex.search(name.replace(" ", "_"))
         if match:
-            year, se, skill = match.group(1), match.group(2), match.group(3)
-            code = f"WSC{year}{'SE' if se else ''}"
-            if year == "2022" and se:
-                code = "WSC2022SE"
-            return code, pad_skill(skill)
+            prefix, year, se, skill = match.group(1), match.group(2), match.group(3), match.group(4)
+            return compose_event_code(prefix, year, se), pad_skill(skill)
     return None, None
 
 
@@ -301,16 +396,17 @@ def parse_tags(tags: list[str] | None) -> tuple[str | None, str | None, str | No
     skill = None
     stage_hint = None
     for tag in tags or []:
-        code_match = CODE_TAG_RE.match(tag.strip())
+        raw = tag.strip()
+        if raw in EDITION_NAMES:
+            code = raw
+        compact = re.sub(r"\s+", "", raw)
+        code_match = CODE_TAG_RE.match(compact)
         if code_match:
-            year, se = code_match.group(1), code_match.group(2)
-            code = f"WSC{year}{'SE' if se else ''}"
-            if year == "2022" and se:
-                code = "WSC2022SE"
-        skill_match = SKILL_TAG_RE.match(tag.strip())
+            code = compose_event_code(code_match.group(1), code_match.group(2), code_match.group(3))
+        skill_match = SKILL_TAG_RE.match(raw)
         if skill_match:
             skill = pad_skill(skill_match.group(1))
-        lowered = tag.lower()
+        lowered = raw.lower()
         if "actual" in lowered:
             stage_hint = "正式"
         elif "pre" in lowered:
@@ -334,9 +430,10 @@ def classify(
     file_code, file_skill = parse_skill_from_filename(filename)
     text_code = parse_code_from_text(filename)
     code = edition_hint or tag_code or file_code or text_code
-    if code == "WSC2022SE" or (code == "WSC2022" and "SE" in filename.upper()):
-        if "SE" in (filename.upper() + " ".join(tags or []).upper()):
-            code = "WSC2022SE"
+    blob = (filename + " " + " ".join(tags or [])).upper()
+    if code == "WSC2022" and "SE" in blob:
+        code = "WSC2022SE"
+    code = normalize_event_code(code) or GLOBAL_CODE
     number = pad_skill(skill_number) or tag_skill or file_skill
     stage = parse_stage(filename, tags) or tag_stage
     lang = (lang_code or parse_lang(filename) or "").lower().replace("-", "_") or None
@@ -347,7 +444,7 @@ def classify(
         key = RESOURCE_TYPE_TO_DOC.get(key, "resources")
     name = edition_name(code, code or "未识别届次")
     return Classified(
-        edition_code=code if member_area_code(code) else code,
+        edition_code=code,
         edition_name=name,
         skill_number=number,
         skill_name=skill_name,

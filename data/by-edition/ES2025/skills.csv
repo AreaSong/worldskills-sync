@@ -1,0 +1,40 @@
+﻿edition,skill,name,status,skill_id,type
+ES2025,04,Mechatronics,active,2065,official
+ES2025,05,Mechanical Engineering - CAD,active,2075,official
+ES2025,07,CNC-Milling,active,2086,official
+ES2025,10,Welding,active,2067,official
+ES2025,12,Wall and Floor Tiling,active,2076,official
+ES2025,15,Plumbing and Heating,active,2073,official
+ES2025,16,Electronics Prototyping,active,2097,official
+ES2025,17,Web Development,active,2068,official
+ES2025,18,Electrical Installations,active,2069,official
+ES2025,19,Industrial Control,active,2095,official
+ES2025,20,Bricklaying,active,2082,official
+ES2025,21,Plastering and Dry Wall Systems,active,2084,official
+ES2025,22,Painting and Decorating,active,2083,official
+ES2025,24,Cabinetmaking,active,2070,official
+ES2025,25,Joinery,active,2077,official
+ES2025,26,Carpentry,active,2080,official
+ES2025,27,Robot Systems Integration,active,2090,official
+ES2025,28,Floristry,active,2072,official
+ES2025,29,Hairdressing,active,2062,official
+ES2025,30,Beauty Therapy,active,2081,official
+ES2025,31,Fashion Design and Technology Team Challenge,active,2096,official
+ES2025,33,Automobile Technology,active,2063,official
+ES2025,34,Cooking,active,2061,official
+ES2025,35,Restaurant Service,active,2064,official
+ES2025,36,Bakery,active,2089,official
+ES2025,37,Pâtisserie and Confectionery,active,2093,official
+ES2025,38,Refrigeration and Air Conditioning,active,2078,official
+ES2025,39,IT Network Systems Administration,active,2074,official
+ES2025,40,Graphic Design Technology,active,2071,official
+ES2025,41,Health and Social Care,active,2091,official
+ES2025,45,Software Applications Development,active,2094,official
+ES2025,46,Entrepreneurship / Business Development Team Challenge,active,2079,official
+ES2025,48,Industry 4.0,active,2098,official
+ES2025,50,Floor Laying,active,2092,official
+ES2025,51,Landscape Gardening,active,2088,official
+ES2025,53,Heavy Vehicle Technology,active,2085,official
+ES2025,54,Truck and Bus Technology,active,2087,official
+ES2025,57,Hotel Reception,active,2066,official
+ES2025,HPS,(HPS) Concrete Construction,active,2691,presentation

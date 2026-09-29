@@ -1,0 +1,92 @@
+﻿edition,skill,name,status,skill_id,type
+SSK2022,01,Polymechaniker/in Automation,active,1232,official
+SSK2022,04,Automatiker/in,active,1172,official
+SSK2022,05,Konstrukteur/in,active,1214,official
+SSK2022,06,Polymechaniker/in Drehen,active,1233,official
+SSK2022,07,Polymechaniker/in CNC Fräsen,active,1234,official
+SSK2022,08,Steinmetz/in  I  Bau und Renovation,active,1241,official
+SSK2022,09,IT Software Solutions for Business,active,1211,official
+SSK2022,10,Schweisser/in,active,1303,official
+SSK2022,12,Plattenleger/in,active,1231,official
+SSK2022,13A,Carrosseriespengler/in,active,1181,official
+SSK2022,13B,Fahrzeugschlosser/in,active,1190,official
+SSK2022,15A,Heizungsinstallateur/in,active,1204,official
+SSK2022,15B,Sanitärinstallateur/in,active,1237,official
+SSK2022,16,Elektroniker/in,active,1185,official
+SSK2022,17,Web Technologies,active,1245,official
+SSK2022,20,Maurer/in,active,1222,official
+SSK2022,21,Gipser/in - Trockenbauer/in,active,1202,official
+SSK2022,22,Maler/in,active,1221,official
+SSK2022,24,Schreiner/in I  Möbelschreiner,active,1239,official
+SSK2022,25,Schreiner/in I  Bauschreiner,active,1238,official
+SSK2022,26,Zimmermann/Zimmerin,active,1249,official
+SSK2022,28,Florist/in,active,1193,official
+SSK2022,29,Coiffeur / Coiffeuse,active,1182,official
+SSK2022,30,Kosmetiker/in,active,1215,official
+SSK2022,31,Bekleidungsgestalter/in,active,1176,official
+SSK2022,32,Bäcker/in-Konditor/in-Confiseur/in I Konditorei-Confiserie,active,1175,official
+SSK2022,33,Automobil-Mechatroniker/in  I  Personenwagen,active,1173,official
+SSK2022,33WS,Automobil-Mechatroniker/in I WorldSkills Training,active,1590,official
+SSK2022,34,Cooking,active,1216,official
+SSK2022,35,Restaurant Service,active,1236,official
+SSK2022,36,Carrosserielackierer/in,active,1180,official
+SSK2022,37,Gärtner/in I  Garten- und Landschaftsbau,active,1195,official
+SSK2022,38A,Kältesystem-Monteur/in,active,1212,official
+SSK2022,38B,Lüftungsanlagenbauer/in,active,1220,official
+SSK2022,38C,Kältesystem-Planer/in,active,1213,official
+SSK2022,39,Cloud Computing,active,1210,official
+SSK2022,41,Fachmann/-frau Gesundheit,active,1301,official
+SSK2022,42,Metallbauer/in,active,1224,official
+SSK2022,45,Formenbauer/in,active,1194,official
+SSK2022,47,Bäcker/in-Konditor/in-Confiseur/in I Bäckerei-Konditorei,active,1174,official
+SSK2022,48,Industry 4.0,active,1588,official
+SSK2022,49,Spengler/in,active,1240,official
+SSK2022,50A,"Boden-Parkettleger/in, Parkett",active,1177,official
+SSK2022,50B,Boden-Parkettleger/in  I  textile und elastische Beläge,active,1404,official
+SSK2022,51,Gerüstbauer/in,active,1201,official
+SSK2022,52,Abdichter/in,active,1170,official
+SSK2022,53,Storenmonteur/in,active,1242,official
+SSK2022,54,Cyber Security,active,1405,official
+SSK2022,55,Dachdecker/in,active,1183,official
+SSK2022,56,Hotel Reception,active,1205,official
+SSK2022,57,Fassadenbauer/in,active,1191,official
+SSK2022,58,Metallbaukonstrukteur/in,active,1225,official
+SSK2022,61,Gleisbauer/in,active,1203,official
+SSK2022,62,Detailhandelsfachmann/-frau I  Bäckerei-Konditorei-Confiserie,active,1184,official
+SSK2022,63,Mediamatics,active,1223,official
+SSK2022,64,Fleischfachmann/-frau,active,1192,official
+SSK2022,65,Gebäudereiniger/in,active,1196,official
+SSK2022,66,Gemüsegärtner/in,active,1200,official
+SSK2022,67,Milchtechnologe/login,active,1227,official
+SSK2022,68,Hufschmied/in,active,1207,official
+SSK2022,69,Landtechnikberufe,active,1217,official
+SSK2022,70,Landwirt/in,active,1218,official
+SSK2022,71,Logistiker/in,active,1219,official
+SSK2022,72,Strassentransportfachmann/-frau,active,1244,official
+SSK2022,73,Fachmann/-frau Textilpflege,active,1188,official
+SSK2022,74,Weintechnologe/login,active,1246,official
+SSK2022,75,Kaufmann/-frau,active,1402,official
+SSK2022,76,Anlagen- und Apparatebauer/in,active,1171,official
+SSK2022,77,Hotellerie - Hauswirtschaft,active,1206,official
+SSK2022,78,Gebäudetechnikplaner/in Heizung,active,1197,official
+SSK2022,79,Gebäudetechnikplaner/in Lüftung,active,1198,official
+SSK2022,80,Gebäudetechnikplaner/in Sanitär,active,1199,official
+SSK2022,81,Strassenbauer/in,active,1243,official
+SSK2022,82,Fahrradmechaniker/in,active,1189,official
+SSK2022,83,Motorradmechaniker/in,active,1228,official
+SSK2022,84A,Raumausstatter/in,active,1235,official
+SSK2022,84B,Wohntextilgestalter/in,active,1248,official
+SSK2022,85,Entrepreneurship,active,1299,official
+SSK2022,86,Isolierspengler/in,active,1209,official
+SSK2022,87,Winzer/in,active,1247,official
+SSK2022,88,Interactive Media Designer,active,1208,official
+SSK2022,90,Bootbauer/in,active,1178,official
+SSK2022,91,Bootfachwart/in,active,1179,official
+SSK2022,92,Fachmann/-frau Bewegungs- und Gesundheitsförderung,active,1186,official
+SSK2022,93A,Fachmann/-frau Betriebsunterhalt I Hausdienst,active,1187,official
+SSK2022,93B,Fachmann/-frau Betriebsunterhalt I  Werkdienst,active,1300,official
+SSK2022,94,Medizinprodukttechnologe/login,active,1403,official
+SSK2022,95,Ofenbauer/in,active,1230,official
+SSK2022,96,Mikromechaniker/in - Mikrozeichner/in,active,1226,official
+SSK2022,97,Obstfachmann/-frau,active,1229,official
+SSK2022,D54,Automobilmechatroniker/in Nutzfahrzeuge,active,1589,official

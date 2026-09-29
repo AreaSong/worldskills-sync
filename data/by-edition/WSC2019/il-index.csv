@@ -1,0 +1,97 @@
+﻿edition,list_id,skill,skill_name,name
+WSC2019,119,01,Polymechanics and Automation,01 Polymechanics and Automation
+WSC2019,115,02,Information Network Cabling,02 Information Network Cabling
+WSC2019,116,03,Manufacturing Team Challenge,03 Manufacturing Team Challenge
+WSC2019,118,04,Mechatronics,04 Mechatronics
+WSC2019,120,05,Mechanical Engineering CAD,05 Mechanical Engineering CAD
+WSC2019,117,06,CNC Turning,06 CNC Turning
+WSC2019,121,07,CNC Milling,07 CNC Milling
+WSC2019,122,08,Architectural Stonemasonry,08 Architectural Stonemasonry
+WSC2019,124,09,IT Software Solutions for Business,09 IT Software Solutions for Business
+WSC2019,123,10,Welding,10 Welding
+WSC2019,125,11,Print Media Technology,11 Print Media Technology
+WSC2019,126,12,Wall and Floor Tiling,12 Wall and Floor Tiling
+WSC2019,127,13,Autobody Repair,13 Autobody Repair
+WSC2019,129,14,Aircraft Maintenance,14 Aircraft Maintenance
+WSC2019,128,15,Plumbing and Heating,15 Plumbing and Heating
+WSC2019,130,16,Electronics,16 Electronics
+WSC2019,131,17,Web Technologies,17 Web Technologies
+WSC2019,134,18,Electrical Installations,18 Electrical Installations
+WSC2019,133,19,Industrial Control,19 Industrial Control
+WSC2019,136,20,Bricklaying,20 Bricklaying
+WSC2019,132,21,Plastering and Drywall Systems,21 Plastering and Drywall Systems
+WSC2019,135,22,Painting and Decorating,22 Painting and Decorating
+WSC2019,137,23,Mobile Robotics,23 Mobile Robotics
+WSC2019,140,24,Cabinetmaking,24 Cabinetmaking
+WSC2019,138,25,Joinery,25 Joinery
+WSC2019,139,26,Carpentry,26 Carpentry
+WSC2019,142,27,Jewellery,27 Jewellery
+WSC2019,141,28,Floristry,28 Floristry
+WSC2019,143,29,Hairdressing,29 Hairdressing
+WSC2019,144,30,Beauty Therapy,30 Beauty Therapy
+WSC2019,147,31,Fashion Technology,31 Fashion Technology
+WSC2019,145,32,Pâtisserie and Confectionery,32 Pâtisserie and Confectionery
+WSC2019,146,33,Automobile Technology,33 Automobile Technology
+WSC2019,148,34,Cooking,34 Cooking
+WSC2019,152,35,Restaurant Service,35 Restaurant Service
+WSC2019,149,36,Car Painting,36 Car Painting
+WSC2019,150,37,Landscape Gardening,37 Landscape Gardening
+WSC2019,153,38,Refrigeration and Air Conditioning,38 Refrigeration and Air Conditioning
+WSC2019,151,39,IT Network Systems Administration,39 IT Network Systems Administration
+WSC2019,154,40,Graphic Design Technology,40 Graphic Design Technology
+WSC2019,156,41,Health and Social Care,41 Health and Social Care
+WSC2019,162,42,Construction Metal Work,42 Construction Metal Work
+WSC2019,155,43,Plastic Die Engineering,43 Plastic Die Engineering
+WSC2019,163,44,Visual Merchandising,44 Visual Merchandising
+WSC2019,157,45,Prototype Modelling,45 Prototype Modelling
+WSC2019,158,46,Concrete Construction Work,46 Concrete Construction Work
+WSC2019,161,47,Bakery,47 Bakery
+WSC2019,160,48,Industrial Mechanic Millwright,48 Industrial Mechanic Millwright
+WSC2019,165,49,Heavy Vehicle Technology,49 Heavy Vehicle Technology
+WSC2019,164,50,3D Digital Game Art,50 3D Digital Game Art
+WSC2019,159,51,Freight Forwarding,51 Freight Forwarding
+WSC2019,167,52,Chemical Laboratory Technology,52 Chemical Laboratory Technology
+WSC2019,168,53,Cloud Computing,53 Cloud Computing
+WSC2019,169,54,Cyber Security,54 Cyber Security
+WSC2019,166,55,Water Technology,55 Water Technology
+WSC2019,170,56,Hotel Reception,56 Hotel Reception
+WSC2019,224,,FS01 Rapid Prototyping,FS01 Rapid Prototyping
+WSC2019,225,,FS02 Agricultural Biotechnology,FS02 Agricultural Biotechnology
+WSC2019,226,,FS03 Virtual and Augmented Reality,FS03 Virtual and Augmented Reality
+WSC2019,227,,FS04 Blockchain-based Solutions,FS04 Blockchain-based Solutions
+WSC2019,228,,FS05 Composite Technologies,FS05 Composite Technologies
+WSC2019,229,,FS06 Enterprise Information Systems Security,FS06 Enterprise Information Systems Security
+WSC2019,230,,FS07 Industrial Design Technology,FS07 Industrial Design Technology
+WSC2019,231,,FS08 Robot Systems Integration,FS08 Robot Systems Integration
+WSC2019,232,,FS09 Internet of Things,FS09 Internet of Things
+WSC2019,234,,FS10 Machine Learning and Big Data,FS10 Machine Learning and Big Data
+WSC2019,235,,FS11 Mobile Applications Development,FS11 Mobile Applications Development
+WSC2019,236,,FS12 Quantum Technology,FS12 Quantum Technology
+WSC2019,237,,FS13 Mechanical Reverse Engineering,FS13 Mechanical Reverse Engineering
+WSC2019,238,,FS14 Drone Operating,FS14 Drone Operating
+WSC2019,240,,FS15 Building Information Modelling (BIM),FS15 Building Information Modelling (BIM)
+WSC2019,251,,FS16 Space Systems Engineering,FS16 Space Systems Engineering
+WSC2019,233,,FS99 Lifecycle Management,FS99 Lifecycle Management
+WSC2019,241,,FSS01 Digital Factory,FSS01 Digital Factory
+WSC2019,242,,FSS02 Digital Farming,FSS02 Digital Farming
+WSC2019,243,,FSS03 Digital Fashion Designer,FSS03 Digital Fashion Designer
+WSC2019,244,,FSS04 Robotic Welding,FSS04 Robotic Welding
+WSC2019,245,,FSS05 Neural Interface Design,FSS05 Neural Interface Design
+WSC2019,246,,FSS06 Life-cycle Management,FSS06 Life-cycle Management
+WSC2019,247,,FSS07 Smart Grid,FSS07 Smart Grid
+WSC2019,248,,FSS08 Mineral Synthesis and Processing,FSS08 Mineral Synthesis and Processing
+WSC2019,249,,FSS09 Laser Technology,FSS09 Laser Technology
+WSC2019,250,,FSS10 Industry 4.0,FSS10 Industry 4.0
+WSC2019,212,,WSJ01 Electrical Installations,WSJ01 Electrical Installations
+WSC2019,213,,WSJ02 Graphic Design Technology,WSJ02 Graphic Design Technology
+WSC2019,214,,WSJ03 Mobile Robotics,WSJ03 Mobile Robotics
+WSC2019,215,,WSJ04 Polymechanics and Automation,WSJ04 Polymechanics and Automation
+WSC2019,216,,WSJ05 Restaurant Service,WSJ05 Restaurant Service
+WSC2019,217,,WSJ06 Painting and Decorating,WSJ06 Painting and Decorating
+WSC2019,218,,WSJ07 Plumbing and Heating,WSJ07 Plumbing and Heating
+WSC2019,219,,WSJ08 Hairdressing,WSJ08 Hairdressing
+WSC2019,220,,WSJ09 Drone Operating,WSJ09 Drone Operating
+WSC2019,221,,WSJ10 Web Technologies,WSJ10 Web Technologies
+WSC2019,222,,WSJ11 IT Network Systems Administration,WSJ11 IT Network Systems Administration
+WSC2019,223,,WSJ12 Industrial Control,WSJ12 Industrial Control
+WSC2019,252,,WSJ13 Robot Systems Integration,WSJ13 Robot Systems Integration

@@ -1,0 +1,41 @@
+﻿edition,skill,name,status,skill_id,type
+WSC1995,01,Fitting,active,2492,official
+WSC1995,02,Press Tool Making,active,2493,official
+WSC1995,03,Instrument Making,active,2494,official
+WSC1995,04,Mechatronics,active,2495,official
+WSC1995,05,Engineering Drafting CAD,active,2496,official
+WSC1995,06,Turning / CNC,active,2497,official
+WSC1995,07,Milling / CNC,active,2498,official
+WSC1995,08,Construction Steel Work,active,2499,official
+WSC1995,09,Information Technology,active,2500,official
+WSC1995,10,Welding,active,2501,official
+WSC1995,11,Pattern Making,active,2502,official
+WSC1995,12,Wall and Floor Tiling,active,2503,official
+WSC1995,13,Autobody Repair,active,2504,official
+WSC1995,14,Sheet Metal Work,active,2505,official
+WSC1995,15,Plumbing,active,2506,official
+WSC1995,16,Industrial Electronics,active,2507,official
+WSC1995,17,Electronic Applications,active,2508,official
+WSC1995,18,Commercial Wiring,active,2509,official
+WSC1995,19,Industrial Wiring,active,2510,official
+WSC1995,20,Bricklaying,active,2511,official
+WSC1995,21,Stonemasonry,active,2512,official
+WSC1995,22,Painting and Decorating,active,2513,official
+WSC1995,23,Plastering,active,2514,official
+WSC1995,24,Cabinetmaking,active,2515,official
+WSC1995,25,Joinery,active,2516,official
+WSC1995,26,Carpentry,active,2517,official
+WSC1995,27,Jewellery,active,2518,official
+WSC1995,28,Floristry,active,2519,official
+WSC1995,29,Ladies' Hairdressing,active,2520,official
+WSC1995,30,Men's Hairdressing,active,2521,official
+WSC1995,31,Ladies' Dressmaking,active,2522,official
+WSC1995,33,Automobile Technology,active,2523,official
+WSC1995,34,Cookery,active,2524,official
+WSC1995,35,Waiting,active,2525,official
+WSC1995,36,Car Painting,active,2526,official
+WSC1995,37,Agricultural Mechanics,active,2527,official
+WSC1995,38,Refrigeration Technic,active,2528,official
+WSC1995,45,Heavy Vehicle Maintenance,active,2529,official
+WSC1995,47,Graphic Design,active,2530,official
+WSC1995,48,Roofing,active,2531,official

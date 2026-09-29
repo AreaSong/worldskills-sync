@@ -1,0 +1,52 @@
+﻿edition,skill,name,status,skill_id,type
+CPM2027,04,Mechatronics,active,3400,official
+CPM2027,05,Mechanical Engineering - CAD,active,3395,official
+CPM2027,06,CNC Turning,active,3422,official
+CPM2027,07,CNC-Milling,active,3413,official
+CPM2027,10,Welding,active,3391,official
+CPM2027,12,Wall and Floor Tiling,active,3401,official
+CPM2027,15,Plumbing and Heating,active,3381,official
+CPM2027,16,Electronics Prototyping,active,3378,official
+CPM2027,17,Web Technologies,active,3387,official
+CPM2027,18,Electrical Installations,active,3407,official
+CPM2027,19,Industrial Control,active,3392,official
+CPM2027,20,Bricklaying,active,3384,official
+CPM2027,21,Plastering and Dry Wall Systems,active,3420,official
+CPM2027,22,Painting and Decorating,active,3383,official
+CPM2027,24,Cabinetmaking,active,3425,official
+CPM2027,25,Joinery,active,3427,official
+CPM2027,26,Carpentry,active,3411,official
+CPM2027,27,Robot Systems Integration,active,3415,official
+CPM2027,28,Floristry,active,3406,official
+CPM2027,29,Hairdressing,active,3404,official
+CPM2027,30,Beauty Therapy,active,3419,official
+CPM2027,31,Fashion Design and Technology Team Challenge,active,3418,official
+CPM2027,32,Butchery,active,3386,official
+CPM2027,33,Automobile Technology,active,3379,official
+CPM2027,34,Cooking,active,3405,official
+CPM2027,35,Restaurant Service,active,3396,official
+CPM2027,36,Bakery,active,3412,official
+CPM2027,37,Pâtisserie and Confectionery,active,3398,official
+CPM2027,38,Refrigeration Technologies,active,3394,official
+CPM2027,39,IT Network Systems Administration,active,3390,official
+CPM2027,40,Graphic Design Technology,active,3417,official
+CPM2027,41,Health and Social Care,active,3397,official
+CPM2027,42,Digital Construction,active,3414,official
+CPM2027,43,Cyber Security,active,3388,official
+CPM2027,45,Software Applications Development,active,3399,official
+CPM2027,46,Entrepreneurship,active,3426,official
+CPM2027,48,Industry 4.0,active,3408,official
+CPM2027,49,Metal Roofing,active,3424,official
+CPM2027,50,Floor Laying,active,3385,official
+CPM2027,51,Landscape Gardening,active,3382,official
+CPM2027,52,Aircraft Maintenance,active,3389,official
+CPM2027,53,Heavy Vehicle Technology,active,3416,official
+CPM2027,54,Truck and Bus Technology,active,3393,official
+CPM2027,55,Autobody Repair,active,3402,official
+CPM2027,56,Car Painting,active,3403,official
+CPM2027,57,Hotel Reception,active,3380,official
+CPM2027,HP1,Freight Forwarding,active,3428,presentation
+CPM2027,HP2,Water Technology,active,3421,presentation
+CPM2027,HP3,Concrete Construction,active,3409,presentation
+CPM2027,HP4,Mobile Application Development,active,3410,presentation
+CPM2027,HP5,Architectural Stonemasonry,active,3423,presentation

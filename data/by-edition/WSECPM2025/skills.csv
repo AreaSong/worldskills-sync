@@ -1,0 +1,39 @@
+﻿edition,skill,name,status,skill_id,type
+WSECPM2025,04,Mechatronics,active,2225,official
+WSECPM2025,05,Mechanical Engineering – CAD,active,2227,official
+WSECPM2025,07,CNC-Milling,active,2223,official
+WSECPM2025,10,Welding,active,2224,official
+WSECPM2025,12,Wall and Floor Tiling,active,2226,official
+WSECPM2025,15,Plumbing and Heating,active,2222,official
+WSECPM2025,16,Electronics Prototyping,active,2228,official
+WSECPM2025,17,Web Development,active,2251,official
+WSECPM2025,18,Electrical Installations,active,2247,official
+WSECPM2025,19,Industrial Control,active,2241,official
+WSECPM2025,20,Bricklaying,active,2244,official
+WSECPM2025,21,Plastering and Dry Wall Systems,active,2229,official
+WSECPM2025,22,Painting and Decorating,active,2258,official
+WSECPM2025,24,Cabinetmaking,active,2255,official
+WSECPM2025,25,Joinery,active,2232,official
+WSECPM2025,26,Carpentry,active,2248,official
+WSECPM2025,27,Robot Systems Integration,active,2238,official
+WSECPM2025,28,Floristry,active,2250,official
+WSECPM2025,29,Hairdressing,active,2237,official
+WSECPM2025,30,Beauty Therapy,active,2243,official
+WSECPM2025,31,Fashion Design and Technology Team Challenge,active,2233,official
+WSECPM2025,33,Automobile Technology,active,2242,official
+WSECPM2025,34,Cooking,active,2246,official
+WSECPM2025,35,Restaurant Servive,active,2257,official
+WSECPM2025,36,Bakery,active,2249,official
+WSECPM2025,37,Pâtisserie and Confectionery,active,2231,official
+WSECPM2025,38,Refrigeration and Air Conditioning,active,2245,official
+WSECPM2025,39,IT Network Systems Administration,active,2252,official
+WSECPM2025,40,Graphic Design Technology,active,2253,official
+WSECPM2025,41,Health and Social Care,active,2254,official
+WSECPM2025,45,IT Software Solutions for Business,active,2236,official
+WSECPM2025,46,Entrepreneurship / Business Development Team Challenge,active,2235,official
+WSECPM2025,48,Industry 4.0,active,2234,official
+WSECPM2025,50,Floor Laying,active,2239,official
+WSECPM2025,51,Landscape Gardening,active,2240,official
+WSECPM2025,53,Heavy Vehicle Technology,active,2230,official
+WSECPM2025,54,Truck and Bus Technology,active,2256,official
+WSECPM2025,57,Hotel Reception,active,2221,official

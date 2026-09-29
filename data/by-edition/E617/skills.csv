@@ -1,0 +1,49 @@
+﻿edition,skill,name,status,skill_id,type
+E617,101,101 Ajoneuvotekniikka,active,2276,official
+E617,102,102 Autokorinkorjaus,active,2269,official
+E617,104,104 Kuljetuslogistiikka,active,2282,official
+E617,105,105 Metsäkoneenkäyttö,active,2279,official
+E617,201,201 CAD-suunnittelu,active,2306,official
+E617,203,203 Mediasuunnittelu,active,2280,official
+E617,204,204 Järjestelmäasiantuntija,active,2260,official
+E617,205,205 Tietoverkkoasennus,active,2294,official
+E617,206,206 Web-kehitys,active,2264,official
+E617,208,208 Pelituotanto,active,2261,official
+E617,301,301 Asiakaspalvelu ja myynti,active,2273,official
+E617,302,302 Hiusmuotoilu,active,2267,official
+E617,303,303 Kauneudenhoito,active,2277,official
+E617,304,304 Floristiikka,active,2272,official
+E617,305,305 Lähihoitaja,active,2262,official
+E617,306,306 Puhtauspalvelu,active,2263,official
+E617,307,307 Vaatteenvalmistus,active,2300,official
+E617,309,309 Hevostenhoito,active,2287,official
+E617,310,310 Yrittäjyys,active,2303,official
+E617,311,311 Eläintenhoito,active,2286,official
+E617,312,312 Matkailu,active,2301,official
+E617,313,313 Taloushallinto,active,2268,official
+E617,314,314 Turvapalvelu,active,2283,official
+E617,315,315 Hyvinvointiteknologia,active,2278,official
+E617,316,316 Kiinteistönhoito,active,2265,official
+E617,401,401 Puuseppä,active,2270,official
+E617,402,402 Ilmastointiasennus,active,2307,official
+E617,404,404 Maalaus ja tapetointi,active,2266,official
+E617,405,405 Putkiasennus,active,2295,official
+E617,406,406 Sähköasennus,active,2271,official
+E617,407,407 Talonrakentaminen,active,2275,official
+E617,410,410 Viherrakentaminen,active,2285,official
+E617,411,411 Infrarakentaminen,active,2290,official
+E617,501,501 Leipuri-kondiittori,active,2291,official
+E617,502,502 Kokki,active,2292,official
+E617,504,504 Tarjoilija,active,2281,official
+E617,602,602 Elektroniikka-asennus,active,2289,official
+E617,603,603 CNC-koneistus,active,2296,official
+E617,604,604 Laborantti,active,2293,official
+E617,605,605 Hitsaus ja levytyöt,active,2305,official
+E617,606,606 Kappaletavara-automaatio,active,2288,official
+E617,607,607 Koneenasennus ja kunnossapito,active,2297,official
+E617,P1,P1 Ravintola- ja cateringpalvelut,active,2298,official
+E617,P2,P2 Kiinteistönhoito,active,2284,official
+E617,P3,P3 Liiketoiminta,active,2302,official
+E617,P4,P4 Puhtauspalvelu,active,2274,official
+E617,P5,P5 Logistiikka,active,2304,official
+E617,T9,Taitaja9,active,2259,official

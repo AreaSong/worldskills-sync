@@ -1,0 +1,22 @@
+﻿edition,skill,name,status,skill_id,type
+E615,02,Information Network Cabling,active,2217,official
+E615,05,Mechanical Engineering CAD,active,2209,official
+E615,10,Welding,active,2205,official
+E615,12,Wall and Floor Tiling,active,2204,official
+E615,15,Plumbing and Heating,active,2202,official
+E615,18,Electrical Installations,active,2207,official
+E615,20,Bricklaying,active,2201,official
+E615,25,Joinery,active,2206,official
+E615,26,Carpentry,active,2220,official
+E615,27,Jewellery,active,2216,official
+E615,29,Hairdressing,active,2212,official
+E615,30,Beauty Therapy,active,2219,official
+E615,31,Fashion Technology,active,2203,official
+E615,33,Automotive Technology,active,2200,official
+E615,34,Cooking,active,2211,official
+E615,35,Restaurant Service,active,2210,official
+E615,46,Concrete Construction Work,active,2218,official
+E615,48,Industry 4.0,active,2213,official
+E615,55,Water Technology,active,2208,official
+E615,56,Hotel Reception,active,2214,official
+E615,58,Digital Construction,active,2215,official

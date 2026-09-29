@@ -1,0 +1,42 @@
+﻿edition,skill,name,status,skill_id,type
+WSC1999,01,Fitting,active,175,official
+WSC1999,02,Press tool making,active,174,official
+WSC1999,03,Instrument making,active,173,official
+WSC1999,04,Mechatronics,active,172,official
+WSC1999,05,Mech. Eng. CADD,active,171,official
+WSC1999,06,CNC Turning,active,170,official
+WSC1999,07,CNC Milling,active,169,official
+WSC1999,08,Construction steel work,active,168,official
+WSC1999,09,IT/Software Applications,active,180,official
+WSC1999,10,Welding,active,181,official
+WSC1999,11,Pattern Making,active,182,official
+WSC1999,12,Wall and Floor Tiling,active,183,official
+WSC1999,13,Autobody Repair,active,184,official
+WSC1999,14,Sheet metal work,active,185,official
+WSC1999,15,Plumbing,active,186,official
+WSC1999,16,Industrial Electronics,active,187,official
+WSC1999,17,Electronic Applications,active,188,official
+WSC1999,18,Commercial wiring,active,189,official
+WSC1999,19,Industrial wiring,active,190,official
+WSC1999,20,Bricklaying,active,191,official
+WSC1999,21,Stonemasonry,active,192,official
+WSC1999,22,Painting and Decorating,active,193,official
+WSC1999,23,Plastering,active,194,official
+WSC1999,24,Cabinetmaking,active,195,official
+WSC1999,25,Joinery,active,196,official
+WSC1999,26,Carpentry,active,197,official
+WSC1999,27,Jewellery,active,198,official
+WSC1999,28,Floristry,active,199,official
+WSC1999,29,Ladies' hairdressing,active,200,official
+WSC1999,30,Men's hairdressing,active,201,official
+WSC1999,31,Ladies Dressmaking,active,202,official
+WSC1999,33,Automobile Technology,active,203,official
+WSC1999,34,Cooking,active,204,official
+WSC1999,35,Restaurant Service,active,205,official
+WSC1999,36,Car Painting,active,206,official
+WSC1999,38,Refrigeration,active,207,official
+WSC1999,41,Graphic Design Technology,active,208,official
+WSC1999,42,Confectioner/Pastry Cook,active,209,official
+WSC1999,43,Beauty Care,active,210,official
+WSC1999,44,Landscape Gardening,active,211,official
+WSC1999,45,IT PC/Network Support,active,212,official

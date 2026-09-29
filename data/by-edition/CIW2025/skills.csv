@@ -1,0 +1,65 @@
+﻿edition,skill,name,status,skill_id,type
+CIW2025,01,Industrial Mechanics,active,2817,official
+CIW2025,02,Information Network Cabling,active,2789,official
+CIW2025,04,Mechatronics,active,2814,official
+CIW2025,05,Mechanical Engineering CAD,active,2823,official
+CIW2025,06,CNC Turning,active,2813,official
+CIW2025,07,CNC Milling,active,2801,official
+CIW2025,08,Mobile Applications Development,active,2784,official
+CIW2025,09,IT Software Solutions for Business,active,2818,official
+CIW2025,10,Welding,active,2781,official
+CIW2025,12,Wall and Floor Tiling,active,2783,official
+CIW2025,13,Autobody Repair,active,2782,official
+CIW2025,14,Aircraft Maintenance,active,2791,official
+CIW2025,15,Plumbing and Heating,active,2829,official
+CIW2025,16,Electronics,active,2787,official
+CIW2025,17,Web Technologies,active,2819,official
+CIW2025,18,Electrical Installations,active,2803,official
+CIW2025,19,Industrial Control,active,2778,official
+CIW2025,20,Bricklaying,active,2802,official
+CIW2025,21,Plastering and Drywall Systems,active,2828,official
+CIW2025,22,Painting and Decorating,active,2794,official
+CIW2025,23,Autonomous Mobile Robotics,active,2827,official
+CIW2025,24,Cabinetmaking,active,2809,official
+CIW2025,25,Joinery,active,2806,official
+CIW2025,26,Carpentry,active,2816,official
+CIW2025,27,Jewellery,active,2795,official
+CIW2025,28,Floristry,active,2770,official
+CIW2025,29,Hairdressing,active,2800,official
+CIW2025,30,Beauty Therapy,active,2767,official
+CIW2025,31,Fashion Technology,active,2772,official
+CIW2025,32,Pâtisserie and Confectionery,active,2804,official
+CIW2025,33,Automobile Technology,active,2822,official
+CIW2025,34,Cooking,active,2775,official
+CIW2025,35,Restaurant Service,active,2768,official
+CIW2025,36,Car Painting,active,2786,official
+CIW2025,37,Landscape Gardening,active,2815,official
+CIW2025,38,Refrigeration and Air Conditioning,active,2774,official
+CIW2025,39,IT Network Systems Administration,active,2769,official
+CIW2025,40,Graphic Design Technology,active,2820,official
+CIW2025,41,Health and Social Care,active,2785,official
+CIW2025,44,Visual Merchandising,active,2797,official
+CIW2025,46,Concrete Construction Work,active,2796,official
+CIW2025,47,Bakery,active,2773,official
+CIW2025,48,Industry 4.0,active,2808,official
+CIW2025,49,Heavy Vehicle Technology,active,2771,official
+CIW2025,50,3D Digital Game Art,active,2793,official
+CIW2025,51,Logistics and Freight Forwarding,active,2776,official
+CIW2025,52,Chemical Laboratory Technology,active,2821,official
+CIW2025,53,Cloud Computing,active,2799,official
+CIW2025,54,Cyber Security,active,2825,official
+CIW2025,55,Water Technology,active,2790,official
+CIW2025,56,Hotel Reception,active,2777,official
+CIW2025,57,Additive Manufacturing,active,2766,official
+CIW2025,58,Digital Construction,active,2792,official
+CIW2025,59,Industrial Design Technology,active,2805,official
+CIW2025,60,Optoelectronic Technology,active,2788,official
+CIW2025,62,Renewable Energy,active,2779,official
+CIW2025,63,Robot Systems Integration,active,2826,official
+CIW2025,PO1,Dental Prosthetics,active,2807,possible_official
+CIW2025,PO2,Digital Interactive Media Design,active,2798,possible_official
+CIW2025,PO3,Intelligent Security Technology,active,2824,possible_official
+CIW2025,PO4,Rail Vehicle Technology,active,2780,possible_official
+CIW2025,PO5,Retail Sales,active,2811,possible_official
+CIW2025,PO6,Software Testing,active,2810,possible_official
+CIW2025,PO7,Unmanned Aerial Systems,active,2812,possible_official

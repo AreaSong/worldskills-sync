@@ -1,0 +1,23 @@
+﻿edition,skill,name,status,skill_id,type
+E598,01,IT Network Systems Administration,active,1577,official
+E598,02,Information Network Cabling,active,1579,official
+E598,03,Web Technologies,active,1574,official
+E598,04,IT Software Solutions for Business,active,1569,official
+E598,05,Internet of Things,active,1576,official
+E598,06,Refrigeration & Air-conditioning,active,1570,official
+E598,07,CNC Maintenance,active,1573,official
+E598,08,Industrial Automation,active,1571,official
+E598,09,Electrical Installations,active,1568,official
+E598,10,Mobile Robotics,active,1566,official
+E598,11,Electronics,active,1572,official
+E598,12,Mechanical Engineering – CAD,active,1587,official
+E598,13,Mechatronics,active,1583,official
+E598,14,Cooking,active,1580,official
+E598,15,Restaurant Service,active,1586,official
+E598,16,Hairdressing,active,1584,official
+E598,17,Beauty Therapy,active,1575,official
+E598,18,Fashion Technology,active,1581,official
+E598,19,Graphic Design Technology,active,1585,official
+E598,20,Automobile Technology,active,1578,official
+E598,D1,Industrial Control,active,1582,demo
+E598,D2,Rapid Transit Systems,active,1567,demo

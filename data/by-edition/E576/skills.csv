@@ -1,0 +1,23 @@
+﻿edition,skill,name,status,skill_id,type
+E576,01,IT Network Systems Administration,active,864,official
+E576,02,Information Network Cabling,active,865,official
+E576,03,Web Technologies,active,866,official
+E576,04,IT Software Solutions for Business,active,867,official
+E576,05,Internet of Things,active,868,official
+E576,06,Refrigeration & Air-conditioning,active,869,official
+E576,07,CNC Maintenance,active,870,official
+E576,08,Industrial Automation,active,871,official
+E576,09,Electrical Installations,active,872,official
+E576,10,Mobile Robotics,active,873,official
+E576,11,Electronics,active,874,official
+E576,12,Mechanical Engineering – CAD,active,875,official
+E576,13,Mechatronics,active,876,official
+E576,14,Cooking,active,877,official
+E576,15,Restaurant Service,active,878,official
+E576,16,Hairdressing,active,879,official
+E576,17,Beauty Therapy,active,880,official
+E576,18,Fashion Technology,active,881,official
+E576,19,Graphic Design Technology,active,882,official
+E576,20,Automobile Technology,active,883,official
+E576,D1,Industrial Control,active,884,demo
+E576,D2,Rapid Transit Systems,active,885,demo

@@ -1,0 +1,64 @@
+﻿edition,skill,name,status,skill_id,type
+CPW2022,01,Industrial Mechanics,active,1331,official
+CPW2022,02,Information Network Cabling,active,1322,official
+CPW2022,03,Manufacturing Team Challenge,active,1306,official
+CPW2022,04,Mechatronics,active,1345,official
+CPW2022,05,Mechanical Engineering CAD,active,1337,official
+CPW2022,06,CNC Turning,active,1362,official
+CPW2022,07,CNC Milling,active,1333,official
+CPW2022,08,Mobile Applications Development,active,1347,official
+CPW2022,09,IT Software Solutions for Business,active,1310,official
+CPW2022,10,Welding,active,1304,official
+CPW2022,11,Print Media Technology,active,1323,official
+CPW2022,12,Wall and Floor Tiling,active,1308,official
+CPW2022,13,Autobody Repair,active,1355,official
+CPW2022,14,Aircraft Maintenance,active,1330,official
+CPW2022,15,Plumbing and Heating,active,1328,official
+CPW2022,16,Electronics,active,1329,official
+CPW2022,17,Web Technologies,active,1318,official
+CPW2022,18,Electrical Installations,active,1324,official
+CPW2022,19,Industrial Control,active,1326,official
+CPW2022,20,Bricklaying,active,1343,official
+CPW2022,21,Plastering and Drywall Systems,active,1307,official
+CPW2022,22,Painting and Decorating,active,1315,official
+CPW2022,23,Mobile Robotics,active,1359,official
+CPW2022,24,Cabinetmaking,active,1319,official
+CPW2022,25,Joinery,active,1364,official
+CPW2022,26,Carpentry,active,1365,official
+CPW2022,27,Jewellery,active,1366,official
+CPW2022,28,Floristry,active,1351,official
+CPW2022,29,Hairdressing,active,1320,official
+CPW2022,30,Beauty Therapy,active,1361,official
+CPW2022,31,Fashion Technology,active,1335,official
+CPW2022,32,Pâtisserie and Confectionery,active,1316,official
+CPW2022,33,Automobile Technology,active,1353,official
+CPW2022,34,Cooking,active,1346,official
+CPW2022,35,Restaurant Service,active,1327,official
+CPW2022,36,Car Painting,active,1325,official
+CPW2022,37,Landscape Gardening,active,1341,official
+CPW2022,38,Refrigeration and Air Conditioning,active,1363,official
+CPW2022,39,IT Network Systems Administration,active,1317,official
+CPW2022,40,Graphic Design Technology,active,1313,official
+CPW2022,41,Health and Social Care,active,1338,official
+CPW2022,42,Construction Metal Work,active,1348,official
+CPW2022,43,Plastic Die Engineering,active,1344,official
+CPW2022,44,Visual Merchandising,active,1314,official
+CPW2022,45,Prototype Modelling,active,1312,official
+CPW2022,46,Concrete Construction Work,active,1336,official
+CPW2022,47,Bakery,active,1358,official
+CPW2022,48,Industry 4.0,active,1350,official
+CPW2022,49,Heavy Vehicle Technology,active,1354,official
+CPW2022,50,3D Digital Game Art,active,1349,official
+CPW2022,51,Freight Forwarding,active,1356,official
+CPW2022,52,Chemical Laboratory Technology,active,1309,official
+CPW2022,53,Cloud Computing,active,1339,official
+CPW2022,54,Cyber Security,active,1342,official
+CPW2022,55,Water Technology,active,1360,official
+CPW2022,56,Hotel Reception,active,1305,official
+CPW2022,57,Additive Manufacturing,active,1352,official
+CPW2022,58,Digital Construction,active,1340,official
+CPW2022,59,Industrial Design Technology,active,1332,official
+CPW2022,60,Optoelectronic Technology,active,1321,official
+CPW2022,61,Rail Vehicle Technology,active,1357,official
+CPW2022,62,Renewable Energy,active,1334,official
+CPW2022,63,Robot Systems Integration,active,1311,official

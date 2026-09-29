@@ -1,0 +1,24 @@
+﻿edition,skill,name,status,skill_id,type
+E631,01,Industrial Mechanics,active,2831,official
+E631,02,Information Network Cabling,active,2854,official
+E631,04,Mechatronics,active,2833,official
+E631,05,CAD Mechanical Engineering Design,active,2834,official
+E631,09,IT Software Solutions for Business,active,2835,official
+E631,10,Welding,active,2836,official
+E631,17,Web Design,active,2837,official
+E631,18,Electrical Installations,active,2838,official
+E631,19,Industrial Control,active,2839,official
+E631,20,Bricklaying,active,2855,official
+E631,23,Mobile Robotics,active,2841,official
+E631,29,Hairdressing,active,2842,official
+E631,32,Patisserie and Confectionery,active,2843,official
+E631,33,Automobile Technology,active,2845,official
+E631,34,Cooking,active,2846,official
+E631,39,IT Network Systems Administration,active,2847,official
+E631,48,Industry 4.0,active,2830,official
+E631,54,Cyber ​​Security,active,2848,official
+E631,60,Optoelectronic Technology,active,2849,official
+E631,97,Technical Irrigation,active,2853,official
+E631,98,Photovoltaic Power Systems,active,2850,official
+E631,A1,3D Digital Game Art,active,2851,official
+E631,CL06,CNC Machining,active,2852,official

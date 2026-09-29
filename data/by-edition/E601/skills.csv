@@ -1,0 +1,71 @@
+﻿edition,skill,name,status,skill_id,type
+E601,01,Maintenance industrielle,active,1720,official
+E601,02,Information Network Cabling,active,1598,official
+E601,03,Manufacturing Team Challenge,active,1602,official
+E601,04,Mechatronics,active,1601,official
+E601,05,Mechanical Engineering Design - CAD,active,1597,official
+E601,06,CNC Turning,active,1606,official
+E601,07,CNC Milling,active,1607,official
+E601,09,IT Software Solutions for Business,active,1596,official
+E601,10,Welding,active,1612,official
+E601,11,Print Media Technology,active,1608,official
+E601,12,Wall and Floor Tiling,active,1627,official
+E601,13,Autobody Repair,active,1651,official
+E601,14,Aircraft Maintenance,active,1610,official
+E601,15,Plumbing and Heating,active,1622,official
+E601,16,Electronics,active,1639,official
+E601,17,Web design,active,1611,official
+E601,18,Electrical Installations,active,1631,official
+E601,19,Industrial Control,active,1624,official
+E601,20,Bricklaying,active,1603,official
+E601,21,Plastering and Drywall Systems,active,1593,official
+E601,22,Painting and Decorating,active,1595,official
+E601,23,Mobile Robotics,active,1600,official
+E601,24,Cabinetmaking,active,1594,official
+E601,25,Joinery,active,1632,official
+E601,26,Carpentry,active,1617,official
+E601,27,Jewellery,active,1641,official
+E601,28,Floristry,active,1655,official
+E601,29,Hairdressing,active,1646,official
+E601,30,Beauty Therapy,active,1614,official
+E601,31,Fashion Technology,active,1635,official
+E601,32,Pâtisserie and Confectionery,active,1644,official
+E601,33,Automobile Technology,active,1628,official
+E601,34,Cooking,active,1653,official
+E601,35,Restaurant Service,active,1626,official
+E601,36,Car Painting,active,1625,official
+E601,37,Landscape Gardening,active,1620,official
+E601,38,Refrigeration and Air Conditioning,active,1623,official
+E601,39,IT Network Systems Administration,active,1615,official
+E601,40,Graphic Design Technology,active,1604,official
+E601,41,Health and Social Care,active,1616,official
+E601,42,Construction Metal Work,active,1619,official
+E601,44,Visual merchandising,active,1609,official
+E601,46,Concrete Construction Work,active,1634,official
+E601,47,Bakery,active,1613,official
+E601,48,Industrie 4.0,active,1721,official
+E601,49,Heavy Vehicle Maintenance,active,1647,official
+E601,50,3D Digital Game Art,active,1629,official
+E601,53,Cloud Computing,active,1722,official
+E601,54,Cyber Security,active,1630,official
+E601,56,Hotel Reception,active,1638,official
+E601,57,Fabrication Additive,active,1723,official
+E601,58,Digital Construction,active,1640,official
+E601,63,Robot Systems Integration,active,1645,official
+E601,D1,Marble Design,active,1643,demo
+E601,E46,Entrepreneurship Team Challenge,active,1642,official
+E601,E49,Metal Roofing,active,1621,official
+E601,E50,Floor Laying,active,1650,official
+E601,E54,Truck Maintenance,active,1637,official
+E601,E8,Architectural Stonemasonry,active,1605,official
+E601,N1,Sheet Metal Work,active,1648,official
+E601,N11,Butchery,active,1633,official
+E601,N2,Horticulture,active,1652,official
+E601,N3,Motorcycle Technology,active,1656,official
+E601,N4,Wine Tester,active,1636,official
+E601,N5,Social Care,active,1618,official
+E601,N6,Road Building,active,1654,official
+E601,N7,Leatherwork,active,1834,official
+E601,N8,Glass Construction Technology,active,1649,official
+E601,N8E,Glass Construction Technology Euro,active,1836,official
+E601,N9,Cleanliness professions,active,1599,official

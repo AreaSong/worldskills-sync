@@ -1,0 +1,48 @@
+﻿edition,skill,name,status,skill_id,type
+WSECPM2020,04,Mechatronics,active,816,official
+WSECPM2020,05,Mechanical Engineering Design – CAD,active,817,official
+WSECPM2020,07,CNC-Milling,active,818,official
+WSECPM2020,08,Architectural Stonemasonry,active,819,official
+WSECPM2020,10,Welding,active,820,official
+WSECPM2020,12,Wall and Floor Tiling,active,821,official
+WSECPM2020,15,Plumbing and Heating,active,822,official
+WSECPM2020,17,Web Development,active,823,official
+WSECPM2020,18,Electrical Installations,active,824,official
+WSECPM2020,19,Industrial Control,active,825,official
+WSECPM2020,20,Bricklaying,active,826,official
+WSECPM2020,21,Plastering and Dry Wall Systems,active,828,official
+WSECPM2020,22,Painting and Decorating,active,829,official
+WSECPM2020,23,Mobile Robotics,active,830,official
+WSECPM2020,24,Cabinetmaking,active,831,official
+WSECPM2020,25,Joinery,active,832,official
+WSECPM2020,28,Floristry,active,833,official
+WSECPM2020,29,Hairdressing,active,834,official
+WSECPM2020,30,Beauty Therapy,active,827,official
+WSECPM2020,31,Fashion Technology,active,835,official
+WSECPM2020,33,Automobile Technology,active,836,official
+WSECPM2020,34,Cooking,active,837,official
+WSECPM2020,35,Restaurant Service,active,838,official
+WSECPM2020,36,Bakery,active,839,official
+WSECPM2020,38,Refrigeration and Air Conditioning,active,840,official
+WSECPM2020,39,ICT Specialists,active,841,official
+WSECPM2020,40,Graphic Design,active,842,official
+WSECPM2020,41,Health and Social Care,active,843,official
+WSECPM2020,44,Visual Merchandising / Window Dressing,active,844,official
+WSECPM2020,49,Metal Roofing,active,845,official
+WSECPM2020,50,Floor Laying,active,846,official
+WSECPM2020,51,Landscape Gardening,active,847,official
+WSECPM2020,52,Concrete Construction,active,848,official
+WSECPM2020,53,Heavy Vehicle Technology,active,849,official
+WSECPM2020,54,Heavy Truck Maintenance,active,850,official
+WSECPM2020,57,Hotel Receptioning,active,851,official
+WSECPM2020,D1,CNC-Turning,active,852,demo
+WSECPM2020,D2,Glass Construction Technology,active,853,demo
+WSECPM2020,D3,Sheet Metal Work,active,854,demo
+WSECPM2020,D5,Retail Sales,active,856,demo
+WSECPM2020,D6,Butchery,active,857,demo
+WSECPM2020,HP1,Entrepreneurship Business Development Team Challenge,active,859,host_member
+WSECPM2020,HP2,Industry 4.0,active,860,host_member
+WSECPM2020,HP3,Mechanical Engineering Technician,active,861,host_member
+WSECPM2020,HP4,Electronics Prototyping,active,863,host_member
+WSECPM2020,HP5,Freight Forwarding,active,855,demo
+WSECPM2020,HP6,Chemical Laboratory Technician,active,858,demo

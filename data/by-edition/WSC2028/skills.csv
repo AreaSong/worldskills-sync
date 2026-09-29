@@ -1,0 +1,65 @@
+﻿edition,skill,name,status,skill_id,type
+WSC2028,01,Industrial Mechanics,active,3437,official
+WSC2028,02,ICT Network Infrastructure,active,3433,official
+WSC2028,03,Intelligent Security Technology,active,3432,official
+WSC2028,04,Mechatronics,active,3431,official
+WSC2028,05,Mechanical Engineering CAD,active,3430,official
+WSC2028,06,CNC Turning,active,3435,official
+WSC2028,07,CNC Milling,active,3440,official
+WSC2028,08,Mobile Applications Development,active,3429,official
+WSC2028,09,Software Applications Development,active,3434,official
+WSC2028,10,Welding,active,3448,official
+WSC2028,11,Software Testing,active,3443,official
+WSC2028,12,Wall and Floor Tiling,active,3464,official
+WSC2028,13,Autobody Repair,active,3469,official
+WSC2028,14,Aircraft Maintenance,active,3458,official
+WSC2028,15,Plumbing and Heating,active,3466,official
+WSC2028,16,Electronics,active,3450,official
+WSC2028,17,Web Technologies,active,3447,official
+WSC2028,18,Electrical Installations,active,3474,official
+WSC2028,19,Industrial Control,active,3478,official
+WSC2028,20,Bricklaying,active,3472,official
+WSC2028,21,Plastering and Drywall Systems,active,3476,official
+WSC2028,22,Painting and Decorating,active,3436,official
+WSC2028,23,Autonomous Mobile Robotics,active,3488,official
+WSC2028,24,Cabinetmaking,active,3475,official
+WSC2028,25,Joinery,active,3462,official
+WSC2028,26,Carpentry,active,3463,official
+WSC2028,27,Jewellery,active,3445,official
+WSC2028,28,Floristry,active,3441,official
+WSC2028,29,Hairdressing,active,3452,official
+WSC2028,30,Beauty Therapy,active,3468,official
+WSC2028,31,Fashion Technology,active,3446,official
+WSC2028,32,Pâtisserie and Confectionery,active,3459,official
+WSC2028,33,Automobile Technology,active,3456,official
+WSC2028,34,Cooking,active,3481,official
+WSC2028,35,Restaurant Service,active,3473,official
+WSC2028,36,Car Painting,active,3490,official
+WSC2028,37,Landscape Gardening,active,3479,official
+WSC2028,38,Refrigeration and Air Conditioning,active,3470,official
+WSC2028,39,IT Network Systems Administration,active,3487,official
+WSC2028,40,Graphic Design Technology,active,3485,official
+WSC2028,41,Health and Social Care,active,3486,official
+WSC2028,42,Dental Prosthetics,active,3438,official
+WSC2028,43,Retail Sales,active,3442,official
+WSC2028,44,Visual Merchandising,active,3460,official
+WSC2028,45,Digital Interactive Media Design,active,3461,official
+WSC2028,46,Concrete Construction Work,active,3465,official
+WSC2028,47,Bakery,active,3453,official
+WSC2028,48,Industry 4.0,active,3454,official
+WSC2028,49,Heavy Vehicle Technology,active,3477,official
+WSC2028,50,3D Digital Game Art,active,3491,official
+WSC2028,51,Logistics and Freight Forwarding,active,3471,official
+WSC2028,52,Chemical Laboratory Technology,active,3489,official
+WSC2028,53,Cloud Computing,active,3482,official
+WSC2028,54,Cyber Security,active,3492,official
+WSC2028,55,Water Technology,active,3480,official
+WSC2028,56,Hotel Reception,active,3483,official
+WSC2028,57,Additive Manufacturing,active,3484,official
+WSC2028,58,Digital Construction,active,3457,official
+WSC2028,59,Industrial Design Technology,active,3455,official
+WSC2028,60,Optoelectronic Technology,active,3439,official
+WSC2028,61,Rail Vehicle Technology,active,3451,official
+WSC2028,62,Renewable Energy,active,3444,official
+WSC2028,63,Robot Systems Integration,active,3449,official
+WSC2028,64,Unmanned Aerial Systems,active,3467,official

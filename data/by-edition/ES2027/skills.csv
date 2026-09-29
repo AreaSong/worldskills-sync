@@ -1,0 +1,52 @@
+﻿edition,skill,name,status,skill_id,type
+ES2027,04,Mechatronics,active,3239,official
+ES2027,05,Mechanical Engineering - CAD,active,3243,official
+ES2027,06,CNC Turning,active,3248,official
+ES2027,07,CNC-Milling,active,3276,official
+ES2027,10,Welding,active,3279,official
+ES2027,12,Wall and Floor Tiling,active,3251,official
+ES2027,15,Plumbing and Heating,active,3334,official
+ES2027,16,Electronics Prototyping,active,3268,official
+ES2027,17,Web Technologies,active,3333,official
+ES2027,18,Electrical Installations,active,3271,official
+ES2027,19,Industrial Control,active,3269,official
+ES2027,20,Bricklaying,active,3270,official
+ES2027,21,Plastering and Dry Wall Systems,active,3267,official
+ES2027,22,Painting and Decorating,active,3331,official
+ES2027,24,Cabinetmaking,active,3328,official
+ES2027,25,Joinery,active,3335,official
+ES2027,26,Carpentry,active,3244,official
+ES2027,27,Robot Systems Integration,active,3235,official
+ES2027,28,Floristry,active,3247,official
+ES2027,29,Hairdressing,active,3255,official
+ES2027,30,Beauty Therapy,active,3329,official
+ES2027,31,Fashion Design and Technology Team Challenge,active,3240,official
+ES2027,32,Butchery,active,3256,official
+ES2027,33,Automobile Technology,active,3258,official
+ES2027,34,Cooking,active,3273,official
+ES2027,35,Restaurant Service,active,3264,official
+ES2027,36,Bakery,active,3338,official
+ES2027,37,Pâtisserie and Confectionery,active,3266,official
+ES2027,38,Refrigeration Technologies,active,3336,official
+ES2027,39,IT Network Systems Administration,active,3245,official
+ES2027,40,Graphic Design Technology,active,3238,official
+ES2027,41,Health and Social Care,active,3241,official
+ES2027,42,Digital Construction,active,3278,official
+ES2027,43,Cyber Security,active,3254,official
+ES2027,45,Software Applications Development,active,3330,official
+ES2027,46,Entrepreneurship,active,3263,official
+ES2027,48,Industry 4.0,active,3332,official
+ES2027,49,Metal Roofing,active,3275,official
+ES2027,50,Floor Laying,active,3250,official
+ES2027,51,Landscape Gardening,active,3259,official
+ES2027,52,Aircraft Maintenance,active,3260,official
+ES2027,53,Heavy Vehicle Technology,active,3261,official
+ES2027,54,Truck and Bus Technology,active,3272,official
+ES2027,55,Autobody Repair,active,3277,official
+ES2027,56,Car Painting,active,3377,official
+ES2027,57,Hotel Reception,active,3237,official
+ES2027,HP1,Freight Forwarding,active,3339,presentation
+ES2027,HP2,Water Technology,active,3340,presentation
+ES2027,HP3,Concrete Construction,active,3341,presentation
+ES2027,HP4,Mobile Application Development,active,3342,presentation
+ES2027,HP5,Architectural Stonemasonry,active,3343,presentation

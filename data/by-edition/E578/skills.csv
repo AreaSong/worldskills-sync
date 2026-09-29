@@ -1,0 +1,17 @@
+﻿edition,skill,name,status,skill_id,type
+E578,04,Mechatronics,active,959,official
+E578,05,Mechanical Engineering CAD,active,961,official
+E578,10,Welding,active,960,official
+E578,12,Wall and Floor Tiling,active,955,official
+E578,15,Plumbing and Heating,active,953,official
+E578,18,Electrical Installations,active,951,official
+E578,20,Bricklaying,active,950,official
+E578,25,Joinery,active,952,official
+E578,29,Hairdressing,active,957,official
+E578,31,Fashion Technology,active,962,official
+E578,33,Automotive Technology,active,949,official
+E578,34,Cooking,active,956,official
+E578,35,Restaurant Service,active,958,official
+E578,38,Refrigeration and Air Conditioning,active,954,official
+E578,55,Water Technology,active,964,official
+E578,57,Web Technologies,active,963,official

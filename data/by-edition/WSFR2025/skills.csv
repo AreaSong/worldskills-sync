@@ -1,0 +1,69 @@
+﻿edition,skill,name,status,skill_id,type
+WSFR2025,01,Maintenance industrielle,active,2112,official
+WSFR2025,02,Information Network Cabling,active,2118,official
+WSFR2025,03,Manufacturing Team Challenge,active,2099,official
+WSFR2025,04,Mechatronics,active,2120,official
+WSFR2025,05,Mechanical Engineering Design - CAD,active,2138,official
+WSFR2025,06,CNC Turning,active,2108,official
+WSFR2025,07,CNC Milling,active,2103,official
+WSFR2025,09,IT Software Solutions for Business,active,2122,official
+WSFR2025,10,Welding,active,2137,official
+WSFR2025,11,Print Media Technology,active,2121,official
+WSFR2025,12,Wall and Floor Tiling,active,2124,official
+WSFR2025,13,Autobody Repair,active,2101,official
+WSFR2025,14,Aircraft Maintenance,active,2150,official
+WSFR2025,15,Plumbing and Heating,active,2107,official
+WSFR2025,16,Electronics,active,2111,official
+WSFR2025,17,Web design,active,2135,official
+WSFR2025,18,Electrical Installations,active,2139,official
+WSFR2025,19,Industrial Control,active,2113,official
+WSFR2025,20,Bricklaying,active,2142,official
+WSFR2025,21,Plastering and Drywall Systems,active,2106,official
+WSFR2025,22,Painting and Decorating,active,2133,official
+WSFR2025,24,Cabinetmaking,active,2131,official
+WSFR2025,25,Joinery,active,2134,official
+WSFR2025,26,Carpentry,active,2116,official
+WSFR2025,27,Jewellery,active,2105,official
+WSFR2025,28,Floristry,active,2109,official
+WSFR2025,29,Hairdressing,active,2102,official
+WSFR2025,30,Beauty Therapy,active,2152,official
+WSFR2025,31,Fashion Technology,active,2158,official
+WSFR2025,32,Pâtisserie and Confectionery,active,2167,official
+WSFR2025,33,Automobile Technology,active,2117,official
+WSFR2025,34,Cooking,active,2115,official
+WSFR2025,35,Restaurant Service,active,2145,official
+WSFR2025,36,Car Painting,active,2136,official
+WSFR2025,37,Landscape Gardening,active,2114,official
+WSFR2025,38,Refrigeration and Air Conditioning,active,2127,official
+WSFR2025,39,IT Network Systems Administration,active,2155,official
+WSFR2025,40,Graphic Design Technology,active,2148,official
+WSFR2025,41,Health and Social Care,active,2143,official
+WSFR2025,42,Construction Metal Work,active,2140,official
+WSFR2025,44,Visual merchandising,active,2160,official
+WSFR2025,46,Concrete Construction Work,active,2147,official
+WSFR2025,47,Bakery,active,2125,official
+WSFR2025,48,Industrie 4.0,active,2130,official
+WSFR2025,49,Heavy Vehicle Maintenance,active,2166,official
+WSFR2025,50,3D Digital Game Art,active,2165,official
+WSFR2025,53,Cloud Technology,active,2161,official
+WSFR2025,54,Cyber Security,active,2149,official
+WSFR2025,56,Hotel Reception,active,2146,official
+WSFR2025,57,Fabrication Additive,active,2156,official
+WSFR2025,58,Digital Construction,active,2129,official
+WSFR2025,63,Robot Systems Integration,active,2154,official
+WSFR2025,D1,Marble Design,active,2162,official
+WSFR2025,E46,Entrepreneurship Team Challenge,active,2126,official
+WSFR2025,E49,Metal Roofing,active,2119,official
+WSFR2025,E50,Floor Laying,active,2128,official
+WSFR2025,E54,Truck Maintenance,active,2159,official
+WSFR2025,E8,Architectural Stonemasonry,active,2163,official
+WSFR2025,N1,Sheet Metal Work,active,2151,official
+WSFR2025,N11,Butchery,active,2123,official
+WSFR2025,N2,Horticulture,active,2100,official
+WSFR2025,N3,Motorcycle Technology,active,2132,official
+WSFR2025,N4,Wine Tester,active,2141,official
+WSFR2025,N5,Social Care,active,2110,official
+WSFR2025,N6,Road Building,active,2153,official
+WSFR2025,N7,Leatherwork,active,2157,official
+WSFR2025,N8,Glass Construction Technology,active,2164,official
+WSFR2025,N9,Cleanliness professions,active,2104,official
