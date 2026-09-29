@@ -1,0 +1,4 @@
+httpx>=0.27
+beautifulsoup4>=4.12
+playwright>=1.49
+pypdf>=5.0
