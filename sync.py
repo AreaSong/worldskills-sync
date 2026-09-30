@@ -31,6 +31,7 @@ from classify import (
     Classified,
     classify,
     code_from_event,
+    dedupe_event_code,
     doc_folder,
     edition_name,
     lang_folder,
@@ -417,6 +418,7 @@ def skill_fields(row: dict[str, Any]) -> tuple[int, str | None, str]:
 def load_events(client: httpx.Client, skills: SkillIndex) -> None:
     offset = 0
     seen: set[int] = set()
+    occupied: dict[str, int] = {}
     while True:
         status, data = api_get(client, f"{API}/events?limit=100&offset={offset}")
         if status != 200 or not data:
@@ -434,7 +436,7 @@ def load_events(client: httpx.Client, skills: SkillIndex) -> None:
             etype = event.get("type")
             if isinstance(etype, dict):
                 etype = etype.get("code") or ""
-            code = code_from_event(event.get("code"), name, event_id)
+            code = dedupe_event_code(code_from_event(event.get("code"), name, event_id), event_id, occupied)
             register_edition(code, name or edition_name(code), event_id, str(etype or ""))
             skills.event_ids[code] = event_id
             skills.event_names[event_id] = name or edition_name(code)
@@ -1240,6 +1242,10 @@ def _self_test() -> None:
     assert es.edition_code == "ES2025" and es.skill_number == "12"
     untagged = classify(filename="WSI_MS_benefits_of_membership.pdf", tags=["Official Document"], doc_key="official-document")
     assert untagged.edition_code == GLOBAL_CODE
+    occupied: dict[str, int] = {}
+    first = dedupe_event_code("Taitaja2023Espoo", 596, occupied)
+    second = dedupe_event_code("Taitaja2023Espoo", 602, occupied)
+    assert first == "Taitaja2023Espoo" and second == "Taitaja2023Espoo-E602"
     number, name = parse_list_title("33 Automobile Technology")
     assert number == "33" and name == "Automobile Technology"
     path = classified_path(tp, "WSC2026_TP24_actual_en.zip")

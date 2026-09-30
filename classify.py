@@ -314,6 +314,19 @@ def code_from_event(code: str | None, name: str | None = None, event_id: int | N
     return GLOBAL_CODE
 
 
+def dedupe_event_code(code: str, event_id: int | None, occupied: dict[str, int]) -> str:
+    normalized = normalize_event_code(code) or code
+    if event_id is None:
+        occupied.setdefault(normalized, -1)
+        return normalized
+    event_id = int(event_id)
+    existing = occupied.get(normalized)
+    if existing is not None and existing != event_id:
+        normalized = f"{normalized}-E{event_id}"
+    occupied[normalized] = event_id
+    return normalized
+
+
 def archive_codes() -> tuple[str, ...]:
     return tuple(code for code in EDITION_NAMES if code != GLOBAL_CODE)
 

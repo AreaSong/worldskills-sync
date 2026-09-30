@@ -15,6 +15,7 @@ from classify import (
     EDITION_NAMES,
     GLOBAL_CODE,
     code_from_event,
+    dedupe_event_code,
     event_type_of,
     pad_skill,
     register_edition,
@@ -80,6 +81,25 @@ def write_csv(path: Path, rows: list[dict[str, Any]], fields: list[str]) -> None
             writer.writerow({key: row.get(key, "") for key in fields})
 
 
+def read_csv_rows(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    with path.open(encoding="utf-8-sig", newline="") as handle:
+        return list(csv.DictReader(handle))
+
+
+def load_existing_il_index(root: Path) -> list[dict[str, Any]]:
+    rows = read_csv_rows(root / "data" / "il-index.csv")
+    if rows:
+        return rows
+    merged: list[dict[str, Any]] = []
+    folder = root / "data" / "by-edition"
+    if folder.exists():
+        for path in sorted(folder.glob("*/il-index.csv")):
+            merged.extend(read_csv_rows(path))
+    return merged
+
+
 def event_type_code(value: Any) -> str:
     if isinstance(value, dict):
         return str(value.get("code") or value.get("name") or "").strip()
@@ -88,10 +108,11 @@ def event_type_code(value: Any) -> str:
 
 def fetch_editions(client: httpx.Client) -> list[dict[str, Any]]:
     found: dict[str, dict[str, Any]] = {}
+    occupied: dict[str, int] = {}
     for item in paginate(client, "/events", "events", limit=100):
         name = text_of(item.get("name"))
         event_id = item.get("id")
-        code = code_from_event(item.get("code"), name, event_id)
+        code = dedupe_event_code(code_from_event(item.get("code"), name, event_id), event_id, occupied)
         etype = event_type_code(item.get("type"))
         register_edition(code, name or EDITION_NAMES.get(code, code), event_id, etype)
         found[code] = {
@@ -237,14 +258,14 @@ def fetch_results(client: httpx.Client) -> list[dict[str, Any]]:
     return rows
 
 
-def fetch_il_index(client: httpx.Client, editions: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def fetch_il_index(client: httpx.Client, editions: list[dict[str, Any]], root: Path | None = None) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     status, data = json_get(client, "/il/events")
     if status == 401:
-        print("基础设施清单目录需要登录，已跳过。")
-        return rows
+        print("基础设施清单目录需要登录，已保留上次目录。")
+        return load_existing_il_index(root) if root else rows
     if status != 200 or not isinstance(data, dict):
-        return rows
+        return load_existing_il_index(root) if root else rows
     id_to_code: dict[int, str] = {}
     for item in editions:
         try:
@@ -414,7 +435,7 @@ def refresh_tables(root: Path, client: httpx.Client, db_rows: list[Any] | None =
     members = fetch_members(client)
     skills = fetch_skills(client, editions)
     results = fetch_results(client)
-    il_index = fetch_il_index(client, editions)
+    il_index = fetch_il_index(client, editions, root)
     resources = resource_catalog_rows(db_rows or [])
     counts = write_data_dir(
         root,
