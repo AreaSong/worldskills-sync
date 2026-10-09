@@ -1,0 +1,25 @@
+{
+  "skill": "36",
+  "names": {
+    "WSC2001": "Car Painting"
+  },
+  "files": [
+    {
+      "edition": "WSC2001",
+      "edition_name": "WorldSkills Seoul 2001",
+      "kind": "TP",
+      "skill": "36",
+      "skill_name": "Car Painting",
+      "stage": "actual",
+      "lang": "und",
+      "filename": "TP36_36KR.zip",
+      "bytes": 106760,
+      "sha256": "f4e56d617fc849c23b3e87e5bd96a63bd554a26fc2e6d8aca154d128a7668795",
+      "url": "https://api.worldskills.org/resources/download/2378",
+      "state": "done",
+      "asset": "wsc-2001-seoul-tp.zip",
+      "release": "wsc-2001-seoul",
+      "store_path": "WSC2001/TP/36/actual/und/TP36_36KR.zip"
+    }
+  ]
+}

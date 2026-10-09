@@ -1,0 +1,25 @@
+{
+  "skill": "22",
+  "names": {
+    "WSC2001": "Painting and Decorating"
+  },
+  "files": [
+    {
+      "edition": "WSC2001",
+      "edition_name": "WorldSkills Seoul 2001",
+      "kind": "TP",
+      "skill": "22",
+      "skill_name": "Painting and Decorating",
+      "stage": "actual",
+      "lang": "und",
+      "filename": "TP22_36KR.zip",
+      "bytes": 56916,
+      "sha256": "cd9f0a6e3b4cd91a1d8d1bc66323a77bbc6625173a5d41a471a05bf2ed5a1ed8",
+      "url": "https://api.worldskills.org/resources/download/2372",
+      "state": "done",
+      "asset": "wsc-2001-seoul-tp.zip",
+      "release": "wsc-2001-seoul",
+      "store_path": "WSC2001/TP/22/actual/und/TP22_36KR.zip"
+    }
+  ]
+}

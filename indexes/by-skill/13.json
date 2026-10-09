@@ -1,0 +1,25 @@
+{
+  "skill": "13",
+  "names": {
+    "WSC2001": "Autobody Repair"
+  },
+  "files": [
+    {
+      "edition": "WSC2001",
+      "edition_name": "WorldSkills Seoul 2001",
+      "kind": "TP",
+      "skill": "13",
+      "skill_name": "Autobody Repair",
+      "stage": "actual",
+      "lang": "und",
+      "filename": "TP13_36KR.zip",
+      "bytes": 6427718,
+      "sha256": "2924c45d324a27626cc5f4cdad60bb20814a8e68af4380dab93adb89c0c7fa15",
+      "url": "https://api.worldskills.org/resources/download/2367",
+      "state": "done",
+      "asset": "wsc-2001-seoul-tp.zip",
+      "release": "wsc-2001-seoul",
+      "store_path": "WSC2001/TP/13/actual/und/TP13_36KR.zip"
+    }
+  ]
+}

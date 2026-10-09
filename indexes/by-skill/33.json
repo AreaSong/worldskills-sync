@@ -1,7 +1,8 @@
 {
   "skill": "33",
   "names": {
-    "WSC2026": "Automobile Technology"
+    "WSC2026": "Automobile Technology",
+    "WSC2001": "Automobile Technology"
   },
   "files": [
     {
@@ -37,6 +38,23 @@
       "asset": "wsc-2026-shanghai-td.zip",
       "release": "wsc-2026-shanghai",
       "store_path": "WSC2026/TD/33/en/WSC2026_TD33_en.pdf"
+    },
+    {
+      "edition": "WSC2001",
+      "edition_name": "WorldSkills Seoul 2001",
+      "kind": "TP",
+      "skill": "33",
+      "skill_name": "Automobile Technology",
+      "stage": "actual",
+      "lang": "und",
+      "filename": "TP33_36KR.zip",
+      "bytes": 1092191,
+      "sha256": "309f5ee578f6a2531c7de24666a4af1994de76233df4b5ca5fe94952a049087b",
+      "url": "https://api.worldskills.org/resources/download/2376",
+      "state": "done",
+      "asset": "wsc-2001-seoul-tp.zip",
+      "release": "wsc-2001-seoul",
+      "store_path": "WSC2001/TP/33/actual/und/TP33_36KR.zip"
     }
   ]
 }

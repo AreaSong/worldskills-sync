@@ -1,9 +1,27 @@
 {
   "skill": "40",
   "names": {
+    "WSC2001": "Graphic Design Technology",
     "WSC2026": "Graphic Design Technology"
   },
   "files": [
+    {
+      "edition": "WSC2001",
+      "edition_name": "WorldSkills Seoul 2001",
+      "kind": "TP",
+      "skill": "40",
+      "skill_name": "Graphic Design Technology",
+      "stage": "actual",
+      "lang": "und",
+      "filename": "TP40_36KR.zip",
+      "bytes": 29050,
+      "sha256": "0d61d4f091ecaef9fa7b45f756d494399fa36daa9c290f6dac0d56629fa6a21d",
+      "url": "https://api.worldskills.org/resources/download/2382",
+      "state": "done",
+      "asset": "wsc-2001-seoul-tp.zip",
+      "release": "wsc-2001-seoul",
+      "store_path": "WSC2001/TP/40/actual/und/TP40_36KR.zip"
+    },
     {
       "edition": "WSC2026",
       "edition_name": "WorldSkills Shanghai 2026",

@@ -1,0 +1,25 @@
+{
+  "skill": "18",
+  "names": {
+    "WSC2001": "Electrical Installations"
+  },
+  "files": [
+    {
+      "edition": "WSC2001",
+      "edition_name": "WorldSkills Seoul 2001",
+      "kind": "TP",
+      "skill": "18",
+      "skill_name": "Electrical Installations",
+      "stage": "actual",
+      "lang": "und",
+      "filename": "TP18_36KR.zip",
+      "bytes": 2447102,
+      "sha256": "df369922c8b61ea4f31254d50ce6856c1f2fdb1ad8fe961b1aa65d8075571d63",
+      "url": "https://api.worldskills.org/resources/download/2369",
+      "state": "done",
+      "asset": "wsc-2001-seoul-tp.zip",
+      "release": "wsc-2001-seoul",
+      "store_path": "WSC2001/TP/18/actual/und/TP18_36KR.zip"
+    }
+  ]
+}

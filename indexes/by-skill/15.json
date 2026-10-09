@@ -1,0 +1,25 @@
+{
+  "skill": "15",
+  "names": {
+    "WSC2001": "Plumbing"
+  },
+  "files": [
+    {
+      "edition": "WSC2001",
+      "edition_name": "WorldSkills Seoul 2001",
+      "kind": "TP",
+      "skill": "15",
+      "skill_name": "Plumbing",
+      "stage": "actual",
+      "lang": "und",
+      "filename": "TP15_36KR.zip",
+      "bytes": 563167,
+      "sha256": "f1712944c666cfef3ac5018f1d9ab9b6b06e2bd225b79388daa952693e6380a2",
+      "url": "https://api.worldskills.org/resources/download/2368",
+      "state": "done",
+      "asset": "wsc-2001-seoul-tp.zip",
+      "release": "wsc-2001-seoul",
+      "store_path": "WSC2001/TP/15/actual/und/TP15_36KR.zip"
+    }
+  ]
+}

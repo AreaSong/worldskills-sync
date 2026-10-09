@@ -1,0 +1,25 @@
+{
+  "skill": "35",
+  "names": {
+    "WSC2001": "Restaurant Service"
+  },
+  "files": [
+    {
+      "edition": "WSC2001",
+      "edition_name": "WorldSkills Seoul 2001",
+      "kind": "TP",
+      "skill": "35",
+      "skill_name": "Restaurant Service",
+      "stage": "actual",
+      "lang": "und",
+      "filename": "TP35_36KR.zip",
+      "bytes": 76868,
+      "sha256": "9d45ad458b9897cacb4195f67a4251b5015895f165e9338a0ea7e27d24b65612",
+      "url": "https://api.worldskills.org/resources/download/2377",
+      "state": "done",
+      "asset": "wsc-2001-seoul-tp.zip",
+      "release": "wsc-2001-seoul",
+      "store_path": "WSC2001/TP/35/actual/und/TP35_36KR.zip"
+    }
+  ]
+}

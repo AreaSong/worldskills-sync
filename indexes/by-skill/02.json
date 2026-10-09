@@ -23,6 +23,23 @@
       "store_path": "WSC2001/TP/02/actual/und/TP02_36KR.zip"
     },
     {
+      "edition": "WSC2001",
+      "edition_name": "WorldSkills Seoul 2001",
+      "kind": "DOC",
+      "skill": "02",
+      "skill_name": "Press tool making",
+      "stage": "",
+      "lang": "und",
+      "filename": "R02_01.pdf",
+      "bytes": 213077,
+      "sha256": "ad53e56bd5dc67a1432bfa4a3e83fc21afe43824d3ba723539dfa7765536f67b",
+      "url": "https://api.worldskills.org/resources/download/2693",
+      "state": "done",
+      "asset": "wsc-2001-seoul-doc.zip",
+      "release": "wsc-2001-seoul",
+      "store_path": "WSC2001/DOC/02/und/R02_01.pdf"
+    },
+    {
       "edition": "WSC2026",
       "edition_name": "WorldSkills Shanghai 2026",
       "kind": "TP",

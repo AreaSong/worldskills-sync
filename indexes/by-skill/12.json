@@ -1,0 +1,25 @@
+{
+  "skill": "12",
+  "names": {
+    "WSC2001": "Wall and Floor Tiling"
+  },
+  "files": [
+    {
+      "edition": "WSC2001",
+      "edition_name": "WorldSkills Seoul 2001",
+      "kind": "TP",
+      "skill": "12",
+      "skill_name": "Wall and Floor Tiling",
+      "stage": "actual",
+      "lang": "und",
+      "filename": "TP12_36KR.zip",
+      "bytes": 848649,
+      "sha256": "515f7c1a2708603d47fa5548c135cb5db20a673de38b90f2dacccf1d3f32b357",
+      "url": "https://api.worldskills.org/resources/download/2366",
+      "state": "done",
+      "asset": "wsc-2001-seoul-tp.zip",
+      "release": "wsc-2001-seoul",
+      "store_path": "WSC2001/TP/12/actual/und/TP12_36KR.zip"
+    }
+  ]
+}
