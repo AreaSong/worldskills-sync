@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14181f">
+  <meta name="description" content="WorldSkills 竞赛资料公开目录。按技能编号、届次、类型查找试题和技术描述；正文在 GitHub Releases。">
+  <title>WorldSkills 公开目录</title>
+  <style>
+    :root {
+      --hall: #14181f;
+      --steel: #1c222c;
+      --tape: #f05a28;
+      --brass: #e8c872;
+      --paper: #f3efe4;
+      --mute: #9aa3b0;
+      --rule: #2e3644;
+      --chip: #252c38;
+      --focus: #ffd9a0;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font: 16px/1.5 "PingFang SC", "Noto Sans SC", "Source Han Sans SC", ui-sans-serif, system-ui, sans-serif;
+      background: var(--hall);
+      color: var(--paper);
+      display: flex;
+      flex-direction: column;
+    }
+    a { color: var(--brass); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 3px;
+    }
+    header {
+      flex: 0 0 auto;
+      padding: 20px 28px 16px;
+      border-bottom: 1px solid var(--rule);
+      background: var(--steel);
+    }
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+    .brand {
+      margin: 0;
+      font-size: 13px;
+      font-weight: 650;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--mute);
+    }
+    .brand strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 22px;
+      letter-spacing: 0;
+      text-transform: none;
+      color: var(--paper);
+      font-weight: 650;
+    }
+    nav { display: flex; gap: 4px; flex-wrap: wrap; }
+    nav a {
+      color: var(--mute);
+      text-decoration: none;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 10px;
+      cursor: pointer;
+    }
+    nav a:hover { color: var(--paper); }
+    label[for="q"] { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    #q {
+      width: 100%;
+      font: 28px/1.25 "PingFang SC", "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
+      padding: 8px 0 12px;
+      border: 0;
+      border-bottom: 3px solid var(--rule);
+      background: transparent;
+      color: var(--paper);
+      outline: none;
+      border-radius: 0;
+    }
+    #q:focus { border-bottom-color: var(--tape); }
+    #q::placeholder { color: #5c6573; }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+      align-items: center;
+    }
+    .seg { display: flex; border: 1px solid var(--rule); overflow: hidden; }
+    .seg button {
+      appearance: none;
+      border: 0;
+      background: var(--chip);
+      color: var(--mute);
+      min-height: 44px;
+      padding: 0 16px;
+      font: 14px/1 "PingFang SC", "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
+      cursor: pointer;
+    }
+    .seg button[aria-pressed="true"] {
+      background: var(--tape);
+      color: #1a0d08;
+      font-weight: 650;
+    }
+    select {
+      font: 14px/1.2 "PingFang SC", "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
+      background: var(--chip);
+      color: var(--paper);
+      border: 1px solid var(--rule);
+      min-height: 44px;
+      padding: 0 12px;
+      cursor: pointer;
+    }
+    .hint { color: var(--mute); font-size: 13px; margin: 12px 0 0; }
+    .hint b { color: var(--paper); font-weight: 550; }
+    main { flex: 1; min-height: 0; overflow: auto; padding: 0 0 32px; }
+    .count {
+      padding: 14px 28px 4px;
+      color: var(--mute);
+      font-size: 13px;
+    }
+    ol { list-style: none; margin: 0; padding: 0; }
+    li {
+      display: grid;
+      grid-template-columns: 76px minmax(0, 1fr) auto;
+      gap: 16px;
+      align-items: start;
+      padding: 16px 28px;
+      border-bottom: 1px solid var(--rule);
+    }
+    li:hover { background: #191e28; }
+    .num {
+      font: 700 28px/1 "Arial Narrow", "DIN Alternate", "PingFang SC", ui-sans-serif, sans-serif;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.04em;
+      color: var(--brass);
+      padding-top: 2px;
+    }
+    .body { min-width: 0; }
+    .title { font-weight: 650; }
+    .meta {
+      color: var(--mute);
+      font-size: 13px;
+      margin-top: 3px;
+      word-break: break-all;
+    }
+    .path { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 12px; }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: 0.04em;
+      padding: 2px 8px;
+      border: 1px solid var(--rule);
+      color: var(--paper);
+      margin-right: 6px;
+    }
+    .actions { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+    .open {
+      color: var(--brass);
+      text-decoration: none;
+      font-size: 14px;
+      white-space: nowrap;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .open.muted { color: #5c6573; pointer-events: none; cursor: default; }
+    .empty { padding: 40px 28px; color: var(--mute); }
+    footer {
+      flex: 0 0 auto;
+      padding: 14px 28px 20px;
+      border-top: 1px solid var(--rule);
+      color: var(--mute);
+      font-size: 12px;
+    }
+    footer a { color: var(--mute); }
+    @media (max-width: 720px) {
+      header, .count, .empty, footer { padding-left: 16px; padding-right: 16px; }
+      .top { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .brand { letter-spacing: 0.08em; }
+      nav { margin-left: -10px; }
+      li { grid-template-columns: 56px minmax(0, 1fr); padding: 14px 16px; }
+      .actions { grid-column: 2; align-items: flex-start; }
+      #q { font-size: 22px; }
+      .brand strong { font-size: 18px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top">
+      <p class="brand">WorldSkills 资料<strong id="mode-title">公开目录</strong></p>
+      <nav aria-label="仓库">
+        <a href="https://github.com/AreaSong/worldskills-sync">代码</a>
+        <a href="https://github.com/AreaSong/worldskills-sync/releases">Releases</a>
+        <a href="https://github.com/AreaSong/worldskills-sync#readme">说明</a>
+      </nav>
+    </div>
+    <label for="q">按技能编号、项目名、文件名或选手姓名搜索</label>
+    <input id="q" type="search" placeholder="39、Cooking、试题、包内文件名、选手姓名…" autocomplete="off" autofocus>
+    <div class="filters">
+      <div class="seg" role="group" aria-label="范围">
+        <button type="button" data-scope="all" aria-pressed="true">全部</button>
+        <button type="button" data-scope="files">资料</button>
+        <button type="button" data-scope="results">成绩</button>
+      </div>
+      <select id="edition" aria-label="届次">
+        <option value="">全部届次</option>
+      </select>
+      <select id="kind" aria-label="类型">
+        <option value="">全部类型</option>
+      </select>
+    </div>
+    <p class="hint" id="mode-hint">正在载入目录…</p>
+  </header>
+  <main>
+    <div class="count" id="count" aria-live="polite"></div>
+    <ol id="list"></ol>
+    <p class="empty" id="empty">正在载入目录…</p>
+  </main>
+  <footer>
+    脚本 MIT。竞赛资料版权仍属
+    <a href="https://worldskills.org/">WorldSkills International</a>。
+    不含人员名册、照片与通讯录。云端只放索引，正文在 GitHub Releases。
+  </footer>
+  <script>
+    const REPO = "AreaSong/worldskills-sync";
+    const LIMIT = 80;
+    const KIND_LABEL = {
+      TD: "技术描述", TP: "试题", IL: "基础设施清单", SMP: "技能管理计划",
+      COR: "通信", RES: "资源", RST: "成绩", DOC: "竞赛文件", OFF: "官方文件",
+      SKL: "技能资料", SUP: "辅助文件", MTG: "会议文件", VID: "视频",
+      HAL: "场地布局", ORG: "组织指南", MKT: "营销资料", RPT: "报告",
+      GEN: "综合", MIN: "纪要", CEN: "中心资源", LRN: "学习资源",
+      HUB: "资源中心附件", WSS: "世界技能标准规范", HSE: "健康安全环境",
+      NEW: "新闻资料", SFW: "软件", FOR: "论坛上传", MAR: "博物馆档案",
+      MPH: "博物馆照片", OBJ: "实物资料", ARC: "档案馆", MRC: "博物馆记录",
+      RCH: "资源中心", CNF: "会议上传", SFG: "软件指南", SAG: "标准与评分指南",
+      FRM: "评分表"
+    };
+    const q = document.getElementById("q");
+    const list = document.getElementById("list");
+    const count = document.getElementById("count");
+    const empty = document.getElementById("empty");
+    const edition = document.getElementById("edition");
+    const kind = document.getElementById("kind");
+    const hint = document.getElementById("mode-hint");
+    let scope = "all";
+    let timer = 0;
+    let facetsReady = false;
+    let localMode = false;
+    let staticCatalog = null;
+    const published = new Set();
+
+    document.querySelectorAll("[data-scope]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        scope = btn.dataset.scope;
+        document.querySelectorAll("[data-scope]").forEach((other) => {
+          other.setAttribute("aria-pressed", String(other === btn));
+        });
+        run();
+      });
+    });
+    q.addEventListener("input", () => {
+      clearTimeout(timer);
+      timer = setTimeout(run, 120);
+    });
+    q.addEventListener("change", run);
+    q.addEventListener("search", run);
+    edition.addEventListener("change", run);
+    kind.addEventListener("change", run);
+    q.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        run();
+      }
+    });
+
+    function kindLabel(code) {
+      return KIND_LABEL[code] || code || "";
+    }
+
+    function bytes(n) {
+      n = Number(n) || 0;
+      if (n < 1024) return n + " B";
+      if (n < 1048576) return (n / 1024).toFixed(1) + " KB";
+      return (n / 1048576).toFixed(1) + " MB";
+    }
+
+    function stateLabel(state) {
+      return { done: "已保存", queued: "队列中", working: "正在下", forbidden: "无权限", error: "失败", missing: "找不到" }[state] || state;
+    }
+
+    function fillFacets(data) {
+      if (facetsReady) return;
+      data.editions.forEach((code) => {
+        const opt = document.createElement("option");
+        opt.value = code;
+        opt.textContent = code;
+        edition.appendChild(opt);
+      });
+      data.kinds.forEach((item) => {
+        const opt = document.createElement("option");
+        opt.value = item.code;
+        opt.textContent = item.label + " (" + item.code + ")";
+        kind.appendChild(opt);
+      });
+      facetsReady = true;
+    }
+
+    function packKey(item) {
+      return (item.release || "") + "/" + (item.asset || "");
+    }
+
+    function releaseHref(item) {
+      if (!item.release || !item.asset) return "";
+      return "https://github.com/" + REPO + "/releases/download/" + encodeURIComponent(item.release) + "/" + encodeURIComponent(item.asset);
+    }
+
+    function renderFile(item) {
+      const local = localMode && item.state === "done";
+      const encoded = (item.store_path || "").split("/").map(encodeURIComponent).join("/");
+      const zip = /\.zip$/i.test(item.filename || item.store_path || "");
+      const live = published.has(packKey(item));
+      const pack = live ? releaseHref(item) : "";
+      const inner = (item.inner || []).slice(0, 6).map(escapeHtml).join(" · ");
+      let actions = "";
+      if (local) {
+        actions = `<a class="open" href="/file/${encoded}">打开</a>`;
+        if (zip) actions += `<a class="open" href="/extract/${encoded}">解压</a>`;
+      } else if (pack) {
+        actions = `<a class="open" href="${pack}" rel="noopener noreferrer">下载分卷</a>`;
+      } else {
+        actions = `<span class="open muted">待发布</span>`;
+      }
+      const label = item.kind_label || kindLabel(item.kind);
+      return `<li>
+        <div class="num">${escapeHtml(item.skill || "—")}</div>
+        <div class="body">
+          <div class="title">${escapeHtml(item.skill_name || item.filename)}</div>
+          <div class="meta">
+            <span class="badge">${escapeHtml(label)}</span>
+            ${escapeHtml(item.edition_name || item.edition)}
+            ${item.stage ? " · " + escapeHtml(item.stage) : ""}
+            ${item.lang ? " · " + escapeHtml(item.lang) : ""}
+            ${localMode ? " · " + escapeHtml(stateLabel(item.state)) : ""}
+            ${item.bytes ? " · " + bytes(item.bytes) : ""}
+          </div>
+          <div class="meta path">${escapeHtml(item.filename)}${item.store_path ? " · " + escapeHtml(item.store_path) : ""}</div>
+          ${inner ? `<div class="meta">包内 ${item.inner_count || item.inner.length} 个：${inner}${(item.inner_count || item.inner.length) > 6 ? " …" : ""}</div>` : ""}
+        </div>
+        <div class="actions">${actions}</div>
+      </li>`;
+    }
+
+    function renderResult(item) {
+      return `<li>
+        <div class="num">${escapeHtml(item.skill || "—")}</div>
+        <div class="body">
+          <div class="title">${escapeHtml(item.competitor_names || "未署名")}</div>
+          <div class="meta">
+            <span class="badge">成绩</span>
+            ${escapeHtml(item.edition)} · ${escapeHtml(item.skill_name || "")}
+            ${item.member_name ? " · " + escapeHtml(item.member_name) : ""}
+            ${item.medal ? " · " + escapeHtml(item.medal) : ""}
+            ${item.position ? " · 第 " + escapeHtml(item.position) : ""}
+          </div>
+        </div>
+      </li>`;
+    }
+
+    function escapeHtml(value) {
+      return String(value || "").replace(/[&<>"']/g, (ch) => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+      }[ch]));
+    }
+
+    function parseCsv(text) {
+      const rows = [];
+      let row = [];
+      let field = "";
+      let quoted = false;
+      const src = text.replace(/^\ufeff/, "");
+      for (let i = 0; i < src.length; i += 1) {
+        const ch = src[i];
+        if (quoted) {
+          if (ch === '"' && src[i + 1] === '"') { field += '"'; i += 1; }
+          else if (ch === '"') quoted = false;
+          else field += ch;
+        } else if (ch === '"') quoted = true;
+        else if (ch === ",") { row.push(field); field = ""; }
+        else if (ch === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
+        else if (ch !== "\r") field += ch;
+      }
+      if (field || row.length) { row.push(field); rows.push(row); }
+      if (!rows.length) return [];
+      const header = rows[0];
+      return rows.slice(1).filter((r) => r.some(Boolean)).map((r) => {
+        const item = {};
+        header.forEach((key, idx) => { item[key] = r[idx] || ""; });
+        return item;
+      });
+    }
+
+    function hayFile(item) {
+      return [item.edition, item.edition_name, item.skill, String(item.skill || "").replace(/^0+/, ""),
+        item.skill_name, item.kind, item.kind_label, item.stage, item.lang, item.filename, item.store_path,
+        (item.inner || []).join(" ")].filter(Boolean).join(" ").toLowerCase();
+    }
+
+    function isSkillNum(token) {
+      return /^\d{1,2}$/.test(token);
+    }
+
+    function skillMatches(item, token) {
+      const skill = String(item.skill || "");
+      const want = token.replace(/^0+/, "") || token;
+      const got = skill.replace(/^0+/, "") || skill;
+      return skill === token || got === want || skill === token.padStart(2, "0");
+    }
+
+    function tokensMatch(item, tokens, blob) {
+      return tokens.every((token) => isSkillNum(token) ? skillMatches(item, token) : blob.includes(token));
+    }
+
+    function filterStatic() {
+      const tokens = q.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+      const files = staticCatalog.files;
+      const results = staticCatalog.results;
+      const found = [];
+      if (scope === "all" || scope === "files") {
+        files.forEach((item) => {
+          if (edition.value && item.edition !== edition.value) return;
+          if (kind.value && item.kind !== kind.value) return;
+          if (!tokens.length && !edition.value && !kind.value) return;
+          if (tokens.length && !tokensMatch(item, tokens, hayFile(item))) return;
+          found.push(item);
+        });
+      }
+      if ((scope === "all" || scope === "results") && !kind.value && tokens.length) {
+        results.forEach((item) => {
+          if (edition.value && item.edition !== edition.value) return;
+          const blob = [item.edition, item.skill, item.skill_name, item.member_name, item.competitor_names, item.medal].join(" ").toLowerCase();
+          if (!tokensMatch(item, tokens, blob)) return;
+          found.push(item);
+        });
+      }
+      return {
+        query: q.value.trim(),
+        total: found.length,
+        shown: Math.min(found.length, LIMIT),
+        items: found.slice(0, LIMIT),
+        editions: staticCatalog.editions,
+        kinds: staticCatalog.kinds,
+        files: files.length,
+        results: results.length,
+      };
+    }
+
+    async function loadPublished() {
+      try {
+        const rels = await fetch("https://api.github.com/repos/" + REPO + "/releases?per_page=100").then((r) => r.ok ? r.json() : []);
+        rels.forEach((rel) => {
+          (rel.assets || []).forEach((asset) => {
+            published.add((rel.tag_name || "") + "/" + asset.name);
+          });
+        });
+      } catch (err) {
+        published.clear();
+      }
+    }
+
+    async function loadStatic() {
+      const [catalogRes, resultsRes, membersRes] = await Promise.all([
+        fetch("indexes/catalog.csv"),
+        fetch("data/results.csv"),
+        fetch("indexes/zip-members.json"),
+      ]);
+      if (!catalogRes.ok) throw new Error("catalog");
+      const catalogText = await catalogRes.text();
+      const resultsText = resultsRes.ok ? await resultsRes.text() : "";
+      const members = membersRes.ok ? await membersRes.json() : {};
+      const files = parseCsv(catalogText).map((row) => {
+        const inner = members[row.store_path] || [];
+        return {
+          type: "file",
+          edition: row.edition,
+          edition_name: row.edition_name,
+          kind: row.kind,
+          kind_label: kindLabel(row.kind),
+          skill: row.skill,
+          skill_name: row.skill_name,
+          stage: row.stage,
+          lang: row.lang,
+          filename: row.filename,
+          bytes: Number(row.bytes || 0),
+          store_path: row.store_path,
+          release: row.release,
+          asset: row.asset,
+          state: row.state || "done",
+          inner,
+          inner_count: inner.length,
+        };
+      });
+      const resultRows = resultsText ? parseCsv(resultsText).map((row) => ({ type: "result", ...row })) : [];
+      const kindSet = [...new Set(files.map((f) => f.kind).filter(Boolean))].sort();
+      staticCatalog = {
+        files,
+        results: resultRows,
+        editions: [...new Set(files.map((f) => f.edition).filter(Boolean))].sort(),
+        kinds: kindSet.map((code) => ({ code, label: kindLabel(code) })),
+      };
+    }
+
+    function setHint(local) {
+      document.getElementById("mode-title").textContent = local ? "本地目录" : "公开目录";
+      hint.innerHTML = local
+        ? "试题包本身就是 zip。搜索用来定位该解开哪一份，也可以搜包内文件名。本机可打开或解压。例：<b>39</b>　<b>Cooking</b>　<b>WSC2026 TD</b>"
+        : "这里只有目录。正文在 GitHub Releases，搜到后下载对应分卷，再解压到 <b>store/</b>。例：<b>39</b>　<b>Cooking</b>　<b>WSC2024 TD</b>";
+    }
+
+    async function run() {
+      if (!localMode && !staticCatalog) return;
+      const data = localMode
+        ? await fetch("/api/search?" + new URLSearchParams({ q: q.value.trim(), scope, edition: edition.value, kind: kind.value })).then((res) => res.json())
+        : filterStatic();
+      fillFacets(data);
+      if (!data.items.length) {
+        list.innerHTML = "";
+        count.textContent = "";
+        empty.style.display = "block";
+        empty.textContent = q.value.trim() || edition.value || kind.value
+          ? "没有匹配的条目。"
+          : "输入技能编号、项目名或包内文件名。目录 " + data.files + " 份资料，成绩 " + data.results + " 条。";
+        return;
+      }
+      empty.style.display = "none";
+      count.textContent = data.total > data.shown
+        ? "显示前 " + data.shown + " 条，共 " + data.total + " 条"
+        : data.total + " 条";
+      list.innerHTML = data.items.map((item) => item.type === "file" ? renderFile(item) : renderResult(item)).join("");
+    }
+
+    async function init() {
+      try {
+        const probe = await fetch("/api/search?q=");
+        localMode = probe.ok && (probe.headers.get("content-type") || "").includes("json");
+      } catch (err) {
+        localMode = false;
+      }
+      setHint(localMode);
+      if (!localMode) {
+        try {
+          await Promise.all([loadStatic(), loadPublished()]);
+        } catch (err) {
+          empty.textContent = "目录文件还没发布到这个站点。需要 indexes/catalog.csv。";
+          hint.textContent = "公开目录依赖仓库里的索引文件。";
+          return;
+        }
+      }
+      run();
+    }
+
+    init();
+  </script>
+</body>
+</html>

@@ -10,11 +10,19 @@
 
 1. 克隆本仓库，查看 `data/` 名单和 `indexes/` 目录。
 2. 打开 [GitHub Releases](https://github.com/AreaSong/worldskills-sync/releases)，按届次下载 zip。若 Releases 还是空的，说明正文尚未发布，请用下面的路径 2 自己下载。
-3. 解压到本仓库的 `store/`，路径会与索引里的 `store_path` 一致。
+3. 把 Release zip 解到本仓库的 `store/`，路径会与索引里的 `store_path` 一致。
 
 ```text
-unzip wsc-2026-shanghai-tp.zip -d store
+python sync.py unpack wsc-2026-shanghai-tp.zip
 ```
+
+正文库里的试题本身常常还是 zip，那是网站发的原件，不要一次全部解开。要用时在搜索页点「解压」，或：
+
+```text
+python sync.py extract --path WSC2015/TP/34/actual/und/WSC2015_TP34_pre.zip --open
+```
+
+解开的内容在 `work/`，`store/` 里的原件不动。
 
 ### 2. 想自己再下一份（需要你自己的会员账号）
 
@@ -27,6 +35,7 @@ python -m playwright install chrome
 python sync.py login          # 用你自己的账号登录会员区
 python sync.py download       # 默认 4 路并发下载到 store/
 python sync.py progress --open
+python sync.py search --open      # 搜索已下载资料、试题包内文件名、成绩名单
 ```
 
 登录后令牌只写在本机 `.session/`，不会进 git。不要把别人的账号写进脚本或提交到仓库。
@@ -57,11 +66,31 @@ python sync.py download --sample     # 先各下一份试题 / TD / IL
 python sync.py download --refresh    # 重新扫描网站后再继续下
 python sync.py status                # 终端进度
 python sync.py progress --open       # 浏览器进度条和最近日志
+python sync.py search --open         # 按技能、文件名、选手姓名搜索
+python sync.py extract --path ...    # 把某个试题 zip 解到 work/
+python sync.py unpack release.zip    # 把 GitHub Release zip 解到 store/
 python sync.py data                  # 刷新名单表（成绩、成员等）
 python sync.py pack                  # 按届次打 zip 到 dist/
 python sync.py publish               # 打包并上传 GitHub Releases
+python sync.py zipindex              # 扫描试题 zip 内部文件名，供搜索使用
 python sync.py --self-test
 ```
+
+## 试题是 zip，搜索做什么
+
+WorldSkills 发出来的试题本来就是 zip，正文库也按原件保存。搜索不是替你把几千个包全解开，而是帮你找到**该下哪一个、该解哪一个**：技能编号、项目名、外层文件名，以及包里的内部文件名。本机搜到后可以「打开」或「解压」到 `work/`。
+
+## 公开目录（GitHub Pages）
+
+站点只托管**索引**，不托管试题正文：
+
+- 页面：仓库根目录的 `index.html`
+- 目录：`indexes/catalog.csv`、`indexes/zip-members.json`
+- 成绩：`data/results.csv`
+- 正文：GitHub Releases 分卷 zip
+
+打开 [公开目录](https://areasong.github.io/worldskills-sync/)。搜到条目后，若对应分卷已发布，会给出 Release 下载链接；还没打包上传时显示「待发布」。GitHub 不能按 zip 内单文件下载，所以流程是「搜到 → 下分卷 → `python sync.py unpack` 进 `store/` → 需要时再 extract」。
+
 
 本地下载日志：`downloads/download.log`。
 
