@@ -60,6 +60,9 @@ python sync.py search --open      # 搜索已下载资料、试题包内文件�
 python sync.py login                 # 浏览器登录
 python sync.py discover              # 只更新队列，不下载
 python sync.py download              # 下载队列；默认 4 路并发，已存在的会跳过
+python sync.py download --edition WSC2026
+python sync.py download --edition WSC2026 --kind TP
+python sync.py download --retry-forbidden   # 只重试此前短地址失败的试题
 python sync.py download --workers 8  # 最多 8 路；逐个下用 --workers 1
 python sync.py download --delay 0.5  # 每个线程两次下载之间的间隔
 python sync.py download --sample     # 先各下一份试题 / TD / IL

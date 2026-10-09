@@ -176,7 +176,7 @@ def _html(ctx: dict) -> bytes:
 <div class="layout">
   <section class="pane stats">
     <h1>{ctx['status']}</h1>
-    <p class="meta">保存到 store/ · 每 2 秒刷新</p>
+    <p class="meta">保存到 store/ · 每 2 秒刷新 · <a href="http://127.0.0.1:8766/" style="color:#6ee7a8">搜索</a></p>
     <div class="bar"><i></i></div>
     <div class="pct">{ctx['pct']:.1f}%</div>
     <p class="meta">{ctx['now']} · {ctx['eta']}</p>

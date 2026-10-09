@@ -183,6 +183,7 @@ def load_files_csv() -> list[dict]:
                         "state": row.get("state") or "done",
                         "release": row.get("release") or "",
                         "asset": row.get("asset") or "",
+                        "url": row.get("url") or "",
                     }
                 )
             )
@@ -261,6 +262,7 @@ def public_file(item: dict) -> dict:
         "store_path": item.get("store_path") or "",
         "release": item.get("release") or "",
         "asset": item.get("asset") or "",
+        "url": item.get("url") or "",
         "inner": (item.get("inner") or [])[:12],
         "inner_count": len(item.get("inner") or []),
     }
@@ -470,6 +472,8 @@ def _self_test() -> None:
     assert score_result(person, tokenize("jane")) == 0
     assert score_result(person, tokenize("39")) == 1
     assert safe_under(STORE, "../secret") is None
+    listed = public_file({**item, "url": "https://api.worldskills.org/resources/download/1"})
+    assert listed["url"].endswith("/download/1")
     print("search self-test ok")
 
 

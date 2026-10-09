@@ -330,21 +330,31 @@
       return "https://github.com/" + REPO + "/releases/download/" + encodeURIComponent(item.release) + "/" + encodeURIComponent(item.asset);
     }
 
+    function originalHref(item) {
+      const url = item.url || "";
+      return /^https?:\/\//i.test(url) ? url : "";
+    }
+
     function renderFile(item) {
       const local = localMode && item.state === "done";
       const encoded = (item.store_path || "").split("/").map(encodeURIComponent).join("/");
       const zip = /\.zip$/i.test(item.filename || item.store_path || "");
       const live = published.has(packKey(item));
       const pack = live ? releaseHref(item) : "";
+      const original = originalHref(item);
       const inner = (item.inner || []).slice(0, 6).map(escapeHtml).join(" · ");
       let actions = "";
       if (local) {
-        actions = `<a class="open" href="/file/${encoded}">打开</a>`;
+        actions += `<a class="open" href="/file/${encoded}">打开</a>`;
         if (zip) actions += `<a class="open" href="/extract/${encoded}">解压</a>`;
-      } else if (pack) {
-        actions = `<a class="open" href="${pack}" rel="noopener noreferrer">下载分卷</a>`;
+      }
+      if (original) {
+        actions += `<a class="open" href="${escapeHtml(original)}" rel="noopener noreferrer" target="_blank">原始</a>`;
+      }
+      if (pack) {
+        actions += `<a class="open" href="${escapeHtml(pack)}" rel="noopener noreferrer" target="_blank">GitHub</a>`;
       } else {
-        actions = `<span class="open muted">待发布</span>`;
+        actions += `<span class="open muted">GitHub 待发布</span>`;
       }
       const label = item.kind_label || kindLabel(item.kind);
       return `<li>
@@ -510,6 +520,7 @@
           store_path: row.store_path,
           release: row.release,
           asset: row.asset,
+          url: row.url,
           state: row.state || "done",
           inner,
           inner_count: inner.length,
@@ -528,8 +539,8 @@
     function setHint(local) {
       document.getElementById("mode-title").textContent = local ? "本地目录" : "公开目录";
       hint.innerHTML = local
-        ? "试题包本身就是 zip。搜索用来定位该解开哪一份，也可以搜包内文件名。本机可打开或解压。例：<b>39</b>　<b>Cooking</b>　<b>WSC2026 TD</b>"
-        : "这里只有目录。正文在 GitHub Releases，搜到后下载对应分卷，再解压到 <b>store/</b>。例：<b>39</b>　<b>Cooking</b>　<b>WSC2024 TD</b>";
+        ? "试题包本身就是 zip。本机可打开或解压；同时提供原始地址和 GitHub 分卷两个跳转。例：<b>39</b>　<b>Cooking</b>　<b>WSC2026 TD</b>"
+        : "每条两个跳转：<b>原始</b>是 WorldSkills 原件（可能要登录），<b>GitHub</b> 是本仓库 Release 分卷。例：<b>39</b>　<b>Cooking</b>　<b>WSC2024 TD</b>";
     }
 
     async function run() {

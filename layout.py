@@ -12,6 +12,7 @@ import zipfile
 from collections import defaultdict
 from pathlib import Path
 from typing import Any, Iterable
+from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 from classify import (
     DOC_TYPES,
@@ -230,6 +231,17 @@ def row_dict(row: sqlite3.Row | dict[str, Any]) -> dict[str, Any]:
     return {key: row[key] for key in row.keys()}
 
 
+def public_url(url: str) -> str:
+    parsed = urlparse(url or "")
+    pairs = [
+        (key, value)
+        for key, value in parse_qsl(parsed.query, keep_blank_values=True)
+        if key.lower() not in {"tkn", "ccm_token"}
+    ]
+    pairs.sort()
+    return urlunparse((parsed.scheme, parsed.netloc, parsed.path, "", urlencode(pairs, doseq=True), ""))
+
+
 def record_from_row(row: sqlite3.Row | dict[str, Any], filename_hint: str | None = None) -> dict[str, Any]:
     data = row_dict(row)
     filename = filename_hint or data.get("filename") or "file.bin"
@@ -259,7 +271,7 @@ def record_from_row(row: sqlite3.Row | dict[str, Any], filename_hint: str | None
         "filename": filename,
         "bytes": int(data.get("bytes") or 0),
         "sha256": data.get("sha256") or "",
-        "url": data.get("url") or "",
+        "url": public_url(data.get("url") or ""),
         "state": data.get("state") or "",
         "asset": data.get("asset") or "",
         "release": release_tag(edition),

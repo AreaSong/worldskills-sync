@@ -44,6 +44,7 @@ from classify import (
     register_edition,
 )
 from layout import (
+    KIND_FROM_LABEL,
     existing_source,
     finalize_records,
     kind_code,
@@ -122,15 +123,103 @@ def canonical_url(url: str) -> str:
     return urlunparse((parsed.scheme, parsed.netloc, parsed.path, "", urlencode(pairs, doseq=True), ""))
 
 
+RESOURCE_DOWNLOAD_RE = re.compile(r"/resources/download/(\d+)(?:/(\d+)/(\d+))?")
+
+
+def resource_id_of_url(url: str) -> str | None:
+    match = RESOURCE_DOWNLOAD_RE.search(url)
+    return match.group(1) if match else None
+
+
 def resource_download_key(url: str) -> str:
-    match = re.search(r"/resources/download/(\d+)", url)
-    if match:
-        return f"{API}/resources/download/{match.group(1)}"
+    resource_id = resource_id_of_url(url)
+    if resource_id:
+        return f"{API}/resources/download/{resource_id}"
     return canonical_url(url)
 
 
 def resource_download_url(resource_id: int | str) -> str:
     return f"{API}/resources/download/{resource_id}"
+
+
+def url_has_download_token(url: str) -> bool:
+    query = urlparse(url).query.lower()
+    return "tkn=" in query or "ccm_token=" in query
+
+
+def url_rank(url: str) -> int:
+    rank = 0
+    if url_has_download_token(url):
+        rank += 2
+    match = RESOURCE_DOWNLOAD_RE.search(url)
+    if match and match.group(2):
+        rank += 1
+    return rank
+
+
+def absolute_download_url(href: str) -> str:
+    if not href:
+        return href
+    if href.startswith("/resources/"):
+        return API + href
+    if href.startswith("/"):
+        return CMS + href
+    parsed = urlparse(href)
+    if parsed.netloc.endswith("worldskills.org") and "/resources/download/" in parsed.path:
+        return urlunparse(("https", "api.worldskills.org", parsed.path, parsed.params, parsed.query, ""))
+    return href
+
+
+def download_href_from_resource(resource: dict[str, Any]) -> str | None:
+    version = latest_version(resource)
+    if not version:
+        return None
+    translations = [item for item in (version.get("translations") or []) if isinstance(item, dict)]
+    trans = next((item for item in translations if str(item.get("lang_code") or "").lower().startswith("en")), None)
+    trans = trans or (translations[0] if translations else None)
+    if not trans:
+        return None
+    for link in trans.get("links") or []:
+        href = link.get("href") if isinstance(link, dict) else None
+        if href and link.get("rel") == "download":
+            return href
+    resource_id = resource.get("id")
+    version_id = version.get("id")
+    trans_id = trans.get("id")
+    lang = str(trans.get("lang_code") or "en").split("_")[0]
+    if resource_id and version_id and trans_id:
+        return f"{API}/resources/download/{resource_id}/{version_id}/{trans_id}?l={lang}"
+    return None
+
+
+def download_href_from_html(html: str, resource_id: str) -> str | None:
+    soup = BeautifulSoup(html, "html.parser")
+    needle = f"/resources/download/{resource_id}"
+    fallback = None
+    for anchor in soup.select("a[href]"):
+        href = str(anchor.get("href") or "")
+        if needle not in href:
+            continue
+        href = absolute_download_url(href)
+        if url_has_download_token(href):
+            return href
+        fallback = href
+    return fallback
+
+
+def live_download_url(client: httpx.Client, url: str) -> str:
+    url = absolute_download_url(url)
+    if url_has_download_token(url):
+        return url
+    resource_id = resource_id_of_url(url)
+    if not resource_id:
+        return url
+    status, detail = api_get(client, f"{API}/resources/{resource_id}")
+    if status == 200 and isinstance(detail, dict):
+        href = download_href_from_resource(detail)
+        if href:
+            return absolute_download_url(href)
+    return url
 
 
 def filename_from_disposition(header: str | None) -> str | None:
@@ -264,18 +353,34 @@ def connect() -> sqlite3.Connection:
     return db
 
 
+def apply_better_url(db: sqlite3.Connection, key: str, new_url: str, old_url: str, state: str) -> None:
+    if url_rank(new_url) <= url_rank(old_url):
+        return
+    db.execute("UPDATE items SET url = ? WHERE key = ?", (new_url, key))
+    if state == "forbidden":
+        db.execute(
+            "UPDATE items SET state = 'queued', error = NULL, http_status = NULL WHERE key = ?",
+            (key,),
+        )
+
+
 def enqueue(db: sqlite3.Connection, item: dict[str, Any]) -> bool:
+    key = item["key"]
+    url = absolute_download_url(item["url"])
+    existing = db.execute("SELECT url, state FROM items WHERE key = ?", (key,)).fetchone()
+    if existing:
+        apply_better_url(db, key, url, existing["url"], existing["state"])
+        return False
     cursor = db.execute(
         """
         INSERT INTO items (
             key, url, state, edition_code, edition_name, skill_number, skill_name,
             doc_type, stage, language, filename, source, queued_at
         ) VALUES (?, ?, 'queued', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        ON CONFLICT(key) DO NOTHING
         """,
         (
-            item["key"],
-            item["url"],
+            key,
+            url,
             item.get("edition_code"),
             item.get("edition_name"),
             item.get("skill_number"),
@@ -307,10 +412,69 @@ def clamp_workers(value: int) -> int:
     return max(1, min(int(value), MAX_WORKERS))
 
 
-def claim_next(db: sqlite3.Connection) -> sqlite3.Row | None:
+def resolve_kind_filter(value: str | None) -> str | None:
+    if not value:
+        return None
+    text = value.strip()
+    mapped = KIND_FROM_LABEL.get(text) or KIND_FROM_LABEL.get(text.upper()) or KIND_FROM_LABEL.get(text.lower())
+    if not mapped:
+        raise SystemExit(f"不认识的类型 {value}。例如 TP、TD、IL、VID。")
+    return mapped
+
+
+def queue_where(
+    edition: str | None = None,
+    kind: str | None = None,
+    keys: list[str] | None = None,
+) -> tuple[str, list[Any]]:
+    clauses = ["state = 'queued'"]
+    params: list[Any] = []
+    if edition:
+        clauses.append("edition_code = ?")
+        params.append(edition)
+    code = resolve_kind_filter(kind)
+    if code:
+        labels = sorted({name for name, mapped in KIND_FROM_LABEL.items() if mapped == code})
+        clauses.append(f"doc_type IN ({','.join('?' * len(labels))})")
+        params.extend(labels)
+    if keys:
+        clauses.append(f"key IN ({','.join('?' * len(keys))})")
+        params.extend(keys)
+    return " AND ".join(clauses), params
+
+
+FAILED_KEYS_PATH = DOWNLOADS / "failed-resource-keys.txt"
+
+
+def resource_keys_from_forbidden_csv() -> list[str]:
+    keys: list[str] = []
+    if FAILED_KEYS_PATH.exists():
+        keys.extend(
+            line.strip()
+            for line in FAILED_KEYS_PATH.read_text(encoding="utf-8").splitlines()
+            if line.strip().startswith("http")
+        )
+    if FORBIDDEN_CSV.exists():
+        with FORBIDDEN_CSV.open(encoding="utf-8-sig", newline="") as handle:
+            for row in csv.DictReader(handle):
+                url = row.get("网址") or ""
+                if "/resources/download/" in url:
+                    keys.append(resource_download_key(url))
+    return list(dict.fromkeys(keys))
+
+
+def claim_next(
+    db: sqlite3.Connection,
+    edition: str | None = None,
+    kind: str | None = None,
+    keys: list[str] | None = None,
+) -> sqlite3.Row | None:
+    where, params = queue_where(edition, kind, keys)
+    order = "CASE WHEN doc_type IN ('视频', 'video') THEN 1 ELSE 0 END, queued_at, key"
     while True:
         row = db.execute(
-            "SELECT * FROM items WHERE state = 'queued' ORDER BY queued_at, key LIMIT 1"
+            f"SELECT * FROM items WHERE {where} ORDER BY {order} LIMIT 1",
+            params,
         ).fetchone()
         if row is None:
             return None
@@ -323,7 +487,7 @@ def claim_next(db: sqlite3.Connection) -> sqlite3.Row | None:
             return row
 
 
-def export_tables(db: sqlite3.Connection) -> None:
+def export_tables(db: sqlite3.Connection, *, public: bool = True) -> None:
     rows = db.execute("SELECT * FROM items ORDER BY edition_code, skill_number, doc_type, filename").fetchall()
     with CATALOG_CSV.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.writer(handle)
@@ -354,8 +518,9 @@ def export_tables(db: sqlite3.Connection) -> None:
         writer.writerow(["届次", "类型", "文件名", "网址"])
         for row in db.execute("SELECT * FROM items WHERE skill_number IS NULL OR skill_number = ''"):
             writer.writerow([row["edition_name"], row["doc_type"], row["filename"], row["url"]])
-    update_resource_catalog(ROOT, db.execute("SELECT * FROM items").fetchall())
-    export_indexes(db)
+    if public:
+        update_resource_catalog(ROOT, db.execute("SELECT * FROM items").fetchall())
+        export_indexes(db)
 
 
 def items_records(db: sqlite3.Connection) -> list[dict[str, Any]]:
@@ -389,7 +554,7 @@ def queue_item(
         db,
         {
             "key": key,
-            "url": url,
+            "url": absolute_download_url(url),
             "edition_code": info.edition_code,
             "edition_name": info.edition_name,
             "skill_number": info.skill_number,
@@ -687,8 +852,89 @@ def discover_il(db: sqlite3.Connection, client: httpx.Client, skills: SkillIndex
     return added
 
 
-def discover_cms(db: sqlite3.Connection, client: httpx.Client, skills: SkillIndex) -> int:
+def cms_resource_pages() -> list[tuple[str, str, str]]:
+    pages = []
+    for slug, code in CMS_SLUG_TO_CODE.items():
+        for section, doc_key in (
+            ("test-projects", "test-project"),
+            ("technical-descriptions", "technical-description"),
+        ):
+            url = f"{CMS}/internal/competition-documentation/{slug}/{section}/"
+            pages.append((code, doc_key, url))
+    return pages
+
+
+def scrape_cms_download_hrefs(client: httpx.Client) -> list[tuple[str, str, str, str]]:
+    found: list[tuple[str, str, str, str]] = []
+    for code, doc_key, url in cms_resource_pages():
+        try:
+            page = client.get(url, headers={"Accept": "text/html"})
+        except httpx.HTTPError:
+            continue
+        if looks_like_login(page) or page.status_code >= 400:
+            continue
+        soup = BeautifulSoup(page.text, "html.parser")
+        for anchor in soup.select('a[href*="resources/download/"]'):
+            href = str(anchor.get("href") or "")
+            text = anchor.get_text(" ", strip=True)
+            if href:
+                found.append((code, doc_key, text or Path(urlparse(href).path).name, href))
+        time.sleep(0.15)
+    return found
+
+
+def ingest_cms_hrefs(db: sqlite3.Connection, skills: SkillIndex, rows: list[tuple[str, str, str, str]]) -> int:
     added = 0
+    for code, doc_key, filename, href in rows:
+        url = absolute_download_url(href)
+        info = classify(filename=filename, doc_key=doc_key, edition_hint=code)
+        if info.skill_number:
+            info.skill_name = skills.name(code, info.skill_number)
+        info.edition_code = code
+        info.edition_name = edition_name(code)
+        if queue_item(db, url=url, info=info, filename=filename or "file.bin", source="cms"):
+            added += 1
+    return added
+
+
+def requeue_short_download_forbidden(db: sqlite3.Connection) -> int:
+    cursor = db.execute(
+        """
+        UPDATE items
+        SET state = 'queued', error = NULL, http_status = NULL
+        WHERE state = 'forbidden' AND url LIKE '%/resources/download/%'
+        """
+    )
+    db.commit()
+    return int(cursor.rowcount)
+
+
+def resource_download_needs_token(db: sqlite3.Connection) -> bool:
+    row = db.execute(
+        """
+        SELECT 1 FROM items
+        WHERE state IN ('queued', 'forbidden', 'error')
+          AND url LIKE '%/resources/download/%'
+          AND instr(lower(url), 'tkn=') = 0
+        LIMIT 1
+        """
+    ).fetchone()
+    return row is not None
+
+
+def collect_cms_download_urls(db: sqlite3.Connection, client: httpx.Client, skills: SkillIndex) -> int:
+    hrefs = scrape_cms_download_hrefs(client)
+    if not hrefs:
+        print("竞赛文档页没有拿到带令牌的链接。请先运行 python sync.py login。")
+        return 0
+    added = ingest_cms_hrefs(db, skills, hrefs)
+    db.commit()
+    print(f"竞赛文档页收集到 {len(hrefs)} 个完整下载地址，新加入 {added}")
+    return len(hrefs)
+
+
+def discover_cms(db: sqlite3.Connection, client: httpx.Client, skills: SkillIndex) -> int:
+    added = ingest_cms_hrefs(db, skills, scrape_cms_download_hrefs(client))
     try:
         response = client.get(INTERNAL_DOCS, headers={"Accept": "text/html"})
     except httpx.HTTPError:
@@ -736,7 +982,7 @@ def discover_cms(db: sqlite3.Connection, client: httpx.Client, skills: SkillInde
                 href = anchor.get("href") or ""
                 if "resources/download/" not in href and not re.search(r"\.(pdf|zip|docx?|xlsx?)$", href, re.I):
                     continue
-                url = href if href.startswith("http") else CMS + href
+                url = absolute_download_url(href if href.startswith("http") or href.startswith("/") else CMS + "/" + href)
                 filename = (anchor.get_text(" ", strip=True) or Path(urlparse(url).path).name or "file.bin")
                 info = classify(
                     filename=filename,
@@ -748,7 +994,7 @@ def discover_cms(db: sqlite3.Connection, client: httpx.Client, skills: SkillInde
                     info.skill_name = skills.name(code, info.skill_number)
                 info.edition_code = code
                 info.edition_name = edition_name(code)
-                if queue_item(db, url=canonical_url(url), info=info, filename=filename, source="cms"):
+                if queue_item(db, url=url, info=info, filename=filename, source="cms"):
                     added += 1
             time.sleep(0.2)
         db.commit()
@@ -771,7 +1017,7 @@ def discover_public_pages(db: sqlite3.Connection, client: httpx.Client, skills: 
             match = re.search(r"/resources/download/(\d+)", href)
             if not match:
                 continue
-            url = resource_download_url(match.group(1))
+            url = absolute_download_url(href) if url_has_download_token(href) else resource_download_url(match.group(1))
             filename = anchor.get_text(" ", strip=True) or f"resource-{match.group(1)}"
             info = classify(filename=filename, doc_key=doc_key)
             if info.skill_number:
@@ -806,7 +1052,7 @@ def discover_sample(db: sqlite3.Connection, client: httpx.Client) -> None:
             links = translation.get("links") or []
             download = next((link["href"] for link in links if link.get("rel") == "download"), None)
             if download:
-                url = canonical_url(download)
+                url = download
         info = classify(filename=filename, tags=resource.get("tags") or row.get("tags"), doc_key="test-project", lang_code=lang, edition_hint="WSC2026")
         info.skill_name = skills.name("WSC2026", info.skill_number)
         info.edition_code = "WSC2026"
@@ -860,54 +1106,68 @@ def discover(db: sqlite3.Connection, client: httpx.Client) -> None:
 
 def is_binary_ok(response: httpx.Response) -> bool:
     ctype = content_type_of(response)
-    if response.status_code != 200:
+    if response.status_code not in {200, 206}:
         return False
     if "json" in ctype or "text/html" in ctype:
         return False
     return True
 
 
-def process_one(db: sqlite3.Connection, client: httpx.Client, row: sqlite3.Row, max_bytes: int) -> None:
-    url = row["url"]
-    response = None
+def request_download(client: httpx.Client, url: str) -> tuple[httpx.Response | None, Exception | None]:
     last_error = None
     for attempt in range(3):
         try:
-            response = client.get(url)
-            break
+            return client.get(url, headers={"Accept": "*/*"}), None
         except httpx.HTTPError as exc:
             last_error = exc
             time.sleep(2 * (attempt + 1))
-    if response is None:
-        mark(db, row["key"], state="error", error=str(last_error)[:500])
-        print(f"出错  {row['filename']}  {last_error}")
-        return
+    return None, last_error
+
+
+def deny_download(db: sqlite3.Connection, row: sqlite3.Row, url: str, response: httpx.Response) -> bool:
     if looks_like_login(response) or response.status_code == 401:
         db.execute("UPDATE items SET state = 'queued' WHERE key = ?", (row["key"],))
         db.commit()
         raise LoginRequired(url)
+    if response.status_code in {200, 206} and "text/html" in content_type_of(response):
+        mark(db, row["key"], state="skipped", http_status=response.status_code, error="网页链接，不归档正文")
+        print(f"跳过网页  {row['filename']}  {row['edition_name']}")
+        return True
     if response.status_code in {400, 403}:
         body = ""
         try:
             body = (response.json() or {}).get("user_msg") or ""
         except Exception:
             body = ""
+        if resource_id_of_url(url) and not url_has_download_token(url):
+            mark(db, row["key"], state="error", http_status=response.status_code, error=body or "短下载地址被拒绝，需要竞赛文档页上的完整链接")
+            print(f"地址不完整  {row['filename']}  {row['edition_name']}")
+            return True
         mark(db, row["key"], state="forbidden", http_status=response.status_code, error=body or "没有权限")
         print(f"无权限  {row['filename']}  {row['edition_name']}")
-        return
+        return True
     if response.status_code == 404:
         mark(db, row["key"], state="missing", http_status=404, error="找不到")
         print(f"找不到  {row['filename']}")
-        return
+        return True
     if response.status_code >= 400 or not is_binary_ok(response):
-        mark(
-            db,
-            row["key"],
-            state="error",
-            http_status=response.status_code,
-            error=f"HTTP {response.status_code} {content_type_of(response)}",
-        )
+        mark(db, row["key"], state="error", http_status=response.status_code, error=f"HTTP {response.status_code} {content_type_of(response)}")
         print(f"失败 {response.status_code}  {row['filename']}")
+        return True
+    return False
+
+
+def process_one(db: sqlite3.Connection, client: httpx.Client, row: sqlite3.Row, max_bytes: int) -> None:
+    url = live_download_url(client, row["url"])
+    if url != row["url"]:
+        db.execute("UPDATE items SET url = ? WHERE key = ?", (url, row["key"]))
+        db.commit()
+    response, last_error = request_download(client, url)
+    if response is None:
+        mark(db, row["key"], state="error", error=str(last_error)[:500])
+        print(f"出错  {row['filename']}  {last_error}")
+        return
+    if deny_download(db, row, url, response):
         return
     data = response.content
     if len(data) > max_bytes:
@@ -962,7 +1222,7 @@ def _download_worker(
                     return
                 seen["n"] += 1
                 n = seen["n"]
-            row = claim_next(db)
+            row = claim_next(db, args.edition, args.kind, getattr(args, "retry_keys", None))
             if row is None:
                 with lock:
                     seen["n"] -= 1
@@ -1014,6 +1274,19 @@ def download(args: argparse.Namespace) -> None:
     db.execute("UPDATE items SET state = 'queued' WHERE state = 'working'")
     if args.retry_errors:
         db.execute("UPDATE items SET state = 'queued' WHERE state IN ('error', 'missing')")
+    requeued = requeue_short_download_forbidden(db)
+    if requeued:
+        print(f"已把 {requeued} 条因短地址被拒的资源改回队列")
+    args.retry_keys = resource_keys_from_forbidden_csv() if args.retry_forbidden else None
+    if args.retry_forbidden:
+        if not args.retry_keys:
+            raise SystemExit("没有此前失败的试题记录（downloads/forbidden.csv）。")
+        placeholders = ",".join("?" * len(args.retry_keys))
+        db.execute(
+            f"UPDATE items SET state = 'queued', error = NULL, http_status = NULL WHERE key IN ({placeholders}) AND state IN ('forbidden', 'error')",
+            args.retry_keys,
+        )
+        print(f"只重试此前短地址失败的 {len(args.retry_keys)} 个试题")
     db.commit()
     client = make_client()
     workers = clamp_workers(args.workers)
@@ -1023,22 +1296,44 @@ def download(args: argparse.Namespace) -> None:
             sample_download(db, client, args.max_bytes)
             export_tables(db)
             return
-        if args.refresh or (count_state(db, "queued") + count_state(db, "done") < 50):
+        did_discover = False
+        if not args.retry_forbidden and (args.refresh or (count_state(db, "queued") + count_state(db, "done") < 50)):
             discover(db, client)
-        else:
+            did_discover = True
+        elif not args.retry_forbidden:
             print("继续未完成的队列。若要重新扫描网站，请加 --refresh")
-        queued = count_state(db, "queued")
+        if resource_download_needs_token(db):
+            skills = SkillIndex()
+            try:
+                load_events(client, skills)
+                load_skill_maps(client, skills)
+            except Exception:
+                pass
+            collect_cms_download_urls(db, client, skills)
+        where, params = queue_where(args.edition, args.kind, args.retry_keys)
+        queued = db.execute(f"SELECT COUNT(*) AS n FROM items WHERE {where}", params).fetchone()["n"]
+        if args.retry_forbidden:
+            with_tkn = db.execute(
+                f"SELECT COUNT(*) AS n FROM items WHERE {where} AND instr(lower(url), 'tkn=') > 0",
+                params,
+            ).fetchone()["n"]
+            print(f"其中 {with_tkn} 条已有完整下载地址")
+            if queued and with_tkn == 0:
+                raise SystemExit("竞赛文档页没有收到带令牌的链接。请先运行 python sync.py login 后再试。")
+        if args.edition or args.kind:
+            print(f"过滤：届次 {args.edition or '全部'}，类型 {args.kind or '全部'}。视频默认排到最后。")
         print(f"队列 {queued}。并发 {workers} 路。保存位置：{STORE}")
         print("查看进度：python sync.py progress --open")
         run_download_queue(args, workers)
     finally:
         db.execute("UPDATE items SET state = 'queued' WHERE state = 'working'")
         db.commit()
-        try:
-            refresh_tables(ROOT, client, db.execute("SELECT * FROM items").fetchall())
-        except Exception as exc:
-            print(f"名单表更新失败：{exc}")
-        export_tables(db)
+        if not args.retry_forbidden:
+            try:
+                refresh_tables(ROOT, client, db.execute("SELECT * FROM items").fetchall())
+            except Exception as exc:
+                print(f"名单表更新失败：{exc}")
+        export_tables(db, public=not args.retry_forbidden)
         client.close()
         print(
             "完成："
@@ -1120,6 +1415,7 @@ def login() -> None:
     if status != 200:
         raise SystemExit("登录会话无效，请重新运行 python sync.py login。")
     print(f"登录有效。当前用户：{text_of((data or {}).get('first_name'))} {text_of((data or {}).get('last_name'))}".strip())
+    print("试题等会员资料要用竞赛文档页上的完整下载地址。登录后脚本才能收集这些链接。")
     print("下一步：python sync.py download --sample")
 
 
@@ -1229,6 +1525,38 @@ def run_progress(args: argparse.Namespace) -> None:
     progress_mod.watch()
 
 
+def run_search(args: argparse.Namespace) -> None:
+    import search as search_mod
+
+    search_mod.serve(host=args.host, port=args.port, open_browser=args.open)
+
+
+def run_extract(args: argparse.Namespace) -> None:
+    from extract import extract_store_zip
+
+    dest, files = extract_store_zip(args.path)
+    print(f"解开 {len(files)} 个文件：{dest}")
+    print("正文库里的 zip 原件没有改动。")
+    if args.open:
+        subprocess.run(["open", str(dest)], check=False)
+
+
+def run_unpack(args: argparse.Namespace) -> None:
+    from extract import unpack_release
+
+    for raw in args.zips:
+        path = Path(raw)
+        files = unpack_release(path, STORE)
+        print(f"{path.name} → store/  {len(files)} 个文件")
+
+
+def run_zipindex(_args: argparse.Namespace) -> None:
+    from extract import MEMBERS_PATH, build_zip_members
+
+    mapping = build_zip_members(STORE)
+    print(f"已扫描 {len(mapping)} 个 zip，索引：{MEMBERS_PATH}")
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="把 WorldSkills 会员区可读资料下载到正文库，并用索引按技能、赛事、语言查阅。",
@@ -1249,15 +1577,32 @@ def build_parser() -> argparse.ArgumentParser:
     download_parser.add_argument("--sample", action="store_true", help="先各下一份试题、技术描述、基础设施清单")
     download_parser.add_argument("--refresh", action="store_true", help="重新扫描目录，已下载的文件仍会跳过")
     download_parser.add_argument("--retry-errors", action="store_true")
+    download_parser.add_argument("--edition", help="只下载某一届，如 WSC2026；不填则继续全队列")
+    download_parser.add_argument("--kind", help="只下载某一类，如 TP、TD、IL、VID；不填则该届全部类型")
+    download_parser.add_argument(
+        "--retry-forbidden",
+        action="store_true",
+        help="只重试 forbidden.csv 里此前短地址失败的试题，不改公开索引",
+    )
     sub.add_parser("discover", help="只扫描目录，不下载")
     sub.add_parser("status", help="在终端查看进度")
     progress_parser = sub.add_parser("progress", help="生成本地进度页")
     progress_parser.add_argument("--open", action="store_true", help="用系统浏览器打开进度页")
     progress_parser.add_argument("--once", action="store_true", help="只写一次 HTML，不循环更新")
     progress_parser.add_argument("--http", action="store_true", help="在 127.0.0.1:8765 提供页面")
+    search_parser = sub.add_parser("search", help="打开本机搜索页，按技能、文件名、选手姓名查找")
+    search_parser.add_argument("--open", action="store_true", help="用系统浏览器打开")
+    search_parser.add_argument("--port", type=int, default=8766)
+    search_parser.add_argument("--host", default="127.0.0.1")
     sub.add_parser("data", help="刷新届次、项目、成员、成绩等名单表")
     reindex_parser = sub.add_parser("reindex", help="把已下载文件迁到正文库并生成索引")
     reindex_parser.add_argument("--dry-run", action="store_true", help="只预览新路径，不移动文件")
+    extract_parser = sub.add_parser("extract", help="把 store 里的某个 zip 解到 work/，不改原件")
+    extract_parser.add_argument("--path", required=True, help="相对 store/ 的路径，如 WSC2015/TP/34/actual/und/foo.zip")
+    extract_parser.add_argument("--open", action="store_true", help="解完后打开工作目录")
+    unpack_parser = sub.add_parser("unpack", help="把 GitHub Release 的 zip 解到 store/")
+    unpack_parser.add_argument("zips", nargs="+", help="Release zip 路径")
+    sub.add_parser("zipindex", help="扫描 store 里每个试题 zip 的内部文件名，供搜索使用")
     pack_parser = sub.add_parser("pack", help="按届次和类型打成 Release zip")
     pack_parser.add_argument("--edition", help="如 WSC2005，默认打包已保存的全部届次")
     pack_parser.add_argument("--kind", help="TD/TP/IL 等，默认该届次下全部分类")
@@ -1385,7 +1730,31 @@ def _self_test() -> None:
     assert clamp_workers(0) == 1
     assert clamp_workers(4) == 4
     assert clamp_workers(99) == MAX_WORKERS
+    short = f"{API}/resources/download/32711"
+    tokenized = f"{short}/35220/36347?l=en&tkn=example-token"
+    cms_host = "https://worldskills.org/resources/download/32711/35220/36347?l=en&tkn=example-token"
+    assert resource_download_key(tokenized) == short
+    assert resource_download_key(cms_host) == short
+    assert canonical_url(tokenized) == f"{short}/35220/36347?l=en"
+    assert url_has_download_token(tokenized) and not url_has_download_token(short)
+    assert url_rank(tokenized) > url_rank(short)
+    assert absolute_download_url(cms_host) == tokenized
+    assert absolute_download_url("/resources/download/32711/35220/36347?l=en&tkn=example-token") == tokenized
+    from layout import public_url
+    assert "tkn=" not in public_url(tokenized)
+    assert resolve_kind_filter("试题") == "TP"
+    assert resolve_kind_filter("TD") == "TD"
+    where, params = queue_where("WSC2026", "TP")
+    assert "edition_code = ?" in where and "WSC2026" in params and "试题" in params
+    if FORBIDDEN_CSV.exists():
+        keys = resource_keys_from_forbidden_csv()
+        assert keys and all("/resources/download/" in key for key in keys)
+    from extract import _self_test as extract_self_test
+    from search import _self_test as search_self_test
     from progress import counts, eta_text, write_file
+
+    extract_self_test()
+    search_self_test()
 
     assert eta_text(0, 8, None) == "—"
     assert "states" in counts()
@@ -1414,6 +1783,14 @@ def main(argv: list[str] | None = None) -> None:
             show_status()
         elif args.command == "progress":
             run_progress(args)
+        elif args.command == "search":
+            run_search(args)
+        elif args.command == "extract":
+            run_extract(args)
+        elif args.command == "unpack":
+            run_unpack(args)
+        elif args.command == "zipindex":
+            run_zipindex(args)
         elif args.command == "reindex":
             reindex(args)
         elif args.command == "pack":
