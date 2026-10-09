@@ -1,7 +1,16 @@
+# 登录令牌，不要提交
 .session/
+
+# 本机队列、日志、进度页
 downloads/
-store/
+
+# 正文库：体积大，走 GitHub Releases；解压 zip 或自己下载到这里
+store/*
+!store/.gitkeep
+
+# 打包输出
 dist/
+
 .venv/
 __pycache__/
 *.pyc

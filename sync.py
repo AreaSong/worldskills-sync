@@ -12,7 +12,9 @@ import re
 import sqlite3
 import subprocess
 import sys
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from email.message import EmailMessage
 from pathlib import Path
 from typing import Any
@@ -83,6 +85,8 @@ USER_AGENT = (
 )
 TD_LANGS = ("en", "zh", "de", "es", "fr", "ja", "ko", "pt", "fi", "ru", "ar")
 MAX_BYTES = 1_800_000_000
+MAX_WORKERS = 8
+DEFAULT_WORKERS = 4
 
 
 class LoginRequired(RuntimeError):
@@ -226,7 +230,7 @@ def api_get(client: httpx.Client, url: str) -> tuple[int, Any]:
 
 def connect() -> sqlite3.Connection:
     DOWNLOADS.mkdir(parents=True, exist_ok=True)
-    db = sqlite3.connect(DB_PATH)
+    db = sqlite3.connect(DB_PATH, timeout=60)
     db.row_factory = sqlite3.Row
     db.execute("PRAGMA journal_mode=WAL")
     db.execute(
@@ -297,6 +301,26 @@ def mark(db: sqlite3.Connection, key: str, **fields: Any) -> None:
 def count_state(db: sqlite3.Connection, state: str) -> int:
     row = db.execute("SELECT COUNT(*) AS n FROM items WHERE state = ?", (state,)).fetchone()
     return int(row["n"])
+
+
+def clamp_workers(value: int) -> int:
+    return max(1, min(int(value), MAX_WORKERS))
+
+
+def claim_next(db: sqlite3.Connection) -> sqlite3.Row | None:
+    while True:
+        row = db.execute(
+            "SELECT * FROM items WHERE state = 'queued' ORDER BY queued_at, key LIMIT 1"
+        ).fetchone()
+        if row is None:
+            return None
+        cursor = db.execute(
+            "UPDATE items SET state = 'working' WHERE key = ? AND state = 'queued'",
+            (row["key"],),
+        )
+        db.commit()
+        if cursor.rowcount == 1:
+            return row
 
 
 def export_tables(db: sqlite3.Connection) -> None:
@@ -920,6 +944,71 @@ def process_one(db: sqlite3.Connection, client: httpx.Client, row: sqlite3.Row, 
     print(f"已保存 {len(data)} 字节  {target.relative_to(STORE)}")
 
 
+def _download_worker(
+    args: argparse.Namespace,
+    stop: threading.Event,
+    login_fail: threading.Event,
+    seen: dict[str, int],
+    lock: threading.Lock,
+) -> None:
+    db = connect()
+    client = None
+    try:
+        client = make_client()
+        while not stop.is_set() and not login_fail.is_set():
+            with lock:
+                if args.max and seen["n"] >= args.max:
+                    stop.set()
+                    return
+                seen["n"] += 1
+                n = seen["n"]
+            row = claim_next(db)
+            if row is None:
+                with lock:
+                    seen["n"] -= 1
+                return
+            try:
+                process_one(db, client, row, args.max_bytes)
+            except LoginRequired:
+                db.execute("UPDATE items SET state = 'queued' WHERE key = ?", (row["key"],))
+                db.commit()
+                login_fail.set()
+                return
+            except Exception as exc:
+                mark(db, row["key"], state="error", error=str(exc)[:500])
+                print(f"出错  {row['filename']}  {exc}")
+            if n % 20 == 0:
+                export_tables(db)
+                print(f"进度 已保存 {count_state(db, 'done')}，队列 {count_state(db, 'queued')}")
+            if args.delay:
+                time.sleep(args.delay)
+    finally:
+        if client is not None:
+            client.close()
+        db.close()
+
+
+def run_download_queue(args: argparse.Namespace, workers: int) -> None:
+    stop = threading.Event()
+    login_fail = threading.Event()
+    seen: dict[str, int] = {"n": 0}
+    lock = threading.Lock()
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = [
+            pool.submit(_download_worker, args, stop, login_fail, seen, lock) for _ in range(workers)
+        ]
+        try:
+            for fut in as_completed(futures):
+                fut.result()
+        except BaseException:
+            stop.set()
+            raise
+    if args.max and seen["n"] >= args.max:
+        print(f"已达到本次上限 {args.max}")
+    if login_fail.is_set():
+        raise LoginRequired("下载过程中登录失效")
+
+
 def download(args: argparse.Namespace) -> None:
     db = connect()
     db.execute("UPDATE items SET state = 'queued' WHERE state = 'working'")
@@ -927,6 +1016,7 @@ def download(args: argparse.Namespace) -> None:
         db.execute("UPDATE items SET state = 'queued' WHERE state IN ('error', 'missing')")
     db.commit()
     client = make_client()
+    workers = clamp_workers(args.workers)
     try:
         if args.sample:
             discover_sample(db, client)
@@ -938,31 +1028,9 @@ def download(args: argparse.Namespace) -> None:
         else:
             print("继续未完成的队列。若要重新扫描网站，请加 --refresh")
         queued = count_state(db, "queued")
-        print(f"队列 {queued}。保存位置：{STORE}")
-        seen = 0
-        while True:
-            if args.max and seen >= args.max:
-                print(f"已达到本次上限 {args.max}")
-                break
-            row = db.execute("SELECT * FROM items WHERE state = 'queued' ORDER BY queued_at, key LIMIT 1").fetchone()
-            if row is None:
-                break
-            db.execute("UPDATE items SET state = 'working' WHERE key = ?", (row["key"],))
-            db.commit()
-            try:
-                process_one(db, client, row, args.max_bytes)
-            except LoginRequired:
-                db.execute("UPDATE items SET state = 'queued' WHERE state = 'working'")
-                db.commit()
-                raise
-            except Exception as exc:
-                mark(db, row["key"], state="error", error=str(exc)[:500])
-                print(f"出错  {row['filename']}  {exc}")
-            seen += 1
-            if seen % 20 == 0:
-                export_tables(db)
-                print(f"进度 已保存 {count_state(db, 'done')}，队列 {count_state(db, 'queued')}")
-            time.sleep(args.delay)
+        print(f"队列 {queued}。并发 {workers} 路。保存位置：{STORE}")
+        print("查看进度：python sync.py progress --open")
+        run_download_queue(args, workers)
     finally:
         db.execute("UPDATE items SET state = 'queued' WHERE state = 'working'")
         db.commit()
@@ -1013,8 +1081,8 @@ def login() -> None:
 
     SESSION_DIR.mkdir(parents=True, exist_ok=True)
     profile = SESSION_DIR / "chrome"
-    print("即将打开浏览器。请用你自己的账号登录会员区。")
-    print("看到 Member Area 后，脚本会继续打开技能管理和基础设施清单并保存会话。")
+    print("即将打开浏览器。请用你自己的 WorldSkills 会员账号登录，不要使用他人账号。")
+    print("看到 Member Area 后，脚本会继续打开技能管理和基础设施清单，并把令牌写到本机 .session/。")
     with sync_playwright() as playwright:
         context = playwright.chromium.launch_persistent_context(
             str(profile),
@@ -1058,22 +1126,32 @@ def login() -> None:
 def show_status() -> None:
     if not DB_PATH.exists():
         print("还没有下载记录。")
+        print("克隆后可从 GitHub Releases 解压 zip 到 store/，或运行 python sync.py login 后再 download。")
         return
     db = connect()
+    states = {row[0]: row[1] for row in db.execute("SELECT state, COUNT(*) FROM items GROUP BY state")}
+    total = sum(states.values())
+    done = int(states.get("done", 0))
+    if total:
+        print(f"进度：{100.0 * done / total:.1f}%  {done}/{total}")
     labels = (
         ("done", "已保存"),
         ("queued", "队列中"),
+        ("working", "正在下"),
         ("forbidden", "无权限"),
         ("error", "失败"),
         ("missing", "找不到"),
         ("skipped", "已跳过"),
     )
     for state, label in labels:
-        print(f"{label}：{count_state(db, state)}")
+        n = int(states.get(state, 0))
+        if n or state in {"done", "queued"}:
+            print(f"{label}：{n}")
     if STORE.exists():
         print(f"正文库：{STORE}")
     if (ROOT / "indexes" / "summary.json").exists():
         print(f"索引：{ROOT / 'indexes' / 'summary.json'}")
+    print("浏览器进度：python sync.py progress --open")
 
 
 def reindex(args: argparse.Namespace) -> None:
@@ -1133,19 +1211,50 @@ def pack(args: argparse.Namespace) -> None:
     print("上传：python sync.py publish")
 
 
+def run_progress(args: argparse.Namespace) -> None:
+    import webbrowser
+
+    import progress as progress_mod
+
+    path = progress_mod.write_file()
+    print(f"进度页：{path}")
+    if args.open:
+        webbrowser.open(path.as_uri())
+    if args.http:
+        progress_mod.serve()
+        return
+    if args.once:
+        return
+    print("页面会持续更新，用 Ctrl+C 停止。")
+    progress_mod.watch()
+
+
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="把 WorldSkills 会员区可读资料下载到正文库，并用索引按技能、赛事、语言查阅")
+    parser = argparse.ArgumentParser(
+        description="把 WorldSkills 会员区可读资料下载到正文库，并用索引按技能、赛事、语言查阅。",
+        epilog="用法见 README.md。可从 GitHub Releases 解压 zip 到 store/，或用自己的账号 login 后再 download。",
+    )
     sub = parser.add_subparsers(dest="command", required=True)
-    sub.add_parser("login", help="打开浏览器登录并保存会话")
+    sub.add_parser("login", help="用你自己的账号打开浏览器登录并保存会话")
     download_parser = sub.add_parser("download", help="发现并下载文件")
-    download_parser.add_argument("--delay", type=float, default=1.0, help="每次下载间隔秒数，默认 1")
+    download_parser.add_argument("--delay", type=float, default=1.0, help="每个线程两次下载之间的间隔秒数，默认 1")
+    download_parser.add_argument(
+        "--workers",
+        type=int,
+        default=DEFAULT_WORKERS,
+        help=f"同时下载的文件数，默认 {DEFAULT_WORKERS}，最多 {MAX_WORKERS}",
+    )
     download_parser.add_argument("--max", type=int, default=0, help="本次最多下载多少个文件，0 表示不限")
     download_parser.add_argument("--max-bytes", type=int, default=MAX_BYTES)
     download_parser.add_argument("--sample", action="store_true", help="先各下一份试题、技术描述、基础设施清单")
     download_parser.add_argument("--refresh", action="store_true", help="重新扫描目录，已下载的文件仍会跳过")
     download_parser.add_argument("--retry-errors", action="store_true")
     sub.add_parser("discover", help="只扫描目录，不下载")
-    sub.add_parser("status", help="查看进度")
+    sub.add_parser("status", help="在终端查看进度")
+    progress_parser = sub.add_parser("progress", help="生成本地进度页")
+    progress_parser.add_argument("--open", action="store_true", help="用系统浏览器打开进度页")
+    progress_parser.add_argument("--once", action="store_true", help="只写一次 HTML，不循环更新")
+    progress_parser.add_argument("--http", action="store_true", help="在 127.0.0.1:8765 提供页面")
     sub.add_parser("data", help="刷新届次、项目、成员、成绩等名单表")
     reindex_parser = sub.add_parser("reindex", help="把已下载文件迁到正文库并生成索引")
     reindex_parser.add_argument("--dry-run", action="store_true", help="只预览新路径，不移动文件")
@@ -1273,6 +1382,15 @@ def _self_test() -> None:
     assert kind_code("video") == "VID"
     assert RESOURCE_TYPE_TO_DOC[3] == "video"
     assert RESOURCE_TYPE_TO_DOC[19] == "wsss"
+    assert clamp_workers(0) == 1
+    assert clamp_workers(4) == 4
+    assert clamp_workers(99) == MAX_WORKERS
+    from progress import counts, eta_text, write_file
+
+    assert eta_text(0, 8, None) == "—"
+    assert "states" in counts()
+    progress_path = write_file()
+    assert progress_path.exists() and "下载进度" in progress_path.read_text(encoding="utf-8")
     print("self-test ok")
 
 
@@ -1294,6 +1412,8 @@ def main(argv: list[str] | None = None) -> None:
             run_discover()
         elif args.command == "status":
             show_status()
+        elif args.command == "progress":
+            run_progress(args)
         elif args.command == "reindex":
             reindex(args)
         elif args.command == "pack":
