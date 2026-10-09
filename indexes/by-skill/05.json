@@ -1,0 +1,25 @@
+{
+  "skill": "05",
+  "names": {
+    "WSC2001": "Mech. Eng. CADD"
+  },
+  "files": [
+    {
+      "edition": "WSC2001",
+      "edition_name": "WorldSkills Seoul 2001",
+      "kind": "TP",
+      "skill": "05",
+      "skill_name": "Mech. Eng. CADD",
+      "stage": "actual",
+      "lang": "und",
+      "filename": "TP05_36KR.zip",
+      "bytes": 14131077,
+      "sha256": "a2fba34347a51e2763589ce519a81279df643f003b4013a6e5490c569b14df3a",
+      "url": "https://api.worldskills.org/resources/download/2362",
+      "state": "done",
+      "asset": "wsc-2001-seoul-tp.zip",
+      "release": "wsc-2001-seoul",
+      "store_path": "WSC2001/TP/05/actual/und/TP05_36KR.zip"
+    }
+  ]
+}

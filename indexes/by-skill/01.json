@@ -1,0 +1,25 @@
+{
+  "skill": "01",
+  "names": {
+    "WSC2001": "Fitting"
+  },
+  "files": [
+    {
+      "edition": "WSC2001",
+      "edition_name": "WorldSkills Seoul 2001",
+      "kind": "TP",
+      "skill": "01",
+      "skill_name": "Fitting",
+      "stage": "actual",
+      "lang": "und",
+      "filename": "TP01_36KR.zip",
+      "bytes": 711604,
+      "sha256": "72f2b649298a5d0efc0884fc157a79d832ecdef7c4d6267c0bef9b8437465aea",
+      "url": "https://api.worldskills.org/resources/download/2359",
+      "state": "done",
+      "asset": "wsc-2001-seoul-tp.zip",
+      "release": "wsc-2001-seoul",
+      "store_path": "WSC2001/TP/01/actual/und/TP01_36KR.zip"
+    }
+  ]
+}

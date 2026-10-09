@@ -1,0 +1,42 @@
+{
+  "skill": "33",
+  "names": {
+    "WSC2026": "Automobile Technology"
+  },
+  "files": [
+    {
+      "edition": "WSC2026",
+      "edition_name": "WorldSkills Shanghai 2026",
+      "kind": "IL",
+      "skill": "33",
+      "skill_name": "Automobile Technology",
+      "stage": "",
+      "lang": "und",
+      "filename": "report_requested_1916_2026-09-29_08-47-45.xlsx",
+      "bytes": 243254,
+      "sha256": "52815cfe340dfb155a66d5cf855f98edca1ee48002c9208f48494581ee41f4a7",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/611/1916?s=xlsx",
+      "state": "done",
+      "asset": "wsc-2026-shanghai-il.zip",
+      "release": "wsc-2026-shanghai",
+      "store_path": "WSC2026/IL/33/und/report_requested_1916_2026-09-29_08-47-45.xlsx"
+    },
+    {
+      "edition": "WSC2026",
+      "edition_name": "WorldSkills Shanghai 2026",
+      "kind": "TD",
+      "skill": "33",
+      "skill_name": "Automobile Technology",
+      "stage": "",
+      "lang": "en",
+      "filename": "WSC2026_TD33_en.pdf",
+      "bytes": 658471,
+      "sha256": "aae31a13bb05bf8c7ed246dfa80efb3382514c456d3fa22cde2ff6d1ddded63b",
+      "url": "https://api.worldskills.org/skillman/documents/3/skills/2459/pdf?l=en",
+      "state": "done",
+      "asset": "wsc-2026-shanghai-td.zip",
+      "release": "wsc-2026-shanghai",
+      "store_path": "WSC2026/TD/33/en/WSC2026_TD33_en.pdf"
+    }
+  ]
+}

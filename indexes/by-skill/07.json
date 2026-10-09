@@ -1,0 +1,25 @@
+{
+  "skill": "07",
+  "names": {
+    "WSC2001": "CNC Milling"
+  },
+  "files": [
+    {
+      "edition": "WSC2001",
+      "edition_name": "WorldSkills Seoul 2001",
+      "kind": "TP",
+      "skill": "07",
+      "skill_name": "CNC Milling",
+      "stage": "actual",
+      "lang": "und",
+      "filename": "TP07_36KR.zip",
+      "bytes": 262010,
+      "sha256": "3f3cc653fbc681eb6b4e5df25579af29c26f02673dc20ab1c65e386c2f666b78",
+      "url": "https://api.worldskills.org/resources/download/2364",
+      "state": "done",
+      "asset": "wsc-2001-seoul-tp.zip",
+      "release": "wsc-2001-seoul",
+      "store_path": "WSC2001/TP/07/actual/und/TP07_36KR.zip"
+    }
+  ]
+}

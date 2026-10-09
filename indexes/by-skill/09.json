@@ -1,0 +1,25 @@
+{
+  "skill": "09",
+  "names": {
+    "WSC2001": "IT/Software Applications"
+  },
+  "files": [
+    {
+      "edition": "WSC2001",
+      "edition_name": "WorldSkills Seoul 2001",
+      "kind": "TP",
+      "skill": "09",
+      "skill_name": "IT/Software Applications",
+      "stage": "actual",
+      "lang": "und",
+      "filename": "TP09_36KR.zip",
+      "bytes": 38031480,
+      "sha256": "e23aefb9f962bd83a21a2db18f25ce40f2daf43140788f5d58e2804107db1fcd",
+      "url": "https://api.worldskills.org/resources/download/2365",
+      "state": "done",
+      "asset": "wsc-2001-seoul-tp.zip",
+      "release": "wsc-2001-seoul",
+      "store_path": "WSC2001/TP/09/actual/und/TP09_36KR.zip"
+    }
+  ]
+}

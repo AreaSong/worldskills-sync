@@ -1,17 +1,49 @@
 {
-  "files": 0,
-  "editions": [],
-  "skills": [],
-  "languages": [],
-  "kinds": [],
-  "releases": [],
-  "assets": [],
+  "files": 20,
+  "editions": [
+    "WSC2001",
+    "WSC2026"
+  ],
+  "skills": [
+    "01",
+    "02",
+    "04",
+    "05",
+    "06",
+    "07",
+    "09",
+    "10",
+    "30",
+    "33",
+    "40"
+  ],
+  "languages": [
+    "en",
+    "und"
+  ],
+  "kinds": [
+    "IL",
+    "RST",
+    "TD",
+    "TP"
+  ],
+  "releases": [
+    "wsc-2001-seoul",
+    "wsc-2026-shanghai"
+  ],
+  "assets": [
+    "wsc-2001-seoul-tp.zip",
+    "wsc-2026-shanghai-il.zip",
+    "wsc-2026-shanghai-rst.zip",
+    "wsc-2026-shanghai-td.zip",
+    "wsc-2026-shanghai-tp.zip"
+  ],
   "data": {
     "editions": 96,
-    "members": 399,
+    "members": 401,
     "skills": 3230,
     "results": 12827,
     "il_index": 596,
-    "resources": 8928
+    "resources": 8938
   }
 }

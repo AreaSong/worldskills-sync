@@ -1,0 +1,25 @@
+{
+  "skill": "10",
+  "names": {
+    "WSC2026": "Welding"
+  },
+  "files": [
+    {
+      "edition": "WSC2026",
+      "edition_name": "WorldSkills Shanghai 2026",
+      "kind": "TP",
+      "skill": "10",
+      "skill_name": "Welding",
+      "stage": "pre",
+      "lang": "en",
+      "filename": "WSC2026_TP10_pre_EN.zip",
+      "bytes": 4769115,
+      "sha256": "30498b1884961f461b11cd3668e489cf8e6a341a09f9c6cc323dcaea22735cba",
+      "url": "https://api.worldskills.org/resources/download/29007/32026/33081?l=en",
+      "state": "done",
+      "asset": "wsc-2026-shanghai-tp.zip",
+      "release": "wsc-2026-shanghai",
+      "store_path": "WSC2026/TP/10/pre/en/WSC2026_TP10_pre_EN.zip"
+    }
+  ]
+}
