@@ -1,6 +1,7 @@
 {
-  "files": 884,
+  "files": 1742,
   "editions": [
+    "WSC2024",
     "WSC2026"
   ],
   "skills": [
@@ -15,7 +16,9 @@
     "09",
     "10",
     "11",
+    "117",
     "12",
+    "129",
     "13",
     "14",
     "15",
@@ -67,7 +70,11 @@
     "61",
     "62",
     "63",
-    "64"
+    "64",
+    "E0",
+    "E01",
+    "E02",
+    "E03"
   ],
   "languages": [
     "ar",
@@ -84,18 +91,32 @@
     "zh"
   ],
   "kinds": [
+    "DOC",
     "GEN",
     "IL",
     "MKT",
+    "RES",
     "RST",
     "SKL",
     "TD",
-    "TP"
+    "TP",
+    "VID"
   ],
   "releases": [
+    "wsc-2024-lyon",
     "wsc-2026-shanghai"
   ],
   "assets": [
+    "wsc-2024-lyon-doc.zip",
+    "wsc-2024-lyon-gen.zip",
+    "wsc-2024-lyon-il.zip",
+    "wsc-2024-lyon-mkt.zip",
+    "wsc-2024-lyon-res.zip",
+    "wsc-2024-lyon-skl.zip",
+    "wsc-2024-lyon-td.zip",
+    "wsc-2024-lyon-tp-part01.zip",
+    "wsc-2024-lyon-tp-part02.zip",
+    "wsc-2024-lyon-vid.zip",
     "wsc-2026-shanghai-gen.zip",
     "wsc-2026-shanghai-il.zip",
     "wsc-2026-shanghai-mkt.zip",
