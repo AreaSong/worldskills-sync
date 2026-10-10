@@ -243,6 +243,20 @@ def looks_like_login(response: httpx.Response) -> bool:
     return False
 
 
+def media_url_from(url: str, html: str = "") -> str | None:
+    """YouTube/Vimeo 外链只保留地址，不镜像。"""
+    host = urlparse(url).netloc.lower()
+    if "youtube.com" in host or host == "youtu.be":
+        return url
+    if "vimeo.com" in host:
+        return url
+    match = re.search(
+        r"https?://(?:www\.)?(?:youtube\.com/watch\?[^\s\"'<>]+|youtu\.be/[\w-]+|vimeo\.com/\d+)",
+        html,
+    )
+    return match.group(0) if match else None
+
+
 def classified_path(info: Classified, filename: str) -> Path:
     record = record_from_row(
         {
@@ -750,21 +764,73 @@ def skillman_targets(client: httpx.Client, skills: SkillIndex) -> dict[str, int]
     return wanted
 
 
+def skip_skillman_docs_list(db: sqlite3.Connection, code: str, event_id: int, status: int) -> None:
+    # 文档清单 400 不等于该届 TD 下不了；TD 走竞赛文档页和资源库。
+    info = classify(edition_hint=code, doc_key="technical-description")
+    key = f"forbidden:skillman-docs:{event_id}"
+    queue_item(
+        db,
+        url=f"{API}/skillman/documents/events/{event_id}",
+        info=info,
+        filename="documents.json",
+        source="skillman",
+        extra_key=key,
+    )
+    mark(
+        db,
+        key,
+        state="skipped",
+        error="技能管理文档清单不可用，技术描述改从竞赛文档页和资源库收集",
+        http_status=status,
+    )
+
+
+def queue_skillman_document(
+    db: sqlite3.Connection,
+    client: httpx.Client,
+    skills: SkillIndex,
+    code: str,
+    event_id: int,
+    document: dict[str, Any],
+) -> int:
+    doc_id = document["id"]
+    doc_name = text_of(document.get("name")).lower()
+    doc_key = "skill-management-plan" if "management plan" in doc_name or "smp" in doc_name else "technical-description"
+    status, skill_data = api_get(client, f"{API}/skillman/skills?event={event_id}")
+    if status != 200 or not skill_data:
+        return 0
+    skill_rows = skill_data.get("skills") or []
+    langs = ["en"]
+    if skill_rows:
+        langs = probe_td_langs(client, doc_id, skill_id_of(skill_rows[0]))
+        print(f"{code} 技术描述语言：{', '.join(langs)}")
+    added = 0
+    for skill in skill_rows:
+        skill_id, number, name = skill_fields(skill)
+        if number and name:
+            skills.add(code, number, name, event_id)
+        for lang in langs:
+            filename = f"{code}_TD{number or skill_id}_{lang}.pdf"
+            info = classify(
+                filename=filename,
+                doc_key=doc_key,
+                lang_code=lang,
+                edition_hint=code,
+                skill_number=number,
+                skill_name=name or skills.name(code, number),
+            )
+            if queue_item(db, url=f"{API}/skillman/documents/{doc_id}/skills/{skill_id}/pdf?l={lang}", info=info, filename=filename, source="skillman"):
+                added += 1
+    db.commit()
+    return added
+
+
 def discover_skillman(db: sqlite3.Connection, client: httpx.Client, skills: SkillIndex) -> int:
     added = 0
     for code, event_id in skillman_targets(client, skills).items():
         status, data = api_get(client, f"{API}/skillman/documents/events/{event_id}")
         if status in {400, 403}:
-            info = classify(edition_hint=code, doc_key="technical-description")
-            queue_item(
-                db,
-                url=f"{API}/skillman/documents/events/{event_id}",
-                info=info,
-                filename="documents.json",
-                source="skillman",
-                extra_key=f"forbidden:skillman-docs:{event_id}",
-            )
-            mark(db, f"forbidden:skillman-docs:{event_id}", state="forbidden", error="没有权限查看该届技能管理文档", http_status=status)
+            skip_skillman_docs_list(db, code, event_id, status)
             continue
         if status != 200 or not data:
             continue
@@ -773,38 +839,7 @@ def discover_skillman(db: sqlite3.Connection, client: httpx.Client, skills: Skil
             print(f"{code} 技能管理无在线文档")
             continue
         for document in documents:
-            doc_id = document["id"]
-            doc_name = text_of(document.get("name")).lower()
-            doc_key = "technical-description"
-            if "management plan" in doc_name or "smp" in doc_name:
-                doc_key = "skill-management-plan"
-            status, skill_data = api_get(client, f"{API}/skillman/skills?event={event_id}")
-            if status != 200 or not skill_data:
-                continue
-            skill_rows = skill_data.get("skills") or []
-            langs = ["en"]
-            if skill_rows:
-                first_id = skill_id_of(skill_rows[0])
-                langs = probe_td_langs(client, doc_id, first_id)
-                print(f"{code} 技术描述语言：{', '.join(langs)}")
-            for skill in skill_rows:
-                skill_id, number, name = skill_fields(skill)
-                if number and name:
-                    skills.add(code, number, name, event_id)
-                for lang in langs:
-                    filename = f"{code}_TD{number or skill_id}_{lang}.pdf"
-                    url = f"{API}/skillman/documents/{doc_id}/skills/{skill_id}/pdf?l={lang}"
-                    info = classify(
-                        filename=filename,
-                        doc_key=doc_key,
-                        lang_code=lang,
-                        edition_hint=code,
-                        skill_number=number,
-                        skill_name=name or skills.name(code, number),
-                    )
-                    if queue_item(db, url=url, info=info, filename=filename, source="skillman"):
-                        added += 1
-            db.commit()
+            added += queue_skillman_document(db, client, skills, code, event_id, document)
     return added
 
 
@@ -974,8 +1009,14 @@ def discover_cms(db: sqlite3.Connection, client: httpx.Client, skills: SkillInde
                 if section_page.status_code >= 500:
                     info = classify(edition_hint=code, doc_key=doc_key)
                     key = f"missing:{section_url}"
-                    if queue_item(db, url=section_url, info=info, filename="page.html", source="cms", extra_key=key):
-                        mark(db, key, state="error", http_status=section_page.status_code, error=f"栏目打开失败 HTTP {section_page.status_code}")
+                    queue_item(db, url=section_url, info=info, filename="page.html", source="cms", extra_key=key)
+                    mark(
+                        db,
+                        key,
+                        state="skipped",
+                        http_status=section_page.status_code,
+                        error=f"栏目源站 HTTP {section_page.status_code}，打不开",
+                    )
                 continue
             html = BeautifulSoup(section_page.text, "html.parser")
             for anchor in html.select("a[href]"):
@@ -1130,6 +1171,12 @@ def deny_download(db: sqlite3.Connection, row: sqlite3.Row, url: str, response: 
         db.commit()
         raise LoginRequired(url)
     if response.status_code in {200, 206} and "text/html" in content_type_of(response):
+        media = media_url_from(str(response.url), response.text[:8000])
+        if media:
+            db.execute("UPDATE items SET url = ? WHERE key = ?", (media, row["key"]))
+            mark(db, row["key"], state="skipped", http_status=response.status_code, error=f"外链视频，不镜像 {media}")
+            print(f"跳过视频外链  {row['filename']}  {media}")
+            return True
         mark(db, row["key"], state="skipped", http_status=response.status_code, error="网页链接，不归档正文")
         print(f"跳过网页  {row['filename']}  {row['edition_name']}")
         return True
@@ -1740,6 +1787,8 @@ def _self_test() -> None:
     assert url_rank(tokenized) > url_rank(short)
     assert absolute_download_url(cms_host) == tokenized
     assert absolute_download_url("/resources/download/32711/35220/36347?l=en&tkn=example-token") == tokenized
+    assert media_url_from("https://www.youtube.com/watch?v=k1bRYdPuFaY")
+    assert media_url_from("https://api.worldskills.org/resources/download/8834", "https://www.youtube.com/watch?v=k1bRYdPuFaY")
     from layout import public_url
     assert "tkn=" not in public_url(tokenized)
     assert resolve_kind_filter("试题") == "TP"
