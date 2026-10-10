@@ -76,13 +76,25 @@ def eta_text(done: int, queued: int, min_done: float | None) -> str:
     return f"大约还要 {sec} 秒"
 
 
-def _now_label(current: list | dict | None, queued: int) -> str:
+def _status_label(done: int, queued: int, working: int) -> str:
+    if working:
+        return "正在下载"
+    if done == 0 and queued:
+        return "未开始"
+    if queued:
+        return "已停止"
+    return "已完成"
+
+
+def _now_label(current: list | dict | None, queued: int, working: int) -> str:
     if isinstance(current, dict):
         rows = [current]
     else:
         rows = current or []
     if not rows:
-        return "等待下一个文件…" if queued else "队列已空"
+        if working:
+            return "等待下一个文件…"
+        return "还没有开始下载" if queued else "队列已空"
     first = rows[0]
     label = "  ".join(
         part for part in (first.get("edition_code"), first.get("doc_type"), first.get("filename")) if part
@@ -112,17 +124,18 @@ def page() -> bytes:
     done = int(states.get("done", 0))
     queued = int(states.get("queued", 0))
     working = int(states.get("working", 0))
-    total = max(int(data["total"]), 1)
-    pct = 100.0 * (done + int(states.get("forbidden", 0))) / total
+    skipped = int(states.get("skipped", 0))
+    remaining = max(done + queued + working, 1)
+    pct = 100.0 * done / remaining
     return _html(
         {
-            "status": html.escape("正在下载" if queued or working else "已停或已完成"),
+            "status": html.escape(_status_label(done, queued, working)),
             "pct": pct,
-            "now": html.escape(_now_label(data["working"], queued)),
+            "now": html.escape(_now_label(data["working"], queued, working)),
             "eta": html.escape(eta_text(done, queued, data["min_done"])),
             "done": done,
             "queued": queued,
-            "forbidden": int(states.get("forbidden", 0)),
+            "skipped": skipped,
             "error": int(states.get("error", 0)) + int(states.get("missing", 0)),
             "store_n": _store_file_count(),
             "total": int(data["total"]),
@@ -183,7 +196,7 @@ def _html(ctx: dict) -> bytes:
     <div class="grid">
       <div class="card"><span>已保存</span><b>{ctx['done']}</b></div>
       <div class="card"><span>队列中</span><b>{ctx['queued']}</b></div>
-      <div class="card"><span>无权限</span><b>{ctx['forbidden']}</b></div>
+      <div class="card"><span>已跳过</span><b>{ctx['skipped']}</b></div>
       <div class="card"><span>失败 / 找不到</span><b>{ctx['error']}</b></div>
       <div class="card"><span>正文库文件</span><b>{ctx['store_n']}</b></div>
       <div class="card"><span>合计条目</span><b>{ctx['total']}</b></div>
