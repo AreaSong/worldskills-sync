@@ -1,6 +1,7 @@
 {
-  "files": 1742,
+  "files": 2072,
   "editions": [
+    "WSC2022SE",
     "WSC2024",
     "WSC2026"
   ],
@@ -15,6 +16,7 @@
     "08",
     "09",
     "10",
+    "102",
     "11",
     "117",
     "12",
@@ -83,6 +85,7 @@
     "es",
     "fi",
     "fr",
+    "it",
     "ja",
     "ko",
     "pt",
@@ -100,13 +103,23 @@
     "SKL",
     "TD",
     "TP",
-    "VID"
+    "VID",
+    "WSS"
   ],
   "releases": [
+    "wsc-2022-special-edition",
     "wsc-2024-lyon",
     "wsc-2026-shanghai"
   ],
   "assets": [
+    "wsc-2022-special-edition-doc.zip",
+    "wsc-2022-special-edition-il.zip",
+    "wsc-2022-special-edition-mkt.zip",
+    "wsc-2022-special-edition-res.zip",
+    "wsc-2022-special-edition-td.zip",
+    "wsc-2022-special-edition-tp-part01.zip",
+    "wsc-2022-special-edition-tp-part02.zip",
+    "wsc-2022-special-edition-wss.zip",
     "wsc-2024-lyon-doc.zip",
     "wsc-2024-lyon-gen.zip",
     "wsc-2024-lyon-il.zip",
