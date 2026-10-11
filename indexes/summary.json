@@ -1,6 +1,7 @@
 {
-  "files": 2072,
+  "files": 2268,
   "editions": [
+    "WSC2022",
     "WSC2022SE",
     "WSC2024",
     "WSC2026"
@@ -107,11 +108,16 @@
     "WSS"
   ],
   "releases": [
+    "wsc-2022-shanghai",
     "wsc-2022-special-edition",
     "wsc-2024-lyon",
     "wsc-2026-shanghai"
   ],
   "assets": [
+    "wsc-2022-shanghai-il.zip",
+    "wsc-2022-shanghai-td.zip",
+    "wsc-2022-shanghai-tp.zip",
+    "wsc-2022-shanghai-wss.zip",
     "wsc-2022-special-edition-doc.zip",
     "wsc-2022-special-edition-il.zip",
     "wsc-2022-special-edition-mkt.zip",
