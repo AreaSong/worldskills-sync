@@ -1,6 +1,7 @@
 {
-  "files": 2733,
+  "files": 3102,
   "editions": [
+    "WSC2017",
     "WSC2019",
     "WSC2022",
     "WSC2022SE",
@@ -115,11 +116,15 @@
     "62",
     "63",
     "64",
+    "D1",
+    "D2",
+    "E",
     "E0",
     "E01",
     "E02",
     "E03",
-    "F"
+    "F",
+    "P"
   ],
   "languages": [
     "ar",
@@ -137,10 +142,12 @@
     "zh"
   ],
   "kinds": [
+    "COR",
     "DOC",
     "GEN",
     "IL",
     "MKT",
+    "MTG",
     "OFF",
     "RES",
     "RST",
@@ -151,6 +158,7 @@
     "WSS"
   ],
   "releases": [
+    "wsc-2017-abu-dhabi",
     "wsc-2019-kazan",
     "wsc-2022-shanghai",
     "wsc-2022-special-edition",
@@ -158,6 +166,18 @@
     "wsc-2026-shanghai"
   ],
   "assets": [
+    "wsc-2017-abu-dhabi-cor.zip",
+    "wsc-2017-abu-dhabi-doc.zip",
+    "wsc-2017-abu-dhabi-il.zip",
+    "wsc-2017-abu-dhabi-mkt.zip",
+    "wsc-2017-abu-dhabi-mtg.zip",
+    "wsc-2017-abu-dhabi-res.zip",
+    "wsc-2017-abu-dhabi-skl.zip",
+    "wsc-2017-abu-dhabi-td.zip",
+    "wsc-2017-abu-dhabi-tp-part01.zip",
+    "wsc-2017-abu-dhabi-tp-part02.zip",
+    "wsc-2017-abu-dhabi-tp-part03.zip",
+    "wsc-2017-abu-dhabi-wss.zip",
     "wsc-2019-kazan-doc.zip",
     "wsc-2019-kazan-gen.zip",
     "wsc-2019-kazan-il.zip",
