@@ -88,6 +88,13 @@ def list_zip_members(src: Path) -> list[str]:
 
 def build_zip_members(store: Path = STORE) -> dict[str, list[str]]:
     mapping: dict[str, list[str]] = {}
+    if MEMBERS_PATH.exists():
+        try:
+            loaded = json.loads(MEMBERS_PATH.read_text(encoding="utf-8"))
+            if isinstance(loaded, dict):
+                mapping.update(loaded)
+        except json.JSONDecodeError:
+            mapping = {}
     if store.exists():
         for path in store.rglob("*.zip"):
             if not path.is_file() or path.stat().st_size < 22:
