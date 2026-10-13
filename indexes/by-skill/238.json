@@ -1,0 +1,45 @@
+{
+  "skill": "238",
+  "names": {
+    "WSC2019": "FS14 Drone Operating",
+    "CIW2025": "PO6 Software Testing"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "238",
+      "skill_name": "FS14 Drone Operating",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL238.xlsx",
+      "bytes": 236967,
+      "sha256": "dd729dee48b288a49df341cf8d613c6b4f1acd16de2768cc540dc5bd6bcd1fe4",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/238?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/238/und/WSC2019_IL238.xlsx"
+    },
+    {
+      "edition": "CIW2025",
+      "edition_name": "Competition Infrastructure Workshop 2025",
+      "kind": "IL",
+      "skill": "238",
+      "skill_name": "PO6 Software Testing",
+      "stage": "",
+      "lang": "und",
+      "filename": "CIW2025_IL2385.xlsx",
+      "bytes": 187836,
+      "sha256": "e0df5885f05b2066a3b1f0e99f1b58c925c3bc38a419900c5b6c8c7d0006d105",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/626/2385?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "ciw-2025-ciw-il.zip",
+      "release": "ciw-2025-ciw",
+      "store_path": "CIW2025/IL/238/und/CIW2025_IL2385.xlsx"
+    }
+  ]
+}

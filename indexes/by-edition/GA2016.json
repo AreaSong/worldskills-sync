@@ -1,0 +1,61 @@
+{
+  "edition": "GA2016",
+  "name": "WorldSkills General Assembly 2016",
+  "release": "ga-2016",
+  "files": [
+    {
+      "edition": "GA2016",
+      "edition_name": "WorldSkills General Assembly 2016",
+      "kind": "MKT",
+      "skill": "xx",
+      "skill_name": "",
+      "stage": "",
+      "lang": "und",
+      "filename": "PR_20140918_GA2016.pdf",
+      "bytes": 78878,
+      "sha256": "c7021bb4f19273a56f468c45c5ea00619c79fe05f55e315405a789a08e05d4f6",
+      "url": "https://api.worldskills.org/resources/download/6395/6444/7330?l=en",
+      "state": "done",
+      "note": "",
+      "asset": "ga-2016-mkt.zip",
+      "release": "ga-2016",
+      "store_path": "GA2016/MKT/xx/und/PR_20140918_GA2016.pdf"
+    },
+    {
+      "edition": "GA2016",
+      "edition_name": "WorldSkills General Assembly 2016",
+      "kind": "MKT",
+      "skill": "xx",
+      "skill_name": "",
+      "stage": "",
+      "lang": "und",
+      "filename": "GA2016_postcard_save_the_date_print-ready.pdf",
+      "bytes": 2500908,
+      "sha256": "59ea6a96e71ec7555946f36180786790ea04dd4513b4145b30dece621f87325a",
+      "url": "https://api.worldskills.org/resources/download/7586/7956/8853?l=en",
+      "state": "done",
+      "note": "",
+      "asset": "ga-2016-mkt.zip",
+      "release": "ga-2016",
+      "store_path": "GA2016/MKT/xx/und/GA2016_postcard_save_the_date_print-ready.pdf"
+    },
+    {
+      "edition": "GA2016",
+      "edition_name": "WorldSkills General Assembly 2016",
+      "kind": "MKT",
+      "skill": "xx",
+      "skill_name": "",
+      "stage": "",
+      "lang": "und",
+      "filename": "GA2016_packages_brochure.pdf",
+      "bytes": 168670,
+      "sha256": "629d6ddef647d5b660f23127a65964168c38db5c356f82b52c052919fa1d2119",
+      "url": "https://api.worldskills.org/resources/download/7648/8051/8962?l=en",
+      "state": "done",
+      "note": "",
+      "asset": "ga-2016-mkt.zip",
+      "release": "ga-2016",
+      "store_path": "GA2016/MKT/xx/und/GA2016_packages_brochure.pdf"
+    }
+  ]
+}

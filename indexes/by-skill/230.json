@@ -1,0 +1,26 @@
+{
+  "skill": "230",
+  "names": {
+    "WSC2019": "FS07 Industrial Design Technology"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "230",
+      "skill_name": "FS07 Industrial Design Technology",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL230.xlsx",
+      "bytes": 212495,
+      "sha256": "0d0667e577ee96cd0f6569832aad14e236bc528a5182f5bae53771d88af7f572",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/230?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/230/und/WSC2019_IL230.xlsx"
+    }
+  ]
+}

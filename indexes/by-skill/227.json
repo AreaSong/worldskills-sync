@@ -1,0 +1,26 @@
+{
+  "skill": "227",
+  "names": {
+    "WSC2019": "FS04 Blockchain-based Solutions"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "227",
+      "skill_name": "FS04 Blockchain-based Solutions",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL227.xlsx",
+      "bytes": 196490,
+      "sha256": "f314c4ba4cfffc53cd40db39a84c8c0127bcb4867fac6b8a5afe57fcfbfae789",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/227?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/227/und/WSC2019_IL227.xlsx"
+    }
+  ]
+}

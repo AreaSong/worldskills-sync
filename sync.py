@@ -51,6 +51,7 @@ from layout import (
     pack_releases,
     place_file,
     prune_empty_dirs,
+    public_note,
     record_from_row,
     release_tag,
     sha256_file,
@@ -1752,6 +1753,8 @@ def _self_test() -> None:
     path = classified_path(tp, "WSC2026_TP24_actual_en.zip")
     posix = path.as_posix()
     assert "WSC2026/TP/24/actual/en/WSC2026_TP24_actual_en.zip" in posix
+    assert public_note("外链视频，不镜像 https://youtu.be/x") == "外链视频，不镜像"
+    assert public_note("网页链接，不归档正文") == "网页链接，不归档正文"
     assert parse_lang("WSC2026_TP10_38FI_pre_EN_v3.zip") == "en"
     assert parse_lang("TP01_36KR.zip") is None
     record = record_from_row(
@@ -1769,6 +1772,8 @@ def _self_test() -> None:
     assert record["store_path"] == "WSC2005/TP/38/actual/und/TP38_38FI.zip"
     assert record["release"] == "wsc-2005-helsinki"
     assert release_tag("ES2025") == "es-2025-herning"
+    assert release_tag("ES2020") == "es-2020-graz"
+    assert release_tag("ES2018") == "es-2018-budapest"
     assert release_tag(GLOBAL_CODE) == "global"
     assert kind_code("视频") == "VID"
     assert kind_code("video") == "VID"
@@ -1801,14 +1806,17 @@ def _self_test() -> None:
     from extract import _self_test as extract_self_test
     from search import _self_test as search_self_test
     from progress import counts, eta_text, write_file
+    from progress_upload import _self_test as progress_upload_self_test
 
     extract_self_test()
     search_self_test()
+    progress_upload_self_test()
 
     assert eta_text(0, 8, None) == "—"
     assert "states" in counts()
     progress_path = write_file()
-    assert progress_path.exists() and "下载进度" in progress_path.read_text(encoding="utf-8")
+    html = progress_path.read_text(encoding="utf-8")
+    assert progress_path.exists() and "下载" in html and "上传" in html and "速度" in html
     print("self-test ok")
 
 

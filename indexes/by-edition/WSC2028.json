@@ -1,0 +1,25 @@
+{
+  "edition": "WSC2028",
+  "name": "WorldSkills Aichi 2028",
+  "release": "wsc-2028-aichi",
+  "files": [
+    {
+      "edition": "WSC2028",
+      "edition_name": "WorldSkills Aichi 2028",
+      "kind": "MKT",
+      "skill": "xx",
+      "skill_name": "",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2028.zip",
+      "bytes": 1927509,
+      "sha256": "d397b012cd4883f5d5f773fe064772de75c9870c5c95224eb80f2601d1cdaaa7",
+      "url": "https://api.worldskills.org/resources/download/23989/26084/27130?l=en",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2028-aichi-mkt.zip",
+      "release": "wsc-2028-aichi",
+      "store_path": "WSC2028/MKT/xx/und/WSC2028.zip"
+    }
+  ]
+}

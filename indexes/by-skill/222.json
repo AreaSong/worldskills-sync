@@ -1,0 +1,26 @@
+{
+  "skill": "222",
+  "names": {
+    "WSC2019": "WSJ11 IT Network Systems Administration"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "222",
+      "skill_name": "WSJ11 IT Network Systems Administration",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL222.xlsx",
+      "bytes": 203634,
+      "sha256": "0ea6ea33633a0676590086bfaafb2b1f9364f8476c99b48d1e25fa2763cc2ff3",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/222?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/222/und/WSC2019_IL222.xlsx"
+    }
+  ]
+}

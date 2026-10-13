@@ -88,6 +88,8 @@ EDITION_SLUGS = {
     "WSC2024": "2024-lyon",
     "WSC2026": "2026-shanghai",
     "WSC2028": "2028-aichi",
+    "ES2018": "2018-budapest",
+    "ES2020": "2020-graz",
     "ES2021": "2021-graz",
     "ES2023": "2023-gdansk",
     "ES2025": "2025-herning",
@@ -150,6 +152,9 @@ def edition_slug(code: str | None) -> str:
         return "unknown"
     if code in EDITION_SLUGS:
         return EDITION_SLUGS[code]
+    match = re.fullmatch(r"([A-Za-z]+)(\d{4})", code)
+    if match:
+        return match.group(2)
     return re.sub(r"[^a-z0-9]+", "-", code.lower()).strip("-") or "unknown"
 
 
@@ -231,6 +236,21 @@ def row_dict(row: sqlite3.Row | dict[str, Any]) -> dict[str, Any]:
     return {key: row[key] for key in row.keys()}
 
 
+EXCEPTION_STATES = frozenset({"skipped", "error", "missing", "forbidden"})
+EXCEPTION_FIELDS = [
+    "edition",
+    "edition_name",
+    "kind",
+    "skill",
+    "skill_name",
+    "filename",
+    "state",
+    "note",
+    "url",
+    "release",
+]
+
+
 def public_url(url: str) -> str:
     parsed = urlparse(url or "")
     pairs = [
@@ -240,6 +260,23 @@ def public_url(url: str) -> str:
     ]
     pairs.sort()
     return urlunparse((parsed.scheme, parsed.netloc, parsed.path, "", urlencode(pairs, doseq=True), ""))
+
+
+def public_note(error: str | None) -> str:
+    text = " ".join(str(error or "").split())
+    if text.startswith("外链视频"):
+        return "外链视频，不镜像"
+    if text.startswith("网页链接"):
+        return "网页链接，不归档正文"
+    if "技能管理文档清单" in text:
+        return "技能管理文档清单不可用"
+    if text.startswith("HTTP 200") and "html" in text.lower():
+        return "打开后是网页，不归档正文"
+    if "栏目源站 HTTP 500" in text:
+        return "栏目源站 HTTP 500"
+    if text.startswith("大于 ") and "字节" in text:
+        return "超过分包上限"
+    return text[:200]
 
 
 def record_from_row(row: sqlite3.Row | dict[str, Any], filename_hint: str | None = None) -> dict[str, Any]:
@@ -273,6 +310,7 @@ def record_from_row(row: sqlite3.Row | dict[str, Any], filename_hint: str | None
         "sha256": data.get("sha256") or "",
         "url": public_url(data.get("url") or ""),
         "state": data.get("state") or "",
+        "note": public_note(data.get("error")),
         "asset": data.get("asset") or "",
         "release": release_tag(edition),
         "store_path": store_path,
@@ -289,7 +327,8 @@ def finalize_records(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 
 def write_indexes(root: Path, records: Iterable[dict[str, Any]]) -> None:
-    items = [item for item in records if item.get("state") == "done"]
+    all_items = list(records)
+    items = [item for item in all_items if item.get("state") == "done"]
     index_dir = root / "indexes"
     for sub in ("by-skill", "by-edition", "by-language"):
         folder = index_dir / sub
@@ -359,6 +398,7 @@ def write_indexes(root: Path, records: Iterable[dict[str, Any]]) -> None:
         for item in sorted(items, key=lambda row: (row["edition"], row["kind"], row["skill"], row["filename"])):
             writer.writerow(item)
 
+    write_exceptions(index_dir, all_items)
     summary = {
         "files": len(items),
         "editions": sorted(by_edition),
@@ -367,6 +407,9 @@ def write_indexes(root: Path, records: Iterable[dict[str, Any]]) -> None:
         "kinds": sorted({item["kind"] for item in items}),
         "releases": sorted({item["release"] for item in items}),
         "assets": sorted({item.get("asset") for item in items if item.get("asset")}),
+        "exceptions": {
+            state: sum(1 for item in all_items if item.get("state") == state) for state in sorted(EXCEPTION_STATES)
+        },
     }
     data_summary = root / "data" / "summary.json"
     if data_summary.exists():
@@ -377,6 +420,19 @@ def write_indexes(root: Path, records: Iterable[dict[str, Any]]) -> None:
         except json.JSONDecodeError:
             pass
     dump(index_dir / "summary.json", summary)
+
+
+def write_exceptions(index_dir: Path, records: list[dict[str, Any]]) -> None:
+    rows = [
+        item
+        for item in records
+        if item.get("state") in EXCEPTION_STATES
+    ]
+    rows.sort(key=lambda item: (item.get("state") or "", item.get("edition") or "", item.get("filename") or ""))
+    with (index_dir / "exceptions.csv").open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=EXCEPTION_FIELDS, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(rows)
 
 
 def plan_assets(records: list[dict[str, Any]]) -> list[dict[str, Any]]:

@@ -1,0 +1,26 @@
+{
+  "skill": "102",
+  "names": {
+    "WSC2022SE": "E01 Stonemasonry"
+  },
+  "files": [
+    {
+      "edition": "WSC2022SE",
+      "edition_name": "WorldSkills Competition 2022 Special Edition",
+      "kind": "IL",
+      "skill": "102",
+      "skill_name": "E01 Stonemasonry",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2022SE_IL1021.xlsx",
+      "bytes": 194891,
+      "sha256": "fcbd2d76f0de7c34c2e1243c67cfa5c0834bae2cad6d1b8e10374265d26abf4b",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/594/1021?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2022-special-edition-il.zip",
+      "release": "wsc-2022-special-edition",
+      "store_path": "WSC2022SE/IL/102/und/WSC2022SE_IL1021.xlsx"
+    }
+  ]
+}

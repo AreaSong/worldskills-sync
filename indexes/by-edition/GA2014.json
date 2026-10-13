@@ -1,0 +1,43 @@
+{
+  "edition": "GA2014",
+  "name": "WorldSkills General Assembly 2014",
+  "release": "ga-2014",
+  "files": [
+    {
+      "edition": "GA2014",
+      "edition_name": "WorldSkills General Assembly 2014",
+      "kind": "SUP",
+      "skill": "xx",
+      "skill_name": "",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSI_11_WorldSkills_Vision_2020.pdf",
+      "bytes": 447249,
+      "sha256": "b30a889fa8e47ebf77501c8748464a3fbdcd71d9a17b477ac36c5d1dbb0f2507",
+      "url": "https://api.worldskills.org/resources/download/3748/3748/4496?l=en",
+      "state": "done",
+      "note": "",
+      "asset": "ga-2014-sup.zip",
+      "release": "ga-2014",
+      "store_path": "GA2014/SUP/xx/und/WSI_11_WorldSkills_Vision_2020.pdf"
+    },
+    {
+      "edition": "GA2014",
+      "edition_name": "WorldSkills General Assembly 2014",
+      "kind": "MTG",
+      "skill": "xx",
+      "skill_name": "",
+      "stage": "",
+      "lang": "und",
+      "filename": "GA_201409_25_WSCF2014_presentation.pdf",
+      "bytes": 1014089,
+      "sha256": "2a9db7ff387c3a4085a8f64391dc559a815bb2176dbe487c5daf09af100e42c8",
+      "url": "https://api.worldskills.org/resources/download/6155/6200/7077?l=en",
+      "state": "done",
+      "note": "",
+      "asset": "ga-2014-mtg.zip",
+      "release": "ga-2014",
+      "store_path": "GA2014/MTG/xx/und/GA_201409_25_WSCF2014_presentation.pdf"
+    }
+  ]
+}

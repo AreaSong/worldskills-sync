@@ -1,0 +1,26 @@
+{
+  "skill": "217",
+  "names": {
+    "WSC2019": "WSJ06 Painting and Decorating"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "217",
+      "skill_name": "WSJ06 Painting and Decorating",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL217.xlsx",
+      "bytes": 236579,
+      "sha256": "5384ade281c7e2fa8f02cb8be20e3235f3ca1c80b4943e48332ed8b52bcfb8e6",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/217?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/217/und/WSC2019_IL217.xlsx"
+    }
+  ]
+}

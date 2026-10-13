@@ -1,0 +1,42 @@
+{
+  "skill": "E0",
+  "names": {},
+  "files": [
+    {
+      "edition": "WSC2024",
+      "edition_name": "WorldSkills Lyon 2024",
+      "kind": "TP",
+      "skill": "E0",
+      "skill_name": "",
+      "stage": "pre",
+      "lang": "en",
+      "filename": "WSC2024_TPES03_pre_en.zip",
+      "bytes": 85857803,
+      "sha256": "12747aa21c1cf2cfbbd104b6c8ee8791b7baceb1b2b4c6922f87037d2791d3cc",
+      "url": "https://api.worldskills.org/resources/download/22273/24193/25158?l=en",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2024-lyon-tp-part02.zip",
+      "release": "wsc-2024-lyon",
+      "store_path": "WSC2024/TP/E0/pre/en/WSC2024_TPES03_pre_en.zip"
+    },
+    {
+      "edition": "WSC2024",
+      "edition_name": "WorldSkills Lyon 2024",
+      "kind": "TP",
+      "skill": "E0",
+      "skill_name": "",
+      "stage": "pre",
+      "lang": "und",
+      "filename": "WSC2024_TPE01.zip",
+      "bytes": 543048,
+      "sha256": "6ac2bf2c287607b0bf3a76d90e620e3b6bf15bea88a3d1ec7261ac77c0d32191",
+      "url": "https://api.worldskills.org/resources/download/22660/24655/25620?l=en",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2024-lyon-tp-part02.zip",
+      "release": "wsc-2024-lyon",
+      "store_path": "WSC2024/TP/E0/pre/und/WSC2024_TPE01.zip"
+    }
+  ]
+}

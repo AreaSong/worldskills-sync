@@ -1,0 +1,26 @@
+{
+  "skill": "250",
+  "names": {
+    "WSC2019": "FSS10 Industry 4.0"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "250",
+      "skill_name": "FSS10 Industry 4.0",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL250.xlsx",
+      "bytes": 190315,
+      "sha256": "f6372e1dd6d48cfe3c13052f30f9df0a25923e97b35e76ca170086e2ff7fefcb",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/250?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/250/und/WSC2019_IL250.xlsx"
+    }
+  ]
+}

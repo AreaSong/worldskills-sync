@@ -1,0 +1,26 @@
+{
+  "skill": "247",
+  "names": {
+    "WSC2019": "FSS07 Smart Grid"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "247",
+      "skill_name": "FSS07 Smart Grid",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL247.xlsx",
+      "bytes": 187837,
+      "sha256": "4f39701b29fdc4a5a00c5d43aba83249486c7650f00a64c888a3dd63c1db9ba4",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/247?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/247/und/WSC2019_IL247.xlsx"
+    }
+  ]
+}

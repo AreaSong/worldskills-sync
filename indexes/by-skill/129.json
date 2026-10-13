@@ -1,0 +1,26 @@
+{
+  "skill": "129",
+  "names": {
+    "WSC2024": "E02 Heavy Truck Maintenance"
+  },
+  "files": [
+    {
+      "edition": "WSC2024",
+      "edition_name": "WorldSkills Lyon 2024",
+      "kind": "IL",
+      "skill": "129",
+      "skill_name": "E02 Heavy Truck Maintenance",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2024_IL1291.xlsx",
+      "bytes": 216454,
+      "sha256": "628c624fe4d52e542ac88d413b7a9bc8118af08b8aaa7abd26b9d20063338a57",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/579/1291?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2024-lyon-il.zip",
+      "release": "wsc-2024-lyon",
+      "store_path": "WSC2024/IL/129/und/WSC2024_IL1291.xlsx"
+    }
+  ]
+}

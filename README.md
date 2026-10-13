@@ -89,6 +89,7 @@ WorldSkills 发出来的试题本来就是 zip，正文库也按原件保存。�
 
 - 页面：仓库根目录的 `index.html`
 - 目录：`indexes/catalog.csv`、`indexes/zip-members.json`
+- 未归档：`indexes/exceptions.csv`（跳过、失败、找不到、无权限；搜索页「未归档」）
 - 成绩：`data/results.csv`
 - 正文：GitHub Releases 分卷 zip
 

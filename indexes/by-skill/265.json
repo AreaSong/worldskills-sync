@@ -1,0 +1,44 @@
+{
+  "skill": "265",
+  "names": {
+    "CPW2026": "PO5 Retail Sales"
+  },
+  "files": [
+    {
+      "edition": "CPW2026",
+      "edition_name": "Competition Preparation Week Shanghai 2026",
+      "kind": "IL",
+      "skill": "265",
+      "skill_name": "PO1 Dental Prosthetics",
+      "stage": "",
+      "lang": "und",
+      "filename": "CPW2026_IL2657.xlsx",
+      "bytes": 187836,
+      "sha256": "4341d18acc8319eff86eaa85710b65aba24660352745907cc99a9bf3912b4974",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/635/2657?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "cpw-2026-shanghai-prep-il.zip",
+      "release": "cpw-2026-shanghai-prep",
+      "store_path": "CPW2026/IL/265/und/CPW2026_IL2657.xlsx"
+    },
+    {
+      "edition": "CPW2026",
+      "edition_name": "Competition Preparation Week Shanghai 2026",
+      "kind": "IL",
+      "skill": "265",
+      "skill_name": "PO5 Retail Sales",
+      "stage": "",
+      "lang": "und",
+      "filename": "CPW2026_IL2658.xlsx",
+      "bytes": 187836,
+      "sha256": "c7c4244e181275b54441e43ef1f47d1965c7bb8faa8673b4202cdc83700cad62",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/635/2658?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "cpw-2026-shanghai-prep-il.zip",
+      "release": "cpw-2026-shanghai-prep",
+      "store_path": "CPW2026/IL/265/und/CPW2026_IL2658.xlsx"
+    }
+  ]
+}

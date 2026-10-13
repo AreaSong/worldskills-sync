@@ -1,0 +1,26 @@
+{
+  "skill": "249",
+  "names": {
+    "WSC2019": "FSS09 Laser Technology"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "249",
+      "skill_name": "FSS09 Laser Technology",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL249.xlsx",
+      "bytes": 201130,
+      "sha256": "65c8a033b774eb100beb03666b73cddbcd2350693193c410c37d1f861eb2da8e",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/249?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/249/und/WSC2019_IL249.xlsx"
+    }
+  ]
+}

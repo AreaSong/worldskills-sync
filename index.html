@@ -216,6 +216,7 @@
         <button type="button" data-scope="all" aria-pressed="true">全部</button>
         <button type="button" data-scope="files">资料</button>
         <button type="button" data-scope="results">成绩</button>
+        <button type="button" data-scope="gaps">未归档</button>
       </div>
       <select id="edition" aria-label="届次">
         <option value="">全部届次</option>
@@ -301,7 +302,11 @@
     }
 
     function stateLabel(state) {
-      return { done: "已保存", queued: "队列中", working: "正在下", forbidden: "无权限", error: "失败", missing: "找不到" }[state] || state;
+      return { done: "已保存", queued: "队列中", working: "正在下", skipped: "已跳过", forbidden: "无权限", error: "失败", missing: "找不到" }[state] || state;
+    }
+
+    function isArchived(item) {
+      return !item.state || item.state === "done";
     }
 
     function fillFacets(data) {
@@ -336,11 +341,11 @@
     }
 
     function renderFile(item) {
-      const local = localMode && item.state === "done";
+      const archived = isArchived(item);
+      const local = localMode && archived;
       const encoded = (item.store_path || "").split("/").map(encodeURIComponent).join("/");
       const zip = /\.zip$/i.test(item.filename || item.store_path || "");
-      const live = published.has(packKey(item));
-      const pack = live ? releaseHref(item) : "";
+      const pack = archived ? releaseHref(item) : "";
       const original = originalHref(item);
       const inner = (item.inner || []).slice(0, 6).map(escapeHtml).join(" · ");
       let actions = "";
@@ -353,10 +358,12 @@
       }
       if (pack) {
         actions += `<a class="open" href="${escapeHtml(pack)}" rel="noopener noreferrer" target="_blank">GitHub</a>`;
-      } else {
+      } else if (archived) {
         actions += `<span class="open muted">GitHub 待发布</span>`;
       }
       const label = item.kind_label || kindLabel(item.kind);
+      const status = archived ? "" : " · " + escapeHtml(stateLabel(item.state));
+      const note = item.note ? " · " + escapeHtml(item.note) : "";
       return `<li>
         <div class="num">${escapeHtml(item.skill || "—")}</div>
         <div class="body">
@@ -366,7 +373,8 @@
             ${escapeHtml(item.edition_name || item.edition)}
             ${item.stage ? " · " + escapeHtml(item.stage) : ""}
             ${item.lang ? " · " + escapeHtml(item.lang) : ""}
-            ${localMode ? " · " + escapeHtml(stateLabel(item.state)) : ""}
+            ${localMode && archived ? " · " + escapeHtml(stateLabel(item.state)) : ""}
+            ${status}${note}
             ${item.bytes ? " · " + bytes(item.bytes) : ""}
           </div>
           <div class="meta path">${escapeHtml(item.filename)}${item.store_path ? " · " + escapeHtml(item.store_path) : ""}</div>
@@ -428,7 +436,7 @@
     function hayFile(item) {
       return [item.edition, item.edition_name, item.skill, String(item.skill || "").replace(/^0+/, ""),
         item.skill_name, item.kind, item.kind_label, item.stage, item.lang, item.filename, item.store_path,
-        (item.inner || []).join(" ")].filter(Boolean).join(" ").toLowerCase();
+        item.state, item.note, (item.inner || []).join(" ")].filter(Boolean).join(" ").toLowerCase();
     }
 
     function isSkillNum(token) {
@@ -451,11 +459,14 @@
       const files = staticCatalog.files;
       const results = staticCatalog.results;
       const found = [];
-      if (scope === "all" || scope === "files") {
+      if (scope === "all" || scope === "files" || scope === "gaps") {
         files.forEach((item) => {
+          const archived = isArchived(item);
+          if (scope === "files" && !archived) return;
+          if (scope === "gaps" && archived) return;
           if (edition.value && item.edition !== edition.value) return;
           if (kind.value && item.kind !== kind.value) return;
-          if (!tokens.length && !edition.value && !kind.value) return;
+          if (!tokens.length && !edition.value && !kind.value && scope !== "gaps") return;
           if (tokens.length && !tokensMatch(item, tokens, hayFile(item))) return;
           found.push(item);
         });
@@ -494,16 +505,18 @@
     }
 
     async function loadStatic() {
-      const [catalogRes, resultsRes, membersRes] = await Promise.all([
+      const [catalogRes, resultsRes, membersRes, gapRes] = await Promise.all([
         fetch("indexes/catalog.csv"),
         fetch("data/results.csv"),
         fetch("indexes/zip-members.json"),
+        fetch("indexes/exceptions.csv"),
       ]);
       if (!catalogRes.ok) throw new Error("catalog");
       const catalogText = await catalogRes.text();
       const resultsText = resultsRes.ok ? await resultsRes.text() : "";
+      const gapText = gapRes.ok ? await gapRes.text() : "";
       const members = membersRes.ok ? await membersRes.json() : {};
-      const files = parseCsv(catalogText).map((row) => {
+      const asFile = (row) => {
         const inner = members[row.store_path] || [];
         return {
           type: "file",
@@ -522,10 +535,12 @@
           asset: row.asset,
           url: row.url,
           state: row.state || "done",
+          note: row.note || "",
           inner,
           inner_count: inner.length,
         };
-      });
+      };
+      const files = parseCsv(catalogText).map(asFile).concat(gapText ? parseCsv(gapText).map(asFile) : []);
       const resultRows = resultsText ? parseCsv(resultsText).map((row) => ({ type: "result", ...row })) : [];
       const kindSet = [...new Set(files.map((f) => f.kind).filter(Boolean))].sort();
       staticCatalog = {
@@ -540,7 +555,7 @@
       document.getElementById("mode-title").textContent = local ? "本地目录" : "公开目录";
       hint.innerHTML = local
         ? "试题包本身就是 zip。本机可打开或解压；同时提供原始地址和 GitHub 分卷两个跳转。例：<b>39</b>　<b>Cooking</b>　<b>WSC2026 TD</b>"
-        : "每条两个跳转：<b>原始</b>是 WorldSkills 原件（可能要登录），<b>GitHub</b> 是本仓库 Release 分卷。例：<b>39</b>　<b>Cooking</b>　<b>WSC2024 TD</b>";
+        : "已归档条目两个跳转：<b>原始</b>和 <b>GitHub</b> 分卷。<b>未归档</b>只保留原因和原始公开链接。例：<b>39</b>　<b>Cooking</b>　<b>WSC2024 TD</b>";
     }
 
     async function run() {

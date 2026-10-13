@@ -1,0 +1,26 @@
+{
+  "skill": "221",
+  "names": {
+    "WSC2019": "WSJ10 Web Technologies"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "221",
+      "skill_name": "WSJ10 Web Technologies",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL221.xlsx",
+      "bytes": 211038,
+      "sha256": "6c01cbcdea7f7c9b3066264b5b19ccd98b59d496e58726eb62f919b9e9aa4eb2",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/221?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/221/und/WSC2019_IL221.xlsx"
+    }
+  ]
+}

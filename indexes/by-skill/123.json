@@ -1,0 +1,26 @@
+{
+  "skill": "123",
+  "names": {
+    "CIW2023": "P01 Stonemasonry"
+  },
+  "files": [
+    {
+      "edition": "CIW2023",
+      "edition_name": "Competition Infrastructure Workshop 2023",
+      "kind": "IL",
+      "skill": "123",
+      "skill_name": "P01 Stonemasonry",
+      "stage": "",
+      "lang": "und",
+      "filename": "CIW2023_IL1232.xlsx",
+      "bytes": 187836,
+      "sha256": "f1eebfd837fd3c1aa33f72e40105b1297635599407ca6897e83a35ccdcdb466d",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/603/1232?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "ciw-2023-ciw-il.zip",
+      "release": "ciw-2023-ciw",
+      "store_path": "CIW2023/IL/123/und/CIW2023_IL1232.xlsx"
+    }
+  ]
+}

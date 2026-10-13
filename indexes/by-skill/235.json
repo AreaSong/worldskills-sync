@@ -1,0 +1,63 @@
+{
+  "skill": "235",
+  "names": {
+    "WSC2019": "FS11 Mobile Applications Development",
+    "CIW2025": "PO5 Retail Sales"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "235",
+      "skill_name": "FS11 Mobile Applications Development",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL235.xlsx",
+      "bytes": 216503,
+      "sha256": "d14e6042719f5f809ec8a38f0df47aa80ae2865e8c7c9ec88c3db5fef49d9751",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/235?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/235/und/WSC2019_IL235.xlsx"
+    },
+    {
+      "edition": "CIW2025",
+      "edition_name": "Competition Infrastructure Workshop 2025",
+      "kind": "IL",
+      "skill": "235",
+      "skill_name": "PO1 Dental Prosthetics",
+      "stage": "",
+      "lang": "und",
+      "filename": "CIW2025_IL2357.xlsx",
+      "bytes": 187836,
+      "sha256": "8130bd586a2124e297b80569ff476628116c476bdf72a0e629773f3119af8a45",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/626/2357?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "ciw-2025-ciw-il.zip",
+      "release": "ciw-2025-ciw",
+      "store_path": "CIW2025/IL/235/und/CIW2025_IL2357.xlsx"
+    },
+    {
+      "edition": "CIW2025",
+      "edition_name": "Competition Infrastructure Workshop 2025",
+      "kind": "IL",
+      "skill": "235",
+      "skill_name": "PO5 Retail Sales",
+      "stage": "",
+      "lang": "und",
+      "filename": "CIW2025_IL2359.xlsx",
+      "bytes": 187836,
+      "sha256": "9b72314bbebeb60149f70959054256561bc11b9a58fd045a698a7cf84ddff45e",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/626/2359?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "ciw-2025-ciw-il.zip",
+      "release": "ciw-2025-ciw",
+      "store_path": "CIW2025/IL/235/und/CIW2025_IL2359.xlsx"
+    }
+  ]
+}

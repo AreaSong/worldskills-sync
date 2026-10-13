@@ -1,0 +1,26 @@
+{
+  "skill": "218",
+  "names": {
+    "WSC2019": "WSJ07 Plumbing and Heating"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "218",
+      "skill_name": "WSJ07 Plumbing and Heating",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL218.xlsx",
+      "bytes": 242854,
+      "sha256": "49e17da4953d0088851483ba807c9b5f07cc2f60ae29fd6f941a1c0581a232fc",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/218?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/218/und/WSC2019_IL218.xlsx"
+    }
+  ]
+}

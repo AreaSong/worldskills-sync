@@ -1,0 +1,25 @@
+{
+  "edition": "GA2025",
+  "name": "WorldSkills General Assembly 2025",
+  "release": "ga-2025",
+  "files": [
+    {
+      "edition": "GA2025",
+      "edition_name": "WorldSkills General Assembly 2025",
+      "kind": "CNF",
+      "skill": "xx",
+      "skill_name": "",
+      "stage": "",
+      "lang": "und",
+      "filename": "GA2025_Conference_expression of interest_guide_v2.docx",
+      "bytes": 685369,
+      "sha256": "b4d558cb039cb123bcbe2b3563ff3f1bf8de6b40bf38b907f15e7e474db9f1d0",
+      "url": "https://api.worldskills.org/resources/download/26592/29194/30244?l=en",
+      "state": "done",
+      "note": "",
+      "asset": "ga-2025-cnf.zip",
+      "release": "ga-2025",
+      "store_path": "GA2025/CNF/xx/und/GA2025_Conference_expression of interest_guide_v2.docx"
+    }
+  ]
+}

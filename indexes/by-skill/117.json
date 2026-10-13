@@ -1,0 +1,44 @@
+{
+  "skill": "117",
+  "names": {
+    "WSC2024": "E03 Rail Vehicle Technology"
+  },
+  "files": [
+    {
+      "edition": "WSC2024",
+      "edition_name": "WorldSkills Lyon 2024",
+      "kind": "IL",
+      "skill": "117",
+      "skill_name": "E01 Stonemasonry",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2024_IL1175.xlsx",
+      "bytes": 206499,
+      "sha256": "05434a9ef7463b1df5ea8d2a3cce6ffe4a717541b1a110fe50ac1e76e111b0d3",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/579/1175?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2024-lyon-il.zip",
+      "release": "wsc-2024-lyon",
+      "store_path": "WSC2024/IL/117/und/WSC2024_IL1175.xlsx"
+    },
+    {
+      "edition": "WSC2024",
+      "edition_name": "WorldSkills Lyon 2024",
+      "kind": "IL",
+      "skill": "117",
+      "skill_name": "E03 Rail Vehicle Technology",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2024_IL1170.xlsx",
+      "bytes": 246756,
+      "sha256": "8b9a2af0ac735b090b23f9edb60fe0cb42401e6c1499a67c846641e78841c802",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/579/1170?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2024-lyon-il.zip",
+      "release": "wsc-2024-lyon",
+      "store_path": "WSC2024/IL/117/und/WSC2024_IL1170.xlsx"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "skill": "P0",
+  "names": {},
+  "files": [
+    {
+      "edition": "WSC2021",
+      "edition_name": "WSC2021",
+      "kind": "TD",
+      "skill": "P0",
+      "skill_name": "",
+      "stage": "",
+      "lang": "en",
+      "filename": "WSC2021_TD48_EN.pdf",
+      "bytes": 1950491,
+      "sha256": "ab6c927c019f84344a32b27c2882e70a03296991708e55238512c5015625cb32",
+      "url": "https://api.worldskills.org/resources/download/12310/13550/14463?l=en",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2021-td.zip",
+      "release": "wsc-2021",
+      "store_path": "WSC2021/TD/P0/en/WSC2021_TD48_EN.pdf"
+    }
+  ]
+}

@@ -134,6 +134,8 @@ EDITION_NAMES = {
     "WSC2024": "WorldSkills Lyon 2024",
     "WSC2026": "WorldSkills Shanghai 2026",
     "WSC2028": "WorldSkills Aichi 2028",
+    "ES2018": "EuroSkills Budapest 2018",
+    "ES2020": "EuroSkills Graz 2020",
     "ES2021": "EuroSkills Graz 2021",
     "ES2023": "EuroSkills Gdansk 2023",
     "ES2025": "EuroSkills Herning 2025",

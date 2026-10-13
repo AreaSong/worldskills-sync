@@ -1,0 +1,43 @@
+{
+  "edition": "GA2012",
+  "name": "WorldSkills General Assembly 2012",
+  "release": "ga-2012",
+  "files": [
+    {
+      "edition": "GA2012",
+      "edition_name": "WorldSkills General Assembly 2012",
+      "kind": "MTG",
+      "skill": "xx",
+      "skill_name": "",
+      "stage": "",
+      "lang": "und",
+      "filename": "GA_201205_22_Youth_Forum_report.pptx",
+      "bytes": 12698470,
+      "sha256": "4e489b41ccd777fc1bdcf8ca9c1e63dbae28fbcedd8912da1d3aea23e17b1be6",
+      "url": "https://api.worldskills.org/resources/download/5471/5471/6229?l=en",
+      "state": "done",
+      "note": "",
+      "asset": "ga-2012-mtg.zip",
+      "release": "ga-2012",
+      "store_path": "GA2012/MTG/xx/und/GA_201205_22_Youth_Forum_report.pptx"
+    },
+    {
+      "edition": "GA2012",
+      "edition_name": "WorldSkills General Assembly 2012",
+      "kind": "MTG",
+      "skill": "xx",
+      "skill_name": "",
+      "stage": "",
+      "lang": "und",
+      "filename": "GA_201205_22_Youth_Forum_report.pdf",
+      "bytes": 8354511,
+      "sha256": "3f82b7547891313442bc7e8e2b255bbfd862a3a85afb2805977c218ecd1423da",
+      "url": "https://api.worldskills.org/resources/download/5487/5487/6245?l=en",
+      "state": "done",
+      "note": "",
+      "asset": "ga-2012-mtg.zip",
+      "release": "ga-2012",
+      "store_path": "GA2012/MTG/xx/und/GA_201205_22_Youth_Forum_report.pdf"
+    }
+  ]
+}

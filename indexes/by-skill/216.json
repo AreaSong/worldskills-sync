@@ -1,0 +1,26 @@
+{
+  "skill": "216",
+  "names": {
+    "WSC2019": "WSJ05 Restaurant Service"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "216",
+      "skill_name": "WSJ05 Restaurant Service",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL216.xlsx",
+      "bytes": 217688,
+      "sha256": "05fc8527e02a72284f798b22c33c365295ffeda6ddb025dfbfc7e7fce68c2669",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/216?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/216/und/WSC2019_IL216.xlsx"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "skill": "263",
+  "names": {
+    "CPW2026": "PO4 Rail Vehicle Technology"
+  },
+  "files": [
+    {
+      "edition": "CPW2026",
+      "edition_name": "Competition Preparation Week Shanghai 2026",
+      "kind": "IL",
+      "skill": "263",
+      "skill_name": "PO2 Digital Interactive Media Design",
+      "stage": "",
+      "lang": "und",
+      "filename": "CPW2026_IL2630.xlsx",
+      "bytes": 187837,
+      "sha256": "1847ed40b26c1c57d46a01b819cf670b42bc2a96ef742c29988c91f24923c0dd",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/635/2630?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "cpw-2026-shanghai-prep-il.zip",
+      "release": "cpw-2026-shanghai-prep",
+      "store_path": "CPW2026/IL/263/und/CPW2026_IL2630.xlsx"
+    },
+    {
+      "edition": "CPW2026",
+      "edition_name": "Competition Preparation Week Shanghai 2026",
+      "kind": "IL",
+      "skill": "263",
+      "skill_name": "PO3 Intelligent Security Technology",
+      "stage": "",
+      "lang": "und",
+      "filename": "CPW2026_IL2632.xlsx",
+      "bytes": 187836,
+      "sha256": "97c356ab102be425a68596a3dd95346c5e6015f31ea03373c2c6263070ae15fa",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/635/2632?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "cpw-2026-shanghai-prep-il.zip",
+      "release": "cpw-2026-shanghai-prep",
+      "store_path": "CPW2026/IL/263/und/CPW2026_IL2632.xlsx"
+    },
+    {
+      "edition": "CPW2026",
+      "edition_name": "Competition Preparation Week Shanghai 2026",
+      "kind": "IL",
+      "skill": "263",
+      "skill_name": "PO4 Rail Vehicle Technology",
+      "stage": "",
+      "lang": "und",
+      "filename": "CPW2026_IL2631.xlsx",
+      "bytes": 187836,
+      "sha256": "cfedb4c9c3126666b7278761250869633d49306f6a91c1d70e7f7f374a6733d4",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/635/2631?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "cpw-2026-shanghai-prep-il.zip",
+      "release": "cpw-2026-shanghai-prep",
+      "store_path": "CPW2026/IL/263/und/CPW2026_IL2631.xlsx"
+    }
+  ]
+}

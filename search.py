@@ -22,6 +22,7 @@ from layout import KIND_CODES, record_from_row
 ROOT = Path(__file__).resolve().parent
 DB = ROOT / "downloads" / "catalog.sqlite"
 CATALOG = ROOT / "indexes" / "catalog.csv"
+EXCEPTIONS = ROOT / "indexes" / "exceptions.csv"
 RESULTS = ROOT / "data" / "results.csv"
 STORE = ROOT / "store"
 PAGE = ROOT / "index.html"
@@ -57,6 +58,8 @@ def attach_file(item: dict) -> dict:
         item.get("lang"),
         item.get("filename"),
         item.get("store_path"),
+        item.get("state"),
+        item.get("note"),
     )
     return item
 
@@ -162,31 +165,33 @@ def load_files_db() -> list[dict]:
 
 
 def load_files_csv() -> list[dict]:
-    if not CATALOG.exists():
-        return []
     items = []
-    with CATALOG.open(encoding="utf-8-sig", newline="") as handle:
-        for row in csv.DictReader(handle):
-            items.append(
-                attach_file(
-                    {
-                        "edition": row.get("edition") or "",
-                        "edition_name": row.get("edition_name") or "",
-                        "kind": row.get("kind") or "",
-                        "skill": row.get("skill") or "",
-                        "skill_name": row.get("skill_name") or "",
-                        "stage": row.get("stage") or "",
-                        "lang": row.get("lang") or "",
-                        "filename": row.get("filename") or "",
-                        "bytes": int(row.get("bytes") or 0),
-                        "store_path": row.get("store_path") or "",
-                        "state": row.get("state") or "done",
-                        "release": row.get("release") or "",
-                        "asset": row.get("asset") or "",
-                        "url": row.get("url") or "",
-                    }
+    for path in (CATALOG, EXCEPTIONS):
+        if not path.exists():
+            continue
+        with path.open(encoding="utf-8-sig", newline="") as handle:
+            for row in csv.DictReader(handle):
+                items.append(
+                    attach_file(
+                        {
+                            "edition": row.get("edition") or "",
+                            "edition_name": row.get("edition_name") or "",
+                            "kind": row.get("kind") or "",
+                            "skill": row.get("skill") or "",
+                            "skill_name": row.get("skill_name") or "",
+                            "stage": row.get("stage") or "",
+                            "lang": row.get("lang") or "",
+                            "filename": row.get("filename") or "",
+                            "bytes": int(row.get("bytes") or 0),
+                            "store_path": row.get("store_path") or "",
+                            "state": row.get("state") or "done",
+                            "release": row.get("release") or "",
+                            "asset": row.get("asset") or "",
+                            "url": row.get("url") or "",
+                            "note": row.get("note") or "",
+                        }
+                    )
                 )
-            )
     return items
 
 
@@ -235,11 +240,36 @@ def with_inner_names(files: list[dict]) -> list[dict]:
     return files
 
 
+def catalog_pack_map() -> dict[str, tuple[str, str]]:
+    mapping: dict[str, tuple[str, str]] = {}
+    if not CATALOG.exists():
+        return mapping
+    with CATALOG.open(encoding="utf-8-sig", newline="") as handle:
+        for row in csv.DictReader(handle):
+            asset = row.get("asset") or ""
+            path = row.get("store_path") or ""
+            if path and asset:
+                mapping[path] = (row.get("release") or "", asset)
+    return mapping
+
+
+def apply_catalog_packs(items: list[dict]) -> list[dict]:
+    packs = catalog_pack_map()
+    for item in items:
+        if item.get("asset"):
+            continue
+        pair = packs.get(item.get("store_path") or "")
+        if pair:
+            item["release"], item["asset"] = pair
+    return items
+
+
 def catalog() -> dict:
     now = time.time()
     if _cache["files"] and now - _cache["built"] < 8:
         return _cache
-    _cache["files"] = with_inner_names(load_files_db() if DB.exists() else load_files_csv())
+    files = load_files_db() if DB.exists() else load_files_csv()
+    _cache["files"] = with_inner_names(apply_catalog_packs(files))
     _cache["results"] = load_results()
     _cache["built"] = now
     return _cache
@@ -263,6 +293,7 @@ def public_file(item: dict) -> dict:
         "release": item.get("release") or "",
         "asset": item.get("asset") or "",
         "url": item.get("url") or "",
+        "note": item.get("note") or "",
         "inner": (item.get("inner") or [])[:12],
         "inner_count": len(item.get("inner") or []),
     }
@@ -292,13 +323,18 @@ def search(query: str, scope: str = "all", edition: str = "", kind: str = "") ->
     tokens = tokenize(query)
     data = catalog()
     found: list[tuple[int, dict]] = []
-    if scope in {"all", "files"}:
+    if scope in {"all", "files", "gaps"}:
         for item in data["files"]:
+            archived = item.get("state") == "done"
+            if scope == "files" and not archived:
+                continue
+            if scope == "gaps" and archived:
+                continue
             if edition and item.get("edition") != edition:
                 continue
             if kind and item.get("kind") != kind:
                 continue
-            if not tokens and not edition and not kind:
+            if not tokens and not edition and not kind and scope != "gaps":
                 continue
             scored = score_file(item, tokens) if tokens else 4
             if scored is None:
@@ -346,6 +382,14 @@ class Handler(BaseHTTPRequestHandler):
         parsed = urlparse(self.path)
         if parsed.path in {"/", "/search", "/index.html", "/search.html"}:
             self._send(200, PAGE.read_bytes(), "text/html; charset=utf-8")
+            return
+        if parsed.path.startswith("/indexes/") or parsed.path.startswith("/data/"):
+            target = safe_under(ROOT, parsed.path.lstrip("/"))
+            if target is None or not target.is_file():
+                self.send_error(404)
+                return
+            ctype = "application/json; charset=utf-8" if target.suffix == ".json" else "text/csv; charset=utf-8"
+            self._send(200, target.read_bytes(), ctype)
             return
         if parsed.path == "/api/search":
             query = parse_qs(parsed.query)
@@ -474,6 +518,10 @@ def _self_test() -> None:
     assert safe_under(STORE, "../secret") is None
     listed = public_file({**item, "url": "https://api.worldskills.org/resources/download/1"})
     assert listed["url"].endswith("/download/1")
+    patched = apply_catalog_packs(
+        [{"store_path": "missing", "asset": ""}, {"store_path": "keep", "asset": "already.zip"}]
+    )
+    assert patched[1]["asset"] == "already.zip"
     print("search self-test ok")
 
 

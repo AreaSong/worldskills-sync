@@ -1,0 +1,26 @@
+{
+  "skill": "232",
+  "names": {
+    "WSC2019": "FS09 Internet of Things"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "232",
+      "skill_name": "FS09 Internet of Things",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL232.xlsx",
+      "bytes": 201012,
+      "sha256": "6f5a95c0b0915935e6804f839727b9d8c3b4361930cf4bf8f044ef4e21baf6c4",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/232?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/232/und/WSC2019_IL232.xlsx"
+    }
+  ]
+}

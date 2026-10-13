@@ -1,0 +1,26 @@
+{
+  "skill": "224",
+  "names": {
+    "WSC2019": "FS01 Rapid Prototyping"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "224",
+      "skill_name": "FS01 Rapid Prototyping",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL224.xlsx",
+      "bytes": 246274,
+      "sha256": "b1563d600be2d7fb7a76eaa6217dee49f240d1ebce316a6c65652d884161afbd",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/224?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/224/und/WSC2019_IL224.xlsx"
+    }
+  ]
+}

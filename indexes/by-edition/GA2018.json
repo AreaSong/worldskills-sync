@@ -1,0 +1,25 @@
+{
+  "edition": "GA2018",
+  "name": "WorldSkills General Assembly 2018",
+  "release": "ga-2018",
+  "files": [
+    {
+      "edition": "GA2018",
+      "edition_name": "WorldSkills General Assembly 2018",
+      "kind": "SUP",
+      "skill": "xx",
+      "skill_name": "",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSCP2018_Brochure.pdf",
+      "bytes": 3384375,
+      "sha256": "7d9c9a87c1687d641f2d8919b2bcf771aa011f8e399393d1c0c903cc0a918e49",
+      "url": "https://api.worldskills.org/resources/download/9155/10081/10999?l=en",
+      "state": "done",
+      "note": "",
+      "asset": "ga-2018-sup.zip",
+      "release": "ga-2018",
+      "store_path": "GA2018/SUP/xx/und/WSCP2018_Brochure.pdf"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "skill": "242",
+  "names": {
+    "WSC2019": "FSS02 Digital Farming"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "242",
+      "skill_name": "FSS02 Digital Farming",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL242.xlsx",
+      "bytes": 193957,
+      "sha256": "19ee4534a0afdec6c4db7ab3e7e9558cba4659df68aa20938878e6aab8011b7c",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/242?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/242/und/WSC2019_IL242.xlsx"
+    }
+  ]
+}

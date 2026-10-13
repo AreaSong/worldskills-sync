@@ -1,0 +1,26 @@
+{
+  "skill": "246",
+  "names": {
+    "WSC2019": "FSS06 Life-cycle Management"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "246",
+      "skill_name": "FSS06 Life-cycle Management",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL246.xlsx",
+      "bytes": 200715,
+      "sha256": "7372483a6c1fc1ac222f55894aa2b40613bb50c0ed4099e912598b0d489b90b9",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/246?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/246/und/WSC2019_IL246.xlsx"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "skill": "259",
+  "names": {
+    "CPW2026": "PO7 Unmanned Aerial Systems"
+  },
+  "files": [
+    {
+      "edition": "CPW2026",
+      "edition_name": "Competition Preparation Week Shanghai 2026",
+      "kind": "IL",
+      "skill": "259",
+      "skill_name": "PO7 Unmanned Aerial Systems",
+      "stage": "",
+      "lang": "und",
+      "filename": "CPW2026_IL2598.xlsx",
+      "bytes": 187836,
+      "sha256": "3e59658a69b6dfc79bb15546302a3219c9229e53b61e1d4e6dbc5a6dbdcf3f96",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/635/2598?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "cpw-2026-shanghai-prep-il.zip",
+      "release": "cpw-2026-shanghai-prep",
+      "store_path": "CPW2026/IL/259/und/CPW2026_IL2598.xlsx"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "skill": "236",
+  "names": {
+    "WSC2019": "FS12 Quantum Technology",
+    "CIW2025": "PO7 Unmanned Aerial Systems"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "236",
+      "skill_name": "FS12 Quantum Technology",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL236.xlsx",
+      "bytes": 210364,
+      "sha256": "b6c2a861b7d24e3b8bc0f506219549cf4f149490ca90ca0d1494bfeb9629c7a4",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/236?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/236/und/WSC2019_IL236.xlsx"
+    },
+    {
+      "edition": "CIW2025",
+      "edition_name": "Competition Infrastructure Workshop 2025",
+      "kind": "IL",
+      "skill": "236",
+      "skill_name": "PO3 Intelligent Security Technology",
+      "stage": "",
+      "lang": "und",
+      "filename": "CIW2025_IL2368.xlsx",
+      "bytes": 187836,
+      "sha256": "c1e28902f74cc6467d6c73ef123e88b831ba67e46b70a46b13ce6db2d032c748",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/626/2368?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "ciw-2025-ciw-il.zip",
+      "release": "ciw-2025-ciw",
+      "store_path": "CIW2025/IL/236/und/CIW2025_IL2368.xlsx"
+    },
+    {
+      "edition": "CIW2025",
+      "edition_name": "Competition Infrastructure Workshop 2025",
+      "kind": "IL",
+      "skill": "236",
+      "skill_name": "PO7 Unmanned Aerial Systems",
+      "stage": "",
+      "lang": "und",
+      "filename": "CIW2025_IL2360.xlsx",
+      "bytes": 187836,
+      "sha256": "4ea0078ace7326ff7908f48eefd1c9cb007e24529d8984edd8cf125622961219",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/626/2360?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "ciw-2025-ciw-il.zip",
+      "release": "ciw-2025-ciw",
+      "store_path": "CIW2025/IL/236/und/CIW2025_IL2360.xlsx"
+    }
+  ]
+}

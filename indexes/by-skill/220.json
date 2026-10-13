@@ -1,0 +1,26 @@
+{
+  "skill": "220",
+  "names": {
+    "WSC2019": "WSJ09 Drone Operating"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "220",
+      "skill_name": "WSJ09 Drone Operating",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL220.xlsx",
+      "bytes": 208312,
+      "sha256": "420b7cf6286587914eacc78ef6399b4cffbe98709ec7aa0232bbe2266143e22f",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/220?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/220/und/WSC2019_IL220.xlsx"
+    }
+  ]
+}

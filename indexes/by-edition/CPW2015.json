@@ -1,0 +1,25 @@
+{
+  "edition": "CPW2015",
+  "name": "CPW2015",
+  "release": "cpw-2015",
+  "files": [
+    {
+      "edition": "CPW2015",
+      "edition_name": "CPW2015",
+      "kind": "SUP",
+      "skill": "xx",
+      "skill_name": "",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSI_16_Action_Plan_2012_2015.pdf",
+      "bytes": 284334,
+      "sha256": "2cb5de14ecc89d69b9b2a2b23143213a5294d86c785f78042522b081e2105334",
+      "url": "https://api.worldskills.org/resources/download/3743/3743/4480?l=en",
+      "state": "done",
+      "note": "",
+      "asset": "cpw-2015-sup.zip",
+      "release": "cpw-2015",
+      "store_path": "CPW2015/SUP/xx/und/WSI_16_Action_Plan_2012_2015.pdf"
+    }
+  ]
+}

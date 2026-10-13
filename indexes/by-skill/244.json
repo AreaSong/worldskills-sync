@@ -1,0 +1,26 @@
+{
+  "skill": "244",
+  "names": {
+    "WSC2019": "FSS04 Robotic Welding"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "244",
+      "skill_name": "FSS04 Robotic Welding",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL244.xlsx",
+      "bytes": 207184,
+      "sha256": "1a6cda63930f0815d2f3cd4b13b3203c4bb69188d03024d05415e7bd1c3d1b49",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/244?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/244/und/WSC2019_IL244.xlsx"
+    }
+  ]
+}

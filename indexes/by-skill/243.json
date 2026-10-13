@@ -1,0 +1,26 @@
+{
+  "skill": "243",
+  "names": {
+    "WSC2019": "FSS03 Digital Fashion Designer"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "243",
+      "skill_name": "FSS03 Digital Fashion Designer",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL243.xlsx",
+      "bytes": 199394,
+      "sha256": "48da7910ea1f1587825c84b7e8c626da8cd0db4787b6669f82b432abee6c843d",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/243?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/243/und/WSC2019_IL243.xlsx"
+    }
+  ]
+}

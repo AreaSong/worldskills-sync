@@ -1,0 +1,26 @@
+{
+  "skill": "264",
+  "names": {
+    "CPW2026": "PO6 Software Testing"
+  },
+  "files": [
+    {
+      "edition": "CPW2026",
+      "edition_name": "Competition Preparation Week Shanghai 2026",
+      "kind": "IL",
+      "skill": "264",
+      "skill_name": "PO6 Software Testing",
+      "stage": "",
+      "lang": "und",
+      "filename": "CPW2026_IL2648.xlsx",
+      "bytes": 187836,
+      "sha256": "988f4f225976d2b2d6016da8f8fdd82f0037f018b7d9eca1857232fc0ff21731",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/635/2648?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "cpw-2026-shanghai-prep-il.zip",
+      "release": "cpw-2026-shanghai-prep",
+      "store_path": "CPW2026/IL/264/und/CPW2026_IL2648.xlsx"
+    }
+  ]
+}

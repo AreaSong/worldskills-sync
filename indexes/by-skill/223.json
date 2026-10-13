@@ -1,0 +1,26 @@
+{
+  "skill": "223",
+  "names": {
+    "WSC2019": "WSJ12 Industrial Control"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "223",
+      "skill_name": "WSJ12 Industrial Control",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL223.xlsx",
+      "bytes": 225862,
+      "sha256": "cb15bd847b36f9b7d6c7ae076696cce9d4fe6f56ed5bb4be87445ec7d09bff68",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/223?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/223/und/WSC2019_IL223.xlsx"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "skill": "231",
+  "names": {
+    "WSC2019": "FS08 Robot Systems Integration"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "231",
+      "skill_name": "FS08 Robot Systems Integration",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL231.xlsx",
+      "bytes": 205727,
+      "sha256": "280d7df92859e773a890fe195b4d5a989e08c6da34e0fcd69d849679a4014c31",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/231?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/231/und/WSC2019_IL231.xlsx"
+    }
+  ]
+}

@@ -315,6 +315,7 @@ RESOURCE_FIELDS = [
     "store_path",
     "url",
     "state",
+    "note",
     "release",
     "asset",
 ]
@@ -338,6 +339,7 @@ def resource_catalog_rows(db_rows: list[Any]) -> list[dict[str, Any]]:
                 "store_path": record.get("store_path") or "",
                 "url": record.get("url") or "",
                 "state": record.get("state") or "",
+                "note": record.get("note") or "",
                 "release": record.get("release") or "",
                 "asset": record.get("asset") or "",
             }

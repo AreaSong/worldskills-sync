@@ -1,0 +1,63 @@
+{
+  "skill": "237",
+  "names": {
+    "WSC2019": "FS13 Mechanical Reverse Engineering",
+    "CIW2025": "PO4 Rail Vehicle Technology"
+  },
+  "files": [
+    {
+      "edition": "WSC2019",
+      "edition_name": "WorldSkills Kazan 2019",
+      "kind": "IL",
+      "skill": "237",
+      "skill_name": "FS13 Mechanical Reverse Engineering",
+      "stage": "",
+      "lang": "und",
+      "filename": "WSC2019_IL237.xlsx",
+      "bytes": 210126,
+      "sha256": "96d8007ba5fb7a61bfa88ba2a93a61d19a9eb04d1c844f41cd65f14979c038a0",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/364/237?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "wsc-2019-kazan-il.zip",
+      "release": "wsc-2019-kazan",
+      "store_path": "WSC2019/IL/237/und/WSC2019_IL237.xlsx"
+    },
+    {
+      "edition": "CIW2025",
+      "edition_name": "Competition Infrastructure Workshop 2025",
+      "kind": "IL",
+      "skill": "237",
+      "skill_name": "PO2 Digital Interactive Media Design",
+      "stage": "",
+      "lang": "und",
+      "filename": "CIW2025_IL2379.xlsx",
+      "bytes": 187837,
+      "sha256": "52253f6d40c211d508d631a1fea16f583a06b6396cffa41f394d7663391a8372",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/626/2379?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "ciw-2025-ciw-il.zip",
+      "release": "ciw-2025-ciw",
+      "store_path": "CIW2025/IL/237/und/CIW2025_IL2379.xlsx"
+    },
+    {
+      "edition": "CIW2025",
+      "edition_name": "Competition Infrastructure Workshop 2025",
+      "kind": "IL",
+      "skill": "237",
+      "skill_name": "PO4 Rail Vehicle Technology",
+      "stage": "",
+      "lang": "und",
+      "filename": "CIW2025_IL2372.xlsx",
+      "bytes": 187836,
+      "sha256": "cc40cd2523d57571ddeb6576232f2104e99c414bedbdc01123afd24d3e683131",
+      "url": "https://api.worldskills.org/il/reports/requested/lists/626/2372?s=xlsx",
+      "state": "done",
+      "note": "",
+      "asset": "ciw-2025-ciw-il.zip",
+      "release": "ciw-2025-ciw",
+      "store_path": "CIW2025/IL/237/und/CIW2025_IL2372.xlsx"
+    }
+  ]
+}
